@@ -158,7 +158,7 @@
   },
   "[Achievement quote 128]Lord of Progress": {
     "english": "One can always do better. But should you?",
-    "chinese": "人的能力，永远可以更进一步。但是，为何不停下脚步，感受当下？"
+    "chinese": "总有人要当废物，那为什么不能是你呢？"
   },
   "[Achievement quote 129]Bicentennial": {
     "english": "You crazy person.",
@@ -195,5 +195,100 @@
   "[Achievement quote 164]Obliterate": {
     "english": "Resistance is futile, albeit entertaining.",
     "chinese": "不要做无谓的抵抗，虽然看你努力的样子的确很滑稽。"
+  },
+  "[Achievement quote 165]Negative void": {
+    "english": "You now have so few cookies that it's almost like you have a negative amount of them.",
+    "chinese": "你现在饼干数量少的简直跟负数一样。"
+  },
+  "[Achievement quote 204]Here you go": {
+    "english": "All you had to do was ask.",
+    "chinese": "你要是早点开口，我就早给你了。"
+  },
+  "[Achievement quote 207]Endless cycle": {
+    "english": "Oh hey, it's you again.",
+    "chinese": "嘿，又是你啊。"
+  },
+  "[Achievement quote 225]He who controls the cookies controls the universe": {
+    "english": "The milk must flow!",
+    "chinese": "奶流成河！"
+  },
+  "[Achievement quote 229]In the mouth of madness": {
+    "english": "A cookie is just what we tell each other it is.",
+    "chinese": "饼干，不过是人类之间传播的一个名词罢了。"
+  },
+  "[Achievement name 234]Cookiehertz : a really, really tasty hertz": {
+    "comment": "这个Cookiehertz应该是Cookie hurts的谐音。引文中的a hertz donut也能查到相关的谐音梗'it hurts, don't it?'",
+    "english": "Cookiehertz : a really, really tasty hertz",
+    "chinese": "热疼疼的饼干：痛并美味着"
+  },
+  "[Achievement quote 234]Cookiehertz : a really, really tasty hertz": {
+    "english": "Tastier than a hertz donut, anyway.",
+    "chinese": "营养丰富。而且至少比维生素C泡疼片更有味。"
+  },
+  "[Achievement quote 236]Turbopuns": {
+    "english": "Mother Nature will be like \"slowwwww dowwwwwn\".",
+    "chinese": "大自然母亲大概会说：\"车太快了，慢点开吧。\""
+  },
+  "[Achievement quote 241]Fast": {
+    "english": "Wow!",
+    "chinese": "哇！"
+  },
+  "[Achievement quote 242]Bicentennial and a half": {
+    "english": "Keep on truckin'.",
+    "chinese": "继续堆。"
+  },
+  "[Achievement quote 243]Tabloid addiction": {
+    "english": "Page 6: Mad individual clicks on picture of pastry in a futile attempt to escape boredom!<br>Also page 6: British parliament ate my baby!",
+    "chinese": "第六页：城市娱乐活动逐渐单调化。为缓解无聊，本地一疯子狂点一张甜点的照片。<br>还是第六页：英国议会吃了我的孩子！"
+  },
+  "[Achievement quote 246]Thumbs, phalanges, metacarpals": {
+    "comment": "索尼克梗，认识的都认识，不认识的翻译了也没用，上原文",
+    "english": "& KNUCKLES",
+    "chinese": "& KNUCKLES"
+  },
+  "[Achievement quote 247]Polymath": {
+    "english": "Excellence doesn't happen overnight - it usually takes a good couple days.",
+    "chinese": "杰出的成就并不会一夜惊起，通常来说还是需要个一两天的。"
+  },
+  "[Achievement quote 248]The elder scrolls": {
+    "english": "Let me guess. Someone stole your cookie.",
+    "chinese": "要我猜的话，大概是有谁偷走了你的饼干。"
+  },
+  "[Achievement quote 249]To crumbs, you say?": {
+    "english": "Very well then.",
+    "chinese": "那就这样吧。"
+  },
+  "[Achievement quote 262]Last Chance to See": {
+    "english": "You monster!",
+    "chinese": "你个杀虫狂魔！"
+  },
+  "[Achievement quote 268]Year's worth of cavities": {
+    "english": "My lumps my lumps my lumps.",
+    "chinese": "大块，小块，糖块。"
+  },
+  "[Achievement quote 273]Tricentennial": {
+    "english": "Can't stop, won't stop. Probably should stop, though.",
+    "chinese": "收手？，收手是不可能收手的，这辈子不可能收手的。（但是大概是时候收手了。）"
+  },
+  "[Achievement name 274]Knead for speed": {
+    "english": "Knead for speed",
+    "chinese": "极品飞饼"
+  },
+  "[Achievement quote 274]Knead for speed": {
+    "comment": "这个大概没什么太好的翻译方法，愿意大概是\"这双关我们怎么还没用过？\"，但是原翻译是不可能看出来是双关的。所以改了成就名往原文的双关靠了下。",
+    "english": "How did we not make that one yet?",
+    "chinese": "我们不是在做饼啊？不过有模具就可以切成饼干了。"
+  },
+  "[Achievement quote 275]Well the cookies start coming and they don't stop coming": {
+    "english": "Didn't make sense not to click for fun.",
+    "chinese": "不点不是快乐人。"
+  },
+  "[Achievement quote 277]The proof of the cookie is in the baking": {
+    "english": "How can you have any cookies if you don't bake your dough?",
+    "chinese": "你不把面饼放烤箱是怎么做出来饼干的？"
+  },
+  "[Achievement name 289]Here he comes": {
+    "english": "Here he comes",
+    "chinese": "<style>.mEG{animation:mgs 1s infinite linear alternate-reverse}.mEG::before{content:attr(data-text);position:absolute;top:0;left:48px;width:100%;height:100%;text-shadow:-2px 0 #ff00c1;clip:rect(44px,450px,56px,0);animation:mgaa 5s infinite linear alternate-reverse}.mEG::after{content:attr(data-text);position:absolute;top:0;left:44px;width:100%;height:100%;text-shadow:-2px 0 #00fff9,2px 2px #ff00c1;animation:mgab 1s infinite linear alternate-reverse}@keyframes mgaa{0%{clip:rect(53px,9999px,56px,0);transform:skew(.02deg)}5%{clip:rect(31px,9999px,21px,0);transform:skew(.87deg)}10%{clip:rect(27px,9999px,93px,0);transform:skew(.58deg)}15%{clip:rect(35px,9999px,47px,0);transform:skew(.55deg)}20%{clip:rect(27px,9999px,82px,0);transform:skew(.38deg)}25%{clip:rect(57px,9999px,17px,0);transform:skew(.41deg)}30%{clip:rect(53px,9999px,89px,0);transform:skew(.91deg)}35%{clip:rect(63px,9999px,10px,0);transform:skew(.9deg)}40%{clip:rect(84px,9999px,47px,0);transform:skew(.08deg)}45%{clip:rect(83px,9999px,67px,0);transform:skew(.52deg)}50%{clip:rect(59px,9999px,57px,0);transform:skew(.33deg)}55%{clip:rect(65px,9999px,33px,0);transform:skew(.19deg)}60%{clip:rect(69px,9999px,31px,0);transform:skew(.22deg)}65%{clip:rect(58px,9999px,20px,0);transform:skew(.83deg)}70%{clip:rect(43px,9999px,43px,0);transform:skew(.03deg)}75%{clip:rect(11px,9999px,68px,0);transform:skew(.05deg)}80%{clip:rect(52px,9999px,48px,0);transform:skew(.63deg)}85%{clip:rect(96px,9999px,92px,0);transform:skew(.61deg)}90%{clip:rect(11px,9999px,14px,0);transform:skew(.7deg)}95%{clip:rect(36px,9999px,60px,0);transform:skew(.34deg)}100%{clip:rect(94px,9999px,71px,0);transform:skew(.23deg)}}@keyframes mgab{0%{clip:rect(88px,9999px,28px,0);transform:skew(.25deg)}5%{clip:rect(4px,9999px,5px,0);transform:skew(.35deg)}10%{clip:rect(38px,9999px,29px,0);transform:skew(.9deg)}15%{clip:rect(40px,9999px,31px,0);transform:skew(.43deg)}20%{clip:rect(71px,9999px,94px,0);transform:skew(.49deg)}25%{clip:rect(40px,9999px,15px,0);transform:skew(.66deg)}30%{clip:rect(63px,9999px,50px,0);transform:skew(.94deg)}35%{clip:rect(19px,9999px,22px,0);transform:skew(.35deg)}40%{clip:rect(44px,9999px,75px,0);transform:skew(.44deg)}45%{clip:rect(42px,9999px,29px,0);transform:skew(.68deg)}50%{clip:rect(14px,9999px,83px,0);transform:skew(.29deg)}55%{clip:rect(94px,9999px,1px,0);transform:skew(.08deg)}60%{clip:rect(26px,9999px,22px,0);transform:skew(.7deg)}65%{clip:rect(89px,9999px,67px,0);transform:skew(.28deg)}70%{clip:rect(59px,9999px,75px,0);transform:skew(.13deg)}75%{clip:rect(2px,9999px,97px,0);transform:skew(.87deg)}80%{clip:rect(43px,9999px,24px,0);transform:skew(.09deg)}85%{clip:rect(88px,9999px,97px,0);transform:skew(.29deg)}90%{clip:rect(46px,9999px,39px,0);transform:skew(.64deg)}95%{clip:rect(94px,9999px,63px,0);transform:skew(.15deg)}100%{clip:rect(1px,9999px,12px,0);transform:skew(.44deg)}}@keyframes mgs{0%{transform:skew(-1deg)}10%{transform:skew(3deg)}20%{transform:skew(5deg)}30%{transform:skew(-1deg)}40%{transform:skew(-1deg)}50%{transform:skew(-4deg)}60%{transform:skew(1deg)}70%{transform:skew(-3deg)}80%{transform:skew(-1deg)}90%{transform:skew(-1deg)}100%{transform:skew(1deg)}}</style><div class=\"mEG\" data-text=\" ̶̯̲͛͆ͅ他 ̸̘͇̯̣̑̃͛来 ̶̲͐̋͘͜͝了 ̵͙͇̲̦̎̐͐̋̕͜\"> 他 来 了 </div>"
   }
 }
