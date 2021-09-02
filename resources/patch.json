@@ -1,7 +1,56 @@
 {
+  "REPLACE ALL": {
+    "english": "Replacing existing translation",
+    "chinese": {
+      "老太婆": "老奶奶"
+    }
+  },
   "grandmapocalypse": {
     "english": "grandmapocalypse",
-    "chinese": "[CN:MISSING]"
+    "chinese": "老奶奶天启"
+  },
+  "[Upgrade name 521]Metagrandmas": {
+    "comment": "避免和'元老'用词混淆，meta前缀改翻译为超元",
+    "english": "Metagrandmas",
+    "chinese": "超元老奶奶"
+  },
+  "[Upgrade name 522]Metabakeries": {
+    "comment": "避免和'元老'用词混淆，meta前缀改翻译为超元",
+    "english": "Metabakeries",
+    "chinese": "超元烘焙坊"
+  },
+  "Elder Battalion": {
+    "comment": "更正Elder用词错误",
+    "english": "Elder Battalion",
+    "chinese": "长者军团"
+  },
+  "%1, age %2": {
+    "english": "%1, age %2",
+    "chinese": "%1（%2岁）"
+  },
+  "Mods": {
+    "english": "Mods",
+    "chinese": "模组"
+  },
+  "Manage mods": {
+    "english": "Manage mods",
+    "chinese": "管理模组"
+  },
+  "Publish mods": {
+    "english": "Publish mods",
+    "chinese": "发布模组"
+  },
+  "Only use mods from trusted sources. Some mods may require a game restart to take effect.": {
+    "english": "Only use mods from trusted sources. Some mods may require a game restart to take effect.",
+    "chinese": "务必使用来自可信来源的模组。有些模组可能需要重启游戏才能生效。"
+  },
+  "Local mod": {
+    "english": "Local mod",
+    "chinese": "本地模组"
+  },
+  "[Achievement name 49]You know the drill": {
+    "english": "You know the drill",
+    "chinese": "你知道该怎么做"
   },
   "translators": [
     "TsFreddie",
