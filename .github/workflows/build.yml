@@ -22,9 +22,13 @@ jobs:
           tsc --skipLibCheck
           node ./dist/index.js
 
-      - uses: montudor/action-zip@v1
+      - name: Archive Release
+        uses: thedoctor0/zip-release@master
         with:
-          args: cd build && zip -qq -r cookieclicker-cn.zip CookieClickerCNMod
+          type: 'zip'
+          directory: 'build'
+          filename: 'cookieclicker-cn.zip'
+          path: 'CookieClickerCNMod'
 
       - uses: 'marvinpinto/action-automatic-releases@latest'
         with:
