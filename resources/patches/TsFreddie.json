@@ -35,6 +35,15 @@
     "english": "Publish mods",
     "chinese": "发布模组"
   },
+  "Click to win!": {
+    "comment": "这两个比较迷惑，不过目前只有成就在用，希望以后更新不会复用。",
+    "english": "Click to win!",
+    "chinese": "点击获得成就！"
+  },
+  "Click to lose!": {
+    "english": "Click to lose!",
+    "chinese": "点击移除成就！"
+  },
   "Only use mods from trusted sources. Some mods may require a game restart to take effect.": {
     "english": "Only use mods from trusted sources. Some mods may require a game restart to take effect.",
     "chinese": "务必使用来自可信来源的模组。有些模组可能需要重启游戏才能生效。"
@@ -99,9 +108,13 @@
     "english": "Cloud purged.",
     "chinese": "云存档已清除"
   },
+  "%1 worth": {
+    "english": "%1 worth",
+    "chinese": "相当于 %1 的产量"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
-    "chinese": "生产 生产"
+    "chinese": "生产、生产……"
   },
   "[Upgrade quote 1]Carpal tunnel prevention cream": {
     "english": "it... it hurts to click...",
@@ -113,15 +126,15 @@
   },
   "[Upgrade quote 3]Thousand fingers": {
     "english": "clickity",
-    "chinese": "点点"
+    "chinese": "点点。"
   },
   "[Upgrade quote 4]Million fingers": {
     "english": "clickityclickity",
-    "chinese": "点击点击"
+    "chinese": "点击点击。"
   },
   "[Upgrade quote 5]Billion fingers": {
     "english": "clickityclickityclickity",
-    "chinese": "鼠标点击鼠标点击鼠标点击"
+    "chinese": "鼠标点击鼠标点击鼠标点击。"
   },
   "[Upgrade quote 6]Trillion fingers": {
     "english": "clickityclickityclickityclickity",
