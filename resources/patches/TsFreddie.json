@@ -99,6 +99,96 @@
     "english": "Cloud purged.",
     "chinese": "云存档已清除"
   },
+  "[Upgrade quote 0]Reinforced index finger": {
+    "english": "prod prod",
+    "chinese": "生产 生产"
+  },
+  "[Upgrade quote 1]Carpal tunnel prevention cream": {
+    "english": "it... it hurts to click...",
+    "chinese": "点……点的……手疼……"
+  },
+  "[Upgrade quote 2]Ambidextrous": {
+    "english": "Look ma, both hands!",
+    "chinese": "妈，快看！我可以双手并用！"
+  },
+  "[Upgrade quote 3]Thousand fingers": {
+    "english": "clickity",
+    "chinese": "点点"
+  },
+  "[Upgrade quote 4]Million fingers": {
+    "english": "clickityclickity",
+    "chinese": "点击点击"
+  },
+  "[Upgrade quote 5]Billion fingers": {
+    "english": "clickityclickityclickity",
+    "chinese": "鼠标点击鼠标点击鼠标点击"
+  },
+  "[Upgrade quote 6]Trillion fingers": {
+    "english": "clickityclickityclickityclickity",
+    "chinese": "点击、点击、点击、点击、点击、点……"
+  },
+  "[Upgrade name 7]Forwards from grandma": {
+    "comment": "邮件梗，为什么是先锋啊？",
+    "english": "Forwards from grandma",
+    "chinese": "老奶奶的转发"
+  },
+  "[Upgrade quote 7]Forwards from grandma": {
+    "english": "RE:RE:thought you'd get a kick out of this ;))",
+    "chinese": "回复：回复：我觉得你会喜欢这样 ^-^"
+  },
+  "[Upgrade quote 8]Steel-plated rolling pins": {
+    "english": "Just what you kneaded.",
+    "chinese": "以揉克钢。"
+  },
+  "[Upgrade quote 9]Lubricated dentures": {
+    "english": "squish",
+    "chinese": "pia叽！"
+  },
+  "[Upgrade quote 10]Cheap hoes": {
+    "english": "Rake in the dough!",
+    "chinese": "面里进耙子了！"
+  },
+  "[Upgrade quote 11]Fertilizer": {
+    "english": "It's chocolate, I swear.",
+    "chinese": "我发誓这是巧克力。"
+  },
+  "[Upgrade quote 12]Cookie trees": {
+    "english": "A relative of the breadfruit.",
+    "chinese": "和面包果是一个纲的。"
+  },
+  "[Upgrade quote 13]Sturdier conveyor belts": {
+    "english": "You're going places.",
+    "chinese": "启程。"
+  },
+  "[Upgrade quote 14]Child labor": {
+    "english": "Cheaper, healthier workforce.",
+    "chinese": "便宜又健康的人力资源。"
+  },
+  "[Upgrade quote 15]Sweatshop": {
+    "english": "Slackers will be terminated.",
+    "chinese": "摸鱼的都可以滚了。"
+  },
+  "[Upgrade quote 16]Sugar gas": {
+    "english": "A pink, volatile gas, found in the depths of some chocolate caves.",
+    "chinese": "易逝的粉色气体，在巧克力洞穴的最深处才能找到。"
+  },
+  "[Upgrade quote 17]Megadrill": {
+    "english": "You're in deep.",
+    "chinese": "深陷其境。"
+  },
+  "[Upgrade quote 18]Ultradrill": {
+    "english": "Finally caved in?",
+    "chinese": "终于洞不了了？"
+  },
+  "[Upgrade quote 19]Vanilla nebulae": {
+    "english": "If you removed your space helmet, you could probably smell it!<br>(Note : don't do that.)",
+    "chinese": "如果想要闻到星云的香草味，你需要摘下你的宇航头盔。<br>（注：请不要摘下宇航头盔）"
+  },
+  "[Upgrade quote 20]Wormholes": {
+    "comment": "TODO: 继续添加升级引文",
+    "english": "By using these as shortcuts, your ships can travel much faster.",
+    "chinese": "这些捷径可给你的飞船航行减少了不少行程。"
+  },
   "[Achievement quote 26]Sacrifice": {
     "english": "Easy come, easy go.",
     "chinese": "来也匆匆，去也匆匆。"
@@ -288,6 +378,7 @@
     "chinese": "你不把面饼放烤箱是怎么做出来饼干的？"
   },
   "[Achievement name 289]Here he comes": {
+    "comment": "因为中文不能叠那些奇葩字符，做了个css动画。TODO：继续补全成就",
     "english": "Here he comes",
     "chinese": "<style>.mEG{animation:mgs 1s infinite linear alternate-reverse}.mEG::before{content:attr(data-text);position:absolute;top:0;left:48px;width:100%;height:100%;text-shadow:-2px 0 #ff00c1;clip:rect(44px,450px,56px,0);animation:mgaa 5s infinite linear alternate-reverse}.mEG::after{content:attr(data-text);position:absolute;top:0;left:44px;width:100%;height:100%;text-shadow:-2px 0 #00fff9,2px 2px #ff00c1;animation:mgab 1s infinite linear alternate-reverse}@keyframes mgaa{0%{clip:rect(53px,9999px,56px,0);transform:skew(.02deg)}5%{clip:rect(31px,9999px,21px,0);transform:skew(.87deg)}10%{clip:rect(27px,9999px,93px,0);transform:skew(.58deg)}15%{clip:rect(35px,9999px,47px,0);transform:skew(.55deg)}20%{clip:rect(27px,9999px,82px,0);transform:skew(.38deg)}25%{clip:rect(57px,9999px,17px,0);transform:skew(.41deg)}30%{clip:rect(53px,9999px,89px,0);transform:skew(.91deg)}35%{clip:rect(63px,9999px,10px,0);transform:skew(.9deg)}40%{clip:rect(84px,9999px,47px,0);transform:skew(.08deg)}45%{clip:rect(83px,9999px,67px,0);transform:skew(.52deg)}50%{clip:rect(59px,9999px,57px,0);transform:skew(.33deg)}55%{clip:rect(65px,9999px,33px,0);transform:skew(.19deg)}60%{clip:rect(69px,9999px,31px,0);transform:skew(.22deg)}65%{clip:rect(58px,9999px,20px,0);transform:skew(.83deg)}70%{clip:rect(43px,9999px,43px,0);transform:skew(.03deg)}75%{clip:rect(11px,9999px,68px,0);transform:skew(.05deg)}80%{clip:rect(52px,9999px,48px,0);transform:skew(.63deg)}85%{clip:rect(96px,9999px,92px,0);transform:skew(.61deg)}90%{clip:rect(11px,9999px,14px,0);transform:skew(.7deg)}95%{clip:rect(36px,9999px,60px,0);transform:skew(.34deg)}100%{clip:rect(94px,9999px,71px,0);transform:skew(.23deg)}}@keyframes mgab{0%{clip:rect(88px,9999px,28px,0);transform:skew(.25deg)}5%{clip:rect(4px,9999px,5px,0);transform:skew(.35deg)}10%{clip:rect(38px,9999px,29px,0);transform:skew(.9deg)}15%{clip:rect(40px,9999px,31px,0);transform:skew(.43deg)}20%{clip:rect(71px,9999px,94px,0);transform:skew(.49deg)}25%{clip:rect(40px,9999px,15px,0);transform:skew(.66deg)}30%{clip:rect(63px,9999px,50px,0);transform:skew(.94deg)}35%{clip:rect(19px,9999px,22px,0);transform:skew(.35deg)}40%{clip:rect(44px,9999px,75px,0);transform:skew(.44deg)}45%{clip:rect(42px,9999px,29px,0);transform:skew(.68deg)}50%{clip:rect(14px,9999px,83px,0);transform:skew(.29deg)}55%{clip:rect(94px,9999px,1px,0);transform:skew(.08deg)}60%{clip:rect(26px,9999px,22px,0);transform:skew(.7deg)}65%{clip:rect(89px,9999px,67px,0);transform:skew(.28deg)}70%{clip:rect(59px,9999px,75px,0);transform:skew(.13deg)}75%{clip:rect(2px,9999px,97px,0);transform:skew(.87deg)}80%{clip:rect(43px,9999px,24px,0);transform:skew(.09deg)}85%{clip:rect(88px,9999px,97px,0);transform:skew(.29deg)}90%{clip:rect(46px,9999px,39px,0);transform:skew(.64deg)}95%{clip:rect(94px,9999px,63px,0);transform:skew(.15deg)}100%{clip:rect(1px,9999px,12px,0);transform:skew(.44deg)}}@keyframes mgs{0%{transform:skew(-1deg)}10%{transform:skew(3deg)}20%{transform:skew(5deg)}30%{transform:skew(-1deg)}40%{transform:skew(-1deg)}50%{transform:skew(-4deg)}60%{transform:skew(1deg)}70%{transform:skew(-3deg)}80%{transform:skew(-1deg)}90%{transform:skew(-1deg)}100%{transform:skew(1deg)}}</style><div class=\"mEG\" data-text=\" ̶̯̲͛͆ͅ他 ̸̘͇̯̣̑̃͛来 ̶̲͐̋͘͜͝了 ̵͙͇̲̦̎̐͐̋̕͜\"> 他 来 了 </div>"
   }
