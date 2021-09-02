@@ -13,6 +13,21 @@ interface LangDescription {
 }
 
 const GAMEPATH = path.join(process.env.COOKIECLICKER_PATH, 'resources/app/src/index.html');
+const SOURCES = [
+  'resources/app/src/main.js',
+  'resources/app/src/minigameGarden.js',
+  'resources/app/src/minigameGrimoire.js',
+  'resources/app/src/minigameMarket.js',
+  'resources/app/src/minigamePantheon.js',
+  'resources/app/steam/steam.js',
+].map(s => path.join(process.env.COOKIECLICKER_PATH, s));
+
+// read game version
+const version = fs.readFileSync(GAMEPATH, { encoding: 'utf-8' }).match(/var VERSION=(.*);/);
+fs.writeFileSync(
+  path.resolve(__dirname, '../resources/metadata.json'),
+  JSON.stringify({ version: version ? parseFloat(version[1]) : 2.031 }, null, 2)
+);
 
 const langData: { [lang: string]: LangFile } = {};
 
@@ -51,15 +66,31 @@ for (var key in langData['ZH-CN']) {
   }
 }
 
-// read game version
-const version = fs.readFileSync(GAMEPATH, { encoding: 'utf-8' }).match(/var VERSION=(.*);/);
-fs.writeFileSync(
-  path.resolve(__dirname, '../resources/metadata.json'),
-  JSON.stringify({ version: version ? parseFloat(version[1]) : 2.031 }, null, 2)
-);
+// extract plain text in sources
+const plains: string[] = [];
+for (const source of SOURCES) {
+  const matches = fs
+    .readFileSync(source, { encoding: 'utf-8' })
+    .match(/loc\("((?:[^"]|(?:\\\"))*)"\)/g);
+
+  const loc = (s: string) => plains.push(s);
+
+  for (const match of matches) {
+    eval(match);
+  }
+}
+
+for (const text of plains) {
+  if (!LANG_DESC[text]) {
+    LANG_DESC[text] = {
+      english: text,
+      chinese: '[CN:MISSING]',
+    };
+  }
+}
 
 (async () => {
-  // puppeteer out achievements and upgrades
+  // puppeteer out runtime strings
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.goto(`file://${GAMEPATH}`);

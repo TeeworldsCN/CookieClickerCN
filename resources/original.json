@@ -11589,6 +11589,70 @@
     "english": "Liquid assets",
     "chinese": "流动资产"
   },
+  "There are no heralds at the moment. Please consider <b style=\"color:#bc3aff;\">donating to our Patreon</b>!": {
+    "english": "There are no heralds at the moment. Please consider <b style=\"color:#bc3aff;\">donating to our Patreon</b>!",
+    "chinese": "[CN:MISSING]"
+  },
+  "Trigger finger [ascension type]": {
+    "english": "Trigger finger [ascension type]",
+    "chinese": "[CN:MISSING]"
+  },
+  "In this run, scrolling your mouse wheel on the cookie counts as clicking it. Some upgrades introduce new clicking behaviors.<br>No clicking achievements may be obtained in this mode.<div class=\"line\"></div>Reaching 1 quadrillion cookies in this mode unlocks a special heavenly upgrade.": {
+    "english": "In this run, scrolling your mouse wheel on the cookie counts as clicking it. Some upgrades introduce new clicking behaviors.<br>No clicking achievements may be obtained in this mode.<div class=\"line\"></div>Reaching 1 quadrillion cookies in this mode unlocks a special heavenly upgrade.",
+    "chinese": "[CN:MISSING]"
+  },
+  "Wub": {
+    "english": "Wub",
+    "chinese": "[CN:MISSING]"
+  },
+  "Fullscreen": {
+    "english": "Fullscreen",
+    "chinese": "[CN:MISSING]"
+  },
+  "A local news station runs a 10-minute segment about your cookies. Success!<br><span style=\"font-size:50%;\">(you win a cookie)</span>": {
+    "english": "A local news station runs a 10-minute segment about your cookies. Success!<br><span style=\"font-size:50%;\">(you win a cookie)</span>",
+    "chinese": "[CN:MISSING]"
+  },
+  "Squish the news ticker flat, then click on it.": {
+    "english": "Squish the news ticker flat, then click on it.",
+    "chinese": "[CN:MISSING]"
+  },
+  "Cloud saving": {
+    "english": "Cloud saving",
+    "chinese": "[CN:MISSING]"
+  },
+  "allow use of Steam Cloud for save backups": {
+    "english": "allow use of Steam Cloud for save backups",
+    "chinese": "[CN:MISSING]"
+  },
+  "Purge Cloud": {
+    "english": "Purge Cloud",
+    "chinese": "[CN:MISSING]"
+  },
+  "Current Cloud use:": {
+    "english": "Current Cloud use:",
+    "chinese": "[CN:MISSING]"
+  },
+  "No Cloud access at the moment.": {
+    "english": "No Cloud access at the moment.",
+    "chinese": "[CN:MISSING]"
+  },
+  "Dependencies": {
+    "english": "Dependencies",
+    "chinese": "[CN:MISSING]"
+  },
+  "Select a mod.": {
+    "english": "Select a mod.",
+    "chinese": "[CN:MISSING]"
+  },
+  "Restart with new changes": {
+    "english": "Restart with new changes",
+    "chinese": "[CN:MISSING]"
+  },
+  "Cloud purged.": {
+    "english": "Cloud purged.",
+    "chinese": "[CN:MISSING]"
+  },
   "[Achievement quote 26]Sacrifice": {
     "english": "Easy come, easy go.",
     "chinese": "[CN:MISSING]"

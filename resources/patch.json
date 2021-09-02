@@ -52,6 +52,79 @@
     "english": "You know the drill",
     "chinese": "你知道该怎么做"
   },
+  "Fullscreen": {
+    "english": "Fullscreen",
+    "chinese": "全屏模式"
+  },
+  "Music in background": {
+    "english": "Music in background",
+    "chinese": "后台时保留音乐"
+  },
+  "No Cloud access at the moment.": {
+    "english": "No Cloud access at the moment.",
+    "chinese": "目前无法访问云存档"
+  },
+  "There are no heralds at the moment. Please consider <b style=\"color:#bc3aff;\">donating to our Patreon</b>!": {
+    "english": "There are no heralds at the moment. Please consider <b style=\"color:#bc3aff;\">donating to our Patreon</b>!",
+    "chinese": "当前没有使者。请考虑<b style=\"color:#bc3aff;\">向我们的 Patreon 捐赠</b>！!"
+  },
+  "A local news station runs a 10-minute segment about your cookies. Success!<br><span style=\"font-size:50%;\">(you win a cookie)</span>": {
+    "english": "A local news station runs a 10-minute segment about your cookies. Success!<br><span style=\"font-size:50%;\">(you win a cookie)</span>",
+    "chinese": "一家本地新闻台对你做的饼干进行了10分钟的报道。收效卓著！<br><span style=\"font-size:50%;\">（你赢得一块饼干）</span>"
+  },
+  "Cloud saving": {
+    "english": "Cloud saving",
+    "chinese": "云存档"
+  },
+  "allow use of Steam Cloud for save backups": {
+    "english": "allow use of Steam Cloud for save backups",
+    "chinese": "允许使用Steam云存档服务备份存档"
+  },
+  "Purge Cloud": {
+    "english": "Purge Cloud",
+    "chinese": "清除云存档"
+  },
+  "Current Cloud use:": {
+    "english": "Current Cloud use:",
+    "chinese": "当前云存档用量："
+  },
+  "Dependencies": {
+    "english": "Dependencies",
+    "chinese": "依赖"
+  },
+  "Select a mod.": {
+    "english": "Select a mod.",
+    "chinese": "请选择一个模组。"
+  },
+  "Restart with new changes": {
+    "english": "Restart with new changes",
+    "chinese": "重启游戏以应用更改"
+  },
+  "Cloud purged.": {
+    "english": "Cloud purged.",
+    "chinese": "云存档已清除"
+  },
+  "[Achievement quote 26]Sacrifice": {
+    "english": "Easy come, easy go.",
+    "chinese": "来也匆匆，去也匆匆。"
+  },
+  "[Achievement quote 27]Oblivion": {
+    "english": "Back to square one.",
+    "chinese": "回归原点。"
+  },
+  "[Achievement quote 28]From scratch": {
+    "english": "It's been fun.",
+    "chinese": "美好的是过程。"
+  },
+  "[Achievement name 39]Just wrong": {
+    "comment": "这样总比'不对的'强",
+    "english": "Just wrong",
+    "chinese": "不孝"
+  },
+  "[Achievement quote 39]Just wrong": {
+    "english": "I thought you loved me.",
+    "chinese": "我以为你是爱我的。"
+  },
   "translators": [
     "TsFreddie",
     "Put your name above in a PR alongwith your translation if you want to be credited"
