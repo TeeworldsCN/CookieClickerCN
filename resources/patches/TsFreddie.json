@@ -198,9 +198,160 @@
     "chinese": "如果想要闻到星云的香草味，你需要摘下你的宇航头盔。<br>（注：请不要摘下宇航头盔）"
   },
   "[Upgrade quote 20]Wormholes": {
-    "comment": "TODO: 继续添加升级引文",
     "english": "By using these as shortcuts, your ships can travel much faster.",
     "chinese": "这些捷径可给你的飞船航行减少了不少行程。"
+  },
+  "[Upgrade quote 21]Frequent flyer": {
+    "english": "Come back soon!",
+    "chinese": "早点回来！"
+  },
+  "[Upgrade quote 22]Antimony": {
+    "english": "Actually worth a lot of mony.",
+    "chinese": "不值一锑。"
+  },
+  "[Upgrade quote 23]Essence of dough": {
+    "english": "Extracted through the 5 ancient steps of alchemical baking.",
+    "chinese": "经过五个远古炼金烘焙步骤提取而成。"
+  },
+  "[Upgrade quote 24]True chocolate": {
+    "english": "The purest form of cacao.",
+    "chinese": "纯度最高的可可。"
+  },
+  "[Upgrade quote 25]Ancient tablet": {
+    "english": "A strange slab of peanut brittle, holding an ancient cookie recipe. Neat!",
+    "chinese": "一块奇怪的花生脆片，里面装着古老的曲奇食谱。不错！"
+  },
+  "[Upgrade quote 26]Insane oatling workers": {
+    "english": "ARISE, MY MINIONS!",
+    "chinese": "现身吧！我的军团！"
+  },
+  "[Upgrade quote 27]Soul bond": {
+    "english": "So I just sign up and get more cookies? Sure, whatever!",
+    "chinese": "所以我只要签了这张纸就能拥有更多的饼干？好啊，何乐不为？"
+  },
+  "[Upgrade quote 28]Flux capacitors": {
+    "english": "Bake to the future.",
+    "chinese": "肥到胃来。"
+  },
+  "[Upgrade quote 29]Time paradox resolver": {
+    "english": "No more fooling around with your own grandmother!",
+    "chinese": "别再折腾你的亲奶奶了！"
+  },
+  "[Upgrade quote 30]Quantum conundrum": {
+    "english": "There is only one constant, and that is universal uncertainty.<br>Or is it?",
+    "chinese": "世界上只有一个真正的常量，那就是普遍的不确定性。<br>但是真的是这样吗？"
+  },
+  "[Upgrade quote 31]Kitten helpers": {
+    "english": "meow may I help you",
+    "chinese": "有什么我可以帮到你的喵？"
+  },
+  "[Upgrade quote 32]Kitten workers": {
+    "english": "meow meow meow meow",
+    "chinese": "喵~喵~喵~喵~"
+  },
+  "[Upgrade quote 33]Plain cookies": {
+    "english": "We all gotta start somewhere.",
+    "chinese": "万事开头难，但是总得有个开头吧。"
+  },
+  "[Upgrade quote 34]Sugar cookies": {
+    "english": "Tasty, if a little unimaginative.",
+    "chinese": "不管有没有创意，好吃就行。"
+  },
+  "[Upgrade quote 35]Oatmeal raisin cookies": {
+    "comment": "没什么好的双关方法，直接换了个句子。",
+    "english": "No raisin to hate these.",
+    "chinese": "吃葡萄干真不用吐葡萄皮。"
+  },
+  "[Upgrade quote 36]Peanut butter cookies": {
+    "english": "Get yourself some jam cookies!",
+    "chinese": "拿点果酱饼干走吧！"
+  },
+  "[Upgrade quote 37]Coconut cookies": {
+    "english": "Flaky, but not unreliable. Some people go crazy for these.",
+    "chinese": "拿起来有点稀碎，但是又不会直接散架。有的人喜欢这种喜欢到死。"
+  },
+  "[Upgrade quote 38]White chocolate cookies": {
+    "english": "I know what you'll say. It's just cocoa butter! It's not real chocolate!<br>Oh please.",
+    "chinese": "我知道你要说什么。不就是可可脂吗！又不是真的巧克力！<br>快得了吧。"
+  },
+  "[Upgrade quote 39]Macadamia nut cookies": {
+    "english": "They're macadamn delicious!",
+    "chinese": "坚决果断的美味！"
+  },
+  "[Upgrade quote 40]Double-chip cookies": {
+    "english": "DOUBLE THE CHIPS<br>DOUBLE THE TASTY<br>(double the calories)",
+    "chinese": "双倍可可！<br>双倍享受！<br>（双倍热量）"
+  },
+  "[Upgrade quote 41]White chocolate macadamia nut cookies": {
+    "english": "Orteil's favorite.",
+    "chinese": "Orteil的最爱。"
+  },
+  "[Upgrade quote 42]All-chocolate cookies": {
+    "english": "CHOCOVERDOSE.",
+    "chinese": "巧克力过量。"
+  },
+  "[Upgrade quote 43]Quadrillion fingers": {
+    "english": "clickityclickityclickityclickityclick",
+    "chinese": "点击点击点击点击点击点击点击点击点击点击点……"
+  },
+  "[Upgrade quote 44]Prune juice": {
+    "english": "Gets me going.",
+    "chinese": "喝了会舒畅的不只是心情。"
+  },
+  "[Upgrade quote 45]Genetically-modified cookies": {
+    "english": "All-natural mutations.",
+    "chinese": "全天然变种。"
+  },
+  "[Upgrade quote 46]Radium reactors": {
+    "english": "Gives your cookies a healthy glow.",
+    "chinese": "让你的饼干闪闪发光。"
+  },
+  "[Upgrade quote 47]Ultimadrill": {
+    "english": "Pierce the heavens, etc.",
+    "chinese": "直冲云霄。"
+  },
+  "[Upgrade quote 48]Warp drive": {
+    "english": "To boldly bake.",
+    "chinese": "加速百焙！"
+  },
+  "[Upgrade quote 49]Ambrosia": {
+    "english": "Adding this to the cookie mix is sure to make them even more addictive!<br>Perhaps dangerously so.<br>Let's hope you can keep selling these legally.",
+    "chinese": "加了这个果然能让饼干更加给劲！<br>不过似乎有点太给劲了。<br>看你这饼干还能合法卖多久吧。"
+  },
+  "[Upgrade quote 50]Sanity dance": {
+    "comment": "歌词梗\"Safety Dance\"，大概没必要翻译成原意。",
+    "english": "We can change if we want to.<br>We can leave our brains behind.",
+    "chinese": "超高级的技巧。<br>用脑子跳舞。"
+  },
+  "[Upgrade quote 51]Causality enforcer": {
+    "comment": "没翻译原文，感觉这个更有意思。",
+    "english": "What happened, happened.",
+    "chinese": "种瓜得瓜，种饼干得饼干。"
+  },
+  "[Upgrade quote 52]Lucky day": {
+    "english": "Oh hey, a four-leaf penny!",
+    "chinese": "哈！一枚四叶硬币！"
+  },
+  "[Upgrade quote 53]Serendipity": {
+    "english": "What joy! Seven horseshoes!",
+    "chinese": "今天是个好日子，心想的事儿都能成！"
+  },
+  "[Upgrade quote 54]Kitten engineers": {
+    "english": "meow meow meow meow, sir",
+    "chinese": "喵喵喵喵喵，先生。"
+  },
+  "[Upgrade quote 55]Dark chocolate-coated cookies": {
+    "english": "These absorb light so well you almost need to squint to see them.",
+    "chinese": "这玩意黑得晚上用手电筒照着都可能看不见。"
+  },
+  "[Upgrade quote 56]White chocolate-coated cookies": {
+    "english": "These dazzling cookies absolutely glisten with flavor.",
+    "chinese": "这些晃眼的饼干，口味也十分闪耀。"
+  },
+  "[Upgrade quote 57]Farmer grandmas": {
+    "comment": "TODO：继续加升级引文",
+    "english": "A nice farmer to grow more cookies.",
+    "chinese": "友善的农民能种出更多的饼干。"
   },
   "[Achievement quote 26]Sacrifice": {
     "english": "Easy come, easy go.",
