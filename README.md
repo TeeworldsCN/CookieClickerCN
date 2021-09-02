@@ -24,7 +24,7 @@
 ### 大佬的方式：
 
 1. 在 `resources/patches` 目录下创建个新的 json 文件。
-2. 按照这个模式编写你的翻译
+2. 按照下面的格式编写你的翻译，`translation key`和`原文`可以参考`resources/original.json`文件。
 
 ```JSON
 {
