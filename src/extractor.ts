@@ -28,7 +28,6 @@ const ZH_LANGPATH = path.join(process.env.COOKIECLICKER_PATH, 'resources/app/src
 require(ZH_LANGPATH);
 
 const LANG_DESC: { [key: string]: LangDescription } = {};
-const LANG_DESC_PATCH: { [key: string]: LangDescription } = {};
 
 // compile language description
 for (var key in langData['EN']) {
@@ -51,6 +50,13 @@ for (var key in langData['ZH-CN']) {
     };
   }
 }
+
+// read game version
+const version = fs.readFileSync(GAMEPATH, { encoding: 'utf-8' }).match(/var VERSION=(.*);/);
+fs.writeFileSync(
+  path.resolve(__dirname, '../resources/metadata.json'),
+  JSON.stringify({ version: version ? parseFloat(version[1]) : 2.031 }, null, 2)
+);
 
 (async () => {
   // puppeteer out achievements and upgrades
@@ -97,6 +103,4 @@ for (var key in langData['ZH-CN']) {
     path.resolve(__dirname, '../resources/original.json'),
     JSON.stringify(LANG_DESC, null, 2)
   );
-
-  // check keys that needs patchs
 })();
