@@ -1,10 +1,5 @@
 {
-  "REPLACE ALL": {
-    "english": "Replacing existing translation",
-    "chinese": {
-      "老太婆": "老奶奶"
-    }
-  },
+  "author": "TsFreddie",
   "grandmapocalypse": {
     "english": "grandmapocalypse",
     "chinese": "老奶奶天启"
@@ -124,9 +119,5 @@
   "[Achievement quote 39]Just wrong": {
     "english": "I thought you loved me.",
     "chinese": "我以为你是爱我的。"
-  },
-  "translators": [
-    "TsFreddie",
-    "Put your name above in a PR alongwith your translation if you want to be credited"
-  ]
+  }
 }

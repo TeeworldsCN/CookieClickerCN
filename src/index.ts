@@ -1,6 +1,6 @@
 // script for building the translation mod
 
-import fs from 'fs';
+import fs, { realpathSync } from 'fs';
 import path from 'path';
 import _ from 'lodash';
 
@@ -11,9 +11,14 @@ const metadata = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, '../resources/metadata.json'), { encoding: 'utf-8' })
 );
 
-const patch = JSON.parse(
-  fs.readFileSync(path.resolve(__dirname, '../resources/patch.json'), { encoding: 'utf-8' })
+const replaceAll = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, '../resources/replaceAll.json'), { encoding: 'utf-8' })
 );
+
+const PATCHESPATH = path.resolve(__dirname, '../resources/patches');
+const patches = fs
+  .readdirSync(PATCHESPATH)
+  .map(file => JSON.parse(fs.readFileSync(path.join(PATCHESPATH, file), { encoding: 'utf-8' })));
 
 // build info.txt
 const time = new Date();
@@ -23,9 +28,11 @@ const date = _.padStart(time.getUTCDate().toString(), 2, '0');
 
 const translators = ['简体中文润色与补全，翻译贡献者：'];
 
-for (let i = 0; i < patch.translators.length - 1; i++) {
-  if (i === 0) translators.push(`${patch.translators[i]}`);
-  else translators.push(`、${patch.translators[i]}`);
+for (const patch of patches) {
+  if (patch?.author) {
+    if (translators.length == 1) translators.push(`${patch.author}`);
+    else translators.push(`、${patch.author}`);
+  }
 }
 translators.push(`与匿名贡献的各位。`);
 
@@ -43,11 +50,20 @@ const info: any = {
 };
 fs.writeFileSync(path.join(BUILD_PATH, 'info.txt'), JSON.stringify(info, null, 2));
 
-const lang: { [key: string]: string | string[] } = {};
 // build lang.js
-for (let key in patch) {
-  if (!patch[key].chinese) continue; // ignore metadatas and extra stuff
-  lang[key] = patch[key].chinese;
+const lang: { [key: string]: string | string[] } & { 'REPLACE ALL'?: { [key: string]: string } } =
+  {};
+
+for (let key in replaceAll) {
+  if (lang['REPLACE ALL'] == null) lang['REPLACE ALL'] = {};
+  lang['REPLACE ALL'][key] = replaceAll[key].replacement;
+}
+
+for (const patch of patches) {
+  for (let key in patch) {
+    if (!patch[key].chinese || patch[key].deprecated) continue; // ignore metadatas and deprecated
+    lang[key] = patch[key].chinese;
+  }
 }
 
 fs.writeFileSync(path.join(BUILD_PATH, 'lang.js'), `ModLanguage('ZH-CN',${JSON.stringify(lang)});`);
