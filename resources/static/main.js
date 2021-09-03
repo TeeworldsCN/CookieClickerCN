@@ -78,10 +78,9 @@ const ModGameUnit = MOD => {
   };
 };
 
-// 替换花园小游戏的提示图片（因为里面有文本）
 // 顺带修复花园小游戏Tooltip重复请求资源的BUG
-const ModGardenTip = MOD => {
-  const HackGarden = () => {
+const FixGardenTooltip = MOD => {
+  const FixGarden = () => {
     if (Game.isMinigameReady(Game.Objects['Farm'])) {
       // 插入固定的CSS定义
       l('gardenBG').insertAdjacentHTML(
@@ -102,8 +101,9 @@ const ModGardenTip = MOD => {
         ].join('')
       );
 
-      // 修复问号的资源加载
       let M = Game.Objects['Farm'].minigame;
+
+      // 修复问号的资源加载
       let oldPlantDesc = M.getPlantDesc;
       M.getPlantDesc = me => {
         return oldPlantDesc(me).replaceAll(
@@ -147,10 +147,21 @@ const ModGardenTip = MOD => {
               'class="modAssetGardenPlantsIcon" style="'
             );
       };
+    } else {
+      setTimeout(FixGarden, 500);
+    }
+  };
+  FixGarden();
+};
 
+// 替换花园小游戏的提示图片（因为里面有文本）
+const ModGardenTip = MOD => {
+  const HackGarden = () => {
+    if (Game.isMinigameReady(Game.Objects['Farm'])) {
       // 替换带文本的图片
-      var oldDescFunc = M.tools.info.descFunc;
-      Game.Objects['Farm'].minigame.tools.info.descFunc = () => {
+      let M = Game.Objects['Farm'].minigame;
+      let oldDescFunc = M.tools.info.descFunc;
+      M.tools.info.descFunc = () => {
         return oldDescFunc().replace(
           '<img src="img/gardenTip.png" style="float:right;margin:0px 0px 8px 8px;"/>',
           '<div class="modAssetGardenTip"></div>'
@@ -239,7 +250,10 @@ const ModMenu = MOD => {
 Game.registerMod('TWCNClickerCN', {
   init: function () {
     let lang = localStorageGet('CookieClickerLang');
+    
+    // 修复官方游戏的一些BUG
     FixParseLoc(this);
+    FixGardenTooltip(this);
 
     // 只有语言是中文的时候启用模组
     if (lang == 'ZH-CN') {
