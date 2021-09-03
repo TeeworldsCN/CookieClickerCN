@@ -79,22 +79,88 @@ const ModGameUnit = MOD => {
 };
 
 // 替换花园小游戏的提示图片（因为里面有文本）
+// 顺带修复花园小游戏Tooltip重复请求资源的BUG
 const ModGardenTip = MOD => {
-  const hackMinigame = () => {
+  const HackGarden = () => {
     if (Game.isMinigameReady(Game.Objects['Farm'])) {
-      console.log('[CCCN] Garden minigame loaded, replacing image.');
-      var oldDescFunc = Game.Objects['Farm'].minigame.tools.info.descFunc;
+      // 插入固定的CSS定义
+      l('gardenBG').insertAdjacentHTML(
+        'beforebegin',
+        [
+          '<style>',
+          '.modAssetGardenSeedTinyLocked{transform:scale(0.5,0.5);margin:-20px -16px;display:inline-block;width:48px;height:48px;background:url(img/icons.png?v=' +
+            Game.version +
+            ');}',
+          '.modAssetGardenPlantsIcon{background-image:url(img/gardenPlants.png?v=' +
+            Game.version +
+            ') !important;}',
+          '.modAssetTurnInto{background:url(img/turnInto.png);}',
+          '.modAssetGardenTip{background-image:url(' +
+            MOD.dir +
+            '/gardenTip.png);background-size:100%;float:right;margin:0px 0px 8px 8px;width:120px;height:153px;}',
+          '</style>',
+        ].join('')
+      );
+
+      // 修复问号的资源加载
+      let M = Game.Objects['Farm'].minigame;
+      let oldPlantDesc = M.getPlantDesc;
+      M.getPlantDesc = me => {
+        return oldPlantDesc(me).replaceAll(
+          'gardenSeedTiny" style="background-image:url(img/icons.png?v=' + Game.version + ');',
+          'modAssetGardenSeedTinyLocked" style="'
+        );
+      };
+
+      // 修复Tooltip图标的资源加载
+      const TooltipNeededFix = ['toolTooltip', 'soilTooltip', 'seedTooltip'];
+      for (const t of TooltipNeededFix) {
+        let oldTooltip = M[t];
+        M[t] = id => {
+          return () => {
+            let str = oldTooltip(id)().replaceAll(
+              'icon" style="background:url(img/gardenPlants.png?v=' + Game.version + ');',
+              'icon modAssetGardenPlantsIcon" style="'
+            );
+            if (t === 'seedTooltip') {
+              str = str.replaceAll(
+                'style="background:url(img/turnInto.png);',
+                'class="modAssetTurnInto" style="'
+              );
+            }
+            return str;
+          };
+        };
+      }
+
+      // 修复TileTooltip的图标资源加载
+      let oldTileTooltip = M.tileTooltip;
+      M.tileTooltip = (x, y) => {
+        return () =>
+          oldTileTooltip(x, y)()
+            .replaceAll(
+              'icon" style="background:url(img/gardenPlants.png?v=' + Game.version + ');',
+              'icon modAssetGardenPlantsIcon" style="'
+            )
+            .replaceAll(
+              'style="background:url(img/gardenPlants.png?v=' + Game.version + ');',
+              'class="modAssetGardenPlantsIcon" style="'
+            );
+      };
+
+      // 替换带文本的图片
+      var oldDescFunc = M.tools.info.descFunc;
       Game.Objects['Farm'].minigame.tools.info.descFunc = () => {
         return oldDescFunc().replace(
-          'src="img/gardenTip.png"',
-          'src="' + MOD.dir + '/gardenTip.png" width="120"'
+          '<img src="img/gardenTip.png" style="float:right;margin:0px 0px 8px 8px;"/>',
+          '<div class="modAssetGardenTip"></div>'
         );
       };
     } else {
-      setTimeout(hackMinigame, 500);
+      setTimeout(HackGarden, 500);
     }
   };
-  hackMinigame();
+  HackGarden();
 };
 
 // 修复parseLoc
