@@ -393,7 +393,7 @@
   },
   "[Upgrade quote 60]Cosmic grandmas": {
     "english": "A nice thing to... uh... cookies.",
-    "chinese": "善良的存在可以、额……，饼干。"
+    "chinese": "善良的存在可以、呃……，饼干。"
   },
   "[Upgrade quote 61]Transmuted grandmas": {
     "english": "A nice golden grandma to convert into more cookies.",
@@ -459,6 +459,166 @@
   "[Upgrade quote 75]Plastic mouse": {
     "english": "Slightly squeaky.",
     "chinese": "有点吱吱喳喳的。"
+  },
+  "[Upgrade quote 76]Iron mouse": {
+    "english": "Click like it's 1349!",
+    "chinese": "狂点出重金属的旋律吧！"
+  },
+  "[Upgrade quote 77]Titanium mouse": {
+    "english": "Heavy, but powerful.",
+    "chinese": "沉重而有力。我是在说点击时发出的声音。"
+  },
+  "[Upgrade quote 78]Adamantium mouse": {
+    "english": "You could cut diamond with these.",
+    "chinese": "这玩意连钻石都能轻松切开。"
+  },
+  "[Upgrade quote 79]Ultrascience": {
+    "english": "YEAH, SCIENCE!",
+    "chinese": "<b>耶！这就是科学！</b>"
+  },
+  "[Upgrade quote 80]Eclipse cookies": {
+    "english": "Look to the cookie.",
+    "chinese": "请不要用肉眼观看这块饼干。"
+  },
+  "[Upgrade quote 81]Zebra cookies": {
+    "english": "...",
+    "chinese": "……"
+  },
+  "[Upgrade quote 82]Quintillion fingers": {
+    "english": "man, just go click click click click click, it's real easy, man.",
+    "chinese": "讲道理，不就是点点点点点点点点点吗？小菜一碟啊。"
+  },
+  "[Upgrade quote 83]Gold hoard": {
+    "english": "That's entirely too many.",
+    "chinese": "这实在是太多了。"
+  },
+  "[Upgrade quote 84]Elder Covenant": {
+    "english": "This is a complicated ritual involving silly, inconsequential trivialities such as cursed laxatives, century-old cacao, and an infant.<br>Don't question it.",
+    "chinese": "这个复杂的祭祀仪式需要用一些滑稽又没用的小玩意，比如被诅咒的泻药、百年的可可豆和一个婴儿。<br>别问我，我也不懂。"
+  },
+  "[Upgrade quote 85]Revoke Elder Covenant": {
+    "english": "we<br>rise<br>again",
+    "chinese": "我们<br>再次<br>崛起"
+  },
+  "[Upgrade quote 86]Get lucky": {
+    "english": "You've been up all night, haven't you?",
+    "chinese": "你是不是一整晚没睡啊。"
+  },
+  "[Upgrade quote 87]Sacrificial rolling pins": {
+    "english": "These are mostly just for spreading the anti-aging cream.<br>(And accessorily, shortening the chicken's suffering.)",
+    "chinese": "这些其实只是用来涂抹抗老化面霜用的。<br>（顺带能快速结束祭品鸡的痛苦罢了。）"
+  },
+  "[Upgrade quote 88]Snickerdoodles": {
+    "english": "True to their name.",
+    "chinese": "名副其实。"
+  },
+  "[Upgrade quote 89]Stroopwafels": {
+    "english": "If it ain't dutch, it ain't much.",
+    "chinese": "不是河南产的。不过其实也不是荷兰产的，毕竟是我们在这烤的。"
+  },
+  "[Upgrade name 90]Macaroons": {
+    "english": "Macaroons",
+    "chinese": "椰蓉球"
+  },
+  "[Upgrade quote 90]Macaroons": {
+    "english": "Not to be confused with macarons.<br>These have coconut, okay?",
+    "chinese": "别称马卡蓉，可别和杏仁饼马卡龙搞混了。<br>这种是用椰蓉做的好伐？"
+  },
+  "[Upgrade quote 91]Neuromancy": {
+    "english": "Can also come in handy to unsee things that can't be unseen.",
+    "chinese": "在想要忘记看过不该看的东西的时候也挺有用的。"
+  },
+  "[Upgrade quote 92]Empire biscuits": {
+    "english": "For your growing cookie empire, of course!",
+    "chinese": "小人不才，这是臣为陛下发扬饼干帝国的野心而准备的！"
+  },
+  "[Upgrade quote 93]British tea biscuits": {
+    "english": "Quite.",
+    "chinese": "茶与牛奶才是绝配。"
+  },
+  "[Upgrade quote 94]Chocolate british tea biscuits": {
+    "english": "Yes, quite.",
+    "chinese": "但是巧克力牛奶是禁忌！不过巧克力口味的甜点就可以。"
+  },
+  "[Upgrade quote 96]Round chocolate british tea biscuits": {
+    "english": "Yes, quite riveting indeed.",
+    "chinese": "这形状很容易掉进茶杯里，请不要把饼干架在茶杯沿上。"
+  },
+  "[Upgrade quote 97]Round british tea biscuits with heart motif": {
+    "english": "Yes, quite riveting indeed, old chap.",
+    "chinese": "添加个图案并不能解决很容易掉进茶杯里的问题。"
+  },
+  "[Upgrade quote 98]Round chocolate british tea biscuits with heart motif": {
+    "english": "I like cookies.",
+    "chinese": "我觉得我还是更喜欢饼干。"
+  },
+  "[Upgrade quote 99]Sugar bosons": {
+    "english": "Sweet firm bosons.",
+    "chinese": "甜美酥脆的玻色子。<br>(绝对不是巧克力豆。)"
+  },
+  "[Upgrade quote 100]String theory": {
+    "english": "Reveals new insight about the true meaning of baking cookies (and, as a bonus, the structure of the universe).",
+    "chinese": "科学终于可以解释烘焙饼干的真正意义了。（不过也顺带解释了宇宙的结构）"
+  },
+  "[Upgrade quote 101]Large macaron collider": {
+    "english": "How singular!",
+    "chinese": "配备了超级饼干同步加速器。"
+  },
+  "[Upgrade quote 102]Big bang bake": {
+    "english": "And that's how it all began.",
+    "chinese": "一切的一切都是从这一刻开始的。"
+  },
+  "[Upgrade quote 103]Antigrandmas": {
+    "english": "A mean antigrandma to vomit more cookies.",
+    "chinese": "吝啬的老奶奶可以吐出更多的饼干。"
+  },
+  "[Upgrade quote 104]Madeleines": {
+    "english": "Unforgettable!",
+    "chinese": "意犹未尽！"
+  },
+  "[Upgrade quote 105]Palmiers": {
+    "english": "Palmier than you!",
+    "chinese": "比你更酥！"
+  },
+  "[Upgrade quote 106]Palets": {
+    "english": "You could probably play hockey with these.<br>I mean, you're welcome to try.",
+    "chinese": "这东西大概能当冰球打。<br>我是说，你试试就知道了。"
+  },
+  "[Upgrade quote 107]Sabl&eacute;s": {
+    "english": "The name implies they're made of sand. But you know better, don't you?",
+    "chinese": "虽然表面上说是酥饼。但你比我更清楚实际上是什么材料做的。"
+  },
+  "[Upgrade quote 108]Kitten overseers": {
+    "english": "my purrpose is to serve you, sir",
+    "chinese": "人各有职，切不可猫相。"
+  },
+  "[Upgrade quote 109]Sextillion fingers": {
+    "english": "sometimes<br>things just<br>click",
+    "chinese": "有的时候<br>点击欲望<br>一触即发"
+  },
+  "[Upgrade quote 110]Double-thick glasses": {
+    "english": "Oh... so THAT's what I've been baking.",
+    "chinese": "喔……所以我原来一直在烤的是<b>这玩意</b>。"
+  },
+  "[Upgrade quote 111]Gingerbread scarecrows": {
+    "english": "Staring at your crops with mischievous glee.",
+    "chinese": "始终带着调皮的笑容盯着你的田地。"
+  },
+  "[Upgrade quote 112]Recombobulators": {
+    "english": "A major part of cookie recombobulation.",
+    "chinese": "饼干重组的重要一环。"
+  },
+  "[Upgrade quote 113]H-bomb mining": {
+    "english": "Questionable efficiency, but spectacular nonetheless.",
+    "chinese": "效率实属可疑，但是实在是太炫酷了。"
+  },
+  "[Upgrade quote 114]Chocolate monoliths": {
+    "english": "My god. It's full of chocolate bars.",
+    "chinese": "天哪。它何止是一级棒，简直是巧克力棒。"
+  },
+  "[Upgrade quote 115]Aqua crustulae": {
+    "english": "Careful with the dosing - one drop too much and you get muffins.<br>And nobody likes muffins.",
+    "chinese": "称重的时候要小心——多掺了一滴水就变成了松饼。<br>而且没人喜欢松饼。"
   },
   "[Achievement quote 26]Sacrifice": {
     "english": "Easy come, easy go.",
@@ -543,7 +703,7 @@
   },
   "[Achievement quote 161]Dematerialize": {
     "english": "Presto!<br>...where'd the cookies go?",
-    "chinese": "额。。。饼干都去哪了？"
+    "chinese": "呃。。。饼干都去哪了？"
   },
   "[Achievement quote 162]Nil zero zilch": {
     "english": "To summarize : really not very much at all.",
