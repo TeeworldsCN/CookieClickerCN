@@ -1,5 +1,9 @@
 {
   "author": "TsFreddie",
+  "[Tag]Cookie": {
+    "english": "Cookie",
+    "chinese": "饼干"
+  },
   "%1 minute": {
     "comment": "很多地方没有秒就很奇怪：“每 1 分 更新一次”，不过个别情况可能会有 1分钟30秒 这种奇葩。",
     "english": ["%1 minute", "%1 minutes"],
@@ -198,7 +202,7 @@
   },
   "[Upgrade quote 12]Cookie trees": {
     "english": "A relative of the breadfruit.",
-    "chinese": "和面包果是一个纲的。"
+    "chinese": "和面包果是一家的。"
   },
   "[Upgrade quote 13]Sturdier conveyor belts": {
     "english": "You're going places.",
@@ -250,7 +254,7 @@
   },
   "[Upgrade quote 25]Ancient tablet": {
     "english": "A strange slab of peanut brittle, holding an ancient cookie recipe. Neat!",
-    "chinese": "一块奇怪的花生脆片，里面装着古老的曲奇食谱。不错！"
+    "chinese": "一块奇怪的花生脆片，里面装着古老的饼干食谱。不错！"
   },
   "[Upgrade quote 26]Insane oatling workers": {
     "english": "ARISE, MY MINIONS!",
@@ -558,7 +562,7 @@
   },
   "[Upgrade quote 100]String theory": {
     "english": "Reveals new insight about the true meaning of baking cookies (and, as a bonus, the structure of the universe).",
-    "chinese": "科学终于可以解释烘焙饼干的真正意义了。（不过也顺带解释了宇宙的结构）"
+    "chinese": "科学终于可以解释烘焙饼干的真正意义了。<br>（不过也顺带解释了宇宙的结构）"
   },
   "[Upgrade quote 101]Large macaron collider": {
     "english": "How singular!",
