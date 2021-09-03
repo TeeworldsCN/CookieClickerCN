@@ -1,0 +1,284 @@
+{
+  "comment": "这个文件是想把词条的空格规范统一，更贴近中文习惯。如果有要修正的文本，别忘了在这里deprecate掉。",
+  "conventions": "名词两边无空格，数字两边有空格。若一个参数既可以是名词也可以是数字，按数字算。",
+  "Every %1 current players on Steam generates <b>1 herald</b>, up to %2 heralds.<br>Each herald gives everyone +1% CpS.": {
+    "english": "Every %1 current players on Steam generates <b>1 herald</b>, up to %2 heralds.<br>Each herald gives everyone +1% CpS.",
+    "chinese": "Steam上的每%1个当前玩家生成<b>1个先驱者</b>，最多%2个先驱者。<br>每个先驱者给每个人+1%的CpS。"
+  },
+  "You found %1!": {
+    "comment": "驯鹿名",
+    "english": "You found %1!",
+    "chinese": "你发现了%1！"
+  },
+  "You also found <b>%1</b>!": {
+    "comment": "特殊饼干名",
+    "english": "You also found <b>%1</b>!",
+    "chinese": "你还发现了<b>%1</b>！"
+  },
+  "You are also rewarded with %1!": {
+    "comment": "升级名",
+    "english": "You are also rewarded with %1!",
+    "chinese": "作为奖励，你还将得到%1！"
+  },
+  "You are granted %1.": {
+    "comment": "圣诞老人的XX",
+    "english": "You are granted %1.",
+    "chinese": "你得到了%1。"
+  },
+  "Train %1": {
+    "comment": "训龙",
+    "english": "Train %1",
+    "chinese": "训练%1"
+  },
+  "The cost of switching your aura is <b>%1</b>.<br>This will affect your CpS!": {
+    "comment": "X个X，额外添加了空格",
+    "english": "The cost of switching your aura is <b>%1</b>.<br>This will affect your CpS!",
+    "chinese": "你需要消耗 <b>%1</b> 才能切换光环。<br>这会影响你的每秒饼干产量！"
+  },
+  "You've been on this run for <b>%1</b>.": {
+    "english": "You've been on this run for <b>%1</b>.",
+    "chinese": "你这轮游戏的时长为 <b>%1</b>。"
+  },
+  "%1 to vault.": {
+    "english": "%1 to vault.",
+    "chinese": "按 %1 放入保险库。"
+  },
+  "%1 to unvault.": {
+    "english": "%1 to unvault.",
+    "chinese": "按 %1 拿出保险库。"
+  },
+  "Upgrade for %1": {
+    "comment": "StockMarket里消耗指针升级什么东西，可能是错的",
+    "english": "Upgrade for %1",
+    "chinese": "消耗 %1 进行升级"
+  },
+  "owned: %1": {
+    "english": "owned: %1",
+    "chinese": "已拥有：%1"
+  },
+  "free: %1!": {
+    "english": "free: %1!",
+    "chinese": "免费：%1！"
+  },
+  "Level %1 %2": {
+    "comment": "单纯是好看点",
+    "english": "Level %1 %2",
+    "chinese": "%1 级%2"
+  },
+  "You can also press %1 to bulk-buy or sell %2 of a building at a time, or %3 for %4.": {
+    "english": "You can also press %1 to bulk-buy or sell %2 of a building at a time, or %3 for %4.",
+    "chinese": "你也可以按 %1 批量购买或出售 %2 个建筑，或按 %3 批量购买或出售 %4 个。"
+  },
+  "+%1% base CpS.": {
+    "english": "+%1% base CpS.",
+    "chinese": "+%1% 基础CpS。"
+  },
+  "%1 are <b>twice</b> as efficient.": {
+    "english": "%1 are <b>twice</b> as efficient.",
+    "chinese": "%1的生产率<b>翻倍</b>。"
+  },
+  "%1 are <b>%2%</b> more powerful.": {
+    "english": "%1 are <b>%2%</b> more powerful.",
+    "chinese": "%1增强 <b>%2%</b>。"
+  },
+  "The mouse and cursors gain <b>+%1</b> cookies for each non-cursor building owned.": {
+    "english": "The mouse and cursors gain <b>+%1</b> cookies for each non-cursor building owned.",
+    "chinese": "每拥有 1 个非指针建筑，鼠标点击和指针生产的饼干 <b>+%1</b>。"
+  },
+  "%1 gain <b>+%2%</b> CpS per %3.": {
+    "english": "%1 gain <b>+%2%</b> CpS per %3.",
+    "chinese": "每拥有 %3，%1获得 <b>+%2%</b> CpS。"
+  },
+  "Multiplies the gain from %1 by <b>%2</b>.": {
+    "english": "Multiplies the gain from %1 by <b>%2</b>.",
+    "chinese": "%1的收益乘以 <b>%2</b>。"
+  },
+  "Each %1 gains <b>+%2 base CpS per %3</b>.": {
+    "english": "Each %1 gains <b>+%2 base CpS per %3</b>.",
+    "chinese": "每个%1 <b>按照每 %3 个获得 +%2 基础CpS</b>。"
+  },
+  "You've pledged to the elders <b>%1 times</b>.": {
+    "comment": "没怎么见过中文数字，换成阿拉伯数字保持统一",
+    "english": [
+      "You've pledged to the elders <b>once</b>.",
+      "You've pledged to the elders <b>%1 times</b>."
+    ],
+    "chinese": ["你与老奶奶订立誓约 <b>1 次</b>。", "你与老奶奶订立誓约 <b>%1 次</b>。"]
+  },
+  "Golden cookies appear <b>%1%</b> more often during %2.": {
+    "english": "Golden cookies appear <b>%1%</b> more often during %2.",
+    "chinese": "黄金饼干在%2期间的出现频率增加 <b>%1%</b>。"
+  },
+  "%1 are <b>%2%</b> more efficient and <b>%3%</b> cheaper.": {
+    "english": "%1 are <b>%2%</b> more efficient and <b>%3%</b> cheaper.",
+    "chinese": "%1的效率提高 <b>%2%</b>，花费降低 <b>%3%</b>。"
+  },
+  "You've switched seasons <b>%1 times</b> this ascension.": {
+    "comment": "少个字",
+    "english": "You've switched seasons <b>%1 times</b> this ascension.",
+    "chinese": "你本次飞升切换过<b>%1 次</b>节日。"
+  },
+  "You gain another <b>+%1%</b> of your regular CpS while the game is closed, for a total of <b>%2%</b>.": {
+    "comment": "添加空格",
+    "english": "You gain another <b>+%1%</b> of your regular CpS while the game is closed, for a total of <b>%2%</b>.",
+    "chinese": "游戏关闭时，你又获得正常CpS的 <b>+%1%</b>，总计 <b>%2%</b>。"
+  },
+  "You start with <b>%1</b>.": {
+    "english": "You start with <b>%1</b>.",
+    "chinese": "为你提供 <b>%1</b> 作为初始装备。"
+  },
+  "You retain optimal cookie production while the game is closed for <b>%1 more days</b>.": {
+    "comment": "添加空格",
+    "english": "You retain optimal cookie production while the game is closed for <b>%1 more days</b>.",
+    "chinese": "你在游戏关闭后可继续保持最优饼干产量，持续时间延长 <b>%1 天</b>。"
+  },
+  "CpS x%1 for 1 hour!": {
+    "english": "CpS x%1 for 1 hour!",
+    "chinese": "CpS x %1，持续 1 小时！"
+  },
+  "Cost scales with CpS, but %1 times cheaper with a fully-trained dragon.": {
+    "english": "Cost scales with CpS, but %1 times cheaper with a fully-trained dragon.",
+    "chinese": "花费视 CpS 而定，如果有经过充分训练的龙，可以便宜 %1 倍。"
+  },
+  "Dragon harvest and Dragonflight are <b>%1% stronger</b>.": {
+    "english": "Dragon harvest and Dragonflight are <b>%1% stronger</b>.",
+    "chinese": "飞龙收获和飞龙在天的效果<b>增强 %1%</b>。"
+  },
+  "Golden and wrath cookie effect duration +%1%.": {
+    "english": "Golden and wrath cookie effect duration +%1%.",
+    "chinese": "黄金和愤怒饼干效果持续时间 +%1%。"
+  },
+  "Golden and wrath cookies appear %1% more.": {
+    "english": "Golden and wrath cookies appear %1% more.",
+    "chinese": "黄金和愤怒饼干多出现增加 1%。"
+  },
+  "Golden and wrath cookies appear %1% less.": {
+    "english": "Golden and wrath cookies appear %1% less.",
+    "chinese": "黄金和愤怒饼干多出现减少 1%。"
+  },
+  "Buildings grant -%1% CpS.": {
+    "english": "Buildings grant -%1% CpS.",
+    "chinese": "建筑补助 -%1% CpS。"
+  },
+  "Buff boosts clicks by +%1% for every building sold for %2 seconds.": {
+    "english": "Buff boosts clicks by +%1% for every building sold for %2 seconds.",
+    "chinese": "增益状态在 %2秒内每卖出一座建筑，就增加 %1% 的点击量。"
+  },
+  "CpS bonus fluctuating between %1 and %2 over time.": {
+    "english": "CpS bonus fluctuating between %1 and %2 over time.",
+    "chinese": "CpS奖励随时间在 %1 和 %2 之间波动。"
+  },
+  "Effect cycles over %1 hours.": {
+    "english": "Effect cycles over %1 hours.",
+    "chinese": "效果周期超过 %1 小时。"
+  },
+  "Switching seasons is %1% pricier.": {
+    "english": "Switching seasons is %1% pricier.",
+    "chinese": "换季价格上涨了 %1%。"
+  },
+  "Switching seasons is %1% cheaper.": {
+    "english": "Switching seasons is %1% cheaper.",
+    "chinese": "换季便宜了 %1%。"
+  },
+  "Heavenly chips have %1% less effect.": {
+    "english": "Heavenly chips have %1% less effect.",
+    "chinese": "天堂碎片的效果降低 %1%。"
+  },
+  "Buildings produce %1% more.": {
+    "english": "Buildings produce %1% more.",
+    "chinese": "建筑产量增加了 %1%。"
+  },
+  "Buildings produce %1% less.": {
+    "english": "Buildings produce %1% less.",
+    "chinese": "建筑产量减少了 %1%。"
+  },
+  "Wrinklers appear %1% faster and digest %2% more cookies.": {
+    "english": "Wrinklers appear %1% faster and digest %2% more cookies.",
+    "chinese": "饼干虫出现速度加快了 %1%，消化饼干的数量增加了 %2%。"
+  },
+  "Make <b>%1</b> just from %2.": {
+    "english": "Make <b>%1</b> just from %2.",
+    "chinese": "通过%2制作 <b>%1+</b> 块饼干。"
+  },
+  "Bake <b>%1</b> in one ascension.": {
+    "english": "Bake <b>%1</b> in one ascension.",
+    "chinese": "一次飞升烘焙 <b>%1</b> 块饼干。"
+  },
+  "Bake <b>%1</b> per second.": {
+    "english": "Bake <b>%1</b> per second.",
+    "chinese": "每秒烘焙 <b>%1</b> 块饼干。"
+  },
+  "Click on the news ticker <b>%1 times</b>.": {
+    "english": "Click on the news ticker <b>%1 times</b>.",
+    "chinese": "点击滚动新闻 <b>%1次</b>。"
+  },
+  "Own a combined <b>%1</b> %2 and %3.": {
+    "english": "Own a combined <b>%1</b> %2 and %3.",
+    "chinese": "同时拥有 <b>%1</b>个 %2和%3。"
+  },
+  "Next tick in %1.": {
+    "english": "Next tick in %1.",
+    "chinese": "距下次更新还有 %1。"
+  },
+  "%1 to harvest only mature, mortal plants.": {
+    "english": "%1 to harvest only mature, mortal plants.",
+    "chinese": "按 %1 只收获成熟的、死亡的植物。"
+  },
+  "%1 to harvest all mature plants of this type.": {
+    "english": "%1 to harvest all mature plants of this type.",
+    "chinese": "按 %1 以收获此类型的所有成熟植物。"
+  },
+  "A swarm of sugar hornets comes down on your garden, <span class=\"red\">destroying every plant as well as every seed you've unlocked</span> - leaving only a %1 seed.<br>In exchange, they will grant you <span class=\"green\">%2</span>.<br>This action is only available with a complete seed log.": {
+    "english": "A swarm of sugar hornets comes down on your garden, <span class=\"red\">destroying every plant as well as every seed you've unlocked</span> - leaving only a %1 seed.<br>In exchange, they will grant you <span class=\"green\">%2</span>.<br>This action is only available with a complete seed log.",
+    "chinese": "一群糖黄蜂来到你的花园里，<span class=\"red\">摧毁了你解锁的每一棵植物和每一颗种子</span> - 只留下 %1 颗种子。<br>作为交换，它们将给你你<span class=\"green\">%2</span>。<br>这个操作只有在完整的种子日志中才可用。"
+  },
+  "Do you REALLY want to sacrifice your garden to the sugar hornets?<br><small>You will be left with an empty plot and only the %1 seed unlocked.<br>In return, you will gain <b>%2 sugar lumps</b>.</small>": {
+    "english": "Do you REALLY want to sacrifice your garden to the sugar hornets?<br><small>You will be left with an empty plot and only the %1 seed unlocked.<br>In return, you will gain <b>%2 sugar lumps</b>.</small>",
+    "chinese": "你真的想把你的花园牺牲给糖黄蜂吗？<br><small>你将得到一块空地，只有 %1 颗种子被解锁。<br>作为回报，你将获得<b> %2 个糖块</b></small>。"
+  },
+  "You've sacrificed your garden to the sugar hornets, destroying your crops and your knowledge of seeds.<br>In the remains, you find <b>%1 sugar lumps</b>.": {
+    "english": "You've sacrificed your garden to the sugar hornets, destroying your crops and your knowledge of seeds.<br>In the remains, you find <b>%1 sugar lumps</b>.",
+    "chinese": "你为了糖蜂牺牲了自己的花园，毁坏了你的庄稼和你对种子的了解。<br>在残留物中，你发现了<b> %1 个糖块。</b>"
+  },
+  "surrounding plants (%1x%1) age %2% faster": {
+    "english": "surrounding plants (%1x%1) age %2% faster",
+    "chinese": "周围植物 (%1x%1) 老化速度加快 %2%"
+  },
+  "surrounding plants (%1x%1) age %2% slower": {
+    "english": "surrounding plants (%1x%1) age %2% slower",
+    "chinese": "周围植物 (%1x%1) 老化速度减慢 %2% "
+  },
+  "surrounding plants (%1x%1) are %2% more efficient": {
+    "english": "surrounding plants (%1x%1) are %2% more efficient",
+    "chinese": "周围植物 (%1x%1) 效率提高 %2%"
+  },
+  "surrounding plants (%1x%1) are %2% less efficient": {
+    "english": "surrounding plants (%1x%1) are %2% less efficient",
+    "chinese": "周围植物 (%1x%1) 效率降低 %2"
+  },
+  "surrounding tiles (%1x%1) develop no weeds or fungus": {
+    "english": "surrounding tiles (%1x%1) develop no weeds or fungus",
+    "chinese": "周围格子 (%1x%1) 没有出现杂草或真菌"
+  },
+
+  "explodes into up to %1 of CpS at the end of its lifecycle (max. %2% of bank)": {
+    "english": "explodes into up to %1 of CpS at the end of its lifecycle (max. %2% of bank)",
+    "chinese": "在其生命周期结束时，最多会爆发成CpS的 %1（最大为银行的 %2%）"
+  },
+  "cannot handle cold climates; %1% chance to die when frozen": {
+    "english": "cannot handle cold climates; %1% chance to die when frozen",
+    "chinese": "无法应对寒冷气候；冻结时有 %1% 的几率死亡"
+  },
+  "Soil unlocked at %1 farms.": {
+    "english": "Soil unlocked at %1 farms.",
+    "chinese": "在 %1 个农场解锁土壤。"
+  },
+  "You will be able to change your soil again in %1.": {
+    "english": "You will be able to change your soil again in %1.",
+    "chinese": "你可以在 %1 中再次更改你的土壤。"
+  },
+  "tick every %1": {
+    "english": "tick every %1",
+    "chinese": "每 %1 更新一次"
+  }
+}

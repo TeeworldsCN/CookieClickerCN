@@ -112,6 +112,28 @@
     "english": "%1 worth",
     "chinese": "相当于 %1 的产量"
   },
+  "add options on buildings like Mute": {
+    "comment": "虽然是Mute，但是指的是隐藏建筑，目前没发现音量相关的功能真的有用Mute。希望以后不会有复用。",
+    "english": "add options on buildings like Mute",
+    "chinese": "在建筑上增加选项，如：折叠"
+  },
+  "Mute": {
+    "english": "Mute",
+    "chinese": "折叠"
+  },
+  "Minimize this building": {
+    "english": "Minimize this building",
+    "chinese": "将此建筑最小化"
+  },
+  "Muted:": {
+    "comment": "形象翻译，如果以后有音量相关的复用了这个文本再考虑改成别的",
+    "english": "Muted:",
+    "chinese": "已折叠："
+  },
+  "Click to unmute": {
+    "english": "Click to unmute",
+    "chinese": "点击取消折叠"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"
@@ -179,7 +201,7 @@
   },
   "[Upgrade quote 15]Sweatshop": {
     "english": "Slackers will be terminated.",
-    "chinese": "摸鱼的都可以滚了。"
+    "chinese": "摸鱼的都可以处理掉了。"
   },
   "[Upgrade quote 16]Sugar gas": {
     "english": "A pink, volatile gas, found in the depths of some chocolate caves.",
@@ -268,7 +290,7 @@
   },
   "[Upgrade quote 37]Coconut cookies": {
     "english": "Flaky, but not unreliable. Some people go crazy for these.",
-    "chinese": "拿起来有点稀碎，但是又不会直接散架。有的人喜欢这种喜欢到死。"
+    "chinese": "拿起来就掉渣，但是又不会直接散架。有的人喜欢这种喜欢到死。"
   },
   "[Upgrade quote 38]White chocolate cookies": {
     "english": "I know what you'll say. It's just cocoa butter! It's not real chocolate!<br>Oh please.",
@@ -280,7 +302,7 @@
   },
   "[Upgrade quote 40]Double-chip cookies": {
     "english": "DOUBLE THE CHIPS<br>DOUBLE THE TASTY<br>(double the calories)",
-    "chinese": "双倍可可！<br>双倍享受！<br>（双倍热量）"
+    "chinese": "<b>双倍可可！</b><br><b>双倍享受！</b><br>（双倍卡路里）"
   },
   "[Upgrade quote 41]White chocolate macadamia nut cookies": {
     "english": "Orteil's favorite.",
