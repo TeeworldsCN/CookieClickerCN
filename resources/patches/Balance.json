@@ -1,0 +1,31 @@
+{
+  "comment": "这个文件是为了更正和区分银行（建筑）和银行（饼干数量）。将饼干数量改为“饼干余额”来更直观地表达数据。",
+  "%1% of bank": {
+    "english": "%1% of bank",
+    "chinese": "饼干余额的 %1% "
+  },
+  "Cookies in bank:": {
+    "english": "Cookies in bank:",
+    "chinese": "当前饼干余额："
+  },
+  "You gain <b>one hour</b> of your CpS (capped at double your bank).": {
+    "english": "You gain <b>one hour</b> of your CpS (capped at double your bank).",
+    "chinese": "你获得相当于你<b>一小时</b>CpS的饼干（不超过你饼干余额的两倍）。"
+  },
+  "Unlocks <b>extra price information</b>.<br>Each displayed cost now specifies how long it'll take you to afford it, and how much of your bank it represents.": {
+    "english": "Unlocks <b>extra price information</b>.<br>Each displayed cost now specifies how long it'll take you to afford it, and how much of your bank it represents.",
+    "chinese": "解锁<b>额外价格信息</b>。<br>价格旁边会注明你需要多久才能买得起，也会显示价格占你的饼干余额的百分比。"
+  },
+  "harvest when mature for +%1 of CpS (max. %2% of bank)": {
+    "english": "harvest when mature for +%1 of CpS (max. %2% of bank)",
+    "chinese": "成熟时收获可获得相当于 %1 的CpS (最大为饼干余额的 %2%)"
+  },
+  "explodes into up to %1 of CpS at the end of its lifecycle (max. %2% of bank)": {
+    "english": "explodes into up to %1 of CpS at the end of its lifecycle (max. %2% of bank)",
+    "chinese": "在其生命周期结束时，最多会爆发成相当于 %1 的CpS（最大为饼干余额的 %2%）"
+  },
+  "You must also pay an immediate downpayment of %1 (<b>%2%</b> of your current bank).": {
+    "english": "You must also pay an immediate downpayment of %1 (<b>%2%</b> of your current bank).",
+    "chinese": "你还必须立即支付 %1 的首期付款。（当前饼干余额的 <b>%2%</b>）"
+  }
+}

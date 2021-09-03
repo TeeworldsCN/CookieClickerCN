@@ -87,7 +87,7 @@
   },
   "%1 gain <b>+%2%</b> CpS per %3.": {
     "english": "%1 gain <b>+%2%</b> CpS per %3.",
-    "chinese": "每拥有 %3，%1获得 <b>+%2%</b> CpS。"
+    "chinese": "每拥有 1 个%3，%1获得 <b>+%2%</b> CpS。"
   },
   "Multiplies the gain from %1 by <b>%2</b>.": {
     "english": "Multiplies the gain from %1 by <b>%2</b>.",

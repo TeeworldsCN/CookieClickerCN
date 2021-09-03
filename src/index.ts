@@ -38,7 +38,7 @@ translators.push(`与匿名贡献的各位。`);
 
 const info: any = {
   Name: '简体中文补全模组',
-  ID: 'twcn-cccn',
+  ID: 'TWCNClickerCN',
   Author: 'TeeworldsCN',
   Description: translators.join(''),
   ModVersion: Math.floor(Date.now() / 1000),
@@ -46,6 +46,7 @@ const info: any = {
   Date: `${date}/${month}/${year}`,
   Dependencies: [],
   LanguagePacks: ['lang.js'],
+  AllowSteamAchievs: true, // just a language mod, we shouldn't break achievements
   Disabled: 1,
 };
 fs.writeFileSync(path.join(BUILD_PATH, 'info.txt'), JSON.stringify(info, null, 2));
@@ -67,3 +68,5 @@ for (const patch of patches) {
 }
 
 fs.writeFileSync(path.join(BUILD_PATH, 'lang.js'), `ModLanguage('ZH-CN',${JSON.stringify(lang)});`);
+
+// copy extra into builds

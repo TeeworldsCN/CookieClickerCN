@@ -1,5 +1,10 @@
 {
   "author": "TsFreddie",
+  "%1 minute": {
+    "comment": "很多地方没有秒就很奇怪：“每 1 分 更新一次”，不过个别情况可能会有 1分钟30秒 这种奇葩。",
+    "english": ["%1 minute", "%1 minutes"],
+    "chinese": ["%1 分钟", "%1 分钟"]
+  },
   "grandmapocalypse": {
     "english": "grandmapocalypse",
     "chinese": "老奶奶天启"
