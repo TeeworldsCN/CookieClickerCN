@@ -97,6 +97,46 @@ const ModGardenTip = MOD => {
   hackMinigame();
 };
 
+// 修复parseLoc
+const FixParseLoc = MOD => {
+  parseLoc = function (str, params) {
+    if (typeof params === 'undefined') params = [];
+    else if (params.constructor !== Array) params = [params];
+    if (!str) return '';
+
+    if (params.length == 0) return str;
+
+    if (str.constructor === Array) {
+      if (typeof params[0] === 'object') {
+        var plurIndex = locPlur(params[0].n);
+        plurIndex = Math.min(str.length - 1, plurIndex);
+        str = str[plurIndex];
+        str = replaceAll('%1', params[0].b, str);
+      } else {
+        var plurIndex = locPlur(params[0]);
+        plurIndex = Math.min(str.length - 1, plurIndex);
+        str = str[plurIndex];
+        str = replaceAll('%1', params[0], str);
+      }
+    }
+
+    var out = '';
+    var len = str.length;
+    var inPercent = false;
+    for (var i = 0; i < len; i++) {
+      var it = str[i];
+      if (inPercent) {
+        inPercent = false;
+        if (!isNaN(it) && params.length >= parseInt(it) - 1) out += params[parseInt(it) - 1];
+        else out += '%' + it;
+      } else if (it == '%') inPercent = true;
+      else out += it;
+    }
+    if (inPercent) out += '%';
+    return out;
+  };
+};
+
 // 设置菜单扩充
 const ModMenu = MOD => {
   var oldMenu = Game.UpdateMenu;
@@ -133,6 +173,7 @@ const ModMenu = MOD => {
 Game.registerMod('TWCNClickerCN', {
   init: function () {
     let lang = localStorageGet('CookieClickerLang');
+    FixParseLoc(this);
 
     // 只有语言是中文的时候启用模组
     if (lang == 'ZH-CN') {
@@ -140,7 +181,6 @@ Game.registerMod('TWCNClickerCN', {
       if (Game.prefs.numbercn == null) {
         Game.prefs.numbercn = 1;
       }
-
       ModGameUnit(this);
       ModGardenTip(this);
 

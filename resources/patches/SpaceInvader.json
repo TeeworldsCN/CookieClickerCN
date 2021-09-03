@@ -3,7 +3,11 @@
   "conventions": "名词两边无空格，数字两边有空格。若一个参数既可以是名词也可以是数字，按数字算。",
   "Every %1 current players on Steam generates <b>1 herald</b>, up to %2 heralds.<br>Each herald gives everyone +1% CpS.": {
     "english": "Every %1 current players on Steam generates <b>1 herald</b>, up to %2 heralds.<br>Each herald gives everyone +1% CpS.",
-    "chinese": "Steam上的每%1个当前玩家生成<b>1个先驱者</b>，最多%2个先驱者。<br>每个先驱者给每个人+1%的CpS。"
+    "chinese": "Steam上的每 %1 个在线玩家生成 <b>1 个使者</b>，最多 %2 个使者。<br>每个使者会给所有玩家的CpS提供 +1% 的加成。"
+  },
+  "selflessly inspiring a boost in production for everyone, resulting in %1.": {
+    "english": "selflessly inspiring a boost in production for everyone, resulting in %1.",
+    "chinese": "无私地为所有玩家提供 %1 的加成。"
   },
   "You found %1!": {
     "comment": "驯鹿名",
