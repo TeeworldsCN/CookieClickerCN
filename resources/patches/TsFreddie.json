@@ -349,9 +349,50 @@
     "chinese": "这些晃眼的饼干，口味也十分闪耀。"
   },
   "[Upgrade quote 57]Farmer grandmas": {
-    "comment": "TODO：继续加升级引文",
     "english": "A nice farmer to grow more cookies.",
-    "chinese": "友善的农民能种出更多的饼干。"
+    "chinese": "善良的农民可以种植出更多饼干。"
+  },
+  "[Upgrade quote 58]Miner grandmas": {
+    "english": "A nice miner to dig more cookies.",
+    "chinese": "善良的矿工可以开采出更多饼干。"
+  },
+  "[Upgrade quote 59]Worker grandmas": {
+    "english": "A nice worker to manufacture more cookies.",
+    "chinese": "善良的工人可以组装出更多饼干。"
+  },
+  "[Upgrade quote 60]Cosmic grandmas": {
+    "english": "A nice thing to... uh... cookies.",
+    "chinese": "善良的存在可以、额……，饼干。"
+  },
+  "[Upgrade quote 61]Transmuted grandmas": {
+    "english": "A nice golden grandma to convert into more cookies.",
+    "chinese": "善良的金奶奶可以转化成更多饼干。"
+  },
+  "[Upgrade quote 62]Altered grandmas": {
+    "english": "a NiCe GrAnDmA tO bA##########",
+    "chinese": "善█的老奶█可以烘██████。"
+  },
+  "[Upgrade quote 63]Grandmas' grandmas": {
+    "english": "A nice grandma's nice grandma to bake double the cookies.",
+    "chinese": "善良的老奶奶的善良老奶奶可以烘焙出双倍的饼干。"
+  },
+  "[Upgrade quote 64]Bingo center/Research facility": {
+    "comment": "bingo双关，臣妾做不到。只能用bingo是个赌博游戏的概念翻了。",
+    "english": "What could possibly keep those grandmothers in check?...<br>Bingo.",
+    "chinese": "没什么能比健康的赌博更吸引老奶奶的注意力了。<br>你说是不是？"
+  },
+  "[Upgrade quote 65]Specialized chocolate chips": {
+    "english": "Computer-designed chocolate chips. Computer chips, if you will.",
+    "chinese": "电脑设计出来的巧克力。如果你想的话，可以叫这东西：夹芯巧克力。"
+  },
+  "[Upgrade quote 66]Designer cocoa beans": {
+    "english": "Now more aerodynamic than ever!",
+    "chinese": "出色的可可豆，如今更符合空气动力学设计！"
+  },
+  "[Upgrade quote 67]Ritual rolling pins": {
+    "comment": "TODO: 继续翻译升级引文",
+    "english": "The result of years of scientific research!",
+    "chinese": "多年科学研究的产物！"
   },
   "[Achievement quote 26]Sacrifice": {
     "english": "Easy come, easy go.",
