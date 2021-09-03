@@ -202,11 +202,15 @@
   },
   "Bake <b>%1</b> in one ascension.": {
     "english": "Bake <b>%1</b> in one ascension.",
-    "chinese": "一次飞升烘焙 <b>%1</b> 块饼干。"
+    "chinese": "一次飞升烘焙 <b>%1</b>。"
   },
   "Bake <b>%1</b> per second.": {
     "english": "Bake <b>%1</b> per second.",
-    "chinese": "每秒烘焙 <b>%1</b> 块饼干。"
+    "chinese": "每秒烘焙 <b>%1</b>。"
+  },
+  "Have <b>%1</b>.": {
+    "english": "Have <b>%1</b>.",
+    "chinese": "拥有 <b>%1</b>。"
   },
   "Click on the news ticker <b>%1 times</b>.": {
     "english": "Click on the news ticker <b>%1 times</b>.",
