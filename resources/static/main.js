@@ -94,7 +94,8 @@ const FixGardenTooltip = MOD => {
             Game.version +
             ') !important;}',
           '.modAssetTurnInto{background:url(img/turnInto.png);}',
-          '.modAssetGardenTip{background-image:url(' +
+          '.modAssetGardenTip{background-image:url(img/gardenTip.png);background-size:100%;float:right;margin:0px 0px 8px 8px;width:120px;height:153px;}',
+          '.modAssetGardenTipCN{background-image:url(' +
             MOD.dir +
             '/gardenTip.png);background-size:100%;float:right;margin:0px 0px 8px 8px;width:120px;height:153px;}',
           '</style>',
@@ -147,31 +148,20 @@ const FixGardenTooltip = MOD => {
               'class="modAssetGardenPlantsIcon" style="'
             );
       };
+
+      // 替换或翻译花园小游戏的提示图片（因为里面有文本）
+      let oldDescFunc = M.tools.info.descFunc;
+      M.tools.info.descFunc = () => {
+        return oldDescFunc().replace(
+          '<img src="img/gardenTip.png" style="float:right;margin:0px 0px 8px 8px;"/>',
+          MOD.lang === "ZH-CN" ? '<div class="modAssetGardenTipCN"></div>' : '<div class="modAssetGardenTip"></div>'
+        );
+      };
     } else {
       setTimeout(FixGarden, 500);
     }
   };
   FixGarden();
-};
-
-// 替换花园小游戏的提示图片（因为里面有文本）
-const ModGardenTip = MOD => {
-  const HackGarden = () => {
-    if (Game.isMinigameReady(Game.Objects['Farm'])) {
-      // 替换带文本的图片
-      let M = Game.Objects['Farm'].minigame;
-      let oldDescFunc = M.tools.info.descFunc;
-      M.tools.info.descFunc = () => {
-        return oldDescFunc().replace(
-          '<img src="img/gardenTip.png" style="float:right;margin:0px 0px 8px 8px;"/>',
-          '<div class="modAssetGardenTip"></div>'
-        );
-      };
-    } else {
-      setTimeout(HackGarden, 500);
-    }
-  };
-  HackGarden();
 };
 
 // 修复parseLoc
@@ -249,21 +239,20 @@ const ModMenu = MOD => {
 
 Game.registerMod('TWCNClickerCN', {
   init: function () {
-    let lang = localStorageGet('CookieClickerLang');
+    //  保存语言
+    this.lang = localStorageGet('CookieClickerLang');
     
     // 修复官方游戏的一些BUG
     FixParseLoc(this);
     FixGardenTooltip(this);
 
     // 只有语言是中文的时候启用模组
-    if (lang == 'ZH-CN') {
+    if (this.lang == 'ZH-CN') {
       // 默认设置参数
       if (Game.prefs.numbercn == null) {
         Game.prefs.numbercn = 1;
       }
       ModGameUnit(this);
-      ModGardenTip(this);
-
       ModMenu(this);
     }
   },
