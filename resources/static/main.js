@@ -27,7 +27,7 @@ const ModGameUnit = MOD => {
 
   // 替换数字格式化
   const FormatterCN = val => {
-    var unit = '';
+    let unit = '';
     if (!isFinite(val)) return '无限';
     if (val >= 1e4) {
       for (const u of CN_UNITS) {
@@ -49,14 +49,14 @@ const ModGameUnit = MOD => {
 
   // 魔改全局数字格式化函数
   Beautify = (val, floats) => {
-    var negative = val < 0;
-    var decimal = '';
-    var fixed = val.toFixed(floats);
+    let negative = val < 0;
+    let decimal = '';
+    let fixed = val.toFixed(floats);
     if (Math.abs(val) < 1000 && floats > 0 && Math.floor(fixed) != fixed)
       decimal = '.' + fixed.toString().split('.')[1];
     val = Math.floor(Math.abs(val));
     if (floats > 0 && fixed == val + 1) val++;
-    var output;
+    let output;
     if (Game.prefs.numbercn) {
       output =
         val >= 1e76 && isFinite(val)
@@ -78,13 +78,13 @@ const ModGameUnit = MOD => {
   };
 };
 
-const InjectCSS = (MOD) => {
+const InjectCSS = MOD => {
   // 插入固定的CSS定义
   l('game').insertAdjacentHTML(
     'beforebegin',
     [
       '<style>',
-      // 花园修复 
+      // 花园修复
       '.modAssetGardenSeedTinyLocked{transform:scale(0.5,0.5);margin:-20px -16px;display:inline-block;width:48px;height:48px;background:url(img/icons.png?v=' +
         Game.version +
         ');}',
@@ -97,15 +97,9 @@ const InjectCSS = (MOD) => {
         MOD.dir +
         '/gardenTip.png);background-size:100%;float:right;margin:0px 0px 8px 8px;width:120px;height:153px;}',
       // 菜单修复
-      '.modAssetSanta{background-image:url(img/santa.png?v=' +
-      Game.version +
-      ');}',
-      '.modAssetDragon{background-image:url(img/dragon.png?v=' +
-      Game.version +
-      ');}',
-      '.modAssetIcons{background-image:url(img/icons.png?v=' +
-      Game.version +
-      ');}',
+      '.modAssetSanta{background-image:url(img/santa.png?v=' + Game.version + ');}',
+      '.modAssetDragon{background-image:url(img/dragon.png?v=' + Game.version + ');}',
+      '.modAssetIcons{background-image:url(img/icons.png?v=' + Game.version + ');}',
       // 牛奶弹窗
       '.modAssetMilkPlain{background:url(img/milkPlain.png);}',
       '.modAssetMilkChocolate{background:url(img/milkChocolate.png);}',
@@ -131,7 +125,7 @@ const InjectCSS = (MOD) => {
       '</style>',
     ].join('')
   );
-}
+};
 
 // 顺带修复花园小游戏Tooltip重复请求资源的BUG
 const FixGardenTooltip = MOD => {
@@ -214,7 +208,7 @@ const FixParseLoc = () => {
 
     if (str.constructor === Array) {
       if (typeof params[0] === 'object') {
-        var plurIndex = locPlur(params[0].n);
+        let plurIndex = locPlur(params[0].n);
         plurIndex = Math.min(str.length - 1, plurIndex);
         str = str[plurIndex];
         if (isCN && params[0].b.toString().codePointAt(params[0].b.length - 1) >= 0x4e00) {
@@ -223,7 +217,7 @@ const FixParseLoc = () => {
         }
         str = replaceAll('%1', params[0].b, str);
       } else {
-        var plurIndex = locPlur(params[0]);
+        let plurIndex = locPlur(params[0]);
         plurIndex = Math.min(str.length - 1, plurIndex);
         str = str[plurIndex];
         if (isCN && params[0].toString().codePointAt(params[0].length - 1) >= 0x4e00) {
@@ -234,11 +228,11 @@ const FixParseLoc = () => {
       }
     }
 
-    var out = '';
-    var len = str.length;
-    var inPercent = false;
-    for (var i = 0; i < len; i++) {
-      var it = str[i];
+    let out = '';
+    let len = str.length;
+    let inPercent = false;
+    for (let i = 0; i < len; i++) {
+      let it = str[i];
       if (inPercent) {
         inPercent = false;
         afterReplace = true;
@@ -284,13 +278,12 @@ const ModCookiesFormat = MOD => {
   });
 };
 
-
 // 菜单修改
 const MENU_HOOKS = [];
-const AddMenuHook = (func) => {
+const AddMenuHook = func => {
   MENU_HOOKS.push(func);
-}
-const SetupMenuHooks = (MOD) => {
+};
+const SetupMenuHooks = MOD => {
   let oldMenu = Game.UpdateMenu;
   Game.UpdateMenu = function () {
     oldMenu();
@@ -329,37 +322,71 @@ const ModPrefMenu = (MOD, menu) => {
     );
   }
   return menu;
-}
+};
 
 // 修复统计菜单的图标重复加载的问题
 const FixStatMenu = (MOD, menu) => {
   if (Game.onMenu == 'stats') {
     return menu
-    .replaceAll(
-      /style="background:url\(img\/santa\.png\) ([^"]*)" class="trophy"/g,
-      (_, v) => 'style="background-position:'+v+'" class="trophy modAssetSanta"'
-    ).replaceAll(
-      /style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground%3Aurl%28img\/santa\.png%29%20/g,
-      'class%3D%22modAssetSanta%22%20style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground-position%3A'
-    ).replaceAll(
-      /style="background:url\(img\/dragon\.png\?v=[0-9.]*\) ([^"]*)" class="trophy"/g,
-      (_, v) => 'style="background-position:'+v+'" class="trophy modAssetDragon"'
-    ).replaceAll(
-      /style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground%3Aurl%28img\/dragon\.png%3Fv%3D[0-9.]*%29%20/g,
-      'class%3D%22modAssetDragon%22%20style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground-position%3A'
-    ).replaceAll(
-      /style="background:url\(img\/icons\.png\?v=[0-9.]*\) ([^"]*)" class="trophy"/g,
-      (_, v) => 'style="background-position:'+v+'" class="trophy modAssetIcons"'
-    ).replaceAll(
-      /style%3D%22width%3A100%25%3Bheight%3A96px%3Bposition%3Aabsolute%3Bleft%3A0px%3Bbottom%3A0px%3Bbackground%3Aurl%28img\/milk(\w*)\.png%29%3B/g,
-      (_, v) => 'class%3D%22modAssetMilk'+v+'%22%20style%3D%22width%3A100%25%3Bheight%3A96px%3Bposition%3Aabsolute%3Bleft%3A0px%3Bbottom%3A0px%3B'
-    );
+      .replaceAll(
+        /style="background:url\(img\/santa\.png\) ([^"]*)" class="trophy"/g,
+        (_, v) => 'style="background-position:' + v + '" class="trophy modAssetSanta"'
+      )
+      .replaceAll(
+        /style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground%3Aurl%28img\/santa\.png%29%20/g,
+        'class%3D%22modAssetSanta%22%20style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground-position%3A'
+      )
+      .replaceAll(
+        /style="background:url\(img\/dragon\.png\?v=[0-9.]*\) ([^"]*)" class="trophy"/g,
+        (_, v) => 'style="background-position:' + v + '" class="trophy modAssetDragon"'
+      )
+      .replaceAll(
+        /style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground%3Aurl%28img\/dragon\.png%3Fv%3D[0-9.]*%29%20/g,
+        'class%3D%22modAssetDragon%22%20style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground-position%3A'
+      )
+      .replaceAll(
+        /style="background:url\(img\/icons\.png\?v=[0-9.]*\) ([^"]*)" class="trophy"/g,
+        (_, v) => 'style="background-position:' + v + '" class="trophy modAssetIcons"'
+      )
+      .replaceAll(
+        /style%3D%22width%3A100%25%3Bheight%3A96px%3Bposition%3Aabsolute%3Bleft%3A0px%3Bbottom%3A0px%3Bbackground%3Aurl%28img\/milk(\w*)\.png%29%3B/g,
+        (_, v) =>
+          'class%3D%22modAssetMilk' +
+          v +
+          '%22%20style%3D%22width%3A100%25%3Bheight%3A96px%3Bposition%3Aabsolute%3Bleft%3A0px%3Bbottom%3A0px%3B'
+      );
   }
   return menu;
-}
+};
+
+// 修复播放声音时重复读取音频的问题
+const FixPlaySound = () => {
+  PlaySound = (url, vol, pitchVar) => {
+    let volume = 1;
+    let volumeSetting = Game.volume;
+    if (typeof vol !== 'undefined') volume = vol;
+    if (volume < -5) {
+      volume += 10;
+      volumeSetting = Game.volumeMusic;
+    }
+    if (!volumeSetting || volume == 0) return 0;
+    if (typeof Sounds[url] === 'undefined') {
+      Sounds[url] = new Audio(url);
+      Sounds[url].onloadeddata = function (e) {
+        PlaySound(url, vol, pitchVar);
+      };
+    } else if (Sounds[url].readyState >= 2) {
+      let sound = Sounds[url];
+      sound.volume = Math.pow((volume * volumeSetting) / 100, 2);
+      sound.currentTime = 0;
+      sound.play();
+    }
+  };
+};
 
 // 在游戏加载前就修复Loc函数 (需要赶在本地化成就之前就生效)
 FixParseLoc();
+FixPlaySound();
 
 Game.registerMod('TWCNClickerCN', {
   init: function () {
@@ -390,8 +417,8 @@ Game.registerMod('TWCNClickerCN', {
     });
   },
   load: function (str) {
-    var data = JSON.parse(str);
-    for (var pref in data.prefs) {
+    let data = JSON.parse(str);
+    for (let pref in data.prefs) {
       Game.prefs[pref] = data.prefs[pref];
     }
   },
