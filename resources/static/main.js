@@ -154,7 +154,9 @@ const FixGardenTooltip = MOD => {
       M.tools.info.descFunc = () => {
         return oldDescFunc().replace(
           '<img src="img/gardenTip.png" style="float:right;margin:0px 0px 8px 8px;"/>',
-          MOD.lang === "ZH-CN" ? '<div class="modAssetGardenTipCN"></div>' : '<div class="modAssetGardenTip"></div>'
+          MOD.lang === 'ZH-CN'
+            ? '<div class="modAssetGardenTipCN"></div>'
+            : '<div class="modAssetGardenTip"></div>'
         );
       };
     } else {
@@ -165,8 +167,10 @@ const FixGardenTooltip = MOD => {
 };
 
 // 修复parseLoc
-const FixParseLoc = MOD => {
-  parseLoc = function (str, params) {
+const FixParseLoc = () => {
+  const isCN = localStorageGet('CookieClickerLang') === 'ZH-CN';
+
+  parseLoc = (str, params) => {
     if (typeof params === 'undefined') params = [];
     else if (params.constructor !== Array) params = [params];
     if (!str) return '';
@@ -178,11 +182,19 @@ const FixParseLoc = MOD => {
         var plurIndex = locPlur(params[0].n);
         plurIndex = Math.min(str.length - 1, plurIndex);
         str = str[plurIndex];
+        if (isCN && params[0].b.toString().codePointAt(params[0].b.length - 1) >= 0x4e00) {
+          // 移除单位后的空格，保持中文连贯性
+          str = replaceAll('%1 ', params[0].b, str);
+        }
         str = replaceAll('%1', params[0].b, str);
       } else {
         var plurIndex = locPlur(params[0]);
         plurIndex = Math.min(str.length - 1, plurIndex);
         str = str[plurIndex];
+        if (isCN && params[0].toString().codePointAt(params[0].length - 1) >= 0x4e00) {
+          // 移除单位后的空格，保持中文连贯性
+          str = replaceAll('%1 ', params[0], str);
+        }
         str = replaceAll('%1', params[0], str);
       }
     }
@@ -194,14 +206,47 @@ const FixParseLoc = MOD => {
       var it = str[i];
       if (inPercent) {
         inPercent = false;
-        if (!isNaN(it) && params.length >= parseInt(it) - 1) out += params[parseInt(it) - 1];
-        else out += '%' + it;
+        afterReplace = true;
+        if (!isNaN(it) && params.length >= parseInt(it) - 1) {
+          out += params[parseInt(it) - 1];
+          if (isCN && out.codePointAt(out.length - 1) >= 0x4e00 && str[i + 1] === ' ') {
+            // 移除单位后的空格，保持中文连贯性
+            i++;
+          }
+        } else out += '%' + it;
       } else if (it == '%') inPercent = true;
       else out += it;
     }
     if (inPercent) out += '%';
     return out;
   };
+
+  if (isCN) {
+    BeautifyInText = str => {
+      const matchNum = str.match(beautifyInTextFilter);
+      if (!matchNum) return str;
+      const beautified = BeautifyInTextFunction(matchNum[0]);
+      if (beautified.codePointAt(beautified.length - 1) >= 0x4e00) {
+        // 移除单位后的空格，保持中文连贯性
+        str = str.replace(matchNum[0] + ' ', beautified);
+      }
+      return str.replace(matchNum[0], beautified);
+    };
+  }
+};
+
+// 修复百亿级别单位数字换行闪烁的问题
+const ModCookiesFormat = MOD => {
+  Game.registerHook('draw', () => {
+    // 只有使用中文单位时需要
+    if (Game.prefs.numbercn) {
+      const cookies = l('cookies');
+      cookies.innerHTML = cookies.innerHTML.replace(
+        /(-?[0-9]+.?[0-9][^\s]*)(?:<br>| )块饼干/,
+        (_, v) => v + '块饼干'
+      );
+    }
+  });
 };
 
 // 设置菜单扩充
@@ -237,22 +282,24 @@ const ModMenu = MOD => {
   };
 };
 
+// 在游戏加载前就修复Loc函数 (需要赶在本地化成就之前就生效)
+FixParseLoc();
+
 Game.registerMod('TWCNClickerCN', {
   init: function () {
-    //  保存语言
+    // 提供语言给函数
     this.lang = localStorageGet('CookieClickerLang');
-    
+
     // 修复官方游戏的一些BUG
-    FixParseLoc(this);
     FixGardenTooltip(this);
 
     // 只有语言是中文的时候启用模组
     if (this.lang == 'ZH-CN') {
       // 默认设置参数
-      if (Game.prefs.numbercn == null) {
-        Game.prefs.numbercn = 1;
-      }
+      if (Game.prefs.numbercn == null) Game.prefs.numbercn = 1;
+
       ModGameUnit(this);
+      ModCookiesFormat(this);
       ModMenu(this);
     }
   },
