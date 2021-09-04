@@ -628,6 +628,314 @@
     "english": "Careful with the dosing - one drop too much and you get muffins.<br>And nobody likes muffins.",
     "chinese": "称重的时候要小心——多掺了一滴水就变成了松饼。<br>而且没人喜欢松饼。"
   },
+  "[Upgrade quote 116]Brane transplant": {
+    "english": "This refers to the practice of merging higher dimensional universes, or \"branes\", with our own, in order to facilitate transit (and harvesting of precious cookie dough).",
+    "chinese": "这是种能够将高维度宇宙和我们的宇宙连接起来的技术。这种高维度宇宙其实是一种成为“膜”的物体，连接后的膜将为我们提供更方便的运输手段（顺便可以从高维宇宙中收获宝贵的饼干面糊）。"
+  },
+  "[Upgrade quote 117]Yestermorrow comparators": {
+    "english": "Fortnights into milleniums.",
+    "chinese": "从两周前到千年后。"
+  },
+  "[Upgrade quote 118]Reverse cyclotrons": {
+    "english": "These can uncollision particles and unspin atoms. For... uh... better flavor, and stuff.",
+    "chinese": "这些可以避免粒子碰撞和解除原子自旋，从而……呃………获得更好的口感，还是什么的。"
+  },
+  "[Upgrade quote 119]Unobtainium mouse": {
+    "english": "These nice mice should suffice.",
+    "chinese": "那些不难得的老鼠大概已经足够用了。"
+  },
+  "[Upgrade quote 120]Caramoas": {
+    "english": "Yeah. That's got a nice ring to it.",
+    "chinese": "唔。这里面圈是好东西。"
+  },
+  "[Upgrade quote 121]Sagalongs": {
+    "english": "Grandma's favorite?",
+    "chinese": "老奶奶的最爱？"
+  },
+  "[Upgrade quote 122]Shortfoils": {
+    "english": "Foiled again!",
+    "chinese": "奶又酥了！"
+  },
+  "[Upgrade quote 123]Win mints": {
+    "english": "They're the luckiest cookies you've ever tasted!",
+    "chinese": "这些大概是你尝过的最薄荷理的幸运饼干了！"
+  },
+  "[Upgrade quote 124]Perfect idling": {
+    "english": "It's the most beautiful thing I've ever seen.",
+    "chinese": "再也没有比这更完美的东西了。"
+  },
+  "[Upgrade quote 125]Fig gluttons": {
+    "english": "Got it all figured out.",
+    "chinese": "可能花被它自己吃了。"
+  },
+  "[Upgrade name 126]Loreols": {
+    "english": "Loreols",
+    "chinese": "欧利奥"
+  },
+  "[Upgrade quote 126]Loreols": {
+    "english": "Because, uh... they're worth it?",
+    "chinese": "因为，呃……这些比奥利奥更值钱？"
+  },
+  "[Upgrade quote 127]Jaffa cakes": {
+    "english": "If you want to bake a cookie from scratch, you must first build a factory.",
+    "chinese": "如果你想从头开始烤个饼干出来，你需要先造个工厂出来。"
+  },
+  "[Upgrade quote 128]Grease's cups": {
+    "english": "Extra-greasy peanut butter.",
+    "chinese": "黄油和花生酱完全没区别嘛。"
+  },
+  "[Upgrade quote 129]Heavenly chip secret": {
+    "english": "Grants the knowledge of heavenly chips, and how to use them to make baking more efficient.<br>It's a secret to everyone.",
+    "chinese": "上天赋予了你天堂碎片，还顺带快递给你了一本食谱《只需一招，简单利用天堂碎片提高烘焙效率》。<br>世上独此一本喔。"
+  },
+  "[Upgrade quote 130]Heavenly cookie stand": {
+    "english": "Don't forget to visit the heavenly lemonade stand afterwards. When afterlife gives you lemons...",
+    "chinese": "之后别忘了也去天堂柠檬水铺看看。毕竟天堂给你了柠檬……<br>你就可以把柠檬换成饼干币去店里买柠檬水了。"
+  },
+  "[Upgrade quote 131]Heavenly bakery": {
+    "english": "Also sells godly cakes and divine pastries. The pretzels aren't too bad either.",
+    "chinese": "这里也卖敬虔蛋糕和神圣点心。他们的椒盐脆饼也不错。"
+  },
+  "[Upgrade quote 132]Heavenly confectionery": {
+    "english": "They say angel bakers work there. They take angel lunch breaks and sometimes go on angel strikes.",
+    "chinese": "据说有天使蛋糕师在这里工作。他们每天有固定的天使午休，不爽了偶尔也会天使罢工。"
+  },
+  "[Upgrade quote 133]Heavenly key": {
+    "english": "This is the key to the pearly (and tasty) gates of pastry heaven, granting you access to your entire stockpile of heavenly chips for baking purposes.<br>May you use them wisely.",
+    "chinese": "这把钥匙能打开通往点心天堂的珍珠般的（亦或是可口的）大门。到时点心天堂的厨房仓库里有一大批天堂碎片等着你。<br>不过还是建议你计划好用量。"
+  },
+  "[Upgrade quote 134]Skull cookies": {
+    "english": "Wanna know something spooky? You've got one of these inside your head RIGHT NOW.",
+    "chinese": "想听个鬼故事吗？你脑子里<b>现在</b>就有个！"
+  },
+  "[Upgrade quote 135]Ghost cookies": {
+    "english": "They're something strange, but they look pretty good!",
+    "chinese": "按理来说这些是残次品，不过看起来还是很好吃！"
+  },
+  "[Upgrade quote 136]Bat cookies": {
+    "english": "The cookies this town deserves.",
+    "chinese": "这样的镇子配这样的饼干。"
+  },
+  "[Upgrade quote 137]Slime cookies": {
+    "english": "The incredible melting cookies!",
+    "chinese": "难以置信的柔软！<br>不过小心别被粘住了。"
+  },
+  "[Upgrade quote 138]Pumpkin cookies": {
+    "english": "Not even pumpkin-flavored. Tastes like glazing. Yeugh.",
+    "chinese": "连点南瓜味都没有。全是那层糖衣的味道。唉……"
+  },
+  "[Upgrade quote 139]Eyeball cookies": {
+    "english": "When you stare into the cookie, the cookie stares back at you.",
+    "chinese": "如果你盯着这饼干看，你会发现这饼干也在盯着你看。"
+  },
+  "[Upgrade quote 140]Spider cookies": {
+    "english": "You found the recipe on the web. They do whatever a cookie can.",
+    "chinese": "这是你在网上找到的食谱。倒是满足了作为饼干的所有条件。"
+  },
+  "[Upgrade quote 141]Persistent memory": {
+    "english": "It's all making sense!<br>Again!",
+    "chinese": "啊！我终于开始明白了！<br>和上次发现的一样！"
+  },
+  "[Upgrade quote 142]Wrinkler doormat": {
+    "english": "You're such a pushover.",
+    "chinese": "怎么就让你说服我买这个了呢？"
+  },
+  "[Upgrade quote 143]Christmas tree biscuits": {
+    "english": "Whose pine is it anyway?",
+    "chinese": "这又是谁橡树来的主意？"
+  },
+  "[Upgrade quote 144]Snowflake biscuits": {
+    "english": "Mass-produced to be unique in every way.",
+    "chinese": "工厂量产出来的独特。"
+  },
+  "[Upgrade quote 145]Snowman biscuits": {
+    "english": "It's frosted. Doubly so.",
+    "chinese": "上面撒了糖霜。不过可能看不太出来。"
+  },
+  "[Upgrade name 146]Holly biscuits": {
+    "english": "Holly biscuits",
+    "chinese": "冬青饼干"
+  },
+  "[Upgrade quote 146]Holly biscuits": {
+    "english": "You don't smooch under these ones. That would be the mistletoe (which, botanically, is a smellier variant of the mistlefinger).",
+    "chinese": "冬青树上冬青果，冬青树下你和我。"
+  },
+  "[Upgrade quote 147]Candy cane biscuits": {
+    "english": "It's two treats in one!<br>(Further inspection reveals the frosting does not actually taste like peppermint, but like mundane sugary frosting.)",
+    "chinese": "一根糖果，两种口味！<br>（仔细尝了下发现两个颜色的味道并没有差别。都是普通的糖浆味而已。）"
+  },
+  "[Upgrade quote 148]Bell biscuits": {
+    "english": "What do these even have to do with christmas? Who cares, ring them in!",
+    "chinese": "这钟和圣诞有什么关系吗？管它呢，反正很多人对这饼干情有独钟。"
+  },
+  "[Upgrade quote 149]Present biscuits": {
+    "english": "The prequel to future biscuits. Watch out!",
+    "chinese": "外物饼干的死敌。可要小心！"
+  },
+  "[Upgrade quote 150]Gingerbread men": {
+    "english": "You like to bite the legs off first, right? How about tearing off the arms? You sick monster.",
+    "chinese": "你是喜欢先咬断腿呢？还是先撕断胳膊呢？<br>心理变态。"
+  },
+  "[Upgrade quote 151]Gingerbread trees": {
+    "english": "Evergreens in pastry form. Yule be surprised what you can come up with.",
+    "chinese": "甜点形态的常青树。我是搞不懂为什么大家都喜欢做姜紫的形状。"
+  },
+  "[Upgrade quote 152]A festive hat": {
+    "english": "Not a creature was stirring, not even a mouse.",
+    "chinese": "叮叮当，叮叮当，铃儿响叮当。"
+  },
+  "[Upgrade quote 153]Increased merriness": {
+    "english": "It turns out that the key to increased merriness, strangely enough, happens to be a good campfire and some s'mores.<br>You know what they say, after all; the s'more, the merrier.",
+    "chinese": "谁都没想到，快乐就是这么容易的东西。<br>只要大家和我们一起唱，快乐其实也没有什么道理。"
+  },
+  "[Upgrade quote 154]Improved jolliness": {
+    "english": "A nice wobbly belly goes a long way.<br>You jolly?",
+    "chinese": "挺着个大肚子走来走去的那位一直都是快乐的象征。<br>喔，我不是在说你。"
+  },
+  "[Upgrade quote 155]A lump of coal": {
+    "english": "Some of the world's worst stocking stuffing.<br>I guess you could try starting your own little industrial revolution, or something?...",
+    "chinese": "你收到了这世界上最糟糕的礼物。<br>不过你大概可以试试用它发起一场工业革命，之类的……"
+  },
+  "[Upgrade quote 156]An itchy sweater": {
+    "english": "You don't know what's worse : the embarrassingly quaint \"elf on reindeer\" motif, or the fact that wearing it makes you feel like you're wrapped in a dead sasquatch.",
+    "chinese": "都不知道该从哪吐槽好——是身前尴尬的驯鹿精灵图案？还是身上被狼人拥抱的触感？"
+  },
+  "[Upgrade quote 157]Reindeer baking grounds": {
+    "english": "Male reindeer are from Mars; female reindeer are from venison.",
+    "chinese": "雄驯鹿是从火星来的；雌驯鹿是鹿肉拼的。"
+  },
+  "[Upgrade quote 158]Weighted sleighs": {
+    "english": "Hope it was worth the weight.<br>(Something something forced into cervidude)",
+    "chinese": "希望这漫长的研发能让用户开橇。<br>（可以随产品附带针对颈椎病的医疗保险）"
+  },
+  "[Upgrade quote 159]Ho ho ho-flavored frosting": {
+    "english": "It's time to up the antler.",
+    "chinese": "是时候为鹿茸誉奋力一搏了。"
+  },
+  "[Upgrade quote 160]Season savings": {
+    "english": "By Santa's beard, what savings!<br>But who will save us?",
+    "chinese": "促销活动！可以用圣诞老人的胡须作为代金券！<br>但是谁来负责发放代金券呢？"
+  },
+  "[Upgrade quote 161]Toy workshop": {
+    "english": "Watch yours-elf around elvesdroppers who might steal our production secrets.<br>Or elven worse!",
+    "chinese": "请随身携带好您的贵重物品，从指定地点有序地投放到圣诞老人的礼物袋子里。<br>想要用手机支付红包的顾客，请先兑换成现金再投放！"
+  },
+  "[Upgrade quote 162]Naughty list": {
+    "english": "This list contains every unholy deed perpetuated by grandmakind.<br>He won't be checking this one twice.<br>Once. Once is enough.",
+    "chinese": "这是份记录了所有老奶奶犯下的恶行的日志。<br>不过圣诞老人总是忘了云备份。<br>偷偷改两笔不会被发现的。"
+  },
+  "[Upgrade quote 163]Santa's bottomless bag": {
+    "english": "This is one bottom you can't check out.",
+    "chinese": "你这么说，我就更没底了。"
+  },
+  "[Upgrade quote 164]Santa's helpers": {
+    "english": "Some choose to help hamburger; some choose to help you.<br>To each their own, I guess.",
+    "chinese": "有的选择帮助汉堡；有的选择帮助你。<br>可能帮你也不是多坏的事吧。"
+  },
+  "[Upgrade quote 165]Santa's legacy": {
+    "english": "In the north pole, you gotta get the elves first. Then when you get the elves, you start making the toys. Then when you get the toys... then you get the cookies.",
+    "chinese": "要去北极取经的话，你要先抓一只精灵。抓到精灵以后，要去学会做玩具。等你做出来玩具，你就会得到饼干……做的经书。<br>我也不知道精灵是用来做什么的。"
+  },
+  "[Upgrade quote 166]Santa's milk and cookies": {
+    "english": "Part of Santa's dreadfully unbalanced diet.",
+    "chinese": "不过是圣诞老人不均衡的饮食其中的一道菜罢了/"
+  },
+  "[Upgrade quote 167]Reindeer season": {
+    "english": "Go, Cheater! Go, Hacker and Faker!",
+    "chinese": "驯鹿，就决定是你了！"
+  },
+  "[Upgrade quote 168]Santa's dominion": {
+    "english": "My name is Claus, king of kings;<br>Look on my toys, ye Mighty, and despair!",
+    "chinese": "吾名克劳斯，众王之王；<br>在我威武的玩具军团面前屈服吧！"
+  },
+  "[Upgrade quote 169]Pure heart biscuits": {
+    "english": "Melty white chocolate<br>that says \"I *like* like you\".",
+    "chinese": "快融化的白色巧克力。<br>上面写着：\"我<b>真的</b>真的喜欢你\"。"
+  },
+  "[Upgrade quote 170]Ardent heart biscuits": {
+    "english": "A red hot cherry biscuit that will nudge the target of your affection in interesting directions.",
+    "chinese": "一个能将你的攻略路线往有趣的方向发展的火红色樱桃饼干。"
+  },
+  "[Upgrade quote 171]Sour heart biscuits": {
+    "english": "A bitter lime biscuit for the lonely and the heart-broken.",
+    "chinese": "为孤独的失心之人准备的苦涩青柠饼干。"
+  },
+  "[Upgrade quote 172]Weeping heart biscuits": {
+    "english": "An ice-cold blueberry biscuit, symbol of a mending heart.",
+    "chinese": "冰镇的蓝莓饼干，是心灵缓慢修复的象征。"
+  },
+  "[Upgrade quote 173]Golden heart biscuits": {
+    "english": "A beautiful biscuit to symbolize kindness, true love, and sincerity.",
+    "chinese": "一个象征着善良、挚爱与真诚的美丽饼干。"
+  },
+  "[Upgrade quote 174]Eternal heart biscuits": {
+    "english": "Silver icing for a very special someone you've liked for a long, long time.",
+    "chinese": "为了你钟意许久的心上人，光是这层银色糖衣，都准备了很长、很长时间。"
+  },
+  "[Upgrade quote 175]Gem polish": {
+    "english": "Get rid of the grime and let more light in.<br>Truly, truly outrageous.",
+    "chinese": "用心打磨瑕疵，让它闪闪发光。<br>而且是真的能闪瞎人眼的那种闪。"
+  },
+  "[Upgrade name 176]9th color": {
+    "english": "9th color",
+    "chinese": "第九色"
+  },
+  "[Upgrade quote 176]9th color": {
+    "english": "Delve into untouched optical depths where even the mantis shrimp hasn't set an eye!",
+    "chinese": "从光谱的终点发现的连变色龙都从未见过的独特色彩。"
+  },
+  "[Upgrade quote 177]Chocolate light": {
+    "english": "Bask into its cocoalescence.<br>(Warning : may cause various interesting albeit deadly skin conditions.)",
+    "chinese": "沉浸在它的照射之中。<br>（警告：可能会引发各种有趣的皮肤病，个别情况有致命危险。）"
+  },
+  "[Upgrade name 178]Grainbow": {
+    "english": "Grainbow",
+    "chinese": "谷物彩虹"
+  },
+  "[Upgrade quote 178]Grainbow": {
+    "english": "Remember the different grains using the handy Roy G. Biv mnemonic : R is for rice, O is for oats... uh, B for barley?...",
+    "chinese": "想要记住所有谷物的名字，只需记下这个口诀：洪承皇滤倾斓孜"
+  },
+  "[Upgrade quote 179]Pure cosmic light": {
+    "english": "Your prisms now receive pristine, unadulterated photons from the other end of the universe.",
+    "chinese": "来自其他宇宙的纯正无暇的光子正在通过你小学玩的三棱镜。"
+  },
+  "[Upgrade quote 180]Rainbow grandmas": {
+    "english": "A luminous grandma to sparkle into cookies.",
+    "chinese": "发光的老奶奶可以闪耀地变身成饼干。"
+  },
+  "[Upgrade quote 181]Season switcher": {
+    "english": "There will always be time.",
+    "chinese": "因为世界上总有一个地方现在是正午。<br>所以世界上总有一个地方是圣诞。"
+  },
+  "[Upgrade quote 182]Festive biscuit": {
+    "english": "'Twas the night before Christmas- or was it?",
+    "chinese": "那是圣诞节的前一夜……来着？"
+  },
+  "[Upgrade quote 183]Ghostly biscuit": {
+    "english": "spooky scary skeletons<br>will wake you with a boo",
+    "chinese": "一只没有眼睛，一只没有尾巴，真奇怪！<br><b>真奇怪！</b>"
+  },
+  "[Upgrade quote 184]Lovesick biscuit": {
+    "english": "Romance never goes out of fashion.",
+    "chinese": "浪漫永远不会过时。"
+  },
+  "[Upgrade quote 300]Cookiemancy": {
+    "english": "There it is; the perfected school of baking magic. From summoning chips to hexing nuts, there is not a single part of cookie-making that hasn't been improved tenfold by magic tricks.",
+    "chinese": "就是这里；完美的魔法烘焙学校。从召唤巧克力豆到诅咒各种坚果，饼干制作的任何一道工序都被魔法加强了十个档次。"
+  },
+  "[Upgrade quote 301]Dyson sphere": {
+    "english": "You've found a way to apply your knowledge of cosmic technology to slightly more local endeavors; this gigantic sphere of meta-materials, wrapping the solar system, is sure to kick your baking abilities up a notch.",
+    "chinese": "你找到了一种方法，可以将你的宇宙技术知识应用到和你更相关的工作中来。这个巨大的超元材料球体包裹着太阳系，一定会让你的烘焙能力更上一层楼。"
+  },
+  "[Upgrade quote 302]Theory of atomic fluidity": {
+    "english": "Pushing alchemy to its most extreme limits, you find that everything is transmutable into anything else - lead to gold, mercury to water; more importantly, you realize that anything can -and should- be converted to cookies.",
+    "chinese": "只要将炼金术发挥到极致，你就会发现一切都可以转化为其他任何东西——铅可以变成金、汞可以变成水；更重要的是，你意识到任何东西都可以——而且一定要——转化成饼干。"
+  },
+  "[Upgrade quote 303]End of times back-up plan": {
+    "english": "Just in case, alright?",
+    "chinese": "以防万一，好吧？"
+  },
   "[Achievement quote 26]Sacrifice": {
     "english": "Easy come, easy go.",
     "chinese": "来也匆匆，去也匆匆。"
