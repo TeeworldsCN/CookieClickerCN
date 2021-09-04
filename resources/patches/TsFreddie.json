@@ -732,6 +732,10 @@
     "english": "You found the recipe on the web. They do whatever a cookie can.",
     "chinese": "这是你在网上找到的食谱。倒是满足了作为饼干的所有条件。"
   },
+  "[Upgrade name 141]Persistent memory": {
+    "english": "Persistent memory",
+    "chinese": "持久记忆"
+  },
   "[Upgrade quote 141]Persistent memory": {
     "english": "It's all making sense!<br>Again!",
     "chinese": "啊！我终于开始明白了！<br>和上次发现的一样！"
@@ -906,7 +910,7 @@
   },
   "[Upgrade quote 181]Season switcher": {
     "english": "There will always be time.",
-    "chinese": "因为世界上总有一个地方现在是正午。<br>所以世界上总有一个地方是圣诞。"
+    "chinese": "因为世界上总有一个地方现在是正午。<br>所以世界上总有一个地方现在是圣诞。"
   },
   "[Upgrade quote 182]Festive biscuit": {
     "english": "'Twas the night before Christmas- or was it?",

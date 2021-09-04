@@ -78,30 +78,65 @@ const ModGameUnit = MOD => {
   };
 };
 
+const InjectCSS = (MOD) => {
+  // 插入固定的CSS定义
+  l('game').insertAdjacentHTML(
+    'beforebegin',
+    [
+      '<style>',
+      // 花园修复 
+      '.modAssetGardenSeedTinyLocked{transform:scale(0.5,0.5);margin:-20px -16px;display:inline-block;width:48px;height:48px;background:url(img/icons.png?v=' +
+        Game.version +
+        ');}',
+      '.modAssetGardenPlantsIcon{background-image:url(img/gardenPlants.png?v=' +
+        Game.version +
+        ') !important;}',
+      '.modAssetTurnInto{background:url(img/turnInto.png);}',
+      '.modAssetGardenTip{background-image:url(img/gardenTip.png);background-size:100%;float:right;margin:0px 0px 8px 8px;width:120px;height:153px;}',
+      '.modAssetGardenTipCN{background-image:url(' +
+        MOD.dir +
+        '/gardenTip.png);background-size:100%;float:right;margin:0px 0px 8px 8px;width:120px;height:153px;}',
+      // 菜单修复
+      '.modAssetSanta{background-image:url(img/santa.png?v=' +
+      Game.version +
+      ');}',
+      '.modAssetDragon{background-image:url(img/dragon.png?v=' +
+      Game.version +
+      ');}',
+      '.modAssetIcons{background-image:url(img/icons.png?v=' +
+      Game.version +
+      ');}',
+      // 牛奶弹窗
+      '.modAssetMilkPlain{background:url(img/milkPlain.png);}',
+      '.modAssetMilkChocolate{background:url(img/milkChocolate.png);}',
+      '.modAssetMilkRaspberry{background:url(img/milkRaspberry.png);}',
+      '.modAssetMilkOrange{background:url(img/milkOrange.png);}',
+      '.modAssetMilkCaramel{background:url(img/milkCaramel.png);}',
+      '.modAssetMilkBanana{background:url(img/milkBanana.png);}',
+      '.modAssetMilkLime{background:url(img/milkLime.png);}',
+      '.modAssetMilkBlueberry{background:url(img/milkBlueberry.png);}',
+      '.modAssetMilkStrawberry{background:url(img/milkStrawberry.png);}',
+      '.modAssetMilkVanilla{background:url(img/milkVanilla.png);}',
+      '.modAssetMilkHoney{background:url(img/milkHoney.png);}',
+      '.modAssetMilkCoffee{background:url(img/milkCoffee.png);}',
+      '.modAssetMilkTea{background:url(img/milkTea.png);}',
+      '.modAssetMilkCoconut{background:url(img/milkCoconut.png);}',
+      '.modAssetMilkCherry{background:url(img/milkCherry.png);}',
+      '.modAssetMilkSpiced{background:url(img/milkSpiced.png);}',
+      '.modAssetMilkMaple{background:url(img/milkMaple.png);}',
+      '.modAssetMilkMint{background:url(img/milkMint.png);}',
+      '.modAssetMilkLicorice{background:url(img/milkLicorice.png);}',
+      '.modAssetMilkRose{background:url(img/milkRose.png);}',
+      '.modAssetMilkDragonfruit{background:url(img/milkDragonfruit.png);}',
+      '</style>',
+    ].join('')
+  );
+}
+
 // 顺带修复花园小游戏Tooltip重复请求资源的BUG
 const FixGardenTooltip = MOD => {
   const FixGarden = () => {
     if (Game.isMinigameReady(Game.Objects['Farm'])) {
-      // 插入固定的CSS定义
-      l('gardenBG').insertAdjacentHTML(
-        'beforebegin',
-        [
-          '<style>',
-          '.modAssetGardenSeedTinyLocked{transform:scale(0.5,0.5);margin:-20px -16px;display:inline-block;width:48px;height:48px;background:url(img/icons.png?v=' +
-            Game.version +
-            ');}',
-          '.modAssetGardenPlantsIcon{background-image:url(img/gardenPlants.png?v=' +
-            Game.version +
-            ') !important;}',
-          '.modAssetTurnInto{background:url(img/turnInto.png);}',
-          '.modAssetGardenTip{background-image:url(img/gardenTip.png);background-size:100%;float:right;margin:0px 0px 8px 8px;width:120px;height:153px;}',
-          '.modAssetGardenTipCN{background-image:url(' +
-            MOD.dir +
-            '/gardenTip.png);background-size:100%;float:right;margin:0px 0px 8px 8px;width:120px;height:153px;}',
-          '</style>',
-        ].join('')
-      );
-
       let M = Game.Objects['Farm'].minigame;
 
       // 修复问号的资源加载
@@ -249,38 +284,79 @@ const ModCookiesFormat = MOD => {
   });
 };
 
-// 设置菜单扩充
-const ModMenu = MOD => {
-  var oldMenu = Game.UpdateMenu;
+
+// 菜单修改
+const MENU_HOOKS = [];
+const AddMenuHook = (func) => {
+  MENU_HOOKS.push(func);
+}
+const SetupMenuHooks = (MOD) => {
+  let oldMenu = Game.UpdateMenu;
   Game.UpdateMenu = function () {
     oldMenu();
-    if (Game.onMenu == 'prefs') {
-      var menu = l('menu').innerHTML;
-      l('menu').innerHTML = menu.replace(
-        '<div style="height:128px;"></div>',
-        '<div class="framed" style="margin:4px 48px;">' +
-          '  <div class="block" style="padding:0px;margin:8px 4px;">' +
-          '   <div class="subsection" style="padding:0px;">' +
-          '    <div class="title">中文模组设置</div>' +
-          '    <div class="listing">' +
-          Game.WriteButton(
-            'numbercn',
-            'numbercnButton',
-            '使用单位缩短数字' + ON,
-            '使用单位缩短数字' + OFF,
-            'BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
-          ) +
-          '<label>(' +
-          '使用中文单位显示数字' +
-          ')</label><br>' +
-          '    </div>' +
-          '   </div>' +
-          '  </div>' +
-          '</div><div style="height:128px;"></div>'
-      );
+    let menuHTML = l('menu').innerHTML;
+    for (let hook of MENU_HOOKS) {
+      menuHTML = hook(MOD, menuHTML);
     }
+    menu.innerHTML = menuHTML;
   };
 };
+
+// 添加设置
+const ModPrefMenu = (MOD, menu) => {
+  if (Game.onMenu == 'prefs') {
+    return menu.replace(
+      '<div style="height:128px;"></div>',
+      '<div class="framed" style="margin:4px 48px;">' +
+        '  <div class="block" style="padding:0px;margin:8px 4px;">' +
+        '   <div class="subsection" style="padding:0px;">' +
+        '    <div class="title">中文模组设置</div>' +
+        '    <div class="listing">' +
+        Game.WriteButton(
+          'numbercn',
+          'numbercnButton',
+          '使用单位缩短数字' + ON,
+          '使用单位缩短数字' + OFF,
+          'BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
+        ) +
+        '<label>(' +
+        '使用中文单位显示数字' +
+        ')</label><br>' +
+        '    </div>' +
+        '   </div>' +
+        '  </div>' +
+        '</div><div style="height:128px;"></div>'
+    );
+  }
+  return menu;
+}
+
+// 修复统计菜单的图标重复加载的问题
+const FixStatMenu = (MOD, menu) => {
+  if (Game.onMenu == 'stats') {
+    return menu
+    .replaceAll(
+      /style="background:url\(img\/santa\.png\) ([^"]*)" class="trophy"/g,
+      (_, v) => 'style="background-position:'+v+'" class="trophy modAssetSanta"'
+    ).replaceAll(
+      /style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground%3Aurl%28img\/santa\.png%29%20/g,
+      'class%3D%22modAssetSanta%22%20style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground-position%3A'
+    ).replaceAll(
+      /style="background:url\(img\/dragon\.png\?v=[0-9.]*\) ([^"]*)" class="trophy"/g,
+      (_, v) => 'style="background-position:'+v+'" class="trophy modAssetDragon"'
+    ).replaceAll(
+      /style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground%3Aurl%28img\/dragon\.png%3Fv%3D[0-9.]*%29%20/g,
+      'class%3D%22modAssetDragon%22%20style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground-position%3A'
+    ).replaceAll(
+      /style="background:url\(img\/icons\.png\?v=[0-9.]*\) ([^"]*)" class="trophy"/g,
+      (_, v) => 'style="background-position:'+v+'" class="trophy modAssetIcons"'
+    ).replaceAll(
+      /style%3D%22width%3A100%25%3Bheight%3A96px%3Bposition%3Aabsolute%3Bleft%3A0px%3Bbottom%3A0px%3Bbackground%3Aurl%28img\/milk(\w*)\.png%29%3B/g,
+      (_, v) => 'class%3D%22modAssetMilk'+v+'%22%20style%3D%22width%3A100%25%3Bheight%3A96px%3Bposition%3Aabsolute%3Bleft%3A0px%3Bbottom%3A0px%3B'
+    );
+  }
+  return menu;
+}
 
 // 在游戏加载前就修复Loc函数 (需要赶在本地化成就之前就生效)
 FixParseLoc();
@@ -291,7 +367,10 @@ Game.registerMod('TWCNClickerCN', {
     this.lang = localStorageGet('CookieClickerLang');
 
     // 修复官方游戏的一些BUG
+    InjectCSS(this);
     FixGardenTooltip(this);
+    SetupMenuHooks(this);
+    AddMenuHook(FixStatMenu);
 
     // 只有语言是中文的时候启用模组
     if (this.lang == 'ZH-CN') {
@@ -300,7 +379,7 @@ Game.registerMod('TWCNClickerCN', {
 
       ModGameUnit(this);
       ModCookiesFormat(this);
-      ModMenu(this);
+      AddMenuHook(ModPrefMenu);
     }
   },
   save: function () {
