@@ -151,6 +151,10 @@
     "english": "This tile of soil is empty.<br>Pick a seed and plant something!",
     "chinese": "该格子土是空的。<br>选一粒种子，种点东西吧！"
   },
+  "You harvested <b>%1</b> while you were away.": {
+    "english": "You harvested <b>%1</b> while you were away.",
+    "chinese": "你离线时收获了 <b>%1</b>。"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"
