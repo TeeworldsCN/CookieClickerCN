@@ -153,7 +153,11 @@
   },
   "You harvested <b>%1</b> while you were away.": {
     "english": "You harvested <b>%1</b> while you were away.",
-    "chinese": "你离线时收获了 <b>%1</b>。"
+    "chinese": "你在离线期间收获了 <b>%1</b>。"
+  },
+  "You earned <b>%1</b> while you were away.": {
+    "english": "You earned <b>%1</b> while you were away.",
+    "chinese": "你在离线期间获得了 <b>%1</b>。"
   },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",

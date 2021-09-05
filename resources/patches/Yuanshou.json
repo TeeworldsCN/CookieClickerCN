@@ -2,7 +2,7 @@
   "author": "Yuanshou",
   "[Upgrade quote 185]Fool's biscuit": {
     "english": "Business. Serious business. This is absolutely all of your business.",
-    "chinese": "生意。大生意。这绝对是你要做的事。"
+    "chinese": "生意。大生意。我们有单大买卖了……"
   },
   "[Upgrade quote 186]Eternal seasons": {
     "comment": "Season to taste是调味的意思 season又是季节 翻不明白了",
@@ -141,12 +141,287 @@
     "chinese": "本来还想讲个关于青蛙的笑话，但是我蟾蜍了这个念想。忘了它吧，蛤蛤。"
   },
   "[Upgrade quote 219]Shark egg": {
-    "deprecated": "预留位置，翻译了以后删掉这行",
     "english": "HELLO IS THIS FOOD?<br>LET ME TELL YOU ABOUT FOOD.<br>WHY DO I KEEP EATING MY FRIENDS",
-    "chinese": "[CN:MISSING]"
+    "chinese": "这是食物吗？<br>让我告诉你关于食物的事。<br>让我告诉你为什么我总是吃我的朋友。"
   },
   "[Upgrade quote 220]Turtle egg": {
     "english": "Turtles, right? Hatch from shells. Grow into shells. What's up with that?<br>Now for my skit about airplane food.",
-    "chinese": "海龟，对吧？从壳中孵化。长成壳。What's up with that?<br>Now for my skit about airplane food."
+    "chinese": "海龟，对吧？从壳中孵化。长进壳里。那是怎么回事？<br>现在来看我的关于飞机食品的短剧。"
+  },
+  "[Upgrade quote 221]Ant larva": {
+    "english": "These are a delicacy in some countries, I swear. You will let these invade your digestive tract, and you will derive great pleasure from it.<br>And all will be well.",
+    "chinese": "我发誓，这些在某些国家是美味佳肴。<br>感受它们经过你的消化道很有乐趣。<br>你不会有事的。"
+  },
+  "[Upgrade quote 222]Golden goose egg": {
+    "english": "The sole vestige of a tragic tale involving misguided investments.",
+    "chinese": "所以你杀了那只会下金蛋的鹅？这交易可不太划算。"
+  },
+  "[Upgrade quote 223]Faberge egg": {
+    "english": "This outrageous egg is definitely fab.",
+    "chinese": "这只令人惊讶的蛋绝对太棒了。"
+  },
+  "[Upgrade quote 224]Wrinklerspawn": {
+    "english": "Look at this little guy! It's gonna be a big boy someday! Yes it is!",
+    "chinese": "看看这个小家伙！他总有一天会变成一个大家伙的！没错！"
+  },
+  "[Upgrade quote 225]Cookie egg": {
+    "english": "The shell appears to be chipped.<br>I wonder what's inside this one!",
+    "chinese": "外壳似乎有个缺口。<br>我想知道这里面是什么！"
+  },
+  "[Upgrade quote 226]Omelette": {
+    "english": "Fromage not included.",
+    "chinese": "不含奶酪"
+  },
+  "[Upgrade quote 227]Chocolate egg": {
+    "english": "Laid by the elusive cocoa bird. There's a surprise inside!",
+    "chinese": "难以捉摸的可可鸟下的蛋。<br>里面有惊喜！"
+  },
+  "[Upgrade quote 228]Century egg": {
+    "english": "Actually not centuries-old. This one isn't a day over 86!",
+    "chinese": "其实没有百年历史。这只还没有超过86天！"
+  },
+  "[Upgrade quote 229]\"egg\"": {
+    "english": "hey it's \"egg\"",
+    "chinese": "嘿，这是个\"蛋\""
+  },
+  "[Upgrade quote 230]Caramel macarons": {
+    "english": "The saltiest, chewiest of them all.",
+    "chinese": "它们中最咸，最耐嚼的。"
+  },
+  "[Upgrade quote 231]Licorice macarons": {
+    "english": "Also known as \"blackarons\".",
+    "chinese": "也被称为“黑卡龙” "
+  },
+  "[Upgrade quote 232]Taller tellers": {
+    "english": "Able to process a higher amount of transactions. Careful though, as taller tellers tell tall tales.",
+    "chinese": "让你的出纳员成为一个业务能力更强的高人——但是要小心眼高手低！毕竟他长得有点太高了"
+  },
+  "[Upgrade quote 233]Scissor-resistant credit cards": {
+    "english": "For those truly valued customers.",
+    "chinese": "给那些真正有价值的客户。"
+  },
+  "[Upgrade quote 234]Acid-proof vaults": {
+    "english": "You know what they say : better safe than sorry.",
+    "chinese": "你知道他们说的：谨言慎行不吃亏，轻率莽撞必后悔。"
+  },
+  "[Upgrade quote 235]Chocolate coins": {
+    "english": "This revolutionary currency is much easier to melt from and into ingots - and tastes much better, for a change.",
+    "chinese": "这种革命性的货币更容易从铸锭中熔炼出来——而且味道也更好，换换口味。"
+  },
+  "[Upgrade quote 236]Exponential interest rates": {
+    "english": "Can't argue with mathematics! Now fork it over.",
+    "chinese": "别按你的计算器了！现在去缴税款。"
+  },
+  "[Upgrade quote 237]Financial zen": {
+    "english": "The ultimate grail of economic thought; the feng shui of big money, the stock market yoga - the Heimlich maneuver of dimes and nickels.",
+    "chinese": "经济思想的终极圣杯;挣大钱的玄学,股市瑜伽学 - 给钢镚做急救。"
+  },
+  "[Upgrade quote 238]Golden idols": {
+    "english": "Lure even greedier adventurers to retrieve your cookies. Now that's a real idol game!",
+    "chinese": "吸引更贪婪的冒险家来取回你的饼干。这才是真正的偶像游戏！"
+  },
+  "[Upgrade quote 239]Sacrifices": {
+    "english": "What's a life to a gigaton of cookies?",
+    "chinese": "我立于十亿饼干之上"
+  },
+  "[Upgrade quote 240]Delicious blessing": {
+    "english": "And lo, the Baker's almighty spoon came down and distributed holy gifts unto the believers - shimmering sugar, and chocolate dark as night, and all manner of wheats. And boy let me tell you, that party was mighty gnarly.",
+    "chinese": "看哪，面包师万能的勺子下来，给信徒们分发了神圣的礼物——闪闪发光的糖，<br>像黑夜一样黑的巧克力，还有各种各样的小麦。<br>孩子，让我告诉你们，那个聚会很奇妙。"
+  },
+  "[Upgrade quote 241]Sun festival": {
+    "english": "Free the primordial powers of your temples with these annual celebrations involving fire-breathers, traditional dancing, ritual beheadings and other merriments!",
+    "chinese": "通过这些涉及喷火、传统舞蹈、仪式斩首和其他欢乐的年度庆祝活动，释放您神庙的原始力量！]"
+  },
+  "[Upgrade quote 242]Enlarged pantheon": {
+    "english": "Enough spiritual inadequacy! More divinities than you'll ever need, or your money back! 100% guaranteed!",
+    "chinese": "受够精神空虚了？这里有比你需要的更多的神，不够包退！童叟无欺！"
+  },
+  "[Upgrade quote 243]Great Baker in the sky": {
+    "english": "This is it. The ultimate deity has finally cast Their sublimely divine eye upon your operation; whether this is a good thing or possibly the end of days is something you should find out very soon.",
+    "chinese": "就是这样。终极之神终于将他们崇高而神圣之眼投向了您的行动；这是一件好事还是可能是末日，你很快就会知道了。"
+  },
+  "[Upgrade quote 244]Pointier hats": {
+    "english": "Tests have shown increased thaumic receptivity relative to the geometric proportions of wizardly conic implements.",
+    "chinese": "测试表明，相对于锥形魔法器具的几何比例，神秘学接受能力有所提高。"
+  },
+  "[Upgrade quote 245]Beardlier beards": {
+    "english": "Haven't you heard? The beard is the word.",
+    "chinese": "胡里胡涂"
+  },
+  "[Upgrade quote 246]Ancient grimoires": {
+    "english": "Contain interesting spells such as \"Turn Water To Drool\", \"Grow Eyebrows On Furniture\" and \"Summon Politician\".",
+    "chinese": "包含有趣的咒语，例如 \"把水变成口水\"，\"让家具上长眉毛\"还有\"召唤政治家\"."
+  },
+  "[Upgrade quote 247]Kitchen curses": {
+    "english": "Exotic magic involved in all things pastry-related. Hexcellent!",
+    "chinese": "与糕点相关的所有事物都包含奇异的魔法。太棒了！"
+  },
+  "[Upgrade quote 248]School of sorcery": {
+    "english": "This cookie-funded academy of witchcraft is home to the 4 prestigious houses of magic : the Jocks, the Nerds, the Preps, and the Deathmunchers.",
+    "chinese": "这所由饼干资助的巫师塔是四大著名魔法学院的所在地：运动员、书呆子、预科生和死亡导师。"
+  },
+  "[Upgrade quote 249]Dark formulas": {
+    "english": "Eldritch forces are at work behind these spells - you get the feeling you really shouldn't be messing with those. But I mean, free cookies, right?",
+    "chinese": "咒语背后充满了邪术力量，让你胆战心寒。不过你只在乎饼干，对吧？"
+  },
+  "[Upgrade quote 250]Banker grandmas": {
+    "english": "A nice banker to cash in more cookies.",
+    "chinese": "一个不错的银行家，可以兑现更多的饼干。"
+  },
+  "[Upgrade quote 251]Priestess grandmas": {
+    "english": "A nice priestess to praise the one true Baker in the sky.",
+    "chinese": "一位信仰烘焙之神的女祭司。"
+  },
+  "[Upgrade quote 252]Witch grandmas": {
+    "english": "A nice witch to cast a zip, and a zoop, and poof! Cookies.",
+    "chinese": "一个可以碰！啪！寄！变出饼干来的好巫婆。"
+  },
+  "[Upgrade quote 253]Tin of british tea biscuits": {
+    "english": "Every time is tea time.",
+    "chinese": "任何时间都是下午茶时间。"
+  },
+  "[Upgrade quote 254]Box of macarons": {
+    "english": "Multicolored delicacies filled with various kinds of jam.<br>Not to be confused with macaroons, macaroni, macarena or any of that nonsense.",
+    "chinese": "五彩缤纷的美味佳肴，里面装满了各种果酱。<br>不要与杏仁饼、通心粉、玛卡丽娜或任何无意义的东西混淆。"
+  },
+  "[Upgrade quote 255]Box of brand biscuits": {
+    "english": "They're brand new!",
+    "chinese": "“名牌”牌饼干"
+  },
+  "[Upgrade quote 256]Pure black chocolate cookies": {
+    "english": "Dipped in a lab-made substance darker than the darkest cocoa (dubbed \"chocoalate\").",
+    "chinese": "从惨无人道的黑暗实验可可物质中取出...（其名为巧可力！）"
+  },
+  "[Upgrade quote 257]Pure white chocolate cookies": {
+    "english": "Elaborated on the nano-scale, the coating on this biscuit is able to refract light even in a pitch-black environment.",
+    "chinese": "在纳米尺度上，这种饼干上的涂层即使在漆黑的环境中也能折射光线。"
+  },
+  "[Upgrade quote 258]Ladyfingers": {
+    "english": "Cleaned and sanitized so well you'd swear they're actual biscuits.",
+    "chinese": "清洗和消毒得如此之好，你会发誓它们是真正的饼干。"
+  },
+  "[Upgrade quote 259]Tuiles": {
+    "english": "These never go out of tile.",
+    "chinese": "这些瓷砖永远不会褪色。"
+  },
+  "[Upgrade quote 260]Chocolate-stuffed biscuits": {
+    "english": "A princely snack!<br>The holes are so the chocolate stuffing can breathe.",
+    "chinese": "一份美味的点心！<br>这些洞是为了让巧克力夹心可以呼吸。"
+  },
+  "[Upgrade quote 261]Checker cookies": {
+    "english": "A square cookie? This solves so many storage and packaging problems! You're a genius!",
+    "chinese": "一块方形饼干？ 这解决了许多存储和包装问题！ 你是个天才！"
+  },
+  "[Upgrade quote 262]Butter cookies": {
+    "english": "These melt right off your mouth and into your heart. (Let's face it, they're rather fattening.)",
+    "chinese": "这些东西会从你的嘴里融化到你的心里(让我们面对现实吧，它们很容易让你发胖。）"
+  },
+  "[Upgrade quote 263]Cream cookies": {
+    "english": "It's like two chocolate chip cookies! But brought together with the magic of cream! It's fiendishly perfect!",
+    "chinese": "就像两块巧克力饼干！但与奶油的魔力结合在一起！真是太完美了！"
+  },
+  "[Upgrade quote 274]Angels": {
+    "english": "Lowest-ranking at the first sphere of pastry heaven, angels are tasked with delivering new recipes to the mortals they deem worthy.",
+    "chinese": "在糕点天堂的第一界，天使们的任务是为他们认为有价值的凡人提供新的食谱。"
+  },
+  "[Upgrade quote 275]Archangels": {
+    "english": "Members of the first sphere of pastry heaven, archangels are responsible for the smooth functioning of the world's largest bakeries.",
+    "chinese": "作为糕点天堂第一界的成员，大天使们负责世界上最大的面包店的顺利运作。"
+  },
+  "[Upgrade quote 276]Virtues": {
+    "english": "Found at the second sphere of pastry heaven, virtues make use of their heavenly strength to push and drag the stars of the cosmos.",
+    "chinese": "位于糕点天堂的第二界，力天使利用他们的天力来推拉宇宙的星辰。"
+  },
+  "[Upgrade quote 277]Dominions": {
+    "english": "Ruling over the second sphere of pastry heaven, dominions hold a managerial position and are in charge of accounting and regulating schedules.",
+    "chinese": "作为糕点天堂的第二界之主，主天使占据着管理地位，负责会计和管理日程。"
+  },
+  "[Upgrade quote 278]Cherubim": {
+    "english": "Sieging at the first sphere of pastry heaven, the four-faced cherubim serve as heavenly bouncers and bodyguards.",
+    "chinese": "智天使环绕着糕点天堂的第一界，担任天堂的守护者。"
+  },
+  "[Upgrade quote 279]Seraphim": {
+    "english": "Leading the first sphere of pastry heaven, seraphim possess ultimate knowledge of everything pertaining to baking.",
+    "chinese": "领导糕点天堂的第一界，六翼天使拥有与烘焙有关的一切终极知识。"
+  },
+  "[Upgrade quote 280]God": {
+    "english": "Like Santa, but less fun.",
+    "chinese": "就像圣诞老人，但没那么有趣。"
+  },
+  "[Upgrade quote 281]Twin Gates of Transcendence": {
+    "english": "This is one occasion you're always underdressed for. Don't worry, just rush in past the bouncer and pretend you know people.",
+    "chinese": "这是一个你总是穿着不得体的场合。别担心，从保镖身边冲过去，假装你认识人。"
+  },
+  "[Upgrade quote 282]Heavenly luck": {
+    "english": "Someone up there likes you.",
+    "chinese": "你得到了来自天界的赏识。"
+  },
+  "[Upgrade quote 283]Lasting fortune": {
+    "english": "This isn't your average everyday luck. This is... advanced luck.",
+    "chinese": "这不是你的普通运气。这是……高级运气。"
+  },
+  "[Upgrade quote 284]Decisive fate": {
+    "english": "Life just got a bit more intense.",
+    "chinese": "生活只是变得更加激烈。"
+  },
+  "[Upgrade quote 285]Divine discount": {
+    "english": "Someone special deserves a special price.",
+    "chinese": "特别的人值得特别的价格。"
+  },
+  "[Upgrade quote 286]Divine sales": {
+    "english": "Everything must go!",
+    "chinese": "每样东西都要被卖掉!"
+  },
+  "[Upgrade quote 287]Divine bakeries": {
+    "english": "They sure know what they're doing.",
+    "chinese": "他们肯定知道自己在做什么。"
+  },
+  "[Upgrade quote 288]Starter kit": {
+    "english": "This can come in handy.",
+    "chinese": "这肯定能派上用场。。"
+  },
+  "[Upgrade quote 289]Starter kitchen": {
+    "english": "Where did these come from?",
+    "chinese": "这些是从哪里来的？"
+  },
+  "[Upgrade quote 290]Halo gloves": {
+    "english": "Smite that cookie.",
+    "chinese": "击碎那块饼干。"
+  },
+  "[Upgrade quote 291]Kitten angels": {
+    "english": "All cats go to heaven.",
+    "chinese": "所有的猫都会上天堂。"
+  },
+  "[Upgrade quote 292]Unholy bait": {
+    "english": "No wrinkler can resist the scent of worm biscuits.",
+    "chinese": "没有哪种饼干虫能抵抗蠕虫饼干的气味。"
+  },
+  "[Upgrade quote 293]Sacrilegious corruption": {
+    "english": "Unique in the animal kingdom, the wrinkler digestive tract is able to withstand an incredible degree of dilation - provided you prod them appropriately.",
+    "chinese": "在动物界是独一无二的，饼干虫的消化道能够承受难以置信的扩张——只要你适当地刺激它们。"
+  },
+  "[Upgrade quote 294]Xtreme walkers": {
+    "english": "Complete with flame decals and a little horn that goes \"toot\".",
+    "chinese": "配有火焰贴纸和一个小喇叭，喇叭可以发出“嘟嘟”声。"
+  },
+  "[Upgrade quote 295]Fudge fungus": {
+    "english": "A sugary parasite whose tendrils help cookie growth.<br>Please do not breathe in the spores. In case of spore ingestion, seek medical help within the next 36 seconds.",
+    "chinese": "一种含糖寄生虫，其卷须有助于饼干生长。<br>请不要吸入孢子。 如果不慎摄入，请在接下来的 36 秒内寻求医疗帮助。"
+  },
+  "[Upgrade quote 296]Planetsplitters": {
+    "english": "These new state-of-the-art excavators have been tested on Merula, Globort and Flwanza VI, among other distant planets which have been curiously quiet lately.",
+    "chinese": "这些最先进的新型挖掘机已经在 Merula、Globort 和 Flwanza VI 以及其他最近异常安静的遥远行星上进行了测试。"
+  },
+  "[Upgrade quote 297]Cyborg workforce": {
+    "english": "Semi-synthetic organisms don't slack off, don't unionize, and have 20% shorter lunch breaks, making them ideal labor fodder.",
+    "chinese": "半合成生物体不会懈怠，不会成立工会，午餐休息时间缩短20%，使它们成为理想的打工人。"
+  },
+  "[Upgrade quote 298]Way of the wallet": {
+    "english": "This new monetary school of thought is all the rage on the banking scene; follow its precepts and you may just profit from it.",
+    "chinese": "这种新的货币学派在银行业风靡一时。遵循它的规律，你可能会从中受益。"
+  },
+  "[Upgrade quote 299]Creation myth": {
+    "english": "Stories have been circulating about the origins of the very first cookie that was ever baked; tales of how it all began, in the Dough beyond time and the Ovens of destiny.",
+    "chinese": "关于有史以来第一个烘焙饼干的起源的故事一直在流传。 关于这一切如何开始的故事，在超越时间的面团和命运的烤箱中。"
   }
 }

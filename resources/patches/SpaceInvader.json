@@ -288,5 +288,13 @@
   "tick every %1": {
     "english": "tick every %1",
     "chinese": "每 %1 更新一次"
+  },
+  "A <b>sugar lump</b> is coalescing here, attracted by your accomplishments.": {
+    "english": "A <b>sugar lump</b> is coalescing here, attracted by your accomplishments.",
+    "chinese": "受到你所取得成就的吸引，一个<b>糖块</b>正在此处生长。"
+  },
+  "Your sugar lumps mature after <b>%1</b>,<br>ripen after <b>%2</b>,<br>and fall after <b>%3</b>.": {
+    "english": "Your sugar lumps mature after <b>%1</b>,<br>ripen after <b>%2</b>,<br>and fall after <b>%3</b>.",
+    "chinese": "你的糖块将于<b>%1</b> 后长成，<br><b>%2</b> 后成熟，<br><b>%3</b> 后落下。"
   }
 }
