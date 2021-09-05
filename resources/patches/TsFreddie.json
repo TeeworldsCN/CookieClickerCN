@@ -163,6 +163,26 @@
     "english": "sacrifice %1",
     "chinese": "献祭 %1"
   },
+  "Burst <b>1 wrinkler</b>.": {
+    "english": "Burst <b>1 wrinkler</b>.",
+    "chinese": "戳爆 <b>1 条饼干虫</b>。"
+  },
+  "Burst <b>%1 wrinklers</b>.": {
+    "english": "Burst <b>%1 wrinklers</b>.",
+    "chinese": "戳爆 <b>%1 条饼干虫</b>。"
+  },
+  "Exploded a wrinkler": {
+    "english": "Exploded a wrinkler",
+    "chinese": "戳爆了一条饼干虫"
+  },
+  "Exploded a shiny wrinkler": {
+    "english": "Exploded a shiny wrinkler",
+    "chinese": "戳爆了一条闪光饼干虫"
+  },
+  "Burst the near-extinct <b>shiny wrinkler</b>.": {
+    "english": "Burst the near-extinct <b>shiny wrinkler</b>.",
+    "chinese": "戳爆濒临灭绝的饼干虫品种——<b>闪光饼干虫</b>。"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"
