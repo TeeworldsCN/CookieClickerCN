@@ -1,3 +1,6 @@
+// 按键
+const UNIT_TOGGLE_KEY = 90;
+
 // 中文数字魔改
 const ModGameUnit = MOD => {
   const CN_UNITS = [
@@ -92,7 +95,7 @@ const ModGameUnit = MOD => {
     val = Math.floor(Math.abs(val));
     if (floats > 0 && fixed == val + 1) val++;
     let output;
-    if (Game.prefs.numbercn && Game.keys[32] != 1) {
+    if (Game.prefs.numbercn && Game.keys[UNIT_TOGGLE_KEY] != 1) {
       output = val >= 1e76 && isFinite(val) ? FormatterScientific(val) : FormatterCN(val);
     } else {
       output = val >= 1e16 ? FormatterScientific(val) : FormatterGroupThree(val);
@@ -299,7 +302,7 @@ const FixParseLoc = () => {
 const ModCookiesFormat = MOD => {
   Game.registerHook('draw', () => {
     // 只有使用中文单位时需要
-    if (Game.prefs.numbercn && Game.keys[32] != 1) {
+    if (Game.prefs.numbercn && Game.keys[UNIT_TOGGLE_KEY] != 1) {
       const cookies = l('cookies');
       cookies.innerHTML = cookies.innerHTML.replace(
         /(-?[0-9]+.?[0-9][^\s]*)(?:<br>| )块饼干/,
@@ -344,7 +347,7 @@ const ModPrefMenu = (MOD, menu) => {
           'BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
         ) +
         '<label>(' +
-        '按住<b>空格</b>可临时显示完整数字' +
+        '按住<b>Z键</b>可临时显示完整数字' +
         ')</label><br>' +
         '    </div>' +
         '   </div>' +
@@ -429,12 +432,28 @@ Game.registerMod('TWCNClickerCN', {
   init: function () {
     // 提供语言给函数
     this.lang = localStorageGet('CookieClickerLang');
+    this.lastSpaceKeyStatus = 0;
 
     // 修复官方游戏的一些BUG
     InjectCSS(this);
     FixGardenTooltip(this);
     SetupMenuHooks(this);
     AddMenuHook(FixStatMenu);
+
+    // onDraw
+    Game.registerHook('draw', () => {
+      if (
+        this.lang == 'ZH-CN' &&
+        Game.prefs.numbercn &&
+        this.lastSpaceKeyStatus != Game.keys[UNIT_TOGGLE_KEY]
+      ) {
+        // 检测空格变化
+        this.lastSpaceKeyStatus = Game.keys[UNIT_TOGGLE_KEY];
+        BeautifyAll();
+        Game.RefreshStore();
+        Game.upgradesToRebuild = 1;
+      }
+    });
 
     // 只有语言是中文的时候启用模组
     if (this.lang == 'ZH-CN') {
