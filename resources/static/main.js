@@ -121,9 +121,9 @@ const InjectCSS = MOD => {
         ') !important;}',
       '.modAssetTurnInto{background:url(img/turnInto.png);}',
       '.modAssetGardenTip{background-image:url(img/gardenTip.png);background-size:100%;float:right;margin:0px 0px 8px 8px;width:120px;height:153px;}',
-      '.modAssetGardenTipCN{background-image:url(' +
-        MOD.dir +
-        '/gardenTip.png);background-size:100%;float:right;margin:0px 0px 8px 8px;width:120px;height:153px;}',
+      '.modAssetGardenTipCN{background-image:url("' +
+        MOD.dirURI +
+        '/gardenTip.png");background-size:100%;float:right;margin:0px 0px 8px 8px;width:120px;height:153px;}',
       // 菜单修复
       '.modAssetSanta{background-image:url(img/santa.png?v=' + Game.version + ');}',
       '.modAssetDragon{background-image:url(img/dragon.png?v=' + Game.version + ');}',
@@ -430,6 +430,7 @@ Game.registerMod('TWCNClickerCN', {
   init: function () {
     // 提供语言给函数
     this.lang = localStorageGet('CookieClickerLang');
+    this.dirURI = this.dir && 'file:///' + this.dir.replace(/\\/g, '/');
     this.lastSpaceKeyStatus = 0;
 
     // 修复官方游戏的一些BUG
