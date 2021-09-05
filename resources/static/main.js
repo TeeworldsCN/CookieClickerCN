@@ -240,19 +240,11 @@ const FixParseLoc = () => {
         let plurIndex = locPlur(params[0].n);
         plurIndex = Math.min(str.length - 1, plurIndex);
         str = str[plurIndex];
-        // if (isCN && params[0].b.toString().codePointAt(params[0].b.length - 1) >= 0x4e00) {
-        //   // 移除单位后的空格，保持中文连贯性
-        //   str = replaceAll('%1 ', params[0].b, str);
-        // }
         str = replaceAll('%1', params[0].b, str);
       } else {
         let plurIndex = locPlur(params[0]);
         plurIndex = Math.min(str.length - 1, plurIndex);
         str = str[plurIndex];
-        // if (isCN && params[0].toString().codePointAt(params[0].length - 1) >= 0x4e00) {
-        //   // 移除单位后的空格，保持中文连贯性
-        //   str = replaceAll('%1 ', params[0], str);
-        // }
         str = replaceAll('%1', params[0], str);
       }
     }
@@ -267,10 +259,6 @@ const FixParseLoc = () => {
         afterReplace = true;
         if (!isNaN(it) && params.length >= parseInt(it) - 1) {
           out += params[parseInt(it) - 1];
-          // if (isCN && out.codePointAt(out.length - 1) >= 0x4e00 && str[i + 1] === ' ') {
-          //   // 移除单位后的空格，保持中文连贯性
-          //   i++;
-          // }
         } else out += '%' + it;
       } else if (it == '%') inPercent = true;
       else out += it;
@@ -281,20 +269,28 @@ const FixParseLoc = () => {
 
   if (isCN) {
     // 让成就的数字Filter支持科学计数法
-    beautifyInTextFilter = /((?:[\d]+[,]*(?:\.[\d]+[,]*)?)+(?:e[+-]?\d*)?)/g;
+    beautifyInTextFilterSN = /\d(?:\.\d*)?e\+\d+/g;
     // 将parseInt替换成可以读取更多数字的方式
     BeautifyInTextFunction = str => {
       return Beautify(Number(str.replace(/,/g, '')));
     };
     BeautifyInText = str => {
-      const matchNum = str.match(beautifyInTextFilter);
+      let matchNum = str.match(beautifyInTextFilterSN) || str.match(beautifyInTextFilter);
       if (!matchNum) return str;
       const beautified = BeautifyInTextFunction(matchNum[0]);
-      // if (beautified.codePointAt(beautified.length - 1) >= 0x4e00) {
-      //   // 移除单位后的空格，保持中文连贯性
-      //   str = str.replace(matchNum[0] + ' ', beautified);
-      // }
       return str.replace(matchNum[0], beautified);
+    };
+    BeautifyAll = () => {
+      for (var i in Game.UpgradesById) {
+        Game.UpgradesById[i].ddesc = BeautifyInText(
+          Game.UpgradesById[i].baseDesc || Game.UpgradesById[i].ddesc
+        );
+      }
+      for (var i in Game.AchievementsById) {
+        Game.AchievementsById[i].ddesc = BeautifyInText(
+          Game.AchievementsById[i].baseDesc || Game.AchievementsById[i].ddesc
+        );
+      }
     };
   }
 };
@@ -528,5 +524,6 @@ Game.registerMod('TWCNClickerCN', {
     for (let pref in data.prefs) {
       Game.prefs[pref] = data.prefs[pref];
     }
+    BeautifyAll();
   },
 });

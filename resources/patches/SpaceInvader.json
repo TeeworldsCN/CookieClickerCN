@@ -95,11 +95,11 @@
   },
   "Multiplies the gain from %1 by <b>%2</b>.": {
     "english": "Multiplies the gain from %1 by <b>%2</b>.",
-    "chinese": "%1的收益乘以 <b>%2</b>。"
+    "chinese": "将%1获得的收益乘以 <b>%2</b>。"
   },
   "Each %1 gains <b>+%2 base CpS per %3</b>.": {
     "english": "Each %1 gains <b>+%2 base CpS per %3</b>.",
-    "chinese": "每个%1 <b>按照每 %3 个获得 +%2 基础CpS</b>。"
+    "chinese": "<b>每个%3</b>会使所有%1的<b>基础CpS +%2</b>。"
   },
   "You've pledged to the elders <b>%1 times</b>.": {
     "comment": "没怎么见过中文数字，换成阿拉伯数字保持统一",
