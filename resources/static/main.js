@@ -346,9 +346,7 @@ const ModPrefMenu = (MOD, menu) => {
           '使用中文计数单位' + OFF,
           'BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
         ) +
-        '<label>(' +
-        '按住<b>Z键</b>可临时显示完整数字' +
-        ')</label><br>' +
+        '<label>(按住<b>Z键</b>可临时显示完整数字)</label><br>' +
         '    </div>' +
         '   </div>' +
         '  </div>' +
