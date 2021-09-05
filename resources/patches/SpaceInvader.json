@@ -307,7 +307,7 @@
   },
   "each %1 produces <b>%2</b> per second": {
     "english": "each %1 produces <b>%2</b> per second",
-    "chinese": "每个%1 每秒生产 <b>%2</b>"
+    "chinese": "每个%1每秒生产 <b>%2</b>"
   },
   "...also boosting some other buildings:": {
     "english": "...also boosting some other buildings:",
@@ -316,7 +316,7 @@
   "%1 producing <b>%2</b> per second": {
     "comment": "只有建筑弹窗里有这段，表示已经拥有的建筑的产量",
     "english": "%1 producing <b>%2</b> per second",
-    "chinese": "现有的 %1 每秒生产 <b>%2</b>"
+    "chinese": "现有的 %1每秒生产 <b>%2</b>"
   },
   "%1 ago": {
     "comment": "把 (小时前)（分钟前）等当作连贯的单位，其实主要还是好看",
