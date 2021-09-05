@@ -1,3 +1,11 @@
 {
-  "author": "AbyssAir"
+  "author": "AbyssAir",
+  "Empty tile": {
+    "english": "Empty tile",
+    "chinese": "空地"
+  },
+  "This tile of soil is empty.<br>Pick a seed and plant something!": {
+    "english": "This tile of soil is empty.<br>Pick a seed and plant something!",
+    "chinese": "这块土地是空的。<br>选一粒种子，种点东西吧！"
+  }
 }
