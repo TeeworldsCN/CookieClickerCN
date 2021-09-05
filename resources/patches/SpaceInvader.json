@@ -276,11 +276,6 @@
     "english": "surrounding tiles (%1x%1) develop no weeds or fungus",
     "chinese": "周围格子 (%1x%1) 没有出现杂草或真菌"
   },
-
-  "explodes into up to %1 of CpS at the end of its lifecycle (max. %2% of bank)": {
-    "english": "explodes into up to %1 of CpS at the end of its lifecycle (max. %2% of bank)",
-    "chinese": "在其生命周期结束时，最多会爆发成CpS的 %1（最大为银行的 %2%）"
-  },
   "cannot handle cold climates; %1% chance to die when frozen": {
     "english": "cannot handle cold climates; %1% chance to die when frozen",
     "chinese": "无法应对寒冷气候；冻结时有 %1% 的几率死亡"
@@ -322,5 +317,10 @@
     "comment": "把 (小时前)（分钟前）等当作连贯的单位，其实主要还是好看",
     "english": "%1 ago",
     "chinese": "%1前"
+  },
+  "in %1": {
+    "comment": "同上",
+    "english": "in %1",
+    "chinese": "%1后可购买"
   }
 }

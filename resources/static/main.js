@@ -47,7 +47,8 @@ const ModGameUnit = MOD => {
         }
       }
     }
-    return Math.floor(val * 100) / 100 + unit;
+    const prec = Game.prefs.numbercndecimal;
+    return Math.floor(val * prec) / prec + unit;
   };
 
   // 替换科学计数法
@@ -330,6 +331,42 @@ const SetupMenuHooks = MOD => {
 };
 
 // 添加设置
+const ModSlider = function (
+  slider,
+  leftText,
+  rightText,
+  startValueFunction,
+  min,
+  max,
+  step,
+  callback
+) {
+  if (!callback) callback = '';
+  return (
+    '<div class="sliderBox"><div style="float:left;" class="smallFancyButton">' +
+    leftText +
+    '</div><div style="float:right;" class="smallFancyButton" id="' +
+    slider +
+    'RightText">' +
+    rightText.replace('[$]', startValueFunction()) +
+    '</div><input class="slider" style="clear:both;" type="range" min="' +
+    min +
+    '" max="' +
+    max +
+    '" step="' +
+    step +
+    '" value="' +
+    startValueFunction() +
+    '" onchange="' +
+    callback +
+    '" oninput="' +
+    callback +
+    '" onmouseup="PlaySound(\'snd/tick.mp3\');" id="' +
+    slider +
+    '"/></div>'
+  );
+};
+
 const ModPrefMenu = (MOD, menu) => {
   if (Game.onMenu == 'prefs') {
     return menu.replace(
@@ -347,12 +384,24 @@ const ModPrefMenu = (MOD, menu) => {
           'BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
         ) +
         '<label>(按住<b>Z键</b>可临时显示完整数字)</label><br>' +
+        ModSlider(
+          'numbercnDecimal',
+          '中文单位前保留',
+          '小数点后[$]位',
+          () => Math.log10(Game.prefs.numbercndecimal),
+          0,
+          4,
+          1,
+          "Game.prefs.numbercndecimal=Math.pow(10,Math.floor(l('numbercnDecimal').value));l('numbercnDecimalRightText').innerHTML='小数点后'+Math.floor(l('numbercnDecimal').value)+'位';BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+        ) +
+        '<br>' +
         '    </div>' +
         '   </div>' +
         '  </div>' +
         '</div><div style="height:128px;"></div>'
     );
   }
+
   return menu;
 };
 
@@ -458,6 +507,7 @@ Game.registerMod('TWCNClickerCN', {
     if (this.lang == 'ZH-CN') {
       // 默认设置参数
       if (Game.prefs.numbercn == null) Game.prefs.numbercn = 1;
+      if (Game.prefs.numbercndecimal == null) Game.prefs.numbercndecimal = 100;
 
       ModSayTime(this);
       ModGameUnit(this);
@@ -469,6 +519,7 @@ Game.registerMod('TWCNClickerCN', {
     return JSON.stringify({
       prefs: {
         numbercn: Game.prefs.numbercn,
+        numbercndecimal: Game.prefs.numbercndecimal,
       },
     });
   },
