@@ -216,6 +216,14 @@
     "english": "Have <b>%1</b>.",
     "chinese": "拥有 <b>%1</b>。"
   },
+  "Own <b>%1</b>.": {
+    "english": "Own <b>%1</b>.",
+    "chinese": "掌控 <b>%1</b>。"
+  },
+  "Purchase <b>%1</b>.": {
+    "english": "Purchase <b>%1</b>.",
+    "chinese": "购买 <b>%1</b>。"
+  },
   "Click on the news ticker <b>%1 times</b>.": {
     "english": "Click on the news ticker <b>%1 times</b>.",
     "chinese": "点击滚动新闻 <b>%1次</b>。"
@@ -295,6 +303,24 @@
   },
   "Your sugar lumps mature after <b>%1</b>,<br>ripen after <b>%2</b>,<br>and fall after <b>%3</b>.": {
     "english": "Your sugar lumps mature after <b>%1</b>,<br>ripen after <b>%2</b>,<br>and fall after <b>%3</b>.",
-    "chinese": "你的糖块将于<b>%1</b> 后长成，<br><b>%2</b> 后成熟，<br><b>%3</b> 后落下。"
+    "chinese": "你的糖块将于 <b>%1</b> 后长成，<br><b>%2</b> 后成熟，<br><b>%3</b> 后落下。"
+  },
+  "each %1 produces <b>%2</b> per second": {
+    "english": "each %1 produces <b>%2</b> per second",
+    "chinese": "每个%1 每秒生产 <b>%2</b>"
+  },
+  "...also boosting some other buildings:": {
+    "english": "...also boosting some other buildings:",
+    "chinese": "……还会强化一些其他建筑："
+  },
+  "%1 producing <b>%2</b> per second": {
+    "comment": "只有建筑弹窗里有这段，表示已经拥有的建筑的产量",
+    "english": "%1 producing <b>%2</b> per second",
+    "chinese": "现有的 %1 每秒生产 <b>%2</b>"
+  },
+  "%1 ago": {
+    "comment": "把 (小时前)（分钟前）等当作连贯的单位，其实主要还是好看",
+    "english": "%1 ago",
+    "chinese": "%1前"
   }
 }

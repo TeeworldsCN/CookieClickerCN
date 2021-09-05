@@ -159,6 +159,10 @@
     "english": "You earned <b>%1</b> while you were away.",
     "chinese": "你在离线期间获得了 <b>%1</b>。"
   },
+  "sacrifice %1": {
+    "english": "sacrifice %1",
+    "chinese": "献祭 %1"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"

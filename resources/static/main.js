@@ -44,7 +44,42 @@ const ModGameUnit = MOD => {
         }
       }
     }
-    return Math.round(val * 1000) / 1000 + unit;
+    return Math.floor(val * 100) / 100 + unit;
+  };
+
+  // 替换科学计数法
+  const SUPNUM = ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'];
+  const FormatterScientific = val => {
+    const [coefficient, exponent] = val.toExponential(12).split('e');
+    const [integer, decimal] = coefficient.split('.');
+    let superscript = '';
+    let negative = false;
+    for (var i = 0; i < exponent.length; i++) {
+      if (exponent.charAt(i) == '+') {
+        negative = false;
+        continue;
+      }
+      if (exponent.charAt(i) == '-') {
+        negative = true;
+        continue;
+      }
+      superscript += SUPNUM[exponent.charCodeAt(i) - 48];
+    }
+
+    return (
+      integer +
+      '.' +
+      decimal.match(/.{1,3}/g).join('\u2008') +
+      '×10' +
+      (negative ? '⁻' : '') +
+      superscript
+    );
+  };
+
+  const FormatterGroupThree = val => {
+    return Math.floor(Math.round(val * 1000) / 1000)
+      .toString()
+      .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   };
 
   // 魔改全局数字格式化函数
@@ -57,20 +92,10 @@ const ModGameUnit = MOD => {
     val = Math.floor(Math.abs(val));
     if (floats > 0 && fixed == val + 1) val++;
     let output;
-    if (Game.prefs.numbercn) {
-      output =
-        val >= 1e76 && isFinite(val)
-          ? val.toPrecision(3).toString()
-          : FormatterCN(val)
-              .toString()
-              .replace(/\B(?=(\d{4})+(?!\d))/g, ',');
+    if (Game.prefs.numbercn && Game.keys[32] != 1) {
+      output = val >= 1e76 && isFinite(val) ? FormatterScientific(val) : FormatterCN(val);
     } else {
-      output =
-        val.toString().indexOf('e+') != -1
-          ? val.toPrecision(3).toString()
-          : numberFormatters[2](val)
-              .toString()
-              .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      output = val >= 1e16 ? FormatterScientific(val) : FormatterGroupThree(val);
     }
 
     if (output == '0') negative = false;
@@ -211,19 +236,19 @@ const FixParseLoc = () => {
         let plurIndex = locPlur(params[0].n);
         plurIndex = Math.min(str.length - 1, plurIndex);
         str = str[plurIndex];
-        if (isCN && params[0].b.toString().codePointAt(params[0].b.length - 1) >= 0x4e00) {
-          // 移除单位后的空格，保持中文连贯性
-          str = replaceAll('%1 ', params[0].b, str);
-        }
+        // if (isCN && params[0].b.toString().codePointAt(params[0].b.length - 1) >= 0x4e00) {
+        //   // 移除单位后的空格，保持中文连贯性
+        //   str = replaceAll('%1 ', params[0].b, str);
+        // }
         str = replaceAll('%1', params[0].b, str);
       } else {
         let plurIndex = locPlur(params[0]);
         plurIndex = Math.min(str.length - 1, plurIndex);
         str = str[plurIndex];
-        if (isCN && params[0].toString().codePointAt(params[0].length - 1) >= 0x4e00) {
-          // 移除单位后的空格，保持中文连贯性
-          str = replaceAll('%1 ', params[0], str);
-        }
+        // if (isCN && params[0].toString().codePointAt(params[0].length - 1) >= 0x4e00) {
+        //   // 移除单位后的空格，保持中文连贯性
+        //   str = replaceAll('%1 ', params[0], str);
+        // }
         str = replaceAll('%1', params[0], str);
       }
     }
@@ -238,10 +263,10 @@ const FixParseLoc = () => {
         afterReplace = true;
         if (!isNaN(it) && params.length >= parseInt(it) - 1) {
           out += params[parseInt(it) - 1];
-          if (isCN && out.codePointAt(out.length - 1) >= 0x4e00 && str[i + 1] === ' ') {
-            // 移除单位后的空格，保持中文连贯性
-            i++;
-          }
+          // if (isCN && out.codePointAt(out.length - 1) >= 0x4e00 && str[i + 1] === ' ') {
+          //   // 移除单位后的空格，保持中文连贯性
+          //   i++;
+          // }
         } else out += '%' + it;
       } else if (it == '%') inPercent = true;
       else out += it;
@@ -251,14 +276,20 @@ const FixParseLoc = () => {
   };
 
   if (isCN) {
+    // 让成就的数字Filter支持科学计数法
+    beautifyInTextFilter = /((?:[\d]+[,]*(?:\.[\d]+[,]*)?)+(?:e[+-]?\d*)?)/g;
+    // 将parseInt替换成可以读取更多数字的方式
+    BeautifyInTextFunction = str => {
+      return Beautify(Number(str.replace(/,/g, '')));
+    };
     BeautifyInText = str => {
       const matchNum = str.match(beautifyInTextFilter);
       if (!matchNum) return str;
       const beautified = BeautifyInTextFunction(matchNum[0]);
-      if (beautified.codePointAt(beautified.length - 1) >= 0x4e00) {
-        // 移除单位后的空格，保持中文连贯性
-        str = str.replace(matchNum[0] + ' ', beautified);
-      }
+      // if (beautified.codePointAt(beautified.length - 1) >= 0x4e00) {
+      //   // 移除单位后的空格，保持中文连贯性
+      //   str = str.replace(matchNum[0] + ' ', beautified);
+      // }
       return str.replace(matchNum[0], beautified);
     };
   }
@@ -268,7 +299,7 @@ const FixParseLoc = () => {
 const ModCookiesFormat = MOD => {
   Game.registerHook('draw', () => {
     // 只有使用中文单位时需要
-    if (Game.prefs.numbercn) {
+    if (Game.prefs.numbercn && Game.keys[32] != 1) {
       const cookies = l('cookies');
       cookies.innerHTML = cookies.innerHTML.replace(
         /(-?[0-9]+.?[0-9][^\s]*)(?:<br>| )块饼干/,
@@ -308,12 +339,12 @@ const ModPrefMenu = (MOD, menu) => {
         Game.WriteButton(
           'numbercn',
           'numbercnButton',
-          '使用单位缩短数字' + ON,
-          '使用单位缩短数字' + OFF,
+          '使用中文计数单位' + ON,
+          '使用中文计数单位' + OFF,
           'BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
         ) +
         '<label>(' +
-        '使用中文单位显示数字' +
+        '按住<b>空格</b>可临时显示完整数字' +
         ')</label><br>' +
         '    </div>' +
         '   </div>' +
@@ -384,6 +415,12 @@ const FixPlaySound = () => {
   };
 };
 
+// 去除时间格式的逗号
+const ModSayTime = MOD => {
+  const oldSayTime = Game.sayTime;
+  Game.sayTime = (time, detail) => oldSayTime(time, detail).replace(/,/g, '');
+};
+
 // 在游戏加载前就修复Loc函数 (需要赶在本地化成就之前就生效)
 FixParseLoc();
 FixPlaySound();
@@ -404,6 +441,7 @@ Game.registerMod('TWCNClickerCN', {
       // 默认设置参数
       if (Game.prefs.numbercn == null) Game.prefs.numbercn = 1;
 
+      ModSayTime(this);
       ModGameUnit(this);
       ModCookiesFormat(this);
       AddMenuHook(ModPrefMenu);
