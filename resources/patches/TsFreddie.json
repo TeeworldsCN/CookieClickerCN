@@ -148,7 +148,7 @@
     "chinese": "在运行速度较慢的电脑上，当处于非活动状态且开始出现延迟现象后，游戏会进入睡眠模式；睡眠模式期间离线 CpS 生产点击仍然有效。"
   },
   "This tile of soil is empty.<br>Pick a seed and plant something!": {
-    "deprecated": "翻译润色——Air"
+    "deprecated": "翻译润色——Air",
     "english": "This tile of soil is empty.<br>Pick a seed and plant something!",
     "chinese": "该格子土是空的。<br>选一粒种子，种点东西吧！"
   },
