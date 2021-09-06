@@ -1,3 +1,87 @@
+// 中文品牌饼干
+const BRAND_COOKIE_CN = {
+  // 120: {
+  //   name: '120',
+  //   quote: '120',
+  //   icon: [0, 0],
+  // },
+  // 121: {
+  //   name: '121',
+  //   quote: '121',
+  //   icon: [1, 0],
+  // },
+  // 122: {
+  //   name: '122',
+  //   quote: '122',
+  //   icon: [2, 0],
+  // },
+  // 123: {
+  //   name: '123',
+  //   quote: '123',
+  //   icon: [3, 0],
+  // },
+  // 125: {
+  //   name: '125',
+  //   quote: '125',
+  //   icon: [0, 1],
+  // },
+  // 126: {
+  //   name: '126',
+  //   quote: '126',
+  //   icon: [1, 1],
+  // },
+  // 127: {
+  //   name: '127',
+  //   quote: '127',
+  //   icon: [2, 1],
+  // },
+  // 128: {
+  //   name: '128',
+  //   quote: '128',
+  //   icon: [3, 1],
+  // },
+  // 344: {
+  //   name: '344',
+  //   quote: '344',
+  //   icon: [0, 2],
+  // },
+  // 401: {
+  //   name: '401',
+  //   quote: '401',
+  //   icon: [1, 2],
+  // },
+  // 402: {
+  //   name: '402',
+  //   quote: '402',
+  //   icon: [2, 2],
+  // },
+  // 463: {
+  //   name: '463',
+  //   quote: '463',
+  //   icon: [3, 2],
+  // },
+  // 612: {
+  //   name: '612',
+  //   quote: '612',
+  //   icon: [0, 3],
+  // },
+  // 618: {
+  //   name: '618',
+  //   quote: '618',
+  //   icon: [1, 3],
+  // },
+  // 619: {
+  //   name: '619',
+  //   quote: '619',
+  //   icon: [2, 3],
+  // },
+  // 726: {
+  //   name: '726',
+  //   quote: '726',
+  //   icon: [3, 3],
+  // },
+};
+
 // 按键
 const UNIT_TOGGLE_KEY = 90;
 
@@ -188,14 +272,24 @@ const FixParseLoc = () => {
     };
     BeautifyAll = () => {
       for (var i in Game.UpgradesById) {
-        Game.UpgradesById[i].ddesc = BeautifyInText(
-          Game.UpgradesById[i].baseDesc || Game.UpgradesById[i].ddesc
-        );
+        const it = Game.UpgradesById[i];
+        const type = it.getType();
+        let found = false;
+        it.ddesc = BeautifyInText(it.baseDesc || it.ddesc);
+        found = FindLocStringByPart(type + ' desc ' + it.id);
+        if (found) it.ddesc = loc(found);
+        found = FindLocStringByPart(type + ' quote ' + it.id);
+        if (found) it.ddesc += '<q>' + loc(found) + '</q>';
       }
       for (var i in Game.AchievementsById) {
-        Game.AchievementsById[i].ddesc = BeautifyInText(
-          Game.AchievementsById[i].baseDesc || Game.AchievementsById[i].ddesc
-        );
+        const it = Game.AchievementsById[i];
+        const type = it.getType();
+        let found = false;
+        it.ddesc = BeautifyInText(it.baseDesc || it.ddesc);
+        found = FindLocStringByPart(type + ' desc ' + it.id);
+        if (found) it.ddesc = loc(found);
+        found = FindLocStringByPart(type + ' quote ' + it.id);
+        if (found) it.ddesc += '<q>' + loc(found) + '</q>';
       }
     };
   }
@@ -278,14 +372,6 @@ const ModPrefMenu = (MOD, menu) => {
         '   <div class="subsection" style="padding:0px;">' +
         '    <div class="title">中文模组设置</div>' +
         '    <div class="listing">' +
-        Game.WriteButton(
-          'numbercn',
-          'numbercnButton',
-          '使用中文计数单位' + ON,
-          '使用中文计数单位' + OFF,
-          'BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
-        ) +
-        '<label>(按住<b>Z键</b>可临时显示完整数字)</label><br>' +
         ModSlider(
           'numbercnDecimal',
           '中文单位前保留',
@@ -297,6 +383,25 @@ const ModPrefMenu = (MOD, menu) => {
           "Game.prefs.numbercndecimal=Math.pow(10,Math.floor(l('numbercnDecimal').value));l('numbercnDecimalRightText').innerHTML='小数点后'+Math.floor(l('numbercnDecimal').value)+'位';BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
         ) +
         '<br>' +
+        Game.WriteButton(
+          'numbercn',
+          'numbercnButton',
+          '使用中文计数单位' + ON,
+          '使用中文计数单位' + OFF,
+          'BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
+        ) +
+        '<label>(按住<b>Z键</b>可临时显示完整数字)</label><br>' +
+        (Game.Has('Box of brand biscuits')
+          ? Game.WriteButton(
+              'brandcn',
+              'brandcnButton',
+              '替换品牌饼干' + ON,
+              '替换品牌饼干' + OFF,
+              "Game.mods['" +
+                MOD.id +
+                "'].toggleBrandCookies();Game.RefreshStore();Game.upgradesToRebuild=1;"
+            ) + '<label>(将“一盒品牌饼干”升级替换为本土化的品牌)</label><br>'
+          : '') +
         '    </div>' +
         '   </div>' +
         '  </div>' +
@@ -311,6 +416,21 @@ const ModPrefMenu = (MOD, menu) => {
 const ModSayTime = MOD => {
   const oldSayTime = Game.sayTime;
   Game.sayTime = (time, detail) => oldSayTime(time, detail).replace(/,/g, '');
+};
+
+// 替换品牌饼干
+const ModBrandedCookies = MOD => {
+  MOD.OriginalBrandCookies = {};
+  for (let uid in BRAND_COOKIE_CN) {
+    const it = Game.UpgradesById[uid];
+    MOD.OriginalBrandCookies[uid] = {
+      name: it.dname,
+      desc: it.ddesc,
+      icon: it.icon,
+    };
+    BRAND_COOKIE_CN[uid].desc = it.ddesc.replace(/<q>.*/, '') + BRAND_COOKIE_CN[uid].quote;
+    BRAND_COOKIE_CN[uid].icon.push(MOD.dirURI + '/brands.png');
+  }
 };
 
 // 在游戏加载前就修复Loc函数 (需要赶在本地化成就之前就生效)
@@ -346,6 +466,7 @@ Game.registerMod('TWCNClickerCN', {
       if (Game.prefs.numbercn == null) Game.prefs.numbercn = 1;
       if (Game.prefs.numbercndecimal == null) Game.prefs.numbercndecimal = 100;
 
+      ModBrandedCookies(this);
       ModSayTime(this);
       ModGameUnit(this);
       ModCookiesFormat(this);
@@ -367,5 +488,14 @@ Game.registerMod('TWCNClickerCN', {
       Game.prefs[pref] = data.prefs[pref];
     }
     BeautifyAll();
+  },
+  toggleBrandCookies: function () {
+    const data = Game.prefs.brandcn ? BRAND_COOKIE_CN : this.OriginalBrandCookies;
+    for (let uid in data) {
+      const it = Game.UpgradesById[uid];
+      it.dname = data[uid].name;
+      it.ddesc = data[uid].desc;
+      it.icon = data[uid].icon;
+    }
   },
 });

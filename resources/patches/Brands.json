@@ -1,9 +1,8 @@
 {
-  "comment": "这个文件集中翻译Box of brand biscuits解锁的品牌饼干，因为这些饼干全部替换成了国内能见到的品牌，所以翻译时几乎完全抛弃原意。单独列个文件避免有疑问。",
-  "ignored": "暂时先不使用",
+  "comment": "这个文件集中翻译Box of brand biscuits解锁的品牌饼干，单独列个文件方便参考/对照/替换。",
   "[Upgrade name 120]Caramoas": {
     "english": "Caramoas",
-    "chinese": "真朽酱心曲奇"
+    "chinese": "椰丝巧克力饼圈"
   },
   "[Upgrade quote 120]Caramoas": {
     "english": "Yeah. That's got a nice ring to it.",
@@ -11,7 +10,7 @@
   },
   "[Upgrade name 121]Sagalongs": {
     "english": "Sagalongs",
-    "chinese": "好基友巧克力派"
+    "chinese": "花生酱夹心饼干"
   },
   "[Upgrade quote 121]Sagalongs": {
     "english": "Grandma's favorite?",
@@ -19,27 +18,27 @@
   },
   "[Upgrade name 122]Shortfoils": {
     "english": "Shortfoils",
-    "chinese": "纺易严选切达曲奇"
+    "chinese": "奶油酥饼"
   },
   "[Upgrade quote 122]Shortfoils": {
     "english": "Foiled again!",
-    "chinese": "切哒还挺整齐哒！"
+    "chinese": "酥到你心里！"
   },
   "[Upgrade name 123]Win mints": {
     "english": "Win mints",
-    "chinese": "白早味熔岩曲奇"
+    "chinese": "薄荷巧克力饼干"
   },
   "[Upgrade quote 123]Win mints": {
     "english": "They're the luckiest cookies you've ever tasted!",
-    "chinese": "流出来的不只是爱！"
+    "chinese": "这些大概是你尝过的最薄荷理的幸运饼干了！"
   },
   "[Upgrade name 125]Fig gluttons": {
     "english": "Fig gluttons",
-    "chinese": "塔利园瑞士卷"
+    "chinese": "贪食无花果"
   },
   "[Upgrade quote 125]Fig gluttons": {
     "english": "Got it all figured out.",
-    "chinese": "充满恐怖气息的食品。"
+    "chinese": "可能花被它自己吃了。"
   },
   "[Upgrade name 126]Loreols": {
     "english": "Loreols",
@@ -50,8 +49,8 @@
     "chinese": "因为，呃……这些比奥利奥更值钱？"
   },
   "[Upgrade name 127]Jaffa cakes": {
-    "english": "If you want to bake a cookie from scratch, you must first build a factory.",
-    "chinese": "如果你想从头开始烤个饼干出来，你需要先造个工厂出来。"
+    "english": "Jaffa cakes",
+    "chinese": "橙味巧克力蛋糕"
   },
   "[Upgrade quote 127]Jaffa cakes": {
     "english": "If you want to bake a cookie from scratch, you must first build a factory.",
@@ -59,10 +58,74 @@
   },
   "[Upgrade name 128]Grease's cups": {
     "english": "Grease's cups",
-    "chinese": "高勒高卷卷心"
+    "chinese": "黄油夹心巧克力"
   },
   "[Upgrade quote 128]Grease's cups": {
     "english": "Extra-greasy peanut butter.",
-    "chinese": "勒索你的心。"
+    "chinese": "用黄油替代花生酱真是个绝妙的主意。"
+  },
+  "[Upgrade name 344]Digits": {
+    "english": "Digits",
+    "chinese": "手指巧克力饼干"
+  },
+  "[Upgrade quote 344]Digits": {
+    "english": "Three flavors, zero phalanges.",
+    "chinese": "三种口味，无添加人体组织。"
+  },
+  "[Upgrade name 401]Lombardia cookies": {
+    "english": "Lombardia cookies",
+    "chinese": "非凡农庄可可夹心脆饼"
+  },
+  "[Upgrade quote 401]Lombardia cookies": {
+    "english": "These come from those farms with the really good memory.",
+    "chinese": "这些来自一家记忆超凡的农场。"
+  },
+  "[Upgrade name 402]Bastenaken cookies": {
+    "english": "Bastenaken cookies",
+    "chinese": "巴斯托红糖饼干"
+  },
+  "[Upgrade quote 402]Bastenaken cookies": {
+    "english": "French cookies made of delicious cinnamon and candy sugar. These do not contain Nuts!",
+    "chinese": "美味的肉桂和蔗糖制成的法式饼干。不含坚果。"
+  },
+  "[Upgrade name 463]Festivity loops": {
+    "english": "Festivity loops",
+    "chinese": "节庆小圈饼干"
+  },
+  "[Upgrade quote 463]Festivity loops": {
+    "english": "These garish biscuits are a perfect fit for children's birthday parties or the funerals of strange, eccentric billionaires.",
+    "chinese": "这些花花绿绿的饼干是儿童生日聚会或古怪的亿万富翁葬礼上的最佳选择。"
+  },
+  "[Upgrade name 612]Havabreaks": {
+    "english": "Havabreaks",
+    "chinese": "俄芙巧克力"
+  },
+  "[Upgrade quote 612]Havabreaks": {
+    "english": "You can snap the sections neatly or just bite into the whole thing like some kind of lunatic. Some oversea countries manufacture these in hundreds of unique flavors, such as green tea, lobster bisque, and dark chocolate.",
+    "chinese": "你可以选择整齐地掰下每个小块，也可以反人类一样整板咬着吃。一些海外国家生产的这些东西有数百种独特的口味，如绿茶味、龙虾浓汤味和黑巧克力味。"
+  },
+  "[Upgrade name 618]Zilla wafers": {
+    "english": "Zilla wafers",
+    "chinese": "吉拉香草小圆饼"
+  },
+  "[Upgrade quote 618]Zilla wafers": {
+    "english": "Popular vanilla-flavored biscuits that somehow keep ending up in banana pudding.<br>Themed after a beloved radioactive prehistoric monster, for some reason.",
+    "chinese": "受欢迎的香草味饼干，不知为什么总会被人放进香蕉布丁里。<br>不知道为什么长得像一个受欢迎的放射性小怪物。"
+  },
+  "[Upgrade name 619]Dim Dams": {
+    "english": "Dim Dams",
+    "chinese": "叮当夹心脆皮饼干"
+  },
+  "[Upgrade quote 619]Dim Dams": {
+    "english": "Two biscuits joined by chocolate and coated in even more chocolate.<br>You wonder - which one is the dim, and which one is the dam?",
+    "chinese": "两块饼干之间用巧克力粘起来，并在外面涂上了更多的巧克力。<br>你想知道——哪一块是叮，哪一块是当？"
+  },
+  "[Upgrade name 726]Pokey": {
+    "english": "Pokey",
+    "chinese": "戳奇巧克力饼干棒"
+  },
+  "[Upgrade quote 726]Pokey": {
+    "english": "While commonly thought to be named so because it's fun to poke your classmates with these, Pokey-brand biscuit sticks actually get their name from their popularity in smoke-free prisons, where they're commonly smuggled and traded in lieu of cigarettes.",
+    "chinese": "虽然人们通常认为这样命名是因为用这些来戳你的同学很有趣，但戳奇牌饼干棒实际上得名于它们在无烟监狱中的受欢迎程度，犯人们经常走私和交易戳奇以代替香烟。"
   }
 }
