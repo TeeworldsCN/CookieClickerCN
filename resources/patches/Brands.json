@@ -1,0 +1,68 @@
+{
+  "comment": "这个文件集中翻译Box of brand biscuits解锁的品牌饼干，因为这些饼干全部替换成了国内能见到的品牌，所以翻译时几乎完全抛弃原意。单独列个文件避免有疑问。",
+  "ignored": "暂时先不使用",
+  "[Upgrade name 120]Caramoas": {
+    "english": "Caramoas",
+    "chinese": "真朽酱心曲奇"
+  },
+  "[Upgrade quote 120]Caramoas": {
+    "english": "Yeah. That's got a nice ring to it.",
+    "chinese": "唔。这里面圈是好东西。"
+  },
+  "[Upgrade name 121]Sagalongs": {
+    "english": "Sagalongs",
+    "chinese": "好基友巧克力派"
+  },
+  "[Upgrade quote 121]Sagalongs": {
+    "english": "Grandma's favorite?",
+    "chinese": "老奶奶的最爱？"
+  },
+  "[Upgrade name 122]Shortfoils": {
+    "english": "Shortfoils",
+    "chinese": "纺易严选切达曲奇"
+  },
+  "[Upgrade quote 122]Shortfoils": {
+    "english": "Foiled again!",
+    "chinese": "切哒还挺整齐哒！"
+  },
+  "[Upgrade name 123]Win mints": {
+    "english": "Win mints",
+    "chinese": "白早味熔岩曲奇"
+  },
+  "[Upgrade quote 123]Win mints": {
+    "english": "They're the luckiest cookies you've ever tasted!",
+    "chinese": "流出来的不只是爱！"
+  },
+  "[Upgrade name 125]Fig gluttons": {
+    "english": "Fig gluttons",
+    "chinese": "塔利园瑞士卷"
+  },
+  "[Upgrade quote 125]Fig gluttons": {
+    "english": "Got it all figured out.",
+    "chinese": "充满恐怖气息的食品。"
+  },
+  "[Upgrade name 126]Loreols": {
+    "english": "Loreols",
+    "chinese": "欧利奥"
+  },
+  "[Upgrade quote 126]Loreols": {
+    "english": "Because, uh... they're worth it?",
+    "chinese": "因为，呃……这些比奥利奥更值钱？"
+  },
+  "[Upgrade name 127]Jaffa cakes": {
+    "english": "If you want to bake a cookie from scratch, you must first build a factory.",
+    "chinese": "如果你想从头开始烤个饼干出来，你需要先造个工厂出来。"
+  },
+  "[Upgrade quote 127]Jaffa cakes": {
+    "english": "If you want to bake a cookie from scratch, you must first build a factory.",
+    "chinese": "如果你想从头开始烤个饼干出来，你需要先造个工厂出来。"
+  },
+  "[Upgrade name 128]Grease's cups": {
+    "english": "Grease's cups",
+    "chinese": "高勒高卷卷心"
+  },
+  "[Upgrade quote 128]Grease's cups": {
+    "english": "Extra-greasy peanut butter.",
+    "chinese": "勒索你的心。"
+  }
+}

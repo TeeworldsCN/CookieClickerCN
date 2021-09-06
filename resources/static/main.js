@@ -107,121 +107,27 @@ const ModGameUnit = MOD => {
   };
 };
 
-const InjectCSS = MOD => {
-  // 插入固定的CSS定义
-  l('game').insertAdjacentHTML(
-    'beforebegin',
-    [
-      '<style>',
-      // 花园修复
-      '.modAssetGardenSeedTinyLocked{transform:scale(0.5,0.5);margin:-20px -16px;display:inline-block;width:48px;height:48px;background:url(img/icons.png?v=' +
-        Game.version +
-        ');}',
-      '.modAssetGardenPlantsIcon{background-image:url(img/gardenPlants.png?v=' +
-        Game.version +
-        ') !important;}',
-      '.modAssetTurnInto{background:url(img/turnInto.png);}',
-      '.modAssetGardenTip{background-image:url(img/gardenTip.png);background-size:100%;float:right;margin:0px 0px 8px 8px;width:120px;height:153px;}',
-      '.modAssetGardenTipCN{background-image:url("' +
-        MOD.dirURI +
-        '/gardenTip.png");background-size:100%;float:right;margin:0px 0px 8px 8px;width:120px;height:153px;}',
-      // 菜单修复
-      '.modAssetSanta{background-image:url(img/santa.png?v=' + Game.version + ');}',
-      '.modAssetDragon{background-image:url(img/dragon.png?v=' + Game.version + ');}',
-      '.modAssetIcons{background-image:url(img/icons.png?v=' + Game.version + ');}',
-      // 牛奶弹窗
-      '.modAssetMilkPlain{background:url(img/milkPlain.png);}',
-      '.modAssetMilkChocolate{background:url(img/milkChocolate.png);}',
-      '.modAssetMilkRaspberry{background:url(img/milkRaspberry.png);}',
-      '.modAssetMilkOrange{background:url(img/milkOrange.png);}',
-      '.modAssetMilkCaramel{background:url(img/milkCaramel.png);}',
-      '.modAssetMilkBanana{background:url(img/milkBanana.png);}',
-      '.modAssetMilkLime{background:url(img/milkLime.png);}',
-      '.modAssetMilkBlueberry{background:url(img/milkBlueberry.png);}',
-      '.modAssetMilkStrawberry{background:url(img/milkStrawberry.png);}',
-      '.modAssetMilkVanilla{background:url(img/milkVanilla.png);}',
-      '.modAssetMilkHoney{background:url(img/milkHoney.png);}',
-      '.modAssetMilkCoffee{background:url(img/milkCoffee.png);}',
-      '.modAssetMilkTea{background:url(img/milkTea.png);}',
-      '.modAssetMilkCoconut{background:url(img/milkCoconut.png);}',
-      '.modAssetMilkCherry{background:url(img/milkCherry.png);}',
-      '.modAssetMilkSpiced{background:url(img/milkSpiced.png);}',
-      '.modAssetMilkMaple{background:url(img/milkMaple.png);}',
-      '.modAssetMilkMint{background:url(img/milkMint.png);}',
-      '.modAssetMilkLicorice{background:url(img/milkLicorice.png);}',
-      '.modAssetMilkRose{background:url(img/milkRose.png);}',
-      '.modAssetMilkDragonfruit{background:url(img/milkDragonfruit.png);}',
-      '</style>',
-    ].join('')
-  );
-};
-
 // 顺带修复花园小游戏Tooltip重复请求资源的BUG
-const FixGardenTooltip = MOD => {
-  const FixGarden = () => {
+const ModGardenTooltip = MOD => {
+  const hackGarden = () => {
     if (Game.isMinigameReady(Game.Objects['Farm'])) {
       let M = Game.Objects['Farm'].minigame;
 
-      // 修复问号的资源加载
-      let oldPlantDesc = M.getPlantDesc;
-      M.getPlantDesc = me => {
-        return oldPlantDesc(me).replaceAll(
-          'gardenSeedTiny" style="background-image:url(img/icons.png?v=' + Game.version + ');',
-          'modAssetGardenSeedTinyLocked" style="'
-        );
-      };
-
-      // 修复Tooltip图标的资源加载
-      const TooltipNeededFix = ['toolTooltip', 'soilTooltip', 'seedTooltip'];
-      for (const t of TooltipNeededFix) {
-        let oldTooltip = M[t];
-        M[t] = id => {
-          return () => {
-            let str = oldTooltip(id)().replaceAll(
-              'icon" style="background:url(img/gardenPlants.png?v=' + Game.version + ');',
-              'icon modAssetGardenPlantsIcon" style="'
-            );
-            if (t === 'seedTooltip') {
-              str = str.replaceAll(
-                'style="background:url(img/turnInto.png);',
-                'class="modAssetTurnInto" style="'
-              );
-            }
-            return str;
-          };
-        };
-      }
-
-      // 修复TileTooltip的图标资源加载
-      let oldTileTooltip = M.tileTooltip;
-      M.tileTooltip = (x, y) => {
-        return () =>
-          oldTileTooltip(x, y)()
-            .replaceAll(
-              'icon" style="background:url(img/gardenPlants.png?v=' + Game.version + ');',
-              'icon modAssetGardenPlantsIcon" style="'
-            )
-            .replaceAll(
-              'style="background:url(img/gardenPlants.png?v=' + Game.version + ');',
-              'class="modAssetGardenPlantsIcon" style="'
-            );
-      };
-
-      // 替换或翻译花园小游戏的提示图片（因为里面有文本）
+      // 翻译花园小游戏的提示图片（因为里面有文本）
       let oldDescFunc = M.tools.info.descFunc;
       M.tools.info.descFunc = () => {
         return oldDescFunc().replace(
           '<img src="img/gardenTip.png" style="float:right;margin:0px 0px 8px 8px;"/>',
-          MOD.lang === 'ZH-CN'
-            ? '<div class="modAssetGardenTipCN"></div>'
-            : '<div class="modAssetGardenTip"></div>'
+          '<img src="' +
+            MOD.dirURI +
+            '/gardenTip.png" width="120px" style="float:right;margin:0px 0px 8px 8px;"/>'
         );
       };
     } else {
-      setTimeout(FixGarden, 500);
+      setTimeout(hackGarden, 500);
     }
   };
-  FixGarden();
+  hackGarden();
 };
 
 // 修复parseLoc
@@ -401,66 +307,6 @@ const ModPrefMenu = (MOD, menu) => {
   return menu;
 };
 
-// 修复统计菜单的图标重复加载的问题
-const FixStatMenu = (MOD, menu) => {
-  if (Game.onMenu == 'stats') {
-    return menu
-      .replaceAll(
-        /style="background:url\(img\/santa\.png\) ([^"]*)" class="trophy"/g,
-        (_, v) => 'style="background-position:' + v + '" class="trophy modAssetSanta"'
-      )
-      .replaceAll(
-        /style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground%3Aurl%28img\/santa\.png%29%20/g,
-        'class%3D%22modAssetSanta%22%20style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground-position%3A'
-      )
-      .replaceAll(
-        /style="background:url\(img\/dragon\.png\?v=[0-9.]*\) ([^"]*)" class="trophy"/g,
-        (_, v) => 'style="background-position:' + v + '" class="trophy modAssetDragon"'
-      )
-      .replaceAll(
-        /style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground%3Aurl%28img\/dragon\.png%3Fv%3D[0-9.]*%29%20/g,
-        'class%3D%22modAssetDragon%22%20style%3D%22width%3A96px%3Bheight%3A96px%3Bmargin%3A4px%20auto%3Bbackground-position%3A'
-      )
-      .replaceAll(
-        /style="background:url\(img\/icons\.png\?v=[0-9.]*\) ([^"]*)" class="trophy"/g,
-        (_, v) => 'style="background-position:' + v + '" class="trophy modAssetIcons"'
-      )
-      .replaceAll(
-        /style%3D%22width%3A100%25%3Bheight%3A96px%3Bposition%3Aabsolute%3Bleft%3A0px%3Bbottom%3A0px%3Bbackground%3Aurl%28img\/milk(\w*)\.png%29%3B/g,
-        (_, v) =>
-          'class%3D%22modAssetMilk' +
-          v +
-          '%22%20style%3D%22width%3A100%25%3Bheight%3A96px%3Bposition%3Aabsolute%3Bleft%3A0px%3Bbottom%3A0px%3B'
-      );
-  }
-  return menu;
-};
-
-// 修复播放声音时重复读取音频的问题
-const FixPlaySound = () => {
-  PlaySound = (url, vol, pitchVar) => {
-    let volume = 1;
-    let volumeSetting = Game.volume;
-    if (typeof vol !== 'undefined') volume = vol;
-    if (volume < -5) {
-      volume += 10;
-      volumeSetting = Game.volumeMusic;
-    }
-    if (!volumeSetting || volume == 0) return 0;
-    if (typeof Sounds[url] === 'undefined') {
-      Sounds[url] = new Audio(url);
-      Sounds[url].onloadeddata = function (e) {
-        PlaySound(url, vol, pitchVar);
-      };
-    } else if (Sounds[url].readyState >= 2) {
-      let sound = Sounds[url];
-      sound.volume = Math.pow((volume * volumeSetting) / 100, 2);
-      sound.currentTime = 0;
-      sound.play();
-    }
-  };
-};
-
 // 去除时间格式的逗号
 const ModSayTime = MOD => {
   const oldSayTime = Game.sayTime;
@@ -469,7 +315,6 @@ const ModSayTime = MOD => {
 
 // 在游戏加载前就修复Loc函数 (需要赶在本地化成就之前就生效)
 FixParseLoc();
-FixPlaySound();
 
 Game.registerMod('TWCNClickerCN', {
   init: function () {
@@ -478,11 +323,7 @@ Game.registerMod('TWCNClickerCN', {
     this.dirURI = this.dir && 'file:///' + this.dir.replace(/\\/g, '/');
     this.lastSpaceKeyStatus = 0;
 
-    // 修复官方游戏的一些BUG
-    InjectCSS(this);
-    FixGardenTooltip(this);
     SetupMenuHooks(this);
-    AddMenuHook(FixStatMenu);
 
     // onDraw
     Game.registerHook('draw', () => {
@@ -508,6 +349,7 @@ Game.registerMod('TWCNClickerCN', {
       ModSayTime(this);
       ModGameUnit(this);
       ModCookiesFormat(this);
+      ModGardenTooltip(this);
       AddMenuHook(ModPrefMenu);
     }
   },

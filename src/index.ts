@@ -61,8 +61,10 @@ for (let key in replaceAll) {
 }
 
 for (const patch of patches) {
+  if (patch["ignored"]) continue;
+
   for (let key in patch) {
-    if (!patch[key].chinese || patch[key].deprecated) continue; // ignore metadatas and deprecated
+    if (!patch[key].chinese || patch[key].deprecated || patch[key].ignored) continue; // ignore metadatas and deprecated
     if (lang[key]) {
       console.error(`duplicate key: "${key}"`);
       process.exit(1);
