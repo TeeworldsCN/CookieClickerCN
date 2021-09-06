@@ -1,3 +1,263 @@
 {
-  "author": "AbyssAir"
+  "author": "AbyssAir",
+  "Golden and wrath cookies appear %1% more.": {
+    "english": "Golden and wrath cookies appear %1% more.",
+    "chinese": "黄金和愤怒饼干出现几率增加 1%。"
+  },
+  "Golden and wrath cookies appear %1% less.": {
+    "english": "Golden and wrath cookies appear %1% less.",
+    "chinese": "黄金和愤怒饼干出现几率减少 1%。"
+  },
+  "Buildings grant -%1% CpS.": {
+    "english": "Buildings grant -%1% CpS.",
+    "chinese": "建筑减少 1% CpS。"
+  },
+  "All golden cookies are wrath cookies with a greater chance of a negative effect.": {
+    "english": "All golden cookies are wrath cookies with a greater chance of a negative effect.",
+    "chinese": "所有的黄金饼干将替换为愤怒饼干，产生负面影响的可能性更大。"
+  },
+  "Soil unlocked at %1 farms.": {
+    "english": "Soil unlocked at %1 farms.",
+    "chinese": "拥有 %1 个农场解锁该土壤。"
+  },
+  "You will be able to change your soil again in %1.": {
+    "english": "You will be able to change your soil again in %1.",
+    "chinese": "你可以在 %1后再次更改你的土壤。"
+  },
+  "Click to use this type of soil for your whole field.": {
+    "english": "Click to use this type of soil for your whole field.",
+    "chinese": "点击此处可在整个农场使用此类土壤。"
+  },
+  "Simple, regular old dirt that you'd find in nature.": {
+    "english": "Simple, regular old dirt that you'd find in nature.",
+    "chinese": "你在自然界中发现的普通、常见的旧泥土。"
+  },
+  "passive plant effects": {
+    "english": "passive plant effects",
+    "chinese": "植物效果"
+  },
+  "%1 of CpS,<br>minimum %2": {
+    "english": "%1 of CpS,<br>minimum %2",
+    "chinese": "成本为 %1 的CpS，<br>最小为 %2"
+  },
+  "Empty tile": {
+    "english": "Empty tile",
+    "chinese": "空地"
+  },
+  "This tile of soil is empty.<br>Pick a seed and plant something!": {
+    "english": "This tile of soil is empty.<br>Pick a seed and plant something!",
+    "chinese": "这块土地是空的。<br>选一粒种子，种点东西吧！"
+  },
+  "Click to plant %1 for %2.": {
+    "english": "Click to plant %1 for %2.",
+    "chinese": "点击花费%2以种植%1。"
+  },
+  "This is your magic meter. Each spell costs magic to use.<div class=\"line\"></div>Your maximum amount of magic varies depending on your amount of <b>Wizard towers</b>, and their level.<div class=\"line\"></div>Magic refills over time. The lower your magic meter, the slower it refills.": {
+    "english": "This is your magic meter. Each spell costs magic to use.<div class=\"line\"></div>Your maximum amount of magic varies depending on your amount of <b>Wizard towers</b>, and their level.<div class=\"line\"></div>Magic refills over time. The lower your magic meter, the slower it refills.",
+    "chinese": "这是你的魔能计量表。每个法术都需要消耗魔能。<div class=\"line\"></div>你的魔能上限取决于你的<b>巫师塔</b>的数量及其等级。<div class=\"line\"></div>魔能会随着时间的推移而重新填满。你的魔能计量表越低，它重新填满的速度就越慢。"
+  },
+  "Spells cast: %1 (total: %2)": {
+    "english": "Spells cast: %1 (total: %2)",
+    "chinese": "施法次数： %1 (总计： %2 )"
+  },
+  "Magic cost:": {
+    "english": "Magic cost:",
+    "chinese": "消耗魔能："
+  },
+  "Chance to backfire:": {
+    "english": "Chance to backfire:",
+    "chinese": "发生反效果的几率："
+  },
+  "Backfire:": {
+    "english": "Backfire:",
+    "chinese": "反效果："
+  },
+  "Backfire!": {
+    "english": "Backfire!",
+    "chinese": "适得其反！"
+  },
+  "%1 magic": {
+    "english": "%1 magic",
+    "chinese": "%1 魔能"
+  },
+  "+%1% of max magic": {
+    "english": "+%1% of max magic",
+    "chinese": "+魔能计量表上限的 %1%"
+  },
+  "Click to refill <b>%1 units</b> of your magic meter for %2.": {
+    "english": "Click to refill <b>%1 units</b> of your magic meter for %2.",
+    "chinese": "点击消耗%2为魔能计量表充能<b>%1 个魔能</b>。"
+  },
+  "Summon half an hour worth of your CpS, capped at %1% of your cookies owned.": {
+    "english": "Summon half an hour worth of your CpS, capped at %1% of your cookies owned.",
+    "chinese": "召唤半小时CpS的饼干,上限为你当前饼干数的 %1%。"
+  },
+  "Summon a random golden cookie. Each existing golden cookie makes this spell +%1% more likely to backfire.": {
+    "english": "Summon a random golden cookie. Each existing golden cookie makes this spell +%1% more likely to backfire.",
+    "chinese": "召唤一个随机的黄金饼干。每一个现有的黄金饼干都会使这个魔法山城反效果的几率 +%1%。"
+  },
+  "All active buffs gain %1% more time (up to %2 more minutes).": {
+    "english": "All active buffs gain %1% more time (up to %2 more minutes).",
+    "chinese": "所有已激活的增益状态延长 %1% （最多延长 %2 分钟）。"
+  },
+  "All active buffs are shortened by %1% (up to %2 minutes shorter).": {
+    "english": "All active buffs are shortened by %1% (up to %2 minutes shorter).",
+    "chinese": "所有已激活的增益状态缩短 %1% （最多缩短 %2 分钟）。"
+  },
+  "No buffs to alter!": {
+    "english": "No buffs to alter!",
+    "chinese": "没有已激活的增益状态！"
+  },
+  "Zap! Buffs lengthened.": {
+    "english": "Zap! Buffs lengthened.",
+    "chinese": "啪！增益状态延长了。"
+  },
+  "The spell picks a random building you could afford if you had twice your current cookies, and gives it to you for free. The building selected must be under %1, and cannot be your most-built one (unless it is your only one).": {
+    "english": "The spell picks a random building you could afford if you had twice your current cookies, and gives it to you for free. The building selected must be under %1, and cannot be your most-built one (unless it is your only one).",
+    "chinese": "如果你有两倍于现在的饼干，咒语会随机挑选一栋你能买得起的建筑，并将其免费送给你。该建筑数量必须在%1以下，并且不能是你数量最多的建筑（除非它是你唯一的建筑）。"
+  },
+  "One of your %1<br>disappears in a puff of smoke.": {
+    "english": "One of your %1<br>disappears in a puff of smoke.",
+    "chinese": "一个%1<br>消失在一股烟雾中。"
+  },
+  "Upgrades are %1% cheaper for 1 minute.": {
+    "english": "Upgrades are %1% cheaper for 1 minute.",
+    "chinese": "1 分钟内升级价格降低 %1%。"
+  },
+  "Upgrades are %1% more expensive for an hour.": {
+    "english": "Upgrades are %1% more expensive for an hour.",
+    "chinese": "1 小时内升级价格上升 %1%。"
+  },
+  "Upgrades are cheaper!": {
+    "english": "Upgrades are cheaper!",
+    "chinese": "升级大促销！"
+  },
+  "Upgrades are pricier!": {
+    "english": "Upgrades are pricier!",
+    "chinese": "升级涨价了！"
+  },
+  "Buildings are %1% cheaper for 1 minute.": {
+    "english": "Buildings are %1% cheaper for 1 minute.",
+    "chinese": "1 分钟内建筑价格降低 %1%"
+  },
+  "Buildings are %1% more expensive for an hour.": {
+    "english": "Buildings are %1% more expensive for an hour.",
+    "chinese": "1 小时内建筑价格上升 %1%"
+  },
+  "Buildings are cheaper!": {
+    "english": "Buildings are cheaper!",
+    "chinese": "建筑大促销！"
+  },
+  "Buildings are pricier!": {
+    "english": "Buildings are pricier!",
+    "chinese": "建筑涨价了！"
+  },
+  "Gambler's Fever Dream": {
+    "english": "Gambler's Fever Dream",
+    "chinese": "赌徒的狂热梦想"
+  },
+  "Cast a random spell at half the magic cost, with twice the chance of backfiring.": {
+    "english": "Cast a random spell at half the magic cost, with twice the chance of backfiring.",
+    "chinese": "随机施放一个魔法，魔法费用减半，有两倍的几率发生反效果。"
+  },
+  "Instantly summon a wrinkler if conditions are fulfilled.": {
+    "english": "Instantly summon a wrinkler if conditions are fulfilled.",
+    "chinese": "如果满足条件，立即召唤一条饼干虫。"
+  },
+  "Spells backfire %1 times less for the next %2 minutes.": {
+    "english": "Spells backfire %1 times less for the next %2 minutes.",
+    "chinese": "在接下来的 %2 分钟内，咒语的适得其反次数减少了 %1 次。"
+  },
+  "Spells backfire %1 times more for the next %2 minutes.": {
+    "english": "Spells backfire %1 times more for the next %2 minutes.",
+    "chinese": "在接下来的 %2 分钟内，咒语还会适得其反 %1 次。"
+  },
+  "Pop one of your wrinklers.": {
+    "english": "Pop one of your wrinklers.",
+    "chinese": "戳爆一条饼干虫。"
+  },
+  "[GOD 1 NAME]Holobore, Spirit of Asceticism": {
+    "english": "Holobore, Spirit of Asceticism",
+    "chinese": "合勒博，禁欲之灵"
+  },
+  "[GOD 2 NAME]Vomitrax, Spirit of Decadence": {
+    "english": "Vomitrax, Spirit of Decadence",
+    "chinese": "福灭特克斯，颓废之灵"
+  },
+  "[GOD 3 NAME]Godzamok, Spirit of Ruin": {
+    "english": "Godzamok, Spirit of Ruin",
+    "chinese": "哥斯马克，毁灭之灵"
+  },
+  "[GOD 4 NAME]Cyclius, Spirit of Ages": {
+    "english": "Cyclius, Spirit of Ages",
+    "chinese": "赛力斯，时代之灵"
+  },
+  "[GOD 5 NAME]Selebrak, Spirit of Festivities": {
+    "english": "Selebrak, Spirit of Festivities",
+    "chinese": "塞乐巴客，节日之灵"
+  },
+  "[GOD 6 NAME]Dotjeiess, Spirit of Creation": {
+    "english": "Dotjeiess, Spirit of Creation",
+    "chinese": "道杰斯，创造之灵"
+  },
+  "[GOD 7 NAME]Muridal, Spirit of Labor": {
+    "english": "Muridal, Spirit of Labor",
+    "chinese": "马瑞戴尔，劳动之灵"
+  },
+  "[GOD 8 NAME]Jeremy, Spirit of Industry": {
+    "english": "Jeremy, Spirit of Industry",
+    "chinese": "杰里米，工业之灵"
+  },
+  "[GOD 9 NAME]Mokalsium, Mother Spirit": {
+    "english": "Mokalsium, Mother Spirit",
+    "chinese": "摩卡斯姆，神灵之母"
+  },
+  "[GOD 10 NAME]Skruuia, Spirit of Scorn": {
+    "english": "Skruuia, Spirit of Scorn",
+    "chinese": "思谷瑞，蔑视之灵"
+  },
+  "[GOD 11 NAME]Rigidel, Spirit of Order": {
+    "english": "Rigidel, Spirit of Order",
+    "chinese": "瑞吉戴尔，秩序之灵"
+  },
+  "Diamond slot": {
+    "english": "Diamond slot",
+    "chinese": "钻石槽"
+  },
+  "Ruby slot": {
+    "english": "Ruby slot",
+    "chinese": "红宝石槽"
+  },
+  "Jade slot": {
+    "english": "Jade slot",
+    "chinese": "玉石槽"
+  },
+  "empty": {
+    "english": "empty",
+    "chinese": "空"
+  },
+  "Release to assign %1 to this slot.": {
+    "english": "Release to assign %1 to this slot.",
+    "chinese": "松开以将%1分配给此槽。"
+  },
+  "Drag a spirit onto this slot to assign it.": {
+    "english": "Drag a spirit onto this slot to assign it.",
+    "chinese": "把一个神灵拖到这个槽上进行分配。"
+  },
+  "If a golden cookie is clicked, this spirit is unslotted and all worship swaps will be used up.": {
+    "english": "If a golden cookie is clicked, this spirit is unslotted and all worship swaps will be used up.",
+    "chinese": "如果点击了一个黄金饼干，这个神灵将被移出槽，所有的交换次数都将被消耗。"
+  },
+  "Each time you slot a spirit, you use up one worship swap.<div class=\"line\"></div>If you have 2 swaps left, the next one will refill after %1.<br>If you have 1 swap left, the next one will refill after %2.<br>If you have 0 swaps left, you will get one after %3.<div class=\"line\"></div>Unslotting a spirit costs no swaps.": {
+    "english": "Each time you slot a spirit, you use up one worship swap.<div class=\"line\"></div>If you have 2 swaps left, the next one will refill after %1.<br>If you have 1 swap left, the next one will refill after %2.<br>If you have 0 swaps left, you will get one after %3.<div class=\"line\"></div>Unslotting a spirit costs no swaps.",
+    "chinese": "每次把一个神灵拖到槽上，你就消耗了一次交换次数。<div class=\"line\"></div>如果你还有 2 次交换次数，下一次交换次数将在%1之后补充。<br>如果你还有 1 次交换次数，下一次交换次数将在%2之后补充。<br>如果你还有 0 次交换次数，你将在%3之后得到 1 次交换次数。<div class=\"line\"></div>将一个神灵移出槽不需要消耗交换次数。"
+  },
+  "Click to refill all your worship swaps for %1.": {
+    "english": "Click to refill all your worship swaps for %1.",
+    "chinese": "点击消耗%1以补充所有的交换次数。"
+  },
+  "Worship swaps: %1": {
+    "english": "Worship swaps: %1",
+    "chinese": "交换次数：%1"
+  }
 }
