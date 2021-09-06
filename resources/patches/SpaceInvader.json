@@ -153,17 +153,17 @@
     "chinese": "黄金和愤怒饼干效果持续时间 +%1%。"
   },
   "Golden and wrath cookies appear %1% more.": {
-    "deprecated": "翻译修复——Air"
+    "deprecated": "翻译修复——Air",
     "english": "Golden and wrath cookies appear %1% more.",
     "chinese": "黄金和愤怒饼干多出现增加 1%。"
   },
   "Golden and wrath cookies appear %1% less.": {
-    "deprecated": "翻译修复——Air"
+    "deprecated": "翻译修复——Air",
     "english": "Golden and wrath cookies appear %1% less.",
     "chinese": "黄金和愤怒饼干多出现减少 1%。"
   },
   "Buildings grant -%1% CpS.": {
-    "deprecated": "翻译修复——Air"
+    "deprecated": "翻译修复——Air",
     "english": "Buildings grant -%1% CpS.",
     "chinese": "建筑补助 -%1% CpS。"
   },
@@ -284,12 +284,12 @@
     "chinese": "无法应对寒冷气候；冻结时有 %1% 的几率死亡"
   },
   "Soil unlocked at %1 farms.": {
-    "deprecated": "翻译润色——Air"
+    "deprecated": "翻译润色——Air",
     "english": "Soil unlocked at %1 farms.",
     "chinese": "在 %1 个农场解锁土壤。"
   },
   "You will be able to change your soil again in %1.": {
-    "deprecated": "翻译修复——Air"
+    "deprecated": "翻译修复——Air",
     "english": "You will be able to change your soil again in %1.",
     "chinese": "你可以在 %1 中再次更改你的土壤。"
   },
