@@ -32,28 +32,64 @@
     "chinese": "[CN:MISSING]"
   },
   "%1 cookie": {
-    "english": ["%1 cookie", "%1 cookies"],
-    "chinese": ["%1 块饼干", "%1 块饼干"]
+    "english": [
+      "%1 cookie",
+      "%1 cookies"
+    ],
+    "chinese": [
+      "%1 块饼干",
+      "%1 块饼干"
+    ]
   },
   "%1 sugar lump": {
-    "english": ["%1 sugar lump", "%1 sugar lumps"],
-    "chinese": ["%1 个糖块", "%1 个糖块"]
+    "english": [
+      "%1 sugar lump",
+      "%1 sugar lumps"
+    ],
+    "chinese": [
+      "%1 个糖块",
+      "%1 个糖块"
+    ]
   },
   "%1 heavenly chip": {
-    "english": ["%1 heavenly chip", "%1 heavenly chips"],
-    "chinese": ["%1 块天堂碎片", "%1 块天堂碎片"]
+    "english": [
+      "%1 heavenly chip",
+      "%1 heavenly chips"
+    ],
+    "chinese": [
+      "%1 块天堂碎片",
+      "%1 块天堂碎片"
+    ]
   },
   "%1 golden cookie": {
-    "english": ["%1 golden cookie", "%1 golden cookies"],
-    "chinese": ["%1 块黄金饼干", "%1 块黄金饼干"]
+    "english": [
+      "%1 golden cookie",
+      "%1 golden cookies"
+    ],
+    "chinese": [
+      "%1 块黄金饼干",
+      "%1 块黄金饼干"
+    ]
   },
   "%1 building": {
-    "english": ["%1 building", "%1 buildings"],
-    "chinese": ["%1 个建筑", "%1 个建筑"]
+    "english": [
+      "%1 building",
+      "%1 buildings"
+    ],
+    "chinese": [
+      "%1 个建筑",
+      "%1 个建筑"
+    ]
   },
   "%1 upgrade": {
-    "english": ["%1 upgrade", "%1 upgrades"],
-    "chinese": ["%1 项升级", "%1 项升级"]
+    "english": [
+      "%1 upgrade",
+      "%1 upgrades"
+    ],
+    "chinese": [
+      "%1 项升级",
+      "%1 项升级"
+    ]
   },
   "Yes": {
     "english": "Yes",
@@ -148,20 +184,44 @@
     "chinese": "饼干"
   },
   "%1 day": {
-    "english": ["%1 day", "%1 days"],
-    "chinese": ["%1 天", "%1 天"]
+    "english": [
+      "%1 day",
+      "%1 days"
+    ],
+    "chinese": [
+      "%1 天",
+      "%1 天"
+    ]
   },
   "%1 hour": {
-    "english": ["%1 hour", "%1 hours"],
-    "chinese": ["%1 小时", "%1 小时"]
+    "english": [
+      "%1 hour",
+      "%1 hours"
+    ],
+    "chinese": [
+      "%1 小时",
+      "%1 小时"
+    ]
   },
   "%1 minute": {
-    "english": ["%1 minute", "%1 minutes"],
-    "chinese": ["%1 分", "%1 分"]
+    "english": [
+      "%1 minute",
+      "%1 minutes"
+    ],
+    "chinese": [
+      "%1 分",
+      "%1 分"
+    ]
   },
   "%1 second": {
-    "english": ["%1 second", "%1 seconds"],
-    "chinese": ["%1 秒", "%1 秒"]
+    "english": [
+      "%1 second",
+      "%1 seconds"
+    ],
+    "chinese": [
+      "%1 秒",
+      "%1 秒"
+    ]
   },
   "less than 1 second": {
     "english": "less than 1 second",
@@ -472,8 +532,14 @@
     "chinese": "传承始于："
   },
   "with %1 ascension": {
-    "english": ["with %1 ascension", "with %1 ascensions"],
-    "chinese": ["%1 次飞升", "%1 次飞升"]
+    "english": [
+      "with %1 ascension",
+      "with %1 ascensions"
+    ],
+    "chinese": [
+      "%1 次飞升",
+      "%1 次飞升"
+    ]
   },
   "Run started:": {
     "english": "Run started:",
@@ -1036,8 +1102,14 @@
     "chinese": "（加载）"
   },
   "%1 char": {
-    "english": ["%1 char", "%1 chars"],
-    "chinese": ["%1 个字符", "%1 个字符"]
+    "english": [
+      "%1 char",
+      "%1 chars"
+    ],
+    "chinese": [
+      "%1 个字符",
+      "%1 个字符"
+    ]
   },
   "Check mod data": {
     "english": "Check mod data",
@@ -1068,8 +1140,14 @@
     "chinese": "你正在玩的 Cookie Clicker 基于 <b>%1</b> 协议。<br><b>%2</b> 版使用不同的存档位置。<br>点击此锁以重新加载页面，并切换至 <b>%2</b> 版！"
   },
   "+%1 more notification.": {
-    "english": ["+%1 more notification.", "+%1 more notifications."],
-    "chinese": ["额外 %1 条通知。", "额外 %1 条通知。"]
+    "english": [
+      "+%1 more notification.",
+      "+%1 more notifications."
+    ],
+    "chinese": [
+      "额外 %1 条通知。",
+      "额外 %1 条通知。"
+    ]
   },
   "Christmas": {
     "english": "Christmas",
@@ -1474,8 +1552,14 @@
     "chinese": "使者"
   },
   "%1 herald": {
-    "english": ["%1 herald", "%1 heralds"],
-    "chinese": ["%1 个使者", "%1 个使者"]
+    "english": [
+      "%1 herald",
+      "%1 heralds"
+    ],
+    "chinese": [
+      "%1 个使者",
+      "%1 个使者"
+    ]
   },
   "Heralds couldn't be loaded. There may be an issue with our servers, or you are playing the game locally.": {
     "english": "Heralds couldn't be loaded. There may be an issue with our servers, or you are playing the game locally.",
@@ -1615,7 +1699,17 @@
       "Blitzen",
       "Rudolph"
     ],
-    "chinese": ["猛冲者", "舞者", "腾跃者", "母夜叉", "彗星", "丘比特", "多纳", "闪电", "鲁道夫"]
+    "chinese": [
+      "猛冲者",
+      "舞者",
+      "腾跃者",
+      "母夜叉",
+      "彗星",
+      "丘比特",
+      "多纳",
+      "闪电",
+      "鲁道夫"
+    ]
   },
   "The reindeer gives you %1.": {
     "english": "The reindeer gives you %1.",
@@ -2462,8 +2556,14 @@
     "chinese": "天堂碎片："
   },
   "%1 prestige level": {
-    "english": ["%1 prestige level", "%1 prestige levels"],
-    "chinese": ["%1 个威望等级", "%1 个威望等级"]
+    "english": [
+      "%1 prestige level",
+      "%1 prestige levels"
+    ],
+    "chinese": [
+      "%1 个威望等级",
+      "%1 个威望等级"
+    ]
   },
   "You gain <b>%1</b>!": {
     "english": "You gain <b>%1</b>!",
@@ -2930,8 +3030,14 @@
     "chinese": "指针"
   },
   "%1 cursor": {
-    "english": ["%1 cursor", "%1 cursors"],
-    "chinese": ["%1 个指针", "%1 个指针"]
+    "english": [
+      "%1 cursor",
+      "%1 cursors"
+    ],
+    "chinese": [
+      "%1 个指针",
+      "%1 个指针"
+    ]
   },
   "[Cursor quote]Autoclicks once every 10 seconds.": {
     "english": "Autoclicks once every 10 seconds.",
@@ -2958,8 +3064,14 @@
     "chinese": "老太婆"
   },
   "%1 grandma": {
-    "english": ["%1 grandma", "%1 grandmas"],
-    "chinese": ["%1 个老太婆", "%1 个老太婆"]
+    "english": [
+      "%1 grandma",
+      "%1 grandmas"
+    ],
+    "chinese": [
+      "%1 个老太婆",
+      "%1 个老太婆"
+    ]
   },
   "[Grandma quote]A nice grandma to bake more cookies.": {
     "english": "A nice grandma to bake more cookies.",
@@ -2986,8 +3098,14 @@
     "chinese": "农场"
   },
   "%1 farm": {
-    "english": ["%1 farm", "%1 farms"],
-    "chinese": ["%1 个农场", "%1 个农场"]
+    "english": [
+      "%1 farm",
+      "%1 farms"
+    ],
+    "chinese": [
+      "%1 个农场",
+      "%1 个农场"
+    ]
   },
   "[Farm quote]Grows cookie plants from cookie seeds.": {
     "english": "Grows cookie plants from cookie seeds.",
@@ -3014,8 +3132,14 @@
     "chinese": "矿坑"
   },
   "%1 mine": {
-    "english": ["%1 mine", "%1 mines"],
-    "chinese": ["%1 个矿坑", "%1 个矿坑"]
+    "english": [
+      "%1 mine",
+      "%1 mines"
+    ],
+    "chinese": [
+      "%1 个矿坑",
+      "%1 个矿坑"
+    ]
   },
   "[Mine quote]Mines out cookie dough and chocolate chips.": {
     "english": "Mines out cookie dough and chocolate chips.",
@@ -3042,8 +3166,14 @@
     "chinese": "工厂"
   },
   "%1 factory": {
-    "english": ["%1 factory", "%1 factories"],
-    "chinese": ["%1 个工厂", "%1 个工厂"]
+    "english": [
+      "%1 factory",
+      "%1 factories"
+    ],
+    "chinese": [
+      "%1 个工厂",
+      "%1 个工厂"
+    ]
   },
   "[Factory quote]Produces large quantities of cookies.": {
     "english": "Produces large quantities of cookies.",
@@ -3070,8 +3200,14 @@
     "chinese": "银行"
   },
   "%1 bank": {
-    "english": ["%1 bank", "%1 banks"],
-    "chinese": ["%1 个银行", "%1 个银行"]
+    "english": [
+      "%1 bank",
+      "%1 banks"
+    ],
+    "chinese": [
+      "%1 个银行",
+      "%1 个银行"
+    ]
   },
   "[Bank quote]Generates cookies from interest.": {
     "english": "Generates cookies from interest.",
@@ -3098,8 +3234,14 @@
     "chinese": "神庙"
   },
   "%1 temple": {
-    "english": ["%1 temple", "%1 temples"],
-    "chinese": ["%1 个神庙", "%1 个神庙"]
+    "english": [
+      "%1 temple",
+      "%1 temples"
+    ],
+    "chinese": [
+      "%1 个神庙",
+      "%1 个神庙"
+    ]
   },
   "[Temple quote]Full of precious, ancient chocolate.": {
     "english": "Full of precious, ancient chocolate.",
@@ -3126,8 +3268,14 @@
     "chinese": "巫师塔"
   },
   "%1 wizard tower": {
-    "english": ["%1 wizard tower", "%1 wizard towers"],
-    "chinese": ["%1 个巫师塔", "%1 个巫师塔"]
+    "english": [
+      "%1 wizard tower",
+      "%1 wizard towers"
+    ],
+    "chinese": [
+      "%1 个巫师塔",
+      "%1 个巫师塔"
+    ]
   },
   "[Wizard tower quote]Summons cookies with magic spells.": {
     "english": "Summons cookies with magic spells.",
@@ -3154,8 +3302,14 @@
     "chinese": "装运飞船"
   },
   "%1 shipment": {
-    "english": ["%1 shipment", "%1 shipments"],
-    "chinese": ["%1 艘装运飞船", "%1 艘装运飞船"]
+    "english": [
+      "%1 shipment",
+      "%1 shipments"
+    ],
+    "chinese": [
+      "%1 艘装运飞船",
+      "%1 艘装运飞船"
+    ]
   },
   "[Shipment quote]Brings in fresh cookies from the cookie planet.": {
     "english": "Brings in fresh cookies from the cookie planet.",
@@ -3182,8 +3336,14 @@
     "chinese": "炼金术实验室"
   },
   "%1 alchemy lab": {
-    "english": ["%1 alchemy lab", "%1 alchemy labs"],
-    "chinese": ["%1 个炼金术实验室", "%1 个炼金术实验室"]
+    "english": [
+      "%1 alchemy lab",
+      "%1 alchemy labs"
+    ],
+    "chinese": [
+      "%1 个炼金术实验室",
+      "%1 个炼金术实验室"
+    ]
   },
   "[Alchemy lab quote]Turns gold into cookies!": {
     "english": "Turns gold into cookies!",
@@ -3210,8 +3370,14 @@
     "chinese": "传送门"
   },
   "%1 portal": {
-    "english": ["%1 portal", "%1 portals"],
-    "chinese": ["%1 个传送门", "%1 个传送门"]
+    "english": [
+      "%1 portal",
+      "%1 portals"
+    ],
+    "chinese": [
+      "%1 个传送门",
+      "%1 个传送门"
+    ]
   },
   "[Portal quote]Opens a door to the Cookieverse.": {
     "english": "Opens a door to the Cookieverse.",
@@ -3238,8 +3404,14 @@
     "chinese": "时光机"
   },
   "%1 time machine": {
-    "english": ["%1 time machine", "%1 time machines"],
-    "chinese": ["%1 个时光机", "%1 个时光机"]
+    "english": [
+      "%1 time machine",
+      "%1 time machines"
+    ],
+    "chinese": [
+      "%1 个时光机",
+      "%1 个时光机"
+    ]
   },
   "[Time machine quote]Brings cookies from the past, before they were even eaten.": {
     "english": "Brings cookies from the past, before they were even eaten.",
@@ -3266,8 +3438,14 @@
     "chinese": "反物质聚光镜"
   },
   "%1 antimatter condenser": {
-    "english": ["%1 antimatter condenser", "%1 antimatter condensers"],
-    "chinese": ["%1 台反物质聚光镜", "%1 台反物质聚光镜"]
+    "english": [
+      "%1 antimatter condenser",
+      "%1 antimatter condensers"
+    ],
+    "chinese": [
+      "%1 台反物质聚光镜",
+      "%1 台反物质聚光镜"
+    ]
   },
   "[Antimatter condenser quote]Condenses the antimatter in the universe into cookies.": {
     "english": "Condenses the antimatter in the universe into cookies.",
@@ -3294,8 +3472,14 @@
     "chinese": "棱镜"
   },
   "%1 prism": {
-    "english": ["%1 prism", "%1 prisms"],
-    "chinese": ["%1 个棱镜", "%1 个棱镜"]
+    "english": [
+      "%1 prism",
+      "%1 prisms"
+    ],
+    "chinese": [
+      "%1 个棱镜",
+      "%1 个棱镜"
+    ]
   },
   "[Prism quote]Converts light itself into cookies.": {
     "english": "Converts light itself into cookies.",
@@ -3322,8 +3506,14 @@
     "chinese": "机会制造器"
   },
   "%1 chancemaker": {
-    "english": ["%1 chancemaker", "%1 chancemakers"],
-    "chinese": ["%1 个机会制造器", "%1 个机会制造器"]
+    "english": [
+      "%1 chancemaker",
+      "%1 chancemakers"
+    ],
+    "chinese": [
+      "%1 个机会制造器",
+      "%1 个机会制造器"
+    ]
   },
   "[Chancemaker quote]Generates cookies out of thin air through sheer luck.": {
     "english": "Generates cookies out of thin air through sheer luck.",
@@ -3350,8 +3540,14 @@
     "chinese": "分形引擎"
   },
   "%1 fractal engine": {
-    "english": ["%1 fractal engine", "%1 fractal engines"],
-    "chinese": ["%1 个分形引擎", "%1 个分形引擎"]
+    "english": [
+      "%1 fractal engine",
+      "%1 fractal engines"
+    ],
+    "chinese": [
+      "%1 个分形引擎",
+      "%1 个分形引擎"
+    ]
   },
   "[Fractal engine quote]Turns cookies into even more cookies.": {
     "english": "Turns cookies into even more cookies.",
@@ -3378,8 +3574,14 @@
     "chinese": "Javascript 控制台"
   },
   "%1 javascript console": {
-    "english": ["%1 javascript console", "%1 javascript consoles"],
-    "chinese": ["%1 个 Javascript 控制台", "%1 个 Javascript 控制台"]
+    "english": [
+      "%1 javascript console",
+      "%1 javascript consoles"
+    ],
+    "chinese": [
+      "%1 个 Javascript 控制台",
+      "%1 个 Javascript 控制台"
+    ]
   },
   "[Javascript console quote]Creates cookies from the very code this game was written in.": {
     "english": "Creates cookies from the very code this game was written in.",
@@ -3406,8 +3608,14 @@
     "chinese": "空闲宇宙"
   },
   "%1 idleverse": {
-    "english": ["%1 idleverse", "%1 idleverses"],
-    "chinese": ["%1 个空闲宇宙", "%1 个空闲宇宙"]
+    "english": [
+      "%1 idleverse",
+      "%1 idleverses"
+    ],
+    "chinese": [
+      "%1 个空闲宇宙",
+      "%1 个空闲宇宙"
+    ]
   },
   "[Idleverse quote]There's been countless other idle universes running alongside our own. You've finally found a way to hijack their production and convert whatever they've been making into cookies!": {
     "english": "There's been countless other idle universes running alongside our own. You've finally found a way to hijack their production and convert whatever they've been making into cookies!",
@@ -3626,7 +3834,10 @@
       "You've pledged to the elders <b>once</b>.",
       "You've pledged to the elders <b>%1 times</b>."
     ],
-    "chinese": ["你与老太婆订立誓约<b>一次</b>。", "你与老太婆订立誓约 <b>%1 次</b>。"]
+    "chinese": [
+      "你与老太婆订立誓约<b>一次</b>。",
+      "你与老太婆订立誓约 <b>%1 次</b>。"
+    ]
   },
   "Research takes only <b>5 seconds</b>.": {
     "english": "Research takes only <b>5 seconds</b>.",
@@ -5373,8 +5584,14 @@
     "chinese": "不会腐烂"
   },
   "%1 tick": {
-    "english": ["%1 tick", "%1 ticks"],
-    "chinese": ["%1点击", "%1点击"]
+    "english": [
+      "%1 tick",
+      "%1 ticks"
+    ],
+    "chinese": [
+      "%1点击",
+      "%1点击"
+    ]
   },
   "Weed": {
     "english": "Weed",
@@ -11390,6 +11607,14 @@
   },
   "Fullscreen": {
     "english": "Fullscreen",
+    "chinese": "[CN:MISSING]"
+  },
+  "Screen reader mode": {
+    "english": "Screen reader mode",
+    "chinese": "[CN:MISSING]"
+  },
+  "allows optimizations for screen readers; game will reload": {
+    "english": "allows optimizations for screen readers; game will reload",
     "chinese": "[CN:MISSING]"
   },
   "A local news station runs a 10-minute segment about your cookies. Success!<br><span style=\"font-size:50%;\">(you win a cookie)</span>": {

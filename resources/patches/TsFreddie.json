@@ -188,6 +188,18 @@
     "english": "Note: the grandmothers are growing restless. Do not encourage them.",
     "chinese": "注意：老奶奶正变得焦躁不安。不要刺激她们。"
   },
+  "This sugar lump is still growing and will take <b>%1</b> to reach maturity.": {
+    "english": "This sugar lump is still growing and will take <b>%1</b> to reach maturity.",
+    "chinese": "这个糖块还在生长，还需要 <b>%1</b> 才能长成。"
+  },
+  "Screen reader mode": {
+    "english": "Screen reader mode",
+    "chinese": "屏幕阅读器模式"
+  },
+  "allows optimizations for screen readers; game will reload": {
+    "english": "allows optimizations for screen readers; game will reload",
+    "chinese": "启用针对屏幕阅读器的优化。变更该项会重载游戏。"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"
