@@ -22,8 +22,22 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: 'Build & Test'
+      - name: 'Test & Build'
         run: |
           npm ci
           tsc --skipLibCheck
           node ./dist/index.js
+          cp ./resources/static/* ./build/CookieClickerCNMod/
+
+      - name: Archive Release
+        uses: thedoctor0/zip-release@master
+        with:
+          type: 'zip'
+          directory: 'build'
+          filename: 'cookieclicker-cn.zip'
+          path: 'CookieClickerCNMod'
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: cookieclicker-cn.zip
+          path: build/

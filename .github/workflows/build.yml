@@ -23,7 +23,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: 'Build & test'
+      - name: 'Test & Build'
         run: |
           npm ci
           tsc --skipLibCheck

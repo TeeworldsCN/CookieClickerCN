@@ -1093,6 +1093,46 @@
     "english": "Not exactly cookies, but you won't care once you've tasted one of these.<br>They're so good, it's fudged-up!",
     "chinese": "只要你尝过一口，你就不会在意这到底算不算饼干了。<br>这些实在是太好吃了。"
   },
+  "[Upgrade quote 345]Butter horseshoes": {
+    "english": "It would behoove you to not overindulge in these.",
+    "chinese": "饼干卫生组织蹄醒您不要过度沉迷于这些。"
+  },
+  "[Upgrade quote 346]Butter pucks": {
+    "english": "Lord, what fools these mortals be!<br>(This is kind of a hokey reference.)",
+    "chinese": "神啊，球球你看看这些愚蠢的凡人吧！<br>（这样也算是冰球梗吧。）"
+  },
+  "[Upgrade name 347]Butter knots": {
+    "english": "Butter knots",
+    "chinese": "黄油绳结"
+  },
+  "[Upgrade quote 347]Butter knots": {
+    "english": "Look, you can call these pretzels if you want, but you'd just be fooling yourself, wouldn't you?",
+    "chinese": "听着，如果你要真愿意，叫这些卷饼也不是不可以，但你只是在自欺欺人，不是吗？"
+  },
+  "[Upgrade quote 348]Butter slabs": {
+    "english": "Nothing butter than a slab to the face.",
+    "chinese": "没有人能抵挡一板砖糊脸上的诱惑。"
+  },
+  "[Upgrade quote 349]Butter swirls": {
+    "english": "These are equal parts sugar, butter, and warm fuzzy feelings - all of which cause millions of deaths everyday.",
+    "chinese": "这些饼干是用等比的糖，黄油和暖心的感觉制成的——每种材料都是每天用上百万人的生命换来的。"
+  },
+  "[Upgrade quote 350]Shortbread biscuits": {
+    "english": "These rich butter cookies are neither short, nor bread. What a country!",
+    "chinese": "这些黄油饼干既不是黄色的也不油腻。祖国万岁！"
+  },
+  "[Upgrade quote 351]Millionaires' shortbreads": {
+    "english": "Three thought-provoking layers of creamy chocolate, hard-working caramel and crumbly biscuit in a poignant commentary of class struggle.",
+    "chinese": "三层发人深省的奶油巧克力、辛勤工作的焦糖和酥脆的饼干，是对阶级斗争的深刻描述。"
+  },
+  "[Upgrade quote 352]Caramel cookies": {
+    "english": "The polymerized carbohydrates adorning these cookies are sure to stick to your teeth for quite a while.",
+    "chinese": "点缀这些饼干的聚合碳水化合物肯定会粘在你的牙齿上很长时间。"
+  },
+  "[Upgrade quote 353]Belphegor": {
+    "english": "A demon of shortcuts and laziness, Belphegor commands machines to do work in his stead.",
+    "chinese": "投机取巧之魔贝尔菲戈尔。他只会命令机器来代替他本该做的工作。"
+  },
   "[Achievement quote 26]Sacrifice": {
     "english": "Easy come, easy go.",
     "chinese": "来也匆匆，去也匆匆。"
