@@ -200,6 +200,10 @@
     "english": "allows optimizations for screen readers; game will reload",
     "chinese": "启用针对屏幕阅读器的优化。变更该项会重载游戏。"
   },
+  "This is for baking %1 and making it on the local news.": {
+    "english": "This is for baking %1 and making it on the local news.",
+    "chinese": "谨此纪念烘焙 %1，并登上本地新闻。"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"
@@ -1245,6 +1249,15 @@
   "[Achievement quote 165]Negative void": {
     "english": "You now have so few cookies that it's almost like you have a negative amount of them.",
     "chinese": "你现在饼干数量少的简直跟负数一样。"
+  },
+  "[Achievement name 204]Here you go": {
+    "english": "Here you go",
+    "chinese": "问就是白给"
+  },
+  "Click this achievement's slot.": {
+    "comment": "成就204的描述",
+    "english": "Click this achievement's slot.",
+    "chinese": "点击这个成就栏位。"
   },
   "[Achievement quote 204]Here you go": {
     "english": "All you had to do was ask.",

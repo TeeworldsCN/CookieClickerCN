@@ -327,5 +327,13 @@
     "comment": "同上",
     "english": "in %1",
     "chinese": "%1后可购买"
+  },
+  "%1 Power!": {
+    "english": "%1 Power!",
+    "chinese": "%1能量！"
+  },
+  "%1 Burden!": {
+    "english": "%1 Burden!",
+    "chinese": "%1危机！"
   }
 }
