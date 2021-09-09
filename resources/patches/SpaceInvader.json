@@ -162,11 +162,6 @@
     "english": "Golden and wrath cookies appear %1% less.",
     "chinese": "黄金和愤怒饼干多出现减少 1%。"
   },
-  "Buildings grant -%1% CpS.": {
-    "deprecated": "翻译修复——Air",
-    "english": "Buildings grant -%1% CpS.",
-    "chinese": "建筑补助 -%1% CpS。"
-  },
   "CpS bonus fluctuating between %1 and %2 over time.": {
     "english": "CpS bonus fluctuating between %1 and %2 over time.",
     "chinese": "CpS奖励随时间在 %1 和 %2 之间波动。"

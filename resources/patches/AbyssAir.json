@@ -9,6 +9,7 @@
     "chinese": "黄金和愤怒饼干出现几率减少 1%。"
   },
   "Buildings grant -%1% CpS.": {
+    "deprecated": "这条在Pantheon.json里修改了",
     "english": "Buildings grant -%1% CpS.",
     "chinese": "建筑减少 1% CpS。"
   },
