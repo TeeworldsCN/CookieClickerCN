@@ -2,5 +2,69 @@
   "Profits: %1. All prices are in $econds of your highest raw cookies per second.": {
     "english": "Profits: %1. All prices are in $econds of your highest raw cookies per second.",
     "chinese": "利润：%1。所有价格均以的秒元($)为单位。1 秒元等于你此次飞升峰值原始产量 1 秒种可以生产的饼干数。"
+  },
+  "%1: currently worth <b>$%2</b> per unit.": {
+    "english": "%1: currently worth <b>$%2</b> per unit.",
+    "chinese": "%1：当前每单位价值 <b>$%2</b>。"
+  },
+  "You may increase your storage space by upgrading your offices and by buying more %1. You also get %2 extra storage space per %3 level (currently: <b>+%4</b>).": {
+    "english": "You may increase your storage space by upgrading your offices and by buying more %1. You also get %2 extra storage space per %3 level (currently: <b>+%4</b>).",
+    "chinese": "你可以通过升级办公室和购买更多%1来增加存储空间。%3每升一级还可获得 %2 单位的额外存储空间（当前：<b>+%4</b>）。"
+  },
+  "Your warehouses can store up to %1.": {
+    "english": "Your warehouses can store up to %1.",
+    "chinese": "你的仓库可以最多可以储存 %1。"
+  },
+  "The average worth of this stock and how high it can peak depends on the building it is tied to, along with the level of your %1.": {
+    "english": "The average worth of this stock and how high it can peak depends on the building it is tied to, along with the level of your %1.",
+    "chinese": "这支股票的平均价值及其峰值取决于与货物相关的建筑，以及你%1的等级。"
+  },
+  "Take out %1": {
+    "english": "Take out %1",
+    "chinese": "办理%1"
+  },
+  "Bad credit? No problem. It's your money, and you need it now.": {
+    "english": "Bad credit? No problem. It's your money, and you need it now.",
+    "chinese": "信用不好？没问题。这是你的钱，而且你现在就需要。"
+  },
+  "Buy that vintage car you've always wanted. Just pay us back.": {
+    "english": "Buy that vintage car you've always wanted. Just pay us back.",
+    "chinese": "快去买一辆你梦寐以求的老式汽车。之后只要把钱还上就行了。"
+  },
+  "By taking this loan, you will get %1 CpS for the next %2.": {
+    "english": "By taking this loan, you will get %1 CpS for the next %2.",
+    "chinese": "通过接受此贷款，你的 CpS 将在接下来 %2 内获得 %1 的加成。"
+  },
+  "However, you will get %1 CpS for the next %2 after that.": {
+    "english": "However, you will get %1 CpS for the next %2 after that.",
+    "chinese": "但是，在此之后的 %2 内你 CpS 将受到 %1 的惩罚。"
+  },
+  "Buying goods normally incurs overhead costs of <b>%1% extra</b>. Each broker you hire reduces that cost by <b>%2%</b>.": {
+    "english": "Buying goods normally incurs overhead costs of <b>%1% extra</b>. Each broker you hire reduces that cost by <b>%2%</b>.",
+    "chinese": "购买商品默认会产生 <b>%1%</b> 的<b>额外</b>管理成本。你每雇佣一个经纪人都会将该成本降低 <b>%2%</b>。"
+  },
+  "Current overhead costs thanks to your brokers: <b>+%1%</b>": {
+    "english": "Current overhead costs thanks to your brokers: <b>+%1%</b>",
+    "chinese": "根据你雇用的经纪人数量，目前的额外管理成本为 <b>%1%</b>"
+  },
+  "Buying a broker costs %1 of CpS (that's $%2).": {
+    "english": "Buying a broker costs %1 of CpS (that's $%2).",
+    "chinese": "雇佣一个经纪人的成本为 %1 的 CpS（即 $%2）。"
+  },
+  "You currently own %1 (worth <b>$%2</b>).": {
+    "english": "You currently own %1 (worth <b>$%2</b>).",
+    "chinese": "你当前拥有 %1（价值 <b>$%2</b>）。"
+  },
+  "for $%1 each": {
+    "english": "for $%1 each",
+    "chinese": "每个 $%1"
+  },
+  "Maximum number of brokers you can own: %1 (the highest amount of grandmas you've owned this run, divided by 10, plus your grandma level)": {
+    "english": "Maximum number of brokers you can own: %1 (the highest amount of grandmas you've owned this run, divided by 10, plus your grandma level)",
+    "chinese": "你可以拥有的经纪人的最大数量：%1（这个上限等于你本次飞升最高拥有的老奶奶数量的十分之一加上你的老奶奶等级）"
+  },
+  "+<b>%1%</b> overhead": {
+    "english": "+<b>%1%</b> overhead",
+    "chinese": "+<b>%1%</b> 管理成本"
   }
 }

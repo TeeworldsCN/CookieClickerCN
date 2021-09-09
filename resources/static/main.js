@@ -194,13 +194,12 @@ const ModGameUnit = MOD => {
   };
 };
 
-// 顺带修复花园小游戏Tooltip重复请求资源的BUG
+// 翻译花园小游戏的提示图片（因为里面有文本）
 const ModGardenTooltip = MOD => {
   const hackGarden = () => {
     if (Game.isMinigameReady(Game.Objects['Farm'])) {
       let M = Game.Objects['Farm'].minigame;
 
-      // 翻译花园小游戏的提示图片（因为里面有文本）
       let oldDescFunc = M.tools.info.descFunc;
       M.tools.info.descFunc = () => {
         return oldDescFunc().replace(
@@ -215,6 +214,19 @@ const ModGardenTooltip = MOD => {
     }
   };
   hackGarden();
+};
+
+// 修复股票小游戏内未翻译的文本
+const ModMarket = MOD => {
+  const hackMarket = () => {
+    if (Game.isMinigameReady(Game.Objects['Bank'])) {
+      let M = Game.Objects['Bank'].minigame;
+      M.loanTypes[2][0] = loc('a retirement loan');
+    } else {
+      setTimeout(hackMarket, 500);
+    }
+  };
+  hackMarket();
 };
 
 // 修复parseLoc
@@ -449,7 +461,7 @@ Game.registerMod('TWCNClickerCN', {
   init: function () {
     // 提供语言给函数
     this.lang = localStorageGet('CookieClickerLang');
-    this.dirURI = this.dir && 'file:///' + this.dir.replace(/\\/g, '/');
+    this.dirURI = this.dir ? 'file:///' + this.dir.replace(/\\/g, '/') : 'CookieClickerCNMod';
     this.lastSpaceKeyStatus = 0;
 
     SetupMenuHooks(this);
@@ -461,13 +473,16 @@ Game.registerMod('TWCNClickerCN', {
         Game.prefs.numbercn &&
         this.lastSpaceKeyStatus != Game.keys[UNIT_TOGGLE_KEY]
       ) {
-        // 检测空格变化
+        // 检测按键变化
         this.lastSpaceKeyStatus = Game.keys[UNIT_TOGGLE_KEY];
         BeautifyAll();
         Game.RefreshStore();
         Game.upgradesToRebuild = 1;
       }
     });
+
+    // 其他语言也会被修复
+    ModMarket(this);
 
     // 只有语言是中文的时候启用模组
     if (this.lang == 'ZH-CN') {
