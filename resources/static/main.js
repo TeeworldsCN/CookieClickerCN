@@ -391,7 +391,7 @@ const ModPrefMenu = (MOD, menu) => {
           'BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
         ) +
         '<label>(按住<b>Z键</b>可临时显示完整数字)</label><br>' +
-        (Game.Has('Box of brand biscuits')
+        (false && Game.Has('Box of brand biscuits')
           ? Game.WriteButton(
               'brandcn',
               'brandcnButton',
@@ -415,7 +415,7 @@ const ModPrefMenu = (MOD, menu) => {
 // 去除时间格式的逗号
 const ModSayTime = MOD => {
   const oldSayTime = Game.sayTime;
-  Game.sayTime = (time, detail) => oldSayTime(time, detail).replace(/,/g, '');
+  Game.sayTime = (time, detail) => oldSayTime(time, detail).replace(/, /g, '');
 };
 
 // 替换品牌饼干

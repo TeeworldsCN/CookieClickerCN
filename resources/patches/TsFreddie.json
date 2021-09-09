@@ -1,13 +1,12 @@
 {
   "author": "TsFreddie",
+  "%1 of CpS": {
+    "english": "%1 of CpS",
+    "chinese": "%1 的 CpS"
+  },
   "[Tag]Cookie": {
     "english": "Cookie",
     "chinese": "饼干"
-  },
-  "%1 minute": {
-    "comment": "很多地方没有秒就很奇怪：“每 1 分 更新一次”，不过个别情况可能会有 1分钟30秒 这种奇葩。",
-    "english": ["%1 minute", "%1 minutes"],
-    "chinese": ["%1 分钟", "%1 分钟"]
   },
   "grandmapocalypse": {
     "english": "grandmapocalypse",
@@ -203,6 +202,26 @@
   "This is for baking %1 and making it on the local news.": {
     "english": "This is for baking %1 and making it on the local news.",
     "chinese": "谨此纪念烘焙 %1，并登上本地新闻。"
+  },
+  "Unlocks the <b>shimmering veil</b>, a switch that passively boosts your CpS by <b>%1%</b>.<br>You start with the veil turned on; however, it is very fragile, and clicking the big cookie or any golden cookie or reindeer will turn it off, requiring %2 of CpS to turn back on.": {
+    "english": "Unlocks the <b>shimmering veil</b>, a switch that passively boosts your CpS by <b>%1%</b>.<br>You start with the veil turned on; however, it is very fragile, and clicking the big cookie or any golden cookie or reindeer will turn it off, requiring %2 of CpS to turn back on.",
+    "chinese": "解锁<b>闪光面纱</b>，这个开关可使你的被动 CpS 提高 <b>%1%</b>。<br>面纱开关默认为开启状态；不过，面纱非常脆弱，点击大饼干、黄金饼干或驯鹿会将会关闭面纱。面纱一旦关闭，需要消耗相当于 %2 的原始产量才能重新开启。"
+  },
+  "Boosts your cookie production by <b>%1%</b> when active.<br>The veil is very fragile and will break if you click the big cookie or any golden cookies or reindeer.<br><br>Once broken, turning the veil back on costs %2 of unbuffed CpS.": {
+    "english": "Boosts your cookie production by <b>%1%</b> when active.<br>The veil is very fragile and will break if you click the big cookie or any golden cookies or reindeer.<br><br>Once broken, turning the veil back on costs %2 of unbuffed CpS.",
+    "chinese": "开启后可使你的饼干产量提高<b>%1%</b>。<br>不过，面纱非常脆弱，点击大饼干、黄金饼干或驯鹿会将会再次关闭面纱。<br><br>面纱一旦关闭，需要消耗相当于 %2 的原始产量才能重新开启。"
+  },
+  "Raw cookies per second:": {
+    "english": "Raw cookies per second:",
+    "chinese": "每秒原始饼干产量："
+  },
+  "highest this ascension:": {
+    "english": "highest this ascension:",
+    "chinese": "此次飞升峰值产量："
+  },
+  "Rank %1": {
+    "english": "Rank %1",
+    "chinese": "阶段 %1"
   },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
@@ -1320,6 +1339,10 @@
   "[Achievement quote 262]Last Chance to See": {
     "english": "You monster!",
     "chinese": "你个杀虫狂魔！"
+  },
+  "[Achievement name 263]Early bird": {
+    "english": "Early bird",
+    "chinese": "早起的鸟儿"
   },
   "[Achievement quote 268]Year's worth of cavities": {
     "english": "My lumps my lumps my lumps.",

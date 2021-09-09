@@ -1,0 +1,34 @@
+{
+  "%1 tick": {
+    "english": ["%1 tick", "%1 ticks"],
+    "chinese": ["%1 次更新", "%1 次更新"]
+  },
+  "Mature plants harvested: %1 (total: %2)": {
+    "english": "Mature plants harvested: %1 (total: %2)",
+    "chinese": "收获的成熟植物：%1 (共收获：%2)"
+  },
+  "Mature in about %1": {
+    "english": "Mature in about %1",
+    "chinese": "大约在 %1 后成熟"
+  },
+  "Decays in about %1": {
+    "english": "Decays in about %1",
+    "chinese": "大约在 %1 后腐烂"
+  },
+  "%1 of CpS,<br>minimum %2": {
+    "english": "%1 of CpS,<br>minimum %2",
+    "chinese": "价值 %1 的 CpS<br>至少 %2"
+  },
+  "-You can cross-breed plants by planting them close to each other; new plants will grow in the empty tiles next to them.<br>-Unlock new seeds by harvesting mature plants.<br>-When you ascend, your garden plants are reset, but you keep all the seeds you've unlocked.<br>-Your garden has no effect and does not grow while the game is closed.": {
+    "english": "-You can cross-breed plants by planting them close to each other; new plants will grow in the empty tiles next to them.<br>-Unlock new seeds by harvesting mature plants.<br>-When you ascend, your garden plants are reset, but you keep all the seeds you've unlocked.<br>-Your garden has no effect and does not grow while the game is closed.",
+    "chinese": "・你可以通过将植物种植在相近的格子进行杂交繁殖；新植物将在它们旁边空的格子中生长。<br>・通过收获成熟植物解锁新种子。<br>・飞升后，花园植物将被重置，但会保留所有解锁的种子。<br>・游戏关闭时，花园没有效果，也不会生长。"
+  },
+  "Possible mutations:": {
+    "english": "Possible mutations:",
+    "chinese": "可能的变种："
+  },
+  "Plot size: %1<br>(Upgrades with farm level)": {
+    "english": "Plot size: %1<br>(Upgrades with farm level)",
+    "chinese": "土地容量：%1<br>(通过升级农场等级提升)"
+  }
+}

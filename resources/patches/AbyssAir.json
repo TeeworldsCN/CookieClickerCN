@@ -37,6 +37,7 @@
     "chinese": "植物效果"
   },
   "%1 of CpS,<br>minimum %2": {
+    "deprecated": "在Garden.json里修改了",
     "english": "%1 of CpS,<br>minimum %2",
     "chinese": "成本为 %1 的CpS，<br>最小为 %2"
   },

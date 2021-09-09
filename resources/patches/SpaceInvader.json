@@ -249,15 +249,15 @@
   },
   "A swarm of sugar hornets comes down on your garden, <span class=\"red\">destroying every plant as well as every seed you've unlocked</span> - leaving only a %1 seed.<br>In exchange, they will grant you <span class=\"green\">%2</span>.<br>This action is only available with a complete seed log.": {
     "english": "A swarm of sugar hornets comes down on your garden, <span class=\"red\">destroying every plant as well as every seed you've unlocked</span> - leaving only a %1 seed.<br>In exchange, they will grant you <span class=\"green\">%2</span>.<br>This action is only available with a complete seed log.",
-    "chinese": "一群糖黄蜂来到你的花园里，<span class=\"red\">摧毁了你解锁的每一棵植物和每一颗种子</span> - 只留下 %1 颗种子。<br>作为交换，它们将给你你<span class=\"green\">%2</span>。<br>这个操作只有在完整的种子日志中才可用。"
+    "chinese": "一群糖蜂来到你的花园里，<span class=\"red\">摧毁了你解锁的每一棵植物和每一颗种子</span>，除了一颗%1种子。<br>作为交换，它们将给你 <span class=\"green\">%2</span>。<br>这个操作只有在收集了所有种子的情况下才可以使用。"
   },
   "Do you REALLY want to sacrifice your garden to the sugar hornets?<br><small>You will be left with an empty plot and only the %1 seed unlocked.<br>In return, you will gain <b>%2 sugar lumps</b>.</small>": {
     "english": "Do you REALLY want to sacrifice your garden to the sugar hornets?<br><small>You will be left with an empty plot and only the %1 seed unlocked.<br>In return, you will gain <b>%2 sugar lumps</b>.</small>",
-    "chinese": "你真的想把你的花园牺牲给糖黄蜂吗？<br><small>你将得到一块空地，只有 %1 颗种子被解锁。<br>作为回报，你将获得<b> %2 个糖块</b></small>。"
+    "chinese": "你真的想把你的花园牺牲给糖蜂吗？<br><small>你将得到一块空地，解锁一颗%1种子，其他种子将会消失。<br>作为回报，你将获得 <b>%2 个糖块</b></small>。"
   },
   "You've sacrificed your garden to the sugar hornets, destroying your crops and your knowledge of seeds.<br>In the remains, you find <b>%1 sugar lumps</b>.": {
     "english": "You've sacrificed your garden to the sugar hornets, destroying your crops and your knowledge of seeds.<br>In the remains, you find <b>%1 sugar lumps</b>.",
-    "chinese": "你为了糖蜂牺牲了自己的花园，毁坏了你的庄稼和你对种子的了解。<br>在残留物中，你发现了<b> %1 个糖块。</b>"
+    "chinese": "你将自己的花园献给了糖峰，它们毁坏了你的庄稼和种子仓库。<br>在花园的残墟中，你发现了 <b>%1 个糖块。</b>"
   },
   "surrounding plants (%1x%1) age %2% faster": {
     "english": "surrounding plants (%1x%1) age %2% faster",
@@ -277,7 +277,7 @@
   },
   "surrounding tiles (%1x%1) develop no weeds or fungus": {
     "english": "surrounding tiles (%1x%1) develop no weeds or fungus",
-    "chinese": "周围格子 (%1x%1) 没有出现杂草或真菌"
+    "chinese": "周围格子 (%1x%1) 不会出现杂草或真菌"
   },
   "cannot handle cold climates; %1% chance to die when frozen": {
     "english": "cannot handle cold climates; %1% chance to die when frozen",
@@ -317,6 +317,27 @@
     "comment": "只有建筑弹窗里有这段，表示已经拥有的建筑的产量",
     "english": "%1 producing <b>%2</b> per second",
     "chinese": "现有的 %1每秒生产 <b>%2</b>"
+  },
+  "%1 minute": {
+    "comment": "很多地方没有秒就很奇怪：“每 1 分 更新一次”，不过个别情况可能会有 1分钟30秒 这种奇葩。",
+    "english": ["%1 minute", "%1 minutes"],
+    "chinese": ["%1分钟", "%1分钟"]
+  },
+  "%1 day": {
+    "english": ["%1 day", "%1 days"],
+    "chinese": ["%1天", "%1天"]
+  },
+  "%1 hour": {
+    "english": ["%1 hour", "%1 hours"],
+    "chinese": ["%1小时", "%1小时"]
+  },
+  "%1 second": {
+    "english": ["%1 second", "%1 seconds"],
+    "chinese": ["%1秒", "%1秒"]
+  },
+  "less than 1 second": {
+    "english": "less than 1 second",
+    "chinese": "不到1秒"
   },
   "%1 ago": {
     "comment": "把 (小时前)（分钟前）等当作连贯的单位，其实主要还是好看",

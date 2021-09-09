@@ -1,0 +1,10 @@
+{
+  "You cannot buy and sell this stock in the same tick.": {
+    "english": "You cannot buy and sell this stock in the same tick.",
+    "chinese": "你不能在一次更新内同时进行买入和卖出操作。"
+  },
+  "It is fully upgraded. Its lavish interiors, spanning across innumerable floors, are host to many a decadent party, owing to your nigh-unfathomable wealth.": {
+    "english": "It is fully upgraded. Its lavish interiors, spanning across innumerable floors, are host to many a decadent party, owing to your nigh-unfathomable wealth.",
+    "chinese": "它已被全面升级。奢华的内饰纵跨数不清的楼层，举办了许多享乐派对，因为你有着近乎多不可测的财富。"
+  }
+}
