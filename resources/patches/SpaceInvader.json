@@ -167,41 +167,13 @@
     "english": "Buildings grant -%1% CpS.",
     "chinese": "建筑补助 -%1% CpS。"
   },
-  "Buff boosts clicks by +%1% for every building sold for %2 seconds.": {
-    "english": "Buff boosts clicks by +%1% for every building sold for %2 seconds.",
-    "chinese": "增益状态在 %2秒内每卖出一座建筑，就增加 %1% 的点击量。"
-  },
   "CpS bonus fluctuating between %1 and %2 over time.": {
     "english": "CpS bonus fluctuating between %1 and %2 over time.",
     "chinese": "CpS奖励随时间在 %1 和 %2 之间波动。"
   },
-  "Effect cycles over %1 hours.": {
-    "english": "Effect cycles over %1 hours.",
-    "chinese": "效果周期超过 %1 小时。"
-  },
-  "Switching seasons is %1% pricier.": {
-    "english": "Switching seasons is %1% pricier.",
-    "chinese": "换季价格上涨了 %1%。"
-  },
-  "Switching seasons is %1% cheaper.": {
-    "english": "Switching seasons is %1% cheaper.",
-    "chinese": "换季便宜了 %1%。"
-  },
   "Heavenly chips have %1% less effect.": {
     "english": "Heavenly chips have %1% less effect.",
     "chinese": "天堂碎片的效果降低 %1%。"
-  },
-  "Buildings produce %1% more.": {
-    "english": "Buildings produce %1% more.",
-    "chinese": "建筑产量增加了 %1%。"
-  },
-  "Buildings produce %1% less.": {
-    "english": "Buildings produce %1% less.",
-    "chinese": "建筑产量减少了 %1%。"
-  },
-  "Wrinklers appear %1% faster and digest %2% more cookies.": {
-    "english": "Wrinklers appear %1% faster and digest %2% more cookies.",
-    "chinese": "饼干虫出现速度加快了 %1%，消化饼干的数量增加了 %2%。"
   },
   "Make <b>%1</b> just from %2.": {
     "english": "Make <b>%1</b> just from %2.",

@@ -1,0 +1,82 @@
+{
+  "[GOD 1 QUOTE]An immortal life spent focusing on the inner self, away from the distractions of material wealth.": {
+    "english": "An immortal life spent focusing on the inner self, away from the distractions of material wealth.",
+    "chinese": "专注于内在自我的不朽生命，远离物质财富的干扰。"
+  },
+  "[GOD 2 QUOTE]This sleazy spirit revels in the lust for quick easy gain and contempt for the value of steady work.": {
+    "english": "This sleazy spirit revels in the lust for quick easy gain and contempt for the value of steady work.",
+    "chinese": "这位堕落的神灵陶醉于贪图快利和对稳定工作价值的蔑视。"
+  },
+  "[GOD 3 QUOTE]The embodiment of natural disasters. An impenetrable motive drives the devastation caused by this spirit.": {
+    "english": "The embodiment of natural disasters. An impenetrable motive drives the devastation caused by this spirit.",
+    "chinese": "自然灾害的体现。一种费解的动机推动了这位神灵所造成的破坏。"
+  },
+  "[GOD 4 QUOTE]This spirit knows about everything you'll ever do, and enjoys dispensing a harsh judgment.": {
+    "english": "This spirit knows about everything you'll ever do, and enjoys dispensing a harsh judgment.",
+    "chinese": "这位神灵知道你将要做的每件事，并且喜欢做出严厉的判断。"
+  },
+  "[GOD 5 QUOTE]This is the spirit of merry getaways and regretful Monday mornings.": {
+    "english": "This is the spirit of merry getaways and regretful Monday mornings.",
+    "chinese": "这就是快乐的出游之神和周一上午的懊悔之灵。"
+  },
+  "[GOD 6 QUOTE]All things that be and ever will be were scripted long ago by this spirit's inscrutable tendrils.": {
+    "english": "All things that be and ever will be were scripted long ago by this spirit's inscrutable tendrils.",
+    "chinese": "所有的事情都是很久以前由这个神灵的不可思议的卷须编写的。"
+  },
+  "[GOD 7 QUOTE]This spirit enjoys a good cheese after a day of hard work.": {
+    "english": "This spirit enjoys a good cheese after a day of hard work.",
+    "chinese": "这位神灵最爱在一天的辛勤工作后享受美味的奶酪。"
+  },
+  "[GOD 8 QUOTE]While this spirit has many regrets, helping you rule the world through constant industrialization is not one of them.": {
+    "english": "While this spirit has many regrets, helping you rule the world through constant industrialization is not one of them.",
+    "chinese": "虽然这位神灵有很多遗憾，但帮助你通过持续的工业化统治世界不是其中之一。"
+  },
+  "[GOD 9 QUOTE]A caring spirit said to contain itself, inwards infinitely.": {
+    "english": "A caring spirit said to contain itself, inwards infinitely.",
+    "chinese": "一位满腹关怀神灵，据说它能无限地包容自己。"
+  },
+  "[GOD 10 QUOTE]This spirit enjoys poking foul beasts and watching them squirm, but has no love for its own family.": {
+    "english": "This spirit enjoys poking foul beasts and watching them squirm, but has no love for its own family.",
+    "chinese": "这位神灵喜欢鄙视肮脏的野兽，看它们无地自容。但他对自己的家庭没有毫无爱意。"
+  },
+  "[GOD 11 QUOTE]You will find that life gets just a little bit sweeter if you can motivate this spirit with tidy numbers and properly-filled tax returns.": {
+    "english": "You will find that life gets just a little bit sweeter if you can motivate this spirit with tidy numbers and properly-filled tax returns.",
+    "chinese": "如果你能恰当地使用工整的数字来填写纳税申报单，你会发现这位神灵会被你的行为所激励，因此你的生活也会变得更加甜蜜。"
+  },
+  "Selling buildings triggers a buff boosted by how many buildings were sold.": {
+    "english": "Selling buildings triggers a buff boosted by how many buildings were sold.",
+    "chinese": "出售建筑会触发一个增益状态，效果由售出建筑数量决定。"
+  },
+  "Buff boosts clicks by +%1% for every building sold for %2 seconds.": {
+    "english": "Buff boosts clicks by +%1% for every building sold for %2 seconds.",
+    "chinese": "每卖出一座建筑，就会获得 %2秒 的点击产量 +%1% 加成。"
+  },
+  "Effect cycles over %1 hours.": {
+    "english": "Effect cycles over %1 hours.",
+    "chinese": "效果周期 %1小时。"
+  },
+  "Wrinklers appear %1% faster and digest %2% more cookies.": {
+    "english": "Wrinklers appear %1% faster and digest %2% more cookies.",
+    "chinese": "饼干虫出现速度加快 %1%，消化饼干的数量增加 %2%。"
+  },
+  "Buildings produce %1% more.": {
+    "english": "Buildings produce %1% more.",
+    "chinese": "建筑产量增加 %1%。"
+  },
+  "Buildings produce %1% less.": {
+    "english": "Buildings produce %1% less.",
+    "chinese": "建筑产量减少 %1%。"
+  },
+  "Buildings grant -%1% CpS.": {
+    "english": "Buildings grant -%1% CpS.",
+    "chinese": "所有建筑的 CpS 减少 1%。"
+  },
+  "Switching seasons is %1% pricier.": {
+    "english": "Switching seasons is %1% pricier.",
+    "chinese": "换季价格上涨 %1%。"
+  },
+  "Switching seasons is %1% cheaper.": {
+    "english": "Switching seasons is %1% cheaper.",
+    "chinese": "换季价格便宜 %1%。"
+  }
+}
