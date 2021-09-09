@@ -247,18 +247,22 @@
     "chinese": "把一个神灵拖到这个槽上进行分配。"
   },
   "If a golden cookie is clicked, this spirit is unslotted and all worship swaps will be used up.": {
+    "deprecated": "这条在Pantheon.json里修改了",
     "english": "If a golden cookie is clicked, this spirit is unslotted and all worship swaps will be used up.",
     "chinese": "如果点击了一个黄金饼干，这个神灵将被移出槽，所有的交换次数都将被消耗。"
   },
   "Each time you slot a spirit, you use up one worship swap.<div class=\"line\"></div>If you have 2 swaps left, the next one will refill after %1.<br>If you have 1 swap left, the next one will refill after %2.<br>If you have 0 swaps left, you will get one after %3.<div class=\"line\"></div>Unslotting a spirit costs no swaps.": {
+    "deprecated": "这条在Pantheon.json里修改了",
     "english": "Each time you slot a spirit, you use up one worship swap.<div class=\"line\"></div>If you have 2 swaps left, the next one will refill after %1.<br>If you have 1 swap left, the next one will refill after %2.<br>If you have 0 swaps left, you will get one after %3.<div class=\"line\"></div>Unslotting a spirit costs no swaps.",
     "chinese": "每次把一个神灵拖到槽上，你就消耗了一次交换次数。<div class=\"line\"></div>如果你还有 2 次交换次数，下一次交换次数将在%1之后补充。<br>如果你还有 1 次交换次数，下一次交换次数将在%2之后补充。<br>如果你还有 0 次交换次数，你将在%3之后得到 1 次交换次数。<div class=\"line\"></div>将一个神灵移出槽不需要消耗交换次数。"
   },
   "Click to refill all your worship swaps for %1.": {
+    "deprecated": "这条在Pantheon.json里修改了",
     "english": "Click to refill all your worship swaps for %1.",
     "chinese": "点击消耗%1以补充所有的交换次数。"
   },
   "Worship swaps: %1": {
+    "deprecated": "这条在Pantheon.json里修改了",
     "english": "Worship swaps: %1",
     "chinese": "交换次数：%1"
   }
