@@ -223,6 +223,54 @@
     "english": "Rank %1",
     "chinese": "阶段 %1"
   },
+  "Ascend with <b>%1</b> baked.": {
+    "english": "Ascend with <b>%1</b> baked.",
+    "chinese": "飞升时烘焙了 <b>%1</b>。"
+  },
+  "Click <b>%1</b>.": {
+    "english": "Click <b>%1</b>.",
+    "chinese": "点击 <b>%1</b>。"
+  },
+  "Get to <b>%1</b> baked in <b>%2</b>.": {
+    "english": "Get to <b>%1</b> baked in <b>%2</b>.",
+    "chinese": "<b>%2</b> 内烘焙 <b>%1</b>。"
+  },
+  "Make <b>%1</b> with <b>no</b> cookie clicks.": {
+    "english": "Make <b>%1</b> with <b>no</b> cookie clicks.",
+    "chinese": "制作 <b>%1</b>，且<b>从未</b>点击过饼干。"
+  },
+  "Get to <b>%1</b> baked with <b>no upgrades purchased</b>.": {
+    "english": "Get to <b>%1</b> baked with <b>no upgrades purchased</b>.",
+    "chinese": "烘焙 <b>%1</b>，且<b>未购买过任何升级</b>。"
+  },
+  "Ascend with exactly <b>%1</b>.": {
+    "english": "Ascend with exactly <b>%1</b>.",
+    "chinese": "刚好有 <b>%1</b> 时飞升。"
+  },
+  "Harvest a <b>bifurcated sugar lump</b>.": {
+    "english": "Harvest a <b>bifurcated sugar lump</b>.",
+    "chinese": "收获 <b>1 个分叉糖块</b>。"
+  },
+  "Harvest a <b>golden sugar lump</b>.": {
+    "english": "Harvest a <b>golden sugar lump</b>.",
+    "chinese": "收获 <b>1 个黄金糖块</b>。"
+  },
+  "Harvest a <b>meaty sugar lump</b>.": {
+    "english": "Harvest a <b>meaty sugar lump</b>.",
+    "chinese": "收获 <b>1 个肥硕糖块</b>。"
+  },
+  "Harvest a <b>caramelized sugar lump</b>.": {
+    "english": "Harvest a <b>caramelized sugar lump</b>.",
+    "chinese": "收获 <b>1 个焦糖化糖块</b>。"
+  },
+  "Convert a complete seed log into sugar lumps by sacrificing your garden to the sugar hornets.<div class=\"line\"></div>Owning this achievement makes seeds <b>%1% cheaper</b>, plants mature <b>%2% sooner</b>, and plant upgrades drop <b>%3% more</b>.": {
+    "english": "Convert a complete seed log into sugar lumps by sacrificing your garden to the sugar hornets.<div class=\"line\"></div>Owning this achievement makes seeds <b>%1% cheaper</b>, plants mature <b>%2% sooner</b>, and plant upgrades drop <b>%3% more</b>.",
+    "chinese": "把你的花园献祭给糖蜂，将全解锁的种子收集转换成糖块。<div class=\"line\"></div>拥有此成就可使种子<b>便宜 %1%</b>，植物长成<b>加快 %2%</b>，植物升级掉率<b>增加 %3%</b>。"
+  },
+  "Click a <b>golden cookie</b>.": {
+    "english": "Click a <b>golden cookie</b>.",
+    "chinese": "点击 <b>1 块黄金饼干</b>。"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"
