@@ -299,6 +299,14 @@
     "english": "Make <b>%1</b> by only having clicked <b>%2 times</b>.",
     "chinese": "只点击 <b>%2 次</b>制作 <b>%1</b>。"
   },
+  "at %1% of its potential <b>(+%2% CpS)</b>": {
+    "english": "at %1% of its potential <b>(+%2% CpS)</b>",
+    "chinese": "目前的威望潜力为 %1% <b>(+%2% CpS)</b>。"
+  },
+  "Challenge modes apply special modifiers to your next ascension.<br>Click to change.": {
+    "english": "Challenge modes apply special modifiers to your next ascension.<br>Click to change.",
+    "chinese": "选择一个挑战模式来修改你下次飞升的游戏体验。<br>点击进行更改。"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"

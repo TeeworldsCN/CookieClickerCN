@@ -229,6 +229,20 @@ const ModMarket = MOD => {
   hackMarket();
 };
 
+// 修复Santa升级提示中未翻译的文本
+const ModUpgrade152 = MOD => {
+  Game.UpgradesById[152].buyFunction = () => {
+    const drop = choose(Game.santaDrops);
+    Game.Unlock(drop);
+    const dropName = Game.Upgrades[drop].dname;
+    Game.Notify(
+      loc('In the festive hat, you find...'),
+      loc('a festive test tube<br>and <b>%1</b>.', dropName),
+      Game.Upgrades[drop].icon
+    );
+  };
+};
+
 // 修复parseLoc
 const FixParseLoc = () => {
   const isCN = localStorageGet('CookieClickerLang') === 'ZH-CN';
@@ -347,16 +361,7 @@ const SetupMenuHooks = MOD => {
 };
 
 // 添加设置
-const ModSlider = function (
-  slider,
-  leftText,
-  rightText,
-  startValueFunction,
-  min,
-  max,
-  step,
-  callback
-) {
+const ModSlider = (slider, leftText, rightText, startValueFunction, min, max, step, callback) => {
   if (!callback) callback = '';
   return (
     '<div class="sliderBox"><div style="float:left;" class="smallFancyButton">' +
@@ -381,6 +386,10 @@ const ModSlider = function (
     slider +
     '"/></div>'
   );
+};
+
+const DisabledButton = (button, text) => {
+  return '<a class="smallFancyButton option off disabled" id="' + button + '">' + text + '</a>';
 };
 
 const ModPrefMenu = (MOD, menu) => {
@@ -421,7 +430,8 @@ const ModPrefMenu = (MOD, menu) => {
                 MOD.id +
                 "'].toggleBrandCookies();Game.RefreshStore();Game.upgradesToRebuild=1;"
             ) + '<label>(将“一盒品牌饼干”升级替换为本土化的品牌)</label><br>'
-          : '') +
+          : DisabledButton('brandcnButton', '??????????  ??') +
+            '<label>(根据你目前的进度，该选项不会有影响也不能更改。)</label><br>') +
         '    </div>' +
         '   </div>' +
         '  </div>' +
@@ -435,7 +445,10 @@ const ModPrefMenu = (MOD, menu) => {
 // 去除时间格式的逗号
 const ModSayTime = MOD => {
   const oldSayTime = Game.sayTime;
-  Game.sayTime = (time, detail) => oldSayTime(time, detail).replace(/, /g, '');
+  Game.sayTime = (time, detail) =>
+    oldSayTime(time, detail)
+      .replace(/, /g, '')
+      .replace(/Infinity/g, '∞');
 };
 
 // 替换品牌饼干
@@ -483,6 +496,7 @@ Game.registerMod('TWCNClickerCN', {
 
     // 其他语言也会被修复
     ModMarket(this);
+    ModUpgrade152(this);
 
     // 只有语言是中文的时候启用模组
     if (this.lang == 'ZH-CN') {

@@ -45,11 +45,11 @@
   },
   "%1 to vault.": {
     "english": "%1 to vault.",
-    "chinese": "按 %1 放入保险库。"
+    "chinese": "%1以放入保险库。"
   },
   "%1 to unvault.": {
     "english": "%1 to unvault.",
-    "chinese": "按 %1 拿出保险库。"
+    "chinese": "%1以拿出保险库。"
   },
   "Upgrade for %1": {
     "comment": "StockMarket里消耗指针升级什么东西，可能是错的",
@@ -117,10 +117,14 @@
     "english": "%1 are <b>%2%</b> more efficient and <b>%3%</b> cheaper.",
     "chinese": "%1的效率提高 <b>%2%</b>，花费降低 <b>%3%</b>。"
   },
+  "You've switched seasons <b>once</b> this ascension.": {
+    "english": "You've switched seasons <b>once</b> this ascension.",
+    "chinese": "你本次飞升切换过 <b>1 次</b>节日。"
+  },
   "You've switched seasons <b>%1 times</b> this ascension.": {
     "comment": "少个字",
     "english": "You've switched seasons <b>%1 times</b> this ascension.",
-    "chinese": "你本次飞升切换过<b>%1 次</b>节日。"
+    "chinese": "你本次飞升切换过 <b>%1 次</b>节日。"
   },
   "You gain another <b>+%1%</b> of your regular CpS while the game is closed, for a total of <b>%2%</b>.": {
     "comment": "添加空格",
