@@ -273,7 +273,7 @@
   },
   "Contains an assortment of fancy biscuits.": {
     "english": "Contains an assortment of fancy biscuits.",
-    "chinese": "内含各式各样的精致的饼干。"
+    "chinese": "内含各式各样的精致饼干。"
   },
   "Contains an assortment of macarons.": {
     "english": "Contains an assortment of macarons.",
@@ -294,6 +294,10 @@
   "Contains an assortment of...something.": {
     "english": "Contains an assortment of...something.",
     "chinese": "内含各式各样的……东西。"
+  },
+  "Make <b>%1</b> by only having clicked <b>%2 times</b>.": {
+    "english": "Make <b>%1</b> by only having clicked <b>%2 times</b>.",
+    "chinese": "只点击 <b>%2 次</b>制作 <b>%1</b>。"
   },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
