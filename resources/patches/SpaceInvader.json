@@ -91,7 +91,7 @@
   },
   "%1 gain <b>+%2%</b> CpS per %3.": {
     "english": "%1 gain <b>+%2%</b> CpS per %3.",
-    "chinese": "每拥有 %3，%1获得 <b>+%2%</b> CpS。"
+    "chinese": "每拥有 1 个%3，%1的 CpS <b>+%2%</b>。"
   },
   "Multiplies the gain from %1 by <b>%2</b>.": {
     "english": "Multiplies the gain from %1 by <b>%2</b>.",
@@ -327,5 +327,13 @@
   "%1 Burden!": {
     "english": "%1 Burden!",
     "chinese": "%1危机！"
+  },
+  "Dropped by %1.": {
+    "english": "Dropped by %1.",
+    "chinese": "这是从%1上掉落的。"
+  },
+  "Dropped by %1 plants.": {
+    "english": "Dropped by %1 plants.",
+    "chinese": "这是从花园里的%1上掉落的。"
   }
 }
