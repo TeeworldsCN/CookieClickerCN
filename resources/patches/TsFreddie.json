@@ -271,6 +271,30 @@
     "english": "Click a <b>golden cookie</b>.",
     "chinese": "点击 <b>1 块黄金饼干</b>。"
   },
+  "Contains an assortment of fancy biscuits.": {
+    "english": "Contains an assortment of fancy biscuits.",
+    "chinese": "内含各式各样的精致的饼干。"
+  },
+  "Contains an assortment of macarons.": {
+    "english": "Contains an assortment of macarons.",
+    "chinese": "内含各式各样的马卡龙。"
+  },
+  "Contains an assortment of popular biscuits.": {
+    "english": "Contains an assortment of popular biscuits.",
+    "chinese": "内含各式各样的流行饼干。"
+  },
+  "Contains an assortment of rich butter cookies.": {
+    "english": "Contains an assortment of rich butter cookies.",
+    "chinese": "内含各式各样的浓厚黄油味饼干。"
+  },
+  "Contains an assortment of delicious pastries.": {
+    "english": "Contains an assortment of delicious pastries.",
+    "chinese": "内含各式各样的可口小点心。"
+  },
+  "Contains an assortment of...something.": {
+    "english": "Contains an assortment of...something.",
+    "chinese": "内含各式各样的……东西。"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"
