@@ -311,6 +311,10 @@
     "english": "cookies/click",
     "chinese": "点击的饼干产量"
   },
+  "You are ascending.<br>Drag the screen around<br>or use arrow keys!<br>When you're ready,<br>click Reincarnate.": {
+    "english": "You are ascending.<br>Drag the screen around<br>or use arrow keys!<br>When you're ready,<br>click Reincarnate.",
+    "chinese": "你正在飞升。<br>拖动屏幕或使用方向键可以四处查看！<br>准备好以后，点击转生按钮。"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"
