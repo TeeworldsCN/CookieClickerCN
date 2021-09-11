@@ -66,5 +66,13 @@
   "+<b>%1%</b> overhead": {
     "english": "+<b>%1%</b> overhead",
     "chinese": "+<b>%1%</b> 管理成本"
+  },
+  "+%1 warehouse space for all goods": {
+    "english": "+%1 warehouse space for all goods",
+    "chinese": "所有货物的仓库空间 +%1"
+  },
+  "+%1% base warehouse space for all goods": {
+    "english": "+%1% base warehouse space for all goods",
+    "chinese": "所有货物的基础仓库空间提升 %1%"
   }
 }

@@ -30,5 +30,13 @@
   "Plot size: %1<br>(Upgrades with farm level)": {
     "english": "Plot size: %1<br>(Upgrades with farm level)",
     "chinese": "土地容量：%1<br>(通过升级农场等级提升)"
+  },
+  "cursor CpS": {
+    "english": "cursor CpS",
+    "chinese": "指针 CpS"
+  },
+  "grandma CpS": {
+    "english": "grandma CpS",
+    "chinese": "老奶奶 CpS"
   }
 }

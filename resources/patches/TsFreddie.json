@@ -307,6 +307,10 @@
     "english": "Challenge modes apply special modifiers to your next ascension.<br>Click to change.",
     "chinese": "选择一个挑战模式来修改你下次飞升的游戏体验。<br>点击进行更改。"
   },
+  "cookies/click": {
+    "english": "cookies/click",
+    "chinese": "点击的饼干产量"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"
@@ -1250,7 +1254,51 @@
   },
   "[Upgrade quote 353]Belphegor": {
     "english": "A demon of shortcuts and laziness, Belphegor commands machines to do work in his stead.",
-    "chinese": "投机取巧之魔贝尔菲戈尔。他只会命令机器来代替他本该做的工作。"
+    "chinese": "投机取巧之魔，贝尔菲戈尔。他只会命令机器来代替他本该做的工作。"
+  },
+  "[Upgrade quote 354]Mammon": {
+    "english": "The demonic embodiment of wealth, Mammon requests a tithe of blood and gold from all his worshippers.",
+    "chinese": "作为财富的恶魔化身，玛门会从所有崇拜者那里夺取他们十分之一的鲜血和黄金。"
+  },
+  "[Upgrade quote 355]Abaddon": {
+    "english": "Master of overindulgence, Abaddon governs the wrinkler brood and inspires their insatiability.",
+    "chinese": "地狱领主——从事专业放纵三千年——统治着饼干虫族并激发他们贪得无厌的欲望。"
+  },
+  "[Upgrade quote 356]Satan": {
+    "english": "The counterpoint to everything righteous, this demon represents the nefarious influence of deceit and temptation.",
+    "chinese": "正义的对立面，这个恶魔代表了欺骗和诱惑的邪恶影响力。"
+  },
+  "[Upgrade quote 357]Asmodeus": {
+    "english": "This demon with three monstrous heads draws his power from the all-consuming desire for cookies and all things sweet.",
+    "chinese": "这个拥有三个巨大脑袋的恶魔从对饼干和甜食的极度渴望中汲取力量。"
+  },
+  "[Upgrade quote 358]Beelzebub": {
+    "english": "The festering incarnation of blight and disease, Beelzebub rules over the vast armies of pastry inferno.",
+    "chinese": "作为腐朽和疾病的化身，巴力西卜统治着一望无际的糕点地狱。"
+  },
+  "[Upgrade quote 359]Lucifer": {
+    "english": "Also known as the Lightbringer, this infernal prince's tremendous ego caused him to be cast down from pastry heaven.",
+    "chinese": "别称光之使者，这位无间道王子膨胀的自负使他被糕点天堂流放至此。"
+  },
+  "[Upgrade quote 360]Golden cookie alert sound": {
+    "english": "A sound decision.",
+    "chinese": "这将是个掷地有声的选择。"
+  },
+  "[Upgrade quote 362]Basic wallpaper assortment": {
+    "english": "Prioritizing aesthetics over crucial utilitarian upgrades? Color me impressed.",
+    "chinese": "所以……在这么多关键的进度升级里，你选了个纯外观升级？这可让我大开了眼界。"
+  },
+  "[Upgrade quote 363]Legacy": {
+    "english": "We've all been waiting for you.",
+    "chinese": "我们等你很久了。"
+  },
+  "[Upgrade quote 364]Elder spice": {
+    "english": "The cookie your cookie could smell like.",
+    "chinese": "这才是你的饼干应有的味道。"
+  },
+  "[Upgrade quote 365]Residual luck": {
+    "english": "Fortune comes in many flavors.",
+    "chinese": "财富与幸运需要从各种口味中发掘。"
   },
   "[Achievement quote 26]Sacrifice": {
     "english": "Easy come, easy go.",
