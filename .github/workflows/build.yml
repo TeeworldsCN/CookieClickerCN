@@ -46,3 +46,4 @@ jobs:
           title: '最新版本'
           files: |
             build/cookieclicker-cn.zip
+            build/current.json

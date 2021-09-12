@@ -5,7 +5,12 @@ import path from 'path';
 import _ from 'lodash';
 
 const BUILD_PATH = path.join(__dirname, '../build/CookieClickerCNMod');
+const INFO_PATH = path.join(__dirname, '../build');
 fs.mkdirSync(BUILD_PATH, { recursive: true });
+
+const original = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, '../resources/original.json'), { encoding: 'utf-8' })
+);
 
 const metadata = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, '../resources/metadata.json'), { encoding: 'utf-8' })
@@ -61,7 +66,7 @@ for (let key in replaceAll) {
 }
 
 for (const patch of patches) {
-  if (patch["ignored"]) continue;
+  if (patch['ignored']) continue;
 
   for (let key in patch) {
     if (!patch[key].chinese || patch[key].deprecated || patch[key].ignored) continue; // ignore metadatas and deprecated
@@ -75,4 +80,37 @@ for (const patch of patches) {
 
 fs.writeFileSync(path.join(BUILD_PATH, 'lang.js'), `ModLanguage('ZH-CN',${JSON.stringify(lang)});`);
 
-// copy extra into builds
+// combine patches with original to make a current representation
+for (var entry in original) {
+  const data = original[entry];
+  for (var key in replaceAll) {
+    if (Array.isArray(data.chinese)) {
+      data.chinese = data.chinese.map((str: any) =>
+        str.replace(new RegExp(key, 'ig'), replaceAll[key].replacement)
+      );
+    } else {
+      if (!data.chinese) {
+        console.log(data);
+      }
+      data.chinese = data.chinese.replace(new RegExp(key, 'ig'), replaceAll[key].replacement);
+    }
+  }
+}
+
+for (const patch of patches) {
+  if (patch['ignored']) continue;
+
+  for (let key in patch) {
+    if (!patch[key].chinese || patch[key].deprecated || patch[key].ignored) continue; // ignore metadatas and deprecated
+    if (!original[key]) {
+      original[key] = {
+        english: patch[key].english ?? '[EN:MISSING]',
+        chinese: patch[key].chinese,
+      };
+    } else {
+      original[key].chinese = patch[key].chinese;
+    }
+  }
+}
+
+fs.writeFileSync(path.join(INFO_PATH, 'current.json'), JSON.stringify(original, null, 2));

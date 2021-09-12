@@ -178,6 +178,10 @@
     "english": "Make <b>%1</b> just from %2.",
     "chinese": "通过%2制作 <b>%1</b>。"
   },
+  "Make <b>%1</b> from clicking.": {
+    "english": "Make <b>%1</b> from clicking.",
+    "chinese": "通过点击制作 <b>%1</b>。"
+  },
   "Bake <b>%1</b> in one ascension.": {
     "english": "Bake <b>%1</b> in one ascension.",
     "chinese": "一次飞升烘焙 <b>%1</b>。"
