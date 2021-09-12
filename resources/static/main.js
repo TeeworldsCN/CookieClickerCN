@@ -336,7 +336,7 @@ const ModCookiesFormat = MOD => {
     if (Game.prefs.numbercn && Game.keys[UNIT_TOGGLE_KEY] != 1) {
       const cookies = l('cookies');
       cookies.innerHTML = cookies.innerHTML.replace(
-        /(-?[0-9]+.?[0-9][^\s]*)(?:<br>| )块饼干/,
+        /(-?[0-9]+(?:\.[0-9])?[^\s]*)(?:<br>| )块饼干/,
         (_, v) => v + '块饼干'
       );
     }

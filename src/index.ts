@@ -21,9 +21,12 @@ const replaceAll = JSON.parse(
 );
 
 const PATCHESPATH = path.resolve(__dirname, '../resources/patches');
-const patches = fs
-  .readdirSync(PATCHESPATH)
-  .map(file => JSON.parse(fs.readFileSync(path.join(PATCHESPATH, file), { encoding: 'utf-8' })));
+const patches = fs.readdirSync(PATCHESPATH).map(file => {
+  return {
+    file,
+    ...JSON.parse(fs.readFileSync(path.join(PATCHESPATH, file), { encoding: 'utf-8' })),
+  };
+});
 
 // build info.txt
 const time = new Date();
@@ -106,8 +109,10 @@ for (const patch of patches) {
       original[key] = {
         english: patch[key].english ?? '[EN:MISSING]',
         chinese: patch[key].chinese,
+        patch: patch['file'],
       };
     } else {
+      original[key].patch = patch['file'];
       original[key].chinese = patch[key].chinese;
     }
   }

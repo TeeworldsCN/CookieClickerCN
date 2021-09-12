@@ -1312,6 +1312,87 @@
     "english": "Fortune comes in many flavors.",
     "chinese": "财富与幸运需要从各种口味中发掘。"
   },
+  "[Upgrade quote 366]Fantasteel mouse": {
+    "english": "You could be clicking using your touchpad and we'd be none the wiser.",
+    "chinese": "你甚至可能在用触控板点饼干，毕竟我们也没办法知道你到底怎么点的。"
+  },
+  "[Upgrade quote 367]Nevercrack mouse": {
+    "english": "How much beefier can you make a mouse until it's considered a rat?",
+    "chinese": "你觉得鼠标要做得多肥才会被当作真的老鼠？"
+  },
+  "[Upgrade quote 368]Five-finger discount": {
+    "english": "Stick it to the man.",
+    "chinese": "坚持不懈。"
+  },
+  "[Upgrade quote 369]Future almanacs": {
+    "english": "Lets you predict optimal planting times. It's crazy what time travel can do!",
+    "chinese": "让你预测最佳播种时间。时光穿梭能做的事情实在是太多了!"
+  },
+  "[Upgrade quote 370]Rain prayer": {
+    "english": "A deeply spiritual ceremonial involving complicated dance moves and high-tech cloud-busting lasers.",
+    "chinese": "一个涉及复杂舞蹈动作与高科技破云激光的深入灵魂的仪式。"
+  },
+  "[Upgrade quote 371]Seismic magic": {
+    "english": "Surprise earthquakes are an old favorite of wizardly frat houses.",
+    "chinese": "巫师派对的重点项目莫过于惊喜地震了。"
+  },
+  "[Upgrade quote 372]Asteroid mining": {
+    "english": "As per the <span>19</span>74 United Cosmic Convention, comets, moons, and inhabited planetoids are no longer legally excavatable.<br>But hey, a space bribe goes a long way.",
+    "chinese": "根据<span>19</span>74年《联合宇宙公约》，在彗星、卫星和有人居住的行星上的挖掘项目不再是合法项目了。<br>但是哈，贿赂在宇宙联盟中也很重要的呢。"
+  },
+  "[Upgrade quote 373]Quantum electronics": {
+    "english": "Your machines won't even be sure if they're on or off!",
+    "chinese": "你的机器甚至都不太清楚自己到底是开着还是关着的了！"
+  },
+  "[Upgrade name 374]Temporal overclocking": {
+    "comment": "Temporal有“时间的”的意思",
+    "english": "Temporal overclocking",
+    "chinese": "时速超频"
+  },
+  "[Upgrade quote 374]Temporal overclocking": {
+    "english": "Introduce more quickitude in your system for increased speedation of fastness.",
+    "chinese": "在你的系统中植入更多的时速，以便加速这高速系统的极速能力。"
+  },
+  "[Upgrade quote 375]Contracts from beyond": {
+    "english": "Make sure to read the fine print!",
+    "chinese": "请务必仔细阅读注脚细则！"
+  },
+  "[Upgrade quote 376]Printing presses": {
+    "english": "Fake bills so real, they're almost worth the ink they're printed with.",
+    "chinese": "假钞印得如此逼真，用来印刷它们的墨水成本几乎都快赶上假钞的面值了。"
+  },
+  "[Upgrade quote 377]Paganism": {
+    "english": "Some deities are better left unworshipped.",
+    "chinese": "有些神灵最好还是不要拜了。"
+  },
+  "[Upgrade quote 378]God particle": {
+    "english": "Turns out God is much tinier than we thought, I guess.",
+    "chinese": "原来神比我们想象中要小很多，也可能是我想象中的太大了。"
+  },
+  "[Upgrade quote 379]Arcane knowledge": {
+    "english": "Some things were never meant to be known - only mildly speculated.",
+    "chinese": "有些事情本来就不应该被人知道——顶多就只应该简单地推测出来。"
+  },
+  "[Upgrade quote 380]Magical botany": {
+    "english": "Already known in some reactionary newspapers as \"the wizard's GMOs\".",
+    "chinese": "一些爆料新闻社已经把这技术包装成了“巫师的转基因技术”。"
+  },
+  "[Upgrade quote 381]Fossil fuels": {
+    "english": "Somehow better than plutonium for powering rockets.<br>Extracted from the fuels of ancient, fossilized civilizations.",
+    "chinese": "不知道为什么比能钚合金提供更多的火箭推动力。<br>而且从古代化石文明的化石燃料中就能轻易提取。"
+  },
+  "[Upgrade quote 382]Shipyards": {
+    "english": "Where carpentry, blind luck, and asbestos insulation unite to produce the most dazzling spaceships on the planet.",
+    "chinese": "找些木工、盲目的碰碰运气，再和绝缘石棉结合在一起，就能生产出全星球最耀眼的宇宙飞船。"
+  },
+  "[Upgrade quote 383]Primordial ores": {
+    "english": "Only when refining the purest metals will you extract the sweetest sap of the earth.",
+    "chinese": "只有在提炼最纯净的金属时，才能提取出地球上最甜的糖浆。"
+  },
+  "[Upgrade quote 384]Gold fund": {
+    "english": "If gold is the backbone of the economy, cookies, surely, are its hip joints.",
+    "chinese": "如果黄金是经济的脊柱，那么饼干无疑是经济的胯骨。"
+  },
   "[Achievement quote 26]Sacrifice": {
     "english": "Easy come, easy go.",
     "chinese": "来也匆匆，去也匆匆。"
