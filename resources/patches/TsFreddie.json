@@ -720,13 +720,17 @@
     "english": "Yes, quite.",
     "chinese": "但是巧克力牛奶是禁忌！不过巧克力口味的甜点就可以。"
   },
+  "[Upgrade quote 95]Round british tea biscuits": {
+    "english": "Yes, quite riveting.",
+    "chinese": "这形状很容易掉进茶杯里，请不要把饼干架在茶杯沿上。"
+  },
   "[Upgrade quote 96]Round chocolate british tea biscuits": {
     "english": "Yes, quite riveting indeed.",
-    "chinese": "这形状很容易掉进茶杯里，请不要把饼干架在茶杯沿上。"
+    "chinese": "只是加上巧克力并不能解决很容易掉进茶杯里的问题。"
   },
   "[Upgrade quote 97]Round british tea biscuits with heart motif": {
     "english": "Yes, quite riveting indeed, old chap.",
-    "chinese": "添加个图案并不能解决很容易掉进茶杯里的问题。"
+    "chinese": "添加个图案还是不能解决很容易掉进茶杯里的问题。"
   },
   "[Upgrade quote 98]Round chocolate british tea biscuits with heart motif": {
     "english": "I like cookies.",
@@ -1392,6 +1396,70 @@
   "[Upgrade quote 384]Gold fund": {
     "english": "If gold is the backbone of the economy, cookies, surely, are its hip joints.",
     "chinese": "如果黄金是经济的脊柱，那么饼干无疑是经济的胯骨。"
+  },
+  "[Upgrade quote 385]Infernal crops": {
+    "english": "Sprinkle regularly with FIRE.",
+    "chinese": "记得定期浇<b>火</b>。"
+  },
+  "[Upgrade quote 386]Abysmal glimmer": {
+    "english": "Someone, or something, is staring back at you.<br>Perhaps at all of us.",
+    "chinese": "有个人，或者有什么东西，正在光芒中看着你。<br>也可能是在看着我们所有人。"
+  },
+  "[Upgrade quote 387]Relativistic parsec-skipping": {
+    "english": "People will tell you this isn't physically possible.<br>These are people you don't want on your ship.",
+    "chinese": "人们会告诉你这是违背物理的。<br>这些人是你不希望出现在你船上的。"
+  },
+  "[Upgrade quote 388]Primeval glow": {
+    "english": "From unending times, an ancient light still shines, impossibly pure and fragile in its old age.",
+    "chinese": "一道古老的光芒，从永无止境的时代开始，至今仍然闪耀着。在它时代的光芒中，有着难以置信的纯粹和脆弱。"
+  },
+  "[Upgrade quote 389]Extra physics funding": {
+    "english": "Time to put your money where your particle colliders are.",
+    "chinese": "是时候在粒子对撞机上多花点钱了。"
+  },
+  "[Upgrade quote 390]Chemical proficiency": {
+    "english": "Discover exciting new elements, such as Fleshmeltium, Inert Shampoo Byproduct #17 and Carbon++!",
+    "chinese": "发现令人兴奋的新元素，例如牙釉质中存在的“䥺金属”、“17号惰性洗发水副产品” 和 “碳++”！"
+  },
+  "[Upgrade quote 391]Light magic": {
+    "english": "Actually not to be taken lightly! No, I'm serious. 178 people died last year. You don't mess around with magic.",
+    "chinese": "可不要被这技术的光明前途迷惑！我是说真的，178个人为这项技术献出了宝贵的生命。魔法可不是闹着玩的。"
+  },
+  "[Upgrade quote 392]Mystical energies": {
+    "english": "Something beckons from within the light. It is warm, comforting, and apparently the cause for several kinds of exotic skin cancers.",
+    "chinese": "有什么东西在光中轻柔的抚摸着接触到它的人，给人温暖且令人欣慰的感受。而且看起来也是几种特异皮肤癌的致癌源。"
+  },
+  "[Upgrade quote 393]Synergies Vol. I": {
+    "english": "The many beats the few.",
+    "chinese": "以多胜少。"
+  },
+  "[Upgrade quote 394]Synergies Vol. II": {
+    "english": "The several beats the many.",
+    "chinese": "以少胜多。"
+  },
+  "[Upgrade quote 395]Heavenly cookies": {
+    "english": "Baked with heavenly chips. An otherwordly flavor that transcends time and space.",
+    "chinese": "将天堂碎片揉进面团烘焙而成。一种超越时空的另类风味。"
+  },
+  "[Upgrade quote 396]Wrinkly cookies": {
+    "english": "The result of regular cookies left to age out for countless eons in a place where time and space are meaningless.",
+    "chinese": "这是一个普通的饼干在一个时间和空间都毫无意义的地方被搁置了无数个纪元的结果。"
+  },
+  "[Upgrade quote 397]Distilled essence of redoubled luck": {
+    "english": "Tastes glittery. The empty phial makes for a great pencil holder.",
+    "chinese": "有种闪闪发光味道。剩下的空瓶子可以当作一个很好的铅笔架。"
+  },
+  "[Upgrade quote 398]Occult obstruction": {
+    "english": "If symptoms persist, consult a doctor.",
+    "chinese": "如果症状持续存在，请咨询医生。"
+  },
+  "[Upgrade quote 399]Glucose-charged air": {
+    "english": "Don't breathe too much or you'll get diabetes!",
+    "chinese": "不要呼吸太多，不然患糖尿病的几率会暴增!"
+  },
+  "[Upgrade quote 400]Lavender chocolate butter biscuit": {
+    "english": "Rewarded for owning 300 of everything.<br>This subtly-flavored biscuit represents the accomplishments of decades of top-secret research. The molded design on the chocolate resembles a well-known entrepreneur who gave their all to the ancient path of baking.",
+    "chinese": "拥有 300 个所有建筑的奖励。<br>这种味道微妙的饼干代表了几十年来最高机密研究的成就。巧克力上刻印着一个著名的企业家的形象，他在烘焙的古老道路上奉献了自己的一生。"
   },
   "[Achievement quote 26]Sacrifice": {
     "english": "Easy come, easy go.",
