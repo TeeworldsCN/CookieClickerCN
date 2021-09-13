@@ -466,7 +466,7 @@ const ModBrandedCookies = MOD => {
         BRAND_COOKIE_CN[uid].desc =
           it.ddesc.replace(/<q>.*/, '') + '<q>' + BRAND_COOKIE_CN[uid].quote + '</q>';
       }
-      BRAND_COOKIE_CN[uid].icon.push(MOD.dirURI + '/brands.png');
+      BRAND_COOKIE_CN[uid].icon.push(`'${MOD.dirURI}/brands.png'`);
     }
   }
 };
