@@ -456,14 +456,18 @@ const ModBrandedCookies = MOD => {
   MOD.OriginalBrandCookies = {};
   for (let uid in BRAND_COOKIE_CN) {
     const it = Game.UpgradesById[uid];
-    MOD.OriginalBrandCookies[uid] = {
-      name: it.dname,
-      desc: it.ddesc,
-      icon: it.icon,
-    };
-    BRAND_COOKIE_CN[uid].desc =
-      it.ddesc.replace(/<q>.*/, '') + '<q>' + BRAND_COOKIE_CN[uid].quote + '</q>';
-    BRAND_COOKIE_CN[uid].icon.push(MOD.dirURI + '/brands.png');
+    if (it) {
+      MOD.OriginalBrandCookies[uid] = {
+        name: it.dname,
+        desc: it.ddesc,
+        icon: it.icon,
+      };
+      if (BRAND_COOKIE_CN[uid].quote) {
+        BRAND_COOKIE_CN[uid].desc =
+          it.ddesc.replace(/<q>.*/, '') + '<q>' + BRAND_COOKIE_CN[uid].quote + '</q>';
+      }
+      BRAND_COOKIE_CN[uid].icon.push(MOD.dirURI + '/brands.png');
+    }
   }
 };
 
@@ -474,7 +478,9 @@ Game.registerMod('TWCNClickerCN', {
   init: function () {
     // 提供语言给函数
     this.lang = localStorageGet('CookieClickerLang');
-    this.dirURI = this.dir ? 'file:///' + this.dir.replace(/\\/g, '/') : 'CookieClickerCNMod';
+    this.dirURI = this.dir
+      ? 'file:///' + encodeURI(this.dir.replace(/\\/g, '/'))
+      : 'CookieClickerCNMod';
     this.lastSpaceKeyStatus = 0;
 
     SetupMenuHooks(this);
