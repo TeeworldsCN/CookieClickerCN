@@ -69,7 +69,7 @@
   },
   "Buildings grant -%1% CpS.": {
     "english": "Buildings grant -%1% CpS.",
-    "chinese": "所有建筑的 CpS 减少 1%。"
+    "chinese": "所有建筑的 CpS 减少 %1%。"
   },
   "Switching seasons is %1% pricier.": {
     "english": "Switching seasons is %1% pricier.",

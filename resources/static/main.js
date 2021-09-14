@@ -374,7 +374,7 @@ const __TWCNG = {
               '<div style="height:128px;"></div>',
               '<div class="framed" style="margin:4px 48px;"><div class="block" style="padding:0px;margin:8px 4px;"><div class="subsection" style="padding:0px;">' +
                 hook[1](hook[0], menuHTML) +
-                '</div></div></div></div><div style="height:128px;"></div>'
+                '</div></div></div><div style="height:128px;"></div>'
             );
           }
           menu.innerHTML = menuHTML;
@@ -417,8 +417,8 @@ const __TWCNG = {
 
   const ModPrefMenu = MOD => {
     return (
-      '    <div class="title">中文模组设置</div>' +
-      '    <div class="listing">' +
+      '<div class="title">中文模组设置</div>' +
+      '<div class="listing">' +
       ModSlider(
         'numbercnDecimal',
         '中文单位前保留',
@@ -449,7 +449,8 @@ const __TWCNG = {
               "'].toggleBrandCookies();Game.RefreshStore();Game.upgradesToRebuild=1;"
           ) + '<label>(将“一盒品牌饼干”升级替换为本土化的品牌)</label><br>'
         : DisabledButton('brandcnButton', '??????????  ??') +
-          '<label>(根据你目前的进度，该选项不会有影响也不能更改。)</label><br>')
+          '<label>(根据你目前的进度，该选项不会有影响也不能更改。)</label><br>') +
+      '</div>'
     );
   };
 
