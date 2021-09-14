@@ -75,6 +75,7 @@
     "chinese": "反效果："
   },
   "Backfire!": {
+    "deprecated": "在 Grimoire.json 中更改了",
     "english": "Backfire!",
     "chinese": "适得其反！"
   },
@@ -167,10 +168,12 @@
     "chinese": "如果满足条件，立即召唤一条饼干虫。"
   },
   "Spells backfire %1 times less for the next %2 minutes.": {
+    "deprecated": "在 Grimoire.json 中修复了",
     "english": "Spells backfire %1 times less for the next %2 minutes.",
     "chinese": "在接下来的 %2 分钟内，咒语的适得其反次数减少了 %1 次。"
   },
   "Spells backfire %1 times more for the next %2 minutes.": {
+    "deprecated": "在 Grimoire.json 中修复了",
     "english": "Spells backfire %1 times more for the next %2 minutes.",
     "chinese": "在接下来的 %2 分钟内，咒语还会适得其反 %1 次。"
   },
