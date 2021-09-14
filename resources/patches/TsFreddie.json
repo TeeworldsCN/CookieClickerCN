@@ -323,6 +323,10 @@
     "english": "Cookie chain broken.<br><small>You made %1.</small>",
     "chinese": "饼干连锁断裂。<br><small>你获得了 %1。</small>"
   },
+  "[Achievement name 321]Bibbidi-bobbidi-boo": {
+    "english": "Bibbidi-bobbidi-boo",
+    "chinese": "芭拉拉能量"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"

@@ -466,9 +466,18 @@ const ModBrandedCookies = MOD => {
         BRAND_COOKIE_CN[uid].desc =
           it.ddesc.replace(/<q>.*/, '') + '<q>' + BRAND_COOKIE_CN[uid].quote + '</q>';
       }
-      BRAND_COOKIE_CN[uid].icon.push(`'${MOD.dirURI}/brands.png'`);
+      BRAND_COOKIE_CN[uid].icon.push(`'${MOD.dirURI}/brands.png'`, it.icon[0], it.icon[1]);
     }
   }
+
+  // 魔改ParticleAdd还原魔改饼干
+  const ParticleAdd = Game.particleAdd;
+  Game.particleAdd = (x, y, xd, yd, size, dur, z, pic, text) => {
+    const part = ParticleAdd(x, y, xd, yd, size, dur, z, pic, text);
+    // 还原魔改饼干
+    if (part.picPos[3]) part.picPos = [part.picPos[3], part.picPos[4]];
+    return part;
+  };
 };
 
 // 在游戏加载前就修复Loc函数 (需要赶在本地化成就之前就生效)
