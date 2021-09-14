@@ -97,7 +97,7 @@
   },
   "Summon a random golden cookie. Each existing golden cookie makes this spell +%1% more likely to backfire.": {
     "english": "Summon a random golden cookie. Each existing golden cookie makes this spell +%1% more likely to backfire.",
-    "chinese": "召唤一个随机的黄金饼干。每一个现有的黄金饼干都会使这个魔法山城反效果的几率 +%1%。"
+    "chinese": "召唤一个随机的黄金饼干。每一个现有的黄金饼干都会使这个魔法产生反效果的几率 +%1%。"
   },
   "All active buffs gain %1% more time (up to %2 more minutes).": {
     "english": "All active buffs gain %1% more time (up to %2 more minutes).",
