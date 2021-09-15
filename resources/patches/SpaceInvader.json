@@ -93,6 +93,11 @@
     "english": "%1 gain <b>+%2%</b> CpS per %3.",
     "chinese": "每拥有 %3，%1的 CpS <b>+%2%</b>。"
   },
+  "%1 gain <b>+%2%</b> CpS for each %3.": {
+    "comment": "魔改进来的文本，为了区分 Farmer Grandma 和 Mice clicking mice 的描述",
+    "english": "%1 gain <b>+%2%</b> CpS for each %3.",
+    "chinese": "每拥有 1 个%3，%1的 CpS <b>+%2%</b>。"
+  },
   "Multiplies the gain from %1 by <b>%2</b>.": {
     "english": "Multiplies the gain from %1 by <b>%2</b>.",
     "chinese": "将%1获得的收益乘以 <b>%2</b>。"

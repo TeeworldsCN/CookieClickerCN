@@ -496,6 +496,31 @@ const __TWCNG = {
     };
   };
 
+  // 魔改Synergie升级的描述文本
+  const ModSynergies = MOD => {
+    for (let id in Game.UpgradesById) {
+      const it = Game.UpgradesById[id];
+      if (
+        (it.tier === 'synergy1' || it.tier === 'synergy2') &&
+        it.buildingTie1 &&
+        it.buildingTie2
+      ) {
+        it.baseDesc =
+          loc('%1 gain <b>+%2%</b> CpS for each %3.', [
+            cap(it.buildingTie1.plural),
+            5,
+            it.buildingTie2.single,
+          ]) +
+          '<br>' +
+          loc('%1 gain <b>+%2%</b> CpS for each %3.', [
+            cap(it.buildingTie2.plural),
+            0.1,
+            it.buildingTie1.single,
+          ]);
+      }
+    }
+  };
+
   // 在游戏加载前就修复Loc函数 (需要赶在本地化成就之前就生效)
   FixParseLoc();
 
@@ -541,6 +566,7 @@ const __TWCNG = {
         ModGameUnit(this);
         ModCookiesFormat(this);
         ModGardenTooltip(this);
+        ModSynergies(this);
         AddMenuHook(this, ModPrefMenu);
       }
     },
