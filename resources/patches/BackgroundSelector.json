@@ -1,0 +1,38 @@
+{
+  "[bg] Blue": {
+    "english": "Blue",
+    "chinese": "蓝色背景"
+  },
+  "[bg] Red": {
+    "english": "Red",
+    "chinese": "红色背景"
+  },
+  "[bg] White": {
+    "english": "White",
+    "chinese": "白色背景"
+  },
+  "[bg] Black": {
+    "english": "Black",
+    "chinese": "黑色背景"
+  },
+  "[bg] Gold": {
+    "english": "Gold",
+    "chinese": "金色背景"
+  },
+  "[bg] Grandmas": {
+    "english": "Grandmas",
+    "chinese": "老奶奶背景"
+  },
+  "[bg] Displeased grandmas": {
+    "english": "Displeased grandmas",
+    "chinese": "失落老奶奶背景"
+  },
+  "[bg] Angered grandmas": {
+    "english": "Angered grandmas",
+    "chinese": "愤怒老奶奶背景"
+  },
+  "[bg] Money": {
+    "english": "Money",
+    "chinese": "纸币背景"
+  }
+}
