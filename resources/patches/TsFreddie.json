@@ -335,6 +335,10 @@
     "english": "Cookie production halted for %1,<br>but each click is worth %2 of CpS.",
     "chinese": "饼干生产暂停，持续 %1，<br>但每次点击的收益相当于 %2 的 CpS 产量。"
   },
+  "Contains the wrath of the elders, at least for a while.": {
+    "english": "Contains the wrath of the elders, at least for a while.",
+    "chinese": "平息老奶奶的怒火，至少能撑一阵子。"
+  },
   "[Achievement name 321]Bibbidi-bobbidi-boo": {
     "english": "Bibbidi-bobbidi-boo",
     "chinese": "芭拉拉能量"
