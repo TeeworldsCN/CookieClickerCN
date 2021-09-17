@@ -1,10 +1,12 @@
 {
   "author": "AbyssAir",
   "Golden and wrath cookies appear %1% more.": {
+    "deprecated": "这条在Pantheon.json里修改了",
     "english": "Golden and wrath cookies appear %1% more.",
     "chinese": "黄金和愤怒饼干出现几率增加 1%。"
   },
   "Golden and wrath cookies appear %1% less.": {
+    "deprecated": "这条在Pantheon.json里修改了",
     "english": "Golden and wrath cookies appear %1% less.",
     "chinese": "黄金和愤怒饼干出现几率减少 1%。"
   },

@@ -98,5 +98,13 @@
   "If a golden cookie is clicked, this spirit is unslotted and all worship swaps will be used up.": {
     "english": "If a golden cookie is clicked, this spirit is unslotted and all worship swaps will be used up.",
     "chinese": "如果点击了一个黄金饼干，这个神灵将被移出槽位，并且所有的置换祈祷都将被消耗。"
+  },
+  "Golden and wrath cookies appear %1% more.": {
+    "english": "Golden and wrath cookies appear %1% more.",
+    "chinese": "黄金和愤怒饼干出现几率增加 %1%。"
+  },
+  "Golden and wrath cookies appear %1% less.": {
+    "english": "Golden and wrath cookies appear %1% less.",
+    "chinese": "黄金和愤怒饼干出现几率减少 %1%。"
   }
 }
