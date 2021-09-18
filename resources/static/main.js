@@ -548,6 +548,41 @@ const __TWCNG = {
     }
   };
 
+  const FixPlaySound = () => {
+    PlaySound = (url, vol, pitchVar) => {
+      var volume = 1;
+      var volumeSetting = Game.volume;
+      if (typeof vol !== 'undefined') volume = vol;
+      if (volume < -5) {
+        volume += 10;
+        volumeSetting = Game.volumeMusic;
+      }
+      if (!volumeSetting || volume == 0) return 0;
+      if (typeof Sounds[url] === 'undefined') {
+        //sound isn't loaded, cache it
+        Sounds[url] = new Audio(url);
+        Sounds[url].onloadeddata = function (e) {
+          PlaySound(url, vol, pitchVar);
+        };
+      } else if (Sounds[url].readyState >= 2) {
+        var sound = Sounds[url];
+        sound.volume = Math.pow((volume * volumeSetting) / 100, 2);
+        if (pitchSupport) {
+          var pitchVar = typeof pitchVar === 'undefined' ? 0.05 : pitchVar;
+          var rate = 1 + (Math.random() * 2 - 1) * pitchVar;
+          sound.preservesPitch = false;
+          sound.mozPreservesPitch = false;
+          sound.webkitPreservesPitch = false;
+          sound.playbackRate = rate;
+        }
+        try {
+          sound.currentTime = 0;
+          sound.play();
+        } catch (e) {}
+      }
+    };
+  };
+
   // 在游戏加载前就修复Loc函数 (需要赶在本地化成就之前就生效)
   FixParseLoc();
 
@@ -580,6 +615,7 @@ const __TWCNG = {
       // 其他语言也会被修复
       ModMarket(this);
       ModUpgrade152(this);
+      FixPlaySound(this);
 
       // 切换为其他语言时需要可以替换回来
       ModBrandedCookies(this);
@@ -619,7 +655,7 @@ const __TWCNG = {
     },
     toggleBrandCookies: function () {
       const data =
-        Game.prefs.brandcn && this.lang != 'ZH-CN'
+        Game.prefs.brandcn && this.lang == 'ZH-CN'
           ? __TWCNG.BRAND_COOKIE_CN
           : this.OriginalBrandCookies;
       for (let uid in data) {
