@@ -339,6 +339,10 @@
     "english": "Contains the wrath of the elders, at least for a while.",
     "chinese": "平息老奶奶的怒火，至少能撑一阵子。"
   },
+  "appeased": {
+    "english": "appeased",
+    "chinese": "平息"
+  },
   "[Achievement name 91]Centennial": {
     "english": "Centennial",
     "chinese": "破百纪念"
