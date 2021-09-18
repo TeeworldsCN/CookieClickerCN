@@ -147,7 +147,7 @@
   },
   "CpS x%1 for 1 hour!": {
     "english": "CpS x%1 for 1 hour!",
-    "chinese": "CpS x %1，持续 1 小时！"
+    "chinese": "CpS x %1，持续 1小时！"
   },
   "Cost scales with CpS, but %1 times cheaper with a fully-trained dragon.": {
     "english": "Cost scales with CpS, but %1 times cheaper with a fully-trained dragon.",

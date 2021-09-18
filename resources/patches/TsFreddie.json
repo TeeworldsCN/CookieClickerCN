@@ -343,6 +343,40 @@
     "english": "appeased",
     "chinese": "平息"
   },
+  "Cookie blab": {
+    "english": [
+      "Cookie crumbliness x3 for 60 seconds!",
+      "Chocolatiness x7 for 77 seconds!",
+      "Dough elasticity halved for 66 seconds!",
+      "Golden cookie shininess doubled for 3 seconds!",
+      "World economy halved for 30 seconds!",
+      "Grandma kisses 23% stingier for 45 seconds!",
+      "Thanks for clicking!",
+      "Fooled you! This one was just a test.",
+      "Golden cookies clicked +1!",
+      "Your click has been registered. Thank you for your cooperation.",
+      "Thanks! That hit the spot!",
+      "Thank you. A team has been dispatched.",
+      "They know.",
+      "Oops. This was just a chocolate cookie with shiny aluminium foil."
+    ],
+    "chinese": [
+      "饼干掉渣程度 x3，持续 60秒！",
+      "饼干的巧克力风味 x7，持续 77秒！",
+      "面团弹性减半，持续 66秒！",
+      "黄金饼干闪亮程度翻倍，持续 3秒！",
+      "全球经济减半，持续 30秒！",
+      "老奶奶的轻吻减少 23%，持续 45秒！",
+      "感谢点击！",
+      "你上当了！这块只是一个测试。",
+      "黄金饼干点击次数 +1！",
+      "你的点击已记录在案。谢谢你的合作。",
+      "太棒了！点这里正好！",
+      "谢谢你。我们已派出一个团队。",
+      "他们正看着你。",
+      "尴尬。这是一块包着铝箔纸的普通巧克力饼干。"
+    ]
+  },
   "[Achievement name 91]Centennial": {
     "english": "Centennial",
     "chinese": "破百纪念"
