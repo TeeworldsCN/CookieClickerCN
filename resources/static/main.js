@@ -581,6 +581,9 @@ const __TWCNG = {
       ModMarket(this);
       ModUpgrade152(this);
 
+      // 切换为其他语言时需要可以替换回来
+      ModBrandedCookies(this);
+
       // 只有语言是中文的时候启用模组
       if (this.lang == 'ZH-CN') {
         // 默认设置参数
@@ -589,7 +592,6 @@ const __TWCNG = {
         if (Game.prefs.brandcn == null) Game.prefs.brandcn = 1;
 
         ModBackgroundSelector(this);
-        ModBrandedCookies(this);
         ModSayTime(this);
         ModGameUnit(this);
         ModCookiesFormat(this);
@@ -616,7 +618,10 @@ const __TWCNG = {
       this.toggleBrandCookies();
     },
     toggleBrandCookies: function () {
-      const data = Game.prefs.brandcn ? __TWCNG.BRAND_COOKIE_CN : this.OriginalBrandCookies;
+      const data =
+        Game.prefs.brandcn && this.lang != 'ZH-CN'
+          ? __TWCNG.BRAND_COOKIE_CN
+          : this.OriginalBrandCookies;
       for (let uid in data) {
         const it = Game.UpgradesById[uid];
         it.dname = data[uid].name;
