@@ -549,6 +549,7 @@ const __TWCNG = {
   };
 
   const FixPlaySound = () => {
+    // 用monophonic换性能，游戏里也没什么地方需要同时播放一个声音好几遍的情况
     PlaySound = (url, vol, pitchVar) => {
       var volume = 1;
       var volumeSetting = Game.volume;
@@ -559,7 +560,6 @@ const __TWCNG = {
       }
       if (!volumeSetting || volume == 0) return 0;
       if (typeof Sounds[url] === 'undefined') {
-        //sound isn't loaded, cache it
         Sounds[url] = new Audio(url);
         Sounds[url].onloadeddata = function (e) {
           PlaySound(url, vol, pitchVar);
