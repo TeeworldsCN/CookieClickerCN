@@ -1,5 +1,5 @@
 {
-  "author": "cyxw、DullBoi",
+  "author": "cyxw、DullBoi、lyu-kun",
   "<b>One tenth</b> of every other dragon aura, <b>combined</b>.": {
     "english": "<b>One tenth</b> of every other dragon aura, <b>combined</b>.",
     "chinese": "<b>同时激活</b>其他所有龙之光环效果的<b>十分之一</b>。"
@@ -15,5 +15,9 @@
   "[Upgrade name 606]Tombola computing": {
     "english": "Tombola computing",
     "chinese": "猴子排序"
+  },
+  "[Wrinklegill quote]This mushroom's odor resembles that of a well-done steak, and is said to whet the appetite - making one's stomach start gurgling within seconds.": {
+    "english": "This mushroom's odor resembles that of a well-done steak, and is said to whet the appetite - making one's stomach start gurgling within seconds.",
+    "chinese": "这种蘑菇的闻起来很像全熟的牛排，据说可以增进食欲——几秒钟内就能让人肚子咕咕叫。"
   }
 }
