@@ -583,6 +583,12 @@ const __TWCNG = {
     };
   };
 
+  // 植入CSS
+  const ModInjectCSS = MOD => {
+    // 修改Notes里的行间距
+    document.head.insertAdjacentHTML('beforeEnd', '<style>.note .title{line-height:1em}</style>');
+  };
+
   // 在游戏加载前就修复Loc函数 (需要赶在本地化成就之前就生效)
   FixParseLoc();
 
@@ -628,6 +634,7 @@ const __TWCNG = {
         if (Game.prefs.brandcn == null) Game.prefs.brandcn = 1;
 
         ModBackgroundSelector(this);
+        ModInjectCSS(this);
         ModSayTime(this);
         ModGameUnit(this);
         ModCookiesFormat(this);

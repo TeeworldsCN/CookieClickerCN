@@ -160,8 +160,9 @@
     "chinese": "你在离线期间获得了 <b>%1</b>。"
   },
   "sacrifice %1": {
+    "comment": "禁止强制换行",
     "english": "sacrifice %1",
-    "chinese": "献祭 %1"
+    "chinese": "<span style=\"white-space: nowrap\">献祭%1</span>"
   },
   "Burst <b>1 wrinkler</b>.": {
     "english": "Burst <b>1 wrinkler</b>.",
