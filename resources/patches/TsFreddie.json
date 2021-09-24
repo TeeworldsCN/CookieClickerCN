@@ -378,6 +378,10 @@
       "尴尬。这是一块包着铝箔纸的普通巧克力饼干。"
     ]
   },
+  "While the golden switch is on, you gain an additional <b>+%1% CpS</b> per golden cookie upgrade owned.": {
+    "english": "While the golden switch is on, you gain an additional <b>+%1% CpS</b> per golden cookie upgrade owned.",
+    "chinese": "黄金开关开启时，你每拥有一个黄金饼干升级就可以额外使 <b>CpS +%1%</b>。"
+  },
   "[Achievement name 91]Centennial": {
     "english": "Centennial",
     "chinese": "破百纪念"
