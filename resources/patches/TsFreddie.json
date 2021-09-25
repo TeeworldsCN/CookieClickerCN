@@ -382,6 +382,18 @@
     "english": "While the golden switch is on, you gain an additional <b>+%1% CpS</b> per golden cookie upgrade owned.",
     "chinese": "黄金开关开启时，你每拥有一个黄金饼干升级就可以额外使 <b>CpS +%1%</b>。"
   },
+  "golden cookie upgrade": {
+    "english": ["golden cookie upgrade", "golden cookie upgrades"],
+    "chinese": ["黄金饼干升级", "黄金饼干升级"]
+  },
+  "The effective boost is <b>+%1%</b><br>thanks to residual luck<br>and your <b>%2</b> %3.": {
+    "english": "The effective boost is <b>+%1%</b><br>thanks to residual luck<br>and your <b>%2</b> %3.",
+    "chinese": "因为你购买了余留幸运<br>并拥有 <b>%2</b> 项%3<br>你的 CpS 获得了 <b>+%1%</b> 的加成。"
+  },
+  "The switch is currently giving you a passive <b>+%1% CpS</b>; it also prevents golden cookies from spawning.<br>Turning it off will revert those effects.<br>Cost is equal to 1 hour of production.": {
+    "english": "The switch is currently giving you a passive <b>+%1% CpS</b>; it also prevents golden cookies from spawning.<br>Turning it off will revert those effects.<br>Cost is equal to 1 hour of production.",
+    "chinese": "黄金开关现在正在使你被动获得 <b>+%1% CpS</b><br>这个开关也阻止了黄金饼干的生成。<br>关闭开关会取消这些效果。<br>花费相当于 1 小时的饼干产量。"
+  },
   "[Achievement name 91]Centennial": {
     "english": "Centennial",
     "chinese": "破百纪念"

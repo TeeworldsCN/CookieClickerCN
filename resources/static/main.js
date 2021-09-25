@@ -248,6 +248,35 @@ const __TWCNG = {
     };
   };
 
+  // 修复黄金开关未翻译的文本
+  const ModUpgrade332 = MOD => {
+    Game.UpgradesById[332].descFunc = function () {
+      if (Game.Has('Residual luck')) {
+        let bonus = 0;
+        const upgrades = Game.goldenCookieUpgrades;
+        for (let i in upgrades) {
+          if (Game.Has(upgrades[i])) bonus++;
+        }
+        return (
+          '<div style="text-align:center;">' +
+          Game.listTinyOwnedUpgrades(Game.goldenCookieUpgrades) +
+          '<br><br>' +
+          loc(
+            'The effective boost is <b>+%1%</b><br>thanks to residual luck<br>and your <b>%2</b> %3.',
+            [
+              Beautify(Math.round(50 + bonus * 10)),
+              Beautify(bonus),
+              loc('golden cookie upgrade', bonus),
+            ]
+          ) +
+          '</div><div class="line"></div>' +
+          this.ddesc
+        );
+      }
+      return this.desc;
+    };
+  };
+
   // 修复parseLoc
   const FixParseLoc = () => {
     const isCN = localStorageGet('CookieClickerLang') === 'ZH-CN';
@@ -619,8 +648,6 @@ const __TWCNG = {
       });
 
       // 其他语言也会被修复
-      ModMarket(this);
-      ModUpgrade152(this);
       FixPlaySound(this);
 
       // 切换为其他语言时需要可以替换回来
@@ -633,6 +660,9 @@ const __TWCNG = {
         if (Game.prefs.numbercndecimal == null) Game.prefs.numbercndecimal = 100;
         if (Game.prefs.brandcn == null) Game.prefs.brandcn = 1;
 
+        ModMarket(this);
+        ModUpgrade152(this);
+        ModUpgrade332(this);
         ModBackgroundSelector(this);
         ModInjectCSS(this);
         ModSayTime(this);
