@@ -1617,6 +1617,146 @@
     "english": "A malevolent, if delicious herb that is said to grow on the cliffs of the darkest abyss of the underworld.",
     "chinese": "这种剧毒的草药，口感和味道却是鲜美可口。据说经常生长在阴间最黑暗的深渊悬崖上。"
   },
+  "[Upgrade quote 410]Sucralosia Inutilis": {
+    "english": "A rare berry of uninteresting flavor that is as elusive as its uses are limited; only sought-after by the most avid collectors with too much wealth on their hands.",
+    "chinese": "一种罕见的浆果，食之无味，弃之可惜，用途有限，难以捉摸；只有手上有用不完的财富的顶级狂热收藏家才会追捧。"
+  },
+  "[Upgrade quote 411]Lucky digit": {
+    "english": "This upgrade is a bit shy and only appears when your prestige level ends in 7.",
+    "chinese": "这项升级比较害羞，只有当你的威望等级以7结尾时才会出现。"
+  },
+  "[Upgrade quote 412]Lucky number": {
+    "english": "This upgrade is a reclusive hermit and only appears when your prestige level ends in 777.",
+    "chinese": "这项升级是位隐居人士，只有当你的威望等级以777结尾时才会出现。"
+  },
+  "[Upgrade quote 413]Lucky payout": {
+    "english": "This upgrade took an oath of complete seclusion from the rest of the world and only appears when your prestige level ends in 777777.",
+    "chinese": "这项升级为了闭关修炼曾发誓与世隔绝，只有当你的威望等级以777777结尾时才会出现。"
+  },
+  "[Upgrade quote 415]Lucky grandmas": {
+    "english": "A fortunate grandma that always seems to find more cookies.",
+    "chinese": "一位幸运的老奶奶，似乎总是能找到更多的饼干。"
+  },
+  "[Upgrade quote 416]Your lucky cookie": {
+    "english": "This is the first cookie you've ever baked. It holds a deep sentimental value and, after all this time, an interesting smell.",
+    "chinese": "这是你烤过的第一块饼干，包含着爱与无尽的纪念价值。而且经过这么长时间了，闻起来还有一种有趣的味道。"
+  },
+  "[Upgrade quote 417]\"All Bets Are Off\" magic coin": {
+    "english": "A coin that always lands on the other side when flipped. Not heads, not tails, not the edge. The <i>other side</i>.",
+    "chinese": "一枚丢出去以后总是能另一面朝上的硬币。不是正面，不是反面，也不是能竖着立在侧面。是真的总是\"另一面\"。"
+  },
+  "[Upgrade quote 418]Winning lottery ticket": {
+    "english": "What lottery? THE lottery, that's what lottery! Only lottery that matters!",
+    "chinese": "什么彩票？就是，\"那一张\"彩票! 在众多才票里唯一有价值的那张重要的彩票!"
+  },
+  "[Upgrade quote 419]Four-leaf clover field": {
+    "english": "No giant monsters here, just a whole lot of lucky grass.",
+    "chinese": "这里没有巨大的怪物，只有一大堆的幸运草。"
+  },
+  "[Upgrade quote 420]A recipe book about books": {
+    "english": "Tip the scales in your favor with 28 creative new ways to cook the books.",
+    "chinese": "轻松将优势拉向你自己这边，28种改写历史书的实用方法。"
+  },
+  "[Upgrade quote 421]Leprechaun village": {
+    "english": "You've finally become accepted among the local leprechauns, who lend you their mythical luck as a sign of friendship (as well as some rather foul-tasting tea).",
+    "chinese": "你终于与当地的妖精们混熟了，他们把精灵神话中的运气借给你作为友谊的象征（还顺带附送了一些相当难喝的茶）。"
+  },
+  "[Upgrade quote 422]Improbability drive": {
+    "english": "A strange engine that turns statistics on their head. Recommended by the Grandmother's Guide to the Bakery.",
+    "chinese": "颠覆统计学的奇怪引擎。由《老奶奶的面包店指南》倾心推荐。"
+  },
+  "[Upgrade quote 621]Fortune #001": {
+    "english": "Fingers are not the only thing you can count on.",
+    "chinese": "你的手指并不是你唯一可以依靠的东西。"
+  },
+  "[Upgrade quote 622]Fortune #002": {
+    "english": "A wrinkle is a crack in a mundane facade.",
+    "chinese": "皱纹只是是平凡外表上的一个裂缝。"
+  },
+  "[Upgrade quote 623]Fortune #003": {
+    "english": "The seeds of tomorrow already lie within the seeds of today.",
+    "chinese": "明日的希望已经在今天希望过了。"
+  },
+  "[Upgrade quote 624]Fortune #004": {
+    "english": "Riches from deep under elevate you all the same.",
+    "chinese": "来自地下深处的财富同样可以升华。"
+  },
+  "[Upgrade quote 625]Fortune #005": {
+    "english": "True worth is not in what you find, but in what you make.",
+    "chinese": "真正的价值不在于你找到了什么，而在于你创造了什么。"
+  },
+  "[Upgrade quote 626]Fortune #006": {
+    "english": "The value of money means nothing to a pocket.",
+    "chinese": "钱的价值对钱包来说毫无意义。"
+  },
+  "[Upgrade quote 627]Fortune #007": {
+    "english": "Not all guides deserve worship.",
+    "chinese": "不是所有的指点迷津都值得崇拜。"
+  },
+  "[Upgrade quote 628]Fortune #008": {
+    "english": "Magic is about two things - showmanship, and rabbits.",
+    "chinese": "魔术就是两种事物的结合——演技和兔子。"
+  },
+  "[Upgrade quote 629]Fortune #009": {
+    "english": "Every mile travelled expands the mind by just as much.",
+    "chinese": "每走一里路都会使人的眼界得到同样程度的拓展。"
+  },
+  "[Upgrade quote 630]Fortune #010": {
+    "english": "Don't get used to yourself. You're gonna have to change.",
+    "chinese": "不要习惯现状。你必须要改变。"
+  },
+  "[Upgrade quote 631]Fortune #011": {
+    "english": "Every doorway is a gamble. Tread with care.",
+    "chinese": "每条门路都是一场赌博。警觉而行。"
+  },
+  "[Upgrade quote 632]Fortune #012": {
+    "english": "Do your future self a favor; they'll thank you for it.",
+    "chinese": "帮你未来的自己一个忙；未来的你会为此感谢你的。"
+  },
+  "[Upgrade quote 633]Fortune #013": {
+    "english": "The world is made of what we put into it.",
+    "chinese": "世界是由我们的付出构成的。"
+  },
+  "[Upgrade quote 634]Fortune #014": {
+    "english": "Staring at a dazzling light can blind you back to darkness.",
+    "chinese": "紧盯着耀眼的光芒，会让你盲目地回到黑暗中。"
+  },
+  "[Upgrade quote 635]Fortune #015": {
+    "english": "Don't leave to blind chance what you could accomplish with deaf skill.",
+    "chinese": "不要盲目等待机会，全力发挥你耳聋的优势。"
+  },
+  "[Upgrade quote 636]Fortune #016": {
+    "english": "It's good to see yourself in others. Remember to see yourself in yourself, too.",
+    "chinese": "在别人身上看到自己的影子是件好事。但记住也要在自己身上看到自己影子。"
+  },
+  "[Upgrade quote 637]Fortune #017": {
+    "english": "If things aren't working out for you, rewrite the rules.",
+    "chinese": "遇事不决，改变世界。"
+  },
+  "[Upgrade quote 638]Fortune #100": {
+    "english": "True wealth is counted in gifts.",
+    "chinese": "真正的财富是收礼收出来的。"
+  },
+  "[Upgrade quote 639]Fortune #101": {
+    "english": "Some people dream of fortunes; others dream of cookies.",
+    "chinese": "有些人梦想拥有财富；有些人梦想拥有饼干。"
+  },
+  "[Upgrade quote 640]Fortune #102": {
+    "english": "Help, I'm trapped in a browser game!",
+    "chinese": "救命！我被困在一个页游中了！"
+  },
+  "[Upgrade quote 641]Fortune #103": {
+    "english": "Don't believe the superstitions; all cats are good luck.",
+    "chinese": "不要相信迷信，所有猫都会带来好运。"
+  },
+  "[Upgrade quote 642]Fortune #104": {
+    "english": "Remember to stay in touch.",
+    "chinese": "记住要保持联系。"
+  },
+  "[Upgrade quote 643]Fortune cookies": {
+    "english": "These don't taste all that great but that's not really the point, is it?",
+    "chinese": "这些东西的味道并不是很好，但这并不是重点，你说是不是？"
+  },
   "[Achievement quote 26]Sacrifice": {
     "english": "Easy come, easy go.",
     "chinese": "来也匆匆，去也匆匆。"
