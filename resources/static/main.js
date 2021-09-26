@@ -277,6 +277,40 @@ const __TWCNG = {
     };
   };
 
+  // 修复彩蛋掉落未翻译的文本
+  const ModDropEgg = MOD => {
+    Game.DropEgg = failRate => {
+      failRate *= 1 / Game.dropRateMult();
+      if (Game.season != 'easter') return;
+      if (Game.HasAchiev('Hide & seek champion')) failRate *= 0.7;
+      if (Game.Has('Omelette')) failRate *= 0.9;
+      if (Game.Has('Starspawn')) failRate *= 0.9;
+      if (Game.hasGod) {
+        const godLvl = Game.hasGod('seasons');
+        if (godLvl == 1) failRate *= 0.9;
+        else if (godLvl == 2) failRate *= 0.95;
+        else if (godLvl == 3) failRate *= 0.97;
+      }
+      if (Math.random() >= failRate) {
+        let drop = '';
+        if (Math.random() < 0.1) drop = choose(Game.rareEggDrops);
+        else drop = choose(Game.eggDrops);
+        if (Game.Has(drop) || Game.HasUnlocked(drop)) {
+          //reroll if we have it
+          if (Math.random() < 0.1) drop = choose(Game.rareEggDrops);
+          else drop = choose(Game.eggDrops);
+        }
+        if (Game.Has(drop) || Game.HasUnlocked(drop)) return;
+        Game.Unlock(drop);
+        Game.Notify(
+          loc('You found an egg!'),
+          '<b>' + Game.Upgrades[drop].dname + '</b>',
+          Game.Upgrades[drop].icon
+        );
+      }
+    };
+  };
+
   // 修复parseLoc
   const FixParseLoc = () => {
     const isCN = localStorageGet('CookieClickerLang') === 'ZH-CN';
@@ -663,6 +697,7 @@ const __TWCNG = {
         ModMarket(this);
         ModUpgrade152(this);
         ModUpgrade332(this);
+        ModDropEgg(this);
         ModBackgroundSelector(this);
         ModInjectCSS(this);
         ModSayTime(this);
