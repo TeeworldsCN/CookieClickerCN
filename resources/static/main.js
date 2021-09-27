@@ -206,7 +206,7 @@ const __TWCNG = {
         let M = Game.Objects['Farm'].minigame;
 
         let oldDescFunc = M.tools.info.descFunc;
-        M.tools.info.descFunc = () => {
+        M.tools.info.descFunc = function () {
           return oldDescFunc().replace(
             '<img src="img/gardenTip.png" style="float:right;margin:0px 0px 8px 8px;"/>',
             '<img src="' +
@@ -236,7 +236,7 @@ const __TWCNG = {
 
   // 修复Santa升级提示中未翻译的文本
   const ModUpgrade152 = MOD => {
-    Game.UpgradesById[152].buyFunction = () => {
+    Game.UpgradesById[152].buyFunction = function () {
       const drop = choose(Game.santaDrops);
       Game.Unlock(drop);
       const dropName = Game.Upgrades[drop].dname;
@@ -274,6 +274,19 @@ const __TWCNG = {
         );
       }
       return this.desc;
+    };
+  };
+
+  // 修复巧克力蛋提示中未翻译的文本
+  const ModUpgrade227 = MOD => {
+    Game.UpgradesById[227].buyFunction = function () {
+      const cookies = Game.cookies * 0.05;
+      Game.Notify(
+        Game.Upgrades['Chocolate egg'].dname,
+        loc('The egg bursts into <b>%1</b> cookies!', Beautify(cookies)),
+        Game.Upgrades['Chocolate egg'].icon
+      );
+      Game.Earn(cookies);
     };
   };
 
@@ -414,7 +427,7 @@ const __TWCNG = {
   // 汉化背景选择器中的背景名
   const ModBackgroundSelector = MOD => {
     Game.Upgrades['Background selector'].choicesFunction = () => {
-      var choices = [];
+      const choices = [];
       choices[0] = { name: 'Automatic', icon: [0, 7] };
       choices[1] = { name: 'Blue', icon: [21, 21] };
       choices[2] = { name: 'Red', icon: [22, 21] };
@@ -428,7 +441,7 @@ const __TWCNG = {
 
       if (!EN) {
         choices[0].name = loc(choices[0].name);
-        for (var i = 1; i < choices.length; i++) {
+        for (let i = 1; i < choices.length; i++) {
           choices[i].name = loc(`[bg] ${choices[i].name}`);
         }
       }
@@ -696,6 +709,7 @@ const __TWCNG = {
 
         ModMarket(this);
         ModUpgrade152(this);
+        ModUpgrade227(this);
         ModUpgrade332(this);
         ModDropEgg(this);
         ModBackgroundSelector(this);

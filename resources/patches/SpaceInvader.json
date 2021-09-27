@@ -344,5 +344,9 @@
   "Dropped by %1 plants.": {
     "english": "Dropped by %1 plants.",
     "chinese": "这是从花园里的%1上掉落的。"
+  },
+  "a festive test tube<br>and <b>%1</b>.": {
+    "english": "a festive test tube<br>and <b>%1</b>.",
+    "chinese": "一支节庆试管<br>和<b>%1</b>。"
   }
 }
