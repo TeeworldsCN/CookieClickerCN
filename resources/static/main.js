@@ -187,7 +187,7 @@ const __TWCNG = {
       let output;
       if (Game.prefs.numbercn && Game.keys[__TWCNG.UNIT_TOGGLE_KEY] != 1) {
         output =
-          val >= 1e76 && isFinite(val)
+          val >= 1e88 && isFinite(val)
             ? __TWCNG.FormatterScientific(val)
             : __TWCNG.FormatterCN(val);
       } else {
