@@ -121,14 +121,14 @@ const __TWCNG = {
     if (val >= 1e4) {
       for (const u of __TWCNG.CN_UNITS) {
         if (val >= u[0]) {
-          val = Math.round(val / (u[0] / 10)) / 10;
+          val = Math.round(val / (u[0] / 10000)) / 10000;
           unit = u[1];
           break;
         }
       }
       for (const u of __TWCNG.CN_UNITS_STACKABLE) {
         while (val >= u[0]) {
-          val = Math.round(val / (u[0] / 10)) / 10;
+          val = Math.round(val / (u[0] / 10000)) / 10000;
           unit = u[1] + unit;
         }
       }
