@@ -1,0 +1,70 @@
+{
+  "[Tier]Plain": {
+    "english": "Plain",
+    "chinese": "原味"
+  },
+  "[Tier]Berrylium": {
+    "english": "Berrylium",
+    "chinese": "浆果铍合金味"
+  },
+  "[Tier]Blueberrylium": {
+    "english": "Blueberrylium",
+    "chinese": "蓝莓铍合金味"
+  },
+  "[Tier]Chalcedhoney": {
+    "english": "Chalcedhoney",
+    "chinese": "蜂蜜玉髓味"
+  },
+  "[Tier]Buttergold": {
+    "english": "Buttergold",
+    "chinese": "黄油黄金味"
+  },
+  "[Tier]Sugarmuck": {
+    "english": "Sugarmuck",
+    "chinese": "白糖有机肥味"
+  },
+  "[Tier]Jetmint": {
+    "english": "Jetmint",
+    "chinese": "薄荷黑玉味"
+  },
+  "[Tier]Cherrysilver": {
+    "english": "Cherrysilver",
+    "chinese": "樱桃白银味"
+  },
+  "[Tier]Hazelrald": {
+    "english": "Hazelrald",
+    "chinese": "翡翠榛果味"
+  },
+  "[Tier]Mooncandy": {
+    "english": "Mooncandy",
+    "chinese": "月亮硬糖味"
+  },
+  "[Tier]Astrofudge": {
+    "english": "Astrofudge",
+    "chinese": "天文巧克力味"
+  },
+  "[Tier]Alabascream": {
+    "english": "Alabascream",
+    "chinese": "奶油石膏味"
+  },
+  "[Tier]Iridyum": {
+    "english": "Iridyum",
+    "chinese": "浓香铱味"
+  },
+  "[Tier]Synergy I": {
+    "english": "Synergy I",
+    "chinese": "协同效应 I"
+  },
+  "[Tier]Synergy II": {
+    "english": "Synergy II",
+    "chinese": "协同效应 II"
+  },
+  "[Tier]Fortune": {
+    "english": "Fortune",
+    "chinese": "幸运"
+  },
+  "[Tier]Self-referential": {
+    "english": "Self-referential",
+    "chinese": "自我引用"
+  }
+}
