@@ -324,6 +324,51 @@ const __TWCNG = {
     };
   };
 
+  // 修复抚摸龙掉落未翻译的通知
+  const ModTouchSpecialPic = MOD => {
+    Game.ClickSpecialPic = function () {
+      if (
+        Game.specialTab == 'dragon' &&
+        Game.dragonLevel >= 4 &&
+        Game.Has('Pet the dragon') &&
+        l('specialPic')
+      ) {
+        triggerAnim(l('specialPic'), 'pucker');
+        PlaySound('snd/click' + Math.floor(Math.random() * 7 + 1) + '.mp3', 0.5);
+        if (Date.now() - Game.lastClickedSpecialPic > 2000) PlaySound('snd/growl.mp3');
+        //else if (Math.random()<0.5) PlaySound('snd/growl.mp3',0.5+Math.random()*0.2);
+        Game.lastClickedSpecialPic = Date.now();
+        if (Game.prefs.particles) {
+          Game.particleAdd(
+            Game.mouseX,
+            Game.mouseY - 32,
+            Math.random() * 4 - 2,
+            Math.random() * -2 - 4,
+            Math.random() * 0.2 + 0.5,
+            1,
+            2,
+            [20, 3]
+          );
+        }
+        if (Game.dragonLevel >= 8 && Math.random() < 1 / 20) {
+          Math.seedrandom(Game.seed + '/dragonTime');
+          var drops = ['Dragon scale', 'Dragon claw', 'Dragon fang', 'Dragon teddy bear'];
+          drops = shuffle(drops);
+          var drop = drops[Math.floor((new Date().getMinutes() / 60) * drops.length)];
+          if (!Game.Has(drop) && !Game.HasUnlocked(drop)) {
+            Game.Unlock(drop);
+            Game.Notify(
+              Game.Upgrades[drop].dname,
+              '<b>' + loc('Your dragon dropped something!') + '</b>',
+              Game.Upgrades[drop].icon
+            );
+          }
+          Math.seedrandom();
+        }
+      }
+    };
+  };
+
   // 修复parseLoc
   const FixParseLoc = () => {
     const isCN = localStorageGet('CookieClickerLang') === 'ZH-CN';
@@ -707,6 +752,7 @@ const __TWCNG = {
         if (Game.prefs.numbercndecimal == null) Game.prefs.numbercndecimal = 100;
         if (Game.prefs.brandcn == null) Game.prefs.brandcn = 1;
 
+        ModTouchSpecialPic(this);
         ModMarket(this);
         ModUpgrade152(this);
         ModUpgrade227(this);

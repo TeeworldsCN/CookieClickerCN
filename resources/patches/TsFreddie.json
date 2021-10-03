@@ -394,6 +394,18 @@
     "english": "The switch is currently giving you a passive <b>+%1% CpS</b>; it also prevents golden cookies from spawning.<br>Turning it off will revert those effects.<br>Cost is equal to 1 hour of production.",
     "chinese": "黄金开关现在正在使你被动获得 <b>+%1% CpS</b><br>这个开关也阻止了黄金饼干的生成。<br>关闭开关会取消这些效果。<br>花费相当于 1 小时的饼干产量。"
   },
+  "Your dragon dropped something!": {
+    "english": "Your dragon dropped something!",
+    "chinese": "你的龙带回来了一样东西！"
+  },
+  "can be done once every %1": {
+    "english": "can be done once every %1",
+    "chinese": "每 %1 可以使用一次"
+  },
+  "usable again in %1": {
+    "english": "usable again in %1",
+    "chinese": "%1后再次可用"
+  },
   "[Javascript console business quote]Taking many forms -religion, culture, philosophy- a doctrine may, when handled properly, cause a lasting impact on civilizations, reshaping minds and people and ensuring all future generations share a singular goal - the production, and acquisition, of more cookies.": {
     "english": "Taking many forms -religion, culture, philosophy- a doctrine may, when handled properly, cause a lasting impact on civilizations, reshaping minds and people and ensuring all future generations share a singular goal - the production, and acquisition, of more cookies.",
     "chinese": "信条可以有许多形式——宗教、文化、哲学，只要处理得当，就可以对文明产生深远影响，重塑精神和民众，确保子孙后代朝着同一个目标努力——生产和获取更多饼干。"

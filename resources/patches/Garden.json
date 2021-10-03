@@ -38,5 +38,9 @@
   "grandma CpS": {
     "english": "grandma CpS",
     "chinese": "老奶奶 CpS"
+  },
+  "Click to refill your soil timer and trigger <b>1</b> plant growth tick with <b>x%1</b> spread and mutation rate for %2.": {
+    "english": "Click to refill your soil timer and trigger <b>1</b> plant growth tick with <b>x%1</b> spread and mutation rate for %2.",
+    "chinese": "点击花费%2来重置土壤计时器并触发 <b>1</b> 次更新，触发的这次更新附带 <b>%1 倍</b>的生长率和变异率。"
   }
 }
