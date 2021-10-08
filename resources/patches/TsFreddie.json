@@ -1802,6 +1802,39 @@
     "english": "You get one.",
     "chinese": "有且只有一个。"
   },
+  "[Upgrade quote 449]Sugar baking": {
+    "english": "To bake with the sugary essence of eons themselves, you must first learn to take your sweet time.",
+    "chinese": "要用年代本身的糖分精华来烘烤饼干，你必须首先学会把握好你的甜蜜时光。"
+  },
+  "[Upgrade quote 450]Sugar craving": {
+    "english": "Just a little kick to sweeten the deal.",
+    "chinese": "只需一点点甜即可满足。"
+  },
+  "[Upgrade quote 451]Sugar aging process": {
+    "english": "Aren't they just the sweetest?",
+    "chinese": "甜蜜是熬出来的。"
+  },
+  "[Upgrade name 453]Sprinkles cookies": {
+    "english": "Sprinkles cookies",
+    "chinese": "彩糖饼干"
+  },
+  "[Upgrade quote 453]Sprinkles cookies": {
+    "english": "A bit of festive decorating helps hide the fact that this might be one of the blandest cookies you've ever tasted.",
+    "chinese": "撒上一点有节庆气息的装饰来掩盖这种饼干过于平淡无味的事实。"
+  },
+  "[Upgrade quote 454]Peanut butter blossoms": {
+    "comment": "不建议谷歌chocolate squirt是啥，翻译我直接重写了个无害一点的",
+    "english": "Topped with a scrumptious chocolate squirt, which is something we really wish we didn't just write.",
+    "chinese": "上面的巧克力利用了一种将巧克力注入牙膏管内然后挤到饼干上的高级点缀技巧。"
+  },
+  "[Upgrade quote 455]No-bake cookies": {
+    "english": "You have no idea how these mysterious oven-less treats came to be or how they hold their shape. You're thinking either elephant glue or cold fusion.",
+    "chinese": "你完全想象不到这些神秘的免烤箱点心是怎么做成的，也不知道它们是如何保持形状的。你觉得不是掺了502就是冷核聚变。"
+  },
+  "[Upgrade quote 456]Florentines": {
+    "english": "These make up for being the fruitcake of cookies by at least having the decency to feature chocolate.",
+    "chinese": "这些饼干至少有巧克力的加持，从而弥补了水果蛋糕的不足。"
+  },
   "[Upgrade quote 621]Fortune #001": {
     "english": "Fingers are not the only thing you can count on.",
     "chinese": "你的手指并不是你唯一可以依靠的东西。"
