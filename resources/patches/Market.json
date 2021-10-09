@@ -6,5 +6,74 @@
   "It is fully upgraded. Its lavish interiors, spanning across innumerable floors, are host to many a decadent party, owing to your nigh-unfathomable wealth.": {
     "english": "It is fully upgraded. Its lavish interiors, spanning across innumerable floors, are host to many a decadent party, owing to your nigh-unfathomable wealth.",
     "chinese": "它已被全面升级。奢华的内饰纵跨数不清的楼层，举办了许多享乐派对，因为你有着近乎多不可测的财富。"
+  },
+  "from %1": {
+    "comment": "这样更有意思",
+    "english": "from %1",
+    "chinese": "%1股份有限公司"
+  },
+  "[STOCK 1 NAME]Old Mills": {
+    "english": "Old Mills",
+    "chinese": "老磨坊"
+  },
+  "[STOCK 2 NAME]Cocoa Excavations": {
+    "english": "Cocoa Excavations",
+    "chinese": "深掘可可"
+  },
+  "[STOCK 3 NAME]Bovine Industries": {
+    "english": "Bovine Industries",
+    "chinese": "巨牛工业"
+  },
+  "[STOCK 4 NAME]Candy Trust": {
+    "english": "Candy Trust",
+    "chinese": "盛糖信托"
+  },
+  "[STOCK 5 NAME]Hazel Monastery": {
+    "english": "Hazel Monastery",
+    "chinese": "榛果寺"
+  },
+  "[STOCK 6 NAME]Wacky Reagants": {
+    "english": "Wacky Reagants",
+    "chinese": "咸卡化工"
+  },
+  "[STOCK 7 NAME]Cosmic Exports": {
+    "english": "Cosmic Exports",
+    "chinese": "宇宙贸易"
+  },
+  "[STOCK 8 NAME]Organic Gnostics": {
+    "english": "Organic Gnostics",
+    "chinese": "有机封神"
+  },
+  "[STOCK 9 NAME]Dimensional Exchange": {
+    "english": "Dimensional Exchange",
+    "chinese": "上维交易"
+  },
+  "[STOCK 10 NAME]Precision Aging": {
+    "english": "Precision Aging",
+    "chinese": "精准抗衰堂"
+  },
+  "[STOCK 11 NAME]Pectin Research": {
+    "english": "Pectin Research",
+    "chinese": "果胶研究科技"
+  },
+  "[STOCK 12 NAME]Dazzle Corp Ltd.": {
+    "english": "Dazzle Corp Ltd.",
+    "chinese": "炫白食品"
+  },
+  "[STOCK 13 NAME]Prosperity Hive": {
+    "english": "Prosperity Hive",
+    "chinese": "繁隆蜂巢"
+  },
+  "[STOCK 14 NAME]Selfmade Bakeries": {
+    "english": "Selfmade Bakeries",
+    "chinese": "手工烘坊"
+  },
+  "[STOCK 15 NAME]Figments Associated": {
+    "english": "Figments Associated",
+    "chinese": "泡沫联合"
+  },
+  "[STOCK 16 NAME]Polyvalent Acquisitions": {
+    "english": "Polyvalent Acquisitions",
+    "chinese": "多价商融"
   }
 }
