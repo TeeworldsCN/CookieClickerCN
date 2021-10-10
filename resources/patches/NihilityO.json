@@ -3,7 +3,7 @@
   "Open Workshop": {
     "comment": "考虑到这些条目应是用于未来可能的steam创意工坊上传功能，将'研讨会'更改为'创意工坊'",
     "english": "Open Workshop",
-    "chinese": "打开创意工坊",
+    "chinese": "打开创意工坊"
   },
   "Open Workshop page": {
     "comment": "考虑到这些条目应是用于未来可能的steam创意工坊上传功能，将'研讨会'更改为'创意工坊'",
@@ -16,12 +16,12 @@
     "chinese": "发布到创意工坊"
   },
   "Business day": {
-    "comment": "考虑到这是愚人节的特殊庆祝效果调整了一下语感"
+    "comment": "考虑到这是愚人节的特殊庆祝效果调整了一下语感",
     "english": "Business day",
     "chinese": "生意节"
   },
   "bakery random name, 1st half": {
-    "comment": "为部分烘焙坊随机名称进行了俏皮语感润色"
+    "comment": "为部分烘焙坊随机名称进行了俏皮语感润色",
     "english": [
       "Magic",
       "Fantastic",
@@ -274,5 +274,5 @@
       "僵尸",
       "机器人"
     ]
-  },
+  }
 }
