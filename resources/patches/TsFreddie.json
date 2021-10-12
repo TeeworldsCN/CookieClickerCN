@@ -1883,6 +1883,74 @@
     "english": "These crunchy, almost obnoxiously cinnamony cookies are a source of dutch pride. About the origin of the name, one can only speculate.",
     "chinese": "这些松脆的、几乎令人厌恶的肉桂味饼干是荷兰人的骄傲。关于这个名字的来源，也无从考据了。"
   },
+  "[Upgrade quote 470]Elderwort biscuits": {
+    "english": "They taste incredibly stale, even when baked fresh.",
+    "chinese": "有种放久了的饼干的口感，即使这些饼干刚刚出炉。"
+  },
+  "[Upgrade quote 471]Bakeberry cookies": {
+    "english": "Really good dipped in hot chocolate.",
+    "chinese": "蘸着热可可吃简直是人间美味。"
+  },
+  "[Upgrade quote 472]Duketater cookies": {
+    "english": "Fragrant and mealy, with a slight yellow aftertaste.",
+    "chinese": "酥香可口，吃完会在嘴里留下皇室的味道。"
+  },
+  "[Upgrade quote 473]Green yeast digestives": {
+    "english": "These are tastier than you'd expect, but not by much.",
+    "chinese": "这玩意比你想象中要好吃，但也没好吃太多。"
+  },
+  "[Upgrade quote 474]Fern tea": {
+    "english": "A chemically complex natural beverage, this soothing concoction has been used by mathematicians to solve equations in their sleep.",
+    "chinese": "这是一种用复杂化学成分合成的天然饮料，这种舒缓的混合物已被数学家用来在睡梦中解决方程式。"
+  },
+  "[Upgrade quote 475]Ichor syrup": {
+    "english": "Tastes like candy. The smell is another story.",
+    "chinese": "尝起来像糖果。闻起来就是另一回事了。"
+  },
+  "[Upgrade quote 476]Wheat slims": {
+    "english": "The only reason you'd consider these to be cookies is because you feel slightly sorry for them.",
+    "chinese": "也就是因为你觉得它们太可怜了才会把它们当饼干看。"
+  },
+  "[Upgrade quote 477]Synthetic chocolate green honey butter biscuit": {
+    "english": "Rewarded for owning 350 of everything.<br>The recipe for this butter biscuit was once the sole heritage of an ancient mountain monastery. Its flavor is so refined that only a slab of lab-made chocolate specifically engineered to be completely tasteless could complement it.<br>Also it's got your face on it.",
+    "chinese": "拥有 350 个所有建筑的奖励。<br>这种黄油饼干的配方曾是一个古老的山区修道院的唯一遗产。它的味道及其精致，以至于只有一块在实验室制造出来的毫无味道的巧克力才能与之相得益彰。<br>上面还印了你的肖像。"
+  },
+  "[Upgrade quote 478]Royal raspberry chocolate butter biscuit": {
+    "english": "Rewarded for owning 400 of everything.<br>Once reserved for the megalomaniac elite, this unique strain of fruity chocolate has a flavor and texture unlike any other. Whether its exorbitant worth is improved or lessened by the presence of your likeness on it still remains to be seen.",
+    "chinese": "拥有 400 个所有建筑的奖励。<br>这种独特的果味巧克力曾经为那些顶级自恋狂所保留，它的味道和质地与其他任何巧克力都不同。至于你的肖像会不会提升或减少其高昂的价格，仍有待观察。"
+  },
+  "[Upgrade quote 479]Ultra-concentrated high-energy chocolate butter biscuit": {
+    "english": "Rewarded for owning 450 of everything.<br>Infused with the power of several hydrogen bombs through a process that left most nuclear engineers and shareholders perplexed. Currently at the center of some rather heated United Nations meetings. Going in more detail about this chocolate would violate several state secrets, but we'll just add that someone's bust seems to be pictured on it. Perhaps yours?",
+    "chinese": "拥有 450 个所有建筑的奖励。<br>注入了几个氢弹的能量。至于注入的方法，你的股东和大多数核工程师都不太明白。目前联合国会议正在进行激烈而详细的讨论，以决定这块巧克力是否触犯了一些国家机密。但我们只想补充一点，有人的半身像似乎被画在上面了。也许是你的？"
+  },
+  "[Upgrade quote 480]Timeproof hair dyes": {
+    "english": "Why do they always have those strange wispy pink dos? What do they know about candy floss that we don't?",
+    "chinese": "为什么一群人总是有那些奇怪的粉红色毛发？他们是不是有什么我们不知道的关于棉花糖的秘密？"
+  },
+  "[Upgrade quote 481]Barnstars": {
+    "english": "Ah, yes. These help quite a bit. Somehow.",
+    "chinese": "啊，是啊。不知道为什么这些总能派上用场。"
+  },
+  "[Upgrade quote 482]Mine canaries": {
+    "english": "These aren't used for anything freaky! The miners just enjoy having a pet or two down there.",
+    "chinese": "这些并不是用来做什么怪事的！矿工们只是喜欢在下面养一两个宠物。"
+  },
+  "[Upgrade name 483]Brownie point system": {
+    "english": "Brownie point system",
+    "chinese": "布朗尼积分制度"
+  },
+  "[Upgrade quote 483]Brownie point system": {
+    "english": "Oh, these are lovely! You can now reward your factory employees for good behavior, such as working overtime or snitching on coworkers. 58 brownie points gets you a little picture of a brownie, and 178 of those pictures gets you an actual brownie piece for you to do with as you please! Infantilizing? Maybe. Oodles of fun? You betcha!",
+    "chinese": "喔，这可是项大发明！你现在可以奖励你的工厂员工的良好行为，比如加班或打小报告什么的。要是获得了58个布朗尼积分，可以兑换一张布朗尼的图片。再集齐178张图片可以兑换一块真正的布朗尼尽供享用。这系统不知道人不人道，但是很有意思是真的。"
+  },
+  "[Upgrade quote 484]Grand supercycles": {
+    "english": "We let the public think these are complicated financial terms when really we're just rewarding the bankers with snazzy bicycles for a job well done. It's only natural after you built those fancy gold swimming pools for them, where they can take a dip and catch Kondratiev waves.",
+    "chinese": "我们让公众认为这些是复杂的金融术语，而实际上我们只是在用时髦的自行车来奖励银行家们的出色工作。这是很自然的，因为你为他们建造了那些花哨的金色游泳池，他们可以在那里玩水或者在康德拉季耶夫长波上冲浪。"
+  },
+  "[Upgrade quote 485]Psalm-reading": {
+    "english": "A theologically dubious and possibly blasphemous blend of fortune-telling and scripture studies.",
+    "chinese": "一个在神学上可疑又亵渎的风水算命和经文研究的混合体。"
+  },
   "[Upgrade quote 621]Fortune #001": {
     "english": "Fingers are not the only thing you can count on.",
     "chinese": "你的手指并不是你唯一可以依靠的东西。"
