@@ -30,6 +30,23 @@ jobs:
           node ./dist/index.js
           cp ./resources/static/* ./build/CookieClickerCNMod/
 
+      - name: Setup SSH KEY
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_KEY }}
+
+      - name: Update Web Version
+        run: |
+          git clone git@github.com:TsFreddie/cookieclicker.git
+          rm -rf ./cookieclicker/CookieClickerCNMod
+          cp -r ./build/CookieClickerCNMod ./cookieclicker/
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions"
+          cd cookieclicker
+          git add -A
+          git commit -m "AutoUpdate"
+          git push
+
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
