@@ -274,5 +274,34 @@
       "僵尸",
       "机器人"
     ]
-  }
+  },
+  "Dragon training": {
+    "english": "Dragon training:",
+    "chinese": "驯化的龙："
+  },
+  "Reindeer names": {
+    "comment": "只是小修正了两只驯鹿'vixen'和'donner'的名字",
+    "english": [
+      "Dasher",
+      "Dancer",
+      "Prancer",
+      "Vixen",
+      "Comet",
+      "Cupid",
+      "Donner",
+      "Blitzen",
+      "Rudolph"
+    ],
+    "chinese": [
+      "猛冲者",
+      "舞者",
+      "腾跃者",
+      "悍狐",
+      "彗星",
+      "丘比特",
+      "雷霆",
+      "闪电",
+      "鲁道夫"
+    ]
+  },
 }
