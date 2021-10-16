@@ -1951,6 +1951,10 @@
     "english": "A theologically dubious and possibly blasphemous blend of fortune-telling and scripture studies.",
     "chinese": "一个在神学上可疑又亵渎的风水算命和经文研究的混合体。"
   },
+  "[Upgrade quote 486]Immobile spellcasting": {
+    "english": "Wizards who master this skill can now cast spells without having to hop and skip and gesticulate embarrassingly, which is much sneakier and honestly quite a relief.",
+    "chinese": "只有极少的巫师可以掌握这一技能，这些高级巫师可以随时释放法术，而不用尴尬地一边打着手势一边跳来跳去。这种新的施法方式比传统的方法更加隐蔽。说实话，这种方式主要也是可以缓解巫师的心理压力。"
+  },
   "[Upgrade quote 621]Fortune #001": {
     "english": "Fingers are not the only thing you can count on.",
     "chinese": "你的手指并不是你唯一可以依靠的东西。"
@@ -2046,6 +2050,14 @@
   "[Upgrade quote 698]Fortune #018": {
     "english": "There's plenty of everyone, but only one of you.",
     "chinese": "世界上有很多的大家，但却只有一个你自己。"
+  },
+  "[Upgrade quote 699]Butter biscuit (with butter)": {
+    "english": "Rewarded for owning 600 of everything.<br>This is a plain butter biscuit. It's got some butter on it. The butter doesn't look like anything in particular.",
+    "chinese": "拥有 600 个所有建筑的奖励。<br>这就是一个普通的黄油饼干。上面还额外涂了点黄油。涂着的黄油看不出来是不是有意的画成了图案。"
+  },
+  "[Upgrade quote 700]Visits": {
+    "english": "In an extensive double-blind study (sample size: 12 millions), your researchers have found evidence that grandmas are up to twice as productive if you just come by and say hi once in a while. It's nice to check up on your grans! (Do not under any circumstances ingest any tea or tea-like substances the grandmas may offer you.)",
+    "chinese": "在一项详细的双盲实验中（样本量：1200万），你的研究员发现了可以让老奶奶们工作效率提高两倍的方法：只要你偶尔去打个招呼。所以别忘了去定期检查你的老奶奶们！（警告：在任何情况下都不要摄入老奶奶提供给你的茶或类似茶一样的不明物质。）"
   },
   "[Achievement quote 26]Sacrifice": {
     "english": "Easy come, easy go.",
