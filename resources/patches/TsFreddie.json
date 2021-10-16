@@ -1955,6 +1955,62 @@
     "english": "Wizards who master this skill can now cast spells without having to hop and skip and gesticulate embarrassingly, which is much sneakier and honestly quite a relief.",
     "chinese": "只有极少的巫师可以掌握这一技能，这些高级巫师可以随时释放法术，而不用尴尬地一边打着手势一边跳来跳去。这种新的施法方式比传统的方法更加隐蔽。说实话，这种方式主要也是可以缓解巫师的心理压力。"
   },
+  "[Upgrade quote 487]Restaurants at the end of the universe": {
+    "english": "Since the universe is spatially infinite, and therefore can be construed to have infinite ends, you've opened an infinite chain of restaurants where your space truckers can rest and partake in some home-brand cookie-based meals.",
+    "chinese": "宇宙是一个无限扩张的空间——你可以理解为宇宙有无限个终点，因此你开了一家有无限个门店的连锁餐厅，好方便你的太空卡车司机在各个终点之间穿梭的时候总会有一个可以去休息的地方。所有餐厅还会向自家司机提供自家品牌的免费饼干餐。"
+  },
+  "[Upgrade quote 488]On second thought": {
+    "english": "Disregard that last upgrade, alchemy is where it's at! Your eggheads just found a way to transmute children's nightmares into rare metals!",
+    "chinese": "感觉上个升级其实没那么重要，炼金术才是致胜秘诀！你培训出来的智力小组想出了一个可以将小孩的噩梦转化成稀有金属的方法。"
+  },
+  "[Upgrade quote 489]Dimensional garbage gulper": {
+    "english": "So we've been looking for a place to dispose of all the refuse that's been accumulating since we started baking - burnt cookies, failed experiments, unruly workers - and well, we figured rather than sell it to poor countries like we've been doing, we could just dump it in some alternate trash dimension where it's not gonna bother anybody! Probably!",
+    "chinese": "呃……我们一直在想办法找个地方处理我们开工以来积累的所有烘焙垃圾，比如烤焦的饼干、失败的实验品和不守规矩的工人。那这样的话……感觉与其把他们卖给那些贫穷国家，不如把他们全倒在某个全是垃圾的异度空间。这样咱们的垃圾就不会给别人带来困扰了！大概。"
+  },
+  "[Upgrade quote 490]Additional clock hands": {
+    "english": "It seemed like a silly idea at first, but it turns out these have the strange ability to twist time in interesting new ways.",
+    "chinese": "起初这看起来是个蠢法子，但是事实证明这种方案可以创造出一些新奇的扭曲时间的方式。"
+  },
+  "[Upgrade quote 491]Baking Nobel prize": {
+    "english": "What better way to sponsor scientific growth than to motivate those smarmy nerds with a meaningless award! What's more, each prize comes with a fine print lifelong exclusive contract to come work for you (or else)!",
+    "chinese": "还有什么比用一个毫无意义的奖项来激励那些自以为是的书呆子更好的方式来资助科学的发展呢？况且，每个奖项最下面都有小字写的终生制卖身合同，好让他们永远为你工作（他们也可以选择解约，当然解约的条件也在小字里写好了。）"
+  },
+  "[Upgrade quote 492]Reverse theory of light": {
+    "english": "A whole new world of physics opens up when you decide that antiphotons are real and posit that light is merely a void in shadow.",
+    "chinese": "当你决定反光子是真实存在的，并认为光只是阴影中的一个空洞时，一个全新的物理学世界就打开了。"
+  },
+  "[Upgrade quote 493]Revised probabilistics": {
+    "english": "Either something happens or it doesn't. That's a 50% chance! This suddenly makes a lot of unlikely things very possible.",
+    "chinese": "一件事情，要么就是发生，要么就是没发生。永远都是50%的几率！这个新的统计原理让很多看起来不可能的事情都变得非常有可能了。"
+  },
+  "[Upgrade quote 494]Kitten analysts": {
+    "english": "based on purrent return-on-investment meowdels we should be able to affurd to pay our empawyees somewhere around next century, sir",
+    "chinese": "根据目前的投资回报率统计猫型，下个世纪的喵个时候我们大概就能支付得起我们员工的工资了，先生"
+  },
+  "[Upgrade quote 495]Eye of the wrinkler": {
+    "english": "Just a wrinkler and its will to survive.<br>Hangin' tough, stayin' hungry.",
+    "chinese": "就是一只饼干虫和它生存的欲望。<br>不过，要牢记饼干虫的誓言：坚韧不拔，保持饥饿。"
+  },
+  "[Upgrade quote 496]Inspired checklist": {
+    "english": "Snazzy grandma accessories? Check. Transdimensional abominations? Check. A bunch of eggs for some reason? Check. Machine that goes \"ping\"? Check and check.",
+    "chinese": "时髦的老奶奶饰品？有了。跨越维度的憎恶？也有了。不知道那来的一堆蛋？也有。会发出“叮”的一声的机器？全都有了。"
+  },
+  "[Upgrade quote 497]Pure pitch-black chocolate butter biscuit": {
+    "english": "Rewarded for owning 500 of everything.<br>This chocolate is so pure and so flawless that it has no color of its own, instead taking on the appearance of whatever is around it. You're a bit surprised to notice that this one isn't stamped with your effigy, as its surface is perfectly smooth (to the picometer) - until you realize it's quite literally reflecting your own face like a mirror.",
+    "chinese": "拥有 500 个所有建筑的奖励。<br>这块巧克力是如此纯洁无瑕，以至于它没有自己的颜色，而是会模仿它周围的任何东西的外观。你有点惊讶地发现，这块巧克力没有印上你的肖像，因为它的表面非常光滑（粗糙粒度要用千分之一纳米计）。然后你意识到它像镜子一样反射出了你自己的脸。"
+  },
+  "[Upgrade quote 498]Chocolate oatmeal cookies": {
+    "english": "These bad boys compensate for lack of a cohesive form and a lumpy, unsightly appearance by being just simply delicious. Something we should all aspire to.",
+    "chinese": "这些完蛋玩意通过简单的美味来弥补缺乏凝聚力的形式、满是疙瘩的面料和及其难看的外观。都是我们应该向往的东西。"
+  },
+  "[Upgrade quote 499]Molasses cookies": {
+    "english": "Sticky, crackly, and dusted in fine sugar.<br>Some lunatics have been known to eat these with potatoes.",
+    "chinese": "酥软又黏稠，还撒上了细砂糖。<br>据了解，有些疯子会把这东西和土豆一起吃。"
+  },
+  "[Upgrade quote 500]Biscotti": {
+    "english": "Almonds and pistachios make these very robust cookies slightly more interesting to eat than to bludgeon people with.",
+    "chinese": "里面的杏仁和开心果使这些非常结实的饼干吃起来比用它来打人要稍微有趣一些。"
+  },
   "[Upgrade quote 621]Fortune #001": {
     "english": "Fingers are not the only thing you can count on.",
     "chinese": "你的手指并不是你唯一可以依靠的东西。"
