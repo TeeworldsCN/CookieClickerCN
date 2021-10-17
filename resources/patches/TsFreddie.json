@@ -502,7 +502,7 @@
   },
   "[Upgrade quote 7]Forwards from grandma": {
     "english": "RE:RE:thought you'd get a kick out of this ;))",
-    "chinese": "回复：回复：我觉得你会喜欢这样 ^-^"
+    "chinese": "回复：回复：我觉得你会喜欢这样 ;))"
   },
   "[Upgrade quote 8]Steel-plated rolling pins": {
     "english": "Just what you kneaded.",
@@ -693,7 +693,7 @@
   },
   "[Upgrade quote 54]Kitten engineers": {
     "english": "meow meow meow meow, sir",
-    "chinese": "喵喵喵喵喵，先生。"
+    "chinese": "喵喵喵喵喵，阁下。"
   },
   "[Upgrade quote 55]Dark chocolate-coated cookies": {
     "english": "These absorb light so well you almost need to squint to see them.",
@@ -759,7 +759,7 @@
   },
   "[Upgrade quote 69]One mind": {
     "english": "We are one. We are many.",
-    "chinese": "我们是一。我们是全。"
+    "chinese": "我们一心。我们万众。"
   },
   "[Upgrade quote 70]Exotic nuts": {
     "english": "You'll go crazy over these!",
@@ -1291,15 +1291,15 @@
   },
   "[Upgrade quote 320]Kitten accountants": {
     "english": "business going great, sir",
-    "chinese": "业务进展顺利喵，先生。"
+    "chinese": "业务进展顺利喵，阁下。"
   },
   "[Upgrade quote 321]Kitten specialists": {
     "english": "optimeowzing your workflow like whoah, sir",
-    "chinese": "正在努力优化你的工序喵，先生。"
+    "chinese": "正在努力优化你的工序喵，阁下。"
   },
   "[Upgrade quote 322]Kitten experts": {
     "english": "10 years expurrrtise in the cookie business, sir",
-    "chinese": "我有十年做饼干生意的经验喵，先生。"
+    "chinese": "我有十年做饼干生意的经验喵，阁下。"
   },
   "[Upgrade name 323]How to bake your dragon": {
     "english": "How to bake your dragon",
@@ -1768,7 +1768,7 @@
   },
   "[Upgrade quote 442]Kitten assistants to the regional manager": {
     "english": "nothing stresses meowt... except having to seek the approval of my inferiors, sir",
-    "chinese": "没有什么能让我感到压力的事情……只要我让我不耻下问去找征求那些下等猫的意见，先生。"
+    "chinese": "没有什么能让我感到压力……除了让我不耻下问地征求那些下等猫的意见，阁下。"
   },
   "[Upgrade name 443]Charm quarks": {
     "english": "Charm quarks",
@@ -1858,7 +1858,7 @@
   },
   "[Upgrade quote 462]Kitten marketeers": {
     "english": "no such thing as a saturated markit, sir",
-    "chinese": "市场饱和是虚假的概念喵，先生"
+    "chinese": "市场饱和是虚假的概念喵，阁下"
   },
   "[Upgrade quote 464]Persian rice cookies": {
     "english": "Rose water and poppy seeds are the secret ingredients of these small, butter-free cookies.",
@@ -1986,7 +1986,7 @@
   },
   "[Upgrade quote 494]Kitten analysts": {
     "english": "based on purrent return-on-investment meowdels we should be able to affurd to pay our empawyees somewhere around next century, sir",
-    "chinese": "根据目前的投资回报率统计猫型，下个世纪的喵个时候我们大概就能支付得起我们员工的工资了，先生"
+    "chinese": "根据目前的投资回报率统计猫型，下个世纪的喵个时候我们大概就能支付得起我们员工的工资了，阁下"
   },
   "[Upgrade quote 495]Eye of the wrinkler": {
     "english": "Just a wrinkler and its will to survive.<br>Hangin' tough, stayin' hungry.",
