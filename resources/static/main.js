@@ -469,6 +469,14 @@ const __TWCNG = {
     });
   };
 
+  // 魔改随机烘焙坊名
+  const ModRandomBakeryName = MOD => {
+    const RandomName = Game.RandomBakeryName;
+    Game.RandomBakeryName = function () {
+      return RandomName().replace(/ /g, '');
+    };
+  };
+
   // 汉化背景选择器中的背景名
   const ModBackgroundSelector = MOD => {
     Game.Upgrades['Background selector'].choicesFunction = () => {
@@ -765,6 +773,7 @@ const __TWCNG = {
         ModCookiesFormat(this);
         ModGardenTooltip(this);
         ModSynergies(this);
+        ModRandomBakeryName(this);
         AddMenuHook(this, ModPrefMenu);
       }
     },
