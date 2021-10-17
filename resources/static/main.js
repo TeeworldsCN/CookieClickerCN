@@ -105,6 +105,7 @@ const __TWCNG = {
     [1e24, '秭'],
     [1e20, '垓'],
     [1e16, '京'],
+    [1e12, '兆'],
   ],
 
   CN_UNITS_STACKABLE: [
@@ -112,7 +113,10 @@ const __TWCNG = {
     [1e4, '万'],
     [1e3, '千'],
     [1e2, '百'],
+    [1e1, '十'],
   ],
+
+  CN_UNITS_MIN: ['十', '百', '千', '万', '亿'],
 
   // 替换数字格式化
   FormatterCN: val => {
@@ -120,13 +124,15 @@ const __TWCNG = {
     if (!isFinite(val)) return '无限';
     if (val >= 1e4) {
       for (const u of __TWCNG.CN_UNITS) {
+        if (!Game.prefs.numbercntrillion && u[1] == '兆') continue;
         if (val >= u[0]) {
           val = Math.round(val / (u[0] / 10000)) / 10000;
           unit = u[1];
           break;
         }
       }
-      for (const u of __TWCNG.CN_UNITS_STACKABLE) {
+      for (var i = 0; i < __TWCNG.CN_UNITS_STACKABLE.length - Game.prefs.numbercnminunit; i++) {
+        const u = __TWCNG.CN_UNITS_STACKABLE[i];
         while (val >= u[0]) {
           val = Math.round(val / (u[0] / 10000)) / 10000;
           unit = u[1] + unit;
@@ -134,7 +140,9 @@ const __TWCNG = {
       }
     }
     const prec = Game.prefs.numbercndecimal;
-    return Math.floor(val * prec) / prec + unit;
+    return (
+      (Math.floor(val * prec) / prec).toString().replace(/\B(?=(\d{4})+(?!\d))/g, '\u2008') + unit
+    );
   },
 
   // 替换科学计数法
@@ -540,7 +548,17 @@ const __TWCNG = {
   };
 
   // 添加设置
-  const ModSlider = (slider, leftText, rightText, startValueFunction, min, max, step, callback) => {
+  const ModSlider = (
+    slider,
+    leftText,
+    rightText,
+    startValueDisplayFunction,
+    startValueFunction,
+    min,
+    max,
+    step,
+    callback
+  ) => {
     if (!callback) callback = '';
     return (
       '<div class="sliderBox"><div style="float:left;" class="smallFancyButton">' +
@@ -548,7 +566,7 @@ const __TWCNG = {
       '</div><div style="float:right;" class="smallFancyButton" id="' +
       slider +
       'RightText">' +
-      rightText.replace('[$]', startValueFunction()) +
+      rightText.replace('[$]', startValueDisplayFunction()) +
       '</div><input class="slider" style="clear:both;" type="range" min="' +
       min +
       '" max="' +
@@ -575,25 +593,48 @@ const __TWCNG = {
     return (
       '<div class="title">中文模组设置</div>' +
       '<div class="listing">' +
-      ModSlider(
-        'numbercnDecimal',
-        '中文单位前保留',
-        '小数点后[$]位',
-        () => Math.log10(Game.prefs.numbercndecimal),
-        0,
-        4,
-        1,
-        "Game.prefs.numbercndecimal=Math.pow(10,Math.floor(l('numbercnDecimal').value));l('numbercnDecimalRightText').innerHTML='小数点后'+Math.floor(l('numbercnDecimal').value)+'位';BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
-      ) +
-      '<br>' +
       Game.WriteButton(
         'numbercn',
         'numbercnButton',
         '使用中文计数单位' + ON,
         '使用中文计数单位' + OFF,
-        'BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
+        'Game.UpdateMenu();BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
       ) +
       '<label>(按住<b>Z键</b>可临时显示完整数字)</label><br>' +
+      (Game.prefs.numbercn
+        ? ModSlider(
+            'numbercnDecimal',
+            '中文单位前保留',
+            '小数点后[$]位',
+            () => Math.log10(Game.prefs.numbercndecimal),
+            () => Math.log10(Game.prefs.numbercndecimal),
+            0,
+            4,
+            1,
+            "Game.prefs.numbercndecimal=Math.pow(10,Math.floor(l('numbercnDecimal').value));l('numbercnDecimalRightText').innerHTML='小数点后'+Math.floor(l('numbercnDecimal').value)+'位';BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+          ) +
+          '<br>' +
+          ModSlider(
+            'numbercnMinUnit',
+            '最小计数单位',
+            '[$]',
+            () => __TWCNG.CN_UNITS_MIN[Game.prefs.numbercnminunit],
+            () => Game.prefs.numbercnminunit,
+            0,
+            4,
+            1,
+            "Game.prefs.numbercnminunit=l('numbercnMinUnit').value;l('numbercnMinUnitRightText').innerHTML=__TWCNG.CN_UNITS_MIN[l('numbercnMinUnit').value];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+          ) +
+          '<br>' +
+          Game.WriteButton(
+            'numbercntrillion',
+            'numbercntrillionButton',
+            '“兆”单位 启用',
+            '“兆”单位 禁用',
+            'BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
+          ) +
+          '<label>(启用后 <b>1万亿</b> 将显示为 <b>1兆</b>)</label><br>'
+        : '') +
       (Game.Has('Box of brand biscuits')
         ? Game.WriteButton(
             'brandcn',
@@ -758,6 +799,8 @@ const __TWCNG = {
         // 默认设置参数
         if (Game.prefs.numbercn == null) Game.prefs.numbercn = 1;
         if (Game.prefs.numbercndecimal == null) Game.prefs.numbercndecimal = 100;
+        if (Game.prefs.numbercnminunit == null) Game.prefs.numbercnminunit = 1;
+        if (Game.prefs.numbercntrillion == null) Game.prefs.numbercntrillion = 0;
         if (Game.prefs.brandcn == null) Game.prefs.brandcn = 1;
 
         ModTouchSpecialPic(this);
@@ -782,6 +825,8 @@ const __TWCNG = {
         prefs: {
           numbercn: Game.prefs.numbercn,
           numbercndecimal: Game.prefs.numbercndecimal,
+          numbercnminunit: Game.prefs.numbercnminunit,
+          numbercntrillion: Game.prefs.numbercntrillion,
           brandcn: Game.prefs.brandcn,
         },
       });
