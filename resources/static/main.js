@@ -208,25 +208,130 @@ const __TWCNG = {
   };
 
   // 翻译花园小游戏的提示图片（因为里面有文本）
-  const ModGardenTooltip = MOD => {
-    const hackGarden = () => {
-      if (Game.isMinigameReady(Game.Objects['Farm'])) {
-        let M = Game.Objects['Farm'].minigame;
+  const ModGardenTooltip = (MOD, M) => {
+    let oldDescFunc = M.tools.info.descFunc;
+    M.tools.info.descFunc = function () {
+      return oldDescFunc().replace(
+        '<img src="img/gardenTip.png" style="float:right;margin:0px 0px 8px 8px;"/>',
+        '<img src="' +
+          MOD.dirURI +
+          '/gardenTip.png" width="120px" style="float:right;margin:0px 0px 8px 8px;"/>'
+      );
+    };
+  };
 
-        let oldDescFunc = M.tools.info.descFunc;
-        M.tools.info.descFunc = function () {
-          return oldDescFunc().replace(
-            '<img src="img/gardenTip.png" style="float:right;margin:0px 0px 8px 8px;"/>',
-            '<img src="' +
-              MOD.dirURI +
-              '/gardenTip.png" width="120px" style="float:right;margin:0px 0px 8px 8px;"/>'
+  // 将花园收获饼干Popup改为Notify，避免和解锁种子提示冲突，并修复收获饼干数量没有翻译的问题
+  const ModGardenPopup = (MOD, M) => {
+    M.plants.bakeberry.onHarvest = function (x, y, age) {
+      if (age >= this.mature) {
+        let moni = Math.min(Game.cookies * 0.03, Game.cookiesPs * 60 * 30);
+        if (moni != 0) {
+          Game.Earn(moni);
+          Game.Notify(
+            loc('You harvested %1', this.name),
+            loc('Found <b>%1</b>!', loc('%1 cookie', Beautify(moni))),
+            [0, this.icon, 'img/gardenPlants.png'],
+            6
           );
-        };
-      } else {
-        setTimeout(hackGarden, 500);
+        }
+        M.dropUpgrade('Bakeberry cookies', 0.015);
       }
     };
-    hackGarden();
+    M.plants.chocoroot.onHarvest = function (x, y, age) {
+      if (age >= this.mature) {
+        let moni = Math.min(Game.cookies * 0.03, Game.cookiesPs * 60 * 3);
+        if (moni != 0) {
+          Game.Earn(moni);
+          Game.Notify(
+            loc('You harvested %1', this.name),
+            loc('Found <b>%1</b>!', loc('%1 cookie', Beautify(moni))),
+            [0, this.icon, 'img/gardenPlants.png'],
+            6
+          );
+        }
+      }
+    };
+    M.plants.whiteChocoroot.onHarvest = function (x, y, age) {
+      if (age >= this.mature) {
+        let moni = Math.min(Game.cookies * 0.03, Game.cookiesPs * 60 * 3);
+        if (moni != 0) {
+          Game.Earn(moni);
+          Game.Notify(
+            loc('You harvested %1', this.name),
+            loc('Found <b>%1</b>!', loc('%1 cookie', Beautify(moni))),
+            [0, this.icon, 'img/gardenPlants.png'],
+            6
+          );
+        }
+      }
+    };
+    M.plants.queenbeet.onHarvest = function (x, y, age) {
+      if (age >= this.mature) {
+        let moni = Math.min(Game.cookies * 0.04, Game.cookiesPs * 60 * 60);
+        if (moni != 0) {
+          Game.Earn(moni);
+          Game.Notify(
+            loc('You harvested %1', this.name),
+            loc('Found <b>%1</b>!', loc('%1 cookie', Beautify(moni))),
+            [0, this.icon, 'img/gardenPlants.png'],
+            6
+          );
+        }
+      }
+    };
+    M.plants.duketater.onHarvest = function (x, y, age) {
+      if (age >= this.mature) {
+        let moni = Math.min(Game.cookies * 0.08, Game.cookiesPs * 60 * 60 * 2);
+        if (moni != 0) {
+          Game.Earn(moni);
+          Game.Notify(
+            loc('You harvested %1', this.name),
+            loc('Found <b>%1</b>!', loc('%1 cookie', Beautify(moni))),
+            [0, this.icon, 'img/gardenPlants.png'],
+            6
+          );
+          M.dropUpgrade('Duketater cookies', 0.005);
+        }
+      }
+    };
+    M.plants.crumbspore.onDie = function (x, y) {
+      let moni = Math.min(Game.cookies * 0.01, Game.cookiesPs * 60) * Math.random();
+      if (moni != 0) {
+        Game.Earn(moni);
+        Game.Notify(
+          loc('%1 decayed', this.name),
+          loc('Exploded into <b>%1</b>!', loc('%1 cookie', Beautify(moni))),
+          [0, this.icon, 'img/gardenPlants.png'],
+          6
+        );
+      }
+    };
+    M.plants.doughshroom.onDie = function (x, y) {
+      let moni = Math.min(Game.cookies * 0.03, Game.cookiesPs * 60 * 5) * Math.random();
+      if (moni != 0) {
+        Game.Earn(moni);
+        Game.Notify(
+          loc('%1 decayed', this.name),
+          loc('Exploded into <b>%1</b>!', loc('%1 cookie', Beautify(moni))),
+          [0, this.icon, 'img/gardenPlants.png'],
+          6
+        );
+      }
+    };
+  };
+
+  // 花园小游戏加载检查器
+  const ModGarden = MOD => {
+    const gardenChecker = () => {
+      if (Game.isMinigameReady(Game.Objects['Farm'])) {
+        let M = Game.Objects['Farm'].minigame;
+        ModGardenTooltip(MOD, M);
+        ModGardenPopup(MOD, M);
+      } else {
+        setTimeout(gardenChecker, 500);
+      }
+    };
+    gardenChecker();
   };
 
   // 修复股票小游戏内未翻译的文本
@@ -814,7 +919,7 @@ const __TWCNG = {
         ModSayTime(this);
         ModGameUnit(this);
         ModCookiesFormat(this);
-        ModGardenTooltip(this);
+        ModGarden(this);
         ModSynergies(this);
         ModRandomBakeryName(this);
         AddMenuHook(this, ModPrefMenu);
