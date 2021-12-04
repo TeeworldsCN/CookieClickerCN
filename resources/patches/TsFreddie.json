@@ -2140,9 +2140,13 @@
     "english": "Forever eating its own tail and digesting itself, in a metabolically dubious tale of delicious tragedy.",
     "chinese": "它靠着永远吞食自己的尾巴来存活，简直是一个令人不解的新陈代谢所来的美味悲剧。"
   },
+  "[Upgrade name 529]Nested": {
+    "english": "Nested",
+    "chinese": "嵌套"
+  },
   "[Upgrade quote 529]Nested": {
     "english": "Clever self-reference or shameful cross-promotion? This upgrade apparently has the gall to advertise a link to <u>orteil.dashnet.org/nested</u>, in a tooltip you can't even click.",
-    "chinese": "机智的自我引用还是无耻的导流广告？这个升级显然很有胆量地在提示框里给<u>orteil.dashnet.org/nested</u>打了个广告，毕竟这个提示框里的链接根本不能点到。"
+    "chinese": "机智的自我引用还是无耻的导流广告？这个升级显然很有胆量地在提示框里给 <u>orteil.dashnet.org/nested</u> 打了个广告，毕竟这个提示框里的链接根本不能点到。"
   },
   "[Upgrade quote 621]Fortune #001": {
     "english": "Fingers are not the only thing you can count on.",
