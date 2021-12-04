@@ -2124,6 +2124,26 @@
     "english": "Asserts that each subatomic particle is host to a whole new universe, and therefore, another limitless quantity of cookies.<br>This somehow stacks with the theory of nanocosmics, because physics.",
     "chinese": "理论上来说每个亚原子粒子都承载着一个完整的宇宙。因此，现实中存在比现实的无限还要更无限的饼干。<br>这在某种程度上可以与纳米宇宙论同时成立，毕竟物理学。"
   },
+  "[Upgrade name 526]Menger sponge cake": {
+    "english": "Menger sponge cake",
+    "chinese": "门格海绵蛋糕"
+  },
+  "[Upgrade quote 526]Menger sponge cake": {
+    "english": "Frighteningly absorbent thanks to its virtually infinite surface area. Keep it isolated in a dry chamber, never handle it with an open wound, and do not ever let it touch a body of water.",
+    "chinese": "因为其无限大的表面积，这蛋糕的吸水能力十分可怕。贮存方法：保存在真空隔离箱中。请勿在身上有伤口时取用。远离任何湿润的物体。"
+  },
+  "[Upgrade quote 527]One particularly good-humored cow": {
+    "english": "This unassuming bovine was excruciatingly expensive and it may seem at first like you were ripped off. On closer inspection however, you notice that its earrings (it's wearing earrings) are actually fully functional copies of itself, each of which also wearing their own cow earrings, and so on, infinitely. It appears your dairy concerns will be taken care of for a while, although you'll have to put up with the cow's annoying snickering.",
+    "chinese": "这头毫不起眼的牛贵得令人发指。买来的时候你还觉得你可能被卖家忽悠了。但是，经过仔细的观察，你发现它双耳戴着的耳环（是的，这头牛会戴耳环）居然也是一头完整复制的和本体一模一样的牛，每个耳环牛也都戴着自己的两副递归耳环，以此类推，无限复制。这下你乳制品短缺的问题算是解决了，尽管你不得不忍受这头牛无尽的喘息声。"
+  },
+  "[Upgrade quote 528]Chocolate ouroboros": {
+    "english": "Forever eating its own tail and digesting itself, in a metabolically dubious tale of delicious tragedy.",
+    "chinese": "它靠着永远吞食自己的尾巴来存活，简直是一个令人不解的新陈代谢所来的美味悲剧。"
+  },
+  "[Upgrade quote 529]Nested": {
+    "english": "Clever self-reference or shameful cross-promotion? This upgrade apparently has the gall to advertise a link to <u>orteil.dashnet.org/nested</u>, in a tooltip you can't even click.",
+    "chinese": "机智的自我引用还是无耻的导流广告？这个升级显然很有胆量地在提示框里给<u>orteil.dashnet.org/nested</u>打了个广告，毕竟这个提示框里的链接根本不能点到。"
+  },
   "[Upgrade quote 621]Fortune #001": {
     "english": "Fingers are not the only thing you can count on.",
     "chinese": "你的手指并不是你唯一可以依靠的东西。"
