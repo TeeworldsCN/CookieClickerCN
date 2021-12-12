@@ -403,6 +403,34 @@ const __TWCNG = {
     };
   };
 
+  // 魔改一个带特效的分形引擎引文
+  const ModUpgrade531 = MOD => {
+    Game.UpgradesById[531].descFunc = function () {
+      var str =
+        '“从前有座山，山上有座庙，' +
+        Game.bakeryName +
+        '在庙里开了一家烘焙坊。一天，烘焙坊的门口传来了敲门声。' +
+        Game.bakeryName +
+        '打开了门，抬头看到了一位散发着邪恶气息的老奶奶。老奶奶微微张口，用虚弱而诡异的声音，开始讲述她记忆中的小故事：';
+      var i = Math.floor(Game.T * 0.1) % 100;
+      var offset = 'transform:translate3d(-' + i + '%, 5px, 0);';
+      return (
+        this.baseDesc +
+        '<style>.CNS{margin-left:2px;margin-right:2px;max-width:250px;overflow:hidden;display:inline-block;white-space:nowrap;}.CNS p{white-space:nowrap;overflow:hidden;display:inline-block;}</style>' +
+        '<q style="font-style:normal;font-family:Courier monospace;white-space:nowrap;">' +
+        '<span class="CNS"><p style="' +
+        offset +
+        '">' +
+        str +
+        '</p><p style="' +
+        offset +
+        '">' +
+        str +
+        '</p></span></q>'
+      );
+    };
+  };
+
   // 修复彩蛋掉落未翻译的文本
   const ModDropEgg = MOD => {
     Game.DropEgg = failRate => {
@@ -913,6 +941,7 @@ const __TWCNG = {
         ModUpgrade152(this);
         ModUpgrade227(this);
         ModUpgrade332(this);
+        ModUpgrade531(this);
         ModDropEgg(this);
         ModBackgroundSelector(this);
         ModInjectCSS(this);
