@@ -808,11 +808,7 @@ const __TWCNG = {
           __TWCNG.BRAND_COOKIE_CN[uid].desc =
             it.ddesc.replace(/<q>.*/, '') + '<q>' + __TWCNG.BRAND_COOKIE_CN[uid].quote + '</q>';
         }
-        __TWCNG.BRAND_COOKIE_CN[uid].icon.push(
-          `'${MOD.dirURI}/brands.png'`,
-          it.icon[0],
-          it.icon[1]
-        );
+        __TWCNG.BRAND_COOKIE_CN[uid].icon.push(`${MOD.dirURI}/brands.png`, it.icon[0], it.icon[1]);
       }
     }
 
