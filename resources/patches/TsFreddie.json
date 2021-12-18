@@ -467,6 +467,66 @@
     "english": "help me!",
     "chinese": "救命！"
   },
+  "Music by %1.": {
+    "english": "Music by %1.",
+    "chinese": "音乐作者 %1。"
+  },
+  "Update published mods": {
+    "english": "Update published mods",
+    "chinese": "更新已发布的模组"
+  },
+  "New mod": {
+    "english": "New mod",
+    "chinese": "新模组"
+  },
+  "Select updated folder": {
+    "english": "Select updated folder",
+    "chinese": "选择更新的文件夹"
+  },
+  "none": {
+    "english": "none",
+    "chinese": "无"
+  },
+  "Publishing...": {
+    "english": "Publishing...",
+    "chinese": "发布中……"
+  },
+  "Updating...": {
+    "english": "Updating...",
+    "chinese": "更新中……"
+  },
+  "Success!": {
+    "english": "Success!",
+    "chinese": "成功！"
+  },
+  "Refresh": {
+    "english": "Refresh",
+    "chinese": "刷新"
+  },
+  "Last update:": {
+    "english": "Last update:",
+    "chinese": "上次更新："
+  },
+  "Mods are loaded from top to bottom.": {
+    "english": "Mods are loaded from top to bottom.",
+    "chinese": "模组将会从上到下按顺序加载。"
+  },
+  "Some mods couldn't be loaded:": {
+    "english": "Some mods couldn't be loaded:",
+    "chinese": "有一些模组加载失败了："
+  },
+  "This tool allows you to upload new mods to the Steam Workshop.<br>You need to select a mod folder containing a properly-formatted %1 file.<br>See the included sample mods for examples.": {
+    "english": "This tool allows you to upload new mods to the Steam Workshop.<br>You need to select a mod folder containing a properly-formatted %1 file.<br>See the included sample mods for examples.",
+    "chinese": "这个工具可以上传新的模组到 Steam 创意工坊。<br>你需要选择一个包含了正确格式的 %1 文件的模组文件夹。<br>请参考附带的示例模组。"
+  },
+  "You may upload updated folders for your published mods here.<br>To edit a mod's name/description/image, please use its Workshop page instead.": {
+    "english": "You may upload updated folders for your published mods here.<br>To edit a mod's name/description/image, please use its Workshop page instead.",
+    "chinese": "在这里你可以为已经发布的模组更新上传模组文件夹。<br>如果你想要编辑模组的名字、描述或图片，请前往您的创意工坊页面进行操作。"
+  },
+  "Squish the news ticker flat, then click on it.": {
+    "english": "Squish the news ticker flat, then click on it.",
+    "chinese": "将滚动新闻压扁，然后点击它。"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"
@@ -2229,8 +2289,9 @@
     "chinese": "有些人梦想拥有财富；有些人梦想拥有饼干。"
   },
   "[Upgrade quote 640]Fortune #102": {
+    "comment": "2.043版本区分了computer game和browser game，这里干脆就是游戏了，不写页游了",
     "english": "Help, I'm trapped in a browser game!",
-    "chinese": "救命！我被困在一个页游中了！"
+    "chinese": "救命！我被困在一个游戏里了！"
   },
   "[Upgrade quote 641]Fortune #103": {
     "english": "Don't believe the superstitions; all cats are good luck.",

@@ -447,6 +447,34 @@
     "english": "music will keep playing even when the game window isn't focused",
     "chinese": "即使游戏窗口不聚焦，音乐也会继续播放"
   },
+  "Cloud saving": {
+    "english": "Cloud saving",
+    "chinese": "[CN:MISSING]"
+  },
+  "allow use of Steam Cloud for save backups": {
+    "english": "allow use of Steam Cloud for save backups",
+    "chinese": "[CN:MISSING]"
+  },
+  "Purge Cloud": {
+    "english": "Purge Cloud",
+    "chinese": "[CN:MISSING]"
+  },
+  "Current Cloud use:": {
+    "english": "Current Cloud use:",
+    "chinese": "[CN:MISSING]"
+  },
+  "No Cloud access at the moment.": {
+    "english": "No Cloud access at the moment.",
+    "chinese": "[CN:MISSING]"
+  },
+  "Screen reader mode": {
+    "english": "Screen reader mode",
+    "chinese": "[CN:MISSING]"
+  },
+  "allows optimizations for screen readers; game will reload": {
+    "english": "allows optimizations for screen readers; game will reload",
+    "chinese": "[CN:MISSING]"
+  },
   "Language": {
     "english": "Language",
     "chinese": "语言"
@@ -817,6 +845,10 @@
     "english": "Cookie Clicker is a javascript game by %1 and %2.",
     "chinese": "Cookie Clicker 是一款由 %1 和 %2 联合开发的 Javascript 游戏。"
   },
+  "Music by %1.": {
+    "english": "Music by %1.",
+    "chinese": "[CN:MISSING]"
+  },
   "Useful links: %1, %2, %3, %4.": {
     "english": "Useful links: %1, %2, %3, %4.",
     "chinese": "友情链接：%1, %2, %3, %4。"
@@ -852,6 +884,10 @@
   "This feature is not yet available in your language.": {
     "english": "This feature is not yet available in your language.",
     "chinese": "此功能在你的语言中尚不可用。"
+  },
+  "Restart with new changes": {
+    "english": "Restart with new changes",
+    "chinese": "[CN:MISSING]"
   },
   "Cookie Clicker is in sleep mode.": {
     "english": "Cookie Clicker is in sleep mode.",
@@ -993,6 +1029,10 @@
     "english": "Publish mods",
     "chinese": "发布模式"
   },
+  "Update published mods": {
+    "english": "Update published mods",
+    "chinese": "[CN:MISSING]"
+  },
   "Only use mods from trusted sources. Some mods may require a game restart to take effect.": {
     "english": "Only use mods from trusted sources. Some mods may require a game restart to take effect.",
     "chinese": "只使用来自可信来源的模式。有些模式可能需要游戏重启才能生效。"
@@ -1013,9 +1053,21 @@
     "english": "Priority down",
     "chinese": "优先级下降"
   },
+  "New mod": {
+    "english": "New mod",
+    "chinese": "[CN:MISSING]"
+  },
   "Select folder": {
     "english": "Select folder",
     "chinese": "选择文件夹"
+  },
+  "Select updated folder": {
+    "english": "Select updated folder",
+    "chinese": "[CN:MISSING]"
+  },
+  "Select a mod.": {
+    "english": "Select a mod.",
+    "chinese": "[CN:MISSING]"
   },
   "Open folder": {
     "english": "Open folder",
@@ -1073,6 +1125,10 @@
     "english": "Tags",
     "chinese": "标签"
   },
+  "Dependencies": {
+    "english": "Dependencies",
+    "chinese": "[CN:MISSING]"
+  },
   "Publish to Workshop": {
     "english": "Publish to Workshop",
     "chinese": "发布到研讨会"
@@ -1084,6 +1140,46 @@
   "Error!": {
     "english": "Error!",
     "chinese": "错误！"
+  },
+  "none": {
+    "english": "none",
+    "chinese": "[CN:MISSING]"
+  },
+  "Publishing...": {
+    "english": "Publishing...",
+    "chinese": "[CN:MISSING]"
+  },
+  "Updating...": {
+    "english": "Updating...",
+    "chinese": "[CN:MISSING]"
+  },
+  "Success!": {
+    "english": "Success!",
+    "chinese": "[CN:MISSING]"
+  },
+  "Refresh": {
+    "english": "Refresh",
+    "chinese": "[CN:MISSING]"
+  },
+  "Last update:": {
+    "english": "Last update:",
+    "chinese": "[CN:MISSING]"
+  },
+  "Mods are loaded from top to bottom.": {
+    "english": "Mods are loaded from top to bottom.",
+    "chinese": "[CN:MISSING]"
+  },
+  "Some mods couldn't be loaded:": {
+    "english": "Some mods couldn't be loaded:",
+    "chinese": "[CN:MISSING]"
+  },
+  "This tool allows you to upload new mods to the Steam Workshop.<br>You need to select a mod folder containing a properly-formatted %1 file.<br>See the included sample mods for examples.": {
+    "english": "This tool allows you to upload new mods to the Steam Workshop.<br>You need to select a mod folder containing a properly-formatted %1 file.<br>See the included sample mods for examples.",
+    "chinese": "[CN:MISSING]"
+  },
+  "You may upload updated folders for your published mods here.<br>To edit a mod's name/description/image, please use its Workshop page instead.": {
+    "english": "You may upload updated folders for your published mods here.<br>To edit a mod's name/description/image, please use its Workshop page instead.",
+    "chinese": "[CN:MISSING]"
   },
   "Mod data": {
     "english": "Mod data",
@@ -11609,52 +11705,12 @@
     "english": "Fullscreen",
     "chinese": "[CN:MISSING]"
   },
-  "Screen reader mode": {
-    "english": "Screen reader mode",
-    "chinese": "[CN:MISSING]"
-  },
-  "allows optimizations for screen readers; game will reload": {
-    "english": "allows optimizations for screen readers; game will reload",
-    "chinese": "[CN:MISSING]"
-  },
   "A local news station runs a 10-minute segment about your cookies. Success!<br><span style=\"font-size:50%;\">(you win a cookie)</span>": {
     "english": "A local news station runs a 10-minute segment about your cookies. Success!<br><span style=\"font-size:50%;\">(you win a cookie)</span>",
     "chinese": "[CN:MISSING]"
   },
   "Squish the news ticker flat, then click on it.": {
     "english": "Squish the news ticker flat, then click on it.",
-    "chinese": "[CN:MISSING]"
-  },
-  "Cloud saving": {
-    "english": "Cloud saving",
-    "chinese": "[CN:MISSING]"
-  },
-  "allow use of Steam Cloud for save backups": {
-    "english": "allow use of Steam Cloud for save backups",
-    "chinese": "[CN:MISSING]"
-  },
-  "Purge Cloud": {
-    "english": "Purge Cloud",
-    "chinese": "[CN:MISSING]"
-  },
-  "Current Cloud use:": {
-    "english": "Current Cloud use:",
-    "chinese": "[CN:MISSING]"
-  },
-  "No Cloud access at the moment.": {
-    "english": "No Cloud access at the moment.",
-    "chinese": "[CN:MISSING]"
-  },
-  "Dependencies": {
-    "english": "Dependencies",
-    "chinese": "[CN:MISSING]"
-  },
-  "Select a mod.": {
-    "english": "Select a mod.",
-    "chinese": "[CN:MISSING]"
-  },
-  "Restart with new changes": {
-    "english": "Restart with new changes",
     "chinese": "[CN:MISSING]"
   },
   "Cloud purged.": {
@@ -12458,7 +12514,7 @@
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 117]Yestermorrow comparators": {
-    "english": "Fortnights into milleniums.",
+    "english": "Fortnights into millennia.",
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 118]Reverse cyclotrons": {
