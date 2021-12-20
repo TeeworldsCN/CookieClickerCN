@@ -108,7 +108,7 @@ for (const text of plains) {
 
   // get achievements and upgrades
   const achvupgHandle = await page.evaluateHandle(
-    'tr_entries=[];for (let i in Game.AchievementsById) { let data = Game.AchievementsById[i]; tr_entries.push({id: parseInt(data.id), name: data.name, desc: data.desc, type: data.getType()}) };for (let i in Game.UpgradesById) { let data = Game.UpgradesById[i]; tr_entries.push({id: data.id, name: data.name, desc: data.desc, type: data.getType()}) };JSON.stringify(tr_entries)'
+    'tr_entries=[];for (let i in Game.AchievementsById) { let data = Game.AchievementsById[i]; tr_entries.push({id: parseInt(data.id), name: data.name, desc: data.desc, type: data.getType(), descFunc: !!data.descFunc}) };for (let i in Game.UpgradesById) { let data = Game.UpgradesById[i]; tr_entries.push({id: data.id, name: data.name, desc: data.desc, type: data.getType(), descFunc: !!data.descFunc}) };JSON.stringify(tr_entries)'
   );
   const achvupg = JSON.parse(await achvupgHandle.jsonValue()) as AchvUpgEntry[];
   interface AchvUpgEntry {
@@ -116,7 +116,17 @@ for (const text of plains) {
     name: string;
     desc: string;
     type: string;
+    descFunc: boolean;
   }
+
+  const SPECIAL_DESC: {
+    id: number;
+    name: string;
+    desc: string;
+    type: string;
+    descFunc: boolean;
+  }[] = [];
+
   for (const entry of achvupg) {
     // check quote
     const quote = entry.desc.match(/<q>(.*)<\/q>/);
@@ -125,6 +135,10 @@ for (const text of plains) {
     }
     // check name
     checkByPart(`[${entry.type} name ${entry.id}]${entry.name}`, entry.name);
+
+    if (entry.descFunc) {
+      SPECIAL_DESC.push(entry);
+    }
   }
 
   await browser.close();
@@ -133,5 +147,11 @@ for (const text of plains) {
   fs.writeFileSync(
     path.resolve(__dirname, '../resources/original.json'),
     JSON.stringify(LANG_DESC, null, 2)
+  );
+
+  // save id's for special descriptions
+  fs.writeFileSync(
+    path.resolve(__dirname, '../resources/special.json'),
+    JSON.stringify(SPECIAL_DESC, null, 2)
   );
 })();

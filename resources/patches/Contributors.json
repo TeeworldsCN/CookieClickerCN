@@ -13,6 +13,7 @@
     "chinese": "碎龙，饼干巨龙"
   },
   "[Upgrade name 606]Tombola computing": {
+    "deprecated": "因为原版的右下彩蛋会随机生成个彩票号，换回原翻译。",
     "english": "Tombola computing",
     "chinese": "猴子排序"
   },

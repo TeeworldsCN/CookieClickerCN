@@ -431,6 +431,157 @@ const __TWCNG = {
     };
   };
 
+  // 魔改点鼠标的老鼠的随机引文
+  const ModUpgrade534 = MOD => {
+    Game.UpgradesById[534].descFunc = function () {
+      Math.seedrandom(Game.seed + '-blasphemouse');
+      if (Math.random() < 0.3) {
+        Math.seedrandom();
+        return this.baseDesc + '<q>可靠的小家伙鼠不胜鼠！</q>';
+      } else {
+        Math.seedrandom();
+        return this.baseDesc + '<q>可靠的小家伙数不胜数！</q>';
+      }
+    };
+  };
+
+  // 魔改猴子排序的随机引文
+  const ModUpgrade606 = MOD => {
+    const shuffle = arr => {
+      var i = arr.length,
+        j,
+        temp;
+      if (i == 0) return arr;
+      while (--i) {
+        j = Math.floor(Math.random() * (i + 1));
+        temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+      return arr;
+    };
+
+    Game.UpgradesById[606].descFunc = function () {
+      Math.seedrandom(Game.seed + '-tombolacomputing');
+      const red = [];
+      const blue = [];
+      for (let i = 1; i <= 33; i++) {
+        if (i < 10) red.push('0' + i.toString());
+        else red.push(i.toString());
+      }
+      for (let i = 1; i <= 16; i++) {
+        if (i < 10) blue.push('0' + i.toString());
+        else blue.push(i.toString());
+      }
+
+      const code = shuffle(red).slice(0, 6).join(' ') + '-' + shuffle(blue)[0];
+      const str =
+        '(你买了注彩票，彩票号码为 ' +
+        code +
+        '，你获得的奖品是' +
+        choose([
+          ' ' + Math.floor(Math.random() * 5 + 2) + ' 行 Javascript 代码',
+          '一次 Math.random() 的免费使用权',
+          '一量子位，然而并不知道那是什么玩意',
+          '一块被啃了一半的饼干',
+          '一台全新的吸尘器',
+          '大半杯敞口放了一天的橙子味汽水',
+          '一个很好吃的三明治',
+          '一大把口袋里的碎毛',
+          '某人基本干净的假发',
+          '免费去高档餐厅参观的机会',
+          '一张写着 ' + code + ' 的纸',
+          '一次抬头偷看滚动新闻的机会',
+          '一张半价彩票的优惠券',
+          '一张自助发霉面包的餐券',
+          '永远用不完的空气',
+          '一套' +
+            choose([
+              '红色',
+              '橙色',
+              '黄色',
+              '绿色',
+              '蓝色',
+              '紫色',
+              '黑色',
+              '白色',
+              '灰色',
+              '棕色',
+              '粉色',
+              '青色',
+            ]) +
+            '便签纸',
+          '一次暂时提升自己智商的机会',
+          '一把古老的符文剑',
+          '遥远国度的宝座',
+          '黑手党头目的职位，祝你好运',
+          '一周末的时间旅行实验参与机会',
+          '一个挺好看的小玩意',
+          '与一个油井的契约',
+          '一个用你自选的动物，植物和朋友做成的汉堡',
+          '世界上最后一只' + choose(['渡渡鸟', '袋狼', '独角兽', '恐龙', '熊猫']) + '的抚养权',
+          '满满的成就感',
+          '稍纵即逝的沾沾自喜的感觉',
+          '一种隐约的不安感',
+          '深沉的存在恐惧',
+          '延长你一周的寿命',
+          '从现在开始你会有意识地自己呼吸',
+          '现在可以眨眼一次',
+          '和一位名人见面的机会，活人死人都可以。请在你今晚的梦里领奖。',
+          '一场很温馨的梦',
+          '一个搞怪的音效',
+          '45秒不受法律约束的时间',
+          '一个没有结局的游戏',
+          '一个圆形，三角形，正方形或其他简单的几何形状',
+          '这条随机出现的消息',
+          '改变人生的动力',
+          '无限的恐惧',
+          '一个秘密的超能力',
+          '下次在下次彩票开奖时中奖的机会',
+          '完全不合理的彩票恐惧症',
+          '一大只蜘蛛',
+          '增强你的自我价值感和决心',
+          '内心的平静',
+          '一张你喜欢的网游的两天双倍经验卡',
+          '一小块宇宙，包含了你手上这张彩票的所有原子',
+          '食物中毒',
+          '天上的月亮！是的，月亮现在属于你了，虽然你自己碰不到它',
+          '一辆新车呦',
+          '一个新的口头禅',
+          '你想要的胡思乱想',
+          '……什么鬼？刮开的区域里什么都没写',
+          '最新电影的导演职位',
+          '一只很好看的小牛',
+          '一枚真正的海盗金达布隆',
+          '“财宝”什么的',
+          '一艘船，不过它现在在海底的某处',
+          '全新的二手婴儿鞋',
+          '某个国王或王后的直系血统',
+          '掌握一门已经失传的语言的能力',
+          '一首你不知道歌词的歌曲的旋律',
+          '持续的白噪声',
+          '轻度残疾',
+          '新的嘴唇',
+          '一个东西',
+          '一条带有你名字的流行语',
+          '一个错字',
+          '一张出狱卡',
+          '你的余生……',
+          '一次礼貌的怒吼',
+          '被人居高临下地凝视一分钟',
+          '一只被诅咒的猴爪',
+          '真爱，大概',
+          '一条可以自选的动物、国家、电视节目或名人的有趣事实',
+          '一条流行网梗',
+          '几分钟的乐趣',
+          '空气。其实你没中奖，抱歉',
+        ]) +
+        '。)';
+      Math.seedrandom();
+      return this.baseDesc + '<q>就像量子计算一样，但是更有趣<br>' + str + '</q>';
+    };
+  };
+
   // 修复彩蛋掉落未翻译的文本
   const ModDropEgg = MOD => {
     Game.DropEgg = failRate => {
@@ -938,6 +1089,8 @@ const __TWCNG = {
         ModUpgrade227(this);
         ModUpgrade332(this);
         ModUpgrade531(this);
+        ModUpgrade534(this);
+        ModUpgrade606(this);
         ModDropEgg(this);
         ModBackgroundSelector(this);
         ModInjectCSS(this);

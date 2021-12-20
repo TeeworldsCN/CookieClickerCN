@@ -1,0 +1,163 @@
+[
+  {
+    "id": 74,
+    "name": "Elder Pledge",
+    "desc": "Contains the wrath of the elders, at least for a while.<q>This is a simple ritual involving anti-aging cream, cookie batter mixed in the moonlight, and a live chicken.</q>",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 182,
+    "name": "Festive biscuit",
+    "desc": "Triggers <b>Christmas season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.<q>'Twas the night before Christmas- or was it?</q>",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 183,
+    "name": "Ghostly biscuit",
+    "desc": "Triggers <b>Halloween season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.<q>spooky scary skeletons<br>will wake you with a boo</q>",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 184,
+    "name": "Lovesick biscuit",
+    "desc": "Triggers <b>Valentine's day season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.<q>Romance never goes out of fashion.</q>",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 185,
+    "name": "Fool's biscuit",
+    "desc": "Triggers <b>Business day season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.<q>Business. Serious business. This is absolutely all of your business.</q>",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 209,
+    "name": "Bunny biscuit",
+    "desc": "Triggers <b>Easter season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.<q>All the world will be your enemy<br>and when they catch you,<br>they will kill you...<br>but first they must catch you.</q>",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 228,
+    "name": "Century egg",
+    "desc": "You continually gain <b>more CpS the longer you've played</b> in the current ascension.<br>Cost scales with how many eggs you own.<q>Actually not centuries-old. This one isn't a day over 86!</q>",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 264,
+    "name": "Permanent upgrade slot I",
+    "desc": "Placing an upgrade in this slot will make its effects <b>permanent</b> across all playthroughs.",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 265,
+    "name": "Permanent upgrade slot II",
+    "desc": "Placing an upgrade in this slot will make its effects <b>permanent</b> across all playthroughs.",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 266,
+    "name": "Permanent upgrade slot III",
+    "desc": "Placing an upgrade in this slot will make its effects <b>permanent</b> across all playthroughs.",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 267,
+    "name": "Permanent upgrade slot IV",
+    "desc": "Placing an upgrade in this slot will make its effects <b>permanent</b> across all playthroughs.",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 268,
+    "name": "Permanent upgrade slot V",
+    "desc": "Placing an upgrade in this slot will make its effects <b>permanent</b> across all playthroughs.",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 331,
+    "name": "Golden switch [off]",
+    "desc": "Turning this on will give you a passive <b>+50% CpS</b>, but prevents golden cookies from spawning.<br>Cost is equal to 1 hour of production.",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 332,
+    "name": "Golden switch [on]",
+    "desc": "The switch is currently giving you a passive <b>+50% CpS</b>; it also prevents golden cookies from spawning.<br>Turning it off will revert those effects.<br>Cost is equal to 1 hour of production.",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 333,
+    "name": "Milk selector",
+    "desc": "Lets you pick what flavor of milk to display.",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 361,
+    "name": "Golden cookie sound selector",
+    "desc": "Lets you change the sound golden cookies make when they spawn.",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 414,
+    "name": "Background selector",
+    "desc": "Lets you pick which wallpaper to display.",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 531,
+    "name": "Endless book of prose",
+    "desc": "Fractal engines are <b>twice</b> as efficient.",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 534,
+    "name": "Mice clicking mice",
+    "desc": "Cursors gain <b>+5%</b> CpS per fractal engine.<br>Fractal engines gain <b>+0.1%</b> CpS per cursor.",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 539,
+    "name": "Sugar crystal cookies",
+    "desc": "Cookie production multiplier <b>+5% permanently</b>, and <b>+1%</b> for every building type level 10 or higher.<q>Infused with cosmic sweetness. It gives off a faint shimmery sound when you hold it up to your ear.</q>",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 563,
+    "name": "Shimmering veil [off]",
+    "desc": "",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 564,
+    "name": "Shimmering veil [on]",
+    "desc": "",
+    "type": "Upgrade",
+    "descFunc": true
+  },
+  {
+    "id": 606,
+    "name": "Tombola computing",
+    "desc": "Chancemakers gain <b>+5%</b> CpS per javascript console.<br>Javascript consoles gain <b>+0.1%</b> CpS per chancemaker.",
+    "type": "Upgrade",
+    "descFunc": true
+  }
+]
