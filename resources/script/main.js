@@ -1,211 +1,91 @@
-const __TWCNG = {
-  // 中文品牌饼干
-  BRAND_COOKIE_CN: {
-    120: {
-      name: '猫耳朵',
-      quote: '经典零食。我们的产品是用上好的橘猫制成的。',
-      icon: [0, 0],
-    },
-    121: {
-      name: '鿏丽素',
-      quote: '绝不含任何非放射性成分。',
-      icon: [1, 0],
-    },
-    122: {
-      name: '好吃片',
-      quote: '不好吃的话，可能是你对坚果过敏，建议多吃点。',
-      icon: [2, 0],
-    },
-    123: {
-      name: '巧克力派',
-      quote: '老奶奶的最爱？',
-      icon: [3, 0],
-    },
-    125: {
-      name: '2×3',
-      quote:
-        '两片奶酪夹入三片奶油饼干中，大概没有人想过可以这么干——我们甚至可以用这个概念申请商标了。',
-      icon: [0, 1],
-    },
-    127: {
-      name: '趣咄咄',
-      quote: '保留对所有巧克力豆饼干发律师函的权利。',
-      icon: [2, 1],
-    },
-    128: {
-      name: '行星杯',
-      quote:
-        '最下面的仅有的薄薄一层奶油才是最好吃的。我们可以把它们刮下来做成新的饼干。至于里面已经有的饼干和巧克力，就和塑料包装搅碎一起当作早餐麦片卖掉就好了。',
-      icon: [3, 1],
-    },
-    344: {
-      name: '辣条',
-      quote: '同样是小麦制成的，只不过这些上面撒的不是糖罢了。',
-      icon: [0, 2],
-    },
-    401: {
-      name: '鲜贝',
-      quote: '不保证含有海鲜。',
-      icon: [1, 2],
-    },
-    402: {
-      name: '小猫熊面饼',
-      quote: '据说用水泡会变的难吃，和饼干一样。',
-      icon: [2, 2],
-    },
-    463: {
-      name: '大灰兔奶糖',
-      quote: '用饼干制成的包装——不是指最外面这层。',
-      icon: [3, 2],
-    },
-    612: {
-      name: '俄芙巧克力',
-      quote:
-        '你可以选择整齐地掰下每个小块，也可以反人类一样整板咬着吃。一些海外国家生产的这些东西有数百种独特的口味，如绿茶味、龙虾浓汤味和黑巧克力味。',
-      icon: [0, 3],
-    },
-    618: {
-      name: '霜饼',
-      quote: '据说撒在烘焙米饼上的糖霜是从冰雹中提取出来的。',
-      icon: [1, 3],
-    },
-    619: {
-      name: '诡脆鲨威化饼干',
-      quote: '小心它一口被你吃掉。',
-      icon: [2, 3],
-    },
-  },
-
-  // 按键
-  UNIT_TOGGLE_KEY: 90,
-
-  CN_UNITS: [
-    [1e72, '大数'],
-    [1e68, '无量'],
-    [1e64, '不可思议'],
-    [1e60, '那由他'],
-    [1e56, '阿僧祇'],
-    [1e52, '恒河沙'],
-    [1e48, '极'],
-    [1e44, '载'],
-    [1e40, '正'],
-    [1e36, '涧'],
-    [1e32, '沟'],
-    [1e28, '穰'],
-    [1e24, '秭'],
-    [1e20, '垓'],
-    [1e16, '京'],
-    [1e12, '兆'],
-  ],
-
-  CN_UNITS_STACKABLE: [
-    [1e8, '亿'],
-    [1e4, '万'],
-    [1e3, '千'],
-    [1e2, '百'],
-    [1e1, '十'],
-  ],
-
-  CN_UNITS_MIN: ['十', '百', '千', '万', '亿'],
-
-  // 数字长度设置
-  CN_NUMBER_LEN: [
-    { threshold: 1e16, sciDecimals: 12 },
-    { threshold: 1e13, sciDecimals: 9 },
-    { threshold: 1e10, sciDecimals: 6 },
-    { threshold: 1e7, sciDecimals: 3 },
-  ],
-
-  CN_BUILDING_ACTION: {
-    'clicked': '点击了 [X] 次饼干',
-    'baked': '烘焙了 [X] 块饼干',
-    'harvested': '收获了 [X] 块饼干',
-    'mined': '开采出了 [X] 块饼干',
-    'mass-produced': '量产了 [X] 块饼干',
-    'banked': '投资获得了 [X] 块饼干',
-    'discovered': '发现了 [X] 块饼干',
-    'summoned': '召唤了 [X] 块饼干',
-    'shipped': '运输了 [X] 块饼干',
-    'transmuted': '冶炼出了 [X] 块饼干',
-    'retrieved': '获取了 [X] 块饼干',
-    'recovered': '回收了 [X] 块饼干',
-    'condensed': '聚合了 [X] 块饼干',
-    'converted': '转化出了 [X] 块饼干',
-    'spontaneously generated': '随机出现了 [X] 块饼干',
-    'made from cookies': '有 [X] 块饼干双倍分形了',
-    'programmed': '计算出了 [X] 块饼干',
-    'hijacked': '劫持了 [X] 块饼干',
-  },
-
-  // 替换数字格式化
-  FormatterCN: val => {
-    let unit = '';
-    if (!isFinite(val)) return '无限';
-    if (val >= 1e4) {
-      for (const u of __TWCNG.CN_UNITS) {
-        if (!Game.prefs.numbercntrillion && u[1] == '兆') continue;
-        if (val >= u[0]) {
-          val = Math.round(val / (u[0] / 10000)) / 10000;
-          unit = u[1];
-          break;
-        }
-      }
-      for (var i = 0; i < __TWCNG.CN_UNITS_STACKABLE.length - Game.prefs.numbercnminunit; i++) {
-        const u = __TWCNG.CN_UNITS_STACKABLE[i];
-        while (val >= u[0]) {
-          val = Math.round(val / (u[0] / 10000)) / 10000;
-          unit = u[1] + unit;
-        }
-      }
-    }
-    const prec = Game.prefs.numbercndecimal;
-    return (
-      (Math.floor(val * prec) / prec).toString().replace(/\B(?=(\d{4})+(?!\d))/g, '\u2008') + unit
-    );
-  },
-
-  // 替换科学计数法
-  SUPNUM: ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'],
-  FormatterScientific: (val, decimals) => {
-    const [coefficient, exponent] = val.toExponential(decimals).split('e');
-    let [integer, decimal] = coefficient.split('.');
-
-    decimal ??= '';
-
-    if (__TWCNG.isModdingAchievement)
-      while (decimal.endsWith('000')) decimal = decimal.slice(0, -3);
-
-    let superscript = '';
-    let negative = false;
-    for (var i = 0; i < exponent.length; i++) {
-      if (exponent.charAt(i) == '+') {
-        negative = false;
-        continue;
-      }
-      if (exponent.charAt(i) == '-') {
-        negative = true;
-        continue;
-      }
-      superscript += __TWCNG.SUPNUM[exponent.charCodeAt(i) - 48];
-    }
-
-    let decimalPart = decimal.match(/.{1,3}/g);
-    if (!decimalPart) decimalPart = decimal;
-    else decimalPart = decimalPart.join('\u2008');
-
-    return (
-      integer + (decimalPart ? '.' : '') + decimalPart + '×10' + (negative ? '⁻' : '') + superscript
-    );
-  },
-
-  FormatterGroupThree: val => {
-    return Math.floor(Math.round(val * 1000) / 1000)
-      .toString()
-      .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-  },
-};
-
 (function () {
+  const __TWCNL = {};
+
+  const __TWCNG = {
+    // 按键
+    UNIT_TOGGLE_KEY: 90,
+
+    // 数字长度设置
+    CN_NUMBER_LEN: [
+      { threshold: 1e16, sciDecimals: 12 },
+      { threshold: 1e13, sciDecimals: 9 },
+      { threshold: 1e10, sciDecimals: 6 },
+      { threshold: 1e7, sciDecimals: 3 },
+    ],
+
+    // 替换数字格式化
+    FormatterCN: val => {
+      let unit = '';
+      if (!isFinite(val)) return __TWCNL.STR_INFINITY;
+      if (val >= 1e4) {
+        for (const u of __TWCNL.CN_UNITS) {
+          if (!Game.prefs.numbercntrillion && u[1] == '兆') continue;
+          if (val >= u[0]) {
+            val = Math.round(val / (u[0] / 10000)) / 10000;
+            unit = u[1];
+            break;
+          }
+        }
+        for (var i = 0; i < __TWCNL.CN_UNITS_STACKABLE.length - Game.prefs.numbercnminunit; i++) {
+          const u = __TWCNL.CN_UNITS_STACKABLE[i];
+          while (val >= u[0]) {
+            val = Math.round(val / (u[0] / 10000)) / 10000;
+            unit = u[1] + unit;
+          }
+        }
+      }
+      const prec = Game.prefs.numbercndecimal;
+      return (
+        (Math.floor(val * prec) / prec).toString().replace(/\B(?=(\d{4})+(?!\d))/g, '\u2008') + unit
+      );
+    },
+
+    // 替换科学计数法
+    SUPNUM: ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'],
+    FormatterScientific: (val, decimals) => {
+      const [coefficient, exponent] = val.toExponential(decimals).split('e');
+      let [integer, decimal] = coefficient.split('.');
+
+      decimal ??= '';
+
+      if (__TWCNG.isModdingAchievement)
+        while (decimal.endsWith('000')) decimal = decimal.slice(0, -3);
+
+      let superscript = '';
+      let negative = false;
+      for (var i = 0; i < exponent.length; i++) {
+        if (exponent.charAt(i) == '+') {
+          negative = false;
+          continue;
+        }
+        if (exponent.charAt(i) == '-') {
+          negative = true;
+          continue;
+        }
+        superscript += __TWCNG.SUPNUM[exponent.charCodeAt(i) - 48];
+      }
+
+      let decimalPart = decimal.match(/.{1,3}/g);
+      if (!decimalPart) decimalPart = decimal;
+      else decimalPart = decimalPart.join('\u2008');
+
+      return (
+        integer +
+        (decimalPart ? '.' : '') +
+        decimalPart +
+        '×10' +
+        (negative ? '⁻' : '') +
+        superscript
+      );
+    },
+
+    FormatterGroupThree: val => {
+      return Math.floor(Math.round(val * 1000) / 1000)
+        .toString()
+        .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    },
+  };
+
   // 中文数字魔改
   const ModGameUnit = MOD => {
     const oldBeautify = Beautify;
@@ -439,12 +319,7 @@ const __TWCNG = {
   // 魔改一个带特效的分形引擎引文
   const ModUpgrade531 = MOD => {
     Game.UpgradesById[531].descFunc = function () {
-      var str =
-        '“从前有座山，山上有座庙，' +
-        Game.bakeryName +
-        '在庙里开了一家烘焙坊。一天，烘焙坊的门口传来了敲门声。' +
-        Game.bakeryName +
-        '打开了门，抬头看到了一位散发着邪恶气息的老奶奶。老奶奶微微张口，用虚弱而诡异的声音，开始讲述她记忆中的小故事：';
+      var str = __TWCNL.STR_531.replace(/\[X\]/g, Game.bakeryName);
       var i = Math.floor(Game.T * 0.1) % 100;
       var offset = 'transform:translate3d(-' + i + '%, 5px, 0);';
       return (
@@ -470,10 +345,10 @@ const __TWCNG = {
       Math.seedrandom(Game.seed + '-blasphemouse');
       if (Math.random() < 0.3) {
         Math.seedrandom();
-        return this.baseDesc + '<q>可靠的小家伙鼠不胜鼠！</q>';
+        return this.baseDesc + __TWCNL.STR_534_A;
       } else {
         Math.seedrandom();
-        return this.baseDesc + '<q>可靠的小家伙数不胜数！</q>';
+        return this.baseDesc + __TWCNL.STR_534_B;
       }
     };
   };
@@ -508,110 +383,10 @@ const __TWCNG = {
       }
 
       const code = shuffle(red).slice(0, 6).join(' ') + '-' + shuffle(blue)[0];
-      const str =
-        '(你买了注彩票，彩票号码为 ' +
-        code +
-        '，彩票中的奖品是' +
-        choose([
-          ' ' + Math.floor(Math.random() * 5 + 2) + ' 行 Javascript 代码',
-          '一次 Math.random() 的免费使用权',
-          '一量子位，然而并不知道那是什么玩意',
-          '一块被啃了一半的饼干',
-          '一台全新的吸尘器',
-          '大半杯敞口放了一天的橙子味汽水',
-          '一个很好吃的三明治',
-          '一大把口袋里的碎毛',
-          '某人基本干净的假发',
-          '免费去高档餐厅参观的机会',
-          '一张写着 ' + code + ' 的纸',
-          '一次抬头偷看滚动新闻的机会',
-          '一张半价彩票的优惠券',
-          '一张自助发霉面包的餐券',
-          '永远用不完的空气',
-          '一套' +
-            choose([
-              '红色',
-              '橙色',
-              '黄色',
-              '绿色',
-              '蓝色',
-              '紫色',
-              '黑色',
-              '白色',
-              '灰色',
-              '棕色',
-              '粉色',
-              '青色',
-            ]) +
-            '便签纸',
-          '一次暂时提升自己智商的机会',
-          '一把古老的符文剑',
-          '遥远国度的宝座',
-          '黑手党头目的职位，祝你好运',
-          '一周末的时间旅行实验参与机会',
-          '一个挺好看的小玩意',
-          '与一个油井的契约',
-          '一个用你自选的动物，植物和朋友做成的汉堡',
-          '世界上最后一只' + choose(['渡渡鸟', '袋狼', '独角兽', '恐龙', '熊猫']) + '的抚养权',
-          '满满的成就感',
-          '稍纵即逝的沾沾自喜的感觉',
-          '一种隐约的不安感',
-          '深沉的存在恐惧',
-          '延长你一周的寿命',
-          '从现在开始你会有意识地自己呼吸',
-          '现在可以眨眼一次',
-          '和一位名人见面的机会，活人死人都可以。请在你今晚的梦里领奖。',
-          '一场很温馨的梦',
-          '一个搞怪的音效',
-          '45秒不受法律约束的时间',
-          '一个没有结局的游戏',
-          '一个圆形，三角形，正方形或其他简单的几何形状',
-          '这条随机出现的消息',
-          '改变人生的动力',
-          '无限的恐惧',
-          '一个秘密的超能力',
-          '下次在下次彩票开奖时中奖的机会',
-          '完全不合理的彩票恐惧症',
-          '一大只蜘蛛',
-          '增强你的自我价值感和决心',
-          '内心的平静',
-          '一张你喜欢的网游的两天双倍经验卡',
-          '一小块宇宙，包含了你手上这张彩票的所有原子',
-          '食物中毒',
-          '天上的月亮！是的，月亮现在属于你了，虽然你自己碰不到它',
-          '一辆新车呦',
-          '一个新的口头禅',
-          '你想要的胡思乱想',
-          '……什么鬼？刮开的区域里什么都没写',
-          '最新电影的导演职位',
-          '一只很好看的小牛',
-          '一枚真正的海盗金达布隆',
-          '“财宝”什么的',
-          '一艘船，不过它现在在海底的某处',
-          '全新的二手婴儿鞋',
-          '某个国王或王后的直系血统',
-          '掌握一门已经失传的语言的能力',
-          '一首你不知道歌词的歌曲的旋律',
-          '持续的白噪声',
-          '轻度残疾',
-          '新的嘴唇',
-          '一个东西',
-          '一条带有你名字的流行语',
-          '一个错字',
-          '一张出狱卡',
-          '你的余生……',
-          '一次礼貌的怒吼',
-          '被人居高临下地凝视一分钟',
-          '一只被诅咒的猴爪',
-          '真爱，大概',
-          '一条可以自选的动物、国家、电视节目或名人的有趣事实',
-          '一条流行网梗',
-          '几分钟的乐趣',
-          '空气。其实你没中奖，抱歉',
-        ]) +
-        '。)';
+      const str = __TWCNL.STR_606_FUNC(code);
+
       Math.seedrandom();
-      return this.baseDesc + '<q>就像量子计算一样，但是更有趣<br>' + str + '</q>';
+      return this.baseDesc + '<q>' + __TWCNL.STR_606 + '<br>' + str + '</q>';
     };
   };
 
@@ -699,7 +474,7 @@ const __TWCNG = {
     const oldCrateTooltip = Game.crateTooltip;
     Game.crateTooltip = function (me, context) {
       let result = oldCrateTooltip(me, context);
-      if (me.kitten) result = result.replace('点击以购买。', '点击以收养。');
+      if (me.kitten) result = result.replace(__TWCNL.STR_PURCHASE, __TWCNL.STR_PURRCHASE);
       return result;
     };
   };
@@ -710,12 +485,9 @@ const __TWCNG = {
       const oldTooltip = Game.Objects[i].tooltip;
       Game.Objects[i].tooltip = function () {
         let result = oldTooltip.bind(this)();
-        if (this.actionName && __TWCNG.CN_BUILDING_ACTION[this.actionName]) {
-          result = result.replace(
-            /到目前为止生产出 <b>(.*) 块饼干<\/b>/,
-            (_, num) =>
-              '到目前为止' +
-              __TWCNG.CN_BUILDING_ACTION[this.actionName].replace('[X]', `<b>${num}</b>`)
+        if (this.actionName && __TWCNL.CN_BUILDING_ACTION[this.actionName]) {
+          result = result.replace(__TWCNL.STR_BUILDING_ACTION_REGEX, (_, num) =>
+            __TWCNL.CN_BUILDING_ACTION[this.actionName].replace('[X]', `<b>${num}</b>`)
           );
         }
         return result;
@@ -802,9 +574,9 @@ const __TWCNG = {
           it.ddesc = BeautifyInText(it.baseDesc || it.ddesc);
           found = FindLocStringByPart(type + ' desc ' + it.id);
           if (found) it.ddesc = loc(found);
-          if (Game.prefs.brandcn && __TWCNG.BRAND_COOKIE_CN[i]) {
+          if (__TWCNL.BRAND_COOKIE_CN && Game.prefs.brandcn && __TWCNL.BRAND_COOKIE_CN[i]) {
             // 替换的饼干特殊判断
-            it.ddesc += '<q>' + __TWCNG.BRAND_COOKIE_CN[i].quote + '</q>';
+            it.ddesc += '<q>' + __TWCNL.BRAND_COOKIE_CN[i].quote + '</q>';
           } else {
             found = FindLocStringByPart(type + ' quote ' + it.id);
             if (found) it.ddesc += '<q>' + loc(found) + '</q>';
@@ -832,8 +604,8 @@ const __TWCNG = {
       if (Game.prefs.numbercn && Game.keys[__TWCNG.UNIT_TOGGLE_KEY] != 1) {
         const cookies = l('cookies');
         cookies.innerHTML = cookies.innerHTML.replace(
-          /(-?[0-9]+(?:\.[0-9])?[^\sa-z]*)(?:<br>| )块饼干/,
-          (_, v) => v + '块饼干'
+          new RegExp('(-?[0-9]+(?:.[0-9])?[^sa-z]*)(?:<br>| )' + __TWCNL.NUM_COOKIES),
+          (_, v) => v + __TWCNL.NUM_COOKIES
         );
       }
     });
@@ -953,21 +725,21 @@ const __TWCNG = {
 
   const ModPrefMenu = MOD => {
     return (
-      '<div class="title">中文模组设置</div>' +
+      `<div class="title">${__TWCNL.STR_SETTING_TITLE}</div>` +
       '<div class="listing">' +
       Game.WriteButton(
         'numbercn',
         'numbercnButton',
-        '使用中文计数单位' + ON,
-        '使用中文计数单位' + OFF,
+        __TWCNL.STR_SETTING_CNUNIT + ON,
+        __TWCNL.STR_SETTING_CNUNIT + OFF,
         'Game.UpdateMenu();BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
       ) +
-      '<label>(按住<b>Z键</b>可临时显示完整数字)</label><br>' +
+      `<label>(${__TWCNL.STR_SETTING_CNUNIT_LABEL})</label><br>` +
       (Game.prefs.numbercn
         ? ModSlider(
             'numbercnDecimal',
-            '中文单位前保留',
-            '小数点后[$]位',
+            __TWCNL.STR_SETTING_DECIMAL,
+            __TWCNL.STR_SETTING_DECIMAL_RIGHT,
             () => Math.log10(Game.prefs.numbercndecimal),
             () => Math.log10(Game.prefs.numbercndecimal),
             0,
@@ -978,60 +750,62 @@ const __TWCNG = {
           '<br>' +
           ModSlider(
             'numbercnMinUnit',
-            '最小计数单位',
+            __TWCNL.STR_SETTING_MIN_UNIT,
             '[$]',
-            () => __TWCNG.CN_UNITS_MIN[Game.prefs.numbercnminunit],
+            () => __TWCNL.CN_UNITS_MIN[Game.prefs.numbercnminunit],
             () => Game.prefs.numbercnminunit,
             0,
             4,
             1,
-            "Game.prefs.numbercnminunit=l('numbercnMinUnit').value;l('numbercnMinUnitRightText').innerHTML=__TWCNG.CN_UNITS_MIN[l('numbercnMinUnit').value];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+            "Game.prefs.numbercnminunit=l('numbercnMinUnit').value;l('numbercnMinUnitRightText').innerHTML=__TWCNL.CN_UNITS_MIN[l('numbercnMinUnit').value];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
           ) +
           '<br>' +
           Game.WriteButton(
             'numbercntrillion',
             'numbercntrillionButton',
-            '“兆”单位 启用',
-            '“兆”单位 禁用',
+            __TWCNL.STR_SETTING_TRILLION + ON,
+            __TWCNL.STR_SETTING_TRILLION + OFF,
             'BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
           ) +
-          '<label>(启用后 <b>1万亿</b> 将显示为 <b>1兆</b>)</label><br>'
+          `<label>(${__TWCNL.STR_SETTING_TRILLION_LABEL})</label><br>`
         : '') +
       '<br>' +
       Game.WriteButton(
         'numbercnsci',
         'numbercnDisableButton',
-        '使用科学计数法' + ON,
-        '使用科学计数法' + OFF,
+        __TWCNL.STR_SETTING_SCIENTIFIC + ON,
+        __TWCNL.STR_SETTING_SCIENTIFIC + OFF,
         'Game.UpdateMenu();BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
       ) +
-      '<label>(替换完整数字为优化版的科学计数法，禁用后使用原版数字显示)</label><br>' +
+      `<label>(${__TWCNL.STR_SETTING_SCIENTIFIC_LABEL})</label><br>` +
       (Game.prefs.numbercnsci
         ? ModSlider(
             'numbercnScientific',
-            '数字长度',
+            __TWCNL.STR_SETTING_SCILEN,
             '[$]',
-            () => ['完整', '长', '中', '短'][Game.prefs.numbercnscilen],
+            () => __TWCNL.STR_SETTING_SCILEN_VALUES[Game.prefs.numbercnscilen],
             () => Game.prefs.numbercnscilen,
             0,
             3,
             1,
-            "Game.prefs.numbercnscilen=l('numbercnScientific').value;l('numbercnScientificRightText').innerHTML=['完整','长','中','短'][Math.floor(l('numbercnScientific').value)];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
-          ) + '<label>(可以调整数字显示的长度，普通数字和科学计数法均会被影响)</label><br>'
+            "Game.prefs.numbercnscilen=l('numbercnScientific').value;l('numbercnScientificRightText').innerHTML=__TWCNL.STR_SETTING_SCILEN_VALUES[Math.floor(l('numbercnScientific').value)];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+          ) + `<label>(${__TWCNL.STR_SETTING_SCILEN_LABEL})</label><br>`
         : '') +
       '<br>' +
-      (Game.Has('Box of brand biscuits')
-        ? Game.WriteButton(
-            'brandcn',
-            'brandcnButton',
-            '替换品牌饼干' + ON,
-            '替换品牌饼干' + OFF,
-            "Game.mods['" +
-              MOD.id +
-              "'].toggleBrandCookies();Game.RefreshStore();Game.upgradesToRebuild=1;"
-          ) + '<label>(将“一盒品牌饼干”升级替换为本土化的品牌)</label><br>'
-        : DisabledButton('brandcnButton', '??????????  ??') +
-          '<label>(根据你目前的进度，该选项不会有影响也不能更改。)</label><br>') +
+      (__TWCNL.BRAND_COOKIE_CN
+        ? Game.Has('Box of brand biscuits')
+          ? Game.WriteButton(
+              'brandcn',
+              'brandcnButton',
+              '替换品牌饼干' + ON,
+              '替换品牌饼干' + OFF,
+              "Game.mods['" +
+                MOD.id +
+                "'].toggleBrandCookies();Game.RefreshStore();Game.upgradesToRebuild=1;"
+            ) + '<label>(将“一盒品牌饼干”升级替换为本土化的品牌)</label><br>'
+          : DisabledButton('brandcnButton', '??????????  ??') +
+            '<label>(根据你目前的进度，该选项不会有影响也不能更改。)</label><br>'
+        : '') +
       '</div>'
     );
   };
@@ -1048,7 +822,7 @@ const __TWCNG = {
   // 替换品牌饼干
   const ModBrandedCookies = MOD => {
     MOD.OriginalBrandCookies = {};
-    for (let uid in __TWCNG.BRAND_COOKIE_CN) {
+    for (let uid in __TWCNL.BRAND_COOKIE_CN) {
       const it = Game.UpgradesById[uid];
       if (it) {
         MOD.OriginalBrandCookies[uid] = {
@@ -1056,11 +830,11 @@ const __TWCNG = {
           desc: it.ddesc,
           icon: it.icon,
         };
-        if (__TWCNG.BRAND_COOKIE_CN[uid].quote) {
-          __TWCNG.BRAND_COOKIE_CN[uid].desc =
-            it.ddesc.replace(/<q>.*/, '') + '<q>' + __TWCNG.BRAND_COOKIE_CN[uid].quote + '</q>';
+        if (__TWCNL.BRAND_COOKIE_CN[uid].quote) {
+          __TWCNL.BRAND_COOKIE_CN[uid].desc =
+            it.ddesc.replace(/<q>.*/, '') + '<q>' + __TWCNL.BRAND_COOKIE_CN[uid].quote + '</q>';
         }
-        __TWCNG.BRAND_COOKIE_CN[uid].icon.push(`${MOD.dirURI}/brands.png`, it.icon[0], it.icon[1]);
+        __TWCNL.BRAND_COOKIE_CN[uid].icon.push(`${MOD.dirURI}/brands.png`, it.icon[0], it.icon[1]);
       }
     }
 
@@ -1143,7 +917,7 @@ const __TWCNG = {
   // 在游戏加载前就修复Loc函数 (需要赶在本地化成就之前就生效)
   FixParseLoc();
 
-  Game.registerMod('TWCNClickerCN', {
+  Game.registerMod(__TWCNL.MOD_ID, {
     init: function () {
       // 提供语言给函数
       this.lang = localStorageGet('CookieClickerLang');
@@ -1173,7 +947,7 @@ const __TWCNG = {
       FixPlaySound(this);
 
       // 切换为其他语言时需要可以替换回来
-      ModBrandedCookies(this);
+      if (__TWCNL.BRAND_COOKIE_CN) ModBrandedCookies(this);
 
       // 只有语言是中文的时候启用模组
       if (this.lang == 'ZH-CN') {
@@ -1183,8 +957,9 @@ const __TWCNG = {
         if (Game.prefs.numbercnscilen == null) Game.prefs.numbercnscilen = 0;
         if (Game.prefs.numbercndecimal == null) Game.prefs.numbercndecimal = 100;
         if (Game.prefs.numbercnminunit == null) Game.prefs.numbercnminunit = 1;
-        if (Game.prefs.numbercntrillion == null) Game.prefs.numbercntrillion = 0;
-        if (Game.prefs.brandcn == null) Game.prefs.brandcn = 1;
+        if (Game.prefs.numbercntrillion == null)
+          Game.prefs.numbercntrillion = __TWCNL.DEF_SETTING_TRILLION;
+        if (Game.prefs.brandcn == null) Game.prefs.brandcn = __TWCNL.DEF_SETTING_BRAND;
 
         ModTouchSpecialPic(this);
         ModMarket(this);
@@ -1232,7 +1007,7 @@ const __TWCNG = {
     toggleBrandCookies: function () {
       const data =
         Game.prefs.brandcn && this.lang == 'ZH-CN'
-          ? __TWCNG.BRAND_COOKIE_CN
+          ? __TWCNL.BRAND_COOKIE_CN
           : this.OriginalBrandCookies;
       for (let uid in data) {
         const it = Game.UpgradesById[uid];

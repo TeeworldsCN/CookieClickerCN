@@ -23,12 +23,18 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: 'Download latest current.json'
+        run: |
+          mkdir -p ./build
+          wget https://github.com/TeeworldsCN/CookieClickerCN/releases/download/latest/current.json -O ./build/current.json
+
       - name: 'Test & Build'
         run: |
           npm ci
           tsc --skipLibCheck
           node ./dist/index.js
           cp ./resources/static/* ./build/CookieClickerCNMod/
+          cp ./resources/static_cht/* ./build/CookieClickerTCNMod/
 
       - name: Setup SSH KEY
         uses: webfactory/ssh-agent@v0.5.3
@@ -52,8 +58,16 @@ jobs:
         with:
           type: 'zip'
           directory: 'build'
-          filename: 'cookieclicker-cn.zip'
+          filename: 'cookieclicker-chs.zip'
           path: 'CookieClickerCNMod'
+
+      - name: Archive Release
+        uses: thedoctor0/zip-release@master
+        with:
+          type: 'zip'
+          directory: 'build'
+          filename: 'cookieclicker-cht.zip'
+          path: 'CookieClickerTCNMod'
 
       - uses: 'marvinpinto/action-automatic-releases@latest'
         with:
@@ -62,5 +76,6 @@ jobs:
           prerelease: true
           title: '最新版本'
           files: |
-            build/cookieclicker-cn.zip
+            build/cookieclicker-chs.zip
+            build/cookieclicker-cht.zip
             build/current.json
