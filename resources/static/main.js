@@ -179,6 +179,16 @@ const __TWCNG = {
       .toString()
       .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   },
+
+  LoadTradCHNFile: data => {
+    __TWCNG.CHSStrings = locStrings;
+    __TWCNG.CNTStrings = data;
+    locStrings = data;
+    Game.UpdateMenu();
+    BeautifyAll();
+    Game.RefreshStore();
+    Game.upgradesToRebuild = 1;
+  },
 };
 
 (function () {
@@ -729,6 +739,13 @@ const __TWCNG = {
       Game.WriteButton(
         'numbercn',
         'numbercnButton',
+        '繁體中文',
+        '简体中文' + OFF,
+        'Game.UpdateMenu();BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
+      ) +
+      Game.WriteButton(
+        'numbercn',
+        'numbercnButton',
         '使用中文计数单位' + ON,
         '使用中文计数单位' + OFF,
         'Game.UpdateMenu();BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
@@ -926,11 +943,15 @@ const __TWCNG = {
       // 只有语言是中文的时候启用模组
       if (this.lang == 'ZH-CN') {
         // 默认设置参数
+        if (Game.prefs.tradcn == null) Game.prefs.tradcn = 0;
         if (Game.prefs.numbercn == null) Game.prefs.numbercn = 1;
         if (Game.prefs.numbercndecimal == null) Game.prefs.numbercndecimal = 100;
         if (Game.prefs.numbercnminunit == null) Game.prefs.numbercnminunit = 1;
         if (Game.prefs.numbercntrillion == null) Game.prefs.numbercntrillion = 0;
         if (Game.prefs.brandcn == null) Game.prefs.brandcn = 1;
+
+        // 加载繁中资源
+        LoadLang(this.dirURI + '/langT.js');
 
         ModTouchSpecialPic(this);
         ModMarket(this);
@@ -953,6 +974,7 @@ const __TWCNG = {
     save: function () {
       return JSON.stringify({
         prefs: {
+          tradcn: Game.prefs.tradcn,
           numbercn: Game.prefs.numbercn,
           numbercndecimal: Game.prefs.numbercndecimal,
           numbercnminunit: Game.prefs.numbercnminunit,

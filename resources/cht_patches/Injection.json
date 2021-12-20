@@ -1,0 +1,7 @@
+{
+  "comment": "這裏包含模組代碼中的簡體文本，此處轉換爲繁體文本",
+  "golden cookie": {
+    "english": "Golden cookie",
+    "tradchn": "测试饼干"
+  }
+}
