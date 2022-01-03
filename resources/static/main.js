@@ -1,4 +1,7 @@
 const __TWCNG = {
+  // 成就数值修复
+  ACHIEVEMENT_FIX: {},
+
   // 中文品牌饼干
   BRAND_COOKIE_CN: {
     120: {
@@ -27,11 +30,6 @@ const __TWCNG = {
         '两片奶酪夹入三片奶油饼干中，大概没有人想过可以这么干——我们甚至可以用这个概念申请商标了。',
       icon: [0, 1],
     },
-    // 126: {
-    //   name: '',
-    //   quote: '',
-    //   icon: [1, 1],
-    // },
     127: {
       name: '趣咄咄',
       quote: '保留对所有巧克力豆饼干发律师函的权利。',
@@ -79,11 +77,6 @@ const __TWCNG = {
       quote: '小心它一口被你吃掉。',
       icon: [2, 3],
     },
-    // 726: {
-    //   name: '726',
-    //   quote: '',
-    //   icon: [3, 3],
-    // },
   },
 
   // 按键
@@ -118,6 +111,14 @@ const __TWCNG = {
 
   CN_UNITS_MIN: ['十', '百', '千', '万', '亿'],
 
+  // 数字长度设置
+  CN_NUMBER_LEN: [
+    { threshold: 1e16, sciDecimals: 12 },
+    { threshold: 1e13, sciDecimals: 9 },
+    { threshold: 1e10, sciDecimals: 6 },
+    { threshold: 1e7, sciDecimals: 3 },
+  ],
+
   // 替换数字格式化
   FormatterCN: val => {
     let unit = '';
@@ -147,9 +148,11 @@ const __TWCNG = {
 
   // 替换科学计数法
   SUPNUM: ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'],
-  FormatterScientific: val => {
-    const [coefficient, exponent] = val.toExponential(12).split('e');
-    const [integer, decimal] = coefficient.split('.');
+  FormatterScientific: (val, decimals) => {
+    const [coefficient, exponent] = val.toExponential(decimals).split('e');
+    let [integer, decimal] = coefficient.split('.');
+    while (decimal.endsWith('000')) decimal = decimal.slice(0, -3);
+
     let superscript = '';
     let negative = false;
     for (var i = 0; i < exponent.length; i++) {
@@ -164,13 +167,12 @@ const __TWCNG = {
       superscript += __TWCNG.SUPNUM[exponent.charCodeAt(i) - 48];
     }
 
+    let decimalPart = decimal.match(/.{1,3}/g);
+    if (!decimalPart) decimalPart = decimal;
+    else decimalPart = decimalPart.join('\u2008');
+
     return (
-      integer +
-      '.' +
-      decimal.match(/.{1,3}/g).join('\u2008') +
-      '×10' +
-      (negative ? '⁻' : '') +
-      superscript
+      integer + (decimalPart ? '.' : '') + decimalPart + '×10' + (negative ? '⁻' : '') + superscript
     );
   },
 
@@ -193,13 +195,19 @@ const __TWCNG = {
       val = Math.floor(Math.abs(val));
       if (floats > 0 && fixed == val + 1) val++;
       let output;
+
+      const numLen = __TWCNG.CN_NUMBER_LEN[Game.prefs.numbercnscilen];
+
       if (Game.prefs.numbercn && Game.keys[__TWCNG.UNIT_TOGGLE_KEY] != 1) {
         output =
           val >= 1e88 && isFinite(val)
-            ? __TWCNG.FormatterScientific(val)
+            ? __TWCNG.FormatterScientific(val, numLen.sciDecimals)
             : __TWCNG.FormatterCN(val);
       } else {
-        output = val >= 1e16 ? __TWCNG.FormatterScientific(val) : __TWCNG.FormatterGroupThree(val);
+        output =
+          val >= numLen.threshold
+            ? __TWCNG.FormatterScientific(val, numLen.sciDecimals)
+            : __TWCNG.FormatterGroupThree(val);
       }
 
       if (output == '0') negative = false;
@@ -707,15 +715,28 @@ const __TWCNG = {
     if (isCN) {
       // 让成就的数字Filter支持科学计数法
       beautifyInTextFilterSN = /\d(?:\.\d*)?e\+\d+/g;
+      beautifyInTextFilterUN = / (?:(?:\w+lion)|(?:thousand))/;
       // 将parseInt替换成可以读取更多数字的方式
       BeautifyInTextFunction = str => {
         return Beautify(Number(str.replace(/,/g, '')));
       };
       BeautifyInText = str => {
+        let matchNumUnit = str.match(beautifyInTextFilterUN);
+
+        if (matchNumUnit) {
+          // 将单位替换成BeautifyInTextFunction可处理的格式
+          const unitExp = (formatLong.indexOf(matchNumUnit[2]) + 1) * 3;
+          const preBeautified = str.replace(matchNumUnit[0], `${matchNumUnit[1]}e${unitExp}`);
+          const beautified = BeautifyInTextFunction(preBeautified);
+          return str.replace(matchNumUnit[0], beautified);
+        }
+
         let matchNum = str.match(beautifyInTextFilterSN) || str.match(beautifyInTextFilter);
-        if (!matchNum) return str;
-        const beautified = BeautifyInTextFunction(matchNum[0]);
-        return str.replace(matchNum[0], beautified);
+        if (matchNum) {
+          const beautified = BeautifyInTextFunction(matchNum[0]);
+          return str.replace(matchNum[0], beautified);
+        }
+        return str;
       };
       BeautifyAll = () => {
         for (var i in Game.UpgradesById) {
@@ -919,6 +940,20 @@ const __TWCNG = {
           ) +
           '<label>(启用后 <b>1万亿</b> 将显示为 <b>1兆</b>)</label><br>'
         : '') +
+      '<br>' +
+      ModSlider(
+        'numbercnScientific',
+        '数字长度',
+        '[$]',
+        () => ['完整', '长', '中', '短'][Game.prefs.numbercnscilen],
+        () => Game.prefs.numbercnscilen,
+        0,
+        3,
+        1,
+        "Game.prefs.numbercnscilen=l('numbercnScientific').value;l('numbercnScientificRightText').innerHTML=['完整','长','中','短'][Math.floor(l('numbercnScientific').value)];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+      ) +
+      '<label>(可以调整数字显示的长度，普通数字和科学计数法均会被影响)</label><br>' +
+      '<br>' +
       (Game.Has('Box of brand biscuits')
         ? Game.WriteButton(
             'brandcn',
@@ -1078,6 +1113,7 @@ const __TWCNG = {
       if (this.lang == 'ZH-CN') {
         // 默认设置参数
         if (Game.prefs.numbercn == null) Game.prefs.numbercn = 1;
+        if (Game.prefs.numbercnscilen == null) Game.prefs.numbercnscilen = 1;
         if (Game.prefs.numbercndecimal == null) Game.prefs.numbercndecimal = 100;
         if (Game.prefs.numbercnminunit == null) Game.prefs.numbercnminunit = 1;
         if (Game.prefs.numbercntrillion == null) Game.prefs.numbercntrillion = 0;
@@ -1107,6 +1143,7 @@ const __TWCNG = {
       return JSON.stringify({
         prefs: {
           numbercn: Game.prefs.numbercn,
+          numbercnscilen: Game.prefs.numbercnscilen,
           numbercndecimal: Game.prefs.numbercndecimal,
           numbercnminunit: Game.prefs.numbercnminunit,
           numbercntrillion: Game.prefs.numbercntrillion,
