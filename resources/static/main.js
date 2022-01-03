@@ -693,8 +693,8 @@ const __TWCNG = {
   const ModCrateTooltip = MOD => {
     const oldCrateTooltip = Game.crateTooltip;
     Game.crateTooltip = function (me, context) {
-      const result = oldCrateTooltip(me, context);
-      if (me.kitten) result.replace('点击以购买。', '点击以收养。');
+      let result = oldCrateTooltip(me, context);
+      if (me.kitten) result = result.replace('点击以购买。', '点击以收养。');
       return result;
     };
   };
