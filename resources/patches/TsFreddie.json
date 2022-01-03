@@ -2232,6 +2232,75 @@
     "english": "Mice clicking mice",
     "chinese": "点鼠标的老鼠"
   },
+  "[Upgrade quote 535]Custard creams": {
+    "english": "British lore pits these in a merciless war against bourbon biscuits.<br>The filling evokes vanilla without quite approaching it.<br>They're tastier on the inside!",
+    "chinese": "英国有传说表示这些饼干与波旁巧克力夹心饼干进行过无情的生死搏斗。<br>夹心的口味让人联想到香草，但又不太接近香草。<br>夹心的里面更美味。"
+  },
+  "[Upgrade quote 536]Bourbon biscuits": {
+    "english": "Two chocolate biscuits joined together with even more chocolate.<br>The sworn rivals of custard creams, as legend has it.",
+    "chinese": "两块巧克力饼干联合起来让这个甜点更有巧克力的味道。<br>传说是奶油糖霜夹心饼干的天敌。"
+  },
+  "[Upgrade quote 537]Keepsakes": {
+    "english": "Cherish the memories.",
+    "chinese": "珍惜这些记忆。"
+  },
+  "[Upgrade quote 538]Mini-cookies": {
+    "english": "Have you ever noticed how the smaller something is, the easier it is to binge on it?",
+    "chinese": "你有没有注意到，东西越小，就越容易吃多？"
+  },
+  "[Upgrade quote 539]Sugar crystal cookies": {
+    "english": "Infused with cosmic sweetness. It gives off a faint shimmery sound when you hold it up to your ear.",
+    "chinese": "融合了宇宙的甜味。当你把它举到耳边时，它会发出和宇宙中四散的星光一样的微弱声音。"
+  },
+  "[Upgrade quote 540]Box of maybe cookies": {
+    "english": "These may or may not be considered cookies.",
+    "chinese": "这些可能被认为是也可能不被认为是饼干。"
+  },
+  "[Upgrade quote 541]Box of not cookies": {
+    "english": "These are strictly, definitely not cookies.",
+    "chinese": "这些绝对必须不可能不是饼干。"
+  },
+  "[Upgrade name 542]Box of pastries": {
+    "english": "Box of pastries",
+    "chinese": "一盒糕点"
+  },
+  "[Upgrade quote 542]Box of pastries": {
+    "english": "These are a damn slippery slope is what they are!",
+    "chinese": "这不过就是些又油又滑的玩意罢了！"
+  },
+  "[Upgrade quote 543]Profiteroles": {
+    "english": "Also known as cream puffs, these pastries are light, fluffy, filled with whipped cream and fun to throw at people when snowballs are running scarce.",
+    "chinese": "又称奶油球，这种甜点掂量起来轻飘飘的又软绵绵的。而且很适合在没有雪球的时候用来砸人。"
+  },
+  "[Upgrade quote 544]Jelly donut": {
+    "english": "Guaranteed to contain at least 0.3% jelly filling, or your money back.<br>You can still see the jelly stab wound!",
+    "chinese": "夹心中保证至少含有0.3%的果酱，不符合条件的话三十天内无条件退款。<br>你都能看得到甜甜圈表面上为了填满果酱而为你承受的刺伤。"
+  },
+  "[Upgrade quote 545]Glazed donut": {
+    "english": "Absolutely gooey with sugar. The hole is the tastiest part!",
+    "chinese": "涂满了超级粘稠的糖。而且我跟你说，甜甜圈最美味的部分是中间的那个洞！"
+  },
+  "[Upgrade quote 546]Chocolate cake": {
+    "english": "The cake is a Portal reference!",
+    "chinese": "这怕不是传送门里的梗。"
+  },
+  "[Upgrade quote 547]Strawberry cake": {
+    "comment": "可惜了小菜一碟",
+    "english": "It's not easy to come up with flavor text for something as generic as this, but some would say it's a piece of cake.",
+    "chinese": "为这种普通的东西想出一段描述可不容易，但是这种东西也不需要多诱人的描述就会有人排着队来买。"
+  },
+  "[Upgrade quote 548]Apple pie": {
+    "english": "It is said that some grandmas go rogue and bake these instead.",
+    "chinese": "据说有的老奶奶会偷偷跑出去烤这种东西。"
+  },
+  "[Upgrade quote 549]Lemon meringue pie": {
+    "english": "Meringue is a finicky substance made of sugar and egg whites that requires specific atmospheric conditions to be baked at all. The lemon, as far as we can tell, isn't nearly as picky.",
+    "chinese": "蛋白派是一种由糖和蛋清组成的精细物质，需要特定的大气条件才能被烘烤。然而据科学研究表明，柠檬则对环境条件没有那么挑剔。"
+  },
+  "[Upgrade quote 550]Butter croissant": {
+    "english": "Look around.<br>A rude man in a striped shirt bikes past you. He smells of cigarettes and caf&eacute;-au-lait. Somewhere, a mime uses his moustache to make fun of the British. 300 pigeons fly overhead.<br>Relax. You're experiencing croissant.",
+    "chinese": "你环顾四周。<br>一个穿着条纹衬衫的粗鲁男子从你身边经过。他闻起来有香烟和咖啡的味道。在某个地方，一个哑剧演员用他的小胡子来取笑英国人。与此同时，三百只鸽子飞过你的头顶。<br>放轻松。这不是幻觉，而是法式牛角包给你带来的身临其境的体验。"
+  },
   "[Upgrade quote 621]Fortune #001": {
     "english": "Fingers are not the only thing you can count on.",
     "chinese": "你的手指并不是你唯一可以依靠的东西。"

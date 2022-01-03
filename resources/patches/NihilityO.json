@@ -292,15 +292,10 @@
       "Blitzen",
       "Rudolph"
     ],
-    "chinese": ["猛冲者", "舞者", "腾跃者", "悍狐", "彗星", "丘比特", "雷霆", "闪电", "鲁道夫"],
-    "[Upgrade name 63]Grandmas' grandmas": {
-      "english": "Grandmas' grandmas",
-      "chinese": "老奶奶的奶奶"
-    },
-    "[Upgrade quote 63]Grandmas' grandmas": {
-      "english": "A nice grandma's nice grandma to bake double the cookies.",
-      "chinese": "善良的老奶奶的善良奶奶可以烘焙出双倍的饼干。",
-      "patch": "TsFreddie.json"
-    }
+    "chinese": ["猛冲者", "舞者", "腾跃者", "悍狐", "彗星", "丘比特", "雷霆", "闪电", "鲁道夫"]
+  },
+  "[Upgrade quote 63]Grandmas' grandmas": {
+    "english": "A nice grandma's nice grandma to bake double the cookies.",
+    "chinese": "善良的老奶奶的善良奶奶可以烘焙出双倍的饼干。"
   }
 }
