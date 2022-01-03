@@ -116,6 +116,27 @@ const __TWCNG = {
     { threshold: 1e7, sciDecimals: 3 },
   ],
 
+  CN_BUILDING_ACTION: {
+    'clicked': '点击了 [X] 次饼干',
+    'baked': '烘焙了 [X] 块饼干',
+    'harvested': '收获了 [X] 块饼干',
+    'mined': '开采出了 [X] 块饼干',
+    'mass-produced': '量产了 [X] 块饼干',
+    'banked': '投资获得了 [X] 块饼干',
+    'discovered': '发现了 [X] 块饼干',
+    'summoned': '召唤了 [X] 块饼干',
+    'shipped': '运输了 [X] 块饼干',
+    'transmuted': '冶炼出了 [X] 块饼干',
+    'retrieved': '获取了 [X] 块饼干',
+    'recovered': '回收了 [X] 块饼干',
+    'condensed': '聚合了 [X] 块饼干',
+    'converted': '转化出了 [X] 块饼干',
+    'spontaneously generated': '随机出现了 [X] 块饼干',
+    'made from cookies': '有 [X] 块饼干双倍分形了',
+    'programmed': '计算出了 [X] 块饼干',
+    'hijacked': '劫持了 [X] 块饼干',
+  },
+
   // 替换数字格式化
   FormatterCN: val => {
     let unit = '';
@@ -148,7 +169,9 @@ const __TWCNG = {
   FormatterScientific: (val, decimals) => {
     const [coefficient, exponent] = val.toExponential(decimals).split('e');
     let [integer, decimal] = coefficient.split('.');
-    while (decimal.endsWith('000')) decimal = decimal.slice(0, -3);
+
+    if (__TWCNG.isModdingAchievement)
+      while (decimal.endsWith('000')) decimal = decimal.slice(0, -3);
 
     let superscript = '';
     let negative = false;
@@ -666,6 +689,35 @@ const __TWCNG = {
     };
   };
 
+  // 小猫购买提示魔改
+  const ModCrateTooltip = MOD => {
+    const oldCrateTooltip = Game.crateTooltip;
+    Game.crateTooltip = function (me, context) {
+      const result = oldCrateTooltip(me, context);
+      if (me.kitten) result.replace('点击以购买。', '点击以收养。');
+      return result;
+    };
+  };
+
+  // 建筑物 Tooltip 魔改
+  const ModObjectTooltip = MOD => {
+    for (const i in Game.Objects) {
+      const oldTooltip = Game.Objects[i].tooltip;
+      Game.Objects[i].tooltip = function () {
+        let result = oldTooltip.bind(this)();
+        if (this.actionName && __TWCNG.CN_BUILDING_ACTION[this.actionName]) {
+          result = result.replace(
+            /到目前为止生产出 <b>(.*) 块饼干<\/b>/,
+            (_, num) =>
+              '到目前为止' +
+              __TWCNG.CN_BUILDING_ACTION[this.actionName].replace('[X]', `<b>${num}</b>`)
+          );
+        }
+        return result;
+      };
+    }
+  };
+
   // 修复parseLoc
   const FixParseLoc = () => {
     const isCN = localStorageGet('CookieClickerLang') === 'ZH-CN';
@@ -736,6 +788,7 @@ const __TWCNG = {
         return str;
       };
       BeautifyAll = () => {
+        __TWCNG.isModdingAchievement = true;
         for (var i in Game.UpgradesById) {
           const it = Game.UpgradesById[i];
           const type = it.getType();
@@ -761,6 +814,7 @@ const __TWCNG = {
           found = FindLocStringByPart(type + ' quote ' + it.id);
           if (found) it.ddesc += '<q>' + loc(found) + '</q>';
         }
+        __TWCNG.isModdingAchievement = false;
       };
     }
   };
@@ -1133,6 +1187,8 @@ const __TWCNG = {
         ModGarden(this);
         ModSynergies(this);
         ModRandomBakeryName(this);
+        ModCrateTooltip(this);
+        ModObjectTooltip(this);
         AddMenuHook(this, ModPrefMenu);
       }
     },
