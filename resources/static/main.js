@@ -1113,7 +1113,7 @@ const __TWCNG = {
       if (this.lang == 'ZH-CN') {
         // 默认设置参数
         if (Game.prefs.numbercn == null) Game.prefs.numbercn = 1;
-        if (Game.prefs.numbercnscilen == null) Game.prefs.numbercnscilen = 1;
+        if (Game.prefs.numbercnscilen == null) Game.prefs.numbercnscilen = 0;
         if (Game.prefs.numbercndecimal == null) Game.prefs.numbercndecimal = 100;
         if (Game.prefs.numbercnminunit == null) Game.prefs.numbercnminunit = 1;
         if (Game.prefs.numbercntrillion == null) Game.prefs.numbercntrillion = 0;
