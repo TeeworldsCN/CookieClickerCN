@@ -1,7 +1,4 @@
 const __TWCNG = {
-  // 成就数值修复
-  ACHIEVEMENT_FIX: {},
-
   // 中文品牌饼干
   BRAND_COOKIE_CN: {
     120: {
