@@ -531,6 +531,10 @@
     "english": "Fast notes",
     "chinese": "快速通知"
   },
+  "Swallowed:": {
+    "english": "Swallowed:",
+    "chinese": "已吞噬："
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"
@@ -2304,6 +2308,54 @@
   "[Upgrade quote 550]Butter croissant": {
     "english": "Look around.<br>A rude man in a striped shirt bikes past you. He smells of cigarettes and caf&eacute;-au-lait. Somewhere, a mime uses his moustache to make fun of the British. 300 pigeons fly overhead.<br>Relax. You're experiencing croissant.",
     "chinese": "你环顾四周。<br>一个穿着条纹衬衫的粗鲁男子从你身边经过。他闻起来有香烟和咖啡的味道。在某个地方，一个哑剧演员用他的小胡子来取笑英国人。与此同时，三百只鸽子飞过你的头顶。<br>放轻松。这不是幻觉，而是法式牛角包给你带来的身临其境的体验。"
+  },
+  "[Upgrade quote 551]Cookie dough": {
+    "english": "Bursting with infinite potential, but can also be eaten as is. Arguably worth the salmonella.",
+    "chinese": "迸发着无限的潜力，但也可以不烤就直接吃。可以说，即使里面全是沙门氏菌也是值得的。"
+  },
+  "[Upgrade quote 552]Burnt cookie": {
+    "english": "This cookie flew too close to the sun and is now a shadow of its former self. If only you remembered to set a timer, you wouldn't have this tragedy on your hands...",
+    "chinese": "这块饼干对狂热的追求过于超前，导致它现在只剩下一团残影。如果上天再给你一次机会，你会记得设置个定时器吗？"
+  },
+  "[Upgrade quote 553]A chocolate chip cookie but with the chips picked off for some reason": {
+    "english": "This has to be the saddest thing you've ever seen.",
+    "chinese": "没有比这再苦涩的感觉了。"
+  },
+  "[Upgrade name 554]Flavor text cookie": {
+    "english": "Flavor text cookie",
+    "chinese": "文本饼干"
+  },
+  "[Upgrade quote 554]Flavor text cookie": {
+    "english": "What you're currently reading is what gives this cookie its inimitable flavor.",
+    "chinese": "你现在正在阅读的这段文字赋予了这块饼干无可比拟的味道。"
+  },
+  "[Upgrade quote 555]High-definition cookie": {
+    "english": "Uncomfortably detailed, like those weird stories your aunt keeps telling at parties.",
+    "chinese": "全是令人发指小细节，就像你亲戚在团圆饭桌上一直讲的那些奇怪的故事。"
+  },
+  "[Upgrade quote 556]Toast": {
+    "english": "A crisp slice of bread, begging for some butter and jam.<br>Why do people keep proposing these at parties?",
+    "chinese": "一片酥脆的面包，简直是在向你乞求着一些黄油和果酱。<br>为什么聚会上总有人会想吃这个？"
+  },
+  "[Upgrade name 557]Peanut butter & jelly": {
+    "english": "Peanut butter & jelly",
+    "chinese": "花生果酱三明治"
+  },
+  "[Upgrade quote 557]Peanut butter & jelly": {
+    "english": "It's time.",
+    "chinese": "是时候展现真正的口味了。"
+  },
+  "[Upgrade quote 558]Wookies": {
+    "english": "These aren't the cookies you're looking for.",
+    "chinese": "这些不是你要找的饼干。"
+  },
+  "[Upgrade quote 559]Cheeseburger": {
+    "english": "Absolutely no relation to cookies whatsoever - Orteil just wanted an excuse to draw a cheeseburger.",
+    "chinese": "与饼干绝对没有任何关系——游戏作者Orteil只是想找一个借口画个芝士汉堡。"
+  },
+  "[Upgrade quote 560]One lone chocolate chip": {
+    "english": "The start of something beautiful.",
+    "chinese": "美好事物的开端。"
   },
   "[Upgrade quote 621]Fortune #001": {
     "english": "Fingers are not the only thing you can count on.",
