@@ -764,7 +764,7 @@ const __TWCNG = {
     if (isCN) {
       // 让成就的数字Filter支持科学计数法
       beautifyInTextFilterSN = /\d(?:\.\d*)?e\+\d+/g;
-      beautifyInTextFilterUN = /(\d(?:\.\d*)?)( (?:\w+lion)| (?:thousand))/;
+      beautifyInTextFilterUN = /(\d+(?:\.\d+)?)( (?:\w+lion)| (?:thousand))/;
       // 将parseInt替换成可以读取更多数字的方式
       BeautifyInTextFunction = str => {
         return Beautify(Number(str.replace(/,/g, '')));

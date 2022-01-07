@@ -2381,6 +2381,11 @@
     "english": "Chocolate chip mocha cookies",
     "chinese": "摩卡巧克力豆饼干"
   },
+  "[Upgrade quote 567]Chocolate chip mocha cookies": {
+    "comment": "TODO",
+    "english": "Mocha started out as an excuse to smuggle chocolate into coffee. And now, in a poignant display of diplomacy and cultural exchange, it's bringing coffee to chocolate cookies.",
+    "chinese": "摩卡最初是为了走私巧克力才放在咖啡里的。"
+  },
   "[Upgrade quote 621]Fortune #001": {
     "english": "Fingers are not the only thing you can count on.",
     "chinese": "你的手指并不是你唯一可以依靠的东西。"
