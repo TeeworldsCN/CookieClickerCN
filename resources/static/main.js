@@ -506,7 +506,7 @@ const __TWCNG = {
       const str =
         '(你买了注彩票，彩票号码为 ' +
         code +
-        '，你获得的奖品是' +
+        '，彩票中的奖品是' +
         choose([
           ' ' + Math.floor(Math.random() * 5 + 2) + ' 行 Javascript 代码',
           '一次 Math.random() 的免费使用权',
@@ -764,7 +764,7 @@ const __TWCNG = {
     if (isCN) {
       // 让成就的数字Filter支持科学计数法
       beautifyInTextFilterSN = /\d(?:\.\d*)?e\+\d+/g;
-      beautifyInTextFilterUN = / (?:(?:\w+lion)|(?:thousand))/;
+      beautifyInTextFilterUN = /(\d(?:\.\d*)?)( (?:\w+lion)| (?:thousand))/;
       // 将parseInt替换成可以读取更多数字的方式
       BeautifyInTextFunction = str => {
         return Beautify(Number(str.replace(/,/g, '')));
@@ -774,9 +774,10 @@ const __TWCNG = {
 
         if (matchNumUnit) {
           // 将单位替换成BeautifyInTextFunction可处理的格式
+          const unitIndex = formatLong.indexOf(matchNumUnit[2]);
+          if (unitIndex < 0) return str;
           const unitExp = (formatLong.indexOf(matchNumUnit[2]) + 1) * 3;
-          const preBeautified = str.replace(matchNumUnit[0], `${matchNumUnit[1]}e${unitExp}`);
-          const beautified = BeautifyInTextFunction(preBeautified);
+          const beautified = BeautifyInTextFunction(`${matchNumUnit[1]}e${unitExp}`);
           return str.replace(matchNumUnit[0], beautified);
         }
 
