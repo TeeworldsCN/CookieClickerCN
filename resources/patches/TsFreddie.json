@@ -535,6 +535,10 @@
     "english": "Swallowed:",
     "chinese": "已吞噬："
   },
+  "You have <b>1 chance in %1</b> every second of earning this achievement.": {
+    "english": "You have <b>1 chance in %1</b> every second of earning this achievement.",
+    "chinese": "你每秒有 <b>%1分之一</b> 的几率获得此成就。"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"
@@ -2478,6 +2482,14 @@
   "[Upgrade quote 643]Fortune cookies": {
     "english": "These don't taste all that great but that's not really the point, is it?",
     "chinese": "这些东西的味道并不是很好，但这并不是重点，你说是不是？"
+  },
+  "[Upgrade name 661]Miraculite mouse": {
+    "english": "Miraculite mouse",
+    "chinese": "奇迹石鼠标"
+  },
+  "[Upgrade quote 661]Miraculite mouse": {
+    "english": "Composed of a material that neither science nor philosophy are equipped to conceptualize. And boy, does it ever click.",
+    "chinese": "由一种无论是科学还是哲学都无法构想出来的材料组成。这鼠标能点击就已经是奇迹了。"
   },
   "[Upgrade quote 698]Fortune #018": {
     "english": "There's plenty of everyone, but only one of you.",

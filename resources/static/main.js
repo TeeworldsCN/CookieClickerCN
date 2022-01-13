@@ -206,6 +206,7 @@ const __TWCNG = {
 (function () {
   // 中文数字魔改
   const ModGameUnit = MOD => {
+    const oldBeautify = Beautify;
     Beautify = (val, floats) => {
       let negative = val < 0;
       let decimal = '';
@@ -221,12 +222,16 @@ const __TWCNG = {
       if (Game.prefs.numbercn && Game.keys[__TWCNG.UNIT_TOGGLE_KEY] != 1) {
         output =
           val >= 1e88 && isFinite(val)
-            ? __TWCNG.FormatterScientific(val, numLen.sciDecimals)
+            ? Game.prefs.numbercnsci
+              ? __TWCNG.FormatterScientific(val, numLen.sciDecimals)
+              : oldBeautify(val, floats)
             : __TWCNG.FormatterCN(val);
       } else {
         output =
           val >= numLen.threshold
-            ? __TWCNG.FormatterScientific(val, numLen.sciDecimals)
+            ? Game.prefs.numbercnsci
+              ? __TWCNG.FormatterScientific(val, numLen.sciDecimals)
+              : oldBeautify(val, floats)
             : __TWCNG.FormatterGroupThree(val);
       }
 
@@ -827,7 +832,7 @@ const __TWCNG = {
       if (Game.prefs.numbercn && Game.keys[__TWCNG.UNIT_TOGGLE_KEY] != 1) {
         const cookies = l('cookies');
         cookies.innerHTML = cookies.innerHTML.replace(
-          /(-?[0-9]+(?:\.[0-9])?[^\s]*)(?:<br>| )块饼干/,
+          /(-?[0-9]+(?:\.[0-9])?[^\sa-z]*)(?:<br>| )块饼干/,
           (_, v) => v + '块饼干'
         );
       }
@@ -993,18 +998,27 @@ const __TWCNG = {
           '<label>(启用后 <b>1万亿</b> 将显示为 <b>1兆</b>)</label><br>'
         : '') +
       '<br>' +
-      ModSlider(
-        'numbercnScientific',
-        '数字长度',
-        '[$]',
-        () => ['完整', '长', '中', '短'][Game.prefs.numbercnscilen],
-        () => Game.prefs.numbercnscilen,
-        0,
-        3,
-        1,
-        "Game.prefs.numbercnscilen=l('numbercnScientific').value;l('numbercnScientificRightText').innerHTML=['完整','长','中','短'][Math.floor(l('numbercnScientific').value)];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+      Game.WriteButton(
+        'numbercnsci',
+        'numbercnDisableButton',
+        '使用科学计数法' + ON,
+        '使用科学计数法' + OFF,
+        'Game.UpdateMenu();BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
       ) +
-      '<label>(可以调整数字显示的长度，普通数字和科学计数法均会被影响)</label><br>' +
+      '<label>(替换完整数字为优化版的科学计数法，禁用后使用原版数字显示)</label><br>' +
+      (Game.prefs.numbercnsci
+        ? ModSlider(
+            'numbercnScientific',
+            '数字长度',
+            '[$]',
+            () => ['完整', '长', '中', '短'][Game.prefs.numbercnscilen],
+            () => Game.prefs.numbercnscilen,
+            0,
+            3,
+            1,
+            "Game.prefs.numbercnscilen=l('numbercnScientific').value;l('numbercnScientificRightText').innerHTML=['完整','长','中','短'][Math.floor(l('numbercnScientific').value)];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+          ) + '<label>(可以调整数字显示的长度，普通数字和科学计数法均会被影响)</label><br>'
+        : '') +
       '<br>' +
       (Game.Has('Box of brand biscuits')
         ? Game.WriteButton(
@@ -1165,6 +1179,7 @@ const __TWCNG = {
       if (this.lang == 'ZH-CN') {
         // 默认设置参数
         if (Game.prefs.numbercn == null) Game.prefs.numbercn = 1;
+        if (Game.prefs.numbercnsci == null) Game.prefs.numbercnsci = 1;
         if (Game.prefs.numbercnscilen == null) Game.prefs.numbercnscilen = 0;
         if (Game.prefs.numbercndecimal == null) Game.prefs.numbercndecimal = 100;
         if (Game.prefs.numbercnminunit == null) Game.prefs.numbercnminunit = 1;
@@ -1196,6 +1211,7 @@ const __TWCNG = {
     save: function () {
       return JSON.stringify({
         prefs: {
+          numbercnsci: Game.prefs.numbercnsci,
           numbercn: Game.prefs.numbercn,
           numbercnscilen: Game.prefs.numbercnscilen,
           numbercndecimal: Game.prefs.numbercndecimal,
