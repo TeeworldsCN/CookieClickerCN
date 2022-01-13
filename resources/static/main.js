@@ -170,6 +170,8 @@ const __TWCNG = {
     const [coefficient, exponent] = val.toExponential(decimals).split('e');
     let [integer, decimal] = coefficient.split('.');
 
+    decimal ??= '';
+
     if (__TWCNG.isModdingAchievement)
       while (decimal.endsWith('000')) decimal = decimal.slice(0, -3);
 
@@ -219,20 +221,18 @@ const __TWCNG = {
 
       const numLen = __TWCNG.CN_NUMBER_LEN[Game.prefs.numbercnscilen];
 
-      if (Game.prefs.numbercn && Game.keys[__TWCNG.UNIT_TOGGLE_KEY] != 1) {
-        output =
-          val >= 1e88 && isFinite(val)
-            ? Game.prefs.numbercnsci
-              ? __TWCNG.FormatterScientific(val, numLen.sciDecimals)
-              : oldBeautify(val, floats)
-            : __TWCNG.FormatterCN(val);
+      if (
+        Game.prefs.numbercn &&
+        Game.keys[__TWCNG.UNIT_TOGGLE_KEY] != 1 &&
+        (val < 1e88 || !isFinite(val))
+      ) {
+        output = __TWCNG.FormatterCN(val);
       } else {
-        output =
-          val >= numLen.threshold
-            ? Game.prefs.numbercnsci
-              ? __TWCNG.FormatterScientific(val, numLen.sciDecimals)
-              : oldBeautify(val, floats)
-            : __TWCNG.FormatterGroupThree(val);
+        output = Game.prefs.numbercnsci
+          ? val >= numLen.threshold
+            ? __TWCNG.FormatterScientific(val, numLen.sciDecimals)
+            : __TWCNG.FormatterGroupThree(val)
+          : oldBeautify(val, floats);
       }
 
       if (output == '0') negative = false;
