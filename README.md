@@ -1,4 +1,4 @@
-# Cookie Clicker 简体中文补全计划
+# Cookie Clicker 中文补全计划
 
 > Made with ❤️ by TeeworldsCN community
 
@@ -72,3 +72,9 @@
 3. 确认 json 格式正确**并**使用[Prettier](https://prettier.io/)格式化。
 4. 若想要覆盖其他人的贡献，请在自己的 json 文件中提供更新的翻译，**并**在其他人的贡献文件中的相关条目中添加 `deprecated: "原因"`
 5. 提交 Pull Request。
+
+## 關於繁體中文
+
+- 繁體版本由所有簡體的條目經過 [node-opencc](https://www.npmjs.com/package/node-opencc) 轉換成繁體而生成。
+- 若有語義或句式習慣與簡體不同，可透過在 `resources/patches_cht` 目錄下提交 json 補丁來進行修改。
+- 若有用詞不同，可直接在 `resources/replaceAllCHT.json` 檔案中新增詞語替換條目。
