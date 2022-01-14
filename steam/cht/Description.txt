@@ -1,5 +1,8 @@
 [h1]Cookie Clicker 中文補全計劃 - 繁體中文版[/h1]
 [quote]Made with ❤️ by TeeworldsCN community[/quote]
+
+Github項目: [url=https://github.com/TeeworldsCN/CookieClickerCN]Cookie Clicker 中文補全計劃[/url]
+
 中文校訂與補全，翻譯貢獻者：AbyssAir、cyxw、DullBoi、lyu-kun、SmoneumMaestro、TsFreddie、Yuanshou與匿名貢獻的各位。
 [b]這是什麼？[/b]
 這個是爲 Cookie Clicker 的 Steam 版本準備的翻譯模組。目的是爲了修正一些官方翻譯的錯誤與補充缺失的次要文本。（但是還進行了一些其實沒什麼必要的優化和修復）
