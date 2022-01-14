@@ -80,33 +80,35 @@ const __TWCNG = {
   UNIT_TOGGLE_KEY: 90,
 
   CN_UNITS: [
-    [1e72, '大数'],
-    [1e68, '无量'],
-    [1e64, '不可思议'],
-    [1e60, '那由他'],
-    [1e56, '阿僧祇'],
-    [1e52, '恒河沙'],
-    [1e48, '极'],
-    [1e44, '载'],
-    [1e40, '正'],
-    [1e36, '涧'],
-    [1e32, '沟'],
-    [1e28, '穰'],
-    [1e24, '秭'],
-    [1e20, '垓'],
-    [1e16, '京'],
-    [1e12, '兆'],
+    [1e72, '大数', 72],
+    [1e68, '无量', 68],
+    [1e64, '不可思议', 64],
+    [1e60, '那由他', 60],
+    [1e56, '阿僧祇', 56],
+    [1e52, '恒河沙', 52],
+    [1e48, '极', 48],
+    [1e44, '载', 44],
+    [1e40, '正', 40],
+    [1e36, '涧', 36],
+    [1e32, '沟', 32],
+    [1e28, '穰', 28],
+    [1e24, '秭', 24],
+    [1e20, '垓', 20],
+    [1e16, '京', 16],
+    [1e12, '兆', 12],
   ],
 
   CN_UNITS_STACKABLE: [
-    [1e8, '亿'],
-    [1e4, '万'],
-    [1e3, '千'],
-    [1e2, '百'],
-    [1e1, '十'],
+    [1e8, '亿', 8],
+    [1e4, '万', 4],
+    [1e3, '千', 3],
+    [1e2, '百', 2],
+    [1e1, '十', 1],
   ],
 
   CN_UNITS_MIN: ['十', '百', '千', '万', '亿'],
+
+  CN_UNITS_NUM: ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九'],
 
   // 数字长度设置
   CN_NUMBER_LEN: [
@@ -137,15 +139,17 @@ const __TWCNG = {
     'hijacked': '劫持了 [X] 块饼干',
   },
 
-  // 替换数字格式化
+  // 尾记中文单位
   FormatterCN: val => {
-    let unit = '';
     if (!isFinite(val)) return '无限';
+    let unit = '';
+    const prec = Game.prefs.numbercndecimal;
+
     if (val >= 1e4) {
       for (const u of __TWCNG.CN_UNITS) {
         if (!Game.prefs.numbercntrillion && u[1] == '兆') continue;
         if (val >= u[0]) {
-          val = Math.round(val / (u[0] / 10000)) / 10000;
+          val = Math.round(val / (u[0] / prec)) / prec;
           unit = u[1];
           break;
         }
@@ -153,15 +157,119 @@ const __TWCNG = {
       for (var i = 0; i < __TWCNG.CN_UNITS_STACKABLE.length - Game.prefs.numbercnminunit; i++) {
         const u = __TWCNG.CN_UNITS_STACKABLE[i];
         while (val >= u[0]) {
-          val = Math.round(val / (u[0] / 10000)) / 10000;
+          val = Math.round(val / (u[0] / prec)) / prec;
           unit = u[1] + unit;
         }
       }
     }
-    const prec = Game.prefs.numbercndecimal;
-    return (
-      (Math.floor(val * prec) / prec).toString().replace(/\B(?=(\d{4})+(?!\d))/g, '\u2008') + unit
-    );
+
+    return (Math.floor(val * prec) / prec).toString() + unit;
+  },
+
+  // 叠记中文单位
+  FormatterCNFull: val => {
+    if (!isFinite(val)) return '无限';
+
+    const minUnit = Math.min(Game.prefs.numbercnminunit, 3);
+    const minValue = Math.pow(10, minUnit + 1);
+    const groups = Game.prefs.numbercnfullsegs;
+    if (groups < 1) groups = 1;
+    if (groups > 3) groups = 3;
+
+    const safeConcat = (pre, cur, unit, order) => {
+      if (unit) {
+        cur.high = cur.high + order;
+        cur.low = order;
+      }
+
+      if (pre.low - cur.high > 1) {
+        if (minUnit == 0) {
+          cur.text = '零' + cur.text;
+        } else {
+          cur.text = ('0' + cur.text).padStart(minUnit + 1, '0');
+        }
+      }
+
+      if (unit) {
+        cur.text = cur.text + unit;
+      }
+
+      const text =
+        pre.text.endsWith('万亿') && cur.text.endsWith('亿')
+          ? pre.text.slice(0, -1) + cur.text
+          : pre.text + cur.text;
+
+      return { text, high: Math.max(cur.high, pre.high), low: cur.low };
+    };
+
+    const segmenting = (val, sub) => {
+      let segments = { text: '', high: 0, low: 0 };
+
+      if (val <= 0) {
+        return {
+          text: '',
+          high: 0,
+          low: 0,
+        };
+      }
+
+      if (val < minValue) {
+        val = Math.floor(val);
+        if (minUnit == 0) return { text: __TWCNG.CN_UNITS_NUM[val], high: 0, low: 0 };
+        let text = val > 0 ? val.toString() : '';
+        return {
+          text,
+          high: text.length - 1,
+          low: 0,
+        };
+      }
+
+      let units = 0;
+
+      const sliceUnit = (val, u) => {
+        if (val >= u[0]) {
+          const segment = Math.floor(val / u[0]);
+          val -= segment * u[0];
+          if (segment > 0) segments = safeConcat(segments, segmenting(segment, true), u[1], u[2]);
+          units++;
+        } else if (units > 1) {
+          units++;
+        }
+        return val;
+      };
+
+      if (!sub) {
+        for (const u of __TWCNG.CN_UNITS) {
+          if (units >= groups) break;
+          if (val <= 0) break;
+          if (!Game.prefs.numbercntrillion && u[1] == '兆') {
+            val = sliceUnit(val, [u[0], '万亿', u[2]]);
+          } else {
+            val = sliceUnit(val, u);
+          }
+        }
+      }
+
+      for (const u of __TWCNG.CN_UNITS_STACKABLE) {
+        if (!sub && units >= groups) break;
+        if (val <= 0) break;
+
+        if (val < minValue) {
+          segments = safeConcat(segments, segmenting(val, true));
+          val = 0;
+          break;
+        } else {
+          val = sliceUnit(val, u);
+        }
+      }
+
+      if (val > 0 && (sub || units < groups)) {
+        segments = safeConcat(segments, segmenting(val, true));
+      }
+      return segments;
+    };
+
+    return segmenting(val, val < 1e8).text || (minUnit == 0 ? '零' : '0');
   },
 
   // 替换科学计数法
@@ -210,6 +318,7 @@ const __TWCNG = {
   const ModGameUnit = MOD => {
     const oldBeautify = Beautify;
     Beautify = (val, floats) => {
+      console.log(new Error().stack);
       let negative = val < 0;
       let decimal = '';
       let fixed = val.toFixed(floats);
@@ -226,7 +335,7 @@ const __TWCNG = {
         Game.keys[__TWCNG.UNIT_TOGGLE_KEY] != 1 &&
         (val < 1e88 || !isFinite(val))
       ) {
-        output = __TWCNG.FormatterCN(val);
+        output = Game.prefs.numbercnfull ? __TWCNG.FormatterCNFull(val) : __TWCNG.FormatterCN(val);
       } else {
         output = Game.prefs.numbercnsci
           ? val >= numLen.threshold
@@ -236,6 +345,20 @@ const __TWCNG = {
       }
 
       if (output == '0') negative = false;
+      if (Game.prefs.numbercnfull) {
+        const numeralDecimal = decimal;
+        decimal = '';
+        for (const c of numeralDecimal) {
+          if (c == '.') {
+            decimal += '点';
+          } else {
+            const numeral = c.charCodeAt(0) - 48;
+            if (Game.prefs.numbercnminunit == 0 && numeral >= 0 && numeral <= 9)
+              decimal += __TWCNG.CN_UNITS_NUM[numeral];
+            else decimal += c;
+          }
+        }
+      }
       return negative ? '-' + output : output + decimal;
     };
   };
@@ -964,17 +1087,37 @@ const __TWCNG = {
       ) +
       '<label>(按住<b>Z键</b>可临时显示完整数字)</label><br>' +
       (Game.prefs.numbercn
-        ? ModSlider(
-            'numbercnDecimal',
-            '中文单位前保留',
-            '小数点后[$]位',
-            () => Math.log10(Game.prefs.numbercndecimal),
-            () => Math.log10(Game.prefs.numbercndecimal),
-            0,
-            4,
-            1,
-            "Game.prefs.numbercndecimal=Math.pow(10,Math.floor(l('numbercnDecimal').value));l('numbercnDecimalRightText').innerHTML='小数点后'+Math.floor(l('numbercnDecimal').value)+'位';BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+        ? Game.WriteButton(
+            'numbercnfull',
+            'numbercnFullButton',
+            '中文读写模式' + ON,
+            '中文读写模式' + OFF,
+            'Game.UpdateMenu();BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
           ) +
+          '<label>(是否使用尽可能多的单位组成可以朗读出来的中文数字格式)</label><br>' +
+          (Game.prefs.numbercnfull
+            ? ModSlider(
+                'numbercnFullSegs',
+                '单位组数',
+                '[$]组',
+                () => Game.prefs.numbercnfullsegs,
+                () => Game.prefs.numbercnfullsegs,
+                1,
+                3,
+                1,
+                "Game.prefs.numbercnfullsegs=parseInt(l('numbercnFullSegs').value);l('numbercnFullSegsRightText').innerHTML=Math.floor(l('numbercnFullSegs').value)+'组';BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+              )
+            : ModSlider(
+                'numbercnDecimal',
+                '中文单位前保留',
+                '小数点后[$]位',
+                () => Math.log10(Game.prefs.numbercndecimal),
+                () => Math.log10(Game.prefs.numbercndecimal),
+                0,
+                8,
+                1,
+                "Game.prefs.numbercndecimal=Math.pow(10,Math.floor(l('numbercnDecimal').value));l('numbercnDecimalRightText').innerHTML='小数点后'+Math.floor(l('numbercnDecimal').value)+'位';BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+              )) +
           '<br>' +
           ModSlider(
             'numbercnMinUnit',
@@ -983,9 +1126,9 @@ const __TWCNG = {
             () => __TWCNG.CN_UNITS_MIN[Game.prefs.numbercnminunit],
             () => Game.prefs.numbercnminunit,
             0,
-            4,
+            Game.prefs.numbercnfull ? 3 : 4,
             1,
-            "Game.prefs.numbercnminunit=l('numbercnMinUnit').value;l('numbercnMinUnitRightText').innerHTML=__TWCNG.CN_UNITS_MIN[l('numbercnMinUnit').value];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+            "Game.prefs.numbercnminunit=parseInt(l('numbercnMinUnit').value);l('numbercnMinUnitRightText').innerHTML=__TWCNG.CN_UNITS_MIN[l('numbercnMinUnit').value];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
           ) +
           '<br>' +
           Game.WriteButton(
@@ -1016,7 +1159,7 @@ const __TWCNG = {
             0,
             3,
             1,
-            "Game.prefs.numbercnscilen=l('numbercnScientific').value;l('numbercnScientificRightText').innerHTML=['完整','长','中','短'][Math.floor(l('numbercnScientific').value)];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+            "Game.prefs.numbercnscilen=parseInt(l('numbercnScientific').value);l('numbercnScientificRightText').innerHTML=['完整','长','中','短'][Math.floor(l('numbercnScientific').value)];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
           ) + '<label>(可以调整数字显示的长度，普通数字和科学计数法均会被影响)</label><br>'
         : '') +
       '<br>' +
@@ -1180,6 +1323,8 @@ const __TWCNG = {
         // 默认设置参数
         if (Game.prefs.numbercn == null) Game.prefs.numbercn = 1;
         if (Game.prefs.numbercnsci == null) Game.prefs.numbercnsci = 1;
+        if (Game.prefs.numbercnfull == null) Game.prefs.numbercnfull = 0;
+        if (Game.prefs.numbercnfullsegs == null) Game.prefs.numbercnfullsegs = 2;
         if (Game.prefs.numbercnscilen == null) Game.prefs.numbercnscilen = 0;
         if (Game.prefs.numbercndecimal == null) Game.prefs.numbercndecimal = 100;
         if (Game.prefs.numbercnminunit == null) Game.prefs.numbercnminunit = 1;
@@ -1213,6 +1358,8 @@ const __TWCNG = {
         prefs: {
           numbercnsci: Game.prefs.numbercnsci,
           numbercn: Game.prefs.numbercn,
+          numbercnfull: Game.prefs.numbercnfull,
+          numbercnfullsegs: Game.prefs.numbercnfullsegs,
           numbercnscilen: Game.prefs.numbercnscilen,
           numbercndecimal: Game.prefs.numbercndecimal,
           numbercnminunit: Game.prefs.numbercnminunit,
