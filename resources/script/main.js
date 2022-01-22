@@ -504,6 +504,24 @@
       else if (params.constructor !== Array) params = [params];
       if (!str) return '';
 
+      // Transform func field into actual functions
+      if (str.constructor === Array) {
+        const ogStr = str;
+        let hasFunc = false;
+        for (let i = 0; i < ogStr.length; i++) {
+          const s = ogStr[i];
+          if (typeof s === 'function') {
+            if (!hasFunc) {
+              str = [...ogStr];
+              hasFunc = true;
+            }
+            str[i] = s();
+          }
+        }
+      } else if (typeof str === 'function') {
+        str = str();
+      }
+
       if (params.length == 0) return str;
 
       if (str.constructor === Array) {

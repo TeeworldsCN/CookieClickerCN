@@ -67,7 +67,7 @@ const __TWCNL = {
   STR_PURCHASE: '點擊以購買。',
   STR_PURRCHASE: '點擊以收養。',
   STR_INFINITY: '無限',
-  STR_BUILDING_ACTION_REGEX: /目前爲止生產出 <b>(.*) 塊餅乾<\/b>/,
+  STR_BUILDING_ACTION_REGEX: /到目前爲止生產出 <b>(.*) 塊餅乾<\/b>/,
   STR_SETTING_TITLE: '中文模組設置',
   STR_SETTING_CNUNIT: '使用中文計數單位',
   STR_SETTING_CNUNIT_LABEL: '按住<b>Z鍵</b>可臨時顯示完整數字',

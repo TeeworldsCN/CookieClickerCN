@@ -29,6 +29,7 @@ const patches = fs.readdirSync(PATCHESPATH).map(file => {
   };
 });
 
+const transformFunc = (str: string) => str.replace(/{"func":"([^"]*)"}/g, `()=>$1`);
 // build info.txt
 const time = new Date();
 const year = time.getUTCFullYear();
@@ -121,17 +122,22 @@ for (const patch of chtPatches) {
 
 fs.writeFileSync(
   path.join(BUILD_PATH, 'lang.js'),
-  `ModLanguage('ZH-CN',${JSON.stringify(langS)});`
+  `ModLanguage('ZH-CN',${transformFunc(JSON.stringify(langS))});`
 );
 
 // combine patches with original to make a current representation
 for (var entry in original) {
   const data = original[entry];
   for (var key in replaceAll) {
-    if (Array.isArray(data.chinese)) {
-      data.chinese = data.chinese.map((str: any) =>
-        str.replace(new RegExp(key, 'ig'), replaceAll[key].replacement)
-      );
+    if (typeof data.chinese === 'object' && typeof data.chinese.func === 'string') {
+      data.chinese.func = data.chinese.func.replace(key, replaceAll[key].replacement);
+    } else if (Array.isArray(data.chinese)) {
+      data.chinese = data.chinese.map((str: any) => {
+        if (typeof str === 'object' && typeof str.func === 'string') {
+          return { func: str.func.replace(key, replaceAll[key].replacement) };
+        }
+        return str.replace(new RegExp(key, 'ig'), replaceAll[key].replacement);
+      });
     } else {
       if (!data.chinese) {
         console.log(data);
@@ -174,10 +180,30 @@ const replaceAllCHT = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, '../resources/replaceAllCHT.json'), { encoding: 'utf-8' })
 );
 
-const replaceAllForCHT = (str: string) => {
+const replaceAllForCHT = (str: string | (string | { func: string })[] | { func: string }) => {
+  const doReplace = (key: string, replacement: string) => {
+    const r = new RegExp(key, 'ig');
+    if (typeof str === 'object' && !Array.isArray(str) && typeof str.func === 'string') {
+      return { func: str.func.replace(r, replacement) };
+    } else if (Array.isArray(str)) {
+      return str.map(s => {
+        if (typeof s === 'object' && typeof s.func === 'string') {
+          return { func: s.func.replace(r, replacement) };
+        } else if (typeof s === 'string') {
+          return s.replace(r, replacement);
+        }
+        return s;
+      });
+    } else if (typeof str === 'string') {
+      return str.replace(r, replacement);
+    }
+    return str;
+  };
+
   for (let key in replaceAllCHT) {
-    if (replaceAllCHT[key] && replaceAllCHT[key].replacement)
-      str = str.replace(new RegExp(key, 'ig'), replaceAllCHT[key].replacement);
+    if (replaceAllCHT[key] && replaceAllCHT[key].replacement) {
+      str = doReplace(key, replaceAllCHT[key].replacement);
+    }
   }
   return str;
 };
@@ -192,34 +218,47 @@ for (var key in original) {
         if (
           lastVersion[key] &&
           lastVersion[key].chinese[i] &&
-          lastVersion[key].chinese[i] == s &&
+          (lastVersion[key].chinese[i] == s || lastVersion[key].chinese[i]?.func == s?.func) &&
           lastVersion[key].tradchn &&
           lastVersion[key].tradchn[i]
         ) {
-          return replaceAllForCHT(lastVersion[key].tradchn[i]);
+          if (typeof s?.func === 'string') {
+            return { func: lastVersion[key].tradchn[i] };
+          }
+          return lastVersion[key].tradchn[i];
         }
-        return replaceAllForCHT(T(s));
+        if (typeof s?.func === 'string') {
+          return { func: T(s.func) };
+        }
+        return T(s);
       });
     } else {
-      if (lastVersion[key] && lastVersion[key].chinese == original[key].chinese) {
-        original[key].tradchn = replaceAllForCHT(lastVersion[key].tradchn);
+      if (typeof original[key].chinese?.func == 'string') {
+        if (lastVersion[key].chinese?.func == original[key].chinese?.func) {
+          original[key].tradchn = lastVersion[key].tradchn;
+        } else {
+          original[key].tradchn = { func: T(original[key].chinese.func) };
+        }
+      } else if (lastVersion[key] && lastVersion[key].chinese == original[key].chinese) {
+        original[key].tradchn = lastVersion[key].tradchn;
       } else {
-        original[key].tradchn = replaceAllForCHT(T(original[key].chinese));
+        original[key].tradchn = T(original[key].chinese);
       }
     }
   }
 }
 
 // build langT.js
-const langT: { [key: string]: string | string[] } & { 'REPLACE ALL'?: { [key: string]: string } } =
-  {};
+const langT: { [key: string]: string | (string | { func: string })[] | { func: string } } & {
+  'REPLACE ALL'?: { [key: string]: string };
+} = {};
 
 for (let key in original) {
   if (langT[key]) {
     console.error(`duplicate key: "${key}"`);
     process.exit(1);
   }
-  if (original[key].tradchn != '[CN:MISSING]') langT[key] = original[key].tradchn;
+  if (original[key].tradchn != '[CN:MISSING]') langT[key] = replaceAllForCHT(original[key].tradchn);
 }
 
 const BUILD_PATH_CHT = path.join(__dirname, '../build/CookieClickerTCNMod');
@@ -227,7 +266,7 @@ fs.mkdirSync(BUILD_PATH_CHT, { recursive: true });
 
 fs.writeFileSync(
   path.join(BUILD_PATH_CHT, 'lang.js'),
-  `ModLanguage('ZH-CN',${JSON.stringify(langT)});`
+  `ModLanguage('ZH-CN',${transformFunc(JSON.stringify(langT))});`
 );
 
 // build info.txt

@@ -144,7 +144,7 @@ const __TWCNL = {
   STR_PURCHASE: '点击以购买。',
   STR_PURRCHASE: '点击以收养。',
   STR_INFINITY: '无限',
-  STR_BUILDING_ACTION_REGEX: /目前为止生产出 <b>(.*) 块饼干<\/b>/,
+  STR_BUILDING_ACTION_REGEX: /到目前为止生产出 <b>(.*) 块饼干<\/b>/,
   STR_SETTING_TITLE: '中文模组设置',
   STR_SETTING_CNUNIT: '使用中文计数单位',
   STR_SETTING_CNUNIT_LABEL: '按住<b>Z键</b>可临时显示完整数字',
