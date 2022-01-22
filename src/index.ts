@@ -223,7 +223,7 @@ for (var key in original) {
           lastVersion[key].tradchn[i]
         ) {
           if (typeof s?.func === 'string') {
-            return { func: lastVersion[key].tradchn[i] };
+            return lastVersion[key].tradchn[i];
           }
           return lastVersion[key].tradchn[i];
         }
