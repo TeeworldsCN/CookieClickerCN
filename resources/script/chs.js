@@ -1,4 +1,4 @@
-const __TWCNL = {
+var __TWCNL = {
   // MOD_ID
   MOD_ID: 'TWCNClickerCN',
 

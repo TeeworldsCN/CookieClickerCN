@@ -73,7 +73,7 @@ const chs = fs.readFileSync(path.resolve(__dirname, '../resources/script/chs.js'
   encoding: 'utf-8',
 });
 
-fs.writeFileSync(path.join(BUILD_PATH, 'main.js'), main.replace('const __TWCNL = {};', chs));
+fs.writeFileSync(path.join(BUILD_PATH, 'main.js'), main.replace('var __TWCNL = {};', chs));
 
 // build lang.js
 const langS: { [key: string]: string | string[] } & { 'REPLACE ALL'?: { [key: string]: string } } =
@@ -309,7 +309,7 @@ const cht = fs.readFileSync(path.resolve(__dirname, '../resources/script/cht.js'
   encoding: 'utf-8',
 });
 
-fs.writeFileSync(path.join(BUILD_PATH_CHT, 'main.js'), main.replace('const __TWCNL = {};', cht));
+fs.writeFileSync(path.join(BUILD_PATH_CHT, 'main.js'), main.replace('var __TWCNL = {};', cht));
 
 // save current.json
 fs.writeFileSync(path.join(INFO_PATH, 'current.json'), JSON.stringify(original, null, 2));

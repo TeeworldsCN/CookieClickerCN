@@ -1,6 +1,6 @@
-(function () {
-  const __TWCNL = {};
+var __TWCNL = {};
 
+(function () {
   const __TWCNG = {
     // 按键
     UNIT_TOGGLE_KEY: 90,
