@@ -14,7 +14,7 @@ var __TWCNL = {};
     ],
 
     // 替换数字格式化
-    FormatterCN: val => {
+    FormatterCN: (val, floats) => {
       let unit = '';
       if (!isFinite(val)) return __TWCNL.STR_INFINITY;
       if (val >= 1e4) {
@@ -33,11 +33,23 @@ var __TWCNL = {};
             unit = u[1] + unit;
           }
         }
+
+        const prec = Game.prefs.numbercndecimal;
+        if (Game.prefs.numbercnfixlen) {
+          return (
+            (Math.floor(val * prec) / prec)
+              .toFixed(Game.prefs.numbercndecimallen)
+              .replace(/\B(?=(\d{4})+(?!\d))/g, '\u2008') + unit
+          );
+        } else {
+          return (
+            (Math.floor(val * prec) / prec).toString().replace(/\B(?=(\d{4})+(?!\d))/g, '\u2008') +
+            unit
+          );
+        }
+      } else {
+        return val.toString();
       }
-      const prec = Game.prefs.numbercndecimal;
-      return (
-        (Math.floor(val * prec) / prec).toString().replace(/\B(?=(\d{4})+(?!\d))/g, '\u2008') + unit
-      );
     },
 
     // 替换科学计数法
@@ -83,6 +95,17 @@ var __TWCNL = {};
       return Math.floor(Math.round(val * 1000) / 1000)
         .toString()
         .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    },
+
+    SaveDataMap: {
+      s: 'numbercnsci',
+      c: 'numbercn',
+      l: 'numbercnscilen',
+      d: 'numbercndecimallen',
+      m: 'numbercnminunit',
+      t: 'numbercntrillion',
+      b: 'brandcn',
+      f: 'numbercnfixlen',
     },
   };
 
@@ -758,12 +781,12 @@ var __TWCNL = {};
             'numbercnDecimal',
             __TWCNL.STR_SETTING_DECIMAL,
             __TWCNL.STR_SETTING_DECIMAL_RIGHT,
-            () => Math.log10(Game.prefs.numbercndecimal),
-            () => Math.log10(Game.prefs.numbercndecimal),
+            () => Game.prefs.numbercndecimallen,
+            () => Game.prefs.numbercndecimallen,
             0,
             4,
             1,
-            "Game.prefs.numbercndecimal=Math.pow(10,Math.floor(l('numbercnDecimal').value));l('numbercnDecimalRightText').innerHTML='小数点后'+Math.floor(l('numbercnDecimal').value)+'位';BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+            "Game.prefs.numbercndecimallen=Math.floor(l('numbercnDecimal').value);Game.prefs.numbercndecimal=Math.pow(10,Game.prefs.numbercndecimallen);l('numbercnDecimalRightText').innerHTML='小数点后'+Math.floor(l('numbercnDecimal').value)+'位';BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
           ) +
           '<br>' +
           ModSlider(
@@ -778,6 +801,14 @@ var __TWCNL = {};
             "Game.prefs.numbercnminunit=l('numbercnMinUnit').value;l('numbercnMinUnitRightText').innerHTML=__TWCNL.CN_UNITS_MIN[l('numbercnMinUnit').value];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
           ) +
           '<br>' +
+          Game.WriteButton(
+            'numbercnfixlen',
+            'numbercnFixLenButton',
+            __TWCNL.STR_SETTING_FIXLEN + ON,
+            __TWCNL.STR_SETTING_FIXLEN + OFF,
+            'Game.UpdateMenu();BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
+          ) +
+          `<label>(${__TWCNL.STR_SETTING_FIXLEN_LABEL})</label><br>` +
           Game.WriteButton(
             'numbercntrillion',
             'numbercntrillionButton',
@@ -971,9 +1002,12 @@ var __TWCNL = {};
       if (this.lang == 'ZH-CN') {
         // 默认设置参数
         if (Game.prefs.numbercn == null) Game.prefs.numbercn = 1;
+        if (Game.prefs.numbercnfixlen == null) Game.prefs.numbercnfixlen = 0;
         if (Game.prefs.numbercnsci == null) Game.prefs.numbercnsci = 1;
         if (Game.prefs.numbercnscilen == null) Game.prefs.numbercnscilen = 0;
         if (Game.prefs.numbercndecimal == null) Game.prefs.numbercndecimal = 100;
+        if (Game.prefs.numbercndecimallen == null)
+          Game.prefs.numbercndecimallen = Math.log10(Game.prefs.numbercndecimal);
         if (Game.prefs.numbercnminunit == null) Game.prefs.numbercnminunit = 1;
         if (Game.prefs.numbercntrillion == null)
           Game.prefs.numbercntrillion = __TWCNL.DEF_SETTING_TRILLION;
@@ -1001,24 +1035,36 @@ var __TWCNL = {};
         AddMenuHook(this, ModPrefMenu);
       }
     },
+
     save: function () {
-      return JSON.stringify({
-        prefs: {
-          numbercnsci: Game.prefs.numbercnsci,
-          numbercn: Game.prefs.numbercn,
-          numbercnscilen: Game.prefs.numbercnscilen,
-          numbercndecimal: Game.prefs.numbercndecimal,
-          numbercnminunit: Game.prefs.numbercnminunit,
-          numbercntrillion: Game.prefs.numbercntrillion,
-          brandcn: Game.prefs.brandcn,
-        },
-      });
-    },
-    load: function (str) {
-      let data = JSON.parse(str);
-      for (let pref in data.prefs) {
-        Game.prefs[pref] = data.prefs[pref];
+      const p = {};
+      for (let key in __TWCNG.SaveDataMap) {
+        const option = __TWCNG.SaveDataMap[key];
+        p[key] = Game.prefs[option];
       }
+
+      return JSON.stringify({ p });
+    },
+
+    load: function (str) {
+      try {
+        let data = JSON.parse(str);
+        if (data.prefs) {
+          for (let pref in data.prefs) {
+            Game.prefs[pref] = data.prefs[pref];
+          }
+          Game.prefs.numbercndecimallen = Math.log10(Game.prefs.numbercndecimal);
+        } else if (data.p) {
+          for (let key in __TWCNG.SaveDataMap) {
+            const option = __TWCNG.SaveDataMap[key];
+            if (data.p[key] != null) Game.prefs[option] = data.p[key];
+          }
+          Game.prefs.numbercndecimal = Math.pow(10, Game.prefs.numbercndecimallen);
+        }
+      } catch (e) {
+        console.error(e);
+      }
+
       BeautifyAll();
       this.toggleBrandCookies();
     },

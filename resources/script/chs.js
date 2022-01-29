@@ -158,6 +158,8 @@ var __TWCNL = {
   STR_SETTING_SCILEN: '数字长度',
   STR_SETTING_SCILEN_VALUES: ['完整', '长', '中', '短'],
   STR_SETTING_SCILEN_LABEL: '可以调整数字显示的长度，普通数字和科学计数法均会被影响',
+  STR_SETTING_FIXLEN: '固定小数位数',
+  STR_SETTING_FIXLEN_LABEL: '启用后中文单位前的小数不会省略末尾的0。',
 
   STR_531:
     '“从前有座山，山上有座庙，[X]在庙里开了一家烘焙坊。一天，烘焙坊的门口传来了敲门声。[X]打开了门，抬头看到了一位散发着邪恶气息的老奶奶。老奶奶微微张口，用虚弱而诡异的声音，开始讲述她记忆中的小故事：',
