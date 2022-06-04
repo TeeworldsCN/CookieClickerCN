@@ -220,11 +220,10 @@ for (var key in original) {
           lastVersion[key].chinese[i] &&
           (lastVersion[key].chinese[i] == s || lastVersion[key].chinese[i]?.func == s?.func) &&
           lastVersion[key].tradchn &&
-          lastVersion[key].tradchn[i]
+          lastVersion[key].tradchn[i] &&
+          (typeof s?.func === 'undefined' ||
+            ('string' && typeof lastVersion[key].tradchn[i]?.func === 'string'))
         ) {
-          if (typeof s?.func === 'string') {
-            return lastVersion[key].tradchn[i];
-          }
           return lastVersion[key].tradchn[i];
         }
         if (typeof s?.func === 'string') {
@@ -234,7 +233,10 @@ for (var key in original) {
       });
     } else {
       if (typeof original[key].chinese?.func == 'string') {
-        if (lastVersion[key].chinese?.func == original[key].chinese?.func) {
+        if (
+          typeof lastVersion[key].chinese?.func == 'string' &&
+          lastVersion[key].chinese?.func == original[key].chinese?.func
+        ) {
           original[key].tradchn = lastVersion[key].tradchn;
         } else {
           original[key].tradchn = { func: T(original[key].chinese.func) };
