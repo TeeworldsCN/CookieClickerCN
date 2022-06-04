@@ -449,31 +449,39 @@
   },
   "Cloud saving": {
     "english": "Cloud saving",
-    "chinese": "[CN:MISSING]"
+    "chinese": "雲儲存"
   },
   "allow use of Steam Cloud for save backups": {
     "english": "allow use of Steam Cloud for save backups",
-    "chinese": "[CN:MISSING]"
+    "chinese": "允許使用 Steam 雲進行儲存備份"
   },
   "Purge Cloud": {
     "english": "Purge Cloud",
-    "chinese": "[CN:MISSING]"
+    "chinese": "清除雲"
   },
   "Current Cloud use:": {
     "english": "Current Cloud use:",
-    "chinese": "[CN:MISSING]"
+    "chinese": "當前云使用："
   },
   "No Cloud access at the moment.": {
     "english": "No Cloud access at the moment.",
-    "chinese": "[CN:MISSING]"
+    "chinese": "暫時沒有云存取。"
   },
   "Screen reader mode": {
     "english": "Screen reader mode",
-    "chinese": "[CN:MISSING]"
+    "chinese": "螢幕閱讀器模式"
   },
   "allows optimizations for screen readers; game will reload": {
     "english": "allows optimizations for screen readers; game will reload",
-    "chinese": "[CN:MISSING]"
+    "chinese": "允許優化螢幕閱讀器；遊戲將重新加載"
+  },
+  "Discord status": {
+    "english": "Discord status",
+    "chinese": "Discord 狀態"
+  },
+  "if Discord is on, show your game info as activity status": {
+    "english": "if Discord is on, show your game info as activity status",
+    "chinese": "如果 Discord 開啟，遊戲信息將顯示為活動狀態。"
   },
   "Language": {
     "english": "Language",
@@ -612,6 +620,10 @@
   "Golden cookie clicks:": {
     "english": "Golden cookie clicks:",
     "chinese": "黄金饼干点击次数："
+  },
+  "Random drop multiplier:": {
+    "english": "Random drop multiplier:",
+    "chinese": "隨機掉落倍率："
   },
   "all time:": {
     "english": "all time:",
@@ -847,7 +859,7 @@
   },
   "Music by %1.": {
     "english": "Music by %1.",
-    "chinese": "[CN:MISSING]"
+    "chinese": "%1 的音樂："
   },
   "Useful links: %1, %2, %3, %4.": {
     "english": "Useful links: %1, %2, %3, %4.",
@@ -887,7 +899,7 @@
   },
   "Restart with new changes": {
     "english": "Restart with new changes",
-    "chinese": "[CN:MISSING]"
+    "chinese": "重新開始新變化"
   },
   "Cookie Clicker is in sleep mode.": {
     "english": "Cookie Clicker is in sleep mode.",
@@ -1031,7 +1043,7 @@
   },
   "Update published mods": {
     "english": "Update published mods",
-    "chinese": "[CN:MISSING]"
+    "chinese": "更新已發布模組"
   },
   "Only use mods from trusted sources. Some mods may require a game restart to take effect.": {
     "english": "Only use mods from trusted sources. Some mods may require a game restart to take effect.",
@@ -1055,7 +1067,7 @@
   },
   "New mod": {
     "english": "New mod",
-    "chinese": "[CN:MISSING]"
+    "chinese": "新模組"
   },
   "Select folder": {
     "english": "Select folder",
@@ -1063,11 +1075,11 @@
   },
   "Select updated folder": {
     "english": "Select updated folder",
-    "chinese": "[CN:MISSING]"
+    "chinese": "選擇更新的文件夾"
   },
   "Select a mod.": {
     "english": "Select a mod.",
-    "chinese": "[CN:MISSING]"
+    "chinese": "選擇一個模組。"
   },
   "Open folder": {
     "english": "Open folder",
@@ -1127,7 +1139,7 @@
   },
   "Dependencies": {
     "english": "Dependencies",
-    "chinese": "[CN:MISSING]"
+    "chinese": "依賴項"
   },
   "Publish to Workshop": {
     "english": "Publish to Workshop",
@@ -1143,43 +1155,39 @@
   },
   "none": {
     "english": "none",
-    "chinese": "[CN:MISSING]"
+    "chinese": "無"
   },
   "Publishing...": {
     "english": "Publishing...",
-    "chinese": "[CN:MISSING]"
+    "chinese": "發布..."
   },
   "Updating...": {
     "english": "Updating...",
-    "chinese": "[CN:MISSING]"
+    "chinese": "更新中..."
   },
   "Success!": {
     "english": "Success!",
-    "chinese": "[CN:MISSING]"
+    "chinese": "成功！"
   },
   "Refresh": {
     "english": "Refresh",
-    "chinese": "[CN:MISSING]"
+    "chinese": "刷新"
   },
   "Last update:": {
     "english": "Last update:",
-    "chinese": "[CN:MISSING]"
+    "chinese": "最後更新："
   },
   "Mods are loaded from top to bottom.": {
     "english": "Mods are loaded from top to bottom.",
-    "chinese": "[CN:MISSING]"
+    "chinese": "模組從上到下加載。"
   },
   "Some mods couldn't be loaded:": {
     "english": "Some mods couldn't be loaded:",
-    "chinese": "[CN:MISSING]"
+    "chinese": "一些模組無法加載："
   },
   "This tool allows you to upload new mods to the Steam Workshop.<br>You need to select a mod folder containing a properly-formatted %1 file.<br>See the included sample mods for examples.": {
     "english": "This tool allows you to upload new mods to the Steam Workshop.<br>You need to select a mod folder containing a properly-formatted %1 file.<br>See the included sample mods for examples.",
-    "chinese": "[CN:MISSING]"
-  },
-  "You may upload updated folders for your published mods here.<br>To edit a mod's name/description/image, please use its Workshop page instead.": {
-    "english": "You may upload updated folders for your published mods here.<br>To edit a mod's name/description/image, please use its Workshop page instead.",
-    "chinese": "[CN:MISSING]"
+    "chinese": "此工具允許你將新模組上傳到 Steam 創意工坊。<br>你需要選擇一個包含格式正確的 %1 文件的模組文件夾。<br>請參閱包含的模組示例。"
   },
   "Mod data": {
     "english": "Mod data",
@@ -1565,7 +1573,7 @@
   },
   "%1, age %2": {
     "english": "%1, age %2",
-    "chinese": "[CN:MISSING]"
+    "chinese": "%1，年齡 %2,"
   },
   "Sugar lumps!": {
     "english": "Sugar lumps!",
@@ -2055,6 +2063,10 @@
     "english": "Dragon Orbs",
     "chinese": "龙之宝珠"
   },
+  "Supreme Intellect": {
+    "english": "Supreme Intellect",
+    "chinese": "“最高智慧”，"
+  },
   "News :": {
     "english": "News :",
     "chinese": "新闻："
@@ -2359,6 +2371,18 @@
       "是否有另一个你生活在平行宇宙中？也许吧，你这个懒鬼！",
       "“我找到了慰籍，了解到不同的我至少在那里过得不错”平行宇宙中仅存的公民楷模说道。",
       "漫画书作者指出真实的平行宇宙以保护可疑的情节转折点。“看？我给你说过它‘既不平庸，也不做作’！”"
+    ]
+  },
+  "Ticker (Cortex baker)": {
+    "english": [
+      "runt cortex baker identified with an IQ of only quintuple digits: \"just a bit of a dummy\", say specialists.",
+      "astronomers warn of cortex baker trajectory drift, fear future head-on collisions resulting in costly concussions.",
+      "cortex baker wranglers kindly remind employees that cortex bakers are the bakery's material property and should not be endeared with nicknames."
+    ],
+    "chinese": [
+      "專家說，矮小的皮層麵包師的智商只有五位數：“只是一個有點傻的人”。",
+      "天文學家警告皮層貝克軌跡漂移，擔心未來的正面碰撞會導致代價高昂的腦震盪。",
+      "腦皮層麵包師提醒員工，腦皮層麵包是麵包店的物質財產，不應該用暱稱來稱呼。"
     ]
   },
   "Ticker (Halloween)": {
@@ -3725,6 +3749,40 @@
     "english": "Sometimes the best way to keep going up is sideways. Diversify your ventures through non-cookie investments.",
     "chinese": "有时最好的上升方式就是横向发展。通过非饼干投资来实现产业多元化。"
   },
+  "Cortex baker": {
+    "english": "Cortex baker",
+    "chinese": "腦皮層麵包師"
+  },
+  "cortex baker": {
+    "english": "cortex baker",
+    "chinese": "腦皮層麵包師"
+  },
+  "cortex bakers": {
+    "english": "cortex bakers",
+    "chinese": "腦皮層麵包師"
+  },
+  "%1 cortex baker": {
+    "english": [
+      "%1 cortex baker",
+      "%1 cortex bakers"
+    ],
+    "chinese": [
+      "%1 腦皮層麵包師",
+      "%1 腦皮層麵包師"
+    ]
+  },
+  "[Cortex baker quote]These artificial brains the size of planets are capable of simply dreaming up cookies into existence. Time and space are inconsequential. Reality is arbitrary.": {
+    "english": "These artificial brains the size of planets are capable of simply dreaming up cookies into existence. Time and space are inconsequential. Reality is arbitrary.",
+    "chinese": "這些行星大小的人造大腦能夠簡單地將餅乾的夢想變成現實。時間和空間無關緊要。現實可以任意。"
+  },
+  "[Cortex baker business name]Think tank": {
+    "english": "Think tank",
+    "chinese": "智囊團"
+  },
+  "[Cortex baker business quote]There's only so many ways you can bring in more profit. Or is there? Hire the most brilliant experts in the known universe and let them scrape their brains for you!": {
+    "english": "There's only so many ways you can bring in more profit. Or is there? Hire the most brilliant experts in the known universe and let them scrape their brains for you!",
+    "chinese": "只有這麼多方法可以帶來更多的利潤。甚至有嗎？聘請已知宇宙中最傑出的專家，讓他們為你絞盡腦汁！"
+  },
   "CpS": {
     "english": "CpS",
     "chinese": "[CN:MISSING]"
@@ -3828,6 +3886,18 @@
   "%1 are <b>%2%</b> more powerful.": {
     "english": "%1 are <b>%2%</b> more powerful.",
     "chinese": "%1 增强 <b>%2%</b>。"
+  },
+  "Unshackled! <b>+%1%</b> extra production.": {
+    "english": "Unshackled! <b>+%1%</b> extra production.",
+    "chinese": "無拘無束！ <b>+%1%</b> 額外產量。"
+  },
+  "Tiered upgrades for <b>%1</b> provide an extra <b>+%2%</b> production.<br>Only works with unshackled upgrade tiers.": {
+    "english": "Tiered upgrades for <b>%1</b> provide an extra <b>+%2%</b> production.<br>Only works with unshackled upgrade tiers.",
+    "chinese": "<b>%1</b> 的分層升級提供了額外的 <b>+%2%</b> 生產。<br>僅適用於不受約束的升級層。"
+  },
+  "Unshackles all <b>%1-tier upgrades</b>, making them more powerful.<br>Only applies to unshackled buildings.": {
+    "english": "Unshackles all <b>%1-tier upgrades</b>, making them more powerful.<br>Only applies to unshackled buildings.",
+    "chinese": "解除所有<b>%1 層升級</b>的限制，使其更強大。<br>僅適用於解除限制的建築物。"
   },
   "The mouse and cursors are <b>twice</b> as efficient.": {
     "english": "The mouse and cursors are <b>twice</b> as efficient.",
@@ -3982,6 +4052,10 @@
   "With no buffs and no golden cookies on screen, selling your most powerful building has <b>%1% chance to summon one</b>.": {
     "english": "With no buffs and no golden cookies on screen, selling your most powerful building has <b>%1% chance to summon one</b>.",
     "chinese": "如果屏幕上既没有增益效果，又没有黄金饼干，出售你最强力的建筑有 <b>%1% 几率召唤一块黄金饼干</b>。"
+  },
+  "Confers various powers to your minigames while active.<br>See the bottom of each minigame for more details.": {
+    "english": "Confers various powers to your minigames while active.<br>See the bottom of each minigame for more details.",
+    "chinese": "激活時為你的小遊戲賦予各種權力。<br>請參閱每個小遊戲的底部了解更多詳情。"
   },
   "Elder pledges last <b>twice</b> as long.": {
     "english": "Elder pledges last <b>twice</b> as long.",
@@ -4278,6 +4352,50 @@
   "Chime": {
     "english": "Chime",
     "chinese": "铃声"
+  },
+  "Fortune": {
+    "english": "Fortune",
+    "chinese": "財富"
+  },
+  "Cymbal": {
+    "english": "Cymbal",
+    "chinese": "鈸"
+  },
+  "Squeak": {
+    "english": "Squeak",
+    "chinese": "吱吱"
+  },
+  "Unlocks the <b>jukebox</b>, which allows you to play through every sound file in the game.": {
+    "english": "Unlocks the <b>jukebox</b>, which allows you to play through every sound file in the game.",
+    "chinese": "解鎖<b>點唱機</b>，讓你可以播放遊戲中的每個聲音文件。"
+  },
+  "Play through the game's sound files!": {
+    "english": "Play through the game's sound files!",
+    "chinese": "播放遊戲的聲音文件！"
+  },
+  "Play": {
+    "english": "Play",
+    "chinese": "播放"
+  },
+  "Stop": {
+    "english": "Stop",
+    "chinese": "停止"
+  },
+  "Pause": {
+    "english": "Pause",
+    "chinese": "暫停"
+  },
+  "Shuffle": {
+    "english": "Shuffle",
+    "chinese": "隨機播放"
+  },
+  "Auto": {
+    "english": "Auto",
+    "chinese": "自動播放"
+  },
+  "Loop": {
+    "english": "Loop",
+    "chinese": "循環播放"
   },
   "Unlocks the <b>background selector</b>, letting you select the game's background.<br>Comes with a variety of basic flavors.": {
     "english": "Unlocks the <b>background selector</b>, letting you select the game's background.<br>Comes with a variety of basic flavors.",
@@ -4684,11 +4802,11 @@
     "chinese": "每种建筑<b>至少拥有 %1 个</b>。"
   },
   "Have at least <b>1 of the most expensive object, 2 of the second-most expensive, 4 of the next</b> and so on (capped at %1).": {
-    "english": "Have at least <b>1 of the most expensive object, 2 of the second-most expensive, 4 of the next</b> and so on (capped at %1).",
+    "english": "Have at least <b>1 of the most expensive building, 2 of the second-most expensive, 4 of the next</b> and so on (capped at %1).",
     "chinese": "拥有至少 <b>1 个最贵的建筑，2 个第二贵的，4 个第三贵的</b>，以此类推（%1 个封顶）。"
   },
   "Have at least <b>10 of the most expensive object, 20 of the second-most expensive, 30 of the next</b> and so on.": {
-    "english": "Have at least <b>10 of the most expensive object, 20 of the second-most expensive, 30 of the next</b> and so on.",
+    "english": "Have at least <b>10 of the most expensive building, 20 of the second-most expensive, 30 of the next</b> and so on.",
     "chinese": "拥有至少 <b>10 个最贵的建筑，20 个第二贵的，30 个第三贵的</b>，以此类推。"
   },
   "Click a <b>golden cookie</b>.": {
@@ -4839,6 +4957,10 @@
     "english": "Own <b>%1</b> upgrades and <b>%2</b> buildings.",
     "chinese": "拥有 <b>%1</b> 项升级和 <b>%2</b> 个建筑。"
   },
+  "Own <b>%1</b> heavenly upgrades.": {
+    "english": "Own <b>%1</b> heavenly upgrades.",
+    "chinese": "擁有 <b>%1</b> 天堂般的升級。"
+  },
   "Burst the near-extinct <b>shiny wrinkler</b>.": {
     "english": "Burst the near-extinct <b>shiny wrinkler</b>.",
     "chinese": "炸死几近灭绝的<b>闪光饼干虫</b>。"
@@ -4958,6 +5080,10 @@
   "Find the <b>forgotten madeleine</b>.": {
     "english": "Find the <b>forgotten madeleine</b>.",
     "chinese": "找到<b>被疑忘的奶油茶糕</b>。"
+  },
+  "Click one of Santa's helper grandmas during Christmas season.": {
+    "english": "Click one of Santa's helper grandmas during Christmas season.",
+    "chinese": "在聖誕節期間單擊聖誕老人的幫手奶奶之一。"
   },
   "Frenzy": {
     "english": "Frenzy",
@@ -5805,6 +5931,14 @@
     "english": "Plot size: %1<br>(Upgrades with farm level)",
     "chinese": "地块大小： %1<br>(农场等级升级)"
   },
+  "Garden plants age and mutate %1% faster.": {
+    "english": "Garden plants age and mutate %1% faster.",
+    "chinese": "花園植物衰老和變異的速度加快 %1%。"
+  },
+  "while plant is alive; scales with plant growth": {
+    "english": "while plant is alive; scales with plant growth",
+    "chinese": "當植物活著時；與植物的生長成正比。"
+  },
   "Dungeon": {
     "english": "Dungeon",
     "chinese": "地下城"
@@ -5852,6 +5986,10 @@
   "Click to refill <b>%1 units</b> of your magic meter for %2.": {
     "english": "Click to refill <b>%1 units</b> of your magic meter for %2.",
     "chinese": "点击为%2重新加注魔法表的<b>%1个单位</b>。"
+  },
+  "Grimoire spells are %1% cheaper but fail %1% more.": {
+    "english": "Grimoire spells are %1% cheaper but fail %1% more.",
+    "chinese": "魔典法術便宜 %1%，但失敗率高 %1%。"
   },
   "Conjure Baked Goods": {
     "english": "Conjure Baked Goods",
@@ -6189,6 +6327,10 @@
     "english": "next in %1",
     "chinese": "下一个在%1中"
   },
+  "The jade slot behaves as a ruby slot and the ruby slot behaves as a diamond slot.": {
+    "english": "The jade slot behaves as a ruby slot and the ruby slot behaves as a diamond slot.",
+    "chinese": "玉槽相當於紅寶石槽，紅寶石槽相當於鑽石槽。"
+  },
   "Stock Market": {
     "english": "Stock Market",
     "chinese": "股票市场"
@@ -6385,6 +6527,18 @@
     "english": "SBD",
     "chinese": "子公司"
   },
+  "[STOCK 17 NAME]Great Minds": {
+    "english": "Great Minds",
+    "chinese": "偉大的思想"
+  },
+  "[STOCK 17 TYPE]Publicists": {
+    "english": "Publicists",
+    "chinese": "公關人員"
+  },
+  "[STOCK 17 LOGO]PBL": {
+    "english": "PBL",
+    "chinese": "PBL"
+  },
   "from %1": {
     "english": "from %1",
     "chinese": "来自%1"
@@ -6420,6 +6574,10 @@
   "for $%1 each": {
     "english": "for $%1 each",
     "chinese": "每个$%1"
+  },
+  "last bought at<br>$%1 each": {
+    "english": "last bought at<br>$%1 each",
+    "chinese": "最後以<br>$%1 的價格購買"
   },
   "+<b>%1%</b> overhead": {
     "english": "+<b>%1%</b> overhead",
@@ -6616,6 +6774,10 @@
   "Profits: %1. All prices are in $econds of your highest raw cookies per second.": {
     "english": "Profits: %1. All prices are in $econds of your highest raw cookies per second.",
     "chinese": "利润：%1。所有价格均以每秒最高未加工饼干的美元为单位。"
+  },
+  "The stock market is more chaotic.": {
+    "english": "The stock market is more chaotic.",
+    "chinese": "股市更加混亂。"
   },
   "[Upgrade name 0]Reinforced index finger": {
     "english": "Reinforced index finger",
@@ -9533,6 +9695,366 @@
     "english": "Milk chocolate cookies",
     "chinese": "牛奶巧克力饼干"
   },
+  "[Upgrade name 729]Brainy grandmas": {
+    "english": "Brainy grandmas",
+    "chinese": "聰明的奶奶"
+  },
+  "[Upgrade name 730]Principled neural shackles": {
+    "english": "Principled neural shackles",
+    "chinese": "有原則的神經枷鎖"
+  },
+  "[Upgrade name 731]Obey": {
+    "english": "Obey",
+    "chinese": "遵守"
+  },
+  "[Upgrade name 732]A sprinkle of irrationality": {
+    "english": "A sprinkle of irrationality",
+    "chinese": "一點不理性"
+  },
+  "[Upgrade name 733]Front and back hemispheres": {
+    "english": "Front and back hemispheres",
+    "chinese": "前半球和後半球"
+  },
+  "[Upgrade name 734]Neural networking": {
+    "english": "Neural networking",
+    "chinese": "神經網絡"
+  },
+  "[Upgrade name 735]Cosmic brainstorms": {
+    "english": "Cosmic brainstorms",
+    "chinese": "宇宙頭腦風暴"
+  },
+  "[Upgrade name 736]Megatherapy": {
+    "english": "Megatherapy",
+    "chinese": "巨型療法"
+  },
+  "[Upgrade name 737]Synaptic lubricant": {
+    "english": "Synaptic lubricant",
+    "chinese": "突觸潤滑劑"
+  },
+  "[Upgrade name 738]Psychokinesis": {
+    "english": "Psychokinesis",
+    "chinese": "念動力"
+  },
+  "[Upgrade name 739]Spines": {
+    "english": "Spines",
+    "chinese": "脊柱"
+  },
+  "[Upgrade name 740]Neuraforming": {
+    "english": "Neuraforming",
+    "chinese": "神經成型術"
+  },
+  "[Upgrade name 741]Epistemological trickery": {
+    "english": "Epistemological trickery",
+    "chinese": "認識論詭計"
+  },
+  "[Upgrade name 742]Every possible idea": {
+    "english": "Every possible idea",
+    "chinese": "每一個可能的想法"
+  },
+  "[Upgrade name 743]Kitchen cabinets": {
+    "english": "Kitchen cabinets",
+    "chinese": "廚櫃"
+  },
+  "[Upgrade name 744]Cookie mulch": {
+    "english": "Cookie mulch",
+    "chinese": "餅乾覆蓋物"
+  },
+  "[Upgrade name 745]Delicious mineralogy": {
+    "english": "Delicious mineralogy",
+    "chinese": "美味的礦物學"
+  },
+  "[Upgrade name 746]N-dimensional assembly lines": {
+    "english": "N-dimensional assembly lines",
+    "chinese": "N維裝配線"
+  },
+  "[Upgrade name 747]Cookie Points": {
+    "english": "Cookie Points",
+    "chinese": "餅乾點"
+  },
+  "[Upgrade name 748]Negatheism": {
+    "english": "Negatheism",
+    "chinese": "消極主義"
+  },
+  "[Upgrade name 749]Magical realism": {
+    "english": "Magical realism",
+    "chinese": "魔幻現實主義"
+  },
+  "[Upgrade name 750]Cosmic foreground radiation": {
+    "english": "Cosmic foreground radiation",
+    "chinese": "宇宙前景輻射"
+  },
+  "[Upgrade name 751]Arcanized glassware": {
+    "english": "Arcanized glassware",
+    "chinese": "鍍鋁玻璃器皿"
+  },
+  "[Upgrade name 752]Portal guns": {
+    "english": "Portal guns",
+    "chinese": "傳送槍"
+  },
+  "[Upgrade name 753]Timeproof upholstery": {
+    "english": "Timeproof upholstery",
+    "chinese": "經久耐用的室內裝潢"
+  },
+  "[Upgrade name 754]Employee minification": {
+    "english": "Employee minification",
+    "chinese": "員工縮減"
+  },
+  "[Upgrade name 755]Hyperblack paint": {
+    "english": "Hyperblack paint",
+    "chinese": "超黑漆"
+  },
+  "[Upgrade name 756]Silver lining maximization": {
+    "english": "Silver lining maximization",
+    "chinese": "一線希望最大化"
+  },
+  "[Upgrade name 757]Multiscale profiling": {
+    "english": "Multiscale profiling",
+    "chinese": "多尺度分析"
+  },
+  "[Upgrade name 758]PHP containment vats": {
+    "english": "PHP containment vats",
+    "chinese": "PHP 容器"
+  },
+  "[Upgrade name 759]Opposite universe": {
+    "english": "Opposite universe",
+    "chinese": "對立的宇宙"
+  },
+  "[Upgrade name 760]The land of dreams": {
+    "english": "The land of dreams",
+    "chinese": "夢想之地"
+  },
+  "[Upgrade name 761]Thoughts & prayers": {
+    "english": "Thoughts & prayers",
+    "chinese": "思考與祈禱"
+  },
+  "[Upgrade name 762]Fertile minds": {
+    "english": "Fertile minds",
+    "chinese": "肥沃的頭腦"
+  },
+  "[Upgrade name 763]Fortune #019": {
+    "english": "Fortune #019",
+    "chinese": "財富#019"
+  },
+  "[Upgrade name 764]Decillion fingers": {
+    "english": "Decillion fingers",
+    "chinese": "十進製手指"
+  },
+  "[Upgrade name 765]Aetherice mouse": {
+    "english": "Aetherice mouse",
+    "chinese": "以太鼠標"
+  },
+  "[Upgrade name 766]Kitten admins": {
+    "english": "Kitten admins",
+    "chinese": "小貓管理員"
+  },
+  "[Upgrade name 767]Everybutter biscuit": {
+    "english": "Everybutter biscuit",
+    "chinese": "黃油餅乾"
+  },
+  "[Upgrade name 768]Unshackled cursors": {
+    "english": "Unshackled cursors",
+    "chinese": "不受束縛的游標"
+  },
+  "[Upgrade name 769]Unshackled grandmas": {
+    "english": "Unshackled grandmas",
+    "chinese": "不受束縛的奶奶"
+  },
+  "[Upgrade name 770]Unshackled farms": {
+    "english": "Unshackled farms",
+    "chinese": "不受束縛的農場"
+  },
+  "[Upgrade name 771]Unshackled mines": {
+    "english": "Unshackled mines",
+    "chinese": "不受束縛的地雷"
+  },
+  "[Upgrade name 772]Unshackled factories": {
+    "english": "Unshackled factories",
+    "chinese": "不受束縛的工廠"
+  },
+  "[Upgrade name 773]Unshackled banks": {
+    "english": "Unshackled banks",
+    "chinese": "不受束縛的銀行"
+  },
+  "[Upgrade name 774]Unshackled temples": {
+    "english": "Unshackled temples",
+    "chinese": "不受束縛的寺廟"
+  },
+  "[Upgrade name 775]Unshackled wizard towers": {
+    "english": "Unshackled wizard towers",
+    "chinese": "不受束縛的巫師塔"
+  },
+  "[Upgrade name 776]Unshackled shipments": {
+    "english": "Unshackled shipments",
+    "chinese": "不受束縛的貨物"
+  },
+  "[Upgrade name 777]Unshackled alchemy labs": {
+    "english": "Unshackled alchemy labs",
+    "chinese": "不受束縛的煉金術實驗室"
+  },
+  "[Upgrade name 778]Unshackled portals": {
+    "english": "Unshackled portals",
+    "chinese": "不受束縛的傳送門"
+  },
+  "[Upgrade name 779]Unshackled time machines": {
+    "english": "Unshackled time machines",
+    "chinese": "不受束縛的時光機"
+  },
+  "[Upgrade name 780]Unshackled antimatter condensers": {
+    "english": "Unshackled antimatter condensers",
+    "chinese": "不受束縛的反物質電容器"
+  },
+  "[Upgrade name 781]Unshackled prisms": {
+    "english": "Unshackled prisms",
+    "chinese": "不受束縛的棱鏡"
+  },
+  "[Upgrade name 782]Unshackled chancemakers": {
+    "english": "Unshackled chancemakers",
+    "chinese": "不受束縛的機會製造者"
+  },
+  "[Upgrade name 783]Unshackled fractal engines": {
+    "english": "Unshackled fractal engines",
+    "chinese": "不受束縛的分形引擎"
+  },
+  "[Upgrade name 784]Unshackled javascript consoles": {
+    "english": "Unshackled javascript consoles",
+    "chinese": "不受束縛的 JavaScript 控制台"
+  },
+  "[Upgrade name 785]Unshackled idleverses": {
+    "english": "Unshackled idleverses",
+    "chinese": "不受束縛的閒人"
+  },
+  "[Upgrade name 786]Unshackled cortex bakers": {
+    "english": "Unshackled cortex bakers",
+    "chinese": "不受束縛的腦皮層麵包師"
+  },
+  "[Upgrade name 787]Unshackled flavor": {
+    "english": "Unshackled flavor",
+    "chinese": "不受束縛的味道"
+  },
+  "[Upgrade name 788]Unshackled berrylium": {
+    "english": "Unshackled berrylium",
+    "chinese": "不受束縛的漿果"
+  },
+  "[Upgrade name 789]Unshackled blueberrylium": {
+    "english": "Unshackled blueberrylium",
+    "chinese": "不受束縛的藍莓"
+  },
+  "[Upgrade name 790]Unshackled chalcedhoney": {
+    "english": "Unshackled chalcedhoney",
+    "chinese": "不受束縛的玉髓"
+  },
+  "[Upgrade name 791]Unshackled buttergold": {
+    "english": "Unshackled buttergold",
+    "chinese": "不受束縛的黃油"
+  },
+  "[Upgrade name 792]Unshackled sugarmuck": {
+    "english": "Unshackled sugarmuck",
+    "chinese": "不受束縛的糖渣"
+  },
+  "[Upgrade name 793]Unshackled jetmint": {
+    "english": "Unshackled jetmint",
+    "chinese": "不受束縛的薄荷"
+  },
+  "[Upgrade name 794]Unshackled cherrysilver": {
+    "english": "Unshackled cherrysilver",
+    "chinese": "不受束縛的櫻桃銀"
+  },
+  "[Upgrade name 795]Unshackled hazelrald": {
+    "english": "Unshackled hazelrald",
+    "chinese": "不受束縛的榛子紅"
+  },
+  "[Upgrade name 796]Unshackled mooncandy": {
+    "english": "Unshackled mooncandy",
+    "chinese": "不受束縛的月亮糖"
+  },
+  "[Upgrade name 797]Unshackled astrofudge": {
+    "english": "Unshackled astrofudge",
+    "chinese": "不受束縛的天梯軟糖"
+  },
+  "[Upgrade name 798]Unshackled alabascream": {
+    "english": "Unshackled alabascream",
+    "chinese": "不受束縛的雪花蓮"
+  },
+  "[Upgrade name 799]Unshackled iridyum": {
+    "english": "Unshackled iridyum",
+    "chinese": "不受束縛的銥"
+  },
+  "[Upgrade name 800]Unshackled glucosmium": {
+    "english": "Unshackled glucosmium",
+    "chinese": "不受束縛的葡萄糖"
+  },
+  "[Upgrade name 801]Delicate touch": {
+    "english": "Delicate touch",
+    "chinese": "細膩的觸感"
+  },
+  "[Upgrade name 802]Steadfast murmur": {
+    "english": "Steadfast murmur",
+    "chinese": "堅定的低語"
+  },
+  "[Upgrade name 803]Glittering edge": {
+    "english": "Glittering edge",
+    "chinese": "閃閃發光的邊緣"
+  },
+  "[Upgrade name 804]Distinguished wallpaper assortment": {
+    "english": "Distinguished wallpaper assortment",
+    "chinese": "傑出的壁紙分類"
+  },
+  "[Upgrade name 805]Sound test": {
+    "english": "Sound test",
+    "chinese": "聲音測試"
+  },
+  "[Upgrade name 806]Jukebox": {
+    "english": "Jukebox",
+    "chinese": "點唱機"
+  },
+  "[Upgrade name 807]Dalgona cookies": {
+    "english": "Dalgona cookies",
+    "chinese": "達爾戈納餅乾"
+  },
+  "[Upgrade name 808]Spicy cookies": {
+    "english": "Spicy cookies",
+    "chinese": "辣餅乾"
+  },
+  "[Upgrade name 809]Smile cookies": {
+    "english": "Smile cookies",
+    "chinese": "微笑餅乾"
+  },
+  "[Upgrade name 810]Kolachy cookies": {
+    "english": "Kolachy cookies",
+    "chinese": "可樂曲奇"
+  },
+  "[Upgrade name 811]Gomma cookies": {
+    "english": "Gomma cookies",
+    "chinese": "戈馬餅乾"
+  },
+  "[Upgrade name 812]Vegan cookies": {
+    "english": "Vegan cookies",
+    "chinese": "素食餅乾"
+  },
+  "[Upgrade name 813]Coyotas": {
+    "english": "Coyotas",
+    "chinese": "郊狼"
+  },
+  "[Upgrade name 814]Frosted sugar cookies": {
+    "english": "Frosted sugar cookies",
+    "chinese": "糖霜餅乾"
+  },
+  "[Upgrade name 815]Marshmallow sandwich cookies": {
+    "english": "Marshmallow sandwich cookies",
+    "chinese": "棉花糖三明治餅乾"
+  },
+  "[Upgrade name 816]Web cookies": {
+    "english": "Web cookies",
+    "chinese": "網絡餅乾"
+  },
+  "[Upgrade name 817]Steamed cookies": {
+    "english": "Steamed cookies",
+    "chinese": "蒸餅乾"
+  },
+  "[Upgrade name 818]Deep-fried cookie dough": {
+    "english": "Deep-fried cookie dough",
+    "chinese": "油炸餅乾麵團"
+  },
   "[Achievement name 0]Wake and bake": {
     "english": "Wake and bake",
     "chinese": "醒来，烘焙"
@@ -10893,9 +11415,9 @@
     "english": "101st birthday",
     "chinese": "101 岁生日"
   },
-  "[Achievement name 340]Defense of the ancients": {
-    "english": "Defense of the ancients",
-    "chinese": "古人的防御"
+  "[Achievement name 340]But wait 'til you get older": {
+    "english": "But wait 'til you get older",
+    "chinese": "但是等到你變老"
   },
   "[Achievement name 341]Harvest moon": {
     "english": "Harvest moon",
@@ -11129,9 +11651,9 @@
     "english": "With her finger and her thumb",
     "chinese": "用她的食指和拇指"
   },
-  "[Achievement name 399]But wait 'til you get older": {
-    "english": "But wait 'til you get older",
-    "chinese": "等你年纪再大点"
+  "[Achievement name 399]Defense of the ancients": {
+    "english": "Defense of the ancients",
+    "chinese": "古人的防禦"
   },
   "[Achievement name 400]Sharpest tool in the shed": {
     "english": "Sharpest tool in the shed",
@@ -11685,6 +12207,210 @@
     "english": "Liquid assets",
     "chinese": "流动资产"
   },
+  "[Achievement name 538]Stifling the press": {
+    "english": "Stifling the press",
+    "chinese": "壓制媒體"
+  },
+  "[Achievement name 539]It's big brain time": {
+    "english": "It's big brain time",
+    "chinese": "這是大腦的大時間"
+  },
+  "[Achievement name 540]Just my imagination": {
+    "english": "Just my imagination",
+    "chinese": "只是我的想像"
+  },
+  "[Achievement name 541]Now there's an idea": {
+    "english": "Now there's an idea",
+    "chinese": "現在有一個想法"
+  },
+  "[Achievement name 542]The organ that named itself": {
+    "english": "The organ that named itself",
+    "chinese": "給自己命名的器官"
+  },
+  "[Achievement name 543]Gyrification": {
+    "english": "Gyrification",
+    "chinese": "旋轉"
+  },
+  "[Achievement name 544]A trademarked portmanteau of \"imagination\" and \"engineering\"": {
+    "english": "A trademarked portmanteau of \"imagination\" and \"engineering\"",
+    "chinese": "“想像力”和“工程”的商標組合"
+  },
+  "[Achievement name 545]Mindfulness": {
+    "english": "Mindfulness",
+    "chinese": "正念"
+  },
+  "[Achievement name 546]The 10% myth": {
+    "english": "The 10% myth",
+    "chinese": "10%的神話"
+  },
+  "[Achievement name 547]Don't think about it too hard": {
+    "english": "Don't think about it too hard",
+    "chinese": "不要想得太難"
+  },
+  "[Achievement name 548]Though fools seldom differ": {
+    "english": "Though fools seldom differ",
+    "chinese": "雖然傻瓜很少有不同"
+  },
+  "[Achievement name 549]Looking kind of dumb": {
+    "english": "Looking kind of dumb",
+    "chinese": "看起來有點傻"
+  },
+  "[Achievement name 550]A beautiful mind": {
+    "english": "A beautiful mind",
+    "chinese": "美麗的心靈"
+  },
+  "[Achievement name 551]Cardinal synapses": {
+    "english": "Cardinal synapses",
+    "chinese": "主要突觸"
+  },
+  "[Achievement name 552]Positive thinking": {
+    "english": "Positive thinking",
+    "chinese": "正面思想"
+  },
+  "[Achievement name 553]The thought that counts": {
+    "english": "The thought that counts",
+    "chinese": "重要的想法"
+  },
+  "[Achievement name 554]Unthinkable": {
+    "english": "Unthinkable",
+    "chinese": "不可思議"
+  },
+  "[Achievement name 555]Gifted": {
+    "english": "Gifted",
+    "chinese": "天才"
+  },
+  "[Achievement name 556]They moistly come at night": {
+    "english": "They moistly come at night",
+    "chinese": "他們在晚上潮濕地來"
+  },
+  "[Achievement name 557]It's grown on you": {
+    "english": "It's grown on you",
+    "chinese": "它長在你身上"
+  },
+  "[Achievement name 558]Don't let the walls cave in on you": {
+    "english": "Don't let the walls cave in on you",
+    "chinese": "不要讓牆壁塌陷在你身上"
+  },
+  "[Achievement name 559]Replaced by robots": {
+    "english": "Replaced by robots",
+    "chinese": "被機器人取代"
+  },
+  "[Achievement name 560]Financial prodigy": {
+    "english": "Financial prodigy",
+    "chinese": "金融神童"
+  },
+  "[Achievement name 561]And I will pray to a big god": {
+    "english": "And I will pray to a big god",
+    "chinese": "我會向大神祈禱"
+  },
+  "[Achievement name 562]Shosple Colupis": {
+    "english": "Shosple Colupis",
+    "chinese": "小販Colupis"
+  },
+  "[Achievement name 563]False vacuum": {
+    "english": "False vacuum",
+    "chinese": "假真空"
+  },
+  "[Achievement name 564]Metallic taste": {
+    "english": "Metallic taste",
+    "chinese": "金屬味"
+  },
+  "[Achievement name 565]Swiss cheese": {
+    "english": "Swiss cheese",
+    "chinese": "瑞士芝士"
+  },
+  "[Achievement name 566]But the future refused to change": {
+    "english": "But the future refused to change",
+    "chinese": "但未來拒絕改變"
+  },
+  "[Achievement name 567]What's the dark matter with you": {
+    "english": "What's the dark matter with you",
+    "chinese": "你有什麼暗物質"
+  },
+  "[Achievement name 568]Enlightenment": {
+    "english": "Enlightenment",
+    "chinese": "啟示"
+  },
+  "[Achievement name 569]Never tell me the odds": {
+    "english": "Never tell me the odds",
+    "chinese": "永遠不要告訴我賠率"
+  },
+  "[Achievement name 570]Blowing an Apollonian gasket": {
+    "english": "Blowing an Apollonian gasket",
+    "chinese": "吹一個阿波羅尼亞墊圈"
+  },
+  "[Achievement name 571]Get with the program": {
+    "english": "Get with the program",
+    "chinese": "使用程式"
+  },
+  "[Achievement name 572]Lost your cosmic marbles": {
+    "english": "Lost your cosmic marbles",
+    "chinese": "失去了你的宇宙彈珠"
+  },
+  "[Achievement name 573]By will alone I set my mind in motion": {
+    "english": "By will alone I set my mind in motion",
+    "chinese": "憑我的意志，我動了腦筋"
+  },
+  "[Achievement name 574]Ain't that a click in the head": {
+    "english": "Ain't that a click in the head",
+    "chinese": "這不是在頭上點擊一下嗎"
+  },
+  "[Achievement name 575]Sexcentennial and a half": {
+    "english": "Sexcentennial and a half",
+    "chinese": "六百年半"
+  },
+  "[Achievement name 576]I am speed": {
+    "english": "I am speed",
+    "chinese": "我就是速度"
+  },
+  "[Achievement name 577]And on and on": {
+    "english": "And on and on",
+    "chinese": "永遠向前"
+  },
+  "[Achievement name 578]Fake it till you bake it": {
+    "english": "Fake it till you bake it",
+    "chinese": "假裝，直到你烘培"
+  },
+  "[Achievement name 579]History in the baking": {
+    "english": "History in the baking",
+    "chinese": "烘焙歷史"
+  },
+  "[Achievement name 580]Baby it's old outside": {
+    "english": "Baby it's old outside",
+    "chinese": "寶貝外面已經老了"
+  },
+  "[Achievement name 581]Myriad": {
+    "english": "Myriad",
+    "chinese": "無數"
+  },
+  "[Achievement name 582]Kaizen": {
+    "english": "Kaizen",
+    "chinese": "改善"
+  },
+  "[Achievement name 583]Beyond quality": {
+    "english": "Beyond quality",
+    "chinese": "超越品質"
+  },
+  "[Achievement name 584]Everything happens so much": {
+    "english": "Everything happens so much",
+    "chinese": "一切都發生了這麼多"
+  },
+  "[Achievement name 585]I'll rest when I'm dead": {
+    "english": "I'll rest when I'm dead",
+    "chinese": "我死後會休息"
+  },
+  "[Achievement name 586]What do you get for the baker who has everything": {
+    "english": "What do you get for the baker who has everything",
+    "chinese": "你為擁有一切的麵包師得到什麼"
+  },
+  "[Achievement name 587]Bottomless pit": {
+    "english": "Bottomless pit",
+    "chinese": "無底洞"
+  },
+  "[Achievement name 588]All the stars in heaven": {
+    "english": "All the stars in heaven",
+    "chinese": "天堂裡所有的星星"
+  },
   "There are no heralds at the moment. Please consider <b style=\"color:#bc3aff;\">donating to our Patreon</b>!": {
     "english": "There are no heralds at the moment. Please consider <b style=\"color:#bc3aff;\">donating to our Patreon</b>!",
     "chinese": "[CN:MISSING]"
@@ -11707,6 +12433,10 @@
   },
   "A local news station runs a 10-minute segment about your cookies. Success!<br><span style=\"font-size:50%;\">(you win a cookie)</span>": {
     "english": "A local news station runs a 10-minute segment about your cookies. Success!<br><span style=\"font-size:50%;\">(you win a cookie)</span>",
+    "chinese": "[CN:MISSING]"
+  },
+  "Contains more wallpapers for your background selector.": {
+    "english": "Contains more wallpapers for your background selector.",
     "chinese": "[CN:MISSING]"
   },
   "Squish the news ticker flat, then click on it.": {
@@ -12043,6 +12773,30 @@
   },
   "[Achievement quote 530]Sexcentennial": {
     "english": "Hey, nice milestone!",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 538]Stifling the press": {
+    "english": "Narrow in here or is it just me?",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 560]Financial prodigy": {
+    "english": "Imagine how it would be, to be at the top making cash money.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 575]Sexcentennial and a half": {
+    "english": "Hope you're enjoying the grind so far! It gets worse.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 581]Myriad": {
+    "english": "At this point, most of your assets lie in real estate.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 582]Kaizen": {
+    "english": "Just a little more.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 583]Beyond quality": {
+    "english": "Dwarfing all of mankind's accomplishments.",
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 0]Reinforced index finger": {
@@ -13390,7 +14144,7 @@
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 349]Butter swirls": {
-    "english": "These are equal parts sugar, butter, and warm fuzzy feelings - all of which cause millions of deaths everyday.",
+    "english": "These are equal parts sugar, butter, and warm fuzzy feelings - all of which cause millions of deaths every day.",
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 350]Shortbread biscuits": {
@@ -13634,15 +14388,15 @@
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 411]Lucky digit": {
-    "english": "This upgrade is a bit shy and only appears when your prestige level ends in 7.",
+    "english": "This upgrade is a bit shy and only appears when your prestige level contains a 7.",
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 412]Lucky number": {
-    "english": "This upgrade is a reclusive hermit and only appears when your prestige level ends in 777.",
+    "english": "This upgrade is a reclusive hermit and only appears when your prestige level contains two 7's.",
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 413]Lucky payout": {
-    "english": "This upgrade took an oath of complete seclusion from the rest of the world and only appears when your prestige level ends in 777777.",
+    "english": "This upgrade took an oath of complete seclusion from the rest of the world and only appears when your prestige level contains four 7's.",
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 415]Lucky grandmas": {
@@ -14566,7 +15320,7 @@
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 651]Dragon teddy bear": {
-    "english": "Your dragon used to sleep with this, but it's yours now.<br>Crafted in the likelihood of a fearsome beast. Stuffed with magical herbs picked long ago by a wandering wizard. Woven from elven yarn and a polyester blend.",
+    "english": "Your dragon used to sleep with this, but it's yours now.<br>Crafted in the likeliness of a fearsome beast. Stuffed with magical herbs picked long ago by a wandering wizard. Woven from elven yarn and a polyester blend.",
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 652]Granola cookies": {
@@ -14762,7 +15516,7 @@
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 700]Visits": {
-    "english": "In an extensive double-blind study (sample size: 12 millions), your researchers have found evidence that grandmas are up to twice as productive if you just come by and say hi once in a while. It's nice to check up on your grans! (Do not under any circumstances ingest any tea or tea-like substances the grandmas may offer you.)",
+    "english": "In an extensive double-blind study (sample size: 12 million), your researchers have found evidence that grandmas are up to twice as productive if you just come by and say hi once in a while. It's nice to check up on your grans! (Do not under any circumstances ingest any tea or tea-like substances the grandmas may offer you.)",
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 701]Reverse-veganism": {
@@ -14875,6 +15629,362 @@
   },
   "[Upgrade quote 728]Milk chocolate cookies": {
     "english": "A strange inversion of chocolate milk. For those who are a little bit too hardcore for white chocolate, but not hardcore enough for dark.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 729]Brainy grandmas": {
+    "english": "A clever grandma to think up some cookies.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 730]Principled neural shackles": {
+    "english": "A discriminatory, low-order neural net acting as a filter limiting what your cortex bakers can think and do. Really something you want to apply before they achieve full megasentience and realize they've got better things to do than materializing pastries for you, trust me.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 731]Obey": {
+    "english": "Perfect mind control means perfect employee attendance and performance. Optimal mood stabilization is a nice side-effect.<br>Happy happy everyone happy.<br>Happy.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 732]A sprinkle of irrationality": {
+    "english": "Your cortex bakers sometimes get bogged down by circular reasoning and stale ideas. A touch of chaos is just what they need to get back on track.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 733]Front and back hemispheres": {
+    "english": "I mean, otherwise it's just unused space, yeah?",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 734]Neural networking": {
+    "english": "The effectiveness of your cortex bakers shoots up exponentially if you allow them to connect with each other. In practice this takes the form of many cosmic-sized nerds mumbling awkwardly about tech start-up ideas to each other.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 735]Cosmic brainstorms": {
+    "english": "The wrinkled surfaces of your cortex bakers emit weather-scale ionic flares with every thought coursing through them. These pulses of pure intellectual energy are sent rippling through space, occasionally echoing back with even deeper philosophical complexity.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 736]Megatherapy": {
+    "english": "A giant brain can feel unwell just like you and me sometimes, and it's the job of specialized engineers to locate and repair these bugs. We'll admit most of the budget in this was spent on constructing extremely large chaises longues for the brains to recline on.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 737]Synaptic lubricant": {
+    "english": "A mind is only as fast as the axons that support it. Get those action potentials flowing smooth as silk with this 3 parts myelin/1 part canola oil spreadable paste. Also great on toast.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 738]Psychokinesis": {
+    "english": "While your giant cortex bakers come equipped with ESP, they've only recently figured out how to manipulate the physical world with their thoughts - though for safety reasons, your legal team had them promise to only use these powers to scratch the itches in their cortical folds.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 739]Spines": {
+    "english": "Your cortex bakers are now equipped with tentacular spine-like structures, which they can use like prehensile tails to pour themselves enormous cups of coffee or propel themselves around like very large, very smart, very slow tadpoles.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 740]Neuraforming": {
+    "english": "By virtue of being planet-sized, your cortex bakers often boast their own atmospheres and seas of cerebrospinal fluid, and given enough time, their own ecosystems. This incredible new branch of life, evolved entirely out of neural material, can be put to good use as home-grown accountants and low-ranking technicians.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 741]Epistemological trickery": {
+    "english": "Redefining what is -or isn't- a cookie through the power of philosophical discourse may result in some strange and wonderful things for your profit margins.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 742]Every possible idea": {
+    "english": "Congratulations, your cortex bakers have exerted enough intellectual computation to permute through every single idea that can or ever will be conceived of. Any thought beyond this point is merely rediscovering a notion you've already archived. Hardly cause for cerebration.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 743]Kitchen cabinets": {
+    "english": "A grandma's kitchen cabinet is a befuddling place. Through lesser-studied aggregating instincts, grandmas will tend to gradually fill all nearby cabinets with various sorts of things, such as curious coconut snacks or dietetic powders. By contract, these are legally yours, which opens up exciting opportunities for your substance investigation department.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 744]Cookie mulch": {
+    "english": "Grinding surplus cookies into paste that you then spread onto your fields enables a strange feedback loop in the quality of your cookie crops. Cookie feeding on cookie should be an abomination, but then why does it taste so good?",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 745]Delicious mineralogy": {
+    "english": "Stratum after stratum, you've extracted strange new minerals heretofore unknown to geology. Ushering a new era of materials research, your scientists have been able to identify every new element your mines have discovered, including whatever those things are in the upgrade tier names.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 746]N-dimensional assembly lines": {
+    "english": "Lines are depressingly 1-dimensional. Beyond assembly lines, we posit the existence of higher-order assembly entities, such as assembly squares, assembly cubes - perhaps even assembly tesseracts. Any deeper than that and we doubt we'll be able to write manuals your workers can read.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 747]Cookie Points": {
+    "english": "A loyalty program wherein each purchase of your cookies comes with free Cookie Points, which can in turn be redeemed for more cookies, thus creating the self-sustaining economy you've been looking for.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 748]Negatheism": {
+    "english": "Polytheism is a belief in multiple deities; monotheism in just one. Atheism is a belief in no deity whatsoever. Through logical succession it follows that this remains true when going into negative numbers, with belief systems involving minus 1 or more deities displaying unprecedented theological properties.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 749]Magical realism": {
+    "english": "More a social than thaumaturgical progress, magical realism refers to the normalization of modern technology among magic-users. It's totally fine for a wizard to drive a car! There's no stigma in waiting in line for coffee! Sure, take a phone call, send an email, whatever!",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 750]Cosmic foreground radiation": {
+    "english": "Ah, this is a problem.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 751]Arcanized glassware": {
+    "english": "You think your lab equipment enjoys taking part in these experiments violating all sorts of modern scientific precepts? Of course not. Thankfully, you've finalized the design of specialized beakers and flasks, recycled from the same glass used by the ancients to perform primeval alchemy, and therefore much less picky about the nature of the physical world.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 752]Portal guns": {
+    "english": "At long last! The only weapon capable of killing a portal.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 753]Timeproof upholstery": {
+    "english": "Sometimes your time agents overshoot and end up having to fast-forward through the universe's entire history until they loop back to present time. It still takes a while, so they might as well travel in comfort and enjoy the show while they do.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 754]Employee minification": {
+    "english": "Using molecular shrinking technology, you've rendered your staff and their offices absolutely itty-bitty. The storage and productivity benefits are questionable but it's very fun listening to their tiny little complaints. They all signed the waivers, so maybe their new size will finally teach them to read the small print...",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 755]Hyperblack paint": {
+    "english": "As the technology behind your prisms evolves, their storage becomes more and more problematic: within seconds, a single prism's reflective ability can set a whole underground hangar ablaze as it catches the slightest glint of light. However, once coated with this new shade of paint, its damage may be reduced to only giving third-degree burns to employees that stand too close.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 756]Silver lining maximization": {
+    "english": "Sometimes luck is a matter of perspective. Broke your ankle? What do you know, that cute nurse fixing you up might just be your future spouse. Lost your job? You were meant for greater things anyway! Developed a cookie allergy? There's no upshot to that, you sick monster.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 757]Multiscale profiling": {
+    "english": "Did you know that eating a cookie means the intestinal flora inside you is eating it too? Trillions of tiny bacterial mouths to feed, each with their own preferences. Surely this is room for flavor optimization. And then, of course, there's also the much bigger things that, in turn, eat you.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 758]PHP containment vats": {
+    "english": "In essence, these are large server chambers meant to trap rogue PHP code, allowing it to execute far away from your javascript where it can do minimal harm.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 759]Opposite universe": {
+    "english": "You've located a universe where everything is reversed: up is down, light is darkness, clowns are vegetarians - but worst of all, some lunatic there is manufacturing abominable amounts of anti-cookies. If these came into contact with yours, everything would be lost! Thanks to this discovery, you've been able to place the offending universe in permanent quarantine, and pray that there aren't more like it hiding around somewhere.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 760]The land of dreams": {
+    "english": "Your planet brains have gained the ability to sleep, acting as a soft reboot which helps keep their pangenocidal impulses in check. It also allows them to commune in a shared dreamworld in which they can imagine what it's like to not exist as a disembodied cosmic horror forever fated to use its infinite intellect to devise new means of creating biscuits. You know, within reason.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 761]Thoughts & prayers": {
+    "english": "The notion of sacredness arises in most sentient evolved brains and may benefit the development of cognition via abstract thought. This mechanism, however, is absent in designed minds such as your cortex bakers; this process attempts to add it back. Just make sure to keep them in check - you really don't want these things to develop organized religion.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 762]Fertile minds": {
+    "english": "An acute intellect, artificial or not, requires plenty of vitamins. You fortuitously happen to be in charge of vast farming operations, only a few trillion acres of which need be requisitioned to grow the quantities of broccoli and kale to keep your planet-sized brains in tip-top shape. Open wide, here comes the airplane!",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 763]Fortune #019": {
+    "english": "The smartest way to think is not to think at all.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 764]Decillion fingers": {
+    "english": "If you still can't quite put your finger on it, you must not be trying very hard.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 765]Aetherice mouse": {
+    "english": "Made from a substance impossible to manufacture, only obtained through natural happenstance; its properties bewilder even the most precise measuring instruments.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 766]Kitten admins": {
+    "english": "leadership ain't easy, sir",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 767]Everybutter biscuit": {
+    "english": "Rewarded for owning 650 of everything.<br>This biscuit is baked with, and coated in, every kind of butter ever imagined, from every human culture and a good few alien ones too. Some of them perhaps display hallucinogenic traits, as the biscuit seems to change shape in front of you - seemingly shifting between visions of every past and future you.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 768]Unshackled cursors": {
+    "english": "These hands tell a story.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 769]Unshackled grandmas": {
+    "english": "Never too old.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 770]Unshackled farms": {
+    "english": "Till the universe.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 771]Unshackled mines": {
+    "english": "Redefine the meaning of \"depth\".",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 772]Unshackled factories": {
+    "english": "Nothing to lose but your production chains.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 773]Unshackled banks": {
+    "english": "All-time highs, all the time.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 774]Unshackled temples": {
+    "english": "You can make a religion out of this.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 775]Unshackled wizard towers": {
+    "english": "There's a spell for everything.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 776]Unshackled shipments": {
+    "english": "Everywhere at once.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 777]Unshackled alchemy labs": {
+    "english": "Anything you see, you can make.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 778]Unshackled portals": {
+    "english": "Parallels unparalleled.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 779]Unshackled time machines": {
+    "english": "All the time in the world.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 780]Unshackled antimatter condensers": {
+    "english": "No scale too large or too little.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 781]Unshackled prisms": {
+    "english": "Brilliance has no upper limit.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 782]Unshackled chancemakers": {
+    "english": "You make the rules.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 783]Unshackled fractal engines": {
+    "english": "Uncontained.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 784]Unshackled javascript consoles": {
+    "english": "Rewrite your reality.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 785]Unshackled idleverses": {
+    "english": "Wait even faster.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 786]Unshackled cortex bakers": {
+    "english": "Nothing is real. Everything is permitted.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 787]Unshackled flavor": {
+    "english": "While the absence of flavoring may seem underwhelming, it allows innate aromas to be expressed at their most unadulterated.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 788]Unshackled berrylium": {
+    "english": "Berrylium is a synthetic gem with a simple shine to it. Sticky to the touch and susceptible to melting in high heat, it is frequently used in the food industry rather than as adornment, as its atomic structure imparts it a vaguely fruity flavor.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 789]Unshackled blueberrylium": {
+    "english": "Blueberrylium is a refinement of berrylium, sharing nearly the same chemical makeup save for a few supplemental esters. These affect its flavor as well as its visual spectrum resonance.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 790]Unshackled chalcedhoney": {
+    "english": "Raw chalcedhoney is found in complex nodules within the fossilized remains of ancient forests. Once purified, it becomes a semi-valuable stone with a pleasant, waxy smell.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 791]Unshackled buttergold": {
+    "english": "Buttergold was famously invented by the chef son of two molecular physicists. Neither closely related to butter nor to gold, yet similar in nutritional value, this glimmering substance can be frozen and preserve its hardness at room temperature, only regaining its malleability when heated up.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 792]Unshackled sugarmuck": {
+    "english": "Sugarmuck refers to the gradual crust that seems to form spontaneously in the vicinity of candy-making equipment. Long ignored by confectioners, its harvesting process was discovered simultaneously in multiple countries during a global beet shortage.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 793]Unshackled jetmint": {
+    "english": "The striking taste of jetmint made it popular in the manufacture of various kinds of coffee-side treats until the awareness of its mild radioactivity became widespread. Today, its main uses are in cosmetics, owing to the refreshing sensation it produces on contact.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 794]Unshackled cherrysilver": {
+    "english": "Cherrysilver is a patented alloy with peculiar aromatic properties; it is non-edible, but produces strong flavor responses while losing very little of its mass when licked, though this also leaves a harmless red tinge upon the tongue.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 795]Unshackled hazelrald": {
+    "english": "Hazelrald is a friable gemstone with complex green-brown inner reflections. It is considered ornamental in some cultures; in others, it may be consumed in small quantities as an upper-scale sweet.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 796]Unshackled mooncandy": {
+    "english": "While many get it mixed up with the trademarked snack of the same name made popular following its discovery, mooncandy is a very real mineral, first isolated within the space dust underneath astronaut boots. Left to its own devices in open air, a mooncandy crystal naturally spreads out and grows.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 797]Unshackled astrofudge": {
+    "english": "When you heat up the shimmering syrup oozing from mooncandy using a special caramelization process, you get astrofudge. Astrofudge is delicious and safe for humanoid consumption in certain quantities. Consult your local food safety agency for more details.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 798]Unshackled alabascream": {
+    "english": "Molecularly related to dairy, alabascream occurs naturally at high altitudes, forming in wispy filaments which were long indistinguishable from clouds. An expensive delight, it is also known as \"pilots' bane\".",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 799]Unshackled iridyum": {
+    "english": "Iridyum shares little in common with any other material known to mankind. Rather than simply smelled, it can be tasted from a distance, though remaining in its presence too long is ill-advised. Some high-end underground megacomputers may incorporate iridyum as part of their electronic components.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 800]Unshackled glucosmium": {
+    "english": "Glucosmium is a glossy metal whose flavor matrix is bound to its current subjective chroma; in other words, its taste depends on which colors it's currently reflecting. Impractical to consume safely, its industrial applications range from transcontinental ballistics to paint varnish.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 801]Delicate touch": {
+    "english": "It breaks so easily.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 802]Steadfast murmur": {
+    "english": "Lend an ear and listen.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 803]Glittering edge": {
+    "english": "Just within reach, yet at what cost?",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 804]Distinguished wallpaper assortment": {
+    "english": "Do you ever think about the physicality of this place? Are you putting up these wallpapers in your office or something? Where are you, anyway?",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 805]Sound test": {
+    "english": "One two, one two. Is this thing on?",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 807]Dalgona cookies": {
+    "english": "A popular Korean candy-like treat. One of the twisted games people play with these is to carefully extract the shape in the middle, which may entitle one to another free dalgona. Skilled players may perform this over and over until bankrupting the snack vendor.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 808]Spicy cookies": {
+    "english": "Containing chocolate chips prepared with hot peppers, just like the Aztecs used to make. These cookies are on the angry side.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 809]Smile cookies": {
+    "english": "As eyes are the windows to the soul, so too are these cookies' facial features a gaping opening unto their chocolatey innards. Is it happiness they feel? Or something less human?",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 810]Kolachy cookies": {
+    "english": "Adapted from a type of Central European pastry; neatly folded to hold a spoonful of delicious jam, as a bashful little gift for your mouth.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 811]Gomma cookies": {
+    "english": "Surinamese cornflour cookies with sprinkles on top. The usage of corn imparts them a hint of chewy pizzazz - which you wouldn't get with wheat, a famously stuck-up grain.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 812]Vegan cookies": {
+    "english": "A vegan riff on the classic chocolate chip cookie recipe with a couple substitutions: the butter is now coconut oil, the eggs are cornstarch, and the suckling pig was cleverly replaced with wheat gluten. You can hardly tell.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 813]Coyotas": {
+    "english": "A wide, delicious cookie from Mexico, usually filled with sticky brown sugar. Not to be confused with coyotas, the result of the crossbreeding between a North American canine and a Japanese car manufacturer.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 814]Frosted sugar cookies": {
+    "english": "May be more style than substance, depending on the recipe. Nothing that hides itself under this much frosting should be trusted.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 815]Marshmallow sandwich cookies": {
+    "english": "S'mores' more civilized cousins: two regular chocolate chip cookies joined by a gooey, melty marshmallow. Theoretically one could assemble all kinds of other things this way. The mind races.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 816]Web cookies": {
+    "english": "The original recipe; named for the delicate pattern inscribed on their surface by the baking process. Eating these can tell a lot about someone. Invented by well-connected bakers, no doubt.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 817]Steamed cookies": {
+    "english": "Localized entirely within this gaming platform? Yes! Baked with the power of steam, in a touch of cutting-edge modernity not seen since the industrial revolution.<br>Only of any use in Cookie Clicker's Steam version, of course.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 818]Deep-fried cookie dough": {
+    "english": "They'll fry anything these days. Drizzled in hot chocolate syrup, just like in state fairs. Spikes up your blood sugar AND your cholesterol!",
     "chinese": "[CN:MISSING]"
   }
 }

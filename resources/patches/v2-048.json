@@ -1,0 +1,19 @@
+{
+  "comment": "这里放有v2.048更新的新字符串（官方不知为何全部使用繁体）",
+  "No Cloud access at the moment.": {
+    "english": "No Cloud access at the moment.",
+    "chinese": "暂时没有云存储访问权限。"
+  },
+  "Discord status": {
+    "english": "Discord status",
+    "chinese": "Discord 状态"
+  },
+  "if Discord is on, show your game info as activity status": {
+    "english": "if Discord is on, show your game info as activity status",
+    "chinese": "如果 Discord 在线，将游戏信息显示为活动状态"
+  },
+  "Supreme Intellect": {
+    "english": "Supreme Intellect",
+    "chinese": "最高智慧"
+  }
+}
