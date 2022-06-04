@@ -12,8 +12,714 @@
     "english": "if Discord is on, show your game info as activity status",
     "chinese": "如果 Discord 在线，将游戏信息显示为活动状态"
   },
+  "Random drop multiplier:": {
+    "english": "Random drop multiplier:",
+    "chinese": "随机掉落倍率："
+  },
   "Supreme Intellect": {
     "english": "Supreme Intellect",
     "chinese": "最高智慧"
+  },
+  "Cortex baker": {
+    "english": "Cortex baker",
+    "chinese": "脑皮层烘焙师"
+  },
+  "cortex baker": {
+    "english": "cortex baker",
+    "chinese": "脑皮层烘焙师"
+  },
+  "cortex bakers": {
+    "english": "cortex bakers",
+    "chinese": "脑皮层烘焙师"
+  },
+  "%1 cortex baker": {
+    "english": ["%1 cortex baker", "%1 cortex bakers"],
+    "chinese": ["%1 脑皮层烘焙师", "%1 脑皮层烘焙师"]
+  },
+  "[Cortex baker quote]These artificial brains the size of planets are capable of simply dreaming up cookies into existence. Time and space are inconsequential. Reality is arbitrary.": {
+    "english": "These artificial brains the size of planets are capable of simply dreaming up cookies into existence. Time and space are inconsequential. Reality is arbitrary.",
+    "chinese": "这些行星大小的人造大脑能够轻而易举地将想象中的饼干带入现实世界。对他们来说，时空无足轻重，现实若有似无。"
+  },
+  "[Cortex baker business name]Think tank": {
+    "english": "Think tank",
+    "chinese": "智囊团"
+  },
+  "[Cortex baker business quote]There's only so many ways you can bring in more profit. Or is there? Hire the most brilliant experts in the known universe and let them scrape their brains for you!": {
+    "english": "There's only so many ways you can bring in more profit. Or is there? Hire the most brilliant experts in the known universe and let them scrape their brains for you!",
+    "chinese": "理论上提升盈利方式是有限的，至少地球人是这么认为的。因此我们特意从整个宇宙中请来最杰出的专家，让他们来为你绞尽脑汁！"
+  },
+  "Unshackled! <b>+%1%</b> extra production.": {
+    "english": "Unshackled! <b>+%1%</b> extra production.",
+    "chinese": "无拘无束！ <b>+%1%</b> 额外产量。"
+  },
+  "Tiered upgrades for <b>%1</b> provide an extra <b>+%2%</b> production.<br>Only works with unshackled upgrade tiers.": {
+    "english": "Tiered upgrades for <b>%1</b> provide an extra <b>+%2%</b> production.<br>Only works with unshackled upgrade tiers.",
+    "chinese": "<b>%1</b> 的阶层升级将会提供 <b>+%2%</b> 的额外产量。<br>仅适用于不受束缚的升级阶层。"
+  },
+  "Unshackles all <b>%1-tier upgrades</b>, making them more powerful.<br>Only applies to unshackled buildings.": {
+    "english": "Unshackles all <b>%1-tier upgrades</b>, making them more powerful.<br>Only applies to unshackled buildings.",
+    "chinese": "解除所有<b>%1阶层升级</b>的限制，使其更强大。<br>仅适用于不受束缚的建筑。"
+  },
+  "Confers various powers to your minigames while active.<br>See the bottom of each minigame for more details.": {
+    "english": "Confers various powers to your minigames while active.<br>See the bottom of each minigame for more details.",
+    "chinese": "激活时为你的小游戏赋予各种权力。<br>请参阅每个小游戏的底部了解更多详情。"
+  },
+  "Fortune": {
+    "english": "Fortune",
+    "chinese": "幸运音效"
+  },
+  "Cymbal": {
+    "english": "Cymbal",
+    "chinese": "钹音效"
+  },
+  "Squeak": {
+    "english": "Squeak",
+    "chinese": "吱吱声"
+  },
+  "Unlocks the <b>jukebox</b>, which allows you to play through every sound file in the game.": {
+    "english": "Unlocks the <b>jukebox</b>, which allows you to play through every sound file in the game.",
+    "chinese": "解锁<b>点唱机</b>，让你可以播放游戏中的每个声音文件。"
+  },
+  "Play through the game's sound files!": {
+    "english": "Play through the game's sound files!",
+    "chinese": "播放游戏的声音文件！"
+  },
+  "Play": {
+    "english": "Play",
+    "chinese": "播放"
+  },
+  "Stop": {
+    "english": "Stop",
+    "chinese": "停止"
+  },
+  "Pause": {
+    "english": "Pause",
+    "chinese": "暂停"
+  },
+  "Shuffle": {
+    "english": "Shuffle",
+    "chinese": "随机播放"
+  },
+  "Auto": {
+    "english": "Auto",
+    "chinese": "自动播放"
+  },
+  "Loop": {
+    "english": "Loop",
+    "chinese": "循环播放"
+  },
+  "Own <b>%1</b> heavenly upgrades.": {
+    "english": "Own <b>%1</b> heavenly upgrades.",
+    "chinese": "拥有 <b>%1</b> 项天堂升级。"
+  },
+  "Click one of Santa's helper grandmas during Christmas season.": {
+    "english": "Click one of Santa's helper grandmas during Christmas season.",
+    "chinese": "在圣诞节期间点击一位圣诞老人的帮手老奶奶。"
+  },
+  "Garden plants age and mutate %1% faster.": {
+    "english": "Garden plants age and mutate %1% faster.",
+    "chinese": "花园的植物衰老和变异的速度增长 %1%。"
+  },
+  "while plant is alive; scales with plant growth": {
+    "english": "while plant is alive; scales with plant growth",
+    "chinese": "当植物活着的时候；数值随着植物增长而增长。"
+  },
+  "Grimoire spells are %1% cheaper but fail %1% more.": {
+    "english": "Grimoire spells are %1% cheaper but fail %1% more.",
+    "chinese": "魔法书中的魔法花费减少 %1%，但失败率提高 %1%。"
+  },
+  "The jade slot behaves as a ruby slot and the ruby slot behaves as a diamond slot.": {
+    "english": "The jade slot behaves as a ruby slot and the ruby slot behaves as a diamond slot.",
+    "chinese": "绿宝石槽位效果相当于红宝石槽位，红宝石槽位效果相当于钻石槽位"
+  },
+  "[STOCK 17 NAME]Great Minds": {
+    "english": "Great Minds",
+    "chinese": "思想伟业"
+  },
+  "[STOCK 17 TYPE]Publicists": {
+    "english": "Publicists",
+    "chinese": "公关员"
+  },
+  "last bought at<br>$%1 each": {
+    "english": "last bought at<br>$%1 each",
+    "chinese": "上次购买价格<br>$%1 每股"
+  },
+  "The stock market is more chaotic.": {
+    "english": "The stock market is more chaotic.",
+    "chinese": "股市更加混乱。"
+  },
+  "[Upgrade name 729]Brainy grandmas": {
+    "english": "Brainy grandmas",
+    "chinese": "聪明的奶奶"
+  },
+  "[Upgrade name 730]Principled neural shackles": {
+    "english": "Principled neural shackles",
+    "chinese": "人道的神经枷锁"
+  },
+  "[Upgrade name 731]Obey": {
+    "english": "Obey",
+    "chinese": "遵守"
+  },
+  "[Upgrade name 732]A sprinkle of irrationality": {
+    "english": "A sprinkle of irrationality",
+    "chinese": "一丁点的非理性"
+  },
+  "[Upgrade name 733]Front and back hemispheres": {
+    "english": "Front and back hemispheres",
+    "chinese": "前半球和后半球"
+  },
+  "[Upgrade name 734]Neural networking": {
+    "english": "Neural networking",
+    "chinese": "神经网络"
+  },
+  "[Upgrade name 735]Cosmic brainstorms": {
+    "english": "Cosmic brainstorms",
+    "chinese": "宇宙头脑风暴"
+  },
+  "[Upgrade name 736]Megatherapy": {
+    "english": "Megatherapy",
+    "chinese": "巨型疗法"
+  },
+  "[Upgrade name 737]Synaptic lubricant": {
+    "english": "Synaptic lubricant",
+    "chinese": "突触润滑剂"
+  },
+  "[Upgrade name 738]Psychokinesis": {
+    "english": "Psychokinesis",
+    "chinese": "念动能力"
+  },
+  "[Upgrade name 739]Spines": {
+    "english": "Spines",
+    "chinese": "脊柱"
+  },
+  "[Upgrade name 740]Neuraforming": {
+    "english": "Neuraforming",
+    "chinese": "神经塑性术"
+  },
+  "[Upgrade name 741]Epistemological trickery": {
+    "english": "Epistemological trickery",
+    "chinese": "认识论骗局"
+  },
+  "[Upgrade name 742]Every possible idea": {
+    "english": "Every possible idea",
+    "chinese": "所有可能的想法"
+  },
+  "[Upgrade name 743]Kitchen cabinets": {
+    "english": "Kitchen cabinets",
+    "chinese": "厨房橱柜"
+  },
+  "[Upgrade name 744]Cookie mulch": {
+    "english": "Cookie mulch",
+    "chinese": "饼干园土覆盖物"
+  },
+  "[Upgrade name 745]Delicious mineralogy": {
+    "english": "Delicious mineralogy",
+    "chinese": "美味矿物学"
+  },
+  "[Upgrade name 746]N-dimensional assembly lines": {
+    "english": "N-dimensional assembly lines",
+    "chinese": "多维生产线"
+  },
+  "[Upgrade name 747]Cookie Points": {
+    "english": "Cookie Points",
+    "chinese": "饼干点数"
+  },
+  "[Upgrade name 748]Negatheism": {
+    "english": "Negatheism",
+    "chinese": "消极主义"
+  },
+  "[Upgrade name 749]Magical realism": {
+    "english": "Magical realism",
+    "chinese": "魔幻现实主义"
+  },
+  "[Upgrade name 750]Cosmic foreground radiation": {
+    "english": "Cosmic foreground radiation",
+    "chinese": "宇宙前景辐射"
+  },
+  "[Upgrade name 751]Arcanized glassware": {
+    "english": "Arcanized glassware",
+    "chinese": "镀铝玻璃器皿"
+  },
+  "[Upgrade name 752]Portal guns": {
+    "english": "Portal guns",
+    "chinese": "传送枪"
+  },
+  "[Upgrade name 753]Timeproof upholstery": {
+    "english": "Timeproof upholstery",
+    "chinese": "经久耐用的室内装潢"
+  },
+  "[Upgrade name 754]Employee minification": {
+    "english": "Employee minification",
+    "chinese": "员工缩小"
+  },
+  "[Upgrade name 755]Hyperblack paint": {
+    "english": "Hyperblack paint",
+    "chinese": "超黑漆"
+  },
+  "[Upgrade name 756]Silver lining maximization": {
+    "english": "Silver lining maximization",
+    "chinese": "一线希望最大化"
+  },
+  "[Upgrade name 757]Multiscale profiling": {
+    "english": "Multiscale profiling",
+    "chinese": "多尺度分析"
+  },
+  "[Upgrade name 758]PHP containment vats": {
+    "english": "PHP containment vats",
+    "chinese": "PHP 容器"
+  },
+  "[Upgrade name 759]Opposite universe": {
+    "english": "Opposite universe",
+    "chinese": "对立宇宙"
+  },
+  "[Upgrade name 760]The land of dreams": {
+    "english": "The land of dreams",
+    "chinese": "梦想之地"
+  },
+  "[Upgrade name 761]Thoughts & prayers": {
+    "english": "Thoughts & prayers",
+    "chinese": "思考与祈祷"
+  },
+  "[Upgrade name 762]Fertile minds": {
+    "english": "Fertile minds",
+    "chinese": "肥沃的思维"
+  },
+  "[Upgrade name 764]Decillion fingers": {
+    "english": "Decillion fingers",
+    "chinese": "十亿手指"
+  },
+  "[Upgrade name 765]Aetherice mouse": {
+    "english": "Aetherice mouse",
+    "chinese": "以太鼠标"
+  },
+  "[Upgrade name 766]Kitten admins": {
+    "english": "Kitten admins",
+    "chinese": "小猫管理员"
+  },
+  "[Upgrade name 767]Everybutter biscuit": {
+    "english": "Everybutter biscuit",
+    "chinese": "全黄油饼干"
+  },
+  "[Upgrade name 768]Unshackled cursors": {
+    "english": "Unshackled cursors",
+    "chinese": "不受束缚的指针"
+  },
+  "[Upgrade name 769]Unshackled grandmas": {
+    "english": "Unshackled grandmas",
+    "chinese": "不受束缚的老奶奶"
+  },
+  "[Upgrade name 770]Unshackled farms": {
+    "english": "Unshackled farms",
+    "chinese": "不受束缚的农场"
+  },
+  "[Upgrade name 771]Unshackled mines": {
+    "english": "Unshackled mines",
+    "chinese": "不受束缚的矿坑"
+  },
+  "[Upgrade name 772]Unshackled factories": {
+    "english": "Unshackled factories",
+    "chinese": "不受束缚的工厂"
+  },
+  "[Upgrade name 773]Unshackled banks": {
+    "english": "Unshackled banks",
+    "chinese": "不受束缚的银行"
+  },
+  "[Upgrade name 774]Unshackled temples": {
+    "english": "Unshackled temples",
+    "chinese": "不受束缚的神庙"
+  },
+  "[Upgrade name 775]Unshackled wizard towers": {
+    "english": "Unshackled wizard towers",
+    "chinese": "不受束缚的巫师塔"
+  },
+  "[Upgrade name 776]Unshackled shipments": {
+    "english": "Unshackled shipments",
+    "chinese": "不受束缚的装运飞船"
+  },
+  "[Upgrade name 777]Unshackled alchemy labs": {
+    "english": "Unshackled alchemy labs",
+    "chinese": "不受束缚的炼金术实验室"
+  },
+  "[Upgrade name 778]Unshackled portals": {
+    "english": "Unshackled portals",
+    "chinese": "不受束缚的传送门"
+  },
+  "[Upgrade name 779]Unshackled time machines": {
+    "english": "Unshackled time machines",
+    "chinese": "不受束缚的时光机"
+  },
+  "[Upgrade name 780]Unshackled antimatter condensers": {
+    "english": "Unshackled antimatter condensers",
+    "chinese": "不受束缚的反物质聚光镜"
+  },
+  "[Upgrade name 781]Unshackled prisms": {
+    "english": "Unshackled prisms",
+    "chinese": "不受束缚的棱镜"
+  },
+  "[Upgrade name 782]Unshackled chancemakers": {
+    "english": "Unshackled chancemakers",
+    "chinese": "不受束缚的机会制造器"
+  },
+  "[Upgrade name 783]Unshackled fractal engines": {
+    "english": "Unshackled fractal engines",
+    "chinese": "不受束缚的分形引擎"
+  },
+  "[Upgrade name 784]Unshackled javascript consoles": {
+    "english": "Unshackled javascript consoles",
+    "chinese": "不受束缚的JavaScript控制台"
+  },
+  "[Upgrade name 785]Unshackled idleverses": {
+    "english": "Unshackled idleverses",
+    "chinese": "不受束缚的空闲宇宙"
+  },
+  "[Upgrade name 786]Unshackled cortex bakers": {
+    "english": "Unshackled cortex bakers",
+    "chinese": "不受束缚的脑皮层烘焙师"
+  },
+  "[Upgrade name 787]Unshackled flavor": {
+    "english": "Unshackled flavor",
+    "chinese": "不受束缚的风味"
+  },
+  "[Upgrade name 788]Unshackled berrylium": {
+    "english": "Unshackled berrylium",
+    "chinese": "不受束缚的浆果铍合金"
+  },
+  "[Upgrade name 789]Unshackled blueberrylium": {
+    "english": "Unshackled blueberrylium",
+    "chinese": "不受束缚的蓝莓铍合金"
+  },
+  "[Upgrade name 790]Unshackled chalcedhoney": {
+    "english": "Unshackled chalcedhoney",
+    "chinese": "不受束缚的蜂蜜玉髓"
+  },
+  "[Upgrade name 791]Unshackled buttergold": {
+    "english": "Unshackled buttergold",
+    "chinese": "不受束缚的黄油黄金"
+  },
+  "[Upgrade name 792]Unshackled sugarmuck": {
+    "english": "Unshackled sugarmuck",
+    "chinese": "不受束缚的白糖有机肥"
+  },
+  "[Upgrade name 793]Unshackled jetmint": {
+    "english": "Unshackled jetmint",
+    "chinese": "不受束缚的薄荷黑玉"
+  },
+  "[Upgrade name 794]Unshackled cherrysilver": {
+    "english": "Unshackled cherrysilver",
+    "chinese": "不受束缚的樱桃白银"
+  },
+  "[Upgrade name 795]Unshackled hazelrald": {
+    "english": "Unshackled hazelrald",
+    "chinese": "不受束缚的翡翠榛果"
+  },
+  "[Upgrade name 796]Unshackled mooncandy": {
+    "english": "Unshackled mooncandy",
+    "chinese": "不受束缚的月亮硬糖"
+  },
+  "[Upgrade name 797]Unshackled astrofudge": {
+    "english": "Unshackled astrofudge",
+    "chinese": "不受束缚的天文巧克力"
+  },
+  "[Upgrade name 798]Unshackled alabascream": {
+    "english": "Unshackled alabascream",
+    "chinese": "不受束缚的奶油石膏"
+  },
+  "[Upgrade name 799]Unshackled iridyum": {
+    "english": "Unshackled iridyum",
+    "chinese": "不受束缚的浓香铱"
+  },
+  "[Upgrade name 800]Unshackled glucosmium": {
+    "english": "Unshackled glucosmium",
+    "chinese": "不受束缚的葡萄糖合金"
+  },
+  "[Upgrade name 801]Delicate touch": {
+    "english": "Delicate touch",
+    "chinese": "细腻的触感"
+  },
+  "[Upgrade name 802]Steadfast murmur": {
+    "english": "Steadfast murmur",
+    "chinese": "坚定的低语"
+  },
+  "[Upgrade name 803]Glittering edge": {
+    "english": "Glittering edge",
+    "chinese": "闪闪发光的边缘"
+  },
+  "[Upgrade name 804]Distinguished wallpaper assortment": {
+    "english": "Distinguished wallpaper assortment",
+    "chinese": "颇具特色的壁纸系列"
+  },
+  "[Upgrade name 805]Sound test": {
+    "english": "Sound test",
+    "chinese": "声音测试"
+  },
+  "[Upgrade name 806]Jukebox": {
+    "english": "Jukebox",
+    "chinese": "点唱机"
+  },
+  "[Upgrade name 807]Dalgona cookies": {
+    "english": "Dalgona cookies",
+    "chinese": "达尔戈纳饼干"
+  },
+  "[Upgrade name 808]Spicy cookies": {
+    "english": "Spicy cookies",
+    "chinese": "辣味饼干"
+  },
+  "[Upgrade name 809]Smile cookies": {
+    "english": "Smile cookies",
+    "chinese": "微笑饼干"
+  },
+  "[Upgrade name 810]Kolachy cookies": {
+    "english": "Kolachy cookies",
+    "chinese": "可乐饼干"
+  },
+  "[Upgrade name 811]Gomma cookies": {
+    "english": "Gomma cookies",
+    "chinese": "戈麦饼干"
+  },
+  "[Upgrade name 812]Vegan cookies": {
+    "english": "Vegan cookies",
+    "chinese": "素食饼干"
+  },
+  "[Upgrade name 813]Coyotas": {
+    "english": "Coyotas",
+    "chinese": "郊狼"
+  },
+  "[Upgrade name 814]Frosted sugar cookies": {
+    "english": "Frosted sugar cookies",
+    "chinese": "糖霜饼干"
+  },
+  "[Upgrade name 815]Marshmallow sandwich cookies": {
+    "english": "Marshmallow sandwich cookies",
+    "chinese": "棉花糖三明治饼干"
+  },
+  "[Upgrade name 816]Web cookies": {
+    "english": "Web cookies",
+    "chinese": "网络饼干"
+  },
+  "[Upgrade name 817]Steamed cookies": {
+    "english": "Steamed cookies",
+    "chinese": "蒸饼干"
+  },
+  "[Upgrade name 818]Deep-fried cookie dough": {
+    "english": "Deep-fried cookie dough",
+    "chinese": "油炸饼干面糊"
+  },
+  "[Achievement name 340]But wait 'til you get older": {
+    "comment": "似乎换了ID",
+    "english": "But wait 'til you get older",
+    "chinese": "等你年纪再大点"
+  },
+  "[Achievement name 399]Defense of the ancients": {
+    "comment": "似乎换了ID",
+    "english": "Defense of the ancients",
+    "chinese": "古人的防御"
+  },
+  "[Achievement name 538]Stifling the press": {
+    "english": "Stifling the press",
+    "chinese": "压制媒体"
+  },
+  "[Achievement name 539]It's big brain time": {
+    "english": "It's big brain time",
+    "chinese": "最强大脑时刻"
+  },
+  "[Achievement name 540]Just my imagination": {
+    "english": "Just my imagination",
+    "chinese": "只是我的想象"
+  },
+  "[Achievement name 541]Now there's an idea": {
+    "english": "Now there's an idea",
+    "chinese": "这才叫好点子"
+  },
+  "[Achievement name 542]The organ that named itself": {
+    "english": "The organ that named itself",
+    "chinese": "给自己命名的器官"
+  },
+  "[Achievement name 543]Gyrification": {
+    "english": "Gyrification",
+    "chinese": "脑皮层增长"
+  },
+  "[Achievement name 544]A trademarked portmanteau of \"imagination\" and \"engineering\"": {
+    "english": "A trademarked portmanteau of \"imagination\" and \"engineering\"",
+    "chinese": "注册了商标的“想象力”与“工程学”组合词"
+  },
+  "[Achievement name 545]Mindfulness": {
+    "english": "Mindfulness",
+    "chinese": "正念"
+  },
+  "[Achievement name 546]The 10% myth": {
+    "english": "The 10% myth",
+    "chinese": "10%的神话"
+  },
+  "[Achievement name 547]Don't think about it too hard": {
+    "english": "Don't think about it too hard",
+    "chinese": "不要想得太多"
+  },
+  "[Achievement name 548]Though fools seldom differ": {
+    "english": "Though fools seldom differ",
+    "chinese": "虽然傻瓜少有不同"
+  },
+  "[Achievement name 549]Looking kind of dumb": {
+    "english": "Looking kind of dumb",
+    "chinese": "看起来有点蠢"
+  },
+  "[Achievement name 550]A beautiful mind": {
+    "english": "A beautiful mind",
+    "chinese": "美丽的心灵"
+  },
+  "[Achievement name 551]Cardinal synapses": {
+    "english": "Cardinal synapses",
+    "chinese": "鲜红突触"
+  },
+  "[Achievement name 552]Positive thinking": {
+    "english": "Positive thinking",
+    "chinese": "正面思考"
+  },
+  "[Achievement name 553]The thought that counts": {
+    "english": "The thought that counts",
+    "chinese": "重要的想法"
+  },
+  "[Achievement name 554]Unthinkable": {
+    "english": "Unthinkable",
+    "chinese": "不可思议"
+  },
+  "[Achievement name 555]Gifted": {
+    "english": "Gifted",
+    "chinese": "天才"
+  },
+  "[Achievement name 556]They moistly come at night": {
+    "english": "They moistly come at night",
+    "chinese": "他们大多在晚上来"
+  },
+  "[Achievement name 557]It's grown on you": {
+    "english": "It's grown on you",
+    "chinese": "它长在你身上"
+  },
+  "[Achievement name 558]Don't let the walls cave in on you": {
+    "english": "Don't let the walls cave in on you",
+    "chinese": "不要让墙壁塌陷在你身上"
+  },
+  "[Achievement name 559]Replaced by robots": {
+    "english": "Replaced by robots",
+    "chinese": "被机器人取代"
+  },
+  "[Achievement name 560]Financial prodigy": {
+    "english": "Financial prodigy",
+    "chinese": "金融神童"
+  },
+  "[Achievement name 561]And I will pray to a big god": {
+    "english": "And I will pray to a big god",
+    "chinese": "我会向大神祈祷"
+  },
+  "[Achievement name 562]Shosple Colupis": {
+    "english": "Shosple Colupis",
+    "chinese": "小贩科卢皮斯"
+  },
+  "[Achievement name 563]False vacuum": {
+    "english": "False vacuum",
+    "chinese": "假真空"
+  },
+  "[Achievement name 564]Metallic taste": {
+    "english": "Metallic taste",
+    "chinese": "金属味"
+  },
+  "[Achievement name 565]Swiss cheese": {
+    "english": "Swiss cheese",
+    "chinese": "瑞士芝士"
+  },
+  "[Achievement name 566]But the future refused to change": {
+    "english": "But the future refused to change",
+    "chinese": "但未来拒绝改变"
+  },
+  "[Achievement name 567]What's the dark matter with you": {
+    "english": "What's the dark matter with you",
+    "chinese": "暗物质把你怎么了"
+  },
+  "[Achievement name 568]Enlightenment": {
+    "english": "Enlightenment",
+    "chinese": "启示"
+  },
+  "[Achievement name 569]Never tell me the odds": {
+    "english": "Never tell me the odds",
+    "chinese": "这概率也太低了"
+  },
+  "[Achievement name 570]Blowing an Apollonian gasket": {
+    "english": "Blowing an Apollonian gasket",
+    "chinese": "吹一个阿波罗尼亚垫圈"
+  },
+  "[Achievement name 571]Get with the program": {
+    "english": "Get with the program",
+    "chinese": "跟上节奏好吗"
+  },
+  "[Achievement name 572]Lost your cosmic marbles": {
+    "english": "Lost your cosmic marbles",
+    "chinese": "失去了你的宇宙弹珠"
+  },
+  "[Achievement name 573]By will alone I set my mind in motion": {
+    "english": "By will alone I set my mind in motion",
+    "chinese": "凭我的意志，我动了脑筋"
+  },
+  "[Achievement name 574]Ain't that a click in the head": {
+    "english": "Ain't that a click in the head",
+    "chinese": "脑袋里的开关一下被打开了"
+  },
+  "[Achievement name 575]Sexcentennial and a half": {
+    "english": "Sexcentennial and a half",
+    "chinese": "六百五十突破纪念"
+  },
+  "[Achievement name 576]I am speed": {
+    "english": "I am speed",
+    "chinese": "我就是速度"
+  },
+  "[Achievement name 577]And on and on": {
+    "english": "And on and on",
+    "chinese": "永远向前"
+  },
+  "[Achievement name 578]Fake it till you bake it": {
+    "english": "Fake it till you bake it",
+    "chinese": "一口气装到底"
+  },
+  "[Achievement name 579]History in the baking": {
+    "english": "History in the baking",
+    "chinese": "见证烘焙中的历史"
+  },
+  "[Achievement name 580]Baby it's old outside": {
+    "english": "Baby it's old outside",
+    "chinese": "宝贝外面已经老了"
+  },
+  "[Achievement name 581]Myriad": {
+    "english": "Myriad",
+    "chinese": "无数"
+  },
+  "[Achievement name 582]Kaizen": {
+    "english": "Kaizen",
+    "chinese": "改善"
+  },
+  "[Achievement name 583]Beyond quality": {
+    "english": "Beyond quality",
+    "chinese": "超越品质"
+  },
+  "[Achievement name 584]Everything happens so much": {
+    "english": "Everything happens so much",
+    "chinese": "一切都发生了这么多"
+  },
+  "[Achievement name 585]I'll rest when I'm dead": {
+    "english": "I'll rest when I'm dead",
+    "chinese": "死不罢休"
+  },
+  "[Achievement name 586]What do you get for the baker who has everything": {
+    "english": "What do you get for the baker who has everything",
+    "chinese": "还有什么能送给坐拥世界的烘焙师的"
+  },
+  "[Achievement name 587]Bottomless pit": {
+    "english": "Bottomless pit",
+    "chinese": "无底洞"
+  },
+  "[Achievement name 588]All the stars in heaven": {
+    "english": "All the stars in heaven",
+    "chinese": "天堂里所有的星星"
+  },
+  "Contains more wallpapers for your background selector.": {
+    "english": "Contains more wallpapers for your background selector.",
+    "chinese": "包含更多的壁纸供你在背景选择器中选择"
   }
 }
