@@ -518,6 +518,29 @@ var __TWCNL = {};
     }
   };
 
+  // 升级 Tooltip 魔改
+  const ModObjectLevelTooltip = MOD => {
+    for (const i in Game.Objects) {
+      const oldLevelTooltip = Game.Objects[i].levelTooltip;
+      Game.Objects[i].levelTooltip = function () {
+        let result = oldLevelTooltip.bind(this)();
+        if (this.extraName && __TWCNL.CN_BUILDING_EXTRANAME[this.extraName]) {
+          if (this.level) {
+            result = result.replace(
+              __TWCNL.STR_BUILDING_EXTRANAME_REGEX,
+              og =>
+                __TWCNL.CN_BUILDING_EXTRANAME[this.extraName].replace(
+                  '[X]',
+                  this.level.toString()
+                ) + og
+            );
+          }
+        }
+        return result;
+      };
+    }
+  };
+
   // 修复parseLoc
   const FixParseLoc = () => {
     const isCN = localStorageGet('CookieClickerLang') === 'ZH-CN';
@@ -1061,6 +1084,7 @@ var __TWCNL = {};
         ModRandomBakeryName(this);
         ModCrateTooltip(this);
         ModObjectTooltip(this);
+        ModObjectLevelTooltip(this);
         AddMenuHook(this, ModPrefMenu);
       }
     },

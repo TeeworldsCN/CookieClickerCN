@@ -38,6 +38,7 @@ var __TWCNL = {
   CN_UNITS_MIN: ['十', '百', '千', '萬', '億'],
 
   // Custom building actions
+  STR_BUILDING_ACTION_REGEX: /到目前爲止生產出 <b>(.*) 塊餅乾<\/b>/,
   CN_BUILDING_ACTION: {
     'clicked': '到目前爲止點擊了 [X] 次餅乾',
     'baked': '到目前爲止烘焙了 [X] 塊餅乾',
@@ -57,6 +58,31 @@ var __TWCNL = {
     'made from cookies': '到目前爲止有 [X] 塊餅乾雙倍分形了',
     'programmed': '到目前爲止計算出了 [X] 塊餅乾',
     'hijacked': '到目前爲止劫持了 [X] 塊餅乾',
+    'imagined': '到目前爲止想像出了 [X] 塊餅乾',
+  },
+
+  // Custom building level tooltips
+  STR_BUILDING_EXTRANAME_REGEX: /获得<b>/,
+  CN_BUILDING_EXTRANAME: {
+    '[X] extra finger': '[X] 只額外手指爲你',
+    'Grandmas are [X] year older': '奶奶們又老了 [X] 歲，她們的經驗爲你',
+    '[X] more acre': '[X] 英畝的擴充地爲你',
+    '[X] mile deeper': '所有礦坑都加深了 [X] 英里，爲你',
+    '[X] additional patent': '[X] 項新專利爲你',
+    'Interest rates [X]% better': '銀行的利率提高了 [X]%，爲你',
+    '[X] sacred artifact retrieved': '發現了 [X] 處神聖的遺蹟，爲你',
+    'Incantations have [X] more syllable': '每個咒語都添加了 [X] 個新音節，爲你',
+    '[X] galaxy fully explored': '完全探索了 [X] 個銀河，爲你',
+    '[X] primordial element mastered': '掌握了 [X] 個基原元素，爲你',
+    '[X] dimension enslaved': '統治了 [X] 個超元維度，爲你',
+    '[X] century secured': '收復了 [X] 個世紀，爲你',
+    '[X] extra quark flavor': '有 [X] 種新的夸克風味爲你',
+    '[X] new color discovered': '發現了 [X] 種新的顏色，爲你',
+    'Chancemakers are powered by [X]-leaf clovers': '機會製造機由[X]葉幸運草驅動，爲你',
+    '[X] iteration deep': '經過 [X] 層迭代，你',
+    'Equipped with [X] external library': '接入了 [X] 個第三方庫，爲你',
+    '[X] manifold': '[X] 個宇宙合集爲你',
+    '[X] extra IQ point': '[X] 點額外的IQ點數，爲你',
   },
 
   // Default settings
@@ -67,7 +93,6 @@ var __TWCNL = {
   STR_PURCHASE: '點擊以購買。',
   STR_PURRCHASE: '點擊以收養。',
   STR_INFINITY: '無限',
-  STR_BUILDING_ACTION_REGEX: /到目前爲止生產出 <b>(.*) 塊餅乾<\/b>/,
   STR_SETTING_TITLE: '中文模組設置',
   STR_SETTING_CNUNIT: '使用中文計數單位',
   STR_SETTING_CNUNIT_LABEL: '按住<b>Z鍵</b>可臨時顯示完整數字',

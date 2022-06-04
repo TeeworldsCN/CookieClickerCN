@@ -42,7 +42,7 @@
 
 ## 使用方式：
 
-1. 点击[这里](https://github.com/TeeworldsCN/CookieClickerCN/releases/download/latest/cookieclicker-cn.zip)下载最新的翻译模组。
+1. 点击[这里](https://github.com/TeeworldsCN/CookieClickerCN/releases/download/latest/cookieclicker-chs.zip)下载最新的翻译模组。
 2. 打开 Cookie Clicker，点击**选项**->**模式**->**管理模式**->**打开/mods 文件夹**。
 3. 打开**local**文件夹，并将下载好的模组解压至打开的**local**文件夹中。
 4. 关闭并重新打开 Cookie Clicker，在**管理模式**中启用安装好的翻译模组并按提示重新加载游戏即可。
