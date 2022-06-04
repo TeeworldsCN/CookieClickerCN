@@ -34,5 +34,65 @@
   "[bg] Money": {
     "english": "Money",
     "chinese": "纸币背景"
+  },
+  "[bg] Purple": {
+    "english": "Purple",
+    "chinese": "紫色背景"
+  },
+  "[bg] Pink": {
+    "english": "Pink",
+    "chinese": "粉色背景"
+  },
+  "[bg] Mint": {
+    "english": "Mint",
+    "chinese": "薄荷绿背景"
+  },
+  "[bg] Silver": {
+    "english": "Silver",
+    "chinese": "银色背景"
+  },
+  "[bg] Black & White": {
+    "english": "Black & White",
+    "chinese": "黑白背景"
+  },
+  "[bg] Spectrum": {
+    "english": "Spectrum",
+    "chinese": "色谱背景"
+  },
+  "[bg] Candy": {
+    "english": "Candy",
+    "chinese": "糖果背景"
+  },
+  "[bg] Biscuit store": {
+    "english": "Biscuit store",
+    "chinese": "饼干店背景"
+  },
+  "[bg] Chocolate": {
+    "english": "Chocolate",
+    "chinese": "巧克力背景"
+  },
+  "[bg] Dark Chocolate": {
+    "english": "Dark Chocolate",
+    "chinese": "黑巧克力背景"
+  },
+  "[bg] Painter": {
+    "english": "Painter",
+    "chinese": "画家背景"
+  },
+  "[bg] Snow": {
+    "english": "Snow",
+    "chinese": "雪花背景"
+  },
+  "[bg] Sky": {
+    "english": "Sky",
+    "chinese": "天空背景"
+  },
+  "[bg] Night": {
+    "english": "Night",
+    "chinese": "夜晚背景"
+  },
+  "[bg] Foil": {
+    "english": "Foil",
+    "chinese": "锡纸背景"
   }
 }

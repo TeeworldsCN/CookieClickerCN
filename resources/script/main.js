@@ -685,29 +685,10 @@ var __TWCNL = {};
 
   // 汉化背景选择器中的背景名
   const ModBackgroundSelector = MOD => {
-    Game.Upgrades['Background selector'].choicesFunction = () => {
-      const choices = [];
-      choices[0] = { name: 'Automatic', icon: [0, 7] };
-      choices[1] = { name: 'Blue', icon: [21, 21] };
-      choices[2] = { name: 'Red', icon: [22, 21] };
-      choices[3] = { name: 'White', icon: [23, 21] };
-      choices[4] = { name: 'Black', icon: [24, 21] };
-      choices[5] = { name: 'Gold', icon: [25, 21] };
-      choices[6] = { name: 'Grandmas', icon: [26, 21] };
-      choices[7] = { name: 'Displeased grandmas', icon: [27, 21] };
-      choices[8] = { name: 'Angered grandmas', icon: [28, 21] };
-      choices[9] = { name: 'Money', icon: [29, 21] };
-
-      if (!EN) {
-        choices[0].name = loc(choices[0].name);
-        for (let i = 1; i < choices.length; i++) {
-          choices[i].name = loc(`[bg] ${choices[i].name}`);
-        }
-      }
-
-      choices[Game.bgType].selected = 1;
-      return choices;
-    };
+    for (let i in Game.BGsByChoice) {
+      if (i == 0) continue;
+      Game.BGsByChoice[i].name = loc('[bg] ' + Game.BGsByChoice[i].name);
+    }
   };
 
   // 菜单修改
