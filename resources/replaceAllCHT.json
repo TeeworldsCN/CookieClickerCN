@@ -2,5 +2,8 @@
   "鼠標": {
     "reason": "其實主要是用於演示用詞替換",
     "replacement": "滑鼠"
+  },
+  "指針": {
+    "replacement": "遊標"
   }
 }

@@ -1712,15 +1712,15 @@
   },
   "[Upgrade quote 411]Lucky digit": {
     "english": "This upgrade is a bit shy and only appears when your prestige level ends in 7.",
-    "chinese": "这项升级比较害羞，只有当你的威望等级以7结尾时才会出现。"
+    "chinese": "这项升级比较害羞，只有当你的威望等级包含7时才会出现。"
   },
   "[Upgrade quote 412]Lucky number": {
     "english": "This upgrade is a reclusive hermit and only appears when your prestige level ends in 777.",
-    "chinese": "这项升级是位隐居人士，只有当你的威望等级以777结尾时才会出现。"
+    "chinese": "这项升级是位隐居人士，只有当你的威望等级包含两个7时才会出现。"
   },
   "[Upgrade quote 413]Lucky payout": {
     "english": "This upgrade took an oath of complete seclusion from the rest of the world and only appears when your prestige level ends in 777777.",
-    "chinese": "这项升级为了闭关修炼曾发誓与世隔绝，只有当你的威望等级以777777结尾时才会出现。"
+    "chinese": "这项升级为了闭关修炼曾发誓与世隔绝，只有当你的威望等级包含四个7时才会出现。"
   },
   "[Upgrade quote 415]Lucky grandmas": {
     "english": "A fortunate grandma that always seems to find more cookies.",
