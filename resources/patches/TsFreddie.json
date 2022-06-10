@@ -535,6 +535,11 @@
     "english": "You have <b>1 chance in %1</b> every second of earning this achievement.",
     "chinese": "你每秒有 <b>%1分之一</b> 的几率获得此成就。"
   },
+  "[Idleverse quote]There's been countless other idle universes running alongside our own. You've finally found a way to hijack their production and convert whatever they've been making into cookies!": {
+    "comment": "因为英文原文更想表示放置类游戏组成的宇宙，不太想改变大家都已经习惯的建筑名词，所以在描述里换了个解释来弥补放置游戏宇宙这个概念。",
+    "english": "There's been countless other idle universes running alongside our own. You've finally found a way to hijack their production and convert whatever they've been making into cookies!",
+    "chinese": "我们周围有不计其数的放置类宇宙。你最终还是找到了办法来操纵其他宇宙中放置游戏的生产，将它们正在生产的物品转化成饼干！"
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"
