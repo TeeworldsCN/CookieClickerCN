@@ -2387,9 +2387,40 @@
     "chinese": "摩卡巧克力豆饼干"
   },
   "[Upgrade quote 567]Chocolate chip mocha cookies": {
-    "comment": "TODO",
     "english": "Mocha started out as an excuse to smuggle chocolate into coffee. And now, in a poignant display of diplomacy and cultural exchange, it's bringing coffee to chocolate cookies.",
-    "chinese": "摩卡最初是为了走私巧克力才放在咖啡里的。"
+    "chinese": "摩卡最初是为了走私巧克力才将巧克力放在咖啡里的。现如今，在精彩绝伦的文化交流影响下，咖啡反倒被带进了巧克力饼干中来。"
+  },
+  "[Upgrade quote 568]Earl Grey cookies": {
+    "english": "Captain Picard's favorite.",
+    "chinese": "皮卡德舰长的最爱"
+  },
+  "[Upgrade quote 569]Corn syrup cookies": {
+    "english": "The corn syrup makes it extra chewy. Not the type of stuff you'd think to put in a cookie, but bakers make do.",
+    "chinese": "玉米糖浆的存在，让这块饼干格外的有嚼劲。正常人很少会想到将这些东西放进饼干里，但是毕竟烘焙师们被逼急了就会做各种尝试。"
+  },
+  "[Upgrade quote 570]Icebox cookies": {
+    "english": "Can be prepared in a variety of shapes with a variety of ingredients. Made by freezing dough before baking it, mirroring a time-proven medieval torture practice. Gotta keep them guessing.",
+    "chinese": "可以用各种各样的食材做成千奇百怪的形状。只要在烘烤前先将面团冷冻起来，参考了历史悠久的中世纪酷刑操作。产品思路必须要让竞争对手摸不到头脑才行。"
+  },
+  "[Upgrade quote 571]Graham crackers": {
+    "english": "Inspired in their design by the wish to live a life of austere temperance, free from pleasure or cheer; it's no wonder these are so tasty.",
+    "chinese": "灵感来自与人们对朴素生活的向往：既没有激情，也没有快乐。难怪这些饼干是那么的美味。"
+  },
+  "[Upgrade quote 572]Hardtack": {
+    "english": "Extremely hard and, if we're being honest, extremely tack.<br>If you're considering eating this as a fun snack, you probably have other things to worry about than this game, like getting scurvy or your crew fomenting mutiny.",
+    "chinese": "出奇的硬实。说实话其实就是格外的粘牙。<br>如果你觉得闲暇时间可以拿这种饼干来打牙忌，那你可能不光要考虑这个游戏怎么玩了：可能还要担心一下坏血病和你的员工正在组织的叛乱活动。"
+  },
+  "[Upgrade quote 573]Cornflake cookies": {
+    "english": "They're grrrrrroovy! Careful not to let it sit in your milk too long, lest you accidentally end up with a bowl of cereal and get confused.",
+    "chinese": "坑坑洼洼的真有意思！小心别让它在牛奶里泡太久了，不然你可能吃着吃着就变成吃玉米麦片了。"
+  },
+  "[Upgrade quote 574]Tofu cookies": {
+    "english": "There's really two ways to go with tofu cooking; either it asserts itself in plain sight or it camouflages itself in the other ingredients. This happens to be the latter, and as such, you can't really tell the difference between this and a regular cookie, save for that one pixel on the left.",
+    "chinese": "豆腐的作法无非两种：要不是直接就将豆腐摆盘，要不就是把它伪装成其他食材。这个饼干恰巧就是后者，所以你现在也看不出来这个饼干和普通的饼干有什么区别。除了左边的那一个像素。"
+  },
+  "[Upgrade quote 575]Gluten-free cookies": {
+    "english": "Made with browned butter and milk to closely match the archetypal chocolate chip cookie.<br>For celiacs, a chance to indulge in a delicious risk-free pastry. For others, a strangely threatening confection whose empty eyes will never know heaven nor hell.",
+    "chinese": "用焦色黄油和牛奶制成，和传统的巧克力饼干非常相似。<br>对于麸质过敏的人来说，这是个可以无忧的享受甜点的机会。而对其他人来说，这是一种没有灵魂的且充满威胁的饼干，这饼干空洞的躯壳将永远不会知道世界、天堂与地狱的意义。"
   },
   "[Upgrade quote 621]Fortune #001": {
     "english": "Fingers are not the only thing you can count on.",
