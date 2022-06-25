@@ -2422,6 +2422,123 @@
     "english": "Made with browned butter and milk to closely match the archetypal chocolate chip cookie.<br>For celiacs, a chance to indulge in a delicious risk-free pastry. For others, a strangely threatening confection whose empty eyes will never know heaven nor hell.",
     "chinese": "用焦色黄油和牛奶制成，和传统的巧克力饼干非常相似。<br>对于麸质过敏的人来说，这是个可以无忧的享受甜点的机会。而对其他人来说，这是一种没有灵魂的且充满威胁的饼干，这饼干空洞的躯壳将永远不会知道世界、天堂与地狱的意义。"
   },
+  "[Upgrade quote 576]Russian bread cookies": {
+    "english": "Also known as alphabet cookies; while most bakers follow the recipe to the letter, it is said that some substitute the flour for spelt. But don't take my word for it.",
+    "chinese": "又叫字母表饼干；大多数烘焙师会按照原料表一字一句地调配配方。但有小部分人会把面粉换成谷粒，当然也可能是我记错了。"
+  },
+  "[Upgrade quote 577]Lebkuchen": {
+    "english": "Diverse cookies from Germany, fragrant with honey and spices, often baked around Christmas.<br>Once worn by warriors of old for protection in battle.<br>+5 STR, +20% magic resistance.",
+    "chinese": "来自德国的花样饼干，带有蜂蜜和香料的香气，通常在圣诞节前后烘烤。<br>曾经由古代战士佩戴，以在战斗中的获得额外保护。<br>+5 力量，+20% 魔法抗性。"
+  },
+  "[Upgrade quote 578]Aachener Printen": {
+    "english": "The honey once used to sweeten these gingerbread-like treats has since been swapped out for beet sugar, providing another sad example of regressive evolution.",
+    "chinese": "为了使这些类似姜饼的食物变甜而添加的蜂蜜后来被换成了红糖，这是倒退进化的另一个可悲例子。"
+  },
+  "[Upgrade quote 579]Canistrelli": {
+    "english": "A dry biscuit flavored with anise and wine, tough like the people of Corsica where it comes from.",
+    "chinese": "一种用茴香和葡萄酒调味的干饼干，像它的原产地科西嘉的人一样硬实。"
+  },
+  "[Upgrade name 580]Nice biscuits": {
+    "english": "Nice biscuits",
+    "chinese": "奈斯饼干"
+  },
+  "[Upgrade quote 580]Nice biscuits": {
+    "english": "Made with coconut and perfect with tea. Traces its origins to a French city so nice they named it that.",
+    "chinese": "用椰子制成，是热茶的完美搭档。它的起源可以追溯到一个法国城市，他们给它起了这样的名字。"
+  },
+  "[Upgrade quote 581]French pure butter cookies": {
+    "english": "You can't tell what's stronger coming off these - the smell of butter or condescension.",
+    "chinese": "你无法分辨出饼干中是什么能散发出如此强烈的气息——黄油的味道还是居高临下的味道。"
+  },
+  "[Upgrade quote 582]Petit beurre": {
+    "english": "An unassuming biscuit whose name simply means \"little butter\". Famed and feared for its four ears and forty-eight teeth.<br>When it hears ya, it'll get ya...",
+    "chinese": "一种不起眼的饼干，它的名字只是“小黄油”的意思。以其散播着恐惧的四只耳朵和四十八颗牙齿而闻名。<br>当它听到你的声音时，你可能就完蛋了。。。"
+  },
+  "[Upgrade quote 583]Nanaimo bars": {
+    "english": "A delicious no-bake pastry hailing from Canada. Probably beats eating straight-up snow with maple syrup poured on it, but what do I know.",
+    "chinese": "来自加拿大的美味免烤糕点。可能比直接在雪上浇枫糖浆吃掉要好吃，但是我又怎么会知道呢？"
+  },
+  "[Upgrade name 584]Berger cookies": {
+    "comment": "给berger起了个带堡的名字，和原名不太一样",
+    "english": "Berger cookies",
+    "chinese": "格堡饼干"
+  },
+  "[Upgrade quote 584]Berger cookies": {
+    "english": "Messily slathered with chocolate fudge, but one of the most popular bergers of Baltimore, along with the triple fried egg berger and the blue crab cheeseberger.",
+    "chinese": "涂满了巧克力酱，但它是巴尔地摩最受欢迎的三堡之一，与三重煎蛋堡和蓝蟹芝士堡平起平坐。"
+  },
+  "[Upgrade quote 585]Chinsuko": {
+    "english": "A little piece of Okinawa in cookie form. Part of a Japanese custom of selling sweets as souvenirs. But hey, pressed pennies are cool too.",
+    "chinese": "将冲绳的一部分用饼干的形式做出来，作为日本人販売甜点作为纪念品的习俗的一部分。但是要我说，欧洲各景点的压扁的硬币也很酷。"
+  },
+  "[Upgrade quote 586]Panda koala biscuits": {
+    "english": "Assorted jungle animals with equally assorted fillings.<br>Comes in chocolate, strawberry, vanilla and green tea.<br>Eat them all before they go extinct!",
+    "chinese": "各种各样的丛林动物。<br>有巧克力、草莓、香草和绿茶口味。<br>要抓紧在这些物种灭绝之前将它们全部吃掉！"
+  },
+  "[Upgrade quote 587]Putri salju": {
+    "english": "A beloved Indonesian pastry; its name means \"snow princess\", for the powdered sugar it's coated with. Had we added these to Cookie Clicker some years ago, this is where we'd make a reference to that one Disney movie, but it's probably time to let it go.",
+    "chinese": "印尼人最爱的糕点；它的名字代表“雪之公主”，因为这上面涂满了糖粉。如果我们几年前将这个饼干添加到Cookie Clicker中，那很可能我们会在这里引用迪士尼的一部电影，但是随它吧，毕竟现在已经没人在乎了。"
+  },
+  "[Upgrade quote 588]Milk cookies": {
+    "english": "Best eaten with a tall glass of chocolate.",
+    "chinese": "配合一大杯巧克力食用风味更加。"
+  },
+  "[Upgrade quote 589]Cookie crumbs": {
+    "english": "There used to be a cookie here. Now there isn't.<br>Good heavens, what did you <i>DO?!</i>",
+    "chinese": "这里曾有一个饼干。但是现在什么都没了。<br>我滴个妈耶，你到底<i><b>做</b></i>了什么！"
+  },
+  "[Upgrade quote 590]Chocolate chip cookie": {
+    "english": "This is the cookie you've been clicking this whole time. It looks a bit dented and nibbled on, but it's otherwise good as new.",
+    "chinese": "这是您一直在点击的那个饼干。它现在看起来上面有很多坑，还有被啃咬的痕迹，除此之外还是跟新的一样。"
+  },
+  "[Upgrade quote 591]Cosmic beginner's luck": {
+    "english": "Oh! A penny!<br>Oh! A priceless heirloom!<br>Oh! Another penny!",
+    "chinese": "咦？一个硬币！<br>咦？一个绝迹的遗物！<br>咦？又一个硬币！"
+  },
+  "[Upgrade quote 592]Reinforced membrane": {
+    "english": "A consistency between jellyfish and cling wrap.",
+    "chinese": "吃起来有介于水母和保鲜膜之间的口感。"
+  },
+  "[Upgrade quote 593]Binary grandmas": {
+    "english": "A digital grandma to transfer more cookies.<br>(See also : boolean grandmas, string grandmas, and not-a-number grandmas, also known as \"NaNs\".)",
+    "chinese": "用于传输更多饼干的数字老奶奶。<br>（另见：布尔老奶奶、字符串老奶奶和非数字值老奶奶，也称为“NaNs”）。"
+  },
+  "[Upgrade name 594]The JavaScript console for dummies": {
+    "english": "The JavaScript console for dummies",
+    "chinese": "《JavaScript控制台 从入门到放弃》"
+  },
+  "[Upgrade quote 594]The JavaScript console for dummies": {
+    "english": "This should get you started. The first line reads: \"To open the javascript console, press-\"<br>...the rest of the book is soaked in chocolate milk. If only there was a way to look up this sort of information...",
+    "chinese": "这个应该能帮助你上手。第一行写道：“首先，我们要打开 javascript 控制台。只要按下”<br>……这本书其余的部分被巧克力奶浸湿了。要是有另一种查找这些教程的方法就好了。"
+  },
+  "[Upgrade quote 595]64bit arrays": {
+    "english": "A long-form variable type to pack your cookies much more efficiently.",
+    "chinese": "一种存储大数的变量类型，可以更有效地打包您的饼干。"
+  },
+  "[Upgrade quote 596]Stack overflow": {
+    "english": "This is really bad! You probably forgot to close a loop somewhere and now your programs are going crazy! The rest of your engineers seem really excited about it somehow. How could a software mishap like a stack overflow possibly ever help anyone?",
+    "chinese": "这就很有问题了！你大概是在哪忘记跳出递归了，所以你现在的程序都抽风了！但是不知道为什么，你身边的程序员看起来倒是很看好这东西。为什么这种全名叫 Stack Overflow 的程序错误会被人格外青睐呢？<br>Uncaught RangeError: Maximum call stack size exceeded<br>at translate (&lt;anonymous&gt;:1:43)<br>at translate (&lt;anonymous&gt;:1:43)<br>at translate (&lt;anonymous&gt;:1:43)<br>at translate (&lt;anonymous&gt;:1:43)<br>"
+  },
+  "[Upgrade quote 597]Enterprise compiler": {
+    "english": "This bespoke javascript compiler took your team years of development and billions in research, but it should let you execute (certain) functions (up to) 2% faster (in optimal circumstances).",
+    "chinese": "这个定制的 javascript 编译器花费了您整个团队多年的时间和数十亿经费，但它应该让（某些）函数提升（最多）2% 的性能（在最佳情况下）。"
+  },
+  "[Upgrade quote 598]Syntactic sugar": {
+    "english": "Tastier code for tastier cookies.",
+    "chinese": "更美味的代码等于更美味的饼干。"
+  },
+  "[Upgrade quote 599]A nice cup of coffee": {
+    "english": "All this nerd stuff has you exhausted. You make yourself a nice cup of coffee, brewed with roasted beans from some far-away island. You may have been working a bit too hard though - the cup of coffee starts talking to you, insisting that it is NOT javascript.",
+    "chinese": "一直看这些极客的概念让你有点精神疲劳了。所以你为自己准备了一杯美味的咖啡，是用来自某个遥远岛屿的烤咖啡豆冲泡而成。不过，你可能工作得有点太投入了——那杯咖啡开始跟你说话，并坚持说它绝对不是 javascript。"
+  },
+  "[Upgrade name 600]Just-in-time baking": {
+    "english": "Just-in-time baking",
+    "chinese": "即时烘焙"
+  },
+  "[Upgrade quote 600]Just-in-time baking": {
+    "english": "A new method of preparing cookies; they bake themselves right in front of the customers before eating, leaving your kitchens mess-free.",
+    "chinese": "一种新型饼干制作方法；这些饼干在被食用前会在顾客面前烘烤自己，从而做到让您的厨房一尘不染。"
+  },
   "[Upgrade quote 621]Fortune #001": {
     "english": "Fingers are not the only thing you can count on.",
     "chinese": "你的手指并不是你唯一可以依靠的东西。"
