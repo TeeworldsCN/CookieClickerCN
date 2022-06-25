@@ -12,6 +12,7 @@
     "chinese": "在接下来的 %2 分钟内，咒语反效果的发生几率增加 %1 倍。"
   },
   "Backfire!": {
+    "deprecated": "r1cHk1d.json",
     "english": "Backfire!",
     "chinese": "适得其反的咒语！"
   }
