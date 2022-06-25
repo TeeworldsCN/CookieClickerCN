@@ -19,7 +19,12 @@
   },
   "Haggler's Charm": {
     "english": "Haggler's Charm",
-    "chinese": "投机倒把 <q>这是什么咒语？我简直赚麻了！</q>"
+    "chinese": "投机倒把"
+  },
+  "Upgrades are %1% more expensive for an hour.": {
+    "comment": "投机倒把的负面效果，补充一个小字。目前只有该处使用这个文本。希望以后不会有其他文本重复利用该字符串。",
+    "english": "Upgrades are %1% more expensive for an hour.",
+    "chinese": "1 小时内升级价格上升 %1%。<q>这是什么咒语？我简直赚麻了！</q>"
   },
   "Summon Crafty Pixies": {
     "comment": "钩心斗角有建筑精美的意思（减少花费），也有明争暗斗的意思（狡猾的精灵），一语双关",
