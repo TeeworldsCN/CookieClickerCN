@@ -68,19 +68,6 @@
     "english": "Magic cost:",
     "chinese": "消耗魔能："
   },
-  "Chance to backfire:": {
-    "english": "Chance to backfire:",
-    "chinese": "发生反效果的几率："
-  },
-  "Backfire:": {
-    "english": "Backfire:",
-    "chinese": "反效果："
-  },
-  "Backfire!": {
-    "deprecated": "在 Grimoire.json 中更改了",
-    "english": "Backfire!",
-    "chinese": "适得其反！"
-  },
   "%1 magic": {
     "english": "%1 magic",
     "chinese": "%1 魔能"
@@ -156,10 +143,6 @@
   "Buildings are pricier!": {
     "english": "Buildings are pricier!",
     "chinese": "建筑涨价了！"
-  },
-  "Gambler's Fever Dream": {
-    "english": "Gambler's Fever Dream",
-    "chinese": "赌徒的狂热梦想"
   },
   "Cast a random spell at half the magic cost, with twice the chance of backfiring.": {
     "english": "Cast a random spell at half the magic cost, with twice the chance of backfiring.",

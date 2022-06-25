@@ -353,6 +353,7 @@
     "chinese": "不受束缚的时光机"
   },
   "[Upgrade name 780]Unshackled antimatter condensers": {
+    "deprecated": "r1cHk1d.json",
     "english": "Unshackled antimatter condensers",
     "chinese": "不受束缚的反物质聚光镜"
   },
@@ -361,6 +362,7 @@
     "chinese": "不受束缚的棱镜"
   },
   "[Upgrade name 782]Unshackled chancemakers": {
+    "deprecated": "r1cHk1d.json",
     "english": "Unshackled chancemakers",
     "chinese": "不受束缚的机会制造器"
   },

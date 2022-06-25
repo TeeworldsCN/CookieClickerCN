@@ -1,0 +1,95 @@
+{
+  "comment": "由 github 用户 @r1cHk1d 建议的翻译修改",
+  "Conjure Baked Goods": {
+    "english": "Conjure Baked Goods",
+    "chinese": "粒粒皆辛苦"
+  },
+  "Force the Hand of Fate": {
+    "english": "Force the Hand of Fate",
+    "chinese": "我命由我不由天！"
+  },
+  "Stretch Time": {
+    "comment": "与著名的《回到未来》相对应",
+    "english": "Stretch Time",
+    "chinese": "前往过去"
+  },
+  "Spontaneous Edifice": {
+    "english": "Spontaneous Edifice",
+    "chinese": "万丈高楼平地起！"
+  },
+  "Haggler's Charm": {
+    "english": "Haggler's Charm",
+    "chinese": "投机倒把 <q>这是什么咒语？我简直赚麻了！</q>"
+  },
+  "Summon Crafty Pixies": {
+    "comment": "钩心斗角有建筑精美的意思（减少花费），也有明争暗斗的意思（狡猾的精灵），一语双关",
+    "english": "Summon Crafty Pixies",
+    "chinese": "钩心斗角之势"
+  },
+  "Gambler's Fever Dream": {
+    "english": "Gambler's Fever Dream",
+    "chinese": "不成功，便成仁"
+  },
+  "Resurrect Abomination": {
+    "english": "Resurrect Abomination",
+    "chinese": "起来吧！"
+  },
+  "Diminish Ineptitude": {
+    "english": "Diminish Ineptitude",
+    "chinese": "临时抱佛脚"
+  },
+  "Chance to backfire:": {
+    "english": "Chance to backfire:",
+    "chinese": "走火入魔的几率:"
+  },
+  "Backfire:": {
+    "english": "Backfire:",
+    "chinese": "走火入魔："
+  },
+  "Backfire!": {
+    "deprecated": "在 Grimoire.json 中更改了",
+    "english": "Backfire!",
+    "chinese": "走火入魔！"
+  },
+  "Antimatter condenser": {
+    "english": "Antimatter condenser",
+    "chinese": "反物质凝结器"
+  },
+  "antimatter condenser": {
+    "english": "antimatter condenser",
+    "chinese": "反物质凝结器"
+  },
+  "antimatter condensers": {
+    "english": "antimatter condensers",
+    "chinese": "反物质凝结器"
+  },
+  "%1 antimatter condenser": {
+    "english": ["%1 antimatter condenser", "%1 antimatter condensers"],
+    "chinese": ["%1 台反物质凝结器", "%1 台反物质凝结器"]
+  },
+  "[Upgrade name 780]Unshackled antimatter condensers": {
+    "english": "Unshackled antimatter condensers",
+    "chinese": "不受束缚的反物质凝结器"
+  },
+  "Chancemaker": {
+    "english": "Chancemaker",
+    "chinese": "机会捕手"
+  },
+  "chancemaker": {
+    "english": "chancemaker",
+    "chinese": "机会捕手"
+  },
+  "chancemakers": {
+    "english": "chancemakers",
+    "chinese": "机会捕手"
+  },
+  "%1 chancemaker": {
+    "english": ["%1 chancemaker", "%1 chancemakers"],
+    "chinese": ["%1 个机会捕手", "%1 个机会捕手"]
+  },
+  "[Upgrade name 782]Unshackled chancemakers": {
+    "deprecated": "r1cHk1d.json",
+    "english": "Unshackled chancemakers",
+    "chinese": "不受束缚的机会捕手"
+  }
+}
