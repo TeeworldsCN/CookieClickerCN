@@ -91,5 +91,25 @@
     "deprecated": "r1cHk1d.json",
     "english": "Unshackled chancemakers",
     "chinese": "不受束缚的机会捕手"
+  },
+  "Find the <b>forgotten madeleine</b>.": {
+    "english": "Find the <b>forgotten madeleine</b>.",
+    "chinese": "找到<b>被遗忘的奶油茶糕</b>。"
+  },
+  "[Elderwort quote]A very old, long-forgotten subspecies of edelweiss that emits a strange, heady scent. There is some anecdotal evidence that these do not undergo molecular aging.": {
+    "english": "A very old, long-forgotten subspecies of edelweiss that emits a strange, heady scent. There is some anecdotal evidence that these do not undergo molecular aging.",
+    "chinese": "这是火绒草长期被遗忘的一个古老亚种，会散发出令人陶醉的奇特芳香。轶事证据表明这种植物不会经历分子老化。"
+  },
+  "[Upgrade name 719]Aura gloves": {
+    "english": "Aura gloves",
+    "chinese": "气场手套"
+  },
+  "[Upgrade name 720]Luminous gloves": {
+    "english": "Luminous gloves",
+    "chinese": "荧光手套"
+  },
+  "Glovemorel": {
+    "english": "Glovemorel",
+    "chinese": "手套羊肚菌"
   }
 }
