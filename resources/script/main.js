@@ -955,6 +955,29 @@ var __TWCNL = {};
     }
   };
 
+  // 魔改建筑Buff提示
+  const ModBuildingBuffs = MOD => {
+    const buildingBuff = Game.buffTypesByName['building buff'];
+    const oldBuffFunc = buildingBuff.func;
+    buildingBuff.func = (time, pow, building) => {
+      const obj = Game.ObjectsById[building];
+      const result = oldBuffFunc(time, pow, building);
+      // 替换 dname
+      result.dname = loc(`[Building Buff] ${obj.name}`);
+      return result;
+    };
+
+    const buildingDebuff = Game.buffTypesByName['building debuff'];
+    const oldDebuffFunc = buildingDebuff.func;
+    buildingDebuff.func = (time, pow, building) => {
+      const obj = Game.ObjectsById[building];
+      const result = oldDebuffFunc(time, pow, building);
+      // 替换 dname
+      result.dname = loc(`[Building Debuff] ${obj.name}`);
+      return result;
+    };
+  };
+
   const FixPlaySound = () => {
     // 用monophonic换性能，游戏里也没什么地方需要同时播放一个声音好几遍的情况
     PlaySound = (url, vol, pitchVar) => {
@@ -1066,6 +1089,7 @@ var __TWCNL = {};
         ModCrateTooltip(this);
         ModObjectTooltip(this);
         ModObjectLevelTooltip(this);
+        ModBuildingBuffs(this);
         AddMenuHook(this, ModPrefMenu);
       }
     },

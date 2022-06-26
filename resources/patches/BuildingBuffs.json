@@ -1,0 +1,155 @@
+{
+  "comment": "这里放有魔改出来的建筑加减成翻译，不使用原文做key，避免以后更新冲突",
+  "[Building Buff] Cursor": {
+    "english": "High-five",
+    "chinese": "来击个掌！"
+  },
+  "[Building Debuff] Cursor": {
+    "english": "Slap to the face",
+    "chinese": "伸手打脸"
+  },
+  "[Building Buff] Grandma": {
+    "english": "Congregation",
+    "chinese": "信仰仪式"
+  },
+  "[Building Debuff] Grandma": {
+    "english": "Senility",
+    "chinese": "老年痴呆"
+  },
+  "[Building Buff] Farm": {
+    "english": "Luxuriant harvest",
+    "chinese": "五谷丰登"
+  },
+  "[Building Debuff] Farm": {
+    "english": "Locusts",
+    "chinese": "蝗虫成灾"
+  },
+  "[Building Buff] Mine": {
+    "english": "Ore vein",
+    "chinese": "矿脉涌动"
+  },
+  "[Building Debuff] Mine": {
+    "english": "Cave-in",
+    "chinese": "塌方矿难"
+  },
+  "[Building Buff] Factory": {
+    "english": "Oiled-up",
+    "chinese": "零件保养"
+  },
+  "[Building Debuff] Factory": {
+    "english": "Jammed machinery",
+    "chinese": "机器故障"
+  },
+  "[Building Buff] Bank": {
+    "english": "Juicy profits",
+    "chinese": "不菲利润"
+  },
+  "[Building Debuff] Bank": {
+    "english": "Recession",
+    "chinese": "经济衰退"
+  },
+  "[Building Buff] Temple": {
+    "english": "Fervent adoration",
+    "chinese": "狂热崇拜"
+  },
+  "[Building Debuff] Temple": {
+    "english": "Crisis of faith",
+    "chinese": "信仰危机"
+  },
+  "[Building Buff] Wizard tower": {
+    "english": "Manabloom",
+    "chinese": "法力无边"
+  },
+  "[Building Debuff] Wizard tower": {
+    "english": "Magivores",
+    "chinese": "消魔殆尽"
+  },
+  "[Building Buff] Shipment": {
+    "english": "Delicious lifeforms",
+    "chinese": "美味新生命"
+  },
+  "[Building Debuff] Shipment": {
+    "english": "Black holes",
+    "chinese": "陷入黑洞"
+  },
+  "[Building Buff] Alchemy lab": {
+    "english": "Breakthrough",
+    "chinese": "突破性进展"
+  },
+  "[Building Debuff] Alchemy lab": {
+    "english": "Lab disaster",
+    "chinese": "实验室事故"
+  },
+  "[Building Buff] Portal": {
+    "english": "Righteous cataclysm",
+    "chinese": "正义之灾变"
+  },
+  "[Building Debuff] Portal": {
+    "english": "Dimensional calamity",
+    "chinese": "跨次元灾厄"
+  },
+  "[Building Buff] Time machine": {
+    "english": "Golden ages",
+    "chinese": "黄金时代"
+  },
+  "[Building Debuff] Time machine": {
+    "english": "Time jam",
+    "chinese": "时间堵塞"
+  },
+  "[Building Buff] Antimatter condenser": {
+    "english": "Extra cycles",
+    "chinese": "多重循环"
+  },
+  "[Building Debuff] Antimatter condenser": {
+    "english": "Predictable tragedy",
+    "chinese": "写死的悲剧"
+  },
+  "[Building Buff] Prism": {
+    "english": "Solar flare",
+    "chinese": "太阳耀斑"
+  },
+  "[Building Debuff] Prism": {
+    "english": "Eclipse",
+    "chinese": "黑暗日食"
+  },
+  "[Building Buff] Chancemaker": {
+    "english": "Winning streak",
+    "chinese": "连胜记录"
+  },
+  "[Building Debuff] Chancemaker": {
+    "english": "Dry spell",
+    "chinese": "天灾人祸"
+  },
+  "[Building Buff] Fractal engine": {
+    "english": "Macrocosm",
+    "chinese": "分裂出大千世界"
+  },
+  "[Building Debuff] Fractal engine": {
+    "english": "Microcosm",
+    "chinese": "分裂出虚无之地"
+  },
+  "[Building Buff] Javascript console": {
+    "english": "Refactoring",
+    "chinese": "代码重构"
+  },
+  "[Building Debuff] Javascript console": {
+    "english": "Antipattern",
+    "chinese": "反模式"
+  },
+  "[Building Buff] Idleverse": {
+    "english": "Cosmic nursery",
+    "chinese": "宇宙摇篮"
+  },
+  "[Building Debuff] Idleverse": {
+    "english": "Big crunch",
+    "chinese": "宇宙塌缩"
+  },
+  "[Building Buff] Cortex baker": {
+    "english": "Brainstorm",
+    "chinese": "头脑风暴"
+  },
+  "[Building Debuff] Cortex baker": {
+    "english": "Brain freeze",
+    "chinese": "脑袋进水"
+  }
+}
