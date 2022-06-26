@@ -540,6 +540,18 @@
     "english": "There's been countless other idle universes running alongside our own. You've finally found a way to hijack their production and convert whatever they've been making into cookies!",
     "chinese": "我们周围有不计其数的放置类宇宙。你最终还是找到了办法来操纵其他宇宙中放置游戏的生产，将它们正在生产的物品转化成饼干！"
   },
+  "Ineptitude diminished!": {
+    "english": "Ineptitude diminished!",
+    "chinese": "你现在心静如水！"
+  },
+  "Ineptitude magnified!": {
+    "english": "Ineptitude magnified!",
+    "chinese": "感受到咒火涌动！"
+  },
+  "Casting %1<br>for %2 magic...": {
+    "english": "Casting %1<br>for %2 magic...",
+    "chinese": "消耗 %2 魔能<br>施放了%1..."
+  },
   "[Upgrade quote 0]Reinforced index finger": {
     "english": "prod prod",
     "chinese": "生产、生产……"
@@ -1541,6 +1553,10 @@
   "[Upgrade quote 367]Nevercrack mouse": {
     "english": "How much beefier can you make a mouse until it's considered a rat?",
     "chinese": "你觉得鼠标要做得多肥才会被当作真的老鼠？"
+  },
+  "[Upgrade name 368]Five-finger discount": {
+    "english": "Five-finger discount",
+    "chinese": "剁手党砍价"
   },
   "[Upgrade quote 368]Five-finger discount": {
     "english": "Stick it to the man.",
@@ -2857,9 +2873,5 @@
     "comment": "因为中文不能叠那些奇葩字符，做了个css动画。TODO：继续补全成就",
     "english": "Here he comes",
     "chinese": "<style>.mEG{padding-top:.5em;height:.5em}.mEGT{max-width:11em;margin:0;line-height:0;color:#fd2525;animation:mgc 2.5s infinite}.mEGT:nth-child(2){color:#2396f5;animation:mgb 2.5s infinite}.mEGT:nth-child(3){color:unset;animation:mga 2.5s infinite}@keyframes mga{0%{transform:none;opacity:1}7%{transform:skew(-.5deg,-.9deg);opacity:.75}10%{transform:none;opacity:1}27%{transform:none;opacity:1}30%{transform:skew(.8deg,-.1deg);opacity:.75}35%{transform:none;opacity:1}52%{transform:none;opacity:1}55%{transform:skew(-1deg,.2deg);opacity:.75}50%{transform:none;opacity:1}72%{transform:none;opacity:1}75%{transform:skew(.4deg,1deg);opacity:.75}80%{transform:none;opacity:1}100%{transform:none;opacity:1}}@keyframes mgb{0%{transform:none;opacity:0}3%{transform:translate(-2px,-3px);opacity:.5}10%{transform:none;opacity:0}27%{transform:none;opacity:0}30%{transform:translate(-5px,-2px);opacity:.5}33%{transform:none;opacity:0}35%{transform:none;opacity:0}42%{transform:translate(-5px,-1px);opacity:.5}50%{transform:none;opacity:0}72%{transform:none;opacity:0}75%{transform:translate(-2px,-6px);opacity:.5}80%{transform:none;opacity:0}100%{transform:none;opacity:0}}@keyframes mgc{0%{transform:none;opacity:0}8%{transform:translate(2px,3px);opacity:1}10%{transform:none;opacity:0}27%{transform:none;opacity:0}35%{transform:translate(5px,2px);opacity:1}47%{transform:none;opacity:0}52%{transform:none;opacity:0}63%{transform:translate(5px,1px);opacity:1}65%{transform:none;opacity:0}72%{transform:none;opacity:0}70%{transform:translate(2px,6px);opacity:1}75%{transform:none;opacity:0}100%{transform:none;opacity:0}}</style><div class=\"mEG\"><div class=\"mEGT\"> ̶̯̲͛͆ͅ他 ̸̘͇̯̣̑̃͛来 ̶̲͐̋͘͜͝了 ̵͙͇̲̦̎̐͐̋̕͜</div><div class=\"mEGT\"> ̸͚̄他 ̸͐͜来 ̶̮̊了 ̴̹͌</div><div class=\"mEGT\"> 他 来 了 </div></div>"
-  },
-  "[Upgrade name 368]Five-finger discount": {
-    "english": "Five-finger discount",
-    "chinese": "剁手党砍价"
   }
 }

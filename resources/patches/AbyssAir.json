@@ -106,6 +106,7 @@
     "chinese": "啪！增益状态延长了。"
   },
   "The spell picks a random building you could afford if you had twice your current cookies, and gives it to you for free. The building selected must be under %1, and cannot be your most-built one (unless it is your only one).": {
+    "deprecated": "Grimoire.json",
     "english": "The spell picks a random building you could afford if you had twice your current cookies, and gives it to you for free. The building selected must be under %1, and cannot be your most-built one (unless it is your only one).",
     "chinese": "如果你有两倍于现在的饼干，咒语会随机挑选一栋你能买得起的建筑，并将其免费送给你。该建筑数量必须在%1以下，并且不能是你数量最多的建筑（除非它是你唯一的建筑）。"
   },

@@ -139,13 +139,5 @@
   "Spells backfire %1 times more for the next %2 minutes.": {
     "english": "Spells backfire %1 times more for the next %2 minutes.",
     "chinese": "在接下来的 %2 分钟内，咒语走火入魔的几率增加 %1 倍。"
-  },
-  "Ineptitude diminished!": {
-    "english": "Ineptitude diminished!",
-    "chinese": "你现在心静如水！"
-  },
-  "Ineptitude magnified!": {
-    "english": "Ineptitude magnified!",
-    "chinese": "感受到咒火涌动！"
   }
 }

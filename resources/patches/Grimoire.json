@@ -17,5 +17,9 @@
     "deprecated": "r1cHk1d.json",
     "english": "Backfire!",
     "chinese": "适得其反的咒语！"
+  },
+  "The spell picks a random building you could afford if you had twice your current cookies, and gives it to you for free. The building selected must be under %1, and cannot be your most-built one (unless it is your only one).": {
+    "english": "The spell picks a random building you could afford if you had twice your current cookies, and gives it to you for free. The building selected must be under %1, and cannot be your most-built one (unless it is your only one).",
+    "chinese": "咒语会随机挑选一栋建筑将其免费送给你。然而这个咒语只会挑选满足条件的建筑：<br>1. 价格不超过你当前饼干余额的两倍<br>2. 数量必须少于%1<br>3. 不是你数量最多的建筑（除非它是你唯一的建筑）"
   }
 }
