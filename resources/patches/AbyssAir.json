@@ -85,6 +85,7 @@
     "chinese": "召唤半小时CpS的饼干,上限为你当前饼干数的 %1%。"
   },
   "Summon a random golden cookie. Each existing golden cookie makes this spell +%1% more likely to backfire.": {
+    "deprecated": "r1cHk1d.json",
     "english": "Summon a random golden cookie. Each existing golden cookie makes this spell +%1% more likely to backfire.",
     "chinese": "召唤一个随机的黄金饼干。每一个现有的黄金饼干都会使这个魔法产生反效果的几率 +%1%。"
   },
@@ -146,6 +147,7 @@
     "chinese": "建筑涨价了！"
   },
   "Cast a random spell at half the magic cost, with twice the chance of backfiring.": {
+    "deprecated": "r1cHk1d.json",
     "english": "Cast a random spell at half the magic cost, with twice the chance of backfiring.",
     "chinese": "随机施放一个魔法，魔法费用减半，有两倍的几率发生反效果。"
   },

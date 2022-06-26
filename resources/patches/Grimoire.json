@@ -4,10 +4,12 @@
     "chinese": "<span style=\"font-size: 8pt\">+%1/秒</span>"
   },
   "Spells backfire %1 times less for the next %2 minutes.": {
+    "deprecated": "r1cHk1d.json",
     "english": "Spells backfire %1 times less for the next %2 minutes.",
     "chinese": "在接下来的 %2 分钟内，咒语反效果的发生几率减少 %1 倍。"
   },
   "Spells backfire %1 times more for the next %2 minutes.": {
+    "deprecated": "r1cHk1d.json",
     "english": "Spells backfire %1 times more for the next %2 minutes.",
     "chinese": "在接下来的 %2 分钟内，咒语反效果的发生几率增加 %1 倍。"
   },

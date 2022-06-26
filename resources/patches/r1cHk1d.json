@@ -115,5 +115,37 @@
   "Glovemorel": {
     "english": "Glovemorel",
     "chinese": "手套羊肚菌"
+  },
+  "Spells backfire %1 times less for %2.": {
+    "english": "Spells backfire %1 times less for %2.",
+    "chinese": "法术走火入魔的几率低 %1 倍，持续 %2。"
+  },
+  "Spells backfire %1 times more for %2.": {
+    "english": "Spells backfire %1 times more for %2.",
+    "chinese": "法术走火入魔的几率高 %1 倍，持续 %2。"
+  },
+  "Summon a random golden cookie. Each existing golden cookie makes this spell +%1% more likely to backfire.": {
+    "english": "Summon a random golden cookie. Each existing golden cookie makes this spell +%1% more likely to backfire.",
+    "chinese": "召唤一个随机的黄金饼干。每一个现有的黄金饼干都会使这个魔法走火入魔的几率 +%1%。"
+  },
+  "Cast a random spell at half the magic cost, with twice the chance of backfiring.": {
+    "english": "Cast a random spell at half the magic cost, with twice the chance of backfiring.",
+    "chinese": "随机施放一个魔法，魔法费用减半，但是施放的魔法有两倍的几率走火入魔。"
+  },
+  "Spells backfire %1 times less for the next %2 minutes.": {
+    "english": "Spells backfire %1 times less for the next %2 minutes.",
+    "chinese": "在接下来的 %2 分钟内，咒语走火入魔的几率减少 %1 倍。"
+  },
+  "Spells backfire %1 times more for the next %2 minutes.": {
+    "english": "Spells backfire %1 times more for the next %2 minutes.",
+    "chinese": "在接下来的 %2 分钟内，咒语走火入魔的几率增加 %1 倍。"
+  },
+  "Ineptitude diminished!": {
+    "english": "Ineptitude diminished!",
+    "chinese": "你现在心静如水！"
+  },
+  "Ineptitude magnified!": {
+    "english": "Ineptitude magnified!",
+    "chinese": "感受到咒火涌动！"
   }
 }
