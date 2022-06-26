@@ -2521,7 +2521,7 @@
   },
   "[Upgrade name 594]The JavaScript console for dummies": {
     "english": "The JavaScript console for dummies",
-    "chinese": "《JavaScript控制台 从入门到放弃》"
+    "chinese": "《JavaScript 从入门到放弃》"
   },
   "[Upgrade quote 594]The JavaScript console for dummies": {
     "english": "This should get you started. The first line reads: \"To open the javascript console, press-\"<br>...the rest of the book is soaked in chocolate milk. If only there was a way to look up this sort of information...",
@@ -2554,6 +2554,78 @@
   "[Upgrade quote 600]Just-in-time baking": {
     "english": "A new method of preparing cookies; they bake themselves right in front of the customers before eating, leaving your kitchens mess-free.",
     "chinese": "一种新型的饼干制作方法；这些饼干在被食用前会在顾客面前烘烤自己，从而做到让您的厨房一尘不染。"
+  },
+  "[Upgrade quote 601]cookies++": {
+    "english": "Your very own cookie-themed programming language, elegantly named after its most interesting ability - increasing the \"cookies\" variable by 1.",
+    "chinese": "你自己从头设计的编程语言，以其最有趣的特性命名：那就是可以将“饼干”变量加 1。"
+  },
+  "[Upgrade quote 602]Software updates": {
+    "english": "This is grand news - someone's finally figured out the Wifi password, and your newfound internet connection seems to have triggered a whole lot of software updates! Your browsers, drivers and plugins all received a fresh coat of paint, and your javascript version has been updated to the latest ECMAScript specification. It's really too bad thousands had to die due to some deprecated function in your neurotoxin ventilation code, but I guess that's progress for you.",
+    "chinese": "这可是大新闻——某人终于找到了WiFi密码。你新发现的互联网连接似乎触发了很多的软件更新！你的浏览器、驱动和插件都获得了最新最闪亮的外壳，并且你的 javascript 版本已更新为最新的 ECMAScript 规范。虽然由于你编写的神经毒素疏散代码中用到的某些已经弃用的函数，上千人因此丧命。但我觉得这对你来说是仍然是个进步。"
+  },
+  "[Upgrade name 603]Game.Loop": {
+    "english": "Game.Loop",
+    "chinese": "Game.Loop"
+  },
+  "[Upgrade quote 603]Game.Loop": {
+    "english": "You're not quite sure what to make of this. What does it mean? What does it do? Who would leave something like that just laying around here? Try asking again in 1/30th of a second.",
+    "chinese": "你也不知道怎么理解这个概念。这是啥意思？它又能做什么？谁会把这种东西就放在这里任其自生自灭？或许过三十分之一秒后再问一遍就懂了。"
+  },
+  "[Upgrade quote 604]eval()": {
+    "english": "It is said that this simple function holds the key to the universe, and that whosoever masters it may shape reality to their will.<br>Good thing you have no idea how it works. Makes for a neat plaque on your wall, though.",
+    "chinese": "大家都说这个简单的函数是解开宇宙奥秘的钥匙，而且完全掌握它的力量的人可以任其所愿地将现实塑造成任意的样子。<br>好消息是你并不知道这个函数的工作原理，把它裱起来挂在墙上倒是挺有艺术气息的。"
+  },
+  "[Upgrade quote 605]Script grannies": {
+    "english": "Armies of energy drink-fueled grandmas ready to hack into the cyberspace for renegade e-cookies.",
+    "chinese": "喝足了能量饮料的一大批老奶奶随时准备黑入叛逆电子饼干的网络空间中。"
+  },
+  "[Upgrade quote 607]Kruidnoten": {
+    "english": "A festive dutch favorite; tiny cinnamony bites sometimes coated in chocolate. The name translates roughly to \"kruidnoten\".",
+    "chinese": "荷兰人过节时的最爱；小巧到可以一口吃下的肉桂点心，有时涂有巧克力。在其他国家，大家会把这种点心叫做小姜饼。而它的原名是 “Kruidnoten” ，大致可以翻译为“小姜饼”。"
+  },
+  "[Upgrade quote 608]Marie biscuits": {
+    "english": "Pleasantly round, smoothly buttery, subtly vanilla-flavored, ornately embossed, each ridge represents a person Marie killed in prison.",
+    "chinese": "形状圆得正好，黄油浓得精致，淡淡的香草味从中散发出来，上面还有华丽的雕刻。每条纹路都代表玛丽在监狱里杀掉的人。"
+  },
+  "[Upgrade name 609]Meringue cookies": {
+    "english": "Meringue cookies",
+    "chinese": "蛋清糖霜脆饼"
+  },
+  "[Upgrade quote 609]Meringue cookies": {
+    "english": "Probably the most exciting thing you can make out of egg whites. Also called forgotten cookies, due to the recipe being once lost in a sealed mystical vault for 10,000 years.",
+    "chinese": "大概是你能只用蛋清做出来的最有意思的东西了。由于食谱曾经在密封的神秘保险库中丢失了十万年，因此也被称为“被遗忘的饼干”。"
+  },
+  "[Upgrade quote 610]Pizza": {
+    "english": "What is a pizza if not a large, chewy cookie, frosted with a rather exuberant tomato & cheese icing? Not a cookie, that's what.",
+    "chinese": "如果它不是一大块既有嚼劲又涂满了风味十足的番茄和芝士做的糖霜，那它还能叫披萨吗？其实我也不知道，但是肯定也不会叫饼干。"
+  },
+  "[Upgrade quote 611]Crackers": {
+    "english": "These are the non-flavored kind with no salt added. Really just a judgment-free wheat square begging to have bits of ham and spreadable cheese piled onto it, its main contribution being \"crunchy\".",
+    "chinese": "这些是那种没加什么盐和调料的饼干。其实就是一个朴素而简单的小麦方块渴望着火腿和芝士的陪伴。这种饼干最主要的作用就是“脆”。"
+  },
+  "[Upgrade quote 613]Kitten executives": {
+    "english": "ready to execute whatever and whoever you'd like, sir",
+    "chinese": "随时准备干掉你最希望干的事情或人，先生"
+  },
+  "[Upgrade quote 614]Chai tea cookies": {
+    "english": "Not exactly Captain Picard's favorite, but I mean, these will do in a pinch.",
+    "chinese": "并不是皮卡德船长的最爱，但我觉得实在没别的这些也能凑合。"
+  },
+  "[Upgrade quote 615]Yogurt cookies": {
+    "english": "Augmented by the wonders of dairy, these cookies are light and fluffy and just one more thing for the lactose-intolerant to avoid.<br>Truly for the cultured among us.",
+    "chinese": "因为有了乳制品的奇迹加成，这些饼干轻巧而蓬松。然而对于乳糖不耐受的人而言，则是额外的一种需要拒绝的东西。<br>真得是适合我们这种有文化的一类人。"
+  },
+  "[Upgrade quote 616]Thumbprint cookies": {
+    "english": "Filled with jam and sometimes served in little paper cups. No longer admissible as biometric evidence in court. We're not having a repeat of that whole mess.",
+    "chinese": "里面填满了果酱，有时会被包装在小纸杯里。从上个月开始就不能在法庭上作为指证嫌疑人证据了，我们可不想重复之前的错误。"
+  },
+  "[Upgrade quote 617]Pizzelle": {
+    "english": "Thin, crisp waffle cookies baked in a bespoke iron following an ancient Italian recipe.<br>These cookies have been around for a long, long time.<br>These cookies have seen things.",
+    "chinese": "又薄又脆的华夫饼干，按照一份古老的意大利食谱用定制的铁板烤制而成。<br>这些饼干已经存在了很长时间。<br>也就是说这些饼干见过了不少世面。"
+  },
+  "[Upgrade quote 620]Candy": {
+    "english": "There are two pillars to the world of sweets : pastries, of course - and candy.<br>You could make a whole new game just about these, but for now, please enjoy these assorted generic treats.",
+    "chinese": "糖果的文化中有两大支柱：一个是糕点，另一个是。。。糖果。<br>用这些素材其实都可以做个新游戏了。但是现在，还请在这个游戏里欣赏这些杂七杂八的零食。"
   },
   "[Upgrade quote 621]Fortune #001": {
     "english": "Fingers are not the only thing you can count on.",
@@ -2647,6 +2719,35 @@
   "[Upgrade quote 643]Fortune cookies": {
     "english": "These don't taste all that great but that's not really the point, is it?",
     "chinese": "这些东西的味道并不是很好，但这并不是重点，你说是不是？"
+  },
+  "[Upgrade quote 644]A really good guide book": {
+    "english": "??????",
+    "chinese": "？？？？？？"
+  },
+  "[Upgrade quote 645]Prism heart biscuits": {
+    "english": "An every-flavor biscuit that stands for universal love and being true to yourself.",
+    "chinese": "代表博爱与自勉的各种口味的饼干。"
+  },
+  "[Upgrade quote 646]Kitten wages": {
+    "english": "Cats can have little a salary, as a treat.<br>Cats are expert hagglers and have a keen sense of bargaining, especially in the case of cash.",
+    "chinese": "可以给小猫一点点薪水，以作为奖励。<br>猫是讨价还价的专家，并且具有敏锐的讨价还价意识，尤其是在涉及现金的情况下。"
+  },
+  "[Upgrade quote 647]Pet the dragon": {
+    "english": "Dragons do not purr. If your dragon starts purring, vacate the area immediately.",
+    "chinese": "注意：龙并不会发出咕噜咕噜的声音。如果你的龙开始发出和猫一样的声音，请立刻撤离这个区域。"
+  },
+  "[Upgrade quote 648]Dragon scale": {
+    "comment": "这个 scale 的双关我真的是没办法",
+    "english": "Your dragon sheds these regularly, so this one probably won't be missed.<br>Note: icon not to scale.",
+    "chinese": "你的龙身上经常掉这些，所以看到这一颗大概不成问题。<br>注：这里显示的龙鳞比例可能与实际比例不符。请以实物为准。"
+  },
+  "[Upgrade quote 649]Dragon claw": {
+    "english": "Will grow back in a few days' time.<br>A six-inch retractable claw, like a razor, from the middle toe. So you know, try to show a little respect.",
+    "chinese": "几天就会重新长出来了。<br>六英寸可伸缩的爪子像剃刀一样，从中间的脚趾伸出来。所以，别把它惹毛了。"
+  },
+  "[Upgrade quote 650]Dragon fang": {
+    "english": "Just a fallen baby tooth your dragon wanted you to have, as a gift.<br>It might be smaller than an adult tooth, but it's still frighteningly sharp - and displays some awe-inspiring cavities, which you might expect from a creature made out of sweets.",
+    "chinese": "就是一颗掉下来的乳牙，你的龙其实很希望你能留着它做纪念。<br>它看起来虽然比成牙小一点，但依然锋利无比。这颗牙还是一颗极为壮观的蛀牙，毕竟这整个生物都是从糖果中诞生的。"
   },
   "[Upgrade name 661]Miraculite mouse": {
     "english": "Miraculite mouse",
