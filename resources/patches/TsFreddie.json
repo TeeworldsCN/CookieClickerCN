@@ -1841,7 +1841,7 @@
   },
   "[Upgrade quote 438]Second seconds": {
     "english": "That's twice as many seconds in the same amount of time! What a deal! Also, what in god's name!",
-    "chinese": "这可是能让1分钟有120秒的技术！超划算啊！喔，我说的这是什么鬼？"
+    "chinese": "这可是能让 1 分钟有 120 秒的技术！超划算啊！喔，我说的这是什么鬼？"
   },
   "[Upgrade quote 439]Quantum comb": {
     "english": "Quantum entanglement is one of those things that are so annoying to explain that we might honestly be better off without it. This is finally possible thanks to the quantum comb!",
@@ -2748,6 +2748,22 @@
   "[Upgrade quote 650]Dragon fang": {
     "english": "Just a fallen baby tooth your dragon wanted you to have, as a gift.<br>It might be smaller than an adult tooth, but it's still frighteningly sharp - and displays some awe-inspiring cavities, which you might expect from a creature made out of sweets.",
     "chinese": "就是一颗掉下来的乳牙，你的龙其实很希望你能留着它做纪念。<br>它看起来虽然比成牙小一点，但依然锋利无比。这颗牙还是一颗极为壮观的蛀牙，毕竟这整个生物都是从糖果中诞生的。"
+  },
+  "[Upgrade quote 651]Dragon teddy bear": {
+    "english": "Your dragon used to sleep with this, but it's yours now.<br>Crafted in the likeliness of a fearsome beast. Stuffed with magical herbs picked long ago by a wandering wizard. Woven from elven yarn and a polyester blend.",
+    "chinese": "您的龙以前会抱着这个睡，但这只小熊现在是您的了。<br>这只小熊散发着可怕的野兽的气息。里面还塞满了一个流浪巫师很久以前挑选的神奇草药。外表用纯正的精灵之纱和涤纶混织而成。"
+  },
+  "[Upgrade quote 652]Granola cookies": {
+    "english": "Wait! These are just oatmeal cookies mixed with raisin cookies! What next, half-dark chocolate half-white chocolate cookies?",
+    "chinese": "等下！这种饼干只是把燕麦饼干与葡萄干饼干混在一起而已！就这也能叫创新吗？那我把半黑巧克力和半白巧克力混一起来做饼干不也是一种创新吗？"
+  },
+  "[Upgrade quote 653]Ricotta cookies": {
+    "english": "Light and cake-like. Often flavored with lemon or almond extract. Sprinkles optional. Allegedly Italian. Investigation pending.",
+    "chinese": "轻盈得像蛋糕。通常用柠檬或杏仁提取物调味。撒不撒糖粒都很好吃。据说来自意大利。具体的来头还有待调查。"
+  },
+  "[Upgrade quote 654]Roze koeken": {
+    "english": "The icing on these Dutch cookies is traditionally pink, but different colors may be used for special occasions - such as pink to celebrate Breast Cancer Awareness Month, or for International Flamingo Day, pink.",
+    "chinese": "这些荷兰饼干上的糖霜一般来说是粉红色的，但可以在特殊场合使用不同的颜色。例如用粉红色以庆祝乳腺癌宣传月。也可以换另一种颜色来庆祝国际火烈鸟日，比如粉红色。"
   },
   "[Upgrade name 661]Miraculite mouse": {
     "english": "Miraculite mouse",
