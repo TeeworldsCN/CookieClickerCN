@@ -2765,6 +2765,18 @@
     "english": "The icing on these Dutch cookies is traditionally pink, but different colors may be used for special occasions - such as pink to celebrate Breast Cancer Awareness Month, or for International Flamingo Day, pink.",
     "chinese": "这些荷兰饼干上的糖霜一般来说是粉红色的，但可以在特殊场合使用不同的颜色。例如用粉红色以庆祝乳腺癌宣传月。也可以换另一种颜色来庆祝国际火烈鸟日，比如粉红色。"
   },
+  "[Upgrade name 655]Peanut butter cup cookies": {
+    "english": "Peanut butter cup cookies",
+    "chinese": "花生酱杯饼干"
+  },
+  "[Upgrade quote 655]Peanut butter cup cookies": {
+    "english": "What more poignant example of modern societal struggles than the brazen reclaiming of a corporate product by integrating it in the vastly more authentic shell of a homemade undertaking? Anyway this is a peanut butter cup, baked into a cookie. It's pretty good!",
+    "chinese": "如此无耻地将积压库存的工厂食品整合到精心手工制作的正宗小吃里，还有什么比这更能体现现代社会的现状吗？总之这个点心就是把花生酱杯做到了饼干里，还挺好吃哟！"
+  },
+  "[Upgrade quote 656]Sesame cookies": {
+    "english": "Look at all the little seeds on these! It's like someone dropped them on the street or something! A very welcoming and educational street!",
+    "chinese": "你看看，这么多种子洒在饼干上！就好像谁做饼干的时候不小心打翻了一罐子芝麻一样。估计某人也因此长了教训。"
+  },
   "[Upgrade name 661]Miraculite mouse": {
     "english": "Miraculite mouse",
     "chinese": "奇迹石鼠标"
