@@ -1,4 +1,5 @@
 {
+  "comment": "感谢 r1cHk1d 提供的本地化",
   "You cannot buy and sell this stock in the same tick.": {
     "english": "You cannot buy and sell this stock in the same tick.",
     "chinese": "你不能在一次更新内同时进行买入和卖出操作。"
@@ -8,72 +9,143 @@
     "chinese": "它已被全面升级。奢华的内饰纵跨数不清的楼层，举办了许多享乐派对，因为你有着近乎多不可测的财富。"
   },
   "from %1": {
-    "comment": "这样更有意思",
     "english": "from %1",
-    "chinese": "%1股份有限公司"
+    "chinese": "%1"
   },
   "[STOCK 1 NAME]Old Mills": {
     "english": "Old Mills",
-    "chinese": "老磨坊"
+    "chinese": "老磨坊股份有限公司"
+  },
+  "[STOCK 1 DESC]Old Mills": {
+    "english": "Old Mills",
+    "chinese": "<b>老磨坊®</b>是粮食产业中值得信赖的中流砥柱。几个世纪前，老磨坊®的有机作物扎根于简陋的农场，在艰苦的条件下不断拓荒并总结技术经验，现在，他们种出来的谷物已经达到了甚至连你都难以企及的质量标准。"
   },
   "[STOCK 2 NAME]Cocoa Excavations": {
     "english": "Cocoa Excavations",
-    "chinese": "深掘可可"
+    "chinese": "掘对可可股份有限公司"
+  },
+  "[STOCK 2 DESC]Cocoa Excavations": {
+    "english": "Cocoa Excavations",
+    "chinese": "<b>掘对可可®</b>是一家国际巧克力开采企业，其开采点似乎总是在饱受战争蹂躏的国家出现。他们生产的高档巧克力享誉世界，甚至被市场推广为适合制作订婚戒指的宝石，并取得了一定的成功。"
   },
   "[STOCK 3 NAME]Bovine Industries": {
     "english": "Bovine Industries",
-    "chinese": "巨牛工业"
+    "chinese": "巨牛工业股份有限公司"
+  },
+  "[STOCK 3 DESC]Bovine Industries": {
+    "english": "Bovine Industries",
+    "chinese": "<b>巨牛工业®</b>以前是一家农业企业集团，现在从事机械化乳品大规模生产。公司黑幕的揭露者希望大家能够注意被该公司使用的牛受到的待遇，称其“不是残不残忍的问题，他真的是那种，很少见的那种……”。"
   },
   "[STOCK 4 NAME]Candy Trust": {
     "english": "Candy Trust",
-    "chinese": "盛糖信托"
+    "chinese": "盛糖信托金融控股"
+  },
+  "[STOCK 4 DESC]Candy Trust": {
+    "english": "Candy Trust",
+    "chinese": "<b>盛糖信托®</b>是一家公司银行集团，专门从事高级食糖贸易，并受到该行业的大力支持。获取这些高级食糖的渠道得到了一大批律师的保护，尽管一些人怀疑他们在审查内情之前多多少少收了点好处。"
   },
   "[STOCK 5 NAME]Hazel Monastery": {
     "english": "Hazel Monastery",
-    "chinese": "榛果寺"
+    "chinese": "至榛修道院"
+  },
+  "[STOCK 5 DESC]Hazel Monastery": {
+    "english": "Hazel Monastery",
+    "chinese": "在千岩万壑、云迷雾锁之中，神秘的<b>至榛修道院</b>在这几个世纪以来一直精心照料着最高质量的坚果作物。修道院中的僧侣们将自己的全身心投入到对坚果无微不至的看护、认真负责的收获以及一丝不苟的剥壳当中，并发誓厌恶坚果，以此作为证明自己虔诚的终身考验。"
   },
   "[STOCK 6 NAME]Wacky Reagants": {
     "english": "Wacky Reagants",
-    "chinese": "咸卡化工"
+    "chinese": "怪奇化工股份有限公司"
+  },
+  "[STOCK 6 DESC]Wacky Reagants": {
+    "english": "Wacky Reagants",
+    "chinese": "盐具有很多种用途，无论是在凡尘俗世还是魔法秘境，都有自己独特的地位。因此，<b>怪奇化工®</b>的那些大胡子怪人完善了将奥术粉尘转变成盐的技术，然后卖给任何承诺将其充分利用的人——不论是用来抵御女妖和食尸鬼，还是给周日的户外野餐增添一抹风味。"
   },
   "[STOCK 7 NAME]Cosmic Exports": {
     "english": "Cosmic Exports",
-    "chinese": "宇宙贸易"
+    "chinese": "星空速递股份有限公司"
+  },
+  "[STOCK 7 DESC]Cosmic Exports": {
+    "english": "Cosmic Exports",
+    "chinese": "在香草并非原产于地球的消息传出后，<b>星空速递™</b>第一时间找到了真正的起源行星，并与星球上那些满身触手的家伙达成了独家协议，将血统纯正、价格不菲的香草豆运往该行星附近的各个地方。"
   },
   "[STOCK 8 NAME]Organic Gnostics": {
     "english": "Organic Gnostics",
-    "chinese": "有机封神"
+    "chinese": "有机灵智教派"
+  },
+  "[STOCK 8 DESC]Organic Gnostics": {
+    "english": "Organic Gnostics",
+    "chinese": "在<b>有机灵智教派</b>的观念中，鸡蛋被视为一种预兆。一种有关于生命和滋养的预兆，一种有关于无限潜力的预兆，一种有关于钙元素和蛋白质的预兆。鸡蛋可以变成很多种东西……尤其是当你有足够的资金，并且不相信科学必须受法律甚至道德约束时。"
   },
   "[STOCK 9 NAME]Dimensional Exchange": {
     "english": "Dimensional Exchange",
-    "chinese": "上维交易"
+    "chinese": "维度贸易股份有限公司"
+  },
+  "[STOCK 9 DESC]Dimensional Exchange": {
+    "english": "Dimensional Exchange",
+    "chinese": "<b>维度贸易®</b>从各地召集了一支庞大的探险家组织进入危机四伏的下界，寻找只生长在其中的奇怪香料。战利品中主要都是肉桂，它的粉末具有非常令人着迷的香气，但肉桂本身却令人唯恐避之不及。"
   },
   "[STOCK 10 NAME]Precision Aging": {
     "english": "Precision Aging",
-    "chinese": "精准抗衰堂"
+    "chinese": "驻颜堂股份有限公司"
+  },
+  "[STOCK 10 DESC]Precision Aging": {
+    "english": "Precision Aging",
+    "chinese": "作为老年人化妆品领域的龙头企业，<b>驻颜堂®</b>的研发人员重新利用了他们的时间相位转移技术，开发了一种可以加快、减慢甚至逆转牛奶的各种相变过程。他们的旗舰产品——全脂奶油——据说与理论最佳成熟度的误差已经减小到了0.002%。"
   },
   "[STOCK 11 NAME]Pectin Research": {
     "english": "Pectin Research",
-    "chinese": "果胶研究科技"
+    "chinese": "果胶研究院"
+  },
+  "[STOCK 11 DESC]Pectin Research": {
+    "english": "Pectin Research",
+    "chinese": "<b>果胶研究院</b>是一个由军方资助的实验室，创办之初的目的是为了能够让军粮在更加营养美味的同时更加便携，这些研究成果现在已经面向公众市场进行大宗交易。该院最近在高浓度果酱领域小试牛刀，并已制造出多种口味的产品。"
   },
   "[STOCK 12 NAME]Dazzle Corp Ltd.": {
     "english": "Dazzle Corp Ltd.",
-    "chinese": "炫白食品"
+    "chinese": "炫白集团控股"
+  },
+  "[STOCK 12 DESC]Dazzle Corp Ltd.": {
+    "english": "Dazzle Corp Ltd.",
+    "chinese": "曾经有两个大学生在他们父亲的车库里摆弄镜子，现在，他们成立了成了世界著名的大公司。<b>炫白集团®</b>在光子退火方面的开创性实验导致了多年前一种曾被物理学家和厨师嗤之以鼻的新物质的诞生：白巧克力。"
   },
   "[STOCK 13 NAME]Prosperity Hive": {
     "english": "Prosperity Hive",
-    "chinese": "繁隆蜂巢"
+    "chinese": "蜂兴隆股份有限公司"
+  },
+  "[STOCK 13 DESC]Prosperity Hive": {
+    "english": "Prosperity Hive",
+    "chinese": "<b>蜂兴隆®</b>的工作人员们做着蜂蜜买卖，并且一直非常成功。这家公司的企业文化真的非常放松，让你很想放弃继续烘焙饼干，和他们一起摸鱼，虽然这些人与我们所知道的“勤劳的蜜蜂”几乎没有什么共同之处，但蜂蜜的价格着实有点让人刺痛。"
   },
   "[STOCK 14 NAME]Selfmade Bakeries": {
     "english": "Selfmade Bakeries",
-    "chinese": "手工烘坊"
+    "chinese": "自生焙坊股份有限公司"
+  },
+  "[STOCK 14 DESC]Selfmade Bakeries": {
+    "english": "Selfmade Bakeries",
+    "chinese": "真离谱，就算你在市场上处于垄断地位，还是有一家公司在试图销售饼干。不过无所谓——<b>自生焙坊®</b>无穷无尽的伪劣产品会成为你工厂里捕鼠器的好诱饵。"
   },
   "[STOCK 15 NAME]Figments Associated": {
     "english": "Figments Associated",
-    "chinese": "泡沫联合"
+    "chinese": "幻梦联合股份有限公司"
+  },
+  "[STOCK 15 DESC]Figments Associated": {
+    "english": "Figments Associated",
+    "chinese": "在后物质时代，只有无拘无束、天马行空的幻想才能创造价值。<b>幻梦联合®</b>对此心知肚明，并操刀设计了（同时申请了专利）各种烘焙配方、食材的系统命名法、烹饪方法的标准以及其它与厨房相关的工艺。"
   },
   "[STOCK 16 NAME]Polyvalent Acquisitions": {
     "english": "Polyvalent Acquisitions",
-    "chinese": "多价商融"
+    "chinese": "多价商融股份有限公司"
+  },
+  "[STOCK 16 DESC]Polyvalent Acquisitions": {
+    "english": "Polyvalent Acquisitions",
+    "chinese": "将其他公司的的收购、管理和最终解散等相关事宜交给<b>多价商融®</b>的伙计们处理，来避免诸如大规模裁员和恶意收购等商业黑手出现。交给他们吧！"
+  },
+  "[STOCK 17 NAME]Great Minds": {
+    "english": "Great Minds",
+    "chinese": "伟人智库股份有限公司"
+  },
+  "[STOCK 17 DESC]Great Minds": {
+    "english": "Great Minds",
+    "chinese": "让这些资源流动起来：从市场调研到广告宣发，<b>伟人智库®</b>将允许出价最高的人利用他们的雄韬伟略寻找答案。这是随时可用的知识财富。"
   }
 }

@@ -276,6 +276,19 @@ var __TWCNL = {};
       if (Game.isMinigameReady(Game.Objects['Bank'])) {
         let M = Game.Objects['Bank'].minigame;
         M.loanTypes[2][0] = loc('a retirement loan');
+        const oldGoodTooltip = M.goodTooltip;
+        M.goodTooltip = id => {
+          let func = oldGoodTooltip(id);
+          return () =>
+            func().replace(
+              '<div class="line"></div>',
+              '<div class="line"></div><div class="description">' +
+                '<q>' +
+                loc(FindLocStringByPart('STOCK ' + (id + 1) + ' DESC')) +
+                '</q>' +
+                '<div class="line">'
+            );
+        };
       } else {
         setTimeout(hackMarket, 500);
       }
