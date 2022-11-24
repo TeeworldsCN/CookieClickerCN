@@ -2777,6 +2777,22 @@
     "english": "Look at all the little seeds on these! It's like someone dropped them on the street or something! A very welcoming and educational street!",
     "chinese": "你看看，这么多种子洒在饼干上！就好像谁做饼干的时候不小心打翻了一罐子芝麻一样。估计某人也因此长了教训。"
   },
+  "[Upgrade quote 657]Taiyaki": {
+    "english": "A pastry fish filled with red bean paste, doomed to live an existence of constant and excruciating pain as its aquatic environment slowly dissolves its soft doughy body.<br>Also comes in chocolate flavor!",
+    "chinese": "一种填满了红豆沙的糕点小鱼，注定一辈子在持续而痛苦的炼狱中度过，因为它周围的水会逐渐地溶解其柔软面粉制成的身体。<br>另有巧克力口味可选！"
+  },
+  "[Upgrade quote 658]Vanillekipferl": {
+    "english": "Nut-based cookies from Central Europe, coated in powdered vanilla sugar. Regular kipferl, crescent-shaped bread rolls from the same region, are much less exciting.",
+    "chinese": "来自中欧的坚果饼干，包裹着香草粉糖粉。而普通的基夫利面包，也就是来自同一地区的月牙面包卷，相比之下就没有那么令人兴奋了。"
+  },
+  "[Upgrade quote 659]Cosmic chocolate butter biscuit": {
+    "english": "Rewarded for owning 550 of everything.<br>Through some strange trick of magic or technology, looking at this cookie is like peering into a deep ocean of ancient stars. The origins of this biscuit are unknown; its manufacture, as far as your best investigators can tell, left no paper trail. From a certain angle, if you squint hard enough, you'll notice that a number of stars near the center are arranged to resemble the outline of your own face.",
+    "chinese": "拥有 550 个所有建筑的奖励。<br>通过某种奇怪的魔术或技术，看着这块饼干就像凝视着古老恒星的深海。这种饼干的来源不明；据你最好的调查人员所知，它的制造没有留下任何历史痕迹。从某个角度来看，如果你眯着眼睛看得足够努力，你会注意到中心附近的一些星星排列得像你自己的脸的轮廓。"
+  },
+  "[Upgrade quote 660]Nonillion fingers": {
+    "english": "Only for the freakiest handshakes.",
+    "chinese": "只是为了最诡异的握手。"
+  },
   "[Upgrade name 661]Miraculite mouse": {
     "english": "Miraculite mouse",
     "chinese": "奇迹石鼠标"
@@ -2784,6 +2800,150 @@
   "[Upgrade quote 661]Miraculite mouse": {
     "english": "Composed of a material that neither science nor philosophy are equipped to conceptualize. And boy, does it ever click.",
     "chinese": "由一种无论是科学还是哲学都无法构想出来的材料组成。这鼠标能点击就已经是奇迹了。"
+  },
+  "[Upgrade quote 662]Generation degeneration": {
+    "english": "Genetic testing shows that most of your grandmas are infected with a strange degenerative disease that only seems to further their powers; the more time passes, the older they get. This should concern you.",
+    "chinese": "基因测试显示，你所有的老奶奶中的大多数人都感染了一种奇怪的退化型疾病，但这种疾病似乎只会增强她们的能力——时间越久，她们越老。这个问题你可得好好关注一下。"
+  },
+  "[Upgrade quote 663]Global seed vault": {
+    "english": "An enormous genetic repository that could outlive an apocalypse. Guarantees the survival of your empire, or at the very least its agricultural components, should civilization fall. Which should be any day now.",
+    "chinese": "一个巨大的基因库，可以活过任何一种可能的世界末日。这个基因库在世界文明毁灭的情况下保证延续你的饼干帝国，或者至少可以延续饼干帝国的农业技术。而且你的研究员估计，距离末世应该也没有几天了。"
+  },
+  "[Upgrade quote 664]Air mining": {
+    "english": "You've dug your drills through just about every solid surface you could find. But did you know recent advances have revealed untold riches hiding within non-solid surfaces too?",
+    "chinese": "你已经把挖遍了你找到的所有固体的表面。但你知道最近的研究进展发现了隐藏在非固体表面的无数财富吗？"
+  },
+  "[Upgrade quote 665]Behavioral reframing": {
+    "english": "Through careful social engineering you've convinced your workers that \"union\" is a slur that only the most vile and repugnant filth among us would ever dare utter! Sometimes progress isn't in the big machines, it's in the little lies!",
+    "chinese": "通过实施严谨的社会舆论制造方案，你让你的工人们相信，“团结”一词其实是一种忌讳，只有人类中最卑鄙、最令人厌恶的恶人才敢说出这种话！有时候，进步不在于巨大的机器，而在于微小的谎言！"
+  },
+  "[Upgrade quote 666]Altruistic loop": {
+    "english": "You control so many branches of the global economy and legislative bodies that, through a particularly creative loophole, donating money (to yourself) grants you even more cash in tax deductions than you started with!",
+    "chinese": "你控制着全球经济和立法机构的许多分支，以至于发现了一个特别有创意的漏洞——你发现慈善捐款（给你自己）可以让你获得比之前还要多的退税资格！"
+  },
+  "[Upgrade quote 667]A novel idea": {
+    "english": "You don't get rich starting a religion. If you want to get rich, you write science fiction.",
+    "chinese": "你不会因为创立一个宗教而变得富有。如果你想致富，不如去写科幻小说。"
+  },
+  "[Upgrade quote 668]Spelling bees": {
+    "english": "You've unleashed a swarm of magically-enhanced bees upon mankind! Their stinging spells may be the bane of all living things but you're certain you can put their delicious, purple, fizzy honey to good use!",
+    "chinese": "你释放了一群附魔的蜜蜂到人类身上！它们的刺痛咒语可能是所有生物的祸害，但你肯定可以很好地利用它们美味的、紫色的、冒泡的蜂蜜！"
+  },
+  "[Upgrade quote 669]Toroid universe": {
+    "english": "If you think of the universe as an nth-dimensional torus that wraps back on itself in every direction, you can save a fortune on rocket fuel! Of course the universe isn't actually shaped like that, but you've never let details stand in your way.",
+    "chinese": "如果你把宇宙想象成一个向各个方向自我包裹的N维圆环，你可以在火箭燃料上省下一大笔钱！当然，宇宙并不是这样的，但你这点小细节从来不会阻碍你的尝试。"
+  },
+  "[Upgrade quote 670]Hermetic reconciliation": {
+    "english": "It's time for modern science and the mystical domains of the occult to work together at last. What do gravitons transmute into? What if alkahest is pH-neutral? Should a homunculus have the right to vote? And other exciting questions coming to you soon, whether you like it or not.",
+    "chinese": "终于到了现代科学和神秘领域紧密的时候了：引力子可以转化成什么？如果传说中的万能溶剂的酸碱度是中性的会发生什么？人造生物应该有投票权吗？如此激动人心的类似问题很快就会出现在你面前，不管你想不想解决这些问题。"
+  },
+  "[Upgrade quote 671]His advent": {
+    "english": "He comes! He comes at last! Just like the prophecies foretold! And as He steps out of the portal, your engineers begin slicing Him into convenient chunks before transporting His writhing cosmic flesh to your factories, where He will be processed and converted into a new and exciting cookie flavor, available in stores tomorrow.",
+    "chinese": "他来了！他终于来了！就像预言所预言的那样！当他从传送门中走出来的瞬间，你的工程师们立马开始将他切成方便加工的大块，然后将他扭曲的宇宙尸体运送到你的工厂，在那里他将被加工并转化为一种新的令人兴奋的饼干口味，明天就可以在商店里买到了。"
+  },
+  "[Upgrade quote 672]Split seconds": {
+    "english": "Time is infinite, yes... But what if, nestled within each second, were even more infinities? Every moment an eternity! Think of how many scheduling troubles this solves!",
+    "chinese": "时间是无限的，没错……但是，如果每一秒的时间都是无限的呢？如果每一刻都是永恒的！想想看，这能解决了多少日程安排问题啊！"
+  },
+  "[Upgrade quote 673]Flavor itself": {
+    "english": "Deep under the earth, in the most sterile laboratory, in the most vast and expensive particle accelerator ever devised, your scientists have synthesized -for a fraction of a second- the physical manifestation of pure flavor. Highly unstable, and gone in a puff of radioactive energy, it nonetheless left your team shivering with awe... and hunger.",
+    "chinese": "在地球深处，在最无菌的实验室里，在有史以来最大、最昂贵的粒子加速器中，你们的科学家们在不到一秒钟的时间里合成了纯正味道的物理实体。但是这个实体极度不稳定，出现的一瞬间就在一股放射性能量中消失，但这个发现仍然让你的研究团队敬畏地颤抖……和感到饥饿。"
+  },
+  "[Upgrade quote 674]Light speed limit": {
+    "english": "Whoah, slow down. Harvesting light is well and good but it'd be much easier if it weren't so dang fast! This should thankfully take care of that.",
+    "chinese": "哇哦，还是慢点吧。收集光能是好事，但如果能限制收集的速度的话，很多事都会变得容易得多！这个升级应该能轻松解决这个问题。"
+  },
+  "[Upgrade quote 675]A touch of determinism": {
+    "english": "By knowing the exact position and movement of every particle in the universe, you're able to predict everything that can ever happen, leaving nothing to chance. This was a doozy to pull off mind you, but it's helped you win 50 bucks at the horse races so you could say it's already paying off.",
+    "chinese": "通过知道宇宙中每个粒子的确切位置和运动，你能够预测任何可能发生的事情，并且不会留下任何蛛丝马迹。不过可跟你说好，这个技术可不是随便一个研究员简简单单就实现了的，但这技术的确帮你在赛马中赢得了50美元，所以你大概可以所有研究的花费都值了。"
+  },
+  "[Upgrade quote 676]This upgrade": {
+    "english": "This upgrade's flavor text likes to refer to itself, as well as to the fact that it likes to refer to itself. You should really buy this upgrade before it starts doing anything more obnoxious.",
+    "chinese": "这一升级的风味文本喜欢引用自己，也喜欢复述自己的冷知识。你可得在它做出更令人讨厌的事情之前买下这个升级。"
+  },
+  "[Upgrade quote 677]Your biggest fans": {
+    "english": "Let's face it, baking cookies isn't the most optimized thing there is. So you've purchased your biggest fans yet and stuck them next to your computers to keep things chill and in working order. Cool!",
+    "chinese": "让我们面对现实吧，饼干这玩意的优化可不好。所以你已经买了你能买到的最大的风扇，把他们贴在你的电脑旁边稳住机器的温度来保证其正常工作。你看上面还有花花绿绿的灯，酷毙了!"
+  },
+  "[Upgrade quote 678]Battenberg biscuits": {
+    "english": "Inspired by a cake of the same name, itself named after a prince of the same name. You suppose you could play a really, really short game of chess on these.",
+    "chinese": "灵感来自于一个同名蛋糕，而这个蛋糕是以一位同名王子的名字命名的。你大概可以在上面下一盘非常非常短的国际象棋。"
+  },
+  "[Upgrade quote 679]Rosette cookies": {
+    "english": "Intricate fried pastries from Northern Europe, made using specialized irons and dipped in icing sugar. While usually eaten as a delicious treat, these are often also used as Christmas tree decorations, or worn elegantly on one's lapel to symbolize the nah I'm just messing with you.",
+    "chinese": "来自北欧的精致油炸糕点，用特殊的熨斗制作，蘸上冰糖。虽然它们通常作为美味的食物食用，但它们也经常被用作圣诞树的装饰品，或者优雅地别在人的翻领上，象征着“我只是在逗你玩”这个新奇概念。"
+  },
+  "[Upgrade quote 680]Gangmakers": {
+    "english": "The little bit of raspberry jam at its center is crucial; a plain butter cookie with chocolate topping does not a gangmaker make.",
+    "chinese": "中间的一小点覆盆子果酱可是点睛之笔；先行者蛋糕可不只是一块上面有巧克力的普通黄油饼干。"
+  },
+  "[Upgrade quote 681]Welsh cookies": {
+    "english": "Welsh cookies, also known as Welsh cakes, bakestones, griddle cakes, griddle scones, or pics, or in Welsh: <i>picau ar y maen, pice bach, cacennau cri</i> or <i>teisennau gradell</i>, are rich currant-filled scone-like biscuits of uncertain origin.",
+    "chinese": "威尔士饼干，也被称为威尔士蛋糕、烘焙石、烤架蛋糕、烤架烤饼或匹克斯，或者用威尔士语说：<i>picau ar y maen，pice Bach，cacennau cri</i> 或 <i>teisennau gradell</i>，是一种含有丰富醋栗的烤饼状饼干，这种饼干的来源尚不明确。"
+  },
+  "[Upgrade quote 682]Raspberry cheesecake cookies": {
+    "english": "The humble raspberry cheesecake, now in ascended cookie form. Researchers posit that raspberry cheesecake cookies are evidence that the final form of every baked good, through convergent evolution, approaches that of a cookie, in a process known as cookienisation.",
+    "chinese": "不起眼的覆盆子芝士蛋糕，现以新升级的饼干版本上市。研究人员认为覆盆子芝士蛋糕饼干是每一种烘焙食品的最终形式的证据。通过趋同演化，在一个被称为逐渐曲奇化的过程中，无限接近于这种饼干。"
+  },
+  "[Upgrade quote 683]Alternate grandmas": {
+    "english": "A different grandma to bake something else.",
+    "chinese": "一个与众不同的奶奶可以烤出另类的东西。"
+  },
+  "[Upgrade quote 684]Manifest destiny": {
+    "english": "While the ethics of ransacking parallel universes for their riches may seem questionable to some, you've reasoned that bringing the good word of your cookie empire to the unwashed confines of other realities is your moral duty, nay, your righteous imperative, and must be undertaken as soon as possible, lest they do it to you first!",
+    "chinese": "虽然在平行宇宙中掠夺财富可能对一些人来说是有道德问题的。但你也有你的苦衷：你认为将你的饼干帝国的好话带到其他尚未同化的现实是你的责任，不，是你正义的义务，而且你必须尽快承担，否则其他的现实可能会先对你下手！"
+  },
+  "[Upgrade quote 685]The multiverse in a nutshell": {
+    "english": "The structure of the metacosmos may seem confusing and at times even contradictory, but here's what you've gathered so far:<br><br><div style=\"text-align:left;\">&bull; each reality, or \"idleverse\", exists in parallel to all others<br><br>&bull; most realities seem to converge towards the production of a sole type of item (ours evidently being, thanks to you, cookies)<br><br>&bull; each reality is riddled with chaotic tunnels to a number of subordinate dimensions (such as the so-called \"cookieverse\"), much like swiss cheese<br><br>&bull; all realities bathe in an infinite liquid of peculiar properties, colloquially known as \"milk\"</div><br>Finally, each reality may have its own interpretation of the concept of \"reality\", for added fun.",
+    "chinese": "元宇宙概念的结构可能看起来令人困惑，有时甚至是自相矛盾的，但这是你到目前为止所收集到的：<br><br><div style=“Text-Align：Left；”&br；每个现实，或“idleverse”，与其他所有现实平行存在<br><br><br>&br；大多数现实似乎汇聚成一种单一类型的物品的生产(我们的产品显然是饼干)<br><br>&br；每个现实都充满了通往许多从属维度(如所谓的“饼干世界”)的混乱隧道，就像瑞士奶酪<br><br><br>&br；所有的现实都沐浴在一种特殊性质的无限液体中，俗称为“牛奶”</div><br>最后，为了增加趣味性，每个现实都可能对“现实”的概念有自己的解释。"
+  },
+  "[Upgrade quote 686]All-conversion": {
+    "english": "It's quite nice that you can rewire the logic of each universe to generate cookies instead, but you still end up with parsec-loads of whatever they were producing before - baubles you've long made obsolete: cash money, gems, cheeseburgers, puppies... That's why you've designed the universal converter, compatible with any substance and capable of turning those useless spoils of conquest into the reassuring crumbly rustle of even more cookies.",
+    "chinese": "重新连接每个宇宙的逻辑来生成饼干这个操作可把你乐坏了，但你最终还是会得到一大批他们以前生产的东西——全都是你已经完全抛弃了的东西，比如：现金、宝石、芝士汉堡、小狗……这就是为什么你另外设计了通用转换器，可以与任何物质兼容，并能够将那些征服宇宙获得的战利品变成更多令人放心的饼干物质。"
+  },
+  "[Upgrade quote 687]Multiverse agents": {
+    "english": "You can send undercover spies to infiltrate each universe and have them signal you whether it's worth overtaking. Once the assimilation process started, they will also help pacify the local populations, having established trust through the use of wacky, but seamless, disguises.",
+    "chinese": "你可以派遣卧底间谍渗透到每个宇宙中，让他们向你发出信号，看看它是否值得超越。一旦同化过程开始，你派出的间谍还将通过使用古怪但无缝的伪装建立起信任，从而帮助安抚当地民众。"
+  },
+  "[Upgrade quote 688]Escape plan": {
+    "english": "You've set an idleverse aside and terraformed it to closely resemble this one in case something goes horribly wrong in here. Of course, the denizens of that idleverse also have their own escape idleverse to abscond to in the eventuality of your arrival, itself likely having its own contingency idleverse, and so on.",
+    "chinese": "你将一个空闲宇宙抽出来，将其重整成与你所在的这个宇宙非常相似的宇宙，以防这个现实被你玩坏了。当然你侵略的空闲宇宙可能也会有他们自己准备的备用宇宙，而那些备用宇宙估计也有他们自己通过侵略其他宇宙得到的脱逃方案，依此类推。"
+  },
+  "[Upgrade quote 689]Game design": {
+    "english": "Each idleverse functions according to some form of transcendental programming, that much is a given. But they also seem to be governed by much more subtle rules, the logic of which, when harnessed, may give you unparalleled dominion over the multiverse. Rewrite the rules! A game designer is you!",
+    "chinese": "每个空闲宇宙都是按照某种形式的先验规划来运作的，这一点是已知的。但它们似乎也受到更微妙的规则的支配，当这些规则的逻辑被利用时，可能会给你无与伦比的对多元宇宙的统治。重写规则！游戏设计师就是你！"
+  },
+  "[Upgrade quote 690]Sandbox universes": {
+    "english": "It doesn't seem like you'll run out of extra universes anytime soon so why not repurpose some of them as consequence-free testing grounds for all your more existentially threatening market research? (...consequence-free for you, anyway.)",
+    "chinese": "你似乎不会在短期内用完额外的宇宙，所以为什么不重新利用其中的一些宇宙，作为你所有更具生存威胁的市场研究的无关紧要的试验场呢？(……反正对你来说都不会有什么负面影响)"
+  },
+  "[Upgrade quote 691]Multiverse wars": {
+    "english": "Hmm, looks like some other universes wised up to your plundering. Thankfully, that's nothing your extra beefed-up metacosmic military budget can't handle!",
+    "chinese": "嗯，看起来其他宇宙已经对你的掠夺手段了如指掌了。不过没什么不是你的全力以赴准备的超常军事预算处理不了的！"
+  },
+  "[Upgrade quote 692]Mobile ports": {
+    "english": "Accessing each outer universe is a bit of a hassle, requiring the once-in-a-blue-moon alignment of natural cosmic ports to transit from universe to universe. You've finally perfected the method of constructing your own self-propelled ports, which can travel near-instantaneously along universal perimeters to permit headache-free multiverse connections. Took you long enough.",
+    "chinese": "访问每个外宇宙都有点麻烦，需要千载难逢地对齐自然宇宙端口。你终于完善了构建可以自己移动的人造宇宙端口的方法，它可以近乎即时地沿着宇宙边缘旅行，从而实现简单有效的多元宇宙连接。不过亏你花了这么久才发现这个方法。"
+  },
+  "[Upgrade quote 693]Encapsulated realities": {
+    "english": "Untold feats of science went into the reduction of infinite universes into these small, glimmering, easy-to-store little spheres. Exercise infinite caution when handling these, for each of them, containing endless galaxies and supporting endless life, is more precious than you can ever fathom. They've also proven to be quite a smash hit in your warehouses on bowling night.",
+    "chinese": "数不清的科学壮举将无限的宇宙简化为这些微小的、闪闪发光的、易于储存的小球体。在处理这些时要无限小心，因为它们中的每一个都包含着无穷无尽的星系，支持着无穷无尽的生命，比你永远无法理解的更珍贵。当然，这些宇宙球体也是你仓库里的一大热门，尤其是在保龄球之夜。"
+  },
+  "[Upgrade quote 694]Extrinsic clicking": {
+    "english": "If you poke an idleverse, it seems like it gets work done faster. It's also quite fun hearing a trillion terrified voices screaming in unison.",
+    "chinese": "如果你戳一下一个空闲宇宙，它似乎可以更快地完成工作。听到万亿个惊恐的声音齐声尖叫也是一件很有趣的事情。"
+  },
+  "[Upgrade quote 695]Universal idling": {
+    "english": "The nature of idleverses is found in waiting. The more you wait on an idleverse, the more exponentially potent it becomes - which saves you a whole lot of hard work. In a true act of zen, you've taken to biding your time when collecting new universes, letting them ripen like a fine wine.",
+    "chinese": "闲置的本质是在等待中发现的。你对的空闲宇宙的等待越多，它就会变得越强大--这为你省去了大量的艰苦工作。在一个真正的禅境中，你已经开始花更多时间来慢慢等待收集新的宇宙的时机，让它们像美酒一样成熟。"
+  },
+  "[Upgrade quote 696]Perforated mille-feuille cosmos": {
+    "english": "Imagine, if you will, layers upon layers upon layers. Now picture billions of worms chewing their way through it all. This roughly, but not quite, approximates the geometry of the most basal stratum of our natural world.",
+    "chinese": "如果你愿意，想象一下，一层又一层。现在想象一下，数十亿只蠕虫在这一切中咀嚼着。这大体上，但不完全是，近似于我们自然界最底层的几何形状。"
+  },
+  "[Upgrade quote 697]Infraverses and superverses": {
+    "english": "Universes within universes? How subversive!",
+    "chinese": "宇宙中的宇宙？多么颠覆宇宙的概念！"
   },
   "[Upgrade quote 698]Fortune #018": {
     "english": "There's plenty of everyone, but only one of you.",
