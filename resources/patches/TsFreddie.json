@@ -3239,8 +3239,196 @@
     "chinese": "你不把面饼放烤箱是怎么做出来饼干的？"
   },
   "[Achievement name 289]Here he comes": {
-    "comment": "因为中文不能叠那些奇葩字符，做了个css动画。TODO：继续补全成就",
+    "comment": "因为中文不能叠那些奇葩字符，做了个css动画。",
     "english": "Here he comes",
     "chinese": "<style>.mEG{padding-top:.5em;height:.5em}.mEGT{max-width:11em;margin:0;line-height:0;color:#fd2525;animation:mgc 2.5s infinite}.mEGT:nth-child(2){color:#2396f5;animation:mgb 2.5s infinite}.mEGT:nth-child(3){color:unset;animation:mga 2.5s infinite}@keyframes mga{0%{transform:none;opacity:1}7%{transform:skew(-.5deg,-.9deg);opacity:.75}10%{transform:none;opacity:1}27%{transform:none;opacity:1}30%{transform:skew(.8deg,-.1deg);opacity:.75}35%{transform:none;opacity:1}52%{transform:none;opacity:1}55%{transform:skew(-1deg,.2deg);opacity:.75}50%{transform:none;opacity:1}72%{transform:none;opacity:1}75%{transform:skew(.4deg,1deg);opacity:.75}80%{transform:none;opacity:1}100%{transform:none;opacity:1}}@keyframes mgb{0%{transform:none;opacity:0}3%{transform:translate(-2px,-3px);opacity:.5}10%{transform:none;opacity:0}27%{transform:none;opacity:0}30%{transform:translate(-5px,-2px);opacity:.5}33%{transform:none;opacity:0}35%{transform:none;opacity:0}42%{transform:translate(-5px,-1px);opacity:.5}50%{transform:none;opacity:0}72%{transform:none;opacity:0}75%{transform:translate(-2px,-6px);opacity:.5}80%{transform:none;opacity:0}100%{transform:none;opacity:0}}@keyframes mgc{0%{transform:none;opacity:0}8%{transform:translate(2px,3px);opacity:1}10%{transform:none;opacity:0}27%{transform:none;opacity:0}35%{transform:translate(5px,2px);opacity:1}47%{transform:none;opacity:0}52%{transform:none;opacity:0}63%{transform:translate(5px,1px);opacity:1}65%{transform:none;opacity:0}72%{transform:none;opacity:0}70%{transform:translate(2px,6px);opacity:1}75%{transform:none;opacity:0}100%{transform:none;opacity:0}}</style><div class=\"mEG\"><div class=\"mEGT\"> ̶̯̲͛͆ͅ他 ̸̘͇̯̣̑̃͛来 ̶̲͐̋͘͜͝了 ̵͙͇̲̦̎̐͐̋̕͜</div><div class=\"mEGT\"> ̸͚̄他 ̸͐͜来 ̶̮̊了 ̴̹͌</div><div class=\"mEGT\"> 他 来 了 </div></div>"
+  },
+  "[Achievement quote 323]A wizard is you": {
+    "english": "I'm a what?",
+    "chinese": "你说我是什么？"
+  },
+  "[Achievement quote 324]Four-leaf cookie": {
+    "english": "Fairly rare, considering cookies don't even have leaves.",
+    "chinese": "考虑到饼干甚至一片叶子都没有，这是可是相当罕见的。"
+  },
+  "[Achievement quote 337]The ultimate clickdown": {
+    "english": "(of ultimate destiny.)",
+    "chinese": "(终极命运。)"
+  },
+  "[Achievement quote 346]The Prestige": {
+    "english": "(Unrelated to the Cookie Clicker feature of the same name.)",
+    "chinese": "(与同名Cookie Clicker功能无关。)"
+  },
+  "[Achievement quote 360]Space space space space space": {
+    "english": "It's too far away...",
+    "chinese": "太远了……"
+  },
+  "[Achievement quote 367]So much to do so much to see": {
+    "english": "Thank you so much for playing Cookie Clicker!",
+    "chinese": "非常感谢你游玩《Cookie Clicker》！"
+  },
+  "[Achievement quote 380]In the garden of Eden (baby)": {
+    "english": "Isn't tending to those precious little plants just so rock and/or roll?",
+    "chinese": "照看那些珍贵的小植物不是很摇滚吗？"
+  },
+  "[Achievement quote 383]You get nothing": {
+    "english": "Good day sir!",
+    "chinese": "日安，先生！"
+  },
+  "[Achievement quote 384]Humble rebeginnings": {
+    "english": "Started from the bottom, now we're here.",
+    "chinese": "当初你白手起家，再你看看你现在的样子。"
+  },
+  "[Achievement quote 385]The end of the world": {
+    "english": "(as we know it)",
+    "chinese": "(据我们所知)"
+  },
+  "[Achievement quote 386]Oh, you're back": {
+    "english": "Missed us?",
+    "chinese": "想我们了吗？"
+  },
+  "[Achievement quote 387]Lazarus": {
+    "english": "All rise.",
+    "chinese": "东山是谁？"
+  },
+  "[Achievement quote 392]Tricentennial and a half": {
+    "english": "(it's free real estate)",
+    "chinese": "(这可是免费的房地产)"
+  },
+  "[Achievement quote 393]Quadricentennial": {
+    "english": "You've had to do horrible things to get this far.<br>Horrible... horrible things.",
+    "chinese": "有如今的成就还不是因为你把坏事都做尽了。<br>仔细想想，你之前都做的都是不是人干的事啊。"
+  },
+  "[Achievement quote 394]Quadricentennial and a half": {
+    "english": "At this point, you might just be compensating for something.",
+    "chinese": "你是不是觉得你亏欠了谁什么东西才玩到这个地步的。"
+  },
+  "[Achievement quote 395]Quincentennial": {
+    "english": "Some people would say you're halfway there.<br>We do not care for those people and their reckless sense of unchecked optimism.",
+    "chinese": "有些人会说你已经玩了一半了。<br>但是我们可不在乎那些人和他们肆无忌惮的乐观情绪。"
+  },
+  "[Achievement quote 416]Bears repeating": {
+    "english": "Where did these come from?",
+    "chinese": "这些是从哪里来的？"
+  },
+  "[Achievement quote 430]Renaissance baker": {
+    "english": "If you have seen further, it is by standing on the shoulders of giants - a mysterious species of towering humanoids until now thought long-extinct.",
+    "chinese": "如果你看过更远的地方，那是因为你之前站在巨人的肩膀上。巨人是一种神秘的高耸人形物种，大家都以为它们早已灭绝了。"
+  },
+  "[Achievement name 431]Veteran": {
+    "english": "Veteran",
+    "chinese": "老兵"
+  },
+  "[Achievement quote 431]Veteran": {
+    "english": "14's a crowd!",
+    "chinese": "14人成行！"
+  },
+  "[Achievement quote 454]Smurf account": {
+    "english": "It's like you just appeared out of the blue!",
+    "chinese": "天降正义！"
+  },
+  "[Achievement quote 455]If at first you don't succeed": {
+    "english": "If at first you don't succeed, try, try, try again.<br>But isn't that the definition of insanity?",
+    "chinese": "如果一开始你没有成功，那就不断的尝试。<br>但这不就是精神错乱的定义吗？"
+  },
+  "[Achievement quote 458]Rookie numbers": {
+    "english": "Gotta pump those numbers up!",
+    "chinese": "一定要把这些数字再往上提一提！"
+  },
+  "[Achievement quote 459]No nobility in poverty": {
+    "english": "What kind of twisted individual is out there cramming camels through needle holes anyway?",
+    "chinese": "到底是什么变态的人把骆驼塞进针孔里呢？"
+  },
+  "[Achievement quote 463]Gaseous assets": {
+    "english": "Boy, how volatile!",
+    "chinese": "天哪，太不稳定了！"
+  },
+  "[Achievement name 465]Jellicles": {
+    "english": "Jellicles",
+    "chinese": "Jellicles"
+  },
+  "[Achievement quote 465]Jellicles": {
+    "english": "Jellicles can and jellicles do! Make sure to wash your jellicles every day!",
+    "chinese": "Jellicles can and jellicles do! Make sure to wash your jellicles every day! ——《猫》"
+  },
+  "[Achievement quote 466]Quincentennial and a half": {
+    "english": "This won't fill the churning void inside, you know.",
+    "chinese": "你可知道，这些成就并不能填补你内心的空白。"
+  },
+  "[Achievement quote 472]It's only wafer-thin": {
+    "english": "Just the one!",
+    "chinese": "只有一个！"
+  },
+  "[Achievement quote 490]Curly braces": {
+    "english": "Or as the French call them, mustache boxes.<br>Go well with quotes.",
+    "chinese": "法国人叫他们胡须号。<br>和引号一起用效果极佳。"
+  },
+  "[Achievement quote 491]Seven horseshoes": {
+    "english": "Enough for one of those funky horses that graze near your factories.",
+    "chinese": "够一匹在你工厂附近吃草的时髦马吃的了。"
+  },
+  "[Achievement quote 492]Olden days": {
+    "english": "DashNet Farms remembers.",
+    "chinese": "还记得 DashNet 农场吧。"
+  },
+  "[Achievement quote 500]Is there life on Mars?": {
+    "english": "Yes, there is. You're currently using it as filling in experimental flavor prototype #810657.",
+    "chinese": "有的。您当前正在使用它当作实验性的风味填料810657号原型。"
+  },
+  "[Achievement quote 508]Duck typing": {
+    "english": "Hello, this is a duck typing. Got any grapes?",
+    "chinese": "喂，你好，我是鸭子。请问有葡萄吗？"
+  },
+  "[Achievement quote 515]Nobody exists on purpose, nobody belongs anywhere": {
+    "english": "Come watch TV?",
+    "chinese": "来看电视吗？"
+  },
+  "[Achievement quote 526]Grand design": {
+    "english": "They'll remember you forever!",
+    "chinese": "他们会永远记住你的！"
+  },
+  "[Achievement quote 527]Ecumenopolis": {
+    "english": "Getting a wee bit cramped.",
+    "chinese": "变得有点拥挤了。"
+  },
+  "[Achievement quote 528]The full picture": {
+    "english": "So that's where that fits in!",
+    "chinese": "原来这能放下！"
+  },
+  "[Achievement quote 529]When there's nothing left to add": {
+    "english": "...keep going.",
+    "chinese": "...继续前进。"
+  },
+  "[Achievement quote 530]Sexcentennial": {
+    "english": "Hey, nice milestone!",
+    "chinese": "嘿，这是个不错的里程碑！"
+  },
+  "[Achievement name 538]Stifling the press": {
+    "english": "Stifling the press",
+    "chinese": "压制媒體"
+  },
+  "[Achievement quote 538]Stifling the press": {
+    "english": "Narrow in here or is it just me?",
+    "chinese": "只有我一个人觉得这里很窄吗？"
+  },
+  "[Achievement quote 560]Financial prodigy": {
+    "english": "Imagine how it would be, to be at the top making cash money.",
+    "chinese": "想象一下，在金字塔顶端赚钱是什么感觉。"
+  },
+  "[Achievement quote 575]Sexcentennial and a half": {
+    "english": "Hope you're enjoying the grind so far! It gets worse.",
+    "chinese": "希望你到目前为止还肝得足够开心！之后会越来越难的。"
+  },
+  "[Achievement quote 581]Myriad": {
+    "english": "At this point, most of your assets lie in real estate.",
+    "chinese": "现在你的大部分资产可能都在房地产上了。"
+  },
+  "[Achievement quote 582]Kaizen": {
+    "english": "Just a little more.",
+    "chinese": "再多一点点就好。"
+  },
+  "[Achievement quote 583]Beyond quality": {
+    "english": "Dwarfing all of mankind's accomplishments.",
+    "chinese": "使人类的所有成就都相形见绌。"
   }
 }
