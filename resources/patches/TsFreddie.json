@@ -3085,6 +3085,82 @@
     "english": "Your cortex bakers sometimes get bogged down by circular reasoning and stale ideas. A touch of chaos is just what they need to get back on track.",
     "chinese": "你的脑皮层烘焙师有时会被循环推理和老旧的想法所困扰。轻微的混乱思绪可以帮助它们重回正轨。"
   },
+  "[Upgrade quote 733]Front and back hemispheres": {
+    "english": "I mean, otherwise it's just unused space, yeah?",
+    "chinese": "我是觉得，反正也是没用的地方，对吧？"
+  },
+  "[Upgrade quote 734]Neural networking": {
+    "english": "The effectiveness of your cortex bakers shoots up exponentially if you allow them to connect with each other. In practice this takes the form of many cosmic-sized nerds mumbling awkwardly about tech start-up ideas to each other.",
+    "chinese": "如果你将你的脑皮层烘焙师相互连接，它们的效率会呈指数级增长。现实情况下，这表现为许多宇宙大小的书呆子笨拙地相互咕哝着科技初创公司的想法。"
+  },
+  "[Upgrade quote 735]Cosmic brainstorms": {
+    "english": "The wrinkled surfaces of your cortex bakers emit weather-scale ionic flares with every thought coursing through them. These pulses of pure intellectual energy are sent rippling through space, occasionally echoing back with even deeper philosophical complexity.",
+    "chinese": "你的脑皮层烘焙师的皱纹表面会向整个天空发射出的离子耀斑，所有的想法都会通过这些沟渠。这些纯粹智力能量的脉冲在太空中荡漾，偶尔会回荡出更深层次的哲学复杂性。"
+  },
+  "[Upgrade quote 736]Megatherapy": {
+    "english": "A giant brain can feel unwell just like you and me sometimes, and it's the job of specialized engineers to locate and repair these bugs. We'll admit most of the budget in this was spent on constructing extremely large chaises longues for the brains to recline on.",
+    "chinese": "一个巨大的大脑有时也会像你我一样感到不适，定位和修复这些问题是专业工程师的工作。不过我们得承认，这方面的大部分预算都花在了建造超大的长椅上，以供这些大脑休息。"
+  },
+  "[Upgrade quote 737]Synaptic lubricant": {
+    "english": "A mind is only as fast as the axons that support it. Get those action potentials flowing smooth as silk with this 3 parts myelin/1 part canola oil spreadable paste. Also great on toast.",
+    "chinese": "头脑的速度只能和支持它的轴突一样快。用这种3份髓磷脂/1份菜籽油涂抹膏，使这些神经电流像丝绸一样流畅地工作。放在吐司面包上也很好吃。"
+  },
+  "[Upgrade quote 738]Psychokinesis": {
+    "english": "While your giant cortex bakers come equipped with ESP, they've only recently figured out how to manipulate the physical world with their thoughts - though for safety reasons, your legal team had them promise to only use these powers to scratch the itches in their cortical folds.",
+    "chinese": "虽然你的巨型脑皮层烘焙师配备了静电除尘器，但它们最近才弄明白如何用它们的思想来操纵物理世界——不过出于安全原因，你的法律团队让它们承诺只使用这些能力来挠它们皮质皱褶中的瘙痒。"
+  },
+  "[Upgrade quote 739]Spines": {
+    "english": "Your cortex bakers are now equipped with tentacular spine-like structures, which they can use like prehensile tails to pour themselves enormous cups of coffee or propel themselves around like very large, very smart, very slow tadpoles.",
+    "chinese": "你的脑皮层烘焙师现在装备了触须棘状结构，它们可以像灵活的尾巴一样为自己倒巨大的咖啡，或者像非常大、非常聪明、非常缓慢的蝌蚪一样推动自己四处走动。"
+  },
+  "[Upgrade quote 740]Neuraforming": {
+    "english": "By virtue of being planet-sized, your cortex bakers often boast their own atmospheres and seas of cerebrospinal fluid, and given enough time, their own ecosystems. This incredible new branch of life, evolved entirely out of neural material, can be put to good use as home-grown accountants and low-ranking technicians.",
+    "chinese": "正因为它们行星大小的体积，你的脑皮层烘焙师通常拥有自己的大气层和脑脊液海洋。如果给它们足够的时间，它们甚至可以拥有自己的生态系统。这一令人难以置信的新生命分支，完全由神经材料进化而来，可以很好地用来发掘土生土长的会计师和低级技术人员。"
+  },
+  "[Upgrade quote 741]Epistemological trickery": {
+    "english": "Redefining what is -or isn't- a cookie through the power of philosophical discourse may result in some strange and wonderful things for your profit margins.",
+    "chinese": "通过哲学话语的力量重新定义一个东西是不是饼干，结果就是可能会给你的利润率带来一些奇怪而美妙的东西。"
+  },
+  "[Upgrade quote 742]Every possible idea": {
+    "english": "Congratulations, your cortex bakers have exerted enough intellectual computation to permute through every single idea that can or ever will be conceived of. Any thought beyond this point is merely rediscovering a notion you've already archived. Hardly cause for cerebration.",
+    "chinese": "祝贺你，你的脑皮层烘焙师已经运用了足够的智力计算来置换每一个可以或将被构思的想法。从此以后任何新的想法都只是重新发现了一个你已经归档过的概念。因此几乎没有理由再继续思考了。"
+  },
+  "[Upgrade quote 743]Kitchen cabinets": {
+    "english": "A grandma's kitchen cabinet is a befuddling place. Through lesser-studied aggregating instincts, grandmas will tend to gradually fill all nearby cabinets with various sorts of things, such as curious coconut snacks or dietetic powders. By contract, these are legally yours, which opens up exciting opportunities for your substance investigation department.",
+    "chinese": "奶奶的厨房橱柜是一个令人困惑的地方。通过较少研究的聚集本能，奶奶们会逐渐在附近的橱柜里装满各种各样的东西，比如好奇的椰子零食或营养粉。根据合同，这些都是合法的，这为你的物质调查部门打开了令人兴奋的机会。"
+  },
+  "[Upgrade quote 744]Cookie mulch": {
+    "english": "Grinding surplus cookies into paste that you then spread onto your fields enables a strange feedback loop in the quality of your cookie crops. Cookie feeding on cookie should be an abomination, but then why does it taste so good?",
+    "chinese": "把多余的饼干磨成糊状，然后撒在田里，就会形成一个奇怪的反馈回路从而提升你的饼干作物的质量。以饼干为食的饼干理应是很猎奇的，但为什么长成的结果味道如此之好？"
+  },
+  "[Upgrade quote 745]Delicious mineralogy": {
+    "english": "Stratum after stratum, you've extracted strange new minerals heretofore unknown to geology. Ushering a new era of materials research, your scientists have been able to identify every new element your mines have discovered, including whatever those things are in the upgrade tier names.",
+    "chinese": "通过一层又一层地挖空地层，你终于开采出了地质学迄今未知的奇怪的新矿物。开启了材料研究的新时代，你的科学家们已经能够识别你的矿山里发现的每一种新元素，包括升级名字旁边写的那些奇怪的玩意。"
+  },
+  "[Upgrade quote 746]N-dimensional assembly lines": {
+    "english": "Lines are depressingly 1-dimensional. Beyond assembly lines, we posit the existence of higher-order assembly entities, such as assembly squares, assembly cubes - perhaps even assembly tesseracts. Any deeper than that and we doubt we'll be able to write manuals your workers can read.",
+    "chinese": "令人沮丧的是，这些线条只是一维的。除了装配流水线之外，我们其实可以假设存在更高维度的装配流水实体，如装配流水正方形、装配流水立方体，甚至可能是装配流水四维立方体。再高维度的话，我们就开始担心我们是否能够写出你的工人能读懂的手册了。"
+  },
+  "[Upgrade quote 747]Cookie Points": {
+    "english": "A loyalty program wherein each purchase of your cookies comes with free Cookie Points, which can in turn be redeemed for more cookies, thus creating the self-sustaining economy you've been looking for.",
+    "chinese": "老客户回馈活动：每次购买饼干都有免费的饼干积分，反过来可以兑换更多的饼干，从而创造出你一直在寻找的自给自足的经济。"
+  },
+  "[Upgrade name 748]Negatheism": {
+    "english": "Negatheism",
+    "chinese": "负神论"
+  },
+  "[Upgrade quote 748]Negatheism": {
+    "english": "Polytheism is a belief in multiple deities; monotheism in just one. Atheism is a belief in no deity whatsoever. Through logical succession it follows that this remains true when going into negative numbers, with belief systems involving minus 1 or more deities displaying unprecedented theological properties.",
+    "chinese": "多神论是对多个神的信仰，一神论是对一个神的信仰，无神论不对任何神有信仰。如此推理，当进入负数时，这个逻辑仍然是正确的，负一神论或更小数量申论展现出了前所未有的神学属性。"
+  },
+  "[Upgrade quote 749]Magical realism": {
+    "english": "More a social than thaumaturgical progress, magical realism refers to the normalization of modern technology among magic-users. It's totally fine for a wizard to drive a car! There's no stigma in waiting in line for coffee! Sure, take a phone call, send an email, whatever!",
+    "chinese": "魔幻现实主义更多的是一种社会进步，而不是医学进步，它指的是现代技术在魔术使用者中的常态化。巫师开车完全没问题！排队等咖啡没什么丢脸的！当然，打个电话，发一封电子邮件之类的，就更没问题了！"
+  },
+  "[Upgrade quote 750]Cosmic foreground radiation": {
+    "english": "Ah, this is a problem.",
+    "chinese": "啊，这是个问题。"
+  },
   "[Achievement quote 26]Sacrifice": {
     "english": "Easy come, easy go.",
     "chinese": "来也匆匆，去也匆匆。"
