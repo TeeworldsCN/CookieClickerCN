@@ -1,8 +1,8 @@
 {
   "comment_a": "这里放所有Ticker，如果有需要修改的Ticker请直接修改这里",
   "comment_b": "也可用代码，结构为 {'func': string}，编译时会转换为()=>string",
+  "comment_c": "因为部分完整版的英文原文都在代码里，而且因为有代码不是很好复制出来，所以这里有的就不放英文原文了。",
   "TickerArr(magicItem)": {
-    "english": "就是一堆东西",
     "chinese": [
       "公共厕所",
       "云彩",
@@ -26,7 +26,6 @@
     ]
   },
   "TickerArr(magicSchool)": {
-    "english": "就是一堆东西",
     "chinese": [
       "水",
       "火",
@@ -57,35 +56,6 @@
     ]
   },
   "TickerArr(animals)": {
-    "english": [
-      "newts",
-      "penguins",
-      "scorpions",
-      "axolotls",
-      "puffins",
-      "porpoises",
-      "blowfish",
-      "horses",
-      "crayfish",
-      "slugs",
-      "humpback whales",
-      "nurse sharks",
-      "giant squids",
-      "polar bears",
-      "fruit bats",
-      "frogs",
-      "sea squirts",
-      "velvet worms",
-      "mole rats",
-      "paramecia",
-      "nematodes",
-      "tardigrades",
-      "giraffes",
-      "monkfish",
-      "wolfmen",
-      "goblins",
-      "hippies"
-    ],
     "chinese": [
       "蝾螈",
       "企鹅",
@@ -193,49 +163,33 @@
     ]
   },
   "Ticker (grandma invasion start)": {
-    "english": [
-      "millions of old ladies reported missing!",
-      "families around the continent report agitated, transfixed grandmothers!",
-      "nurses report \"strange scent of cookie dough\" around female elderly patients!"
-    ],
     "chinese": [
-      "据报道，有数百人老妇人失踪！",
-      "据报道，大陆各地很多家庭中的老奶奶都焦虑不安，茫然发呆！",
+      "据报道，有数百人老奶奶失踪！",
+      "各饼干工厂附近开始出现了成群游行的老奶奶们！",
+      "据报道，各地很多家庭中的老奶奶都开始出现焦虑不安与茫然发呆的症状！",
+      "多起老奶奶因眼神呆滞或口吐白沫的症状就医，医生称医疗资源开始出现紧缺！",
       "据护士说，上了年纪的女性病人周围散发出“奇怪的饼干面团气味”！"
     ]
   },
   "Ticker (grandma invasion rise)": {
-    "english": [
-      "town in disarray as strange old ladies break into homes to abduct infants and baking utensils!",
-      "whole continent undergoing mass exodus of old ladies!",
-      "old women freeze in place in streets, ooze warm sugary syrup!"
-    ],
     "chinese": [
-      "奇怪的老妇人们闯入家中，拐走婴儿和烘焙器具，市镇陷入一片混乱！",
-      "整个大陆都出现了老妇人大规模迁移！",
-      "街上的老妇人僵在原地，渗出温热的糖浆！"
+      "奇怪的老奶奶们闯入家中，拐走婴儿和烘焙器具，市镇陷入一片混乱！",
+      "街上开始出现大量的双眼发光的老奶奶，本地居民因此陷入恐慌！",
+      "养老院放出报道：“部分女性客户出现在轮椅中融化并与轮椅凝结为一体的现象”",
+      "整个大陆都出现了老奶奶大规模迁移！",
+      "街上众多的老奶奶僵在原地，渗出温热的糖浆！"
     ]
   },
   "Ticker (grandma invasion full)": {
-    "english": [
-      "wrinkled \"flesh tendrils\" visible from space!",
-      "all hope lost as writhing mass of flesh and dough engulfs whole city!",
-      "nightmare continues as wrinkled acres of flesh expand at alarming speeds!"
-    ],
     "chinese": [
+      "发现数种大型“鲜肉道路”出现在各地，这种血红色的道路连接起了多个饼干工厂！",
       "从太空可以看见皱巴巴的“血肉藤蔓”！",
+      "大量曾经为“老奶奶”的尸体在多个发光的血肉模糊的团状物体中发现，所有尸体被发现时均为冷冻状态！",
       "整座城市随处可见扭动着的血肉和面团，令人极度绝望！",
       "噩梦仍在继续，巨大而充满皱纹的肉块正以惊人的速度膨胀！"
     ]
   },
   "Ticker (Farm)": {
-    "english": [
-      "cookie farms suspected of employing undeclared elderly workforce!",
-      "cookie farms release harmful chocolate in our rivers, says scientist!",
-      "genetically-modified chocolate controversy strikes cookie farmers!",
-      "free-range farm cookies popular with today's hip youth, says specialist.",
-      "farm cookies deemed unfit for vegans, says nutritionist."
-    ],
     "chinese": [
       "饼干农场疑似雇用过龄工人。",
       "科学家表示，饼干农场向河里排放了有害健康的巧克力！",
@@ -245,13 +199,6 @@
     ]
   },
   "Ticker (Mine)": {
-    "english": [
-      "is our planet getting lighter? Experts examine the effects of intensive chocolate mining.",
-      "X miners trapped in collapsed chocolate mine!'",
-      "chocolate mines found to cause earthquakes and sinkholes!",
-      "chocolate mine goes awry, floods village in chocolate!",
-      "depths of chocolate mines found to house \"peculiar, chocolaty beings\"!"
-    ],
     "chinese": [
       "我们的星球正变得越来越轻吗？相关专家正在审视密集开采巧克力矿带来的影响。",
       {
@@ -263,13 +210,6 @@
     ]
   },
   "Ticker (Factory)": {
-    "english": [
-      "cookie factories linked to global warming!",
-      "cookie factories involved in chocolate weather controversy!",
-      "cookie factories on strike, robotic minions employed to replace workforce!",
-      "cookie factories on strike - workers demand to stop being paid in cookies!",
-      "factory-made cookies linked to obesity, says study."
-    ],
     "chinese": [
       "全球变暖与饼干工厂有关！",
       "饼干工厂的大规模扩张引争议，或与近期的巧克力雨有关！",
@@ -279,12 +219,6 @@
     ]
   },
   "Ticker (Bank)": {
-    "english": [
-      "cookie loans on the rise as people can no longer afford them with regular money.",
-      "cookies slowly creeping up their way as a competitor to traditional currency!",
-      "most bakeries now fitted with ATMs to allow for easy cookie withdrawals and deposits.",
-      "cookie economy now strong enough to allow for massive vaults doubling as swimming pools!"
-    ],
     "chinese": [
       "大众的日常收入负担不起日益增长的饼干借贷。",
       "饼干正逐渐发起对传统货币的挑战！",
@@ -294,13 +228,6 @@
     ]
   },
   "Ticker (Temple)": {
-    "english": [
-      "explorers bring back ancient artifact from abandoned temple; archeologists marvel at the centuries-old rolling pin!",
-      "recently-discovered chocolate temples now sparking new cookie-related cult; thousands pray to Baker in the sky!",
-      "just how extensive is the cookie pantheon? Theologians speculate about possible ['god','goddess'] of [...animals, ['kazoos','web design','web browsers','kittens','atheism','handbrakes','hats','aglets','elevator music','idle games','the letter \"P\"','memes','hamburgers','bad puns','kerning','stand-up comedy','failed burglary attempts','clickbait','one weird tricks']]",
-      "theists of the world discover new cookie religion - \"Oh boy, guess we were wrong all along!\"",
-      "cookie heaven allegedly \"sports elevator instead of stairway\"; cookie hell \"paved with flagstone, as good intentions make for poor building material\""
-    ],
     "chinese": [
       "探险家从废弃神庙带回古代文物；考古学家惊叹于有几世纪历史的擀面杖！",
       "最近发现的巧克力神庙正在引领新兴的饼干文化；数千人向空中的烘焙之神祈祷！",
@@ -312,13 +239,6 @@
     ]
   },
   "Ticker (Wizard tower)": {
-    "english": [
-      "some random code here, I'm too lazy to paste it here",
-      "some random code here again, I'm too lazy to paste it here",
-      "get your new charms and curses at the yearly National Spellcrafting Fair! Exclusive prices on runes and spellbooks.",
-      "cookie wizards deny involvement in shockingly ugly newborn - infant is \"honestly grody-looking, but natural\", say doctors.",
-      "\"Any sufficiently crude magic is indistinguishable from technology\", claims renowned technowizard."
-    ],
     "chinese": [
       {
         "func": "'所有的'+choose([choose(loc('TickerArr(animals)')),choose(loc('TickerArr(magicItem)'))])+'都在席卷全球的诡异魔法灾难中变成了'+choose([choose(loc('TickerArr(animals)')),choose(loc('TickerArr(magicItem)'))])"
@@ -332,13 +252,6 @@
     ]
   },
   "Ticker (Shipment)": {
-    "english": [
-      "new chocolate planet found, becomes target of cookie-trading spaceships!",
-      "massive chocolate planet found with 99.8% certified pure dark chocolate core!",
-      "space tourism booming as distant planets attract more bored millionaires!",
-      "chocolate-based organisms found on distant planet!",
-      "ancient baking artifacts found on distant planet; \"terrifying implications\", experts say."
-    ],
     "chinese": [
       "大批饼干贸易宇宙飞船将飞往新发现的巧克力行星！",
       "发现巨大巧克力行星，经鉴定其内核为 99.8% 纯度的黑巧克力！",
@@ -348,13 +261,6 @@
     ]
   },
   "Ticker (Alchemy lab)": {
-    "english": [
-      "national gold reserves dwindle as more and more of the precious mineral is turned to cookies!",
-      "chocolate jewelry found fashionable, gold and diamonds \"just a fad\", says specialist.",
-      "silver found to also be transmutable into white chocolate!",
-      "defective alchemy lab shut down, found to convert cookies to useless gold.",
-      "alchemy-made cookies shunned by purists!"
-    ],
     "chinese": [
       "随着越来越多珍贵的矿石被变成饼干，国家黄金储备不断减少！",
       "业内人士认为巧克力饰品可以替代贵金属成为新型时尚品，现阶段的黄金和钻石的流行只是“泡沫潮流”。",
@@ -364,13 +270,6 @@
     ]
   },
   "Ticker (Portal)": {
-    "english": [
-      "nation worried as more and more unsettling creatures emerge from dimensional portals!",
-      "dimensional portals involved in city-engulfing disaster!",
-      "tourism to cookieverse popular with bored teenagers! Casualty rate as high as 73%!",
-      "cookieverse portals suspected to cause fast aging and obsession with baking, says study.",
-      "\"do not settle near portals,\" says specialist; \"your children will become strange and corrupted inside.\""
-    ],
     "chinese": [
       "民众担心会有越来越多令人不安的生物从次元传送门走出！",
       "过度开发的次元传送门被指与近期多起城市无故被吞噬的事件有关！",
@@ -380,13 +279,6 @@
     ]
   },
   "Ticker (Time machine)": {
-    "english": [
-      "time machines involved in history-rewriting scandal! Or are they?",
-      "time machines used in unlawful time tourism",
-      "cookies brought back from the past \"unfit for human consumption\", says historian.",
-      "various historical figures inexplicably replaced with talking lumps of dough!",
-      "\"I have seen the future,\" says time machine operator, \"and I do not wish to go there again.\""
-    ],
     "chinese": [
       "时光机卷入重写历史的丑闻中！是这样吗？",
       "非法旅行社利用时光机器销售违法的时空穿越旅行套餐。",
@@ -396,13 +288,6 @@
     ]
   },
   "Ticker (Antimatter condenser)": {
-    "english": [
-      "whole town seemingly swallowed by antimatter-induced black hole; more reliable sources affirm town \"never really existed\"!",
-      "\"explain to me again why we need particle accelerators to bake cookies?\" asks misguided local woman.",
-      "researchers conclude that what the cookie industry needs, first and foremost, is \"more magnets\".",
-      "first antimatter condenser successfully turned on, doesn't rip apart reality!",
-      "\"unravelling the fabric of reality just makes these cookies so much tastier\", claims scientist."
-    ],
     "chinese": [
       "整座市镇似乎都被反物质引起的黑洞吞噬了；据更可靠的消息来源证实，该市镇“从未真正存在过”！",
       "新闻部收到一位被误导的女士的留言提问：“政府能不能解释下为什么我们烤饼干需要粒子加速器？”",
@@ -412,13 +297,6 @@
     ]
   },
   "Ticker (Prism)": {
-    "english": [
-      "new cookie-producing prisms linked to outbreak of rainbow-related viral videos.",
-      "scientists warn against systematically turning light into matter - One day, we'll end up with all matter and no light!\"",
-      "cookies now being baked at the literal speed of light thanks to new prismatic contraptions.",
-      "\"Can't you sense the prism watching us?\", rambles insane local man. \"No idea what he's talking about\", shrugs cookie magnate/government official.",
-      "world citizens advised \"not to worry\" about frequent atmospheric flashes."
-    ],
     "chinese": [
       "互联网有关彩虹的视频相继爆火，或与新型棱镜技术被用于烘焙饼干有关",
       "科学家警告不要系统地将光转化成物质——“总有一天，我们最终将只剩下物质，而没有任何光！”",
@@ -428,13 +306,6 @@
     ]
   },
   "Ticker (Chancemaker)": {
-    "english": [
-      "strange statistical anomalies continue as weather forecast proves accurate an unprecedented 3 days in a row!",
-      "local casino ruined as all gamblers somehow hit a week-long winning streak! \"We might still be okay\", says owner before being hit by lightning 47 times.",
-      "neighboring nation somehow elects president with sensible policies in freak accident of random chance!",
-      "million-to-one event sees gritty movie reboot turning out better than the original! \"We have no idea how this happened\", say movie execs.",
-      "all scratching tickets printed as winners, prompting national economy to crash and, against all odds, recover overnight."
-    ],
     "chinese": [
       "奇怪的统计学异常现象继续出现，天气预报前所未有地连续 3 天预测准确！",
       "本地赌场破产，全体赌客不知何故连续一周获胜！“我们可能还可以坚持，”赌场老板在被闪电击中 47 次前说道。",
@@ -444,13 +315,6 @@
     ]
   },
   "Ticker (Fractal engine)": {
-    "english": [
-      "local man \"done with Cookie Clicker\", finds the constant self-references \"grating and on-the-nose\".",
-      "local man sails around the world to find himself - right where he left it.",
-      "local guru claims \"there's a little bit of ourselves in everyone\", under investigation for alleged cannibalism.",
-      "news writer finds herself daydreaming about new career. Or at least a raise.",
-      "polls find idea of cookies made of cookies \"acceptable\" - \"at least we finally know what's in them\", says interviewed citizen."
-    ],
     "chinese": [
       "当地一位“受够了 Cookie Clicker”的人士，总是会不断自我暗示自己是“令人厌恶和不切实际的”。",
       "本地旅者声称开始环游世界以寻找自我 —— 并在原地发现了拥有世界的自己。",
@@ -460,13 +324,6 @@
     ]
   },
   "Ticker (Javascript console)": {
-    "english": [
-      "strange fad has parents giving their newborns names such as Emma.js or Liam.js. At least one Baby.js reported.",
-      "coding is hip! More and more teenagers turn to technical fields like programming, ensuring a future robot apocalypse and the doom of all mankind.",
-      "developers unsure what to call their new javascript libraries as all combinations of any 3 dictionary words have already been taken.",
-      "nation holds breath as nested ifs about to hatch.",
-      "clueless copywriter forgets to escape a quote, ends news line prematurely; last words reported to be \"Huh, why isn"
-    ],
     "chinese": [
       "各地掀起一股奇怪风尚，家长们纷纷给自己新出生的孩子取诸如 Emma.js 或 Liam.js 这样的名字。至少有一起这类事件的报道。",
       "写代码人气很高！越多越多的青少年将注意力转向编程这样的技术领域，这注定了一个机器人起义和全人类毁灭的未来。",
@@ -476,13 +333,6 @@
     ]
   },
   "Ticker (Idleverse)": {
-    "english": [
-      "is another you living out their dreams in an alternate universe? Probably, you lazy bum!",
-      "public recoils at the notion of a cosmos made of infinite idle games. \"I kinda hoped there'd be more to it\", says distraught citizen.",
-      "with an infinity of parallel universes, people turn to reassuring alternate dimensions, which only number \"in the high 50s\".",
-      "\"I find solace in the knowledge that at least some of my alternate selves are probably doing fine out there\", says citizen's last remaining exemplar in the multiverse.",
-      "comic book writers point to actual multiverse in defense of dubious plot points. \"See? I told you it wasn't 'hackneyed and contrived'!\""
-    ],
     "chinese": [
       "是否有另一个你生活在平行宇宙中？也许吧，你这个懒鬼！",
       "公众拒绝相信宇宙是由无数个放置类游戏组成的。“我大概是希望宇宙应该更有意思一点”，新焙社采访的一名路人说道。",
