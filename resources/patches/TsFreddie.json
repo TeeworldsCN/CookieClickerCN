@@ -3161,6 +3161,209 @@
     "english": "Ah, this is a problem.",
     "chinese": "啊，这是个问题。"
   },
+
+  "[Upgrade quote 751]Arcanized glassware": {
+    "english": "You think your lab equipment enjoys taking part in these experiments violating all sorts of modern scientific precepts? Of course not. Thankfully, you've finalized the design of specialized beakers and flasks, recycled from the same glass used by the ancients to perform primeval alchemy, and therefore much less picky about the nature of the physical world.",
+    "chinese": "你以为你的实验室器皿喜欢一直参与这些违反各种现代科学戒律的实验吗？当然不是。不过有幸的是，你已经完成了一种特殊的烧杯和烧瓶的设计，是从古人用来执行原始炼金术的同一种玻璃中回收来的，因此这些容器对现代物理世界的规律来说没有之前的那些那么挑剔了。"
+  },
+  "[Upgrade quote 752]Portal guns": {
+    "english": "At long last! The only weapon capable of killing a portal.",
+    "chinese": "终于出现了！唯一能杀死传送门的武器。"
+  },
+  "[Upgrade quote 753]Timeproof upholstery": {
+    "english": "Sometimes your time agents overshoot and end up having to fast-forward through the universe's entire history until they loop back to present time. It still takes a while, so they might as well travel in comfort and enjoy the show while they do.",
+    "chinese": "有时你的时间元素钟有点跑快了，最终不得不快进宇宙的整个历史，直到它们溢出并循环回到现在的时间。距离回到原点还需要一段时间，所以不妨让时间舒舒服服地旅行，而你只需要负责享受这场演出。"
+  },
+  "[Upgrade quote 754]Employee minification": {
+    "english": "Using molecular shrinking technology, you've rendered your staff and their offices absolutely itty-bitty. The storage and productivity benefits are questionable but it's very fun listening to their tiny little complaints. They all signed the waivers, so maybe their new size will finally teach them to read the small print...",
+    "chinese": "使用分子收缩技术，你已经让你的员工和他们的办公室变得非常小。你还不太确定提升存储和工作效率的好处到底有多少，但听他们小小的抱怨是非常有趣的。他们在被缩小前都签署了弃权书，所以也许他们的新尺寸最终会教会他们阅读注脚小字。"
+  },
+  "[Upgrade quote 755]Hyperblack paint": {
+    "english": "As the technology behind your prisms evolves, their storage becomes more and more problematic: within seconds, a single prism's reflective ability can set a whole underground hangar ablaze as it catches the slightest glint of light. However, once coated with this new shade of paint, its damage may be reduced to only giving third-degree burns to employees that stand too close.",
+    "chinese": "随着棱镜背后的技术发展，它们的存储变得越来越有问题：在几秒钟内，一个棱镜的反射能力可以在捕捉到最轻微的闪光时点燃整个地下机库。然而，一旦涂上这种新色调的油漆，其损害可能会减少到只对站得太近的员工造成三级烧伤。"
+  },
+  "[Upgrade quote 756]Silver lining maximization": {
+    "english": "Sometimes luck is a matter of perspective. Broke your ankle? What do you know, that cute nurse fixing you up might just be your future spouse. Lost your job? You were meant for greater things anyway! Developed a cookie allergy? There's no upshot to that, you sick monster.",
+    "chinese": "有时候，运气好坏从不同角度看有不同的体现。扭伤脚踝了吗？你有没有想过，那个帮你包扎的可爱护士可能就是你未来的配偶。丢了工作？反正不管怎样，你都注定要做更伟大的事情！对饼干过敏？好吧，那你可能真没救了，你这个恶心的怪物。"
+  },
+  "[Upgrade quote 757]Multiscale profiling": {
+    "english": "Did you know that eating a cookie means the intestinal flora inside you is eating it too? Trillions of tiny bacterial mouths to feed, each with their own preferences. Surely this is room for flavor optimization. And then, of course, there's also the much bigger things that, in turn, eat you.",
+    "chinese": "你知道吃下一块饼干就意味着你体内的肠道菌群也在吃它吗？数以万亿计的细小细菌在嗷嗷待哺，每个细菌都有它们自己的口味喜好。这可是优化风味的绝佳机会。当然，之后可能还有更大的东西会反过来吃了你。"
+  },
+  "[Upgrade quote 758]PHP containment vats": {
+    "english": "In essence, these are large server chambers meant to trap rogue PHP code, allowing it to execute far away from your javascript where it can do minimal harm.",
+    "chinese": "本质上，这些是大型的服务器沙箱环境，旨在捕获偷跑出来的PHP代码，使其能够在远离您自己的脚本的地方执行，在这里可以将它们对您造成的伤害降到最低。"
+  },
+  "[Upgrade quote 759]Opposite universe": {
+    "english": "You've located a universe where everything is reversed: up is down, light is darkness, clowns are vegetarians - but worst of all, some lunatic there is manufacturing abominable amounts of anti-cookies. If these came into contact with yours, everything would be lost! Thanks to this discovery, you've been able to place the offending universe in permanent quarantine, and pray that there aren't more like it hiding around somewhere.",
+    "chinese": "你已经找到了一个一切都颠倒过来的宇宙：上是下，光是暗，小丑是素食者——但最糟糕的是，那里的某个疯子正在制造数量惊人的反饼干。如果这些东西接触到你，你的一切都将被毁灭！多亏了这一发现，你才能将这个令人不快的宇宙置于永久隔离状态，并祈祷不会有更多类似的宇宙隐藏在某个地方。"
+  },
+  "[Upgrade quote 760]The land of dreams": {
+    "english": "Your planet brains have gained the ability to sleep, acting as a soft reboot which helps keep their pangenocidal impulses in check. It also allows them to commune in a shared dreamworld in which they can imagine what it's like to not exist as a disembodied cosmic horror forever fated to use its infinite intellect to devise new means of creating biscuits. You know, within reason.",
+    "chinese": "你们星球大小的大脑已经获得了睡眠的能力。这对它们来说起到了软重启的作用，能够帮助控制他们的杀戮冲动。这还允许他们在一个共享的梦境中交流，在那里他们可以自己想象：作为一个没有身体的宇宙形影注定永远使用它们无限的智慧来创造新的制造饼干——是多么自豪的一件事情。你懂的，我们会将这些虚构的想法限制在合理的范围内。"
+  },
+  "[Upgrade quote 761]Thoughts & prayers": {
+    "english": "The notion of sacredness arises in most sentient evolved brains and may benefit the development of cognition via abstract thought. This mechanism, however, is absent in designed minds such as your cortex bakers; this process attempts to add it back. Just make sure to keep them in check - you really don't want these things to develop organized religion.",
+    "chinese": "神圣的概念出现在大多数感官进化的大脑中，并可能有助于通过抽象思维发展认知。然而，这种机制在被人工设计出来的大脑中是不存在的，比如你的脑皮层烘焙师；这个方法试图将这些概念重新接入到它们中。只要确保限制住它们无尽的思维——你可不希望这些东西发展成有组织的宗教。"
+  },
+  "[Upgrade quote 762]Fertile minds": {
+    "english": "An acute intellect, artificial or not, requires plenty of vitamins. You fortuitously happen to be in charge of vast farming operations, only a few trillion acres of which need be requisitioned to grow the quantities of broccoli and kale to keep your planet-sized brains in tip-top shape. Open wide, here comes the airplane!",
+    "chinese": "只要是敏锐的智力，无论是人工的还是非人工的，都需要大量的维生素。碰巧你拥有着庞大的农业作业机构，只需要征用其中的几万亿英亩就可以不断种植西兰花和羽衣甘蓝，以保持你这些地球大小的大脑处于顶尖状态。来，乖乖，好好吃蔬菜哦！"
+  },
+  "[Upgrade quote 763]Fortune #019": {
+    "english": "The smartest way to think is not to think at all.",
+    "chinese": "最聪明的思考方式就是根本不思考。"
+  },
+  "[Upgrade quote 764]Decillion fingers": {
+    "english": "If you still can't quite put your finger on it, you must not be trying very hard.",
+    "chinese": "如果你仍然不能完全弄清楚它，那决定是因为你还不够努力。"
+  },
+  "[Upgrade quote 765]Aetherice mouse": {
+    "english": "Made from a substance impossible to manufacture, only obtained through natural happenstance; its properties bewilder even the most precise measuring instruments.",
+    "chinese": "由一种不可能制造出来的物质制成，只能通过自然偶发获得；它的这个性质连世界上最精确的测量仪器都能迷惑住。"
+  },
+  "[Upgrade quote 766]Kitten admins": {
+    "english": "leadership ain't easy, sir",
+    "chinese": "当领导并不容易，先生"
+  },
+
+  "[Upgrade quote 767]Everybutter biscuit": {
+    "english": "Rewarded for owning 650 of everything.<br>This biscuit is baked with, and coated in, every kind of butter ever imagined, from every human culture and a good few alien ones too. Some of them perhaps display hallucinogenic traits, as the biscuit seems to change shape in front of you - seemingly shifting between visions of every past and future you.",
+    "chinese": "拥有 650 个所有建筑的奖励。<br>这块饼干是用你能想象到的每一种黄油烘焙而成的，来自各种人类文化，也包括一些外来的文化。其中一些饼干可能会表现出迷幻的特征，因为饼干似乎会在你面前改变形状——它们似乎能在过去和未来的每一个你的样子之间切换。"
+  },
+  "[Upgrade quote 768]Unshackled cursors": {
+    "english": "These hands tell a story.",
+    "chinese": "这双手的来头可不小。"
+  },
+  "[Upgrade quote 769]Unshackled grandmas": {
+    "english": "Never too old.",
+    "chinese": "永远不服老。"
+  },
+  "[Upgrade quote 770]Unshackled farms": {
+    "english": "Till the universe.",
+    "chinese": "农村包围宇宙，饼干夺取银河。"
+  },
+  "[Upgrade quote 771]Unshackled mines": {
+    "english": "Redefine the meaning of \"depth\".",
+    "chinese": "重新定义“深度”。"
+  },
+  "[Upgrade quote 772]Unshackled factories": {
+    "english": "Nothing to lose but your production chains.",
+    "chinese": "只要能保住你的生产链，怎么都可以。"
+  },
+  "[Upgrade quote 773]Unshackled banks": {
+    "english": "All-time highs, all the time.",
+    "chinese": "投资创新高，一年更比一年高。"
+  },
+  "[Upgrade quote 774]Unshackled temples": {
+    "english": "You can make a religion out of this.",
+    "chinese": "你可以把这玩意变成一种宗教。"
+  },
+  "[Upgrade quote 775]Unshackled wizard towers": {
+    "english": "There's a spell for everything.",
+    "chinese": "万物皆有咒语。"
+  },
+  "[Upgrade quote 776]Unshackled shipments": {
+    "english": "Everywhere at once.",
+    "chinese": "宇宙各地，一单即达。"
+  },
+  "[Upgrade quote 777]Unshackled alchemy labs": {
+    "english": "Anything you see, you can make.",
+    "chinese": "可见即可得。"
+  },
+  "[Upgrade quote 778]Unshackled portals": {
+    "english": "Parallels unparalleled.",
+    "chinese": "领先世界的平行世界。"
+  },
+  "[Upgrade quote 779]Unshackled time machines": {
+    "english": "All the time in the world.",
+    "chinese": "7天72小时全天候供应。"
+  },
+  "[Upgrade quote 780]Unshackled antimatter condensers": {
+    "english": "No scale too large or too little.",
+    "chinese": "再大的世界，也可以微乎其微。"
+  },
+  "[Upgrade quote 781]Unshackled prisms": {
+    "english": "Brilliance has no upper limit.",
+    "chinese": "靓丽的光影，难以阻挡。"
+  },
+  "[Upgrade quote 782]Unshackled chancemakers": {
+    "english": "You make the rules.",
+    "chinese": "规则是你定的。"
+  },
+  "[Upgrade quote 783]Unshackled fractal engines": {
+    "english": "Uncontained.",
+    "chinese": "再大的纸也包不住无限。"
+  },
+  "[Upgrade quote 784]Unshackled javascript consoles": {
+    "english": "Rewrite your reality.",
+    "chinese": "改写你的现实。"
+  },
+  "[Upgrade quote 785]Unshackled idleverses": {
+    "english": "Wait even faster.",
+    "chinese": "等待，无需长久。"
+  },
+  "[Upgrade quote 786]Unshackled cortex bakers": {
+    "english": "Nothing is real. Everything is permitted.",
+    "chinese": "世界无形。万物皆允。"
+  },
+  "[Upgrade quote 787]Unshackled flavor": {
+    "english": "While the absence of flavoring may seem underwhelming, it allows innate aromas to be expressed at their most unadulterated.",
+    "chinese": "虽然没有调味的风味可能看起来平淡无奇，但它可以使天然的香气以最纯粹的方式散发出来。"
+  },
+  "[Upgrade quote 788]Unshackled berrylium": {
+    "english": "Berrylium is a synthetic gem with a simple shine to it. Sticky to the touch and susceptible to melting in high heat, it is frequently used in the food industry rather than as adornment, as its atomic structure imparts it a vaguely fruity flavor.",
+    "chinese": "果铍结晶是一种人工合成的宝石，具有简单的光泽。它触感粘稠，在高温下容易融化，经常用于食品工业，而不是用作装饰，因为它的原子结构赋予了它一种隐约的水果味。"
+  },
+  "[Upgrade quote 789]Unshackled blueberrylium": {
+    "english": "Blueberrylium is a refinement of berrylium, sharing nearly the same chemical makeup save for a few supplemental esters. These affect its flavor as well as its visual spectrum resonance.",
+    "chinese": "蓝铍结晶是果铍结晶的精炼产物，除了一些补充酯以外，它们的化学成分几乎相同。但是这些额外的成分影响了它的味道以及它与可见光谱的共振。"
+  },
+
+  "[Upgrade quote 790]Unshackled chalcedhoney": {
+    "english": "Raw chalcedhoney is found in complex nodules within the fossilized remains of ancient forests. Once purified, it becomes a semi-valuable stone with a pleasant, waxy smell.",
+    "chinese": "在古老森林的化石遗迹中，人们在复杂的根瘤中发现了蜂蜜玉髓。一旦提纯，它就会变成一种半有价值的石头，带有一种令人愉悦的蜡质气味。"
+  },
+  "[Upgrade quote 791]Unshackled buttergold": {
+    "english": "Buttergold was famously invented by the chef son of two molecular physicists. Neither closely related to butter nor to gold, yet similar in nutritional value, this glimmering substance can be frozen and preserve its hardness at room temperature, only regaining its malleability when heated up.",
+    "chinese": "著名的黄油黄金是由两位分子物理学家的厨师儿子发明的。这种闪闪发光的物质与黄油或黄金没有密切的亲缘关系，但营养和价值与这两种物质都十分相似，可以冷冻并在室温下保持其硬度，只有在加热时才能恢复其延展性。"
+  },
+  "[Upgrade quote 792]Unshackled sugarmuck": {
+    "english": "Sugarmuck refers to the gradual crust that seems to form spontaneously in the vicinity of candy-making equipment. Long ignored by confectioners, its harvesting process was discovered simultaneously in multiple countries during a global beet shortage.",
+    "chinese": "有机糖壳指的是在糖果制作设备附近自发形成的逐渐形成的外壳。长期被糖果制造商忽视的是，在全球甜菜短缺期间，它的存在在多个国家同时被发现。"
+  },
+  "[Upgrade quote 793]Unshackled jetmint": {
+    "english": "The striking taste of jetmint made it popular in the manufacture of various kinds of coffee-side treats until the awareness of its mild radioactivity became widespread. Today, its main uses are in cosmetics, owing to the refreshing sensation it produces on contact.",
+    "chinese": "很久以前，薄荷黑玉的惊人味道使其在各种咖啡边小吃的制造中广受欢迎，直到人们对其温和的放射性的认知变得更加广泛。如今，它的主要用途是化妆品，因为它在接触时会产生清新的感觉。"
+  },
+  "[Upgrade quote 794]Unshackled cherrysilver": {
+    "english": "Cherrysilver is a patented alloy with peculiar aromatic properties; it is non-edible, but produces strong flavor responses while losing very little of its mass when licked, though this also leaves a harmless red tinge upon the tongue.",
+    "chinese": "樱桃银是一种拥有专利的合金，具有特殊的芳香特性；它是不可食用的，但在舔的时候会产生强烈的味道反应，同时几乎不会失去其质量，尽管这也会在舌头上留下无害的红色印记。"
+  },
+  "[Upgrade quote 795]Unshackled hazelrald": {
+    "english": "Hazelrald is a friable gemstone with complex green-brown inner reflections. It is considered ornamental in some cultures; in others, it may be consumed in small quantities as an upper-scale sweet.",
+    "chinese": "榛果翡翠是一种易碎的宝石，内部反射复杂的绿褐色。在一些文化中，它被认为是装饰性的；在另一些文化中，它可能被少量食用，作为一种上等的甜食。"
+  },
+  "[Upgrade quote 796]Unshackled mooncandy": {
+    "english": "While many get it mixed up with the trademarked snack of the same name made popular following its discovery, mooncandy is a very real mineral, first isolated within the space dust underneath astronaut boots. Left to its own devices in open air, a mooncandy crystal naturally spreads out and grows.",
+    "chinese": "虽然许多人把这种物质与发现月糖后流行起来的同名商标零食混淆在一起，但月糖是一种非常真实的矿物，最初是从宇航员靴子下的太空尘埃中分离出来的。在露天条件下，月糖水晶会自然地散开并生长。"
+  },
+  "[Upgrade quote 797]Unshackled astrofudge": {
+    "english": "When you heat up the shimmering syrup oozing from mooncandy using a special caramelization process, you get astrofudge. Astrofudge is delicious and safe for humanoid consumption in certain quantities. Consult your local food safety agency for more details.",
+    "chinese": "当你用一种特殊的焦糖过程加热从月糖中渗出的闪闪发光的糖浆时，你会得到星际软糖。星际软糖的口味十分独特，品尝过的人都对其十分喜爱，在一定数量范围内是可安全被人类食用的。有关更多细节，请咨询您当地的食品安全机构。"
+  },
+  "[Upgrade quote 798]Unshackled alabascream": {
+    "english": "Molecularly related to dairy, alabascream occurs naturally at high altitudes, forming in wispy filaments which were long indistinguishable from clouds. An expensive delight, it is also known as \"pilots' bane\".",
+    "chinese": "奶油石膏在分子上与乳制品相似，这种物质会自然出现在高海拔地区，形成细丝状，长期以来都与云层难以区分。这是一种昂贵的零食，也被称为“飞行员的横祸”。"
+  },
+  "[Upgrade quote 799]Unshackled iridyum": {
+    "english": "Iridyum shares little in common with any other material known to mankind. Rather than simply smelled, it can be tasted from a distance, though remaining in its presence too long is ill-advised. Some high-end underground megacomputers may incorporate iridyum as part of their electronic components.",
+    "chinese": "浓香铱与人类已知的任何其他物质几乎没有共同之处。不过它光会简单地散发出它的味道，而是任何人都可以从远处直接品尝到它的味道，但是专家并不推荐长期暴露在拥有这种成分的空气中。一些高端的地下巨型计算机可能会将浓香铱作为其电子元件的一部分。"
+  },
+  "[Upgrade quote 800]Unshackled glucosmium": {
+    "english": "Glucosmium is a glossy metal whose flavor matrix is bound to its current subjective chroma; in other words, its taste depends on which colors it's currently reflecting. Impractical to consume safely, its industrial applications range from transcontinental ballistics to paint varnish.",
+    "chinese": "葡萄糖锇金是一种有光泽的金属，其味道组成与其当前的视觉光谱反应绑定在一起；换句话说，它的味道取决于它当前反映的颜色。无论怎么加工都不太可能安全地被人类食用，它的工业应用相当广，从跨洲弹道到清漆都有它的影子。"
+  },
   "[Achievement quote 26]Sacrifice": {
     "english": "Easy come, easy go.",
     "chinese": "来也匆匆，去也匆匆。"

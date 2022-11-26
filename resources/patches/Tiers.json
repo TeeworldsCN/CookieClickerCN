@@ -5,11 +5,11 @@
   },
   "[Tier]Berrylium": {
     "english": "Berrylium",
-    "chinese": "浆果铍合金味"
+    "chinese": "果铍结晶味"
   },
   "[Tier]Blueberrylium": {
     "english": "Blueberrylium",
-    "chinese": "蓝莓铍合金味"
+    "chinese": "蓝铍结晶味"
   },
   "[Tier]Chalcedhoney": {
     "english": "Chalcedhoney",
@@ -21,7 +21,7 @@
   },
   "[Tier]Sugarmuck": {
     "english": "Sugarmuck",
-    "chinese": "白糖有机肥味"
+    "chinese": "有机糖壳味"
   },
   "[Tier]Jetmint": {
     "english": "Jetmint",
@@ -29,19 +29,19 @@
   },
   "[Tier]Cherrysilver": {
     "english": "Cherrysilver",
-    "chinese": "樱桃白银味"
+    "chinese": "樱桃银味"
   },
   "[Tier]Hazelrald": {
     "english": "Hazelrald",
-    "chinese": "翡翠榛果味"
+    "chinese": "榛果翡翠味"
   },
   "[Tier]Mooncandy": {
     "english": "Mooncandy",
-    "chinese": "月亮硬糖味"
+    "chinese": "月糖味"
   },
   "[Tier]Astrofudge": {
     "english": "Astrofudge",
-    "chinese": "天文巧克力味"
+    "chinese": "星际软糖味"
   },
   "[Tier]Alabascream": {
     "english": "Alabascream",
@@ -69,6 +69,6 @@
   },
   "[Tier]Glucosmium": {
     "english": "Self-referential",
-    "chinese": "葡萄糖锇合金味"
+    "chinese": "葡萄糖锇金味"
   }
 }
