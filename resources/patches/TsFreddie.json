@@ -3376,9 +3376,13 @@
     "english": "Just within reach, yet at what cost?",
     "chinese": "触手可及，但拥有代价是什么？"
   },
+  "[Upgrade desc 804]Distinguished wallpaper assortment": {
+    "english": "Contains more wallpapers for your background selector.",
+    "chinese": "壁纸选择器中将包含更多的壁纸供您选择。"
+  },
   "[Upgrade quote 804]Distinguished wallpaper assortment": {
     "english": "Do you ever think about the physicality of this place? Are you putting up these wallpapers in your office or something? Where are you, anyway?",
-    "chinese": "你有没有这里到底是个什么样子的地方？这些壁纸你到底是铺在了你的办公室的墙上还是别的什么地方？你觉得你现在到底是在哪？"
+    "chinese": "你有没有想过这里到底是个什么样子的地方？这些壁纸你到底是铺在了你的办公室的墙上还是别的什么地方？你觉得你现在到底是在哪？"
   },
   "[Upgrade quote 805]Sound test": {
     "english": "One two, one two. Is this thing on?",
