@@ -73,7 +73,7 @@
   },
   "[Upgrade name 780]Unshackled antimatter condensers": {
     "english": "Unshackled antimatter condensers",
-    "chinese": "不受束缚的反物质凝结器"
+    "chinese": "破限的反物质凝结器"
   },
   "Chancemaker": {
     "english": "Chancemaker",
@@ -92,9 +92,8 @@
     "chinese": ["%1 个机会捕手", "%1 个机会捕手"]
   },
   "[Upgrade name 782]Unshackled chancemakers": {
-    "deprecated": "r1cHk1d.json",
     "english": "Unshackled chancemakers",
-    "chinese": "不受束缚的机会捕手"
+    "chinese": "破限的机会捕手"
   },
   "Find the <b>forgotten madeleine</b>.": {
     "english": "Find the <b>forgotten madeleine</b>.",

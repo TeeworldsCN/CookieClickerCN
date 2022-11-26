@@ -54,11 +54,11 @@
   },
   "Tiered upgrades for <b>%1</b> provide an extra <b>+%2%</b> production.<br>Only works with unshackled upgrade tiers.": {
     "english": "Tiered upgrades for <b>%1</b> provide an extra <b>+%2%</b> production.<br>Only works with unshackled upgrade tiers.",
-    "chinese": "<b>%1</b> 的阶层升级将会提供 <b>+%2%</b> 的额外产量。<br>仅适用于不受束缚的升级阶层。"
+    "chinese": "<b>%1</b> 的阶层升级将会提供 <b>+%2%</b> 的额外产量。<br>仅适用于破限的升级阶层。"
   },
   "Unshackles all <b>%1-tier upgrades</b>, making them more powerful.<br>Only applies to unshackled buildings.": {
     "english": "Unshackles all <b>%1-tier upgrades</b>, making them more powerful.<br>Only applies to unshackled buildings.",
-    "chinese": "解除所有<b>%1阶层升级</b>的限制，使其更强大。<br>仅适用于不受束缚的建筑。"
+    "chinese": "解除所有<b>%1阶层升级</b>的限制，使其更强大。<br>仅适用于破限的建筑。"
   },
   "Confers various powers to your minigames while active.<br>See the bottom of each minigame for more details.": {
     "english": "Confers various powers to your minigames while active.<br>See the bottom of each minigame for more details.",
@@ -298,137 +298,137 @@
   },
   "[Upgrade name 768]Unshackled cursors": {
     "english": "Unshackled cursors",
-    "chinese": "不受束缚的指针"
+    "chinese": "破限的指针"
   },
   "[Upgrade name 769]Unshackled grandmas": {
     "english": "Unshackled grandmas",
-    "chinese": "不受束缚的老奶奶"
+    "chinese": "破限的老奶奶"
   },
   "[Upgrade name 770]Unshackled farms": {
     "english": "Unshackled farms",
-    "chinese": "不受束缚的农场"
+    "chinese": "破限的农场"
   },
   "[Upgrade name 771]Unshackled mines": {
     "english": "Unshackled mines",
-    "chinese": "不受束缚的矿坑"
+    "chinese": "破限的矿坑"
   },
   "[Upgrade name 772]Unshackled factories": {
     "english": "Unshackled factories",
-    "chinese": "不受束缚的工厂"
+    "chinese": "破限的工厂"
   },
   "[Upgrade name 773]Unshackled banks": {
     "english": "Unshackled banks",
-    "chinese": "不受束缚的银行"
+    "chinese": "破限的银行"
   },
   "[Upgrade name 774]Unshackled temples": {
     "english": "Unshackled temples",
-    "chinese": "不受束缚的神庙"
+    "chinese": "破限的神庙"
   },
   "[Upgrade name 775]Unshackled wizard towers": {
     "english": "Unshackled wizard towers",
-    "chinese": "不受束缚的巫师塔"
+    "chinese": "破限的巫师塔"
   },
   "[Upgrade name 776]Unshackled shipments": {
     "english": "Unshackled shipments",
-    "chinese": "不受束缚的装运飞船"
+    "chinese": "破限的装运飞船"
   },
   "[Upgrade name 777]Unshackled alchemy labs": {
     "english": "Unshackled alchemy labs",
-    "chinese": "不受束缚的炼金术实验室"
+    "chinese": "破限的炼金术实验室"
   },
   "[Upgrade name 778]Unshackled portals": {
     "english": "Unshackled portals",
-    "chinese": "不受束缚的传送门"
+    "chinese": "破限的传送门"
   },
   "[Upgrade name 779]Unshackled time machines": {
     "english": "Unshackled time machines",
-    "chinese": "不受束缚的时光机"
+    "chinese": "破限的时光机"
   },
   "[Upgrade name 780]Unshackled antimatter condensers": {
     "deprecated": "r1cHk1d.json",
     "english": "Unshackled antimatter condensers",
-    "chinese": "不受束缚的反物质聚光镜"
+    "chinese": "破限的反物质聚光镜"
   },
   "[Upgrade name 781]Unshackled prisms": {
     "english": "Unshackled prisms",
-    "chinese": "不受束缚的棱镜"
+    "chinese": "破限的棱镜"
   },
   "[Upgrade name 782]Unshackled chancemakers": {
     "deprecated": "r1cHk1d.json",
     "english": "Unshackled chancemakers",
-    "chinese": "不受束缚的机会制造器"
+    "chinese": "破限的机会制造器"
   },
   "[Upgrade name 783]Unshackled fractal engines": {
     "english": "Unshackled fractal engines",
-    "chinese": "不受束缚的分形引擎"
+    "chinese": "破限的分形引擎"
   },
   "[Upgrade name 784]Unshackled javascript consoles": {
     "english": "Unshackled javascript consoles",
-    "chinese": "不受束缚的JavaScript控制台"
+    "chinese": "破限的JavaScript控制台"
   },
   "[Upgrade name 785]Unshackled idleverses": {
     "english": "Unshackled idleverses",
-    "chinese": "不受束缚的空闲宇宙"
+    "chinese": "破限的空闲宇宙"
   },
   "[Upgrade name 786]Unshackled cortex bakers": {
     "english": "Unshackled cortex bakers",
-    "chinese": "不受束缚的脑皮层烘焙师"
+    "chinese": "破限的脑皮层烘焙师"
   },
   "[Upgrade name 787]Unshackled flavor": {
     "english": "Unshackled flavor",
-    "chinese": "不受束缚的风味"
+    "chinese": "破限的风味"
   },
   "[Upgrade name 788]Unshackled berrylium": {
     "english": "Unshackled berrylium",
-    "chinese": "不受束缚的浆果铍合金"
+    "chinese": "破限的果铍结晶"
   },
   "[Upgrade name 789]Unshackled blueberrylium": {
     "english": "Unshackled blueberrylium",
-    "chinese": "不受束缚的蓝莓铍合金"
+    "chinese": "破限的蓝铍结晶"
   },
   "[Upgrade name 790]Unshackled chalcedhoney": {
     "english": "Unshackled chalcedhoney",
-    "chinese": "不受束缚的蜂蜜玉髓"
+    "chinese": "破限的蜂蜜玉髓"
   },
   "[Upgrade name 791]Unshackled buttergold": {
     "english": "Unshackled buttergold",
-    "chinese": "不受束缚的黄油黄金"
+    "chinese": "破限的黄油黄金"
   },
   "[Upgrade name 792]Unshackled sugarmuck": {
     "english": "Unshackled sugarmuck",
-    "chinese": "不受束缚的白糖有机肥"
+    "chinese": "破限的有机糖壳"
   },
   "[Upgrade name 793]Unshackled jetmint": {
     "english": "Unshackled jetmint",
-    "chinese": "不受束缚的薄荷黑玉"
+    "chinese": "破限的薄荷黑玉"
   },
   "[Upgrade name 794]Unshackled cherrysilver": {
     "english": "Unshackled cherrysilver",
-    "chinese": "不受束缚的樱桃白银"
+    "chinese": "破限的樱桃银"
   },
   "[Upgrade name 795]Unshackled hazelrald": {
     "english": "Unshackled hazelrald",
-    "chinese": "不受束缚的翡翠榛果"
+    "chinese": "破限的榛果翡翠"
   },
   "[Upgrade name 796]Unshackled mooncandy": {
     "english": "Unshackled mooncandy",
-    "chinese": "不受束缚的月亮硬糖"
+    "chinese": "破限的月糖"
   },
   "[Upgrade name 797]Unshackled astrofudge": {
     "english": "Unshackled astrofudge",
-    "chinese": "不受束缚的天文巧克力"
+    "chinese": "破限的星际软糖"
   },
   "[Upgrade name 798]Unshackled alabascream": {
     "english": "Unshackled alabascream",
-    "chinese": "不受束缚的奶油石膏"
+    "chinese": "破限的奶油石膏"
   },
   "[Upgrade name 799]Unshackled iridyum": {
     "english": "Unshackled iridyum",
-    "chinese": "不受束缚的浓香铱"
+    "chinese": "破限的浓香铱"
   },
   "[Upgrade name 800]Unshackled glucosmium": {
     "english": "Unshackled glucosmium",
-    "chinese": "不受束缚的葡萄糖锇合金"
+    "chinese": "破限的葡萄糖锇金"
   },
   "[Upgrade name 801]Delicate touch": {
     "english": "Delicate touch",
