@@ -3364,6 +3364,83 @@
     "english": "Glucosmium is a glossy metal whose flavor matrix is bound to its current subjective chroma; in other words, its taste depends on which colors it's currently reflecting. Impractical to consume safely, its industrial applications range from transcontinental ballistics to paint varnish.",
     "chinese": "葡萄糖锇金是一种有光泽的金属，其味道组成与其当前的视觉光谱反应绑定在一起；换句话说，它的味道取决于它当前反映的颜色。无论怎么加工都不太可能安全地被人类食用，它的工业应用相当广，从跨洲弹道到清漆都有它的影子。"
   },
+  "[Upgrade quote 801]Delicate touch": {
+    "english": "It breaks so easily.",
+    "chinese": "细腻得吹弹可破，可远观而不可亵玩焉。"
+  },
+  "[Upgrade quote 802]Steadfast murmur": {
+    "english": "Lend an ear and listen.",
+    "chinese": "窃窃私语，亦需洗耳恭听。"
+  },
+  "[Upgrade quote 803]Glittering edge": {
+    "english": "Just within reach, yet at what cost?",
+    "chinese": "触手可及，但拥有代价是什么？"
+  },
+  "[Upgrade quote 804]Distinguished wallpaper assortment": {
+    "english": "Do you ever think about the physicality of this place? Are you putting up these wallpapers in your office or something? Where are you, anyway?",
+    "chinese": "你有没有这里到底是个什么样子的地方？这些壁纸你到底是铺在了你的办公室的墙上还是别的什么地方？你觉得你现在到底是在哪？"
+  },
+  "[Upgrade quote 805]Sound test": {
+    "english": "One two, one two. Is this thing on?",
+    "chinese": "喂，喂。能听到声音吗？"
+  },
+  "[Upgrade quote 807]Dalgona cookies": {
+    "english": "A popular Korean candy-like treat. One of the twisted games people play with these is to carefully extract the shape in the middle, which may entitle one to another free dalgona. Skilled players may perform this over and over until bankrupting the snack vendor.",
+    "chinese": "这是一种很受欢迎的糖果般的韩国小点心。一些病态的人喜欢吃的时候小心翼翼的把中间的形状啃出来，不过成功做到的人可能有机会免费获得另一块达尔戈纳饼干。熟练的玩家可以一次又一次地这样做，直到把小吃摊吃破产。"
+  },
+  "[Upgrade quote 808]Spicy cookies": {
+    "english": "Containing chocolate chips prepared with hot peppers, just like the Aztecs used to make. These cookies are on the angry side.",
+    "chinese": "里面有用辣椒做的巧克力片，就像阿兹特克人过去做的那样。这些饼干算是这种饼干里比较辣的"
+  },
+  "[Upgrade quote 809]Smile cookies": {
+    "english": "As eyes are the windows to the soul, so too are these cookies' facial features a gaping opening unto their chocolatey innards. Is it happiness they feel? Or something less human?",
+    "chinese": "就像眼睛是心灵的窗户一样，这些饼干的面部特征也是打开它们巧克力般的内部的开口。他们感受到的是幸福吗？或者是不那么有人性的东西？"
+  },
+  "[Upgrade quote 810]Kolachy cookies": {
+    "english": "Adapted from a type of Central European pastry; neatly folded to hold a spoonful of delicious jam, as a bashful little gift for your mouth.",
+    "chinese": "从一种中欧的糕点演变而来；折叠整齐以后，可以盛一勺美味的果酱夹在其中，可以作为送给你嘴巴的羞涩小礼物。"
+  },
+  "[Upgrade quote 811]Gomma cookies": {
+    "english": "Surinamese cornflour cookies with sprinkles on top. The usage of corn imparts them a hint of chewy pizzazz - which you wouldn't get with wheat, a famously stuck-up grain.",
+    "chinese": "上面撒了糖霜的苏里南玉米面饼干。因为里面有玉米，导致这些饼干有一些嚼劲——用满大街都是的小麦做出来的饼干可做不出这种口感。"
+  },
+  "[Upgrade quote 812]Vegan cookies": {
+    "english": "A vegan riff on the classic chocolate chip cookie recipe with a couple substitutions: the butter is now coconut oil, the eggs are cornstarch, and the suckling pig was cleverly replaced with wheat gluten. You can hardly tell.",
+    "chinese": "在经典的巧克力饼干食谱的基础上做了些素食材料的小发挥，并替换掉了一些食材：黄油用椰子油代替，鸡蛋用玉米淀粉代替，乳猪被巧妙地替换为小麦面筋。你几乎都吃不出来有什么区别。"
+  },
+  "[Upgrade name 813]Coyotas": {
+    "comment": "想办法把双关搞出来，反正这种吃的本来也没个中文名。（我尽力了）",
+    "english": "Coyotas",
+    "chinese": "墨西哥枫甜焦糖饼"
+  },
+  "[Upgrade quote 813]Coyotas": {
+    "english": "A wide, delicious cookie from Mexico, usually filled with sticky brown sugar. Not to be confused with coyotas, the result of the crossbreeding between a North American canine and a Japanese car manufacturer.",
+    "chinese": "是一种来自墨西哥的又宽又好吃的饼干，通常里面充满了粘稠的红糖。不要与丰田郊狼这种动物混淆，丰田郊狼是北美的一种犬类动物与一家日本汽车制造商杂交的结果。"
+  },
+  "[Upgrade quote 814]Frosted sugar cookies": {
+    "english": "May be more style than substance, depending on the recipe. Nothing that hides itself under this much frosting should be trusted.",
+    "chinese": "根据食谱的不同，可能这个饼干代表的更多是风格而不是食物。谁知道隐藏在这么多糖霜下面的到底是什么东西。"
+  },
+  "[Upgrade quote 815]Marshmallow sandwich cookies": {
+    "english": "S'mores' more civilized cousins: two regular chocolate chip cookies joined by a gooey, melty marshmallow. Theoretically one could assemble all kinds of other things this way. The mind races.",
+    "chinese": "两块普通的巧克力饼干，中间夹上一块黏糊糊的、融化的棉花糖。理论上来说有很多东西都可以用这种两个夹一个的方式组合出来，具体都有什么你就当做脑筋急转弯想吧。"
+  },
+  "[Upgrade quote 816]Web cookies": {
+    "english": "The original recipe; named for the delicate pattern inscribed on their surface by the baking process. Eating these can tell a lot about someone. Invented by well-connected bakers, no doubt.",
+    "chinese": "经典配方。由烘焙过程中刻在它们表面的精致图案而得名。吃这种饼干可以让你更加深入地了解一个人的为人。毫无疑问，这是个人脉深厚的烘焙师发明的。"
+  },
+  "[Upgrade name 817]Steamed cookies": {
+    "english": "Steamed cookies",
+    "chinese": "蒸汽饼干"
+  },
+  "[Upgrade quote 817]Steamed cookies": {
+    "english": "Localized entirely within this gaming platform? Yes! Baked with the power of steam, in a touch of cutting-edge modernity not seen since the industrial revolution.<br>Only of any use in Cookie Clicker's Steam version, of course.",
+    "chinese": "区区一个饼干居然可以是这一个游戏平台独占的？没错！用蒸汽的力量烘焙，带有工业革命以来未曾见过的尖端现代性。<br>当然，只有在 Cookie Clicker 的 Steam 版本中才有用。"
+  },
+  "[Upgrade quote 818]Deep-fried cookie dough": {
+    "english": "They'll fry anything these days. Drizzled in hot chocolate syrup, just like in state fairs. Spikes up your blood sugar AND your cholesterol!",
+    "chinese": "这念头什么玩意都可以被炒着吃，上面还淋了热巧克力糖浆。就像在景点小吃摊里的小吃一样，让你的血糖和胆固醇翻个一翻！"
+  },
   "[Achievement quote 26]Sacrifice": {
     "english": "Easy come, easy go.",
     "chinese": "来也匆匆，去也匆匆。"
