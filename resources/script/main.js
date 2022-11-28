@@ -554,6 +554,363 @@ var __TWCNL = {};
     }
   };
 
+  // 重写 Tickers 逻辑 (用于支持非英文屏蔽掉的 Tickers)
+  const ModTickers = MOD => {
+    Game.getNewTicker = manual => {
+      const list = [];
+
+      const PUSH = str => str && list.push(str);
+      const CONCAT = str => list.push(...str.filter(() => !!str));
+      const CLEAR = () => list.splice(0, list.length);
+      const SCARY = !Game.prefs.notScary;
+      const NEWS_PREFIX = loc('News :').replace(' ', '&nbsp;') + ' ';
+      const NEWS = content => content && `${NEWS_PREFIX}${content}`;
+      const GRANDMA = says => `<q>${says}</q><sig>${Game.Objects['Grandma'].single}</sig>`;
+      const BUILT = (name, num = 1) => Game.Objects[name].amount >= num;
+      const ACHIEVED = name => Game.HasAchiev(name);
+      const UPGRADED = name => Game.Has(name);
+      const CHANCE = percentage => Math.random() < percentage / 100;
+      const EARNED = amount => Game.cookiesEarned >= amount;
+      const SEASON = name => Game.season == name.toLowerCase();
+      // const PLEDGES = amount => Game.pledges >= amount;
+      const PLEDGED = Game.pledges > 0;
+      const WRATH = Game.elderWrath != 0;
+      const RESET = Game.resets != 0;
+
+      const L = key => {
+        if (key in locStrings) return loc(key);
+        return null;
+      };
+
+      const C = arr => {
+        if (arr && Array.isArray(arr)) return choose(arr);
+        return null;
+      };
+
+      const PUSH_WITH = (cond, name, news = true) => {
+        if (cond(name)) {
+          const localized = L(`Ticker (${name})`);
+          if (!localized) return;
+          if (Array.isArray(localized)) {
+            list.push(news ? NEWS(C(localized)) : C(localized));
+          } else {
+            list.push(news ? NEWS(localized) : localized);
+          }
+        }
+      };
+
+      if (SEASON('Fools')) {
+        // 愚人新闻
+        if (EARNED(1000)) PUSH(C(L('Ticker (fools)')));
+        if (EARNED(1000) && CHANCE(10)) PUSH(C(L('Ticker (fools rare)')));
+
+        if (Game.TickerN % 2 == 0 || EARNED(10100000000)) {
+          // 建筑新闻
+          for (var obj in Game.Objects) {
+            if (obj != 'Cursor' && obj != 'Grandma' && BUILT(obj))
+              PUSH(NEWS(C(L(`Ticker (fools ${obj})`))));
+          }
+        }
+
+        if (!EARNED(5)) {
+          PUSH(L('Such a grand day to begin a new business.'));
+        } else if (!EARNED(50)) {
+          PUSH(L("You're baking up a storm!"));
+        } else if (!EARNED(100)) {
+          PUSH(
+            L(
+              'You are confident that one day, your cookie company will be the greatest on the market!'
+            )
+          );
+        } else if (!EARNED(1000)) {
+          PUSH(L('Business is picking up!'));
+        } else if (!EARNED(5000)) {
+          PUSH(L("You're making sales left and right!"));
+        } else if (!EARNED(20000)) {
+          PUSH(L('Everyone wants to buy your cookies!'));
+        } else if (!EARNED(50000)) {
+          PUSH(L('You are now spending most of your day signing contracts!'));
+        } else if (!EARNED(500000)) {
+          PUSH(L('You\'ve been elected "business tycoon of the year"!'));
+        } else if (!EARNED(1000000)) {
+          PUSH(L('Your cookies are a worldwide sensation! Well done, old chap!'));
+        } else if (!EARNED(5000000)) {
+          PUSH(
+            L(
+              'Your brand has made its way into popular culture. Children recite your slogans and adults reminisce them fondly!'
+            )
+          );
+        } else if (!EARNED(1000000000)) {
+          PUSH(L("A business day like any other. It's good to be at the top!"));
+        } else if (!EARNED(10100000000)) {
+          PUSH(
+            L(
+              "You look back at your career. It's been a fascinating journey, building your baking empire from the ground up."
+            )
+          );
+        }
+      } else if (WRATH && ((PLEDGED && !RESET && CHANCE(30)) || CHANCE(3))) {
+        // 天启新闻
+        if (Game.elderWrath == 1) PUSH(NEWS(C(L('Ticker (grandma invasion start)'))));
+        if (Game.elderWrath == 2) PUSH(NEWS(C(L('Ticker (grandma invasion rise)'))));
+        if (Game.elderWrath == 3) PUSH(NEWS(C(L('Ticker (grandma invasion full)'))));
+      } else {
+        // 正常新闻
+        if (Game.TickerN % 2 == 0 || EARNED(10100000000)) {
+          if (CHANCE(75) || !EARNED(10000)) {
+            // 老奶奶新闻
+            if (BUILT('Grandma')) {
+              PUSH(GRANDMA(C(L('Ticker (grandma)'))));
+            }
+
+            if (SCARY && BUILT('Grandma', 50)) {
+              PUSH(GRANDMA(C(L('Ticker (threatening grandma)'))));
+            }
+
+            if (SCARY && ACHIEVED('Just wrong') && CHANCE(40)) {
+              PUSH(GRANDMA(C(L('Ticker (angry grandma)'))));
+            }
+
+            if (SCARY && BUILT('Grandma') && PLEDGED && !WRATH) {
+              PUSH(GRANDMA(C(L('Ticker (grandmas return)'))));
+            }
+
+            // 建筑新闻
+            for (var obj in Game.Objects) {
+              if (obj != 'Cursor' && obj != 'Grandma' && BUILT(obj))
+                PUSH(NEWS(C(L(`Ticker (${obj})`))));
+            }
+
+            // 季节新闻
+            if (EARNED(1000)) {
+              PUSH_WITH(SEASON, 'Halloween');
+              PUSH_WITH(SEASON, 'Christmas');
+              PUSH_WITH(SEASON, 'Valentines');
+              PUSH_WITH(SEASON, 'Easter');
+            }
+          }
+
+          // 升级与成就新闻（补充）
+          if (CHANCE(5)) {
+            PUSH_WITH(ACHIEVED, 'Base 10');
+            PUSH_WITH(ACHIEVED, 'From scratch');
+            PUSH_WITH(ACHIEVED, 'A world filled with cookies');
+            PUSH_WITH(ACHIEVED, 'Last Chance to See');
+            PUSH_WITH(UPGRADED, 'Serendipity');
+            PUSH_WITH(UPGRADED, 'Season switcher');
+            PUSH_WITH(UPGRADED, 'Kitten helpers');
+            PUSH_WITH(UPGRADED, 'Kitten workers');
+            PUSH_WITH(UPGRADED, 'Kitten engineers');
+            PUSH_WITH(UPGRADED, 'Kitten overseers');
+            PUSH_WITH(UPGRADED, 'Kitten managers');
+            PUSH_WITH(UPGRADED, 'Kitten accountants');
+            PUSH_WITH(UPGRADED, 'Kitten specialists');
+            PUSH_WITH(UPGRADED, 'Kitten experts');
+            PUSH_WITH(UPGRADED, 'Kitten consultants');
+            PUSH_WITH(UPGRADED, 'Kitten assistants to the regional manager');
+            PUSH_WITH(UPGRADED, 'Kitten marketeers');
+            PUSH_WITH(UPGRADED, 'Kitten analysts');
+            PUSH_WITH(UPGRADED, 'Kitten executives');
+            PUSH_WITH(UPGRADED, 'Kitten admins');
+            PUSH_WITH(UPGRADED, 'Kitten angels');
+            PUSH_WITH(UPGRADED, 'Kitten wages');
+            PUSH_WITH(ACHIEVED, 'Jellicles');
+          }
+
+          // 糖块新闻
+          if (CHANCE(20)) {
+            PUSH_WITH(ACHIEVED, 'Dude, sweet');
+          }
+
+          // 稀有新闻
+          if (CHANCE(0.1)) {
+            CONCAT(L('Ticker (misc rare)'));
+          }
+
+          // 杂项新闻
+          if (EARNED(10000)) {
+            PUSH(NEWS(C(L('Ticker (misc extended 1)'))));
+            PUSH(NEWS(C(L('Ticker (misc extended 2)'))));
+            PUSH(NEWS(C(L('Ticker (misc extended 3)'))));
+            PUSH(NEWS(C(L('Ticker (misc extended 4)'))));
+            PUSH(NEWS(C(L('Ticker (misc extended 5)'))));
+            PUSH(NEWS(C(L('Ticker (misc extended 6)'))));
+          }
+        }
+
+        // 孤独新闻
+        if (list.length == 0) {
+          if (!EARNED(5)) {
+            PUSH(L('You feel like making cookies. But nobody wants to eat your cookies.'));
+          } else if (!EARNED(50)) {
+            PUSH(
+              L('Your first batch goes to the trash. The neighborhood raccoon barely touches it.')
+            );
+          } else if (!EARNED(100)) {
+            PUSH(L('Your family accepts to try some of your cookies.'));
+          } else if (!EARNED(500)) {
+            PUSH(L('Your cookies are popular in the neighborhood.'));
+          } else if (!EARNED(1000)) {
+            PUSH(L('People are starting to talk about your cookies.'));
+          } else if (!EARNED(5000)) {
+            PUSH(L('Your cookies are talked about for miles around.'));
+          } else if (!EARNED(10000)) {
+            PUSH(L('Your cookies are renowned in the whole town!'));
+          } else if (!EARNED(50000)) {
+            PUSH(L('Your cookies bring all the boys to the yard.'));
+          } else if (!EARNED(100000)) {
+            PUSH(L('Your cookies now have their own website!'));
+          } else if (!EARNED(500000)) {
+            PUSH(L('Your cookies are worth a lot of money.'));
+          } else if (!EARNED(1000000)) {
+            PUSH(L('Your cookies sell very well in distant countries.'));
+          } else if (!EARNED(5000000)) {
+            PUSH(L('People come from very far away to get a taste of your cookies.'));
+          } else if (!EARNED(10000000)) {
+            PUSH(L('Kings and queens from all over the world are enjoying your cookies.'));
+          } else if (!EARNED(50000000)) {
+            PUSH(L('There are now museums dedicated to your cookies.'));
+          } else if (!EARNED(100000000)) {
+            PUSH(L('A national day has been created in honor of your cookies.'));
+          } else if (!EARNED(500000000)) {
+            PUSH(L('Your cookies have been named a part of the world wonders.'));
+          } else if (!EARNED(1000000000)) {
+            PUSH(L('History books now include a whole chapter about your cookies.'));
+          } else if (!EARNED(5000000000)) {
+            PUSH(L('Your cookies have been placed under government surveillance.'));
+          } else if (!EARNED(10000000000)) {
+            PUSH(L('The whole planet is enjoying your cookies!'));
+          } else if (!EARNED(50000000000)) {
+            PUSH(L('Strange creatures from neighboring planets wish to try your cookies.'));
+          } else if (!EARNED(100000000000)) {
+            PUSH(L('Elder gods from the whole cosmos have awoken to taste your cookies.'));
+          } else if (!EARNED(500000000000)) {
+            PUSH(
+              L(
+                'Beings from other dimensions lapse into existence just to get a taste of your cookies.'
+              )
+            );
+          } else if (!EARNED(1000000000000)) {
+            PUSH(L('Your cookies have achieved sentience.'));
+          } else if (!EARNED(5000000000000)) {
+            PUSH(L('The universe has now turned into cookie dough, to the molecular level.'));
+          } else if (!EARNED(10000000000000)) {
+            PUSH(L('Your cookies are rewriting the fundamental laws of the universe.'));
+          } else if (!EARNED(10000000000000)) {
+            PUSH(
+              L(
+                'A Lal news station runs a 10-minute segment about your cookies. Success!<br><span style="font-size:50%;">(you win a cookie)</span>'
+              )
+            );
+          } else if (!EARNED(10100000000000)) {
+            PUSH(L("it's time to stop playing"));
+          }
+        }
+      }
+
+      for (var i = 0; i < Game.modHooks['ticker'].length; i++) {
+        var arr = Game.modHooks['ticker'][i]();
+        if (arr) list = list.concat(arr);
+      }
+
+      Game.TickerEffect = 0;
+
+      // 幸运新闻
+      if (
+        !manual &&
+        Game.T > Game.fps * 10 &&
+        Game.Has('Fortune cookies') &&
+        Math.random() < (Game.HasAchiev('O Fortuna') ? 0.04 : 0.02)
+      ) {
+        var fortunes = [];
+        for (var i in Game.Tiers['fortune'].upgrades) {
+          var it = Game.Tiers['fortune'].upgrades[i];
+          if (!Game.HasUnlocked(it.name)) fortunes.push(it);
+        }
+
+        if (!Game.fortuneGC) fortunes.push('fortuneGC');
+        if (!Game.fortuneCPS) fortunes.push('fortuneCPS');
+
+        if (fortunes.length > 0) {
+          CLEAR();
+          var me = C(fortunes);
+          Game.TickerEffect = { type: 'fortune', sub: me };
+
+          if (me == 'fortuneGC')
+            me = L('Today is your lucky day!'); /*<br>Click here for a golden cookie.';*/
+          else if (me == 'fortuneCPS') {
+            Math.seedrandom(Game.seed + '-fortune');
+            me =
+              L('Your lucky numbers are:') +
+              ' ' +
+              Math.floor(Math.random() * 100) +
+              ' ' +
+              Math.floor(Math.random() * 100) +
+              ' ' +
+              Math.floor(Math.random() * 100) +
+              ' ' +
+              Math.floor(Math.random() * 100) /*+'<br>Click here to gain one hour of your CpS.'*/;
+            Math.seedrandom();
+          } else {
+            const qIndex = me.ddesc.indexOf('<q>');
+            if (qIndex >= 0) {
+              // 若有风味文本则使用风味文本
+              me = me.dname + ' : ' + me.ddesc.substring(qIndex + 3, me.ddesc.length - 4);
+            } else if (me.buildingTie) {
+              // 若没有风味文本则使用固定文本
+              me =
+                me.dname +
+                ' : ' +
+                L(
+                  C([
+                    'Never forget your %1.',
+                    'Pay close attention to the humble %1.',
+                    "You've been neglecting your %1.",
+                    'Remember to visit your %1 sometimes.',
+                  ]),
+                  me.buildingTie.single
+                );
+            } else {
+              // Edge case
+              me =
+                me.dname +
+                ' : ' +
+                L(
+                  C([
+                    "You don't know what you have until you've lost it.",
+                    'Remember to take breaks.',
+                    "Hey, what's up. I'm a fortune cookie.",
+                    'You think you have it bad? Look at me.',
+                  ])
+                );
+            }
+          }
+          me =
+            '<span class="fortune"><div class="icon" style="vertical-align:middle;display:inline-bLk;background-position:' +
+            -29 * 48 +
+            'px ' +
+            -8 * 48 +
+            'px;transform:scale(0.5);margin:-16px;position:relative;left:-4px;top:-2px;"></div>' +
+            me +
+            '</span>';
+          CLEAR();
+          PUSH(me);
+        }
+      }
+
+      if (Game.windowW < Game.tickerTooNarrow) {
+        CLEAR();
+        PUSH('<div style="transform:scale(0.8,1.2);">' + NEWS(loc('help me!')) + '</div>');
+      }
+
+      Game.TickerAge = Game.fps * 10;
+      Game.Ticker = choose(list);
+      Game.AddToLog(Game.Ticker);
+      Game.TickerN++;
+      Game.TickerDraw();
+    };
+  };
+
   // 修复parseLoc
   const FixParseLoc = () => {
     const isCN = localStorageGet('CookieClickerLang') === 'ZH-CN';
@@ -1103,6 +1460,12 @@ var __TWCNL = {};
         ModObjectTooltip(this);
         ModObjectLevelTooltip(this);
         ModBuildingBuffs(this);
+
+        // Tickers 改动太大，修改前确认版本
+        if (Game.version == '2.048') {
+          ModTickers(this);
+        }
+
         AddMenuHook(this, ModPrefMenu);
       }
     },

@@ -3,7 +3,7 @@
 import fs from 'fs';
 import path from 'path';
 import _ from 'lodash';
-import opencc from 'node-opencc';
+import * as OpenCC from 'opencc-js';
 
 const BUILD_PATH = path.join(__dirname, '../build/CookieClickerCNMod');
 const INFO_PATH = path.join(__dirname, '../build');
@@ -36,7 +36,7 @@ const year = time.getUTCFullYear();
 const month = _.padStart((time.getUTCMonth() + 1).toString(), 2, '0');
 const date = _.padStart(time.getUTCDate().toString(), 2, '0');
 
-const T = opencc.simplifiedToTraditional;
+const T = OpenCC.Converter({ from: 'cn', to: 'tw' });
 
 const translators = ['中文润色与补全，翻译贡献者：'];
 
