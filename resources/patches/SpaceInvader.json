@@ -131,11 +131,6 @@
     "english": "You've switched seasons <b>%1 times</b> this ascension.",
     "chinese": "你本次飞升切换过 <b>%1 次</b>节日。"
   },
-  "You gain another <b>+%1%</b> of your regular CpS while the game is closed, for a total of <b>%2%</b>.": {
-    "comment": "添加空格",
-    "english": "You gain another <b>+%1%</b> of your regular CpS while the game is closed, for a total of <b>%2%</b>.",
-    "chinese": "游戏关闭时，你又获得正常CpS的 <b>+%1%</b>，总计 <b>%2%</b>。"
-  },
   "You start with <b>%1</b>.": {
     "english": "You start with <b>%1</b>.",
     "chinese": "免费为你提供 <b>%1</b> 作为初始装备。"

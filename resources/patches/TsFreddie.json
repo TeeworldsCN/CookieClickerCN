@@ -3834,5 +3834,9 @@
   "[Achievement quote 583]Beyond quality": {
     "english": "Dwarfing all of mankind's accomplishments.",
     "chinese": "使人类的所有成就都相形见绌。"
+  },
+  "You gain another <b>+%1%</b> of your regular CpS while the game is closed, for a total of <b>%2%</b>.": {
+    "english": "You gain another <b>+%1%</b> of your regular CpS while the game is closed, for a total of <b>%2%</b>.",
+    "chinese": "游戏关闭时，离线收益额外获得正常CpS的 <b>+%1%</b>，总计 <b>%2%</b>。"
   }
 }
