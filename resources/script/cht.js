@@ -90,8 +90,8 @@ var __TWCNL = {
   DEF_SETTING_BRAND: 0,
 
   // Strings
-  STR_PURCHASE: '點擊以購買。',
-  STR_PURRCHASE: '點擊以收養。',
+  STR_PURCHASE: '購買',
+  STR_PURRCHASE: '收養',
   STR_INFINITY: '無限',
   STR_SETTING_TITLE: '中文模組設置',
   STR_SETTING_CNUNIT: '使用中文計數單位',

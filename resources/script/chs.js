@@ -167,8 +167,8 @@ var __TWCNL = {
   DEF_SETTING_BRAND: 1,
 
   // Strings
-  STR_PURCHASE: '点击以购买。',
-  STR_PURRCHASE: '点击以收养。',
+  STR_PURCHASE: '购买',
+  STR_PURRCHASE: '收养',
   STR_INFINITY: '无限',
   STR_SETTING_TITLE: '中文模组设置',
   STR_SETTING_CNUNIT: '使用中文计数单位',
