@@ -1075,6 +1075,48 @@ var __TWCNL = {};
       });
     }
   };
+
+  // 统计修改
+  const ModStats = MOD => {
+    const oldMenu = Game.UpdateMenu;
+    Game.UpdateMenu = function () {
+      oldMenu();
+
+      if (Game.onMenu == 'stats') {
+        const special = l('statsSpecial');
+        if (!special) return;
+
+        const thirdChild = special.children[2];
+        if (!thirdChild) return;
+
+        if (Game.season == 'fools') {
+          const foolLine1 = document.createElement('div');
+          foolLine1.className = 'listing';
+          foolLine1.innerHTML = `<b>${loc('Money made from selling cookies:')}</b> ${Beautify(
+            Game.cookiesEarned * 0.08,
+            2
+          )} ${loc('cookie dollars')}`;
+
+          special.insertBefore(foolLine1, thirdChild);
+
+          if (Game.Objects['Portal'].highest > 0) {
+            var date = new Date();
+            date.setTime(Date.now() - Game.startDate);
+            var timeInSeconds = date.getTime() / 1000;
+
+            const foolLine2 = document.createElement('div');
+            foolLine2.className = 'listing';
+            foolLine2.innerHTML = `<b>${loc('TV show seasons produced:')}</b>
+              ${Beautify(
+                Math.floor((timeInSeconds / 60 / 60) * (Game.Objects['Portal'].highest * 0.13) + 1)
+              )}`;
+            special.insertBefore(foolLine2, thirdChild);
+          }
+        }
+      }
+    };
+  };
+
   const SetupMenuHooks = MOD => {
     if (typeof CCSE == 'undefined') {
       const oldMenu = Game.UpdateMenu;
@@ -1460,6 +1502,7 @@ var __TWCNL = {};
         ModObjectTooltip(this);
         ModObjectLevelTooltip(this);
         ModBuildingBuffs(this);
+        ModStats(this);
 
         // Tickers 改动太大，修改前确认版本
         if (Game.version == '2.048') {
