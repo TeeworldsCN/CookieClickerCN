@@ -4401,6 +4401,10 @@
     "english": "Unlocks the <b>background selector</b>, letting you select the game's background.<br>Comes with a variety of basic flavors.",
     "chinese": "解锁<b>背景选择器</b>，允许你选择游戏的背景。<br>附带各种基础口味。"
   },
+  "Contains more wallpapers for your background selector.": {
+    "english": "Contains more wallpapers for your background selector.",
+    "chinese": "[CN:MISSING]"
+  },
   "Lets you pick which wallpaper to display.": {
     "english": "Lets you pick which wallpaper to display.",
     "chinese": "允许你选择想要显示的壁纸。"
@@ -4740,6 +4744,90 @@
   "Effect is only active when your total amount of buildings ends with 0.": {
     "english": "Effect is only active when your total amount of buildings ends with 0.",
     "chinese": "只有当你的建筑总量以0结尾时，效果才会激活。"
+  },
+  "You may now send and receive gifts with other players through buttons in the top-right of the %1 menu.": {
+    "english": "You may now send and receive gifts with other players through buttons in the top-right of the %1 menu.",
+    "chinese": "[CN:MISSING]"
+  },
+  "You need at least %1 cookies in bank to send and receive gifts.": {
+    "english": "You need at least %1 cookies in bank to send and receive gifts.",
+    "chinese": "[CN:MISSING]"
+  },
+  "Send a gift": {
+    "english": "Send a gift",
+    "chinese": "[CN:MISSING]"
+  },
+  "Send": {
+    "english": "Send",
+    "chinese": "[CN:MISSING]"
+  },
+  "Redeem a gift": {
+    "english": "Redeem a gift",
+    "chinese": "[CN:MISSING]"
+  },
+  "Redeem": {
+    "english": "Redeem",
+    "chinese": "[CN:MISSING]"
+  },
+  "paste code...": {
+    "english": "paste code...",
+    "chinese": "[CN:MISSING]"
+  },
+  "Wrap": {
+    "english": "Wrap",
+    "chinese": "[CN:MISSING]"
+  },
+  "Done": {
+    "english": "Done",
+    "chinese": "[CN:MISSING]"
+  },
+  "Clicking \"%1\" will generate a text code you can send to others. Gift codes can be redeemed multiple times by anyone but expire after a day or two. You can only generate one gift code per hour. Your game will save after sending.": {
+    "english": "Clicking \"%1\" will generate a text code you can send to others. Gift codes can be redeemed multiple times by anyone but expire after a day or two. You can only generate one gift code per hour. Your game will save after sending.",
+    "chinese": "[CN:MISSING]"
+  },
+  "You may put between %1 and %2 cookies in the gift box.": {
+    "english": "You may put between %1 and %2 cookies in the gift box.",
+    "chinese": "[CN:MISSING]"
+  },
+  "You can leave a note. Don't be rude!<br>Maximum %1 lines and %2 characters.": {
+    "english": "You can leave a note. Don't be rude!<br>Maximum %1 lines and %2 characters.",
+    "chinese": "[CN:MISSING]"
+  },
+  "Once you redeem a gift, you will have to wait an hour before you can redeem another. Your game will save after redeeming.": {
+    "english": "Once you redeem a gift, you will have to wait an hour before you can redeem another. Your game will save after redeeming.",
+    "chinese": "[CN:MISSING]"
+  },
+  "Box design": {
+    "english": "Box design",
+    "chinese": "[CN:MISSING]"
+  },
+  "Icon": {
+    "english": "Icon",
+    "chinese": "[CN:MISSING]"
+  },
+  "Here's your gift code!<br>Make sure to copy it so you can share it.": {
+    "english": "Here's your gift code!<br>Make sure to copy it so you can share it.",
+    "chinese": "[CN:MISSING]"
+  },
+  "Code expired.": {
+    "english": "Code expired.",
+    "chinese": "[CN:MISSING]"
+  },
+  "Invalid code.": {
+    "english": "Invalid code.",
+    "chinese": "[CN:MISSING]"
+  },
+  "Gift redeemed!<br>Inside, you find:": {
+    "english": "Gift redeemed!<br>Inside, you find:",
+    "chinese": "[CN:MISSING]"
+  },
+  "There's a note too!": {
+    "english": "There's a note too!",
+    "chinese": "[CN:MISSING]"
+  },
+  "How nice!": {
+    "english": "How nice!",
+    "chinese": "[CN:MISSING]"
   },
   "Achievement unlocked": {
     "english": "Achievement unlocked",
@@ -5085,6 +5173,10 @@
     "english": "Click one of Santa's helper grandmas during Christmas season.",
     "chinese": "在聖誕節期間單擊聖誕老人的幫手奶奶之一。"
   },
+  "Redeem a cookie gift code from a friend (or from yourself, we don't judge).": {
+    "english": "Redeem a cookie gift code from a friend (or from yourself, we don't judge).",
+    "chinese": "[CN:MISSING]"
+  },
   "Frenzy": {
     "english": "Frenzy",
     "chinese": "狂热"
@@ -5161,6 +5253,10 @@
     "english": "Loan %1 (interest)",
     "chinese": "贷款 %1（利息）"
   },
+  "Gifted out": {
+    "english": "Gifted out",
+    "chinese": "[CN:MISSING]"
+  },
   "%1 Power!": {
     "english": "%1 Power!",
     "chinese": "%1 能量！"
@@ -5236,6 +5332,10 @@
   "Spells backfire %1 times more for %2.": {
     "english": "Spells backfire %1 times more for %2.",
     "chinese": "法术产生反效果的几率高 %1 倍，持续 %2。"
+  },
+  "Can't send or receive gifts again for %1.": {
+    "english": "Can't send or receive gifts again for %1.",
+    "chinese": "[CN:MISSING]"
   },
   "can be done once every %1": {
     "english": "can be done once every %1",
@@ -10055,6 +10155,30 @@
     "english": "Deep-fried cookie dough",
     "chinese": "油炸餅乾麵團"
   },
+  "[Upgrade name 819]Wrapping paper": {
+    "english": "Wrapping paper",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 820]Havreflarn": {
+    "english": "Havreflarn",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 821]Alfajores": {
+    "english": "Alfajores",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 822]Gaufrettes": {
+    "english": "Gaufrettes",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 823]Cookie bars": {
+    "english": "Cookie bars",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 824]Nines": {
+    "english": "Nines",
+    "chinese": "[CN:MISSING]"
+  },
   "[Achievement name 0]Wake and bake": {
     "english": "Wake and bake",
     "chinese": "醒来，烘焙"
@@ -12411,6 +12535,10 @@
     "english": "All the stars in heaven",
     "chinese": "天堂裡所有的星星"
   },
+  "[Achievement name 589]No time like the present": {
+    "english": "No time like the present",
+    "chinese": "[CN:MISSING]"
+  },
   "There are no heralds at the moment. Please consider <b style=\"color:#bc3aff;\">donating to our Patreon</b>!": {
     "english": "There are no heralds at the moment. Please consider <b style=\"color:#bc3aff;\">donating to our Patreon</b>!",
     "chinese": "[CN:MISSING]"
@@ -12431,12 +12559,12 @@
     "english": "Fullscreen",
     "chinese": "[CN:MISSING]"
   },
-  "A local news station runs a 10-minute segment about your cookies. Success!<br><span style=\"font-size:50%;\">(you win a cookie)</span>": {
-    "english": "A local news station runs a 10-minute segment about your cookies. Success!<br><span style=\"font-size:50%;\">(you win a cookie)</span>",
+  "Cookies gifted:": {
+    "english": "Cookies gifted:",
     "chinese": "[CN:MISSING]"
   },
-  "Contains more wallpapers for your background selector.": {
-    "english": "Contains more wallpapers for your background selector.",
+  "Cookies received:": {
+    "english": "Cookies received:",
     "chinese": "[CN:MISSING]"
   },
   "Squish the news ticker flat, then click on it.": {
@@ -15236,7 +15364,7 @@
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 630]Fortune #010": {
-    "english": "Don't get used to yourself. You're gonna have to change.",
+    "english": "Change what you cannot accept. Furthermore: accept nothing.",
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 631]Fortune #011": {
@@ -15985,6 +16113,30 @@
   },
   "[Upgrade quote 818]Deep-fried cookie dough": {
     "english": "They'll fry anything these days. Drizzled in hot chocolate syrup, just like in state fairs. Spikes up your blood sugar AND your cholesterol!",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 819]Wrapping paper": {
+    "english": "Of course, you could've done this all along, but what kind of maniac sends presents without wrapping them first?",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 820]Havreflarn": {
+    "english": "Thin, crispy, buttery; Norwegian for \"oat flakes\". The chocolate variant, dubbla chokladflarn, are a trip for the tongue as well, and we're not just talking about pronunciation.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 821]Alfajores": {
+    "english": "An alfajor is a treat made of two halves with many variations throughout the Spanish-speaking world, but commonly involving nuts, honey, and often dulce de leche. Despite popular misconception, alfajores act as pack leaders over betajores only in captivity.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 822]Gaufrettes": {
+    "english": "A gaufrette, you see, is French for a little gaufre, itself meaning waffle. A gaufrette, therefore, is a crispy, airy biscuit with the texture of a small waffle, related to the wafer, which may contain various fillings. It may also refer to a type of fried potato, but that's not what we're about here at Cookie Clicker.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 823]Cookie bars": {
+    "english": "Baked as a large sheet of uniform cookie dough then cut into little squares, these are what chocolate brownies aspire to be in their most self-indulgent dreams. Not to be confused with a bar where cookies are served alongside alcoholic drinks, because that's not what we're about here at Cookie Clicker.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 824]Nines": {
+    "english": "Fancy little squares of dark chocolate filled with frosty mint fondant. Named after the suggested hour of consumption. Some would gatekeep them from the status of cookies as they involve very little in the way of pastry, but here at Cookie Clicker, that's just not what we're about.",
     "chinese": "[CN:MISSING]"
   }
 }

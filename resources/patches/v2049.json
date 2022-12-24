@@ -1,0 +1,160 @@
+{
+  "comment": "这里放有v2.049更新的新字符串（目前为beta版本）",
+  "You may now send and receive gifts with other players through buttons in the top-right of the %1 menu.": {
+    "english": "You may now send and receive gifts with other players through buttons in the top-right of the %1 menu.",
+    "chinese": "你现在可以通过%1菜单右上角的按钮交换礼物了。"
+  },
+  "You need at least %1 cookies in bank to send and receive gifts.": {
+    "english": "You need at least %1 cookies in bank to send and receive gifts.",
+    "chinese": "你的饼干余额至少需要有%1块饼干才可以交换礼物。"
+  },
+  "Send a gift": {
+    "english": "Send a gift",
+    "chinese": "赠予一份礼物"
+  },
+  "Send": {
+    "english": "Send",
+    "chinese": "赠予"
+  },
+  "Redeem a gift": {
+    "english": "Redeem a gift",
+    "chinese": "兑换一份礼物"
+  },
+  "Redeem": {
+    "english": "Redeem",
+    "chinese": "兑换"
+  },
+  "paste code...": {
+    "english": "paste code...",
+    "chinese": "请粘贴代码..."
+  },
+  "Wrap": {
+    "english": "Wrap",
+    "chinese": "打包"
+  },
+  "Done": {
+    "english": "Done",
+    "chinese": "完成"
+  },
+  "Clicking \"%1\" will generate a text code you can send to others. Gift codes can be redeemed multiple times by anyone but expire after a day or two. You can only generate one gift code per hour. Your game will save after sending.": {
+    "english": "Clicking \"%1\" will generate a text code you can send to others. Gift codes can be redeemed multiple times by anyone but expire after a day or two. You can only generate one gift code per hour. Your game will save after sending.",
+    "chinese": "点击“%1”将会生成一段代码，你可以将它发送给其他人。礼物代码可以被任何人兑换，但是会在一两天后过期。你每小时只能生成一个礼物代码。你的游戏将会在发送后立刻保存。"
+  },
+  "You may put between %1 and %2 cookies in the gift box.": {
+    "english": "You may put between %1 and %2 cookies in the gift box.",
+    "chinese": "你可以在礼盒中放入 %1 到 %2 块饼干。"
+  },
+  "You can leave a note. Don't be rude!<br>Maximum %1 lines and %2 characters.": {
+    "english": "You can leave a note. Don't be rude!<br>Maximum %1 lines and %2 characters.",
+    "chinese": "你可以写下一条留言卡。可别写的太粗俗！<br>最多可以写 %1 行 或 %2 个字。"
+  },
+  "Once you redeem a gift, you will have to wait an hour before you can redeem another. Your game will save after redeeming.": {
+    "english": "Once you redeem a gift, you will have to wait an hour before you can redeem another. Your game will save after redeeming.",
+    "chinese": "一旦你兑换了礼物，你需要等待一个小时才能再次进行兑换。你的游戏将会在兑换后立刻保存。"
+  },
+  "Box design": {
+    "english": "Box design",
+    "chinese": "礼盒样式"
+  },
+  "Icon": {
+    "english": "Icon",
+    "chinese": "图标"
+  },
+  "Here's your gift code!<br>Make sure to copy it so you can share it.": {
+    "english": "Here's your gift code!<br>Make sure to copy it so you can share it.",
+    "chinese": "这是你的礼物代码！<br>别忘了复制下来，以便分享给他人。"
+  },
+  "Code expired.": {
+    "english": "Code expired.",
+    "chinese": "代码已过期。"
+  },
+  "Invalid code.": {
+    "english": "Invalid code.",
+    "chinese": "无效代码。"
+  },
+  "Gift redeemed!<br>Inside, you find:": {
+    "english": "Gift redeemed!<br>Inside, you find:",
+    "chinese": "礼物成功兑换！<br>你打开礼盒，发现里面有："
+  },
+  "There's a note too!": {
+    "english": "There's a note too!",
+    "chinese": "礼盒里还有一条留言卡！"
+  },
+  "How nice!": {
+    "english": "How nice!",
+    "chinese": "真好！"
+  },
+  "Gifted out": {
+    "english": "Gifted out",
+    "chinese": "尽心尽礼"
+  },
+  "Can't send or receive gifts again for %1.": {
+    "english": "Can't send or receive gifts again for %1.",
+    "chinese": "%1后才能再次赠送或接收礼物。"
+  },
+  "Cookies gifted:": {
+    "english": "Cookies gifted:",
+    "chinese": "赠予的饼干："
+  },
+  "Cookies received:": {
+    "english": "Cookies received:",
+    "chinese": "接收的饼干："
+  },
+  "[Upgrade name 819]Wrapping paper": {
+    "english": "Wrapping paper",
+    "chinese": "礼物包装纸"
+  },
+  "[Upgrade name 820]Havreflarn": {
+    "english": "Havreflarn",
+    "chinese": "挪威麦片薄饼"
+  },
+  "[Upgrade name 821]Alfajores": {
+    "english": "Alfajores",
+    "chinese": "阿尔法诺夹心饼干"
+  },
+  "[Upgrade name 822]Gaufrettes": {
+    "english": "Gaufrettes",
+    "chinese": "高菲提华夫饼"
+  },
+  "[Upgrade name 823]Cookie bars": {
+    "english": "Cookie bars",
+    "chinese": "饼干条"
+  },
+  "[Upgrade name 824]Nines": {
+    "english": "Nines",
+    "chinese": "九小时饼干"
+  },
+  "[Upgrade quote 819]Wrapping paper": {
+    "english": "Of course, you could've done this all along, but what kind of maniac sends presents without wrapping them first?",
+    "chinese": "当然，你之前也可以送人礼物。但是，哪个疯子送礼会直接把包装盒暴露在外面呢？"
+  },
+  "[Upgrade quote 820]Havreflarn": {
+    "english": "Thin, crispy, buttery; Norwegian for \"oat flakes\". The chocolate variant, dubbla chokladflarn, are a trip for the tongue as well, and we're not just talking about pronunciation.",
+    "chinese": "薄薄的，脆脆的，油油的；挪威语中的“麦片碎渣”。还有巧克力口味的，叫做 dubbla chokladflarn，也很上口，而且我们不仅仅是在说发音。"
+  },
+  "[Upgrade quote 821]Alfajores": {
+    "comment": "Alpha(alfa) 和 Beta 英语环境里基本上可以理解为强势和弱势。不是很好翻，加了点其他fun fact文本凑数。",
+    "english": "An alfajor is a treat made of two halves with many variations throughout the Spanish-speaking world, but commonly involving nuts, honey, and often dulce de leche. Despite popular misconception, alfajores act as pack leaders over betajores only in captivity.",
+    "chinese": "一块阿尔法诺夹心饼干是由两半组成的一种点心，有许多变种，分布在各个西班牙语国家。通常包含坚果、蜂蜜，还有经常使用一种叫 dulce de leche 的焦糖酱。有些时候，阿尔法诺饼干会被直接称为“焦糖饼干”，但是很多地区的做法中并没有使用焦糖酱。"
+  },
+  "[Upgrade quote 822]Gaufrettes": {
+    "english": "A gaufrette, you see, is French for a little gaufre, itself meaning waffle. A gaufrette, therefore, is a crispy, airy biscuit with the texture of a small waffle, related to the wafer, which may contain various fillings. It may also refer to a type of fried potato, but that's not what we're about here at Cookie Clicker.",
+    "chinese": "这就要讲点法语了，Gaufrette 其实就是 Gaufre 的变种词，意思就是小Gaufre，而 Gaufre 又是华夫饼的意思。因此，高菲提是一种松脆、透气的饼干，具有小华夫饼的细腻质感，很像威化饼，可能包含各种馅料。当然这名字同时也指一种炸土豆，但是你知道那就不是 Cookie Clicker 的风格了。"
+  },
+  "[Upgrade quote 823]Cookie bars": {
+    "english": "Baked as a large sheet of uniform cookie dough then cut into little squares, these are what chocolate brownies aspire to be in their most self-indulgent dreams. Not to be confused with a bar where cookies are served alongside alcoholic drinks, because that's not what we're about here at Cookie Clicker.",
+    "chinese": "烤成一大片均匀的曲奇面团，然后切成小方块，这些是巧克力布朗尼在他们最放纵的梦想中渴望成为的样子。不要与提供饼干和酒精饮料的酒吧相混淆，因为这不是我们 Cookie Clicker 的宗旨。"
+  },
+  "[Upgrade quote 824]Nines": {
+    "english": "Fancy little squares of dark chocolate filled with frosty mint fondant. Named after the suggested hour of consumption. Some would gatekeep them from the status of cookies as they involve very little in the way of pastry, but here at Cookie Clicker, that's just not what we're about.",
+    "chinese": "花哨的小方块黑巧克力，里面装满了冰霜薄荷软糖。以建议的食用时间命名。我们坚信，每个点心都可以在慢慢的变质过程中进化，而有些人会因为这个小细节对不同状态的饼干指指点点。在我们 Cookie Clicker 这里，我们包容任何状态的饼干，绝不指手划脚。"
+  },
+  "[Achievement name 589]No time like the present": {
+    "english": "No time like the present",
+    "chinese": "礼尚往来"
+  },
+  "Redeem a cookie gift code from a friend (or from yourself, we don't judge).": {
+    "english": "Redeem a cookie gift code from a friend (or from yourself, we don't judge).",
+    "chinese": "兑换朋友发给你的礼物代码（或者是你自己生成的，我们不会在意的）。"
+  }
+}

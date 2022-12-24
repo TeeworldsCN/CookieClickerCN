@@ -2344,7 +2344,7 @@
   },
   "[Upgrade name 554]Flavor text cookie": {
     "english": "Flavor text cookie",
-    "chinese": "文本饼干"
+    "chinese": "风味文本饼干"
   },
   "[Upgrade quote 554]Flavor text cookie": {
     "english": "What you're currently reading is what gives this cookie its inimitable flavor.",
@@ -2949,6 +2949,10 @@
     "english": "There's plenty of everyone, but only one of you.",
     "chinese": "世界上有很多的大家，但却只有一个你自己。"
   },
+  "[Upgrade name 699]Butter biscuit (with butter)": {
+    "english": "Butter biscuit (with butter)",
+    "chinese": "黄油饼干（外加一抹黄油）"
+  },
   "[Upgrade quote 699]Butter biscuit (with butter)": {
     "english": "Rewarded for owning 600 of everything.<br>This is a plain butter biscuit. It's got some butter on it. The butter doesn't look like anything in particular.",
     "chinese": "拥有 600 个所有建筑的奖励。<br>这就是一个普通的黄油饼干。上面还额外涂了点黄油。涂着的黄油看不出来是不是有意的画成了图案。"
@@ -3377,6 +3381,7 @@
     "chinese": "触手可及，但拥有代价是什么？"
   },
   "[Upgrade desc 804]Distinguished wallpaper assortment": {
+    "comment": "这样写可以修复一个没有描述导致的bug",
     "english": "Contains more wallpapers for your background selector.",
     "chinese": "壁纸选择器中将包含更多的壁纸供您选择。"
   },

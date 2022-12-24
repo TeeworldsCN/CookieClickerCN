@@ -107,6 +107,55 @@ var __TWCNL = {};
       b: 'brandcn',
       f: 'numbercnfixlen',
     },
+
+    // 满足以下条件则不显示饼干名
+    CookieNameRegex: [
+      / cookies?$/i,
+      / crumbs?$/i,
+      / biscuits?$/i,
+      / macarons?$/i,
+      / digestives?$/i,
+      / pie$/i,
+      / dough$/i,
+      / motif$/,
+      /^Gingerbread /,
+    ],
+
+    // 不显示以下饼干名
+    CookieNameBlacklist: new Set([
+      341, // Cigars
+      407, // Ice cream sandwiches4
+      476, // Wheat slims
+      553, // the chip taken out one
+      556, // Toast
+      559, // Cheeseburger
+      560, // the lone chip one
+      610, // Pizza,
+      620, // Candy,
+      657, // Taiyaki
+      699, // Butter biscuit (with butter)
+    ]),
+
+    // 必显示以下饼干名
+    CookieNameWhitelist: new Set([
+      340, // Vanity
+      401, // Lombardia
+      402, // Bastenaken
+      405, // Anzac
+      536, // Burbon
+      580, // Nice
+      584, // Berger
+      608, // Marie
+      609, // Meringue
+      652, // Granola
+      653, // Ricotta
+      678, // Battenberg
+      723, // Ischler
+      807, // Dalgona
+      810, // Kolachy
+      811, // Gomma
+      817, // Steamed
+    ]),
   };
 
   // 中文数字魔改
@@ -505,12 +554,42 @@ var __TWCNL = {};
     };
   };
 
-  // 小猫购买提示魔改
+  // 升级提示魔改
   const ModCrateTooltip = MOD => {
     const oldCrateTooltip = Game.crateTooltip;
     Game.crateTooltip = function (me, context) {
       let result = oldCrateTooltip(me, context);
+
+      // 小猫购买提示魔改
       if (me.kitten) result = result.replace(__TWCNL.STR_PURCHASE, __TWCNL.STR_PURRCHASE);
+
+      // 饼干原名显示功能
+      if (me.pool === 'cookie') {
+        const showName = () => {
+          if (me.name === 'Brand cookies') return false;
+          if (__TWCNG.CookieNameWhitelist.has(me.id)) return true;
+          if (__TWCNG.CookieNameBlacklist.has(me.id)) return false;
+
+          for (const regex of __TWCNG.CookieNameRegex) {
+            if (regex.test(me.name)) {
+              return false;
+            }
+          }
+          return true;
+        };
+
+        if (showName()) {
+          result = result.replace(
+            '<div class="tag"',
+            `<div class="subname">\(${me.name}\)</div><div class="tag"`
+          );
+        }
+      }
+
+      // result = result.replace(
+      //   '<div class="tag"',
+      //   `<div class="id">\(${me.id}\)</div><div class="tag"`
+      // );
       return result;
     };
   };
@@ -1320,6 +1399,7 @@ var __TWCNL = {};
       const it = Game.UpgradesById[uid];
       if (it) {
         MOD.OriginalBrandCookies[uid] = {
+          enName: it.name,
           name: it.dname,
           desc: it.ddesc,
           icon: it.icon,
@@ -1428,7 +1508,10 @@ var __TWCNL = {};
   // 植入CSS
   const ModInjectCSS = MOD => {
     // 修改Notes里的行间距
-    document.head.insertAdjacentHTML('beforeEnd', '<style>.note .title{line-height:1em}</style>');
+    document.head.insertAdjacentHTML(
+      'beforeEnd',
+      '<style>.note .title{line-height:1em} .framed .subname{font-size:80%;opacity:0.7;line-height:110%;}</style>'
+    );
   };
 
   // 在游戏加载前就修复Loc函数 (需要赶在本地化成就之前就生效)
@@ -1552,6 +1635,7 @@ var __TWCNL = {};
           : this.OriginalBrandCookies;
       for (let uid in data) {
         const it = Game.UpgradesById[uid];
+        it.name = data[uid].enName || 'Brand cookies'; // 避免饼干原名显示功能显示本地化饼干
         it.dname = data[uid].name;
         it.ddesc = data[uid].desc;
         it.icon = data[uid].icon;
