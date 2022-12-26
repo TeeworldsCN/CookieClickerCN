@@ -118,6 +118,8 @@ var __TWCNL = {};
       / pie$/i,
       / dough$/i,
       / motif$/,
+      / donut$/,
+      / cake$/,
       /^Gingerbread /,
     ],
 
@@ -126,6 +128,7 @@ var __TWCNL = {};
       341, // Cigars
       407, // Ice cream sandwiches4
       476, // Wheat slims
+      550, // croissant
       553, // the chip taken out one
       556, // Toast
       559, // Cheeseburger
@@ -146,7 +149,6 @@ var __TWCNL = {};
       580, // Nice
       584, // Berger
       608, // Marie
-      609, // Meringue
       652, // Granola
       653, // Ricotta
       678, // Battenberg
