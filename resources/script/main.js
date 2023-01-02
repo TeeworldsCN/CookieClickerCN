@@ -568,7 +568,8 @@ var __TWCNL = {};
       // 饼干原名显示功能
       if (me.pool === 'cookie') {
         const showName = () => {
-          if (me.name === 'Brand cookies') return false;
+          if (Game.prefs.brandcn && __TWCNL.BRAND_COOKIE_CN && __TWCNL.BRAND_COOKIE_CN[me.id])
+            return false;
           if (__TWCNG.CookieNameWhitelist.has(me.id)) return true;
           if (__TWCNG.CookieNameBlacklist.has(me.id)) return false;
 
@@ -1401,7 +1402,6 @@ var __TWCNL = {};
       const it = Game.UpgradesById[uid];
       if (it) {
         MOD.OriginalBrandCookies[uid] = {
-          enName: it.name,
           name: it.dname,
           desc: it.ddesc,
           icon: it.icon,
@@ -1637,7 +1637,6 @@ var __TWCNL = {};
           : this.OriginalBrandCookies;
       for (let uid in data) {
         const it = Game.UpgradesById[uid];
-        it.name = data[uid].enName || 'Brand cookies'; // 避免饼干原名显示功能显示本地化饼干
         it.dname = data[uid].name;
         it.ddesc = data[uid].desc;
         it.icon = data[uid].icon;
