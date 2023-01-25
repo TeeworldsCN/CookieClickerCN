@@ -65,7 +65,7 @@ var __TWCNL = {};
       if (groups < 1) groups = 1;
       if (groups > 3) groups = 3;
 
-      const safeConcat = (pre, cur, unit, order) => {
+      const safeConcat = (pre, cur, unit, order, ignoreCur) => {
         if (unit) {
           cur.high = cur.high + order;
           cur.low = order;
@@ -80,7 +80,7 @@ var __TWCNL = {};
         }
 
         if (unit) {
-          cur.text = cur.text + unit;
+          cur.text = ignoreCur ? unit : cur.text + unit;
         }
 
         const text =
@@ -119,7 +119,15 @@ var __TWCNL = {};
           if (val >= u[0]) {
             const segment = Math.floor(val / u[0]);
             val -= segment * u[0];
-            if (segment > 0) segments = safeConcat(segments, segmenting(segment, true), u[1], u[2]);
+            if (segment > 0) {
+              segments = safeConcat(
+                segments,
+                segmenting(segment, true),
+                u[1],
+                u[2],
+                sub && units == 0 && segment == 1 && u[2] == 1
+              );
+            }
             units++;
           } else if (units > 1) {
             units++;
