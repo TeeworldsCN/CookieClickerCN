@@ -21,24 +21,28 @@
     "chinese": "最高智慧"
   },
   "Cortex baker": {
+    "deprecated": "881223001.json",
     "english": "Cortex baker",
     "chinese": "脑皮层烘焙师"
   },
   "cortex baker": {
+    "deprecated": "881223001.json",
     "english": "cortex baker",
     "chinese": "脑皮层烘焙师"
   },
   "cortex bakers": {
+    "deprecated": "881223001.json",
     "english": "cortex bakers",
     "chinese": "脑皮层烘焙师"
   },
   "%1 cortex baker": {
+    "deprecated": "881223001.json",
     "english": ["%1 cortex baker", "%1 cortex bakers"],
     "chinese": ["%1 脑皮层烘焙师", "%1 脑皮层烘焙师"]
   },
   "[Cortex baker quote]These artificial brains the size of planets are capable of simply dreaming up cookies into existence. Time and space are inconsequential. Reality is arbitrary.": {
     "english": "These artificial brains the size of planets are capable of simply dreaming up cookies into existence. Time and space are inconsequential. Reality is arbitrary.",
-    "chinese": "这些行星大小的人造大脑能够轻而易举地将想象中的饼干带入现实世界。对他们来说，时空无足轻重，现实若有似无。"
+    "chinese": "这些行星大小的人造大脑能够轻而易举地将想象中的饼干带入现实世界。对它们来说，时空无足轻重，现实若有似无。"
   },
   "[Cortex baker business name]Think tank": {
     "english": "Think tank",
@@ -329,6 +333,7 @@
     "chinese": "破限的巫师塔"
   },
   "[Upgrade name 776]Unshackled shipments": {
+    "deprecated": "881223001.json",
     "english": "Unshackled shipments",
     "chinese": "破限的装运飞船"
   },
@@ -367,10 +372,12 @@
     "chinese": "破限的JavaScript控制台"
   },
   "[Upgrade name 785]Unshackled idleverses": {
+    "deprecated": "881223001.json",
     "english": "Unshackled idleverses",
     "chinese": "破限的空闲宇宙"
   },
   "[Upgrade name 786]Unshackled cortex bakers": {
+    "deprecated": "881223001.json",
     "english": "Unshackled cortex bakers",
     "chinese": "破限的脑皮层烘焙师"
   },

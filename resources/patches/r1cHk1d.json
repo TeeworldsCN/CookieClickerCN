@@ -56,42 +56,52 @@
     "chinese": "走火入魔！"
   },
   "Antimatter condenser": {
+    "deprecated": "881223001.json",
     "english": "Antimatter condenser",
     "chinese": "反物质凝结器"
   },
   "antimatter condenser": {
+    "deprecated": "881223001.json",
     "english": "antimatter condenser",
     "chinese": "反物质凝结器"
   },
   "antimatter condensers": {
+    "deprecated": "881223001.json",
     "english": "antimatter condensers",
     "chinese": "反物质凝结器"
   },
   "%1 antimatter condenser": {
+    "deprecated": "881223001.json",
     "english": ["%1 antimatter condenser", "%1 antimatter condensers"],
     "chinese": ["%1 台反物质凝结器", "%1 台反物质凝结器"]
   },
   "[Upgrade name 780]Unshackled antimatter condensers": {
+    "deprecated": "881223001.json",
     "english": "Unshackled antimatter condensers",
     "chinese": "破限的反物质凝结器"
   },
   "Chancemaker": {
+    "deprecated": "881223001.json",
     "english": "Chancemaker",
     "chinese": "机会捕手"
   },
   "chancemaker": {
+    "deprecated": "881223001.json",
     "english": "chancemaker",
     "chinese": "机会捕手"
   },
   "chancemakers": {
+    "deprecated": "881223001.json",
     "english": "chancemakers",
     "chinese": "机会捕手"
   },
   "%1 chancemaker": {
+    "deprecated": "881223001.json",
     "english": ["%1 chancemaker", "%1 chancemakers"],
     "chinese": ["%1 个机会捕手", "%1 个机会捕手"]
   },
   "[Upgrade name 782]Unshackled chancemakers": {
+    "deprecated": "881223001.json",
     "english": "Unshackled chancemakers",
     "chinese": "破限的机会捕手"
   },

@@ -1,0 +1,165 @@
+{
+  "author": "完全空白、逗B铅笔、HighStrike300、寒之雨",
+  "comment": "由QQ群881223001的各位讨论的修改意见",
+  "Shipment": {
+    "english": "Shipment",
+    "chinese": "货运飞船"
+  },
+  "shipment": {
+    "english": "shipment",
+    "chinese": "货运飞船"
+  },
+  "shipments": {
+    "english": "shipments",
+    "chinese": "货运飞船"
+  },
+  "%1 shipment": {
+    "english": ["%1 shipment", "%1 shipments"],
+    "chinese": ["%1 艘货运飞船", "%1 艘货运飞船"]
+  },
+  "[Upgrade name 776]Unshackled shipments": {
+    "english": "Unshackled shipments",
+    "chinese": "破限的货运飞船"
+  },
+  "Antimatter condenser": {
+    "english": "Antimatter condenser",
+    "chinese": "暗物质凝结器"
+  },
+  "antimatter condenser": {
+    "english": "antimatter condenser",
+    "chinese": "暗物质凝结器"
+  },
+  "antimatter condensers": {
+    "english": "antimatter condensers",
+    "chinese": "暗物质凝结器"
+  },
+  "%1 antimatter condenser": {
+    "english": ["%1 antimatter condenser", "%1 antimatter condensers"],
+    "chinese": ["%1 台暗物质凝结器", "%1 台暗物质凝结器"]
+  },
+  "[Upgrade name 780]Unshackled antimatter condensers": {
+    "english": "Unshackled antimatter condensers",
+    "chinese": "破限的暗物质凝结器"
+  },
+  "[Antimatter condenser quote]Condenses the antimatter in the universe into cookies.": {
+    "english": "Condenses the antimatter in the universe into cookies.",
+    "chinese": "将宇宙中的暗物质凝聚成饼干。"
+  },
+  "Chancemaker": {
+    "english": "Chancemaker",
+    "chinese": "运气捕手"
+  },
+  "chancemaker": {
+    "english": "chancemaker",
+
+    "chinese": "运气捕手"
+  },
+  "chancemakers": {
+    "english": "chancemakers",
+    "chinese": "运气捕手"
+  },
+  "%1 chancemaker": {
+    "english": ["%1 chancemaker", "%1 chancemakers"],
+    "chinese": ["%1 个运气捕手", "%1 个运气捕手"]
+  },
+  "[Upgrade name 782]Unshackled chancemakers": {
+    "english": "Unshackled chancemakers",
+    "chinese": "破限的运气捕手"
+  },
+  "Idleverse": {
+    "english": "Idleverse",
+    "chinese": "放置宇宙"
+  },
+  "idleverse": {
+    "english": "idleverse",
+    "chinese": "放置宇宙"
+  },
+  "idleverses": {
+    "english": "idleverses",
+    "chinese": "放置宇宙"
+  },
+  "%1 idleverse": {
+    "english": ["%1 idleverse", "%1 idleverses"],
+    "chinese": ["%1 个放置宇宙", "%1 个放置宇宙"]
+  },
+  "[Upgrade name 785]Unshackled idleverses": {
+    "english": "Unshackled idleverses",
+    "chinese": "破限的放置宇宙"
+  },
+  "[Idleverse quote]There's been countless other idle universes running alongside our own. You've finally found a way to hijack their production and convert whatever they've been making into cookies!": {
+    "english": "There's been countless other idle universes running alongside our own. You've finally found a way to hijack their production and convert whatever they've been making into cookies!",
+    "chinese": "我们周围有不计其数的放置宇宙。你最终还是找到了办法来操纵其他宇宙的放置生产，将它们正在生产的物品转化成饼干！"
+  },
+  "[Upgrade quote 688]Escape plan": {
+    "english": "You've set an idleverse aside and terraformed it to closely resemble this one in case something goes horribly wrong in here. Of course, the denizens of that idleverse also have their own escape idleverse to abscond to in the eventuality of your arrival, itself likely having its own contingency idleverse, and so on.",
+    "chinese": "你将一个放置宇宙抽出来，将其重整成与你所在的这个宇宙非常相似的宇宙，以防这个现实被你玩坏了。当然你侵略的放置宇宙可能也会有他们自己准备的备用宇宙，而那些备用宇宙估计也有他们自己通过侵略其他宇宙得到的脱逃方案，依此类推。"
+  },
+  "[Upgrade quote 689]Game design": {
+    "english": "Each idleverse functions according to some form of transcendental programming, that much is a given. But they also seem to be governed by much more subtle rules, the logic of which, when harnessed, may give you unparalleled dominion over the multiverse. Rewrite the rules! A game designer is you!",
+    "chinese": "每个放置宇宙都是按照某种形式的先验规划来运作的，这一点是已知的。但它们似乎也受到更微妙的规则的支配，当这些规则的逻辑被利用时，可能会给你无与伦比的对多元宇宙的统治。重写规则！游戏设计师就是你！"
+  },
+  "[Upgrade quote 694]Extrinsic clicking": {
+    "english": "If you poke an idleverse, it seems like it gets work done faster. It's also quite fun hearing a trillion terrified voices screaming in unison.",
+    "chinese": "如果你戳一下一个放置宇宙，它似乎可以更快地完成工作。听到万亿个惊恐的声音齐声尖叫也是一件很有趣的事情。"
+  },
+  "[Upgrade quote 695]Universal idling": {
+    "english": "The nature of idleverses is found in waiting. The more you wait on an idleverse, the more exponentially potent it becomes - which saves you a whole lot of hard work. In a true act of zen, you've taken to biding your time when collecting new universes, letting them ripen like a fine wine.",
+    "chinese": "闲置的本质是在等待中发现的。你对的放置宇宙的等待越多，它就会变得越强大--这为你省去了大量的艰苦工作。在一个真正的禅境中，你已经开始花更多时间来慢慢等待收集新的宇宙的时机，让它们像美酒一样成熟。"
+  },
+  "Cortex baker": {
+    "english": "Cortex baker",
+    "chinese": "脑力烘焙师"
+  },
+  "cortex baker": {
+    "english": "cortex baker",
+    "chinese": "脑力烘焙师"
+  },
+  "cortex bakers": {
+    "english": "cortex bakers",
+    "chinese": "脑力烘焙师"
+  },
+  "%1 cortex baker": {
+    "english": ["%1 cortex baker", "%1 cortex bakers"],
+    "chinese": ["%1 脑力烘焙师", "%1 脑力烘焙师"]
+  },
+  "[Upgrade name 786]Unshackled cortex bakers": {
+    "english": "Unshackled cortex bakers",
+    "chinese": "破限的脑力烘焙师"
+  },
+  "[Upgrade quote 730]Principled neural shackles": {
+    "english": "A discriminatory, low-order neural net acting as a filter limiting what your cortex bakers can think and do. Really something you want to apply before they achieve full megasentience and realize they've got better things to do than materializing pastries for you, trust me.",
+    "chinese": "一种歧视性的低阶神经网络，充当可以限制脑力烘焙师的思考和行为的过滤器。相信我，在他们完全意识到他们有比为你生成糕点更好的事情要做之前，这个过滤器是你必须拥有的。"
+  },
+  "[Upgrade quote 732]A sprinkle of irrationality": {
+    "english": "Your cortex bakers sometimes get bogged down by circular reasoning and stale ideas. A touch of chaos is just what they need to get back on track.",
+    "chinese": "你的脑力烘焙师有时会被循环推理和老旧的想法所困扰。轻微的混乱思绪可以帮助它们重回正轨。"
+  },
+  "[Upgrade quote 734]Neural networking": {
+    "english": "The effectiveness of your cortex bakers shoots up exponentially if you allow them to connect with each other. In practice this takes the form of many cosmic-sized nerds mumbling awkwardly about tech start-up ideas to each other.",
+    "chinese": "如果你将你的脑力烘焙师相互连接，它们的效率会呈指数级增长。现实情况下，这表现为许多宇宙大小的书呆子笨拙地相互咕哝着科技初创公司的想法。"
+  },
+  "[Upgrade quote 735]Cosmic brainstorms": {
+    "english": "The wrinkled surfaces of your cortex bakers emit weather-scale ionic flares with every thought coursing through them. These pulses of pure intellectual energy are sent rippling through space, occasionally echoing back with even deeper philosophical complexity.",
+    "chinese": "你的脑力烘焙师的脑皮层褶皱会向整个天空发射出的离子耀斑，所有的想法都会通过这些思维的沟渠。这些纯粹的智力能量脉冲在太空中荡漾，偶尔会回荡出打破更深层次的哲学复杂性。"
+  },
+  "[Upgrade quote 738]Psychokinesis": {
+    "english": "While your giant cortex bakers come equipped with ESP, they've only recently figured out how to manipulate the physical world with their thoughts - though for safety reasons, your legal team had them promise to only use these powers to scratch the itches in their cortical folds.",
+    "chinese": "虽然你的巨型脑力烘焙师配备了静电除尘器，但它们最近才弄明白如何用它们的思想来操纵物理世界——不过出于安全原因，你的法律团队让它们承诺只使用这些能力来挠它们皮质皱褶中的瘙痒。"
+  },
+  "[Upgrade quote 739]Spines": {
+    "english": "Your cortex bakers are now equipped with tentacular spine-like structures, which they can use like prehensile tails to pour themselves enormous cups of coffee or propel themselves around like very large, very smart, very slow tadpoles.",
+    "chinese": "你的脑力烘焙师现在装备了触须棘状结构，它们可以像灵活的尾巴一样为自己倒巨大的咖啡，或者像非常大、非常聪明、非常缓慢的蝌蚪一样推动自己四处走动。"
+  },
+  "[Upgrade quote 740]Neuraforming": {
+    "english": "By virtue of being planet-sized, your cortex bakers often boast their own atmospheres and seas of cerebrospinal fluid, and given enough time, their own ecosystems. This incredible new branch of life, evolved entirely out of neural material, can be put to good use as home-grown accountants and low-ranking technicians.",
+    "chinese": "正因为它们行星大小的体积，你的脑力烘焙师通常拥有自己的大气层和脑脊液海洋。如果给它们足够的时间，它们甚至可以拥有自己的生态系统。这一令人难以置信的新生命分支，完全由神经材料进化而来，可以很好地用来发掘土生土长的会计师和低级技术人员。"
+  },
+  "[Upgrade quote 742]Every possible idea": {
+    "english": "Congratulations, your cortex bakers have exerted enough intellectual computation to permute through every single idea that can or ever will be conceived of. Any thought beyond this point is merely rediscovering a notion you've already archived. Hardly cause for cerebration.",
+    "chinese": "祝贺你，你的脑力烘焙师已经运用了足够的智力计算来置换每一个可以或将被构思的想法。从此以后任何新的想法都只是重新发现了一个你已经归档过的概念。因此几乎没有理由再继续思考了。"
+  },
+  "[Upgrade quote 761]Thoughts & prayers": {
+    "english": "The notion of sacredness arises in most sentient evolved brains and may benefit the development of cognition via abstract thought. This mechanism, however, is absent in designed minds such as your cortex bakers; this process attempts to add it back. Just make sure to keep them in check - you really don't want these things to develop organized religion.",
+    "chinese": "神圣的概念出现在大多数感官进化的大脑中，并可能有助于通过抽象思维发展认知。然而，这种机制在被人工设计出来的大脑中是不存在的，比如你的脑力烘焙师；这个方法试图将这些概念重新接入到它们中。只要确保限制住它们无尽的思维——你可不希望这些东西发展成有组织的宗教。"
+  }
+}
