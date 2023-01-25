@@ -104,7 +104,12 @@
   },
   "[Upgrade quote 695]Universal idling": {
     "english": "The nature of idleverses is found in waiting. The more you wait on an idleverse, the more exponentially potent it becomes - which saves you a whole lot of hard work. In a true act of zen, you've taken to biding your time when collecting new universes, letting them ripen like a fine wine.",
-    "chinese": "闲置的本质是在等待中发现的。你对的放置宇宙的等待越多，它就会变得越强大--这为你省去了大量的艰苦工作。在一个真正的禅境中，你已经开始花更多时间来慢慢等待收集新的宇宙的时机，让它们像美酒一样成熟。"
+    "chinese": "放置宇宙的本质是在等待中发现的。你对的放置宇宙的等待越多，它就会变得越强大--这为你省去了大量的艰苦工作。在一个真正的禅境中，你已经开始花更多时间来慢慢等待收集新的宇宙的时机，让它们像美酒一样成熟。"
+  },
+  "[Upgrade name 695]Universal idling": {
+    "comment": "直接把宇宙放置放在这里感觉没什么意义，毕竟是空闲宇宙的升级。根据风味文本的描述，那就当作放置宇宙的本质就是让它空转吧",
+    "english": "Universal idling",
+    "chinese": "宇宙的空转"
   },
   "Cortex baker": {
     "english": "Cortex baker",
