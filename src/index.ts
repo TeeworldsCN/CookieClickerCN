@@ -125,28 +125,6 @@ fs.writeFileSync(
   `ModLanguage('ZH-CN',${transformFunc(JSON.stringify(langS))});`
 );
 
-// combine patches with original to make a current representation
-for (var entry in original) {
-  const data = original[entry];
-  for (var key in replaceAll) {
-    if (typeof data.chinese === 'object' && typeof data.chinese.func === 'string') {
-      data.chinese.func = data.chinese.func.replace(key, replaceAll[key].replacement);
-    } else if (Array.isArray(data.chinese)) {
-      data.chinese = data.chinese.map((str: any) => {
-        if (typeof str === 'object' && typeof str.func === 'string') {
-          return { func: str.func.replace(key, replaceAll[key].replacement) };
-        }
-        return str.replace(new RegExp(key, 'ig'), replaceAll[key].replacement);
-      });
-    } else {
-      if (!data.chinese) {
-        console.log(data);
-      }
-      data.chinese = data.chinese.replace(new RegExp(key, 'ig'), replaceAll[key].replacement);
-    }
-  }
-}
-
 // Mark patch file
 for (const patch of patches) {
   if (patch['ignored']) continue;
@@ -162,6 +140,25 @@ for (const patch of patches) {
     } else {
       original[key].patch = patch['file'];
       original[key].chinese = patch[key].chinese;
+    }
+  }
+}
+
+// combine patches with original to make a current representation
+for (var entry in original) {
+  const data = original[entry];
+  for (var key in replaceAll) {
+    if (typeof data.chinese === 'object' && typeof data.chinese.func === 'string') {
+      data.chinese.func = data.chinese.func.replace(key, replaceAll[key].replacement);
+    } else if (Array.isArray(data.chinese)) {
+      data.chinese = data.chinese.map((str: any) => {
+        if (typeof str === 'object' && typeof str.func === 'string') {
+          return { func: str.func.replace(key, replaceAll[key].replacement) };
+        }
+        return str.replace(new RegExp(key, 'ig'), replaceAll[key].replacement);
+      });
+    } else {
+      data.chinese = data.chinese.replace(new RegExp(key, 'ig'), replaceAll[key].replacement);
     }
   }
 }
@@ -241,7 +238,11 @@ for (var key in original) {
         } else {
           original[key].tradchn = { func: T(original[key].chinese.func) };
         }
-      } else if (lastVersion[key] && lastVersion[key].chinese == original[key].chinese) {
+      } else if (
+        lastVersion[key] &&
+        lastVersion[key].tradchn &&
+        lastVersion[key].chinese == original[key].chinese
+      ) {
         original[key].tradchn = lastVersion[key].tradchn;
       } else {
         original[key].tradchn = T(original[key].chinese);
@@ -260,7 +261,10 @@ for (let key in original) {
     console.error(`duplicate key: "${key}"`);
     process.exit(1);
   }
-  if (original[key].tradchn != '[CN:MISSING]') langT[key] = replaceAllForCHT(original[key].tradchn);
+  if (original[key].tradchn != '[CN:MISSING]') {
+    langT[key] = replaceAllForCHT(original[key].tradchn);
+    original[key].tradchn = langT[key];
+  }
 }
 
 const BUILD_PATH_CHT = path.join(__dirname, '../build/CookieClickerTCNMod');

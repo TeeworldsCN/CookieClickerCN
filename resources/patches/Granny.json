@@ -1,0 +1,171 @@
+{
+  "comment": "将 replaceAll 中的老奶奶的相关词条全部手动处理，避免后期文本出问题",
+  "Custom grandmas": {
+    "english": "Custom grandmas",
+    "chinese": "自定义老奶奶"
+  },
+  "some grandmas will be named after Patreon supporters": {
+    "english": "some grandmas will be named after Patreon supporters",
+    "chinese": "一些老奶奶会以 Patreon 资助者的名字命名"
+  },
+  "Grandmatriarchs status:": {
+    "english": "Grandmatriarchs status:",
+    "chinese": "老奶奶元老状态："
+  },
+  "This sugar lump was affected by the elders and grew to be <b>meaty</b>; harvesting it will yield between 0 and 2 lumps.": {
+    "english": "This sugar lump was affected by the elders and grew to be <b>meaty</b>; harvesting it will yield between 0 and 2 lumps.",
+    "chinese": "受到老奶奶的影响，这个糖块长成了<b>肥硕</b>糖块；收获它将获得 0 到 2 个糖块。"
+  },
+  "Grandma": {
+    "english": "Grandma",
+    "chinese": "老奶奶"
+  },
+  "grandma": {
+    "english": "grandma",
+    "chinese": "老奶奶"
+  },
+  "grandmas": {
+    "english": "grandmas",
+    "chinese": "老奶奶"
+  },
+  "%1 grandma": {
+    "english": ["%1 grandma", "%1 grandmas"],
+    "chinese": ["%1 个老奶奶", "%1 个老奶奶"]
+  },
+  "[Grandma quote]A nice grandma to bake more cookies.": {
+    "english": "A nice grandma to bake more cookies.",
+    "chinese": "善良的老奶奶可以烘焙出很多饼干。"
+  },
+  "Grandmas gain <b>+%1% CpS</b> for each non-grandma building.": {
+    "english": "Grandmas gain <b>+%1% CpS</b> for each non-grandma building.",
+    "chinese": "每拥有一个非老奶奶建筑，老奶奶生产的饼干 <b>+%1</b>。"
+  },
+  "Grandma-operated science lab and leisure club.<br>Grandmas are <b>4 times</b> as efficient.<br><b>Regularly unlocks new upgrades</b>.": {
+    "english": "Grandma-operated science lab and leisure club.<br>Grandmas are <b>4 times</b> as efficient.<br><b>Regularly unlocks new upgrades</b>.",
+    "chinese": "老奶奶运营的科学实验室和休闲会所。<br>老奶奶的生产率<b>翻三倍</b>。<br><b>定期解锁新升级</b>。"
+  },
+  "Puts a permanent end to the elders' wrath, at the cost of %1% of your CpS.": {
+    "english": "Puts a permanent end to the elders' wrath, at the cost of %1% of your CpS.",
+    "chinese": "消耗 %1% 的 CpS，永久平息老奶奶的愤怒。"
+  },
+  "You will get %1% of your CpS back, but the grandmatriarchs will return.": {
+    "english": "You will get %1% of your CpS back, but the grandmatriarchs will return.",
+    "chinese": "虽然你可以拿回 %1% 的 CpS，但老奶奶元老会回来。"
+  },
+  "You haven't pledged to the elders yet.": {
+    "english": "You haven't pledged to the elders yet.",
+    "chinese": "你尚未与老奶奶订立誓约。"
+  },
+  "Elder pledges last <b>twice</b> as long.": {
+    "english": "Elder pledges last <b>twice</b> as long.",
+    "chinese": "老奶奶誓约持续时间<b>翻倍</b>。"
+  },
+  "Each grandma (up to %1) makes sugar lumps ripen <b>%2</b> sooner.": {
+    "english": "Each grandma (up to %1) makes sugar lumps ripen <b>%2</b> sooner.",
+    "chinese": "每个老奶奶（最多 %1 个）可使糖块成熟速度加快 <b>%2</b>。"
+  },
+  "Sell a grandma.": {
+    "english": "Sell a grandma.",
+    "chinese": "出售一个老奶奶。"
+  },
+  "Appease the grandmatriarchs at least <b>once</b>.": {
+    "english": "Appease the grandmatriarchs at least <b>once</b>.",
+    "chinese": "至少安抚<b>一次</b>老奶奶元老。"
+  },
+  "Appease the grandmatriarchs at least <b>%1 times</b>.": {
+    "english": "Appease the grandmatriarchs at least <b>%1 times</b>.",
+    "chinese": "至少安抚 <b>%1 次</b>老奶奶元老。"
+  },
+  "Declare a covenant with the grandmatriarchs.": {
+    "english": "Declare a covenant with the grandmatriarchs.",
+    "chinese": "与老奶奶元老立定盟约。"
+  },
+  "Own at least <b>%1</b> grandma types.": {
+    "english": "Own at least <b>%1</b> grandma types.",
+    "chinese": "至少拥有 <b>%1</b> 种老奶奶。"
+  },
+  "Pop a reindeer <b>during an elder frenzy</b>.": {
+    "english": "Pop a reindeer <b>during an elder frenzy</b>.",
+    "chinese": "<b>在老奶奶狂热期间</b>击破一头驯鹿。"
+  },
+  "[Upgrade name 57]Farmer grandmas": {
+    "english": "Farmer grandmas",
+    "chinese": "农民老奶奶"
+  },
+  "[Upgrade name 58]Miner grandmas": {
+    "english": "Miner grandmas",
+    "chinese": "矿工老奶奶"
+  },
+  "[Upgrade name 59]Worker grandmas": {
+    "english": "Worker grandmas",
+    "chinese": "工人老奶奶"
+  },
+  "[Upgrade name 60]Cosmic grandmas": {
+    "english": "Cosmic grandmas",
+    "chinese": "宇宙老奶奶"
+  },
+  "[Upgrade name 61]Transmuted grandmas": {
+    "english": "Transmuted grandmas",
+    "chinese": "蜕变的老奶奶"
+  },
+  "[Upgrade name 62]Altered grandmas": {
+    "english": "Altered grandmas",
+    "chinese": "蚀变的老奶奶"
+  },
+  "[Upgrade name 63]Grandmas' grandmas": {
+    "english": "Grandmas' grandmas",
+    "chinese": "奶奶的老奶奶"
+  },
+  "[Upgrade name 103]Antigrandmas": {
+    "english": "Antigrandmas",
+    "chinese": "反老奶奶"
+  },
+  "[Upgrade name 180]Rainbow grandmas": {
+    "english": "Rainbow grandmas",
+    "chinese": "彩虹老奶奶"
+  },
+  "[Upgrade name 250]Banker grandmas": {
+    "english": "Banker grandmas",
+    "chinese": "银行家老奶奶"
+  },
+  "[Upgrade name 251]Priestess grandmas": {
+    "english": "Priestess grandmas",
+    "chinese": "祭司老奶奶"
+  },
+  "[Upgrade name 252]Witch grandmas": {
+    "english": "Witch grandmas",
+    "chinese": "巫女老奶奶"
+  },
+  "[Upgrade name 415]Lucky grandmas": {
+    "english": "Lucky grandmas",
+    "chinese": "幸运老奶奶"
+  },
+  "[Upgrade name 593]Binary grandmas": {
+    "english": "Binary grandmas",
+    "chinese": "二进制老奶奶"
+  },
+  "[Upgrade name 605]Script grannies": {
+    "english": "Script grannies",
+    "chinese": "脚本老奶奶"
+  },
+  "[Upgrade name 683]Alternate grandmas": {
+    "english": "Alternate grandmas",
+    "chinese": "轮换老奶奶"
+  },
+  "[Achievement name 40]Grandma's cookies": {
+    "english": "Grandma's cookies",
+    "chinese": "老奶奶的饼干"
+  },
+  "[Achievement name 135]Gushing grannies": {
+    "english": "Gushing grannies",
+    "chinese": "火力全开的老奶奶"
+  },
+  "[Achievement name 327]Grandma needs a new pair of shoes": {
+    "english": "Grandma needs a new pair of shoes",
+    "chinese": "老奶奶需要一双新鞋"
+  },
+  "[Achievement name 345]Holy cookies, grandma!": {
+    "english": "Holy cookies, grandma!",
+    "chinese": "神圣饼干，老奶奶！"
+  }
+}
