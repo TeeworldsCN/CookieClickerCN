@@ -13,13 +13,16 @@ var __TWCNL = {};
       { threshold: 1e7, sciDecimals: 3 },
     ],
 
-    // 替换数字格式化
+    // 万亿
+    CN_UNIT_TRILLION: __TWCNL.CN_UNITS_MIN[3] + __TWCNL.CN_UNITS_MIN[4],
+
+    // 尾记中文单位
     FormatterCN: (val, floats) => {
-      let unit = '';
       if (!isFinite(val)) return __TWCNL.STR_INFINITY;
+      let unit = '';
       if (val >= 1e4) {
         for (const u of __TWCNL.CN_UNITS) {
-          if (!Game.prefs.numbercntrillion && u[1] == '兆') continue;
+          if (!Game.prefs.numbercntrillion && u[2] == 12) continue;
           if (val >= u[0]) {
             val = Math.round(val / (u[0] / 10000)) / 10000;
             unit = u[1];
@@ -50,6 +53,112 @@ var __TWCNL = {};
       } else {
         return val.toString();
       }
+    },
+
+    // 叠记中文单位
+    FormatterCNFull: val => {
+      if (!isFinite(val)) return __TWCNL.STR_INFINITY;
+
+      const minUnit = Math.min(Game.prefs.numbercnminunit, 3);
+      const minValue = Math.pow(10, minUnit + 1);
+      const groups = Game.prefs.numbercnfullsegs;
+      if (groups < 1) groups = 1;
+      if (groups > 3) groups = 3;
+
+      const safeConcat = (pre, cur, unit, order) => {
+        if (unit) {
+          cur.high = cur.high + order;
+          cur.low = order;
+        }
+
+        if (pre.low - cur.high > 1) {
+          if (minUnit == 0) {
+            cur.text = __TWCNL.CN_UNITS_NUM[0] + cur.text;
+          } else {
+            cur.text = ('0' + cur.text).padStart(minUnit + 1, '0');
+          }
+        }
+
+        if (unit) {
+          cur.text = cur.text + unit;
+        }
+
+        const text =
+          pre.text.endsWith(__TWCNG.CN_UNIT_TRILLION) && cur.text.endsWith(__TWCNL.CN_UNITS_MIN[4])
+            ? pre.text.slice(0, -1) + cur.text
+            : pre.text + cur.text;
+
+        return { text, high: Math.max(cur.high, pre.high), low: cur.low };
+      };
+
+      const segmenting = (val, sub) => {
+        let segments = { text: '', high: 0, low: 0 };
+
+        if (val <= 0) {
+          return {
+            text: '',
+            high: 0,
+            low: 0,
+          };
+        }
+
+        if (val < minValue) {
+          val = Math.floor(val);
+          if (minUnit == 0) return { text: __TWCNL.CN_UNITS_NUM[val], high: 0, low: 0 };
+          let text = val > 0 ? val.toString() : '';
+          return {
+            text,
+            high: text.length - 1,
+            low: 0,
+          };
+        }
+
+        let units = 0;
+
+        const sliceUnit = (val, u) => {
+          if (val >= u[0]) {
+            const segment = Math.floor(val / u[0]);
+            val -= segment * u[0];
+            if (segment > 0) segments = safeConcat(segments, segmenting(segment, true), u[1], u[2]);
+            units++;
+          } else if (units > 1) {
+            units++;
+          }
+          return val;
+        };
+
+        if (!sub) {
+          for (const u of __TWCNL.CN_UNITS) {
+            if (units >= groups) break;
+            if (val <= 0) break;
+            if (!Game.prefs.numbercntrillion && u[2] == 12) {
+              val = sliceUnit(val, [u[0], __TWCNG.CN_UNIT_TRILLION, u[2]]);
+            } else {
+              val = sliceUnit(val, u);
+            }
+          }
+        }
+
+        for (const u of __TWCNL.CN_UNITS_STACKABLE) {
+          if (!sub && units >= groups) break;
+          if (val <= 0) break;
+
+          if (val < minValue) {
+            segments = safeConcat(segments, segmenting(val, true));
+            val = 0;
+            break;
+          } else {
+            val = sliceUnit(val, u);
+          }
+        }
+
+        if (val > 0 && (sub || units < groups)) {
+          segments = safeConcat(segments, segmenting(val, true));
+        }
+        return segments;
+      };
+
+      return segmenting(val, val < 1e8).text || (minUnit == 0 ? __TWCNL.CN_UNITS_NUM[0] : '0');
     },
 
     // 替换科学计数法
@@ -100,6 +209,8 @@ var __TWCNL = {};
     SaveDataMap: {
       s: 'numbercnsci',
       c: 'numbercn',
+      u: 'numbercnfull',
+      g: 'numbercnfullsegs',
       l: 'numbercnscilen',
       d: 'numbercndecimallen',
       m: 'numbercnminunit',
@@ -180,7 +291,7 @@ var __TWCNL = {};
         Game.keys[__TWCNG.UNIT_TOGGLE_KEY] != 1 &&
         (val < 1e88 || !isFinite(val))
       ) {
-        output = __TWCNG.FormatterCN(val);
+        output = Game.prefs.numbercnfull ? __TWCNG.FormatterCNFull(val) : __TWCNG.FormatterCN(val);
       } else {
         output = Game.prefs.numbercnsci
           ? val >= numLen.threshold
@@ -190,6 +301,20 @@ var __TWCNL = {};
       }
 
       if (output == '0') negative = false;
+      if (Game.prefs.numbercnfull) {
+        const numeralDecimal = decimal;
+        decimal = '';
+        for (const c of numeralDecimal) {
+          if (c == '.') {
+            decimal += __TWCNL.CN_FLOATING_POINT;
+          } else {
+            const numeral = c.charCodeAt(0) - 48;
+            if (Game.prefs.numbercnminunit == 0 && numeral >= 0 && numeral <= 9)
+              decimal += __TWCNL.CN_UNITS_NUM[numeral];
+            else decimal += c;
+          }
+        }
+      }
       return negative ? '-' + output : output + decimal;
     };
   };
@@ -1304,17 +1429,37 @@ var __TWCNL = {};
       ) +
       `<label>(${__TWCNL.STR_SETTING_CNUNIT_LABEL})</label><br>` +
       (Game.prefs.numbercn
-        ? ModSlider(
-            'numbercnDecimal',
-            __TWCNL.STR_SETTING_DECIMAL,
-            __TWCNL.STR_SETTING_DECIMAL_RIGHT,
-            () => Game.prefs.numbercndecimallen,
-            () => Game.prefs.numbercndecimallen,
-            0,
-            4,
-            1,
-            "Game.prefs.numbercndecimallen=Math.floor(l('numbercnDecimal').value);Game.prefs.numbercndecimal=Math.pow(10,Game.prefs.numbercndecimallen);l('numbercnDecimalRightText').innerHTML='小数点后'+Math.floor(l('numbercnDecimal').value)+'位';BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+        ? ModPrefButton(
+            'numbercnfull',
+            'numbercnFullButton',
+            __TWCNL.STR_SETTING_CNUNITFULL + ON,
+            __TWCNL.STR_SETTING_CNUNITFULL + OFF,
+            'Game.UpdateMenu();BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
           ) +
+          `<label>(${__TWCNL.STR_SETTING_CNUNITFULL_LABEL})</label><br>` +
+          (Game.prefs.numbercnfull
+            ? ModSlider(
+                'numbercnFullSegs',
+                __TWCNL.STR_SETTING_CNUNITFULLSEGS,
+                __TWCNL.STR_SETTING_CNUNITFULLSEGS_RIGHT,
+                () => Game.prefs.numbercnfullsegs,
+                () => Game.prefs.numbercnfullsegs,
+                1,
+                3,
+                1,
+                "Game.prefs.numbercnfullsegs=parseInt(l('numbercnFullSegs').value);l('numbercnFullSegsRightText').innerHTML=__TWCNL.STR_SETTING_CNUNITFULLSEGS_RIGHT.replace('[$]',Math.floor(l('numbercnFullSegs').value));BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+              )
+            : ModSlider(
+                'numbercnDecimal',
+                __TWCNL.STR_SETTING_DECIMAL,
+                __TWCNL.STR_SETTING_DECIMAL_RIGHT,
+                () => Math.log10(Game.prefs.numbercndecimal),
+                () => Math.log10(Game.prefs.numbercndecimal),
+                0,
+                8,
+                1,
+                "Game.prefs.numbercndecimal=Math.pow(10,Math.floor(l('numbercnDecimal').value));l('numbercnDecimalRightText').innerHTML=__TWCNL.STR_SETTING_DECIMAL_RIGHT.replace('[$]',Math.floor(l('numbercnDecimal').value));BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+              )) +
           '<br>' +
           ModSlider(
             'numbercnMinUnit',
@@ -1323,9 +1468,9 @@ var __TWCNL = {};
             () => __TWCNL.CN_UNITS_MIN[Game.prefs.numbercnminunit],
             () => Game.prefs.numbercnminunit,
             0,
-            4,
+            Game.prefs.numbercnfull ? 3 : 4,
             1,
-            "Game.prefs.numbercnminunit=l('numbercnMinUnit').value;l('numbercnMinUnitRightText').innerHTML=__TWCNL.CN_UNITS_MIN[l('numbercnMinUnit').value];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+            "Game.prefs.numbercnminunit=parseInt(l('numbercnMinUnit').value);l('numbercnMinUnitRightText').innerHTML=__TWCNL.CN_UNITS_MIN[l('numbercnMinUnit').value];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
           ) +
           '<br>' +
           ModPrefButton(
@@ -1364,7 +1509,7 @@ var __TWCNL = {};
             0,
             3,
             1,
-            "Game.prefs.numbercnscilen=l('numbercnScientific').value;l('numbercnScientificRightText').innerHTML=__TWCNL.STR_SETTING_SCILEN_VALUES[Math.floor(l('numbercnScientific').value)];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+            "Game.prefs.numbercnscilen=parseInt(l('numbercnScientific').value);l('numbercnScientificRightText').innerHTML=__TWCNL.STR_SETTING_SCILEN_VALUES[Math.floor(l('numbercnScientific').value)];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
           ) + `<label>(${__TWCNL.STR_SETTING_SCILEN_LABEL})</label><br>`
         : '') +
       '<br>' +
@@ -1555,6 +1700,8 @@ var __TWCNL = {};
       if (this.lang == 'ZH-CN') {
         // 默认设置参数
         if (Game.prefs.numbercn == null) Game.prefs.numbercn = 1;
+        if (Game.prefs.numbercnfull == null) Game.prefs.numbercnfull = 0;
+        if (Game.prefs.numbercnfullsegs == null) Game.prefs.numbercnfullsegs = 2;
         if (Game.prefs.numbercnfixlen == null) Game.prefs.numbercnfixlen = 0;
         if (Game.prefs.numbercnsci == null) Game.prefs.numbercnsci = 1;
         if (Game.prefs.numbercnscilen == null) Game.prefs.numbercnscilen = 0;
