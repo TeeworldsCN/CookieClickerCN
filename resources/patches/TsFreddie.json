@@ -3874,5 +3874,17 @@
   "TV show seasons produced:": {
     "english": "TV show seasons produced:",
     "chinese": "已制作电视节目季数："
+  },
+  "The reinforced membrane protects the shimmering veil.": {
+    "english": "The reinforced membrane protects the shimmering veil.",
+    "chinese": "加固薄膜保护了闪光面纱。"
+  },
+  "%1 are <b>twice</b> as efficient.": {
+    "english": "%1 are <b>twice</b> as efficient.",
+    "chinese": "%1的生产效率<b>翻倍</b>。"
+  },
+  "The mouse and cursors are <b>twice</b> as efficient.": {
+    "english": "The mouse and cursors are <b>twice</b> as efficient.",
+    "chinese": "鼠标点击和指针的生产效率<b>翻倍</b>。"
   }
 }

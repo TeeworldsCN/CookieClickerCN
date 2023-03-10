@@ -845,6 +845,14 @@
     "english": "Dragonfruit milk",
     "chinese": "火龙果牛奶"
   },
+  "Peach milk": {
+    "english": "Peach milk",
+    "chinese": "[CN:MISSING]"
+  },
+  "Hazelnut milk": {
+    "english": "Hazelnut milk",
+    "chinese": "[CN:MISSING]"
+  },
   "Info": {
     "english": "Info",
     "chinese": "信息"
@@ -2067,6 +2075,10 @@
     "english": "Supreme Intellect",
     "chinese": "“最高智慧”，"
   },
+  "Dragon Guts": {
+    "english": "Dragon Guts",
+    "chinese": "[CN:MISSING]"
+  },
   "News :": {
     "english": "News :",
     "chinese": "新闻："
@@ -2384,6 +2396,14 @@
       "天文學家警告皮層貝克軌跡漂移，擔心未來的正面碰撞會導致代價高昂的腦震盪。",
       "腦皮層麵包師提醒員工，腦皮層麵包是麵包店的物質財產，不應該用暱稱來稱呼。"
     ]
+  },
+  "Ticker (You)": {
+    "english": [
+      "the person of the year is, this year again, you! How unexpected!",
+      "could local restaurants be serving you bootleg clone meat? Our delicious investigation follows after tonight's news.",
+      "beloved cookie magnate, erroneously reported as trampled to death by crazed fans, thankfully found to be escaped clone mistaken for original."
+    ],
+    "chinese": "[CN:MISSING]"
   },
   "Ticker (Halloween)": {
     "english": [
@@ -3783,6 +3803,29 @@
     "english": "There's only so many ways you can bring in more profit. Or is there? Hire the most brilliant experts in the known universe and let them scrape their brains for you!",
     "chinese": "只有這麼多方法可以帶來更多的利潤。甚至有嗎？聘請已知宇宙中最傑出的專家，讓他們為你絞盡腦汁！"
   },
+  "You": {
+    "english": "You",
+    "chinese": "[CN:MISSING]"
+  },
+  "%1 You": {
+    "english": [
+      "%1 You",
+      "%1 You"
+    ],
+    "chinese": "[CN:MISSING]"
+  },
+  "[You quote]You, alone, are the reason behind all these cookies. You figure if there were more of you... maybe you could make even more.": {
+    "english": "You, alone, are the reason behind all these cookies. You figure if there were more of you... maybe you could make even more.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[You business name]You": {
+    "english": "You",
+    "chinese": "[CN:MISSING]"
+  },
+  "[You business quote]Your business is as great as it's gonna get. The only real way to improve it anymore is to improve yourself - and become the best CEO this world has ever seen.": {
+    "english": "Your business is as great as it's gonna get. The only real way to improve it anymore is to improve yourself - and become the best CEO this world has ever seen.",
+    "chinese": "[CN:MISSING]"
+  },
   "CpS": {
     "english": "CpS",
     "chinese": "[CN:MISSING]"
@@ -4088,6 +4131,10 @@
   "Wrinklers explode into <b>%1% more cookies</b>.": {
     "english": "Wrinklers explode into <b>%1% more cookies</b>.",
     "chinese": "饼干虫爆裂成的饼干增加 <b>%1%</b>。"
+  },
+  "Wrinklers digest <b>%1% more cookies</b>.": {
+    "english": "Wrinklers digest <b>%1% more cookies</b>.",
+    "chinese": "[CN:MISSING]"
   },
   "Unlocks... something.": {
     "english": "Unlocks... something.",
@@ -4829,6 +4876,46 @@
     "english": "How nice!",
     "chinese": "[CN:MISSING]"
   },
+  "You've already sent or redeemed a gift recently.": {
+    "english": "You've already sent or redeemed a gift recently.",
+    "chinese": "[CN:MISSING]"
+  },
+  "Customize": {
+    "english": "Customize",
+    "chinese": "[CN:MISSING]"
+  },
+  "Customize your clones": {
+    "english": "Customize your clones",
+    "chinese": "[CN:MISSING]"
+  },
+  "Sprung from your very DNA. Shape them in your image!": {
+    "english": "Sprung from your very DNA. Shape them in your image!",
+    "chinese": "[CN:MISSING]"
+  },
+  "Hair": {
+    "english": "Hair",
+    "chinese": "[CN:MISSING]"
+  },
+  "Hair color": {
+    "english": "Hair color",
+    "chinese": "[CN:MISSING]"
+  },
+  "Skin color": {
+    "english": "Skin color",
+    "chinese": "[CN:MISSING]"
+  },
+  "Head shape": {
+    "english": "Head shape",
+    "chinese": "[CN:MISSING]"
+  },
+  "Face": {
+    "english": "Face",
+    "chinese": "[CN:MISSING]"
+  },
+  "Extra": {
+    "english": "Extra",
+    "chinese": "[CN:MISSING]"
+  },
   "Achievement unlocked": {
     "english": "Achievement unlocked",
     "chinese": "已解锁成就"
@@ -4901,6 +4988,10 @@
     "english": "Click a <b>golden cookie</b>.",
     "chinese": "点击一块<b>黄金饼干</b>。"
   },
+  "Click a <b>wrath cookie</b>.": {
+    "english": "Click a <b>wrath cookie</b>.",
+    "chinese": "[CN:MISSING]"
+  },
   "Click <b>%1</b>.": {
     "english": "Click <b>%1</b>.",
     "chinese": "点击<b>%1</b>。"
@@ -4928,6 +5019,10 @@
   "Dunk the cookie.": {
     "english": "Dunk the cookie.",
     "chinese": "把饼干泡一泡。"
+  },
+  "Trigger the grandmapocalypse for the first time.": {
+    "english": "Trigger the grandmapocalypse for the first time.",
+    "chinese": "[CN:MISSING]"
   },
   "Appease the grandmatriarchs at least <b>once</b>.": {
     "english": "Appease the grandmatriarchs at least <b>once</b>.",
@@ -5053,6 +5148,10 @@
     "english": "Burst the near-extinct <b>shiny wrinkler</b>.",
     "chinese": "炸死几近灭绝的<b>闪光饼干虫</b>。"
   },
+  "Poke a wrinkler <b>%1 times</b> without killing it.": {
+    "english": "Poke a wrinkler <b>%1 times</b> without killing it.",
+    "chinese": "[CN:MISSING]"
+  },
   "Click a golden cookie <b>less than 1 second after it spawns</b>.": {
     "english": "Click a golden cookie <b>less than 1 second after it spawns</b>.",
     "chinese": "<b>在黄金饼干出现后 1 秒内</b>点击它。"
@@ -5161,6 +5260,10 @@
     "english": "Have your stock market profits surpass <b>$%1</b>.",
     "chinese": "股市获利超过 <b>$%1</b>。"
   },
+  "Take out a loan and ascend before incurring the CpS penalty.": {
+    "english": "Take out a loan and ascend before incurring the CpS penalty.",
+    "chinese": "[CN:MISSING]"
+  },
   "Own <b>%1</b> kitten upgrades.": {
     "english": "Own <b>%1</b> kitten upgrades.",
     "chinese": "拥有 <b>%1</b> 项小猫升级。"
@@ -5175,6 +5278,18 @@
   },
   "Redeem a cookie gift code from a friend (or from yourself, we don't judge).": {
     "english": "Redeem a cookie gift code from a friend (or from yourself, we don't judge).",
+    "chinese": "[CN:MISSING]"
+  },
+  "Shape your clones to resemble %1.": {
+    "english": "Shape your clones to resemble %1.",
+    "chinese": "[CN:MISSING]"
+  },
+  "Clone": {
+    "english": "Clone",
+    "chinese": "[CN:MISSING]"
+  },
+  "Unlock the final building.": {
+    "english": "Unlock the final building.",
     "chinese": "[CN:MISSING]"
   },
   "Frenzy": {
@@ -6638,6 +6753,18 @@
   "[STOCK 17 LOGO]PBL": {
     "english": "PBL",
     "chinese": "PBL"
+  },
+  "[STOCK 18 NAME]%1's Bakery": {
+    "english": "%1's Bakery",
+    "chinese": "[CN:MISSING]"
+  },
+  "[STOCK 18 TYPE]%1": {
+    "english": "%1",
+    "chinese": "[CN:MISSING]"
+  },
+  "[STOCK 18 LOGO]YOU": {
+    "english": "YOU",
+    "chinese": "[CN:MISSING]"
   },
   "from %1": {
     "english": "from %1",
@@ -10179,6 +10306,198 @@
     "english": "Nines",
     "chinese": "[CN:MISSING]"
   },
+  "[Upgrade name 825]Clone grandmas": {
+    "english": "Clone grandmas",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 826]Cloning vats": {
+    "english": "Cloning vats",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 827]Energized nutrients": {
+    "english": "Energized nutrients",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 828]Stunt doubles": {
+    "english": "Stunt doubles",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 829]Clone recycling plant": {
+    "english": "Clone recycling plant",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 830]Free-range clones": {
+    "english": "Free-range clones",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 831]Genetic tailoring": {
+    "english": "Genetic tailoring",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 832]Power in diversity": {
+    "english": "Power in diversity",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 833]Self-betterment": {
+    "english": "Self-betterment",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 834]Source control": {
+    "english": "Source control",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 835]United workforce": {
+    "english": "United workforce",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 836]Safety patrols": {
+    "english": "Safety patrols",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 837]Clone rights": {
+    "english": "Clone rights",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 838]One big family": {
+    "english": "One big family",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 839]Fine-tuned body plans": {
+    "english": "Fine-tuned body plans",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 840]Foam-tipped canes": {
+    "english": "Foam-tipped canes",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 841]Self-driving tractors": {
+    "english": "Self-driving tractors",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 842]Mineshaft supports": {
+    "english": "Mineshaft supports",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 843]Universal automation": {
+    "english": "Universal automation",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 844]The big shortcake": {
+    "english": "The big shortcake",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 845]Temple traps": {
+    "english": "Temple traps",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 846]Polymorphism": {
+    "english": "Polymorphism",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 847]At your doorstep in 30 minutes or your money back": {
+    "english": "At your doorstep in 30 minutes or your money back",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 848]The dose makes the poison": {
+    "english": "The dose makes the poison",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 849]A way home": {
+    "english": "A way home",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 850]Rectifying a mistake": {
+    "english": "Rectifying a mistake",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 851]Candied atoms": {
+    "english": "Candied atoms",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 852]Lab goggles but like cool shades": {
+    "english": "Lab goggles but like cool shades",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 853]Gambler's fallacy fallacy": {
+    "english": "Gambler's fallacy fallacy",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 854]The more they stay the same": {
+    "english": "The more they stay the same",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 855]Simulation failsafes": {
+    "english": "Simulation failsafes",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 856]The other routes to Rome": {
+    "english": "The other routes to Rome",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 857]Intellectual property theft": {
+    "english": "Intellectual property theft",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 858]Reading your clones bedtime stories": {
+    "english": "Reading your clones bedtime stories",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 859]Accelerated development": {
+    "english": "Accelerated development",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 860]Peer review": {
+    "english": "Peer review",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 861]Fortune #020": {
+    "english": "Fortune #020",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 862]Personal biscuit": {
+    "english": "Personal biscuit",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 863]Unshackled glimmeringue": {
+    "english": "Unshackled glimmeringue",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 864]Unshackled You": {
+    "english": "Unshackled You",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 865]Kitten strategists": {
+    "english": "Kitten strategists",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 866]Baklavas": {
+    "english": "Baklavas",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 867]Snowball cookies": {
+    "english": "Snowball cookies",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 868]Sequilhos": {
+    "english": "Sequilhos",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 869]Hazelnut swirlies": {
+    "english": "Hazelnut swirlies",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 870]Spritz cookies": {
+    "english": "Spritz cookies",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 871]Mbatata cookies": {
+    "english": "Mbatata cookies",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 872]Springerles": {
+    "english": "Springerles",
+    "chinese": "[CN:MISSING]"
+  },
   "[Achievement name 0]Wake and bake": {
     "english": "Wake and bake",
     "chinese": "醒来，烘焙"
@@ -12539,6 +12858,206 @@
     "english": "No time like the present",
     "chinese": "[CN:MISSING]"
   },
+  "[Achievement name 590]Can we get much higher": {
+    "english": "Can we get much higher",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 591]Speed's the name of the game (no it's not it's called Cookie Clicker)": {
+    "english": "Speed's the name of the game (no it's not it's called Cookie Clicker)",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 592]Rainy day fund": {
+    "english": "Rainy day fund",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 593]And a little extra": {
+    "english": "And a little extra",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 594]Grandmapocalypse": {
+    "english": "Grandmapocalypse",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 595]Wrath cookie": {
+    "english": "Wrath cookie",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 596]No more room in hell": {
+    "english": "No more room in hell",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 597]In her likeness": {
+    "english": "In her likeness",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 598]Wrinkler poker": {
+    "english": "Wrinkler poker",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 599]Septcentennial": {
+    "english": "Septcentennial",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 600]My own clone": {
+    "english": "My own clone",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 601]Multiplicity": {
+    "english": "Multiplicity",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 602]Born for this job": {
+    "english": "Born for this job",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 603]Episode II": {
+    "english": "Episode II",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 604]Copy that": {
+    "english": "Copy that",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 605]Life finds a way": {
+    "english": "Life finds a way",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 606]Overcrowding": {
+    "english": "Overcrowding",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 607]Strength in numbers": {
+    "english": "Strength in numbers",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 608]Army of me": {
+    "english": "Army of me",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 609]Know thyself": {
+    "english": "Know thyself",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 610]Didn't make sense not to live": {
+    "english": "Didn't make sense not to live",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 611]Genetic bottleneck": {
+    "english": "Genetic bottleneck",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 612]Despite everything, it's still you": {
+    "english": "Despite everything, it's still you",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 613]Everyone everywhere all at once": {
+    "english": "Everyone everywhere all at once",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 614]Self-made": {
+    "english": "Self-made",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 615]Reproducible results": {
+    "english": "Reproducible results",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 616]That's all you": {
+    "english": "That's all you",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 617]Self-improvement": {
+    "english": "Self-improvement",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 618]And now you're even older": {
+    "english": "And now you're even older",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 619]Au naturel": {
+    "english": "Au naturel",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 620]Dirt-rich": {
+    "english": "Dirt-rich",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 621]Bots build bots": {
+    "english": "Bots build bots",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 622]Getting that bag": {
+    "english": "Getting that bag",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 623]The leader is good, the leader is great": {
+    "english": "The leader is good, the leader is great",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 624]You don't think they could've used... it couldn't have been ma-": {
+    "english": "You don't think they could've used... it couldn't have been ma-",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 625]Signed, sealed, delivered": {
+    "english": "Signed, sealed, delivered",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 626]Sugar, spice, and everything nice": {
+    "english": "Sugar, spice, and everything nice",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 627]Not even remotely close to Kansas anymore": {
+    "english": "Not even remotely close to Kansas anymore",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 628]I only meant to stay a while": {
+    "english": "I only meant to stay a while",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 629]Not 20 years away forever": {
+    "english": "Not 20 years away forever",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 630]Bright side of the Moon": {
+    "english": "Bright side of the Moon",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 631]Riding the Mersenne twister": {
+    "english": "Riding the Mersenne twister",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 632]Divide and conquer": {
+    "english": "Divide and conquer",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 633]Pebcakes": {
+    "english": "Pebcakes",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 634]Greener on the other sides": {
+    "english": "Greener on the other sides",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 635]Where is my mind": {
+    "english": "Where is my mind",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 636]Introspection": {
+    "english": "Introspection",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 637]Debt evasion": {
+    "english": "Debt evasion",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 638]Oft we mar what's well": {
+    "english": "Oft we mar what's well",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 639]Cookie Clicker": {
+    "english": "Cookie Clicker",
+    "chinese": "[CN:MISSING]"
+  },
   "There are no heralds at the moment. Please consider <b style=\"color:#bc3aff;\">donating to our Patreon</b>!": {
     "english": "There are no heralds at the moment. Please consider <b style=\"color:#bc3aff;\">donating to our Patreon</b>!",
     "chinese": "[CN:MISSING]"
@@ -12636,7 +13155,7 @@
     "chinese": "[CN:MISSING]"
   },
   "[Achievement quote 132]Tiny cookie": {
-    "english": "These aren't the cookies<br>you're clicking for.",
+    "english": "These aren't the cookies you're clicking for.",
     "chinese": "[CN:MISSING]"
   },
   "[Achievement quote 133]You win a cookie": {
@@ -12925,6 +13444,42 @@
   },
   "[Achievement quote 583]Beyond quality": {
     "english": "Dwarfing all of mankind's accomplishments.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 596]No more room in hell": {
+    "english": "That is not dead which can eternal click.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 597]In her likeness": {
+    "english": "There she is.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 598]Wrinkler poker": {
+    "english": "Also the name of a card game popular in retirement homes.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 599]Septcentennial": {
+    "english": "In this economy?",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 609]Know thyself": {
+    "english": "Do you ever look at yourself in the mirror and wonder... What is going on inside your head?",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 626]Sugar, spice, and everything nice": {
+    "english": "These were the ingredients chosen to create the perfect cookies.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 633]Pebcakes": {
+    "english": "Problem exists in my mouth!",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 637]Debt evasion": {
+    "english": "Really got 'em buttered!",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 638]Oft we mar what's well": {
+    "english": "But don't let that stop you!",
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 0]Reinforced index finger": {
@@ -16137,6 +16692,198 @@
   },
   "[Upgrade quote 824]Nines": {
     "english": "Fancy little squares of dark chocolate filled with frosty mint fondant. Named after the suggested hour of consumption. Some would gatekeep them from the status of cookies as they involve very little in the way of pastry, but here at Cookie Clicker, that's just not what we're about.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 825]Clone grandmas": {
+    "english": "Yet another grandma to replicate even more cookies.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 826]Cloning vats": {
+    "english": "You can finally replicate yourself through modern medical science, instead of manually like you've been doing.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 827]Energized nutrients": {
+    "english": "Your clones are normally cultivated in saline solution and fed what could most adequately be described as \"fish flakes\". New developments in lactotrophic technology replace this with a bath of 3 parts milk and 1 part rice vinegar, absorbed dermally, which also helps your clones pop out with positively glowing skin.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 828]Stunt doubles": {
+    "english": "More than simple multipliers of efficiency, you've taken to employing your clones as substitutes for any tasks that may prove harmful to you - such as visiting your more hazardous facilities, or enduring dinner with annoying business partners.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 829]Clone recycling plant": {
+    "english": "Really just a fanciful name for a re-orientation center, where jobless clones may be assigned new tasks based on temperament and abilities. Categorically not a place where expired or unfit clones are processed into a nutritious beige paste, currently.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 830]Free-range clones": {
+    "english": "Turns out your clones develop better focus, higher job performance and juicier meat if you let them roam around a little outside of assigned duties. Plus it gets the ethics committees off your back.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 831]Genetic tailoring": {
+    "english": "No point in mindlessly replicating mother nature's mishaps when you've got full mastery over the human genome. Imbuing your clones with a slightly more flattering physique, a slightly improved metabolism, or slightly deadlier laser eyes is as easy as pushing some stem cells around. Just don't build them too superior to your own self, lest they get any ideas.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 832]Power in diversity": {
+    "english": "On your routine inspections you've started noticing that some of your clones have... diverged. Subtly, each clone's personality has branched off from yours, their shifting minds pulling them into discrete clone-born cultures, microcosms of other paths you yourself could've taken had life treated you differently. This living tree of possibilities proves to be a boon for your self-knowledge and decision-making skills, and you don't even have to pester your alternate selves in other realities for it.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 833]Self-betterment": {
+    "english": "World domination starts with oneself, and quality clones cannot be reliably produced if you, the original stock, are not in proper shape. Your specialists have devised a maintenance regimen that could extend your lifespan tenfold and even get rid of your morning grumpiness; you may have summarily fired every physician so far who's suggested that you work on your diet and perhaps cut down on the cookies, but frankly, you're warming up to the idea.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 834]Source control": {
+    "english": "In the ongoing refinement of your genetic clones, the few gigabytes of your DNA have been passed around through e-mail attachments and USB keys a thousand times over and at this point your nucleosomes are practically common knowledge for anyone who works here. You're thinking people may be getting a little too casual about it - the other day, you walked past an office where one of your bioengineers was feeding treats to this horrid little hairless animal that you could swear had your face. High time to start tracing which data gets in whose hands and crack down on the silliness.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 835]United workforce": {
+    "english": "What good is hiring so many of those random strangers to work in your factories when you've got all these perfectly loyal lab-grown copies of you lying around? They don't even take wages. It's not like they'd ever revolt and try to overthrow you or anything.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 836]Safety patrols": {
+    "english": "Okay, so as it turns out mass-producing clones of a perhaps psychologically-complicated universe-spanning cookie magnate like yourself can result in a number of said clones developing what could be considered by some to be... say, antisocial behavior. No worries though, you've bred a new generation of extra-obedient copies, armed them to the teeth and given them full authority to deal with disorderly layabouts. It's fine. It's under control. It's fine.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 837]Clone rights": {
+    "english": "Those vile little freaks in suits down in legal inform you that your clones, through some absurd technical oversight, still share enough genetic information with mankind to be considered human beings - which entitles them to food, shelter, basic dignity and all sorts of other nonsense. But the same loophole allows you to claim each of them as dependents and earn some wicked tax benefits, so really, that \"unalienable rights\" racket is quite alright.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 838]One big family": {
+    "english": "The proportion of clones in your workforce having long eclipsed that of your other employees, you've become legally approved to qualify your galaxy-spanning corporation as a \"family business\" - a fact that you don't hesitate to blast twice hourly on every intercom in the company. Happily, your duplicates seem bolstered by these reminders, having come to regard you as this half-divine, half-parental entity, hallowed ancestor of all clones and all cookies. You're just hoping your folks at the labs can put the finishing touches on your immortality cure soon, or you shudder to think of the inheritance disputes to come.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 839]Fine-tuned body plans": {
+    "english": "There is, after all, no reason to limit your genetic spawn to your original configuration. The clones maintaining your tunnels and vents can do with quite a few less limbs, while those working your labs don't mind the dexterity that comes with some extra. Your units down in flavor testing have taken on similar adaptations to fit their duties but you haven't quite worked the guts to pay them a visit just yet.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 840]Foam-tipped canes": {
+    "english": "Perhaps the result of prolonged service, your grandmas have developed all kinds of odd and aggressive hierarchies among themselves; these will help them not hurt each other as bad during their endless turf wars.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 841]Self-driving tractors": {
+    "english": "Embarked AI lets your field vehicles sow and harvest cookie crops at any time of the day or night, and with so few human casualties, too!",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 842]Mineshaft supports": {
+    "english": "You were rather skeptical about installing such embarrassingly low-tech implements, but limiting the number of daily cave-ins really does help with that annoying employee turnover!",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 843]Universal automation": {
+    "english": "It's simple common sense; the more automation, the less work you have to do! Maybe one day you'll even automate yourself out of your own job. Exciting!",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 844]The big shortcake": {
+    "english": "You're not quite sure what this entails, but it must have been quite the cake for folks to lose their homes over it.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 845]Temple traps": {
+    "english": "You've laid out your temples with (metaphorical) pitfalls, forcing adventurers to navigate through trappings (of power and wealth), ensuring that only the most pious (and poison dart-resistant) of them return with your precious cookies. These temples may be veritable mazes (of the soul) but perhaps you've lost yourself a little bit in the analogy too.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 846]Polymorphism": {
+    "english": "This astonishing new field of spellcasting can change any creature into another, its most widespread application being a wizard turning themselves into a different, smarter, stronger, more attractive wizard.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 847]At your doorstep in 30 minutes or your money back": {
+    "english": "Refund policies help rope in a ton of new clients and have practically no impact on your bottom line. You possess absolute mastery over time and space. You're never late. You couldn't be late if you tried.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 848]The dose makes the poison": {
+    "english": "Iterative recipe refinement is a noble pursuit but maybe your cookies have come to contain, well, perhaps a bit too much cookie per cookie. Tweaking it down by a couple percents has helped reduce the amount of complaints to your toxicity call centers to almost nil!",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 849]A way home": {
+    "english": "You started this whole cookie venture on the simple kitchen counters of your own home. Your industrial and research facilities, sadly, have long since outgrown the confines of the little house, but you always knew it was still in there, buried somewhere. With a targeted portal, you could, conceivably, pay it a little visit for old times' sake...",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 850]Rectifying a mistake": {
+    "english": "This whole time-travelling business has been a terrible mess and, frankly, far more trouble than was worth. It's decided: you'll hop in one of your time machines one last time, turn back the clock, knock on the door of your younger self and make a stern but convincing case against starting this entire nonsense in the first place. Oh hey, is someone at the door?",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 851]Candied atoms": {
+    "english": "You know what, just eat the suckers, yeah?",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 852]Lab goggles but like cool shades": {
+    "english": "Mandatory equipment in your prismatic labs, and dashingly stylish at that. A smidge safer than just squinting at the twinkly things.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 853]Gambler's fallacy fallacy": {
+    "english": "Yes, just because you've been on a losing streak doesn't mean the next one is bound to be the win you've been hoping for, but then again, it doesn't statistically have less of a chance either, does it now?",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 854]The more they stay the same": {
+    "english": "Exhausted by your fractals department and its obsession with self-similarity, you've decided to take a break and seek things in life entirely disconnected from any other; alas! You find the task impossible, for all things in this world relate to all others - in each cookie, the structure of the universe; in each person, their fellow man. Cor blimey, you can't even look at broccoli in peace.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 855]Simulation failsafes": {
+    "english": "Oh, for pete's sake, you bit into a cookie and it gave you a runtime error. You've been trapped in the old matrix gambit again! Time to shut everything down and prepare for extraction into what is hopefully the real layer of reality where learning kung-fu takes time and the biscuits don't throw memory overflow exceptions.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 856]The other routes to Rome": {
+    "english": "Did you know every idleverse follows its own path of sequential buildings, sometimes quite dissimilar to our own? Grandpas, wind turbines, through the power of music, friendship, or legislation; those folks in there discovered ways to make cookies out of any random venue. Some of them don't even have idleverses, can you imagine?",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 857]Intellectual property theft": {
+    "english": "Okay, you'll admit you're maybe starting to run out of new baking recipes. But what if... you were to pilfer your cortex bakers for ideas and disguise them as your own cookies? Delightfully devilish!",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 858]Reading your clones bedtime stories": {
+    "english": "I don't know, they seem to like it.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 859]Accelerated development": {
+    "english": "Your clones may grow a little faster than your vanilla human being, but it's still a little silly having to wait so many years for them to reach a usable age. A quick trip in your time machines takes care of that; it doesn't technically age them faster, they're just sent to another point in time for a while where they live out a formative youth.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 860]Peer review": {
+    "english": "Code is only as good as the number of eyes on it, so imagine how flawlessly your systems could operate if you had endless copies of yourself triple-checking everything! Just make sure to teach them proper indenting etiquette.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 861]Fortune #020": {
+    "english": "No matter how hard you try, you're never truly alone.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 862]Personal biscuit": {
+    "english": "Rewarded for owning 700 of everything.<br>This biscuit was designed and bred through the combined fields of baking and exploratory genomics, resulting in a perfect biscuit-shaped organism, sole exemplar of its own species; infused with a sapient mind and bootstrapped with a copy of your own consciousness, it slumbers immortally within its display case, dreaming idly about much the same things you do.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 863]Unshackled glimmeringue": {
+    "english": "Lightweight, digestible, and endlessly fragile, glimmeringue not only enjoys a privileged place in the \"spectacle cooking\" industry - it also shares most of its other properties with asbestos, save for thermal insulation.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 864]Unshackled You": {
+    "english": "Guess who?",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 865]Kitten strategists": {
+    "english": "out with the old in with the mew, sir",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 866]Baklavas": {
+    "english": "Layers of paper-thin dough and crushed pistachios, absolutely sticky with honey and all kinds of other good things; just what you need to conceal your identity during that bank heist.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 867]Snowball cookies": {
+    "english": "Melts in your mouth! Made with chopped nuts and heaps of icing sugar. Serve cold. Resist the urge to throw.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 868]Sequilhos": {
+    "english": "Buttery cornstarch-based cookies eaten in Brazil; the decorative grooves are from pressing down on them with the back of a fork, though in a pinch you may also just slash them with Wolverine-style wrist blades.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 869]Hazelnut swirlies": {
+    "english": "The cocoa content of the paste inside is unfortunately just slightly too low for these to legally qualify as chocolate cookies. Also the name of a particularly nasty bullying move.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 870]Spritz cookies": {
+    "english": "Squeezed through special cookie presses into all kinds of fun shapes. Enjoyed around the holidays in Germany, along other delicious treats such as boiled cabbage and potato salad.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 871]Mbatata cookies": {
+    "english": "Squishy cookies from Malawi. The core ingredient is sweet potatoes; the raisins and heart shape are optional, if you hate fun.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 872]Springerles": {
+    "english": "A springerle is an ancient anise-flavored biscuit from Central Europe, imprinted by a wooden mold with any kind of interesting design such as a commemorative scene, an intricate pattern or, ah, perhaps a little horsie.",
     "chinese": "[CN:MISSING]"
   }
 }

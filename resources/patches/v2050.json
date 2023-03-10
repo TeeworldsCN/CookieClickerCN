@@ -1,0 +1,107 @@
+{
+  "comment": "这里放有v2.050更新的新字符串（目前为beta版本）",
+  "Peach milk": {
+    "english": "Peach milk",
+    "chinese": "桃子牛奶"
+  },
+  "Hazelnut milk": {
+    "english": "Hazelnut milk",
+    "chinese": "榛果牛奶"
+  },
+  "Dragon Guts": {
+    "english": "Dragon Guts",
+    "chinese": "龙之脏器"
+  },
+  "You": {
+    "english": "You",
+    "chinese": "你"
+  },
+  "%1 You": {
+    "english": ["%1 You", "%1 You"],
+    "chinese": ["%1 个你", "%1 个你"]
+  },
+  "[You quote]You, alone, are the reason behind all these cookies. You figure if there were more of you... maybe you could make even more.": {
+    "english": "You, alone, are the reason behind all these cookies. You figure if there were more of you... maybe you could make even more.",
+    "chinese": "你——没错，单凭你一个人——就搞出了这么多饼干。于是你觉得，如果能有更多的你自己……或许就能做出更多的饼干。"
+  },
+  "[You business name]You": {
+    "english": "You",
+    "chinese": "你"
+  },
+  "[You business quote]Your business is as great as it's gonna get. The only real way to improve it anymore is to improve yourself - and become the best CEO this world has ever seen.": {
+    "english": "Your business is as great as it's gonna get. The only real way to improve it anymore is to improve yourself - and become the best CEO this world has ever seen.",
+    "chinese": "你的生意再好也不过如此了。唯一能让它更好的方法，就是努力提升自己——成为这个世界上最伟大的首席执行官。"
+  },
+  "Wrinklers digest <b>%1% more cookies</b>.": {
+    "english": "Wrinklers digest <b>%1% more cookies</b>.",
+    "chinese": "饼干虫消化的饼干增加 <b>%1%</b>。"
+  },
+  "You've already sent or redeemed a gift recently.": {
+    "english": "You've already sent or redeemed a gift recently.",
+    "chinese": "你最近已经赠送或兑换过礼物了。"
+  },
+  "Customize": {
+    "english": "Customize",
+    "chinese": "自定义"
+  },
+  "Customize your clones": {
+    "english": "Customize your clones",
+    "chinese": "装扮你的克隆体"
+  },
+  "Sprung from your very DNA. Shape them in your image!": {
+    "english": "Sprung from your very DNA. Shape them in your image!",
+    "chinese": "通过你的 DNA 涌现而出。将它们打造成你的身形！"
+  },
+  "Hair": {
+    "english": "Hair",
+    "chinese": "头发"
+  },
+  "Hair color": {
+    "english": "Hair color",
+    "chinese": "发色"
+  },
+  "Skin color": {
+    "english": "Skin color",
+    "chinese": "肤色"
+  },
+  "Head shape": {
+    "english": "Head shape",
+    "chinese": "头部"
+  },
+  "Face": {
+    "english": "Face",
+    "chinese": "面部"
+  },
+  "Extra": {
+    "english": "Extra",
+    "chinese": "配件"
+  },
+  "Click a <b>wrath cookie</b>.": {
+    "english": "Click a <b>wrath cookie</b>.",
+    "chinese": "点击 <b>1 块愤怒饼干</b>。"
+  },
+  "Trigger the grandmapocalypse for the first time.": {
+    "english": "Trigger the grandmapocalypse for the first time.",
+    "chinese": "首次触发老奶奶天启。"
+  },
+  "Poke a wrinkler <b>%1 times</b> without killing it ": {
+    "english": "Poke a wrinkler <b>%1 times</b> without killing it.",
+    "chinese": "在不戳破饼干虫的情况下点击其 <b>%1 下</b>。"
+  },
+  "Take out a loan and ascend before incurring the CpS penalty.": {
+    "english": "Take out a loan and ascend before incurring the CpS penalty.",
+    "chinese": "办理贷款，并在受到贷款惩罚之前飞升。"
+  },
+  "Shape your clones to resemble %1.": {
+    "english": "Shape your clones to resemble %1.",
+    "chinese": "将你的克隆体打造成%1的样子。"
+  },
+  "Clone": {
+    "english": "Clone",
+    "chinese": "克隆体"
+  },
+  "Unlock the final building.": {
+    "english": "Unlock the final building.",
+    "chinese": "解锁最后一座建筑。"
+  }
+}

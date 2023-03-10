@@ -825,6 +825,9 @@
   "Ticker (Kitten admins)": {
     "chinese": "“所有系统正常！”，各地的小猫管理员自信地报告。但是它们从上任以来只说过这一句话。"
   },
+  "Ticker (Kitten strategists)": {
+    "chinese": "工资爆表的小猫挠着毛茸茸的小脑袋，正在想方设法让饼干成为您购物车的常客！"
+  },
   "Ticker (Kitten angels)": {
     "chinese": "科学家警告称：居民必须尽量忽略任何在耳边发出咕噜咕噜声的幽灵猫科动物。“它们只会引诱你做出糟糕的人生决策。”"
   },
@@ -849,5 +852,86 @@
       "“在我们那个年代，糖块指的是往咖啡和茶里放的小方块，并不是现在这种人人拿来当午餐的拳头大小的玩意”，记忆力衰退的暴脾气老人说道。",
       "糖块零食风靡全国；各地的牙医行业蓬勃发展。"
     ]
+  },
+  "You feel like making cookies. But nobody wants to eat your cookies.": {
+    "chinese": "虽然你想做饼干，但没人想吃你做的饼干。"
+  },
+  "Your first batch goes to the trash. The neighborhood raccoon barely touches it.": {
+    "chinese": "你做的第一批饼干已经倒进了垃圾桶。就连附近捡食垃圾的狸子几乎都不愿意碰它们。"
+  },
+  "Your family accepts to try some of your cookies.": {
+    "chinese": "你的家人开始愿意尝一尝你做的饼干了。"
+  },
+  "Your cookies are popular in the neighborhood.": {
+    "chinese": "你做的饼干深受附近居民的青睐。"
+  },
+  "People are starting to talk about your cookies.": {
+    "chinese": "人们正在纷纷谈论你做的饼干。"
+  },
+  "Your cookies are talked about for miles around.": {
+    "chinese": "方圆数英里的居民都在谈论你做的饼干。"
+  },
+  "Your cookies are renowned in the whole town!": {
+    "chinese": "你做的饼干已闻名于整座市镇！"
+  },
+  "Your cookies bring all the boys to the yard.": {
+    "chinese": "你做的饼干引得万人空巷。"
+  },
+  "Your cookies now have their own website!": {
+    "chinese": "你做的饼干有了自己的网站！"
+  },
+  "Your cookies are worth a lot of money.": {
+    "chinese": "你做的饼干价值不菲。"
+  },
+  "Your cookies sell very well in distant countries.": {
+    "chinese": "你做的饼干在许多遥远的国家十分畅销。"
+  },
+  "People come from very far away to get a taste of your cookies.": {
+    "chinese": "人们纷纷远道而来，只为一尝你做的饼干。"
+  },
+  "Kings and queens from all over the world are enjoying your cookies.": {
+    "chinese": "世界各国的王后和国王纷至沓来，畅享你做的饼干。"
+  },
+  "There are now museums dedicated to your cookies.": {
+    "chinese": "现在已有专门收藏你的饼干的博物馆。"
+  },
+  "A national day has been created in honor of your cookies.": {
+    "chinese": "设立了一个全国性的节日，以此来向你做的饼干表示敬意。"
+  },
+  "Your cookies have been named a part of the world wonders.": {
+    "chinese": "你做的饼干已位列世界奇迹之一。"
+  },
+  "History books now include a whole chapter about your cookies.": {
+    "chinese": "历史书中用了一整章的内容来介绍你做的饼干。"
+  },
+  "Your cookies have been placed under government surveillance.": {
+    "chinese": "你做的饼干已受到政府监督。"
+  },
+  "The whole planet is enjoying your cookies!": {
+    "chinese": "你做的饼干深得世界各地民众的喜爱！"
+  },
+  "Strange creatures from neighboring planets wish to try your cookies.": {
+    "chinese": "来自邻近行星的奇怪生物想要尝一尝你做的饼干。"
+  },
+  "Elder gods from the whole cosmos have awoken to taste your cookies.": {
+    "chinese": "整个宇宙的旧神们纷纷苏醒，想品尝你做的饼干。"
+  },
+  "Beings from other dimensions lapse into existence just to get a taste of your cookies.": {
+    "chinese": "这个世界涌现出众多来自其他次元的生物，它们都只为一尝你做的饼干。"
+  },
+  "Your cookies have achieved sentience.": {
+    "chinese": "你的饼干开始有了自我意识。"
+  },
+  "The universe has now turned into cookie dough, to the molecular level.": {
+    "chinese": "就分子层面而言，宇宙现在已经变成了制作饼干的面团。"
+  },
+  "Your cookies are rewriting the fundamental laws of the universe.": {
+    "chinese": "你做的饼干正在改写宇宙的基本定律。"
+  },
+  "A Lal news station runs a 10-minute segment about your cookies. Success!<br><small>(you win a cookie)</small>": {
+    "chinese": "一家本地新闻台对你做的饼干进行了10分钟的报道。收效卓著！<br><small>（你赢得一块饼干）</small>"
+  },
+  "it's time to stop playing": {
+    "chinese": "是时候停一停了"
   }
 }

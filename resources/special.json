@@ -1,5 +1,12 @@
 [
   {
+    "id": 639,
+    "name": "Cookie Clicker",
+    "desc": "Unlock the final building.",
+    "type": "Achievement",
+    "descFunc": true
+  },
+  {
     "id": 74,
     "name": "Elder Pledge",
     "desc": "Contains the wrath of the elders, at least for a while.<q>This is a simple ritual involving anti-aging cream, cookie batter mixed in the moonlight, and a live chicken.</q>",

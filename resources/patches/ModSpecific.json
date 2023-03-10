@@ -1,0 +1,217 @@
+{
+  "comment": "此处放有魔改需要的文本",
+  "[CCCN]COOKIES": {
+    "chinese": "块饼干"
+  },
+  "[CCCN]ACTION clicked": {
+    "chinese": "到目前为止点击了 %1 次饼干"
+  },
+  "[CCCN]ACTION baked": {
+    "chinese": "到目前为止烘焙了 %1 块饼干"
+  },
+  "[CCCN]ACTION harvested": {
+    "chinese": "到目前为止收获了 %1 块饼干"
+  },
+  "[CCCN]ACTION mined": {
+    "chinese": "到目前为止开采出了 %1 块饼干"
+  },
+  "[CCCN]ACTION mass-produced": {
+    "chinese": "到目前为止量产了 %1 块饼干"
+  },
+  "[CCCN]ACTION banked": {
+    "chinese": "到目前为止投资获得了 %1 块饼干"
+  },
+  "[CCCN]ACTION discovered": {
+    "chinese": "到目前为止发现了 %1 块饼干"
+  },
+  "[CCCN]ACTION summoned": {
+    "chinese": "到目前为止召唤了 %1 块饼干"
+  },
+  "[CCCN]ACTION shipped": {
+    "chinese": "到目前为止运输了 %1 块饼干"
+  },
+  "[CCCN]ACTION transmuted": {
+    "chinese": "到目前为止冶炼出了 %1 块饼干"
+  },
+  "[CCCN]ACTION retrieved": {
+    "chinese": "到目前为止获取了 %1 块饼干"
+  },
+  "[CCCN]ACTION recovered": {
+    "chinese": "到目前为止回收了 %1 块饼干"
+  },
+  "[CCCN]ACTION condensed": {
+    "chinese": "到目前为止聚合了 %1 块饼干"
+  },
+  "[CCCN]ACTION converted": {
+    "chinese": "到目前为止转化出了 %1 块饼干"
+  },
+  "[CCCN]ACTION spontaneously generated": {
+    "chinese": "到目前为止随机出现了 %1 块饼干"
+  },
+  "[CCCN]ACTION made from cookies": {
+    "chinese": "到目前为止有 %1 块饼干双倍分形了"
+  },
+  "[CCCN]ACTION programmed": {
+    "chinese": "到目前为止计算出了 %1 块饼干"
+  },
+  "[CCCN]ACTION hijacked": {
+    "chinese": "到目前为止劫持了 %1 块饼干"
+  },
+  "[CCCN]ACTION imagined": {
+    "chinese": "到目前为止想象出了 %1 块饼干"
+  },
+  "[CCCN]ACTION cloned": {
+    "chinese": "到目前为止克隆出了 %1 块饼干"
+  },
+  "[CCCN]EXTRANAME [X] extra finger": {
+    "chinese": "%1 只额外手指为你"
+  },
+  "[CCCN]EXTRANAME Grandmas are [X] year older": {
+    "chinese": "奶奶们又老了 %1 岁，她们的经验为你"
+  },
+  "[CCCN]EXTRANAME [X] more acre": {
+    "chinese": "%1 英亩的扩充地为你"
+  },
+  "[CCCN]EXTRANAME [X] mile deeper": {
+    "chinese": "所有矿坑都加深了 %1 英里，为你"
+  },
+  "[CCCN]EXTRANAME [X] additional patent": {
+    "chinese": "%1 项新专利为你"
+  },
+  "[CCCN]EXTRANAME Interest rates [X]% better": {
+    "chinese": "银行的利率提高了 %1%，为你"
+  },
+  "[CCCN]EXTRANAME [X] sacred artifact retrieved": {
+    "chinese": "发现了 %1 处神圣的遗迹，为你"
+  },
+  "[CCCN]EXTRANAME Incantations have [X] more syllable": {
+    "chinese": "每个咒语都添加了 %1 个新音节，为你"
+  },
+  "[CCCN]EXTRANAME [X] galaxy fully explored": {
+    "chinese": "完全探索了 %1 个银河，为你"
+  },
+  "[CCCN]EXTRANAME [X] primordial element mastered": {
+    "chinese": "掌握了 %1 个基原元素，为你"
+  },
+  "[CCCN]EXTRANAME [X] dimension enslaved": {
+    "chinese": "统治了 %1 个超元维度，为你"
+  },
+  "[CCCN]EXTRANAME [X] century secured": {
+    "chinese": "收复了 %1 个世纪，为你"
+  },
+  "[CCCN]EXTRANAME [X] extra quark flavor": {
+    "chinese": "有 %1 种新的夸克风味为你"
+  },
+  "[CCCN]EXTRANAME [X] new color discovered": {
+    "chinese": "发现了 %1 种新的颜色，为你"
+  },
+  "[CCCN]EXTRANAME Chancemakers are powered by [X]-leaf clovers": {
+    "chinese": "机会制造机由%1叶幸运草驱动，为你"
+  },
+  "[CCCN]EXTRANAME [X] iteration deep": {
+    "chinese": "经过 %1 层迭代，你"
+  },
+  "[CCCN]EXTRANAME Equipped with [X] external library": {
+    "chinese": "接入了 %1 个第三方库，为你"
+  },
+  "[CCCN]EXTRANAME [X] manifold": {
+    "chinese": "%1 个宇宙合集为你"
+  },
+  "[CCCN]EXTRANAME [X] extra IQ point": {
+    "chinese": "%1 点额外的IQ点数，为你"
+  },
+  "[CCCN]EXTRANAME [X] optimized gene": {
+    "chinese": "%1 条优化的基因序列，为你"
+  },
+  "[CCCN]PURCHASE": {
+    "chinese": "购买"
+  },
+  "[CCCN]PURRCHASE": {
+    "chinese": "收养"
+  },
+  "[CCCN]INFINITY": {
+    "chinese": "无限"
+  },
+  "[CCCN]SETTING_TITLE": {
+    "chinese": "中文模组设置"
+  },
+  "[CCCN]SETTING_CNUNIT": {
+    "chinese": "使用中文计数单位"
+  },
+  "[CCCN]SETTING_CNUNIT_LABEL": {
+    "chinese": "按住<b>Z键</b>可临时显示完整数字"
+  },
+  "[CCCN]SETTING_CNUNITFULL": {
+    "chinese": "中文读写模式"
+  },
+  "[CCCN]SETTING_CNUNITFULL_LABEL": {
+    "chinese": "开启后数字将组成可以朗读出来的中文数字格式"
+  },
+  "[CCCN]SETTING_CNUNITFULLSEGS": {
+    "chinese": "单位组数"
+  },
+  "[CCCN]SETTING_CNUNITFULLSEGS_RIGHT": {
+    "chinese": "[$]组"
+  },
+  "[CCCN]SETTING_DECIMAL": {
+    "chinese": "中文单位前保留"
+  },
+  "[CCCN]SETTING_DECIMAL_RIGHT": {
+    "chinese": "小数点后[$]位"
+  },
+  "[CCCN]SETTING_MIN_UNIT": {
+    "chinese": "最小计数单位"
+  },
+  "[CCCN]SETTING_TRILLION": {
+    "chinese": "启用“兆”单位"
+  },
+  "[CCCN]SETTING_TRILLION_LABEL": {
+    "chinese": "启用后 <b>1万亿</b> 将显示为 <b>1兆</b>"
+  },
+  "[CCCN]SETTING_SCIENTIFIC": {
+    "chinese": "使用科学计数法"
+  },
+  "[CCCN]SETTING_SCIENTIFIC_LABEL": {
+    "chinese": "替换完整数字为优化版的科学计数法，禁用后使用原版数字显示"
+  },
+  "[CCCN]SETTING_SCILEN": {
+    "chinese": "数字长度"
+  },
+  "[CCCN]SETTING_SCILEN_LABEL": {
+    "chinese": "可以调整数字显示的长度，普通数字和科学计数法均会被影响"
+  },
+  "[CCCN]SETTING_FIXLEN": {
+    "chinese": "固定小数位数"
+  },
+  "[CCCN]SETTING_FIXLEN_LABEL": {
+    "chinese": "启用后中文单位前的小数不会省略末尾的0。"
+  },
+  "[CCCN]SETTING_SCILEN_VALUES": {
+    "chinese": ["完整", "长", "中", "短"]
+  },
+  "[CCCN]BUILDING_ACTION_REGEX": {
+    "chinese": "到目前为止生产出 <b>(.*) 块饼干<\\/b>"
+  },
+  "[CCCN]BUILDING_EXTRANAME_REGEX": {
+    "chinese": "获得<b>"
+  },
+  "[CCCN]A639": {
+    "chinese": {
+      "func": "`全员登场！<div id='parade' style='position:absolute;left:-11px;right:-11px;height:32px;background:url(img/parade.png) -${Game.T}px ${(Game.T%20<10?0:32)}px;'></div><div style='margin-bottom:32px;'></div>你是不是也要来点饼干呢？`"
+    }
+  },
+  "[CCCN]U531": {
+    "chinese": "“从前有座山，山上有座庙，%1在庙里开了一家烘焙坊。一天，烘焙坊的门口传来了敲门声。%1打开了门，抬头看到了一位散发着邪恶气息的老奶奶。老奶奶微微张口，用虚弱而诡异的声音，开始讲述她记忆中的小故事："
+  },
+  "[CCCN]U534A": {
+    "chinese": "可靠的小家伙鼠不胜鼠！"
+  },
+  "[CCCN]U534B": {
+    "chinese": "可靠的小家伙数不胜数！"
+  },
+  "[CCCN]U606": {
+    "chinese": {
+      "func": "`就像量子计算一样，但是更有趣<br>(你买了注彩票，彩票号码为 %1，彩票中的奖品是${choose([` ${Math.floor(Math.random()*5+2)} 行 Javascript 代码`,'一次 Math.random() 的免费使用权','一量子位，然而并不知道那是什么玩意','一块被啃了一半的饼干','一台全新的吸尘器','大半杯敞口放了一天的橙子味汽水','一个很好吃的三明治','一大把口袋里的碎毛','某人基本干净的假发','免费去高档餐厅参观的机会',`一张写着 %1 的纸`,'一次抬头偷看滚动新闻的机会','一张半价彩票的优惠券','一张自助发霉面包的餐券','永远用不完的空气',`一套${choose(['红色','橙色','黄色','绿色','蓝色','紫色','黑色','白色','灰色','棕色','粉色','青色',])}便签纸`,'一次暂时提升自己智商的机会','一把古老的符文剑','遥远国度的宝座','黑手党头目的职位，祝你好运','一周末的时间旅行实验参与机会','一个挺好看的小玩意','与一个油井的契约','一个用你自选的动物，植物和朋友做成的汉堡',`世界上最后一只${choose(['渡渡鸟', '袋狼', '独角兽', '恐龙', '熊猫'])}的抚养权`,'满满的成就感','稍纵即逝的沾沾自喜的感觉','一种隐约的不安感','深沉的存在恐惧','延长你一周的寿命','从现在开始你会有意识地自己呼吸','现在可以眨眼一次','和一位名人见面的机会，活人死人都可以。请在你今晚的梦里领奖。','一场很温馨的梦','一个搞怪的音效','45秒不受法律约束的时间','一个没有结局的游戏','一个圆形，三角形，正方形或其他简单的几何形状','这条随机出现的消息','改变人生的动力','无限的恐惧','一个秘密的超能力','下次在下次彩票开奖时中奖的机会','完全不合理的彩票恐惧症','一大只蜘蛛','增强你的自我价值感和决心','内心的平静','一张你喜欢的网游的两天双倍经验卡','一小块宇宙，包含了你手上这张彩票的所有原子','食物中毒','天上的月亮！是的，月亮现在属于你了，虽然你自己碰不到它','一辆新车呦','一个新的口头禅','你想要的胡思乱想','……什么鬼？刮开的区域里什么都没写','最新电影的导演职位','一只很好看的小牛','一枚真正的海盗金达布隆','“财宝”什么的','一艘船，不过它现在在海底的某处','全新的二手婴儿鞋','某个国王或王后的直系血统','掌握一门已经失传的语言的能力','一首你不知道歌词的歌曲的旋律','持续的白噪声','轻度残疾','新的嘴唇','一个东西','一条带有你名字的流行语','一个错字','一张出狱卡','你的余生……','一次礼貌的怒吼','被人居高临下地凝视一分钟','一只被诅咒的猴爪','真爱，大概','一条可以自选的动物、国家、电视节目或名人的有趣事实','一条流行网梗','几分钟的乐趣','空气。其实你没中奖，抱歉',])}。)`"
+    }
+  }
+}

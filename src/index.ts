@@ -9,6 +9,12 @@ const BUILD_PATH = path.join(__dirname, '../build/CookieClickerCNMod');
 const INFO_PATH = path.join(__dirname, '../build');
 fs.mkdirSync(BUILD_PATH, { recursive: true });
 
+const ignored = new Set(
+  JSON.parse(
+    fs.readFileSync(path.resolve(__dirname, '../resources/ignored.json'), { encoding: 'utf-8' })
+  )
+);
+
 const original = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, '../resources/original.json'), { encoding: 'utf-8' })
 );
@@ -208,7 +214,12 @@ const replaceAllForCHT = (str: string | (string | { func: string })[] | { func: 
 for (var key in original) {
   if (original[key].tradchn) continue; // skip specifically patched entries
   if (original[key].chinese == '[CN:MISSING]') {
-    original[key].tradchn = '[CN:MISSING]';
+    if (ignored.has(key)) {
+      original[key].chinese = '[CN:IGNORED]';
+      original[key].tradchn = '[TC:IGNORED]';
+    } else {
+      original[key].tradchn = '[TC:MISSING]';
+    }
   } else {
     if (Array.isArray(original[key].chinese)) {
       original[key].tradchn = (original[key].chinese as any[]).map((s, i) => {
@@ -231,7 +242,7 @@ for (var key in original) {
     } else {
       if (typeof original[key].chinese?.func == 'string') {
         if (
-          typeof lastVersion[key].chinese?.func == 'string' &&
+          typeof lastVersion[key]?.chinese?.func == 'string' &&
           lastVersion[key].chinese?.func == original[key].chinese?.func
         ) {
           original[key].tradchn = lastVersion[key].tradchn;
@@ -261,7 +272,7 @@ for (let key in original) {
     console.error(`duplicate key: "${key}"`);
     process.exit(1);
   }
-  if (original[key].tradchn != '[CN:MISSING]') {
+  if (original[key].tradchn != '[TC:MISSING]' && original[key].tradchn != '[TC:IGNORED]') {
     langT[key] = replaceAllForCHT(original[key].tradchn);
     original[key].tradchn = langT[key];
   }

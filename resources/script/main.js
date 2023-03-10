@@ -18,7 +18,7 @@ var __TWCNL = {};
 
     // 尾记中文单位
     FormatterCN: (val, floats) => {
-      if (!isFinite(val)) return __TWCNL.STR_INFINITY;
+      if (!isFinite(val)) return loc('[CCCN]INFINITY');
       let unit = '';
       if (val >= 1e4) {
         for (const u of __TWCNL.CN_UNITS) {
@@ -57,7 +57,7 @@ var __TWCNL = {};
 
     // 叠记中文单位
     FormatterCNFull: val => {
-      if (!isFinite(val)) return __TWCNL.STR_INFINITY;
+      if (!isFinite(val)) return loc('[CCCN]INFINITY');
 
       const minUnit = Math.min(Game.prefs.numbercnminunit, 3);
       const minValue = Math.pow(10, minUnit + 1);
@@ -539,7 +539,7 @@ var __TWCNL = {};
   // 魔改一个带特效的分形引擎引文
   const ModUpgrade531 = MOD => {
     Game.UpgradesById[531].descFunc = function () {
-      var str = __TWCNL.STR_531.replace(/\[X\]/g, Game.bakeryName);
+      var str = loc('[CCCN]U531', Game.bakeryName);
       var i = Math.floor(Game.T * 0.1) % 100;
       var offset = 'transform:translate3d(-' + i + '%, 5px, 0);';
       return (
@@ -565,10 +565,10 @@ var __TWCNL = {};
       Math.seedrandom(Game.seed + '-blasphemouse');
       if (Math.random() < 0.3) {
         Math.seedrandom();
-        return this.baseDesc + __TWCNL.STR_534_A;
+        return `${this.baseDesc}<q>${loc('[CCCN]U534A')}</q>`;
       } else {
         Math.seedrandom();
-        return this.baseDesc + __TWCNL.STR_534_B;
+        return `${this.baseDesc}<q>${loc('[CCCN]U534B')}</q>`;
       }
     };
   };
@@ -603,10 +603,29 @@ var __TWCNL = {};
       }
 
       const code = shuffle(red).slice(0, 6).join(' ') + '-' + shuffle(blue)[0];
-      const str = __TWCNL.STR_606_FUNC(code);
+      const str = loc('[CCCN]U606', code);
 
       Math.seedrandom();
-      return this.baseDesc + '<q>' + __TWCNL.STR_606 + '<br>' + str + '</q>';
+      return `${this.baseDesc}<q>${str}</q>`;
+    };
+  };
+
+  // 魔改最后一座建筑成就的引文
+  const ModAchievement639 = MOD => {
+    Game.AchievementsById[639].descFunc = function () {
+      if (!Game.specialAnimLoop) {
+        Game.specialAnimLoop = setInterval(function () {
+          var el = l('parade');
+          if (!el || !Game.tooltip.on) {
+            clearInterval(Game.specialAnimLoop);
+            Game.specialAnimLoop = 0;
+            return false;
+          }
+          var x = Game.T;
+          el.style.backgroundPosition = '-' + x + 'px ' + (Game.T % 20 < 10 ? 0 : 32) + 'px';
+        }, 100);
+      }
+      return `${this.baseDesc}<q>${loc('[CCCN]A639')}</q>`;
     };
   };
 
@@ -696,7 +715,7 @@ var __TWCNL = {};
       let result = oldCrateTooltip(me, context);
 
       // 小猫购买提示魔改
-      if (me.kitten) result = result.replace(__TWCNL.STR_PURCHASE, __TWCNL.STR_PURRCHASE);
+      if (me.kitten) result = result.replace(loc('[CCCN]PURCHASE'), loc('[CCCN]PURRCHASE'));
 
       // 饼干原名显示功能
       if (me.pool === 'cookie') {
@@ -736,10 +755,11 @@ var __TWCNL = {};
       const oldTooltip = Game.Objects[i].tooltip;
       Game.Objects[i].tooltip = function () {
         let result = oldTooltip.bind(this)();
-        if (this.actionName && __TWCNL.CN_BUILDING_ACTION[this.actionName]) {
-          result = result.replace(__TWCNL.STR_BUILDING_ACTION_REGEX, (_, num) =>
-            __TWCNL.CN_BUILDING_ACTION[this.actionName].replace('[X]', `<b>${num}</b>`)
-          );
+        if (this.actionName) {
+          result = result.replace(new RegExp(loc('[CCCN]BUILDING_ACTION_REGEX')), (og, num) => {
+            const localized = loc(`[CCCN]ACTION ${this.actionName}`, `<b>${num}</b>`, 'NF');
+            return localized === 'NF' ? og : localized;
+          });
         }
         return result;
       };
@@ -752,16 +772,16 @@ var __TWCNL = {};
       const oldLevelTooltip = Game.Objects[i].levelTooltip;
       Game.Objects[i].levelTooltip = function () {
         let result = oldLevelTooltip.bind(this)();
-        if (this.extraName && __TWCNL.CN_BUILDING_EXTRANAME[this.extraName]) {
+        if (this.extraName) {
           if (this.level) {
-            result = result.replace(
-              __TWCNL.STR_BUILDING_EXTRANAME_REGEX,
-              og =>
-                __TWCNL.CN_BUILDING_EXTRANAME[this.extraName].replace(
-                  '[X]',
-                  this.level.toString()
-                ) + og
-            );
+            result = result.replace(new RegExp(loc('[CCCN]BUILDING_EXTRANAME_REGEX')), og => {
+              const localized = loc(
+                `[CCCN]EXTRANAME ${this.extraName}`,
+                this.level.toString(),
+                'NF'
+              );
+              return localized === 'NF' ? og : `${localized}${og}`;
+            });
           }
         }
         return result;
@@ -770,7 +790,7 @@ var __TWCNL = {};
   };
 
   // 重写 Tickers 逻辑 (用于支持非英文屏蔽掉的 Tickers)
-  const ModTickers = MOD => {
+  const ModTickers2048 = MOD => {
     Game.getNewTicker = manual => {
       const list = [];
 
@@ -1014,12 +1034,379 @@ var __TWCNL = {};
           } else if (!EARNED(10000000000000)) {
             PUSH(
               L(
-                'A Lal news station runs a 10-minute segment about your cookies. Success!<br><span style="font-size:50%;">(you win a cookie)</span>'
+                'A Lal news station runs a 10-minute segment about your cookies. Success!<br><small>(you win a cookie)</small>'
               )
             );
           } else if (!EARNED(10100000000000)) {
             PUSH(L("it's time to stop playing"));
           }
+        }
+      }
+
+      for (var i = 0; i < Game.modHooks['ticker'].length; i++) {
+        var arr = Game.modHooks['ticker'][i]();
+        if (arr) list = list.concat(arr);
+      }
+
+      Game.TickerEffect = 0;
+
+      // 幸运新闻
+      if (
+        !manual &&
+        Game.T > Game.fps * 10 &&
+        Game.Has('Fortune cookies') &&
+        Math.random() < (Game.HasAchiev('O Fortuna') ? 0.04 : 0.02)
+      ) {
+        var fortunes = [];
+        for (var i in Game.Tiers['fortune'].upgrades) {
+          var it = Game.Tiers['fortune'].upgrades[i];
+          if (!Game.HasUnlocked(it.name)) fortunes.push(it);
+        }
+
+        if (!Game.fortuneGC) fortunes.push('fortuneGC');
+        if (!Game.fortuneCPS) fortunes.push('fortuneCPS');
+
+        if (fortunes.length > 0) {
+          CLEAR();
+          var me = C(fortunes);
+          Game.TickerEffect = { type: 'fortune', sub: me };
+
+          if (me == 'fortuneGC')
+            me = L('Today is your lucky day!'); /*<br>Click here for a golden cookie.';*/
+          else if (me == 'fortuneCPS') {
+            Math.seedrandom(Game.seed + '-fortune');
+            me =
+              L('Your lucky numbers are:') +
+              ' ' +
+              Math.floor(Math.random() * 100) +
+              ' ' +
+              Math.floor(Math.random() * 100) +
+              ' ' +
+              Math.floor(Math.random() * 100) +
+              ' ' +
+              Math.floor(Math.random() * 100) /*+'<br>Click here to gain one hour of your CpS.'*/;
+            Math.seedrandom();
+          } else {
+            const qIndex = me.ddesc.indexOf('<q>');
+            if (qIndex >= 0) {
+              // 若有风味文本则使用风味文本
+              me = me.dname + ' : ' + me.ddesc.substring(qIndex + 3, me.ddesc.length - 4);
+            } else if (me.buildingTie) {
+              // 若没有风味文本则使用固定文本
+              me =
+                me.dname +
+                ' : ' +
+                L(
+                  C([
+                    'Never forget your %1.',
+                    'Pay close attention to the humble %1.',
+                    "You've been neglecting your %1.",
+                    'Remember to visit your %1 sometimes.',
+                  ]),
+                  me.buildingTie.single
+                );
+            } else {
+              // Edge case
+              me =
+                me.dname +
+                ' : ' +
+                L(
+                  C([
+                    "You don't know what you have until you've lost it.",
+                    'Remember to take breaks.',
+                    "Hey, what's up. I'm a fortune cookie.",
+                    'You think you have it bad? Look at me.',
+                  ])
+                );
+            }
+          }
+          me =
+            '<span class="fortune"><div class="icon" style="vertical-align:middle;display:inline-bLk;background-position:' +
+            -29 * 48 +
+            'px ' +
+            -8 * 48 +
+            'px;transform:scale(0.5);margin:-16px;position:relative;left:-4px;top:-2px;"></div>' +
+            me +
+            '</span>';
+          CLEAR();
+          PUSH(me);
+        }
+      }
+
+      if (Game.windowW < Game.tickerTooNarrow) {
+        CLEAR();
+        PUSH('<div style="transform:scale(0.8,1.2);">' + NEWS(loc('help me!')) + '</div>');
+      }
+
+      Game.TickerAge = Game.fps * 10;
+      Game.Ticker = choose(list);
+      Game.AddToLog(Game.Ticker);
+      Game.TickerN++;
+      Game.TickerDraw();
+    };
+  };
+
+  const ModTickers2050 = MOD => {
+    Game.getNewTicker = manual => {
+      var loreProgress = Math.round((Math.log(Game.cookiesEarned / 10) * Math.LOG10E + 1) | 0);
+
+      const list = [];
+
+      const PUSH = str => str && list.push(str);
+      const CONCAT = str => list.push(...str.filter(() => !!str));
+      const CLEAR = () => list.splice(0, list.length);
+      const SCARY = !Game.prefs.notScary;
+      const NEWS_PREFIX = loc('News :').replace(' ', '&nbsp;') + ' ';
+      const NEWS = content => content && `${NEWS_PREFIX}${content}`;
+      const GRANDMA = says => `<q>${says}</q><sig>${Game.Objects['Grandma'].single}</sig>`;
+      const BUILT = (name, num = 1) => Game.Objects[name].amount >= num;
+      const ACHIEVED = name => Game.HasAchiev(name);
+      const UPGRADED = name => Game.Has(name);
+      const CHANCE = percentage => Math.random() < percentage / 100;
+      const EARNED = amount => Game.cookiesEarned >= amount;
+      const LORE = amount => loreProgress > amount;
+      const SEASON = name => Game.season == name.toLowerCase();
+      // const PLEDGES = amount => Game.pledges >= amount;
+      const PLEDGED = Game.pledges > 0;
+      const WRATH = Game.elderWrath != 0;
+      const RESET = Game.resets != 0;
+
+      const L = key => {
+        if (key in locStrings) return loc(key);
+        return null;
+      };
+
+      const C = arr => {
+        if (arr && Array.isArray(arr)) return choose(arr);
+        return null;
+      };
+
+      const PUSH_WITH = (cond, name, news = true) => {
+        if (cond(name)) {
+          const localized = L(`Ticker (${name})`);
+          if (!localized) return;
+          if (Array.isArray(localized)) {
+            list.push(news ? NEWS(C(localized)) : C(localized));
+          } else {
+            list.push(news ? NEWS(localized) : localized);
+          }
+        }
+      };
+
+      if (SEASON('Fools')) {
+        // 愚人新闻
+        // TODO: 更新2050的愚人新闻
+        if (EARNED(1000)) PUSH(C(L('Ticker (fools)')));
+        if (EARNED(1000) && CHANCE(5)) PUSH(C(L('Ticker (fools rare)')));
+
+        if (Game.TickerN % 2 == 0) {
+          // 建筑新闻
+          for (var obj in Game.Objects) {
+            if (obj != 'Cursor' && obj != 'Grandma' && BUILT(obj))
+              PUSH(NEWS(C(L(`Ticker (fools ${obj})`))));
+          }
+        }
+
+        if (!LORE(0)) {
+          PUSH(L('Such a grand day to begin a new business.'));
+        } else if (!LORE(1)) {
+          PUSH(L("You're baking up a storm!"));
+        } else if (!LORE(2)) {
+          PUSH(
+            L(
+              'You are confident that one day, your cookie company will be the greatest on the market!'
+            )
+          );
+        } else if (!LORE(3)) {
+          PUSH(L('Business is picking up!'));
+        } else if (!LORE(4)) {
+          PUSH(L("You're making sales left and right!"));
+        } else if (!LORE(5)) {
+          PUSH(L('Everyone wants to buy your cookies!'));
+        } else if (!LORE(6)) {
+          PUSH(L('You are now spending most of your day signing contracts!'));
+        } else if (!LORE(7)) {
+          PUSH(L('You\'ve been elected "business tycoon of the year"!'));
+        } else if (!LORE(8)) {
+          PUSH(L('Your cookies are a worldwide sensation! Well done, old chap!'));
+        } else if (!LORE(9)) {
+          PUSH(
+            L(
+              'Your brand has made its way into popular culture. Children recite your slogans and adults reminisce them fondly!'
+            )
+          );
+        } else if (!LORE(10)) {
+          PUSH(L("A business day like any other. It's good to be at the top!"));
+        } else if (!LORE(11)) {
+          PUSH(
+            L(
+              "You look back at your career. It's been a fascinating journey, building your baking empire from the ground up."
+            )
+          );
+        }
+      } else if (WRATH && ((PLEDGED && !RESET && CHANCE(30)) || CHANCE(3))) {
+        // 天启新闻
+        if (Game.elderWrath == 1) PUSH(NEWS(C(L('Ticker (grandma invasion start)'))));
+        if (Game.elderWrath == 2) PUSH(NEWS(C(L('Ticker (grandma invasion rise)'))));
+        if (Game.elderWrath == 3) PUSH(NEWS(C(L('Ticker (grandma invasion full)'))));
+      } else {
+        // 正常新闻
+        if (Game.TickerN % 2 == 0 || LORE(14)) {
+          if (CHANCE(75) || !EARNED(10000)) {
+            // 老奶奶新闻
+            if (BUILT('Grandma')) {
+              PUSH(GRANDMA(C(L('Ticker (grandma)'))));
+            }
+
+            if (SCARY && BUILT('Grandma', 50)) {
+              PUSH(GRANDMA(C(L('Ticker (threatening grandma)'))));
+            }
+
+            if (SCARY && ACHIEVED('Just wrong') && CHANCE(40)) {
+              PUSH(GRANDMA(C(L('Ticker (angry grandma)'))));
+            }
+
+            if (SCARY && BUILT('Grandma') && PLEDGED && !WRATH) {
+              PUSH(GRANDMA(C(L('Ticker (grandmas return)'))));
+            }
+
+            // 建筑新闻
+            for (var obj in Game.Objects) {
+              if (obj != 'Cursor' && obj != 'Grandma' && BUILT(obj))
+                PUSH(NEWS(C(L(`Ticker (${obj})`))));
+            }
+
+            // 季节新闻
+            if (EARNED(1000)) {
+              PUSH_WITH(SEASON, 'Halloween');
+              PUSH_WITH(SEASON, 'Christmas');
+              PUSH_WITH(SEASON, 'Valentines');
+              PUSH_WITH(SEASON, 'Easter');
+            }
+          }
+
+          // 升级与成就新闻（补充）
+          if (CHANCE(5)) {
+            PUSH_WITH(ACHIEVED, 'Base 10');
+            PUSH_WITH(ACHIEVED, 'From scratch');
+            PUSH_WITH(ACHIEVED, 'A world filled with cookies');
+            PUSH_WITH(ACHIEVED, 'Last Chance to See');
+            PUSH_WITH(UPGRADED, 'Serendipity');
+            PUSH_WITH(UPGRADED, 'Season switcher');
+            PUSH_WITH(UPGRADED, 'Kitten helpers');
+            PUSH_WITH(UPGRADED, 'Kitten workers');
+            PUSH_WITH(UPGRADED, 'Kitten engineers');
+            PUSH_WITH(UPGRADED, 'Kitten overseers');
+            PUSH_WITH(UPGRADED, 'Kitten managers');
+            PUSH_WITH(UPGRADED, 'Kitten accountants');
+            PUSH_WITH(UPGRADED, 'Kitten specialists');
+            PUSH_WITH(UPGRADED, 'Kitten experts');
+            PUSH_WITH(UPGRADED, 'Kitten consultants');
+            PUSH_WITH(UPGRADED, 'Kitten assistants to the regional manager');
+            PUSH_WITH(UPGRADED, 'Kitten marketeers');
+            PUSH_WITH(UPGRADED, 'Kitten analysts');
+            PUSH_WITH(UPGRADED, 'Kitten executives');
+            PUSH_WITH(UPGRADED, 'Kitten admins');
+            PUSH_WITH(UPGRADED, 'Kitten strategists');
+            PUSH_WITH(UPGRADED, 'Kitten angels');
+            PUSH_WITH(UPGRADED, 'Kitten wages');
+            PUSH_WITH(ACHIEVED, 'Jellicles');
+          }
+
+          // 糖块新闻
+          if (CHANCE(20)) {
+            PUSH_WITH(ACHIEVED, 'Dude, sweet');
+          }
+
+          // 稀有新闻
+          if (CHANCE(0.1)) {
+            CONCAT(L('Ticker (misc rare)'));
+          }
+
+          // 杂项新闻
+          if (EARNED(10000)) {
+            PUSH(NEWS(C(L('Ticker (misc extended 1)'))));
+            PUSH(NEWS(C(L('Ticker (misc extended 2)'))));
+            PUSH(NEWS(C(L('Ticker (misc extended 3)'))));
+            PUSH(NEWS(C(L('Ticker (misc extended 4)'))));
+            PUSH(NEWS(C(L('Ticker (misc extended 5)'))));
+            PUSH(NEWS(C(L('Ticker (misc extended 6)'))));
+          }
+        }
+
+        // 孤独新闻
+        if (list.length == 0) {
+          if (!LORE(0))
+            CONCAT([L('You feel like making cookies. But nobody wants to eat your cookies.')]);
+          else if (!LORE(1))
+            CONCAT([
+              L('Your first batch goes to the trash. The neighborhood raccoon barely touches it.'),
+            ]);
+          else if (!LORE(2)) CONCAT([L('Your family accepts to try some of your cookies.')]);
+          else if (!LORE(3))
+            CONCAT([
+              L('Your cookies are popular in the neighborhood.'),
+              L('People are starting to talk about your cookies.'),
+            ]);
+          else if (!LORE(4))
+            CONCAT([
+              L('Your cookies are talked about for miles around.'),
+              L('Your cookies are renowned in the whole town!'),
+            ]);
+          else if (!LORE(5))
+            CONCAT([
+              L('Your cookies bring all the boys to the yard.'),
+              L('Your cookies now have their own website!'),
+            ]);
+          else if (!LORE(6))
+            CONCAT([
+              L('Your cookies are worth a lot of money.'),
+              L('Your cookies sell very well in distant countries.'),
+            ]);
+          else if (!LORE(7))
+            CONCAT([
+              L('People come from very far away to get a taste of your cookies.'),
+              L('Kings and queens from all over the world are enjoying your cookies.'),
+            ]);
+          else if (!LORE(8))
+            CONCAT([
+              L('There are now museums dedicated to your cookies.'),
+              L('A national day has been created in honor of your cookies.'),
+            ]);
+          else if (!LORE(9))
+            CONCAT([
+              L('Your cookies have been named a part of the world wonders.'),
+              L('History books now include a whole chapter about your cookies.'),
+            ]);
+          else if (!LORE(10))
+            CONCAT([
+              L('Your cookies have been placed under government surveillance.'),
+              L('The whole planet is enjoying your cookies!'),
+            ]);
+          else if (!LORE(11))
+            CONCAT([
+              L('Strange creatures from neighboring planets wish to try your cookies.'),
+              L('Elder gods from the whole cosmos have awoken to taste your cookies.'),
+            ]);
+          else if (!LORE(12))
+            CONCAT([
+              L(
+                'Beings from other dimensions lapse into existence just to get a taste of your cookies.'
+              ),
+              L('Your cookies have achieved sentience.'),
+            ]);
+          else if (!LORE(13))
+            CONCAT([
+              L('The universe has now turned into cookie dough, to the molecular level.'),
+              L('Your cookies are rewriting the fundamental laws of the universe.'),
+            ]);
+          else if (!LORE(14))
+            CONCAT([
+              L(
+                'A Lal news station runs a 10-minute segment about your cookies. Success!<br><small>(you win a cookie)</small>'
+              ),
+              L("it's time to stop playing"),
+            ]);
         }
       }
 
@@ -1253,8 +1640,8 @@ var __TWCNL = {};
       if (Game.prefs.numbercn && Game.keys[__TWCNG.UNIT_TOGGLE_KEY] != 1) {
         const cookies = l('cookies');
         cookies.innerHTML = cookies.innerHTML.replace(
-          new RegExp('(-?[0-9]+(?:.[0-9])?[^sa-z]*)(?:<br>| )' + __TWCNL.NUM_COOKIES),
-          (_, v) => v + __TWCNL.NUM_COOKIES
+          new RegExp('(-?[0-9]+(?:.[0-9])?[^sa-z]*)(?:<br>| )' + loc('[CCCN]COOKIES')),
+          (_, v) => v + loc('[CCCN]COOKIES')
         );
       }
     });
@@ -1426,52 +1813,52 @@ var __TWCNL = {};
 
   const ModPrefMenu = MOD => {
     return (
-      `<div class="title">${__TWCNL.STR_SETTING_TITLE}</div>` +
+      `<div class="title">${loc('[CCCN]SETTING_TITLE')}</div>` +
       '<div class="listing">' +
       ModPrefButton(
         'numbercn',
         'numbercnButton',
-        __TWCNL.STR_SETTING_CNUNIT + ON,
-        __TWCNL.STR_SETTING_CNUNIT + OFF,
+        loc('[CCCN]SETTING_CNUNIT') + ON,
+        loc('[CCCN]SETTING_CNUNIT') + OFF,
         'Game.UpdateMenu();BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
       ) +
-      `<label>(${__TWCNL.STR_SETTING_CNUNIT_LABEL})</label><br>` +
+      `<label>(${loc('[CCCN]SETTING_CNUNIT_LABEL')})</label><br>` +
       (Game.prefs.numbercn
         ? ModPrefButton(
             'numbercnfull',
             'numbercnFullButton',
-            __TWCNL.STR_SETTING_CNUNITFULL + ON,
-            __TWCNL.STR_SETTING_CNUNITFULL + OFF,
+            loc('[CCCN]SETTING_CNUNITFULL') + ON,
+            loc('[CCCN]SETTING_CNUNITFULL') + OFF,
             'Game.UpdateMenu();BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
           ) +
-          `<label>(${__TWCNL.STR_SETTING_CNUNITFULL_LABEL})</label><br>` +
+          `<label>(${loc('[CCCN]SETTING_CNUNITFULL_LABEL')})</label><br>` +
           (Game.prefs.numbercnfull
             ? ModSlider(
                 'numbercnFullSegs',
-                __TWCNL.STR_SETTING_CNUNITFULLSEGS,
-                __TWCNL.STR_SETTING_CNUNITFULLSEGS_RIGHT,
+                loc('[CCCN]SETTING_CNUNITFULLSEGS'),
+                loc('[CCCN]SETTING_CNUNITFULLSEGS_RIGHT'),
                 () => Game.prefs.numbercnfullsegs,
                 () => Game.prefs.numbercnfullsegs,
                 1,
                 3,
                 1,
-                "Game.prefs.numbercnfullsegs=parseInt(l('numbercnFullSegs').value);l('numbercnFullSegsRightText').innerHTML=__TWCNL.STR_SETTING_CNUNITFULLSEGS_RIGHT.replace('[$]',Math.floor(l('numbercnFullSegs').value));BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+                "Game.prefs.numbercnfullsegs=parseInt(l('numbercnFullSegs').value);l('numbercnFullSegsRightText').innerHTML=loc('[CCCN]SETTING_CNUNITFULLSEGS_RIGHT').replace('[$]',Math.floor(l('numbercnFullSegs').value));BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
               )
             : ModSlider(
                 'numbercnDecimal',
-                __TWCNL.STR_SETTING_DECIMAL,
-                __TWCNL.STR_SETTING_DECIMAL_RIGHT,
+                loc('[CCCN]SETTING_DECIMAL'),
+                loc('[CCCN]SETTING_DECIMAL_RIGHT'),
                 () => Math.log10(Game.prefs.numbercndecimal),
                 () => Math.log10(Game.prefs.numbercndecimal),
                 0,
                 8,
                 1,
-                "Game.prefs.numbercndecimal=Math.pow(10,Math.floor(l('numbercnDecimal').value));l('numbercnDecimalRightText').innerHTML=__TWCNL.STR_SETTING_DECIMAL_RIGHT.replace('[$]',Math.floor(l('numbercnDecimal').value));BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+                "Game.prefs.numbercndecimal=Math.pow(10,Math.floor(l('numbercnDecimal').value));l('numbercnDecimalRightText').innerHTML=loc('[CCCN]SETTING_DECIMAL_RIGHT').replace('[$]',Math.floor(l('numbercnDecimal').value));BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
               )) +
           '<br>' +
           ModSlider(
             'numbercnMinUnit',
-            __TWCNL.STR_SETTING_MIN_UNIT,
+            loc('[CCCN]SETTING_MIN_UNIT'),
             '[$]',
             () => __TWCNL.CN_UNITS_MIN[Game.prefs.numbercnminunit],
             () => Game.prefs.numbercnminunit,
@@ -1484,41 +1871,41 @@ var __TWCNL = {};
           ModPrefButton(
             'numbercnfixlen',
             'numbercnFixLenButton',
-            __TWCNL.STR_SETTING_FIXLEN + ON,
-            __TWCNL.STR_SETTING_FIXLEN + OFF,
+            loc('[CCCN]SETTING_FIXLEN') + ON,
+            loc('[CCCN]SETTING_FIXLEN') + OFF,
             'Game.UpdateMenu();BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
           ) +
-          `<label>(${__TWCNL.STR_SETTING_FIXLEN_LABEL})</label><br>` +
+          `<label>(${loc('[CCCN]SETTING_FIXLEN_LABEL')})</label><br>` +
           ModPrefButton(
             'numbercntrillion',
             'numbercntrillionButton',
-            __TWCNL.STR_SETTING_TRILLION + ON,
-            __TWCNL.STR_SETTING_TRILLION + OFF,
+            loc('[CCCN]SETTING_TRILLION') + ON,
+            loc('[CCCN]SETTING_TRILLION') + OFF,
             'BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
           ) +
-          `<label>(${__TWCNL.STR_SETTING_TRILLION_LABEL})</label><br>`
+          `<label>(${loc('[CCCN]SETTING_TRILLION_LABEL')})</label><br>`
         : '') +
       '<br>' +
       ModPrefButton(
         'numbercnsci',
         'numbercnDisableButton',
-        __TWCNL.STR_SETTING_SCIENTIFIC + ON,
-        __TWCNL.STR_SETTING_SCIENTIFIC + OFF,
+        loc('[CCCN]SETTING_SCIENTIFIC') + ON,
+        loc('[CCCN]SETTING_SCIENTIFIC') + OFF,
         'Game.UpdateMenu();BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;'
       ) +
-      `<label>(${__TWCNL.STR_SETTING_SCIENTIFIC_LABEL})</label><br>` +
+      `<label>(${loc('[CCCN]SETTING_SCIENTIFIC_LABEL')})</label><br>` +
       (Game.prefs.numbercnsci
         ? ModSlider(
             'numbercnScientific',
-            __TWCNL.STR_SETTING_SCILEN,
+            loc('[CCCN]SETTING_SCILEN'),
             '[$]',
-            () => __TWCNL.STR_SETTING_SCILEN_VALUES[Game.prefs.numbercnscilen],
+            () => loc('[CCCN]SETTING_SCILEN_VALUES')[Game.prefs.numbercnscilen],
             () => Game.prefs.numbercnscilen,
             0,
             3,
             1,
-            "Game.prefs.numbercnscilen=parseInt(l('numbercnScientific').value);l('numbercnScientificRightText').innerHTML=__TWCNL.STR_SETTING_SCILEN_VALUES[Math.floor(l('numbercnScientific').value)];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
-          ) + `<label>(${__TWCNL.STR_SETTING_SCILEN_LABEL})</label><br>`
+            "Game.prefs.numbercnscilen=parseInt(l('numbercnScientific').value);l('numbercnScientificRightText').innerHTML=loc('[CCCN]SETTING_SCILEN_VALUES')[Math.floor(l('numbercnScientific').value)];BeautifyAll();Game.RefreshStore();Game.upgradesToRebuild=1;"
+          ) + `<label>(${loc('[CCCN]SETTING_SCILEN_LABEL')})</label><br>`
         : '') +
       '<br>' +
       (__TWCNL.BRAND_COOKIE_CN
@@ -1729,6 +2116,7 @@ var __TWCNL = {};
         ModUpgrade531(this);
         ModUpgrade534(this);
         ModUpgrade606(this);
+        ModAchievement639(this);
         ModDropEgg(this);
         ModBackgroundSelector(this);
         ModInjectCSS(this);
@@ -1745,8 +2133,12 @@ var __TWCNL = {};
         ModStats(this);
 
         // Tickers 改动太大，修改前确认版本
-        if (Game.version == '2.048') {
-          ModTickers(this);
+        if (Game.version == 2.048) {
+          ModTickers2048(this);
+        }
+
+        if (Game.version == 2.05) {
+          ModTickers2050(this);
         }
 
         AddMenuHook(this, ModPrefMenu);

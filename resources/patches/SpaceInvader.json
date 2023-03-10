@@ -67,7 +67,7 @@
   "Level %1 %2": {
     "comment": "单纯是好看点",
     "english": "Level %1 %2",
-    "chinese": "%1 级%2"
+    "chinese": "%2 %1 级"
   },
   "You can also press %1 to bulk-buy or sell %2 of a building at a time, or %3 for %4.": {
     "english": "You can also press %1 to bulk-buy or sell %2 of a building at a time, or %3 for %4.",
@@ -76,10 +76,6 @@
   "+%1% base CpS.": {
     "english": "+%1% base CpS.",
     "chinese": "+%1% 基础CpS。"
-  },
-  "%1 are <b>twice</b> as efficient.": {
-    "english": "%1 are <b>twice</b> as efficient.",
-    "chinese": "%1的生产率<b>翻倍</b>。"
   },
   "%1 are <b>%2%</b> more powerful.": {
     "english": "%1 are <b>%2%</b> more powerful.",
