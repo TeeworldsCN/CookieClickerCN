@@ -313,7 +313,7 @@ var __TWCNL = {};
         const numeralDecimal = decimal;
         decimal = '';
         for (const c of numeralDecimal) {
-          if (c == '.') {
+          if (Game.prefs.numbercnminunit == 0 && c == '.') {
             decimal += __TWCNL.CN_FLOATING_POINT;
           } else {
             const numeral = c.charCodeAt(0) - 48;
@@ -836,8 +836,8 @@ var __TWCNL = {};
 
       if (SEASON('Fools')) {
         // 愚人新闻
-        if (EARNED(1000)) PUSH(C(L('Ticker (fools)')));
-        if (EARNED(1000) && CHANCE(10)) PUSH(C(L('Ticker (fools rare)')));
+        if (EARNED(1000)) PUSH(C(L('Ticker (fools 2048)')));
+        if (EARNED(1000) && CHANCE(10)) PUSH(C(L('Ticker (fools rare 2048)')));
 
         if (Game.TickerN % 2 == 0 || EARNED(10100000000)) {
           // 建筑新闻
@@ -1196,8 +1196,15 @@ var __TWCNL = {};
       if (SEASON('Fools')) {
         // 愚人新闻
         // TODO: 更新2050的愚人新闻
-        if (EARNED(1000)) PUSH(C(L('Ticker (fools)')));
-        if (EARNED(1000) && CHANCE(5)) PUSH(C(L('Ticker (fools rare)')));
+        if (EARNED(1000))
+          PUSH(
+            C([
+              C(L('Ticker (fools 2050)')),
+              `${C(L('Ticker (fools 2050 action 1)'))}${C(L('Ticker (fools 2050 action 2)'))}`,
+              L('The word of the day is: %1.', C(L('Ticker (fools 2050 wotd)'))),
+            ])
+          );
+        if (EARNED(1000) && CHANCE(5)) PUSH(C(L('Ticker (fools rare 2050)')));
 
         if (Game.TickerN % 2 == 0) {
           // 建筑新闻
@@ -2137,9 +2144,9 @@ var __TWCNL = {};
           ModTickers2048(this);
         }
 
-        if (Game.version == 2.05) {
-          ModTickers2050(this);
-        }
+        // if (Game.version == 2.05) {
+        //   ModTickers2050(this);
+        // }
 
         AddMenuHook(this, ModPrefMenu);
       }
