@@ -70,5 +70,9 @@
   "[Tier]Glucosmium": {
     "english": "Self-referential",
     "chinese": "葡萄糖锇金味"
+  },
+  "[Tier]Glimmeringue": {
+    "english": "Glimmeringue",
+    "chinese": "微光蛋白味"
   }
 }

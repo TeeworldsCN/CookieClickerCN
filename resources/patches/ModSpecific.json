@@ -195,11 +195,6 @@
   "[CCCN]BUILDING_EXTRANAME_REGEX": {
     "chinese": "获得<b>"
   },
-  "[CCCN]A639": {
-    "chinese": {
-      "func": "`全员登场！<div id='parade' style='position:absolute;left:-11px;right:-11px;height:32px;background:url(img/parade.png) -${Game.T}px ${(Game.T%20<10?0:32)}px;'></div><div style='margin-bottom:32px;'></div>你是不是也要来点饼干呢？`"
-    }
-  },
   "[CCCN]U531": {
     "chinese": "“从前有座山，山上有座庙，%1在庙里开了一家烘焙坊。一天，烘焙坊的门口传来了敲门声。%1打开了门，抬头看到了一位散发着邪恶气息的老奶奶。老奶奶微微张口，用虚弱而诡异的声音，开始讲述她记忆中的小故事："
   },

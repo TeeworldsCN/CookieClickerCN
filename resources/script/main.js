@@ -245,7 +245,7 @@ var __TWCNL = {};
     // 不显示以下饼干名
     CookieNameBlacklist: new Set([
       341, // Cigars
-      407, // Ice cream sandwiches4
+      407, // Ice cream sandwiches
       476, // Wheat slims
       550, // croissant
       553, // the chip taken out one
@@ -276,6 +276,8 @@ var __TWCNL = {};
       810, // Kolachy
       811, // Gomma
       817, // Steamed
+      870, // Spritz
+      871, // Mbatata
     ]),
   };
 
@@ -607,25 +609,6 @@ var __TWCNL = {};
 
       Math.seedrandom();
       return `${this.baseDesc}<q>${str}</q>`;
-    };
-  };
-
-  // 魔改最后一座建筑成就的引文
-  const ModAchievement639 = MOD => {
-    Game.AchievementsById[639].descFunc = function () {
-      if (!Game.specialAnimLoop) {
-        Game.specialAnimLoop = setInterval(function () {
-          var el = l('parade');
-          if (!el || !Game.tooltip.on) {
-            clearInterval(Game.specialAnimLoop);
-            Game.specialAnimLoop = 0;
-            return false;
-          }
-          var x = Game.T;
-          el.style.backgroundPosition = '-' + x + 'px ' + (Game.T % 20 < 10 ? 0 : 32) + 'px';
-        }, 100);
-      }
-      return `${this.baseDesc}<q>${loc('[CCCN]A639')}</q>`;
     };
   };
 
@@ -2123,7 +2106,6 @@ var __TWCNL = {};
         ModUpgrade531(this);
         ModUpgrade534(this);
         ModUpgrade606(this);
-        ModAchievement639(this);
         ModDropEgg(this);
         ModBackgroundSelector(this);
         ModInjectCSS(this);

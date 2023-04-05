@@ -961,6 +961,10 @@
     "english": "Export save",
     "chinese": "导出存档"
   },
+  "Export": {
+    "english": "Export",
+    "chinese": "[CN:MISSING]"
+  },
   "This is your save code.<br>Copy it and keep it somewhere safe!": {
     "english": "This is your save code.<br>Copy it and keep it somewhere safe!",
     "chinese": "这是你的存档代码。<br>请复制并将其保存在安全的地方！"
@@ -968,6 +972,10 @@
   "Import save": {
     "english": "Import save",
     "chinese": "导入存档"
+  },
+  "Import": {
+    "english": "Import",
+    "chinese": "[CN:MISSING]"
   },
   "Please paste in the code that was given to you on save export.": {
     "english": "Please paste in the code that was given to you on save export.",
@@ -4914,6 +4922,14 @@
   },
   "Extra": {
     "english": "Extra",
+    "chinese": "[CN:MISSING]"
+  },
+  "Everyone's here.": {
+    "english": "Everyone's here.",
+    "chinese": "[CN:MISSING]"
+  },
+  "Won't you have some cookies too?": {
+    "english": "Won't you have some cookies too?",
     "chinese": "[CN:MISSING]"
   },
   "Achievement unlocked": {
@@ -10498,6 +10514,14 @@
     "english": "Springerles",
     "chinese": "[CN:MISSING]"
   },
+  "[Upgrade name 873]Undecillion fingers": {
+    "english": "Undecillion fingers",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade name 874]Omniplast mouse": {
+    "english": "Omniplast mouse",
+    "chinese": "[CN:MISSING]"
+  },
   "[Achievement name 0]Wake and bake": {
     "english": "Wake and bake",
     "chinese": "醒来，烘焙"
@@ -13058,6 +13082,18 @@
     "english": "Cookie Clicker",
     "chinese": "[CN:MISSING]"
   },
+  "[Achievement name 640]What's not clicking": {
+    "english": "What's not clicking",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 641]All on deck": {
+    "english": "All on deck",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement name 642]A round of applause": {
+    "english": "A round of applause",
+    "chinese": "[CN:MISSING]"
+  },
   "There are no heralds at the moment. Please consider <b style=\"color:#bc3aff;\">donating to our Patreon</b>!": {
     "english": "There are no heralds at the moment. Please consider <b style=\"color:#bc3aff;\">donating to our Patreon</b>!",
     "chinese": "[CN:MISSING]"
@@ -13480,6 +13516,10 @@
   },
   "[Achievement quote 638]Oft we mar what's well": {
     "english": "But don't let that stop you!",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Achievement quote 642]A round of applause": {
+    "english": "Boy, are my arms tired!",
     "chinese": "[CN:MISSING]"
   },
   "[Upgrade quote 0]Reinforced index finger": {
@@ -16884,6 +16924,14 @@
   },
   "[Upgrade quote 872]Springerles": {
     "english": "A springerle is an ancient anise-flavored biscuit from Central Europe, imprinted by a wooden mold with any kind of interesting design such as a commemorative scene, an intricate pattern or, ah, perhaps a little horsie.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 873]Undecillion fingers": {
+    "english": "Whatever you touch<br>turns to dough in your clutch.",
+    "chinese": "[CN:MISSING]"
+  },
+  "[Upgrade quote 874]Omniplast mouse": {
+    "english": "This mouse is, by virtue of the strange elements that make it up, present in every position in space simultaneously, in a manner; this alleviates its owner from the need to move it around, redirecting all such kinetic power to the intensity of its clicks.",
     "chinese": "[CN:MISSING]"
   }
 }
