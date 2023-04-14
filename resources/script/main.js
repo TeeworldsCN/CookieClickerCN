@@ -170,7 +170,18 @@ var __TWCNL = {};
     },
 
     // 替换科学计数法
-    SUPNUM: ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'],
+    SUPNUM: [
+      '\u2070',
+      '\u00B9',
+      '\u00B2',
+      '\u00B3',
+      '\u2074',
+      '\u2075',
+      '\u2076',
+      '\u2077',
+      '\u2078',
+      '\u2079',
+    ],
     FormatterScientific: (val, decimals) => {
       const [coefficient, exponent] = val.toExponential(decimals).split('e');
       let [integer, decimal] = coefficient.split('.');
@@ -2043,6 +2054,11 @@ var __TWCNL = {};
     document.head.insertAdjacentHTML(
       'beforeEnd',
       '<style>.note .title{line-height:1em} .framed .subname{font-size:80%;opacity:0.7;line-height:110%;}</style>'
+    );
+
+    document.head.insertAdjacentHTML(
+      'beforeEnd',
+      `<link href="${MOD.dirURI}/fonts.css" rel="stylesheet" type="text/css">`
     );
   };
 
