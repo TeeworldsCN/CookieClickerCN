@@ -718,7 +718,7 @@
     "comment": "魔改补充",
     "chinese": [
       {
-        "func": "`${Game.bakeryName}新出了一本《手把手教你生产`${Beautify(Game.cookiesEarned)}`块饼干》自助手册!"
+        "func": "`${Game.bakeryName}新出了一本《如果我可以生产出${Beautify(Game.cookiesEarned)}块饼干，你也可以》自助手册!"
       },
       {
         "func": "`不要错过我们今晚对${Game.bakeryName}的震撼采访，将讨论成为世界第一后如何寻找下一个目标。`"
