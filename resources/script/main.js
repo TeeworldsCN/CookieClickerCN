@@ -1140,7 +1140,7 @@ var __TWCNL = {};
     };
   };
 
-  const ModTickers2050 = MOD => {
+  const ModTickers205X = MOD => {
     Game.getNewTicker = manual => {
       var loreProgress = Math.round((Math.log(Game.cookiesEarned / 10) * Math.LOG10E + 1) | 0);
 
@@ -1165,8 +1165,8 @@ var __TWCNL = {};
       const WRATH = Game.elderWrath != 0;
       const RESET = Game.resets != 0;
 
-      const L = key => {
-        if (key in locStrings) return loc(key);
+      const L = (key, ...args) => {
+        if (key in locStrings) return loc(key, ...args);
         return null;
       };
 
@@ -1189,7 +1189,6 @@ var __TWCNL = {};
 
       if (SEASON('Fools')) {
         // 愚人新闻
-        // TODO: 更新2050的愚人新闻
         if (EARNED(1000))
           PUSH(
             C([
@@ -2142,9 +2141,9 @@ var __TWCNL = {};
           ModTickers2048(this);
         }
 
-        // if (Game.version == 2.05) {
-        //   ModTickers2050(this);
-        // }
+        if (Game.version == 2.051) {
+          ModTickers205X(this);
+        }
 
         AddMenuHook(this, ModPrefMenu);
       }
