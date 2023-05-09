@@ -2141,7 +2141,7 @@ var __TWCNL = {};
           ModTickers2048(this);
         }
 
-        if (Game.version == 2.051) {
+        if (Game.version >= 2.051 && Game.version < 2.06) {
           ModTickers205X(this);
         }
 
