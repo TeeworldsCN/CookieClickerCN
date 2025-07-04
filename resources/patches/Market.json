@@ -147,5 +147,85 @@
   "[STOCK 17 DESC]Great Minds": {
     "english": "Great Minds",
     "chinese": "让这些资源流动起来：从市场调研到广告宣发，<b>伟人智库®</b>将允许出价最高的人利用他们的雄韬伟略寻找答案。这是随时可用的知识财富。"
+  },
+  "[STOCK 18 NAME]%1's Bakery": {
+    "english": "%1's Bakery",
+    "chinese": "%1的烘焙坊"
+  },
+  "[STOCK 18 DESC]%1's Bakery": {
+    "english": "That's right! Your transcendental business skills are so influential, so universally resounding, that you've become a publicly traded good yourself - you're the best <b>%1's Bakery</b> has to offer. Don't disappoint your shareholders, there's a price on your head! Invest in yourself NOW!",
+    "chinese": "没错！你那超凡脱俗的商业技能如此具有影响力，如此响彻云霄，以至于你自己都成了一种可公开交易的商品——你自己就是<b>%1的烘焙坊</b>所能提供的最佳产品。别让你的股东们失望，你的脑袋可是明码标价的！<b>马上</b>投资你自己吧！"
+  },
+  "[STOCK 1 LOGO]CRL": {
+    "english": "CRL",
+    "chinese": "CRL"
+  },
+  "[STOCK 2 LOGO]CHC": {
+    "english": "CHC",
+    "chinese": "CHC"
+  },
+  "[STOCK 3 LOGO]BTR": {
+    "english": "BTR",
+    "chinese": "BTR"
+  },
+  "[STOCK 4 LOGO]SUG": {
+    "english": "SUG",
+    "chinese": "SUG"
+  },
+  "[STOCK 5 LOGO]NUT": {
+    "english": "NUT",
+    "chinese": "NUT"
+  },
+  "[STOCK 6 LOGO]SLT": {
+    "english": "SLT",
+    "chinese": "SLT"
+  },
+  "[STOCK 7 LOGO]VNL": {
+    "english": "VNL",
+    "chinese": "VNL"
+  },
+  "[STOCK 8 LOGO]EGG": {
+    "english": "EGG",
+    "chinese": "EGG"
+  },
+  "[STOCK 9 LOGO]CNM": {
+    "english": "CNM",
+    "chinese": "CNM"
+  },
+  "[STOCK 10 LOGO]CRM": {
+    "english": "CRM",
+    "chinese": "CRM"
+  },
+  "[STOCK 11 LOGO]JAM": {
+    "english": "JAM",
+    "chinese": "JAM"
+  },
+  "[STOCK 12 LOGO]WCH": {
+    "english": "WCH",
+    "chinese": "WCH"
+  },
+  "[STOCK 13 LOGO]HNY": {
+    "english": "HNY",
+    "chinese": "HNY"
+  },
+  "[STOCK 14 LOGO]CKI": {
+    "english": "CKI",
+    "chinese": "CKI"
+  },
+  "[STOCK 15 LOGO]RCP": {
+    "english": "RCP",
+    "chinese": "RCP"
+  },
+  "[STOCK 16 LOGO]SBD": {
+    "english": "SBD",
+    "chinese": "SBD"
+  },
+  "[STOCK 17 LOGO]PBL": {
+    "english": "PBL",
+    "chinese": "PBL"
+  },
+  "[STOCK 18 LOGO]YOU": {
+    "english": "YOU",
+    "chinese": "YOU"
   }
 }

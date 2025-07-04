@@ -8,18 +8,6 @@
     "english": "Import",
     "chinese": "导入"
   },
-  "[STOCK 18 NAME]%1's Bakery": {
-    "english": "%1's Bakery",
-    "chinese": "%1的烘焙坊"
-  },
-  "[STOCK 18 TYPE]%1": {
-    "english": "%1",
-    "chinese": "%1"
-  },
-  "[STOCK 18 LOGO]YOU": {
-    "english": "YOU",
-    "chinese": "你"
-  },
   "Everyone's here.": {
     "english": "Everyone's here.",
     "chinese": "大家都到齐了。"
@@ -86,7 +74,7 @@
   },
   "Sprung from your very DNA. Shape them in your image!": {
     "english": "Sprung from your very DNA. Shape them in your image!",
-    "chinese": "通过你的 DNA 涌现而出。将它们打造成你的身形！"
+    "chinese": "由你的 DNA 涌现而出。将它们打造成你的身形！"
   },
   "Hair": {
     "english": "Hair",

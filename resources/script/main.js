@@ -481,7 +481,10 @@ var __TWCNL = {};
               '<div class="line"></div>',
               '<div class="line"></div><div class="description">' +
                 '<q>' +
-                loc(FindLocStringByPart('STOCK ' + (id + 1) + ' DESC')) +
+                loc(
+                  FindLocStringByPart('STOCK ' + (id + 1) + ' DESC'),
+                  id == 17 ? Game.bakeryName : undefined // “你”商品的文本需要玩家变量
+                ) +
                 '</q>' +
                 '<div class="line">'
             );

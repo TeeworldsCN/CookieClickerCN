@@ -1,7 +1,7 @@
 // script for extracting official strings
 
 require('dotenv').config();
-import puppeteer from 'puppeteer';
+import puppeteer from 'puppeteer-core';
 import path from 'path';
 import fs from 'fs';
 
@@ -91,12 +91,15 @@ for (const text of plains) {
 
 (async () => {
   // puppeteer out runtime strings
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    executablePath: process.env.CHROME_PATH,
+    headless: true,
+  });
   const page = await browser.newPage();
   await page.goto(`file://${GAMEPATH}`);
-  await page.waitForTimeout(500);
+  await page.waitForSelector('#langSelect-EN');
   await page.click('#langSelect-EN');
-  await page.waitForTimeout(500);
+  await page.waitForNetworkIdle();
 
   const checkByPart = (key: string, english: string) => {
     if (!(key in LANG_DESC)) {
@@ -108,7 +111,7 @@ for (const text of plains) {
   };
 
   // get achievements and upgrades
-  const achvupgHandle = await page.evaluateHandle(
+  const achvupgHandle = await page.evaluateHandle<any, any>(
     'tr_entries=[];for (let i in Game.AchievementsById) { let data = Game.AchievementsById[i]; tr_entries.push({id: parseInt(data.id), name: data.name, desc: data.desc, type: data.getType(), descFunc: !!data.descFunc}) };for (let i in Game.UpgradesById) { let data = Game.UpgradesById[i]; tr_entries.push({id: data.id, name: data.name, desc: data.desc, type: data.getType(), pool: data.pool, descFunc: !!data.descFunc && data.descFunc.toString().indexOf("Unshackled!") == -1}) };JSON.stringify(tr_entries)'
   );
   const achvupg = JSON.parse(await achvupgHandle.jsonValue()) as AchvUpgEntry[];
