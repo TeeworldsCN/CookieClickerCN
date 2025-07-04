@@ -17,7 +17,7 @@
     "build": "npx tsc --skipLibCheck",
     "start": "node dist/index.js",
     "extract": "node dist/extractor.js",
-    "install": "node dist/install.js"
+    "apply": "node dist/install.js"
   },
   "author": "",
   "license": "ISC",
