@@ -1929,11 +1929,11 @@ var __TWCNL = {};
       ModPrefButton(
         'fontcn',
         'fontcnButton',
-        '修改字体' + ON,
-        '修改字体' + OFF,
+        '使用精选字体' + ON,
+        '使用精选字体' + OFF,
         "Game.mods['" + MOD.id + "'].toggleFonts();"
       ) +
-      '<label>(启用后将使用精心挑选的与英文原版风格近似的字体)</label><br>' +
+      '<label>(启用后将使用精心挑选的与英文字体风格近似的字体)</label><br>' +
       '</div>'
     );
   };

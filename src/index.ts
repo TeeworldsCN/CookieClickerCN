@@ -230,7 +230,7 @@ for (var key in original) {
           lastVersion[key].tradchn &&
           lastVersion[key].tradchn[i] &&
           (typeof s?.func === 'undefined' ||
-            ('string' && typeof lastVersion[key].tradchn[i]?.func === 'string'))
+            (typeof s?.func === 'string' && typeof lastVersion[key].tradchn[i]?.func === 'string'))
         ) {
           return lastVersion[key].tradchn[i];
         }
