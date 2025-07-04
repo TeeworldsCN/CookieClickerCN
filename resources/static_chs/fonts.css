@@ -1,54 +1,52 @@
-body
-{
-  font-family: 'SuperscriptSans',Tahoma,'CustomSans',Arial,sans-serif;
+body {
+  font-family: 'SuperscriptSans', Tahoma, 'CustomSans', Arial, sans-serif;
 }
-.titleFont,.title,.section,.lockedTitle,.smallFancyButton
-{
-	font-family: 'SuperscriptSerif','Merriweather','CustomSerifHeavy',Georgia,serif !important;
+.titleFont,
+.title,
+.section,
+.lockedTitle,
+.smallFancyButton {
+  font-family: 'SuperscriptSerif', 'Merriweather', 'CustomSerifHeavy', Georgia, serif !important;
 }
-.framed q
-{
-	font-family: 'CustomSerif',Georgia !important;
+.framed q {
+  font-family: 'CustomSerif', Georgia !important;
 }
 
-.framed q:before
-{
-	font-family: 'CustomSerif',Georgia !important;
+.framed q:before {
+  font-family: 'CustomSerif', Georgia !important;
 }
-.framed q:after
-{
-	font-family: 'CustomSerif',Georgia !important;
+.framed q:after {
+  font-family: 'CustomSerif', Georgia !important;
 }
-#prompt h3,.prompt h3,.fancyText
-{
-	font-family:'CustomSerifHeavy',Georgia,serif !important;
+#prompt h3,
+.prompt h3,
+.fancyText {
+  font-family: 'CustomSerifHeavy', Georgia, serif !important;
 }
-#ascendTooltip
-{
-	font-family:Tahoma,'CustomSans',Arial,sans serif !important;
+#ascendTooltip {
+  font-family: Tahoma, 'CustomSans', Arial, sans serif !important;
 }
-.monospace
-{
-	font-family:'CustomMono','CustomSans',Courier,monospace;
+.monospace {
+  font-family: 'CustomMono', 'CustomSans', Courier, monospace;
 }
 
 @font-face {
   font-family: 'CustomMono';
-  src: url(ChivoMono.ttf) format('truetype');
+  src: url(ChivoMono.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'SuperscriptSerif';
   font-style: normal;
   font-weight: 900;
-  src: url(Superscript.ttf) format('truetype');
+  src: url(Superscript.woff2) format('woff2');
   unicode-range: U+2070-2080, U+00B2-00B3, U+00B9;
 }
 
 @font-face {
   font-family: 'SuperscriptSans';
   font-style: normal;
-  src: url(SuperscriptSans.ttf) format('truetype');
+  src: url(SuperscriptSans.woff2) format('woff2');
   unicode-range: U+2070-2080, U+00B2-00B3, U+00B9;
 }
 
@@ -56,21 +54,20 @@ body
   font-family: 'CustomSerifHeavy';
   font-style: normal;
   font-weight: 900;
-  src: url(SourceHanSerifSC-Heavy.otf) format('opentype');
-  unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700–2B73F, U+2B740–2B81F, U+2B820–2CEAF, U+2CEB0–2EBEF, U+30000–3134F, U+31350–323AF, U+F900-FAFF, U+2F800-2FA1F;
+  src: url(SourceHanSerifSC-Heavy.woff2) format('woff2');
+  unicode-range: U+4E00-9FFF, U+3400-4DB5, U+20000-2A6D6, U+2A700-2B734, U+2B740-2B81D;
 }
 
 @font-face {
   font-family: 'CustomSerif';
   font-style: normal;
-  src: url(SourceHanSerifSC-Regular.otf) format('opentype');
-  unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700–2B73F, U+2B740–2B81F, U+2B820–2CEAF, U+2CEB0–2EBEF, U+30000–3134F, U+31350–323AF, U+F900-FAFF, U+2F800-2FA1F;
+  src: url(SourceHanSerifSC-Regular.woff2) format('woff2');
+  unicode-range: U+4E00-9FFF, U+3400-4DB5, U+20000-2A6D6, U+2A700-2B734, U+2B740-2B81D;
 }
-
 
 @font-face {
   font-family: 'CustomSans';
   font-style: normal;
-  src: url(MicrosoftYahei.ttf) format('opentype');
-  unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700–2B73F, U+2B740–2B81F, U+2B820–2CEAF, U+2CEB0–2EBEF, U+30000–3134F, U+31350–323AF, U+F900-FAFF, U+2F800-2FA1F;
+  src: url(MicrosoftYahei.woff2) format('woff2');
+  unicode-range: U+4E00-9FFF, U+3400-4DB5, U+20000-2A6D6, U+2A700-2B734, U+2B740-2B81D;
 }

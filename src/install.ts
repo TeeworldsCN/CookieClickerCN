@@ -61,7 +61,13 @@ async function installMod(modName: string, modsPath: string, staticVariant: stri
 
   console.log(`Installing ${modName}...`);
 
-  // Create target directory if it doesn't exist
+  // Remove existing target directory if it exists
+  if (fs.existsSync(targetDir)) {
+    console.log(`  ✓ Removing existing installation at ${targetDir}`);
+    fs.rmSync(targetDir, { recursive: true, force: true });
+  }
+
+  // Create target directory
   fs.mkdirSync(targetDir, { recursive: true });
 
   // Copy built mod files

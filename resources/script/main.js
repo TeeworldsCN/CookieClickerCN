@@ -236,6 +236,7 @@ var __TWCNL = {};
       t: 'numbercntrillion',
       b: 'brandcn',
       f: 'numbercnfixlen',
+      o: 'fontcn',
     },
 
     // 满足以下条件则不显示饼干名
@@ -1923,8 +1924,16 @@ var __TWCNL = {};
                 "'].toggleBrandCookies();Game.RefreshStore();Game.upgradesToRebuild=1;"
             ) + '<label>(将“一盒品牌饼干”升级替换为本土化的品牌)</label><br>'
           : DisabledButton('brandcnButton', '??????????  ??') +
-            '<label>(根据你目前的进度，该选项不会有影响也不能更改。)</label><br>'
+            '<label>(根据你目前的进度，该选项不会有影响也不能更改)</label><br>'
         : '') +
+      ModPrefButton(
+        'fontcn',
+        'fontcnButton',
+        '修改字体' + ON,
+        '修改字体' + OFF,
+        "Game.mods['" + MOD.id + "'].toggleFonts();"
+      ) +
+      '<label>(启用后将使用精心挑选的与英文原版风格近似的字体)</label><br>' +
       '</div>'
     );
   };
@@ -2058,10 +2067,13 @@ var __TWCNL = {};
       '<style>.note .title{line-height:1em} .framed .subname{font-size:80%;opacity:0.7;line-height:110%;}</style>'
     );
 
-    document.head.insertAdjacentHTML(
-      'beforeEnd',
-      `<link href="${MOD.dirURI}/fonts.css" rel="stylesheet" type="text/css">`
-    );
+    // 只有在启用中文字体时才加载字体CSS
+    if (Game.prefs.fontcn) {
+      document.head.insertAdjacentHTML(
+        'beforeEnd',
+        `<link id="fontcn-css" href="${MOD.dirURI}/fonts.css" rel="stylesheet" type="text/css">`
+      );
+    }
   };
 
   // 在游戏加载前就修复Loc函数 (需要赶在本地化成就之前就生效)
@@ -2115,6 +2127,7 @@ var __TWCNL = {};
         if (Game.prefs.numbercntrillion == null)
           Game.prefs.numbercntrillion = __TWCNL.DEF_SETTING_TRILLION;
         if (Game.prefs.brandcn == null) Game.prefs.brandcn = __TWCNL.DEF_SETTING_BRAND;
+        if (Game.prefs.fontcn == null) Game.prefs.fontcn = 1;
 
         ModTouchSpecialPic(this);
         ModMarket(this);
@@ -2195,6 +2208,27 @@ var __TWCNL = {};
         it.ddesc = data[uid].desc;
         it.icon = data[uid].icon;
       }
+    },
+    toggleFonts: function () {
+      const existingLink = document.getElementById('fontcn-css');
+
+      if (Game.prefs.fontcn) {
+        // 启用字体：如果没有加载则加载字体CSS
+        if (!existingLink) {
+          document.head.insertAdjacentHTML(
+            'beforeEnd',
+            `<link id="fontcn-css" href="${this.dirURI}/fonts.css" rel="stylesheet" type="text/css">`
+          );
+        }
+      } else {
+        // 禁用字体：移除字体CSS
+        if (existingLink) {
+          existingLink.remove();
+        }
+      }
+
+      // 更新菜单按钮状态
+      Game.UpdateMenu();
     },
   });
 })();
