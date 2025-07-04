@@ -4,23 +4,18 @@ on:
   pull_request:
     branches:
       - 'master'
+
 jobs:
   verify:
     name: 'verify'
     runs-on: 'ubuntu-latest'
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '14'
-
-      - uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: '20'
+          cache: 'npm'
 
       - name: 'Test & Build'
         run: |
@@ -30,14 +25,14 @@ jobs:
           cp ./resources/static/* ./build/CookieClickerCNMod/
 
       - name: Archive Release
-        uses: thedoctor0/zip-release@master
+        uses: thedoctor0/zip-release@0.7.6
         with:
           type: 'zip'
           directory: 'build'
           filename: 'cookieclicker-cn.zip'
           path: 'CookieClickerCNMod'
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: cookieclicker-cn.zip
           path: build/

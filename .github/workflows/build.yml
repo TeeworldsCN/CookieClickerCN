@@ -11,17 +11,11 @@ jobs:
     runs-on: 'ubuntu-latest'
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '14'
-
-      - uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: '20'
+          cache: 'npm'
 
       - name: 'Download latest current.json'
         run: |
@@ -38,12 +32,7 @@ jobs:
           cp ./resources/static/* ./build/CookieClickerTCNMod/
           cp ./resources/static_cht/* ./build/CookieClickerTCNMod/
 
-      - name: Setup SSH KEY
-        uses: webfactory/ssh-agent@v0.5.3
-        with:
-          ssh-private-key: ${{ secrets.SSH_KEY }}
-
-      - name: Archive Release
+      - name: Archive Release (CHS)
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
@@ -51,7 +40,7 @@ jobs:
           filename: 'cookieclicker-chs.zip'
           path: 'CookieClickerCNMod'
 
-      - name: Archive Release
+      - name: Archive Release (CHT)
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
