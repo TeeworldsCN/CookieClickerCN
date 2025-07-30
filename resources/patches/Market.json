@@ -102,19 +102,19 @@
   },
   "[STOCK 12 NAME]Dazzle Corp Ltd.": {
     "english": "Dazzle Corp Ltd.",
-    "chinese": "炫白集团控股"
+    "chinese": "炫闪集团控股"
   },
   "[STOCK 12 DESC]Dazzle Corp Ltd.": {
     "english": "Dazzle Corp Ltd.",
-    "chinese": "曾经有两个大学生在他们父亲的车库里摆弄镜子，现在，他们成立了成了世界著名的大公司。<b>炫白集团®</b>在光子退火方面的开创性实验导致了多年前一种曾被物理学家和厨师嗤之以鼻的新物质的诞生：白巧克力。"
+    "chinese": "曾经有两个大学生在他们父亲的车库里摆弄镜子，现在，他们成立了成了世界著名的大公司。<b>炫闪集团®</b>在光子退火方面的开创性实验导致了多年前一种曾被物理学家和厨师嗤之以鼻的新物质的诞生：白巧克力。"
   },
   "[STOCK 13 NAME]Prosperity Hive": {
     "english": "Prosperity Hive",
-    "chinese": "蜂兴隆股份有限公司"
+    "chinese": "荣巢股份有限公司"
   },
   "[STOCK 13 DESC]Prosperity Hive": {
     "english": "Prosperity Hive",
-    "chinese": "<b>蜂兴隆®</b>的工作人员们做着蜂蜜买卖，并且一直非常成功。这家公司的企业文化真的非常放松，让你很想放弃继续烘焙饼干，和他们一起摸鱼，虽然这些人与我们所知道的“勤劳的蜜蜂”几乎没有什么共同之处，但蜂蜜的价格着实有点让人刺痛。"
+    "chinese": "<b>荣巢®</b>的工作人员们做着蜂蜜买卖，并且一直非常成功。这家公司的企业文化真的非常放松，让你很想放弃继续烘焙饼干，和他们一起摸鱼，虽然这些人与我们所知道的“勤劳的蜜蜂”几乎没有什么共同之处，但蜂蜜的价格着实有点让人刺痛。"
   },
   "[STOCK 14 NAME]Selfmade Bakeries": {
     "english": "Selfmade Bakeries",
@@ -134,7 +134,7 @@
   },
   "[STOCK 16 NAME]Polyvalent Acquisitions": {
     "english": "Polyvalent Acquisitions",
-    "chinese": "多价商融股份有限公司"
+    "chinese": "多价商融控股"
   },
   "[STOCK 16 DESC]Polyvalent Acquisitions": {
     "english": "Polyvalent Acquisitions",
@@ -142,7 +142,7 @@
   },
   "[STOCK 17 NAME]Great Minds": {
     "english": "Great Minds",
-    "chinese": "伟人智库股份有限公司"
+    "chinese": "伟人智库人力资源管理"
   },
   "[STOCK 17 DESC]Great Minds": {
     "english": "Great Minds",
@@ -158,74 +158,74 @@
   },
   "[STOCK 1 LOGO]CRL": {
     "english": "CRL",
-    "chinese": "CRL"
+    "chinese": "磨坊谷物"
   },
   "[STOCK 2 LOGO]CHC": {
     "english": "CHC",
-    "chinese": "CHC"
+    "chinese": "掘对可可"
   },
   "[STOCK 3 LOGO]BTR": {
     "english": "BTR",
-    "chinese": "BTR"
+    "chinese": "巨牛黄油"
   },
   "[STOCK 4 LOGO]SUG": {
     "english": "SUG",
-    "chinese": "SUG"
+    "chinese": "盛糖蔗糖"
   },
   "[STOCK 5 LOGO]NUT": {
     "english": "NUT",
-    "chinese": "NUT"
+    "chinese": "至榛坚果"
   },
   "[STOCK 6 LOGO]SLT": {
     "english": "SLT",
-    "chinese": "SLT"
+    "chinese": "怪奇精盐"
   },
   "[STOCK 7 LOGO]VNL": {
     "english": "VNL",
-    "chinese": "VNL"
+    "chinese": "星速香草"
   },
   "[STOCK 8 LOGO]EGG": {
     "english": "EGG",
-    "chinese": "EGG"
+    "chinese": "灵智鸡蛋"
   },
   "[STOCK 9 LOGO]CNM": {
     "english": "CNM",
-    "chinese": "CNM"
+    "chinese": "维贸肉桂"
   },
   "[STOCK 10 LOGO]CRM": {
     "english": "CRM",
-    "chinese": "CRM"
+    "chinese": "驻颜奶油"
   },
   "[STOCK 11 LOGO]JAM": {
     "english": "JAM",
-    "chinese": "JAM"
+    "chinese": "胶研果酱"
   },
   "[STOCK 12 LOGO]WCH": {
     "english": "WCH",
-    "chinese": "WCH"
+    "chinese": "炫闪白巧"
   },
   "[STOCK 13 LOGO]HNY": {
     "english": "HNY",
-    "chinese": "HNY"
+    "chinese": "荣巢蜂蜜"
   },
   "[STOCK 14 LOGO]CKI": {
     "english": "CKI",
-    "chinese": "CKI"
+    "chinese": "自生饼干"
   },
   "[STOCK 15 LOGO]RCP": {
     "english": "RCP",
-    "chinese": "RCP"
+    "chinese": "幻梦食谱"
   },
   "[STOCK 16 LOGO]SBD": {
     "english": "SBD",
-    "chinese": "SBD"
+    "chinese": "多价实体"
   },
   "[STOCK 17 LOGO]PBL": {
     "english": "PBL",
-    "chinese": "PBL"
+    "chinese": "伟智人力"
   },
   "[STOCK 18 LOGO]YOU": {
     "english": "YOU",
-    "chinese": "YOU"
+    "chinese": "烘焙坊主"
   }
 }
