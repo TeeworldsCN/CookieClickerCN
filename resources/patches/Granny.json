@@ -38,7 +38,7 @@
   },
   "Grandmas gain <b>+%1% CpS</b> for each non-grandma building.": {
     "english": "Grandmas gain <b>+%1% CpS</b> for each non-grandma building.",
-    "chinese": "每拥有一个非老奶奶建筑，老奶奶生产的饼干 <b>+%1</b>。"
+    "chinese": "每拥有一个非老奶奶建筑，老奶奶生产的饼干 <b>+%1% CpS</b>。"
   },
   "Grandma-operated science lab and leisure club.<br>Grandmas are <b>4 times</b> as efficient.<br><b>Regularly unlocks new upgrades</b>.": {
     "english": "Grandma-operated science lab and leisure club.<br>Grandmas are <b>4 times</b> as efficient.<br><b>Regularly unlocks new upgrades</b>.",
